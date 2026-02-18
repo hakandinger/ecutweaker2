@@ -1,0 +1,61 @@
+{
+"obd": {
+	"baudrate": 10400, 
+	"protocol": "CAN", 
+	"recv_id": "760", 
+	"funcname": "ABS-VDC", 
+	"funcaddr": "01", 
+	"send_id": "740"
+}, 
+"devices": [], 
+"ecuname": "ABS-ESP", 
+"autoidents": [], 
+"endian": "Big", 
+"requests": [
+	{
+	"name": "!StartDiagnosticSession.DefaultSession", 
+	"replybytes": "5081", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"minbytes": 2, 
+	"sentbytes": "1081"
+	}, 
+	{
+	"name": "!StartDiagnosticSession.ExtendedDiagSession", 
+	"replybytes": "50C0", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"minbytes": 2, 
+	"sentbytes": "10C0"
+	}, 
+	{
+	"name": "!DataRead.CF_$08", 
+	"replybytes": "610800", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"!Config.Data_$08_#003_bit0_WDID": {
+		"firstbyte": 3
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "210800"
+	}, 
+	{
+	"name": "!DataWrite.CF_$08", 
+	"replybytes": "7B08", 
+	"deny_sds": [], 
+	"sendbyte_dataitems": {
+		"!Config.Data_$08_#003_bit0_WDID": {
+		"firstbyte": 3
+		}
+	}, 
+	"minbytes": 2, 
+	"sentbytes": "3B0800"
+	}
+], 
+"data": {
+	"!Config.Data_$08_#003_bit0_WDID": {
+	"scaled": true
+	}
+}
+}

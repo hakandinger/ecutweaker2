@@ -1,0 +1,438 @@
+{
+ "screens": {
+  "READ": {
+   "inputs": [],
+   "color": "rgb(255,255,255)",
+   "labels": [],
+   "presend": [],
+   "height": 7500,
+   "buttons": [],
+   "width": 9000,
+   "displays": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "APB_RefusetoSleep",
+     "request": "APB_RN1",
+     "width": 3110,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5760,
+      "top": 120,
+      "height": 300,
+      "left": 120
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "ParkingBrakeRequestInProgress",
+     "request": "APB_RN1",
+     "width": 3110,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5760,
+      "top": 420,
+      "height": 300,
+      "left": 120
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "ParkingBrakeBindingStatus",
+     "request": "APB_RN1",
+     "width": 3110,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5760,
+      "top": 720,
+      "height": 300,
+      "left": 120
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "ABSESPPowerLatchRequest",
+     "request": "APB_RN1",
+     "width": 3110,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5760,
+      "top": 1020,
+      "height": 300,
+      "left": 120
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Reserved_1bit",
+     "request": "APB_RN1",
+     "width": 3110,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5760,
+      "top": 1320,
+      "height": 300,
+      "left": 120
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "ParkingBrakeMalfunctionDisplay",
+     "request": "APB_MMI_RN1",
+     "width": 3110,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5760,
+      "top": 1680,
+      "height": 300,
+      "left": 120
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "ParkingBrakeBindingStatusDisplay",
+     "request": "APB_MMI_RN1",
+     "width": 3110,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5760,
+      "top": 1980,
+      "height": 300,
+      "left": 120
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "NotImmobilizedVehicleWarning",
+     "request": "APB_MMI_RN1",
+     "width": 3110,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5760,
+      "top": 2280,
+      "height": 300,
+      "left": 120
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "APBNotTightenedWarning",
+     "request": "APB_MMI_RN1",
+     "width": 3110,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5760,
+      "top": 2580,
+      "height": 300,
+      "left": 120
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DynamicBrakingDisplay",
+     "request": "APB_MMI_RN1",
+     "width": 3110,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5760,
+      "top": 2880,
+      "height": 300,
+      "left": 120
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "APB_BrakePedalRequestDisplay",
+     "request": "APB_MMI_RN1",
+     "width": 3110,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5760,
+      "top": 3180,
+      "height": 300,
+      "left": 120
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "TakeOffInhibitionWarning",
+     "request": "APB_MMI_RN1",
+     "width": 3110,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5760,
+      "top": 3480,
+      "height": 300,
+      "left": 120
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "APBTightenedRequestUnavailable",
+     "request": "APB_MMI_RN1",
+     "width": 3110,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5760,
+      "top": 3780,
+      "height": 300,
+      "left": 120
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "NISSAN_RESERVED_1b",
+     "request": "APB_MMI_RN1",
+     "width": 3110,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5760,
+      "top": 4080,
+      "height": 300,
+      "left": 120
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "EngineRPM",
+     "request": "ECM_Torque_RN2",
+     "width": 3110,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5760,
+      "top": 4500,
+      "height": 300,
+      "left": 120
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "MeanEffTorque",
+     "request": "ECM_Torque_RN2",
+     "width": 3110,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5760,
+      "top": 4800,
+      "height": 300,
+      "left": 120
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "RequestedTorqueAfterProc",
+     "request": "ECM_Torque_RN2",
+     "width": 3110,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5760,
+      "top": 5100,
+      "height": 300,
+      "left": 120
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "RawSensor",
+     "request": "ECM_Torque_RN2",
+     "width": 3110,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5760,
+      "top": 5400,
+      "height": 300,
+      "left": 120
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "ASR_MSRAcknowledgement",
+     "request": "ECM_Torque_RN2",
+     "width": 3110,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5760,
+      "top": 5700,
+      "height": 300,
+      "left": 120
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "ETS_TorqueAcknowledgment",
+     "request": "ECM_Torque_RN2",
+     "width": 3110,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5760,
+      "top": 6000,
+      "height": 300,
+      "left": 120
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "ECM_Clock",
+     "request": "ECM_Torque_RN2",
+     "width": 3110,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5760,
+      "top": 6300,
+      "height": 300,
+      "left": 120
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "TorqueRequestStatus",
+     "request": "ECM_Torque_RN2",
+     "width": 3110,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5760,
+      "top": 6600,
+      "height": 300,
+      "left": 120
+     }
+    }
+   ]
+  }
+ },
+ "categories": {
+  "CAN": [
+   "READ"
+  ]
+ }
+}

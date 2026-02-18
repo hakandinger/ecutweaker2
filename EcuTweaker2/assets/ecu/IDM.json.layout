@@ -1,0 +1,8159 @@
+{
+ "screens": {
+  "Write-Read": {
+   "inputs": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$2001_vehicle_shape_configuration",
+     "request": "DataWrite.$2001_Vehicle_shape_configration",
+     "width": 3260,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4920,
+      "top": 720,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$0103_Erase personal settings",
+     "request": "DataWrite.$0103_Erase personal settings",
+     "width": 3260,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4920,
+      "top": 1080,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$0102_Erase Key Allotment user",
+     "request": "DataWrite.$0102_Erase Key Allotment user",
+     "width": 3260,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4920,
+      "top": 1440,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$0101_Erase last driver information",
+     "request": "DataWrite.$0101_Erase last driver information",
+     "width": 3260,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4920,
+      "top": 1800,
+      "height": 300,
+      "left": 240
+     }
+    }
+   ],
+   "color": "rgb(255,255,255)",
+   "labels": [],
+   "presend": [],
+   "height": 6000,
+   "buttons": [],
+   "width": 6780,
+   "displays": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "FFD$0000_MILEAGE",
+     "request": "DataRead.FFD$0000_MILEAGE",
+     "width": 2000,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4000,
+      "top": 3600,
+      "height": 300,
+      "left": 840
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0167_#04_METER_MODE",
+     "request": "DataRead.DM$0167_METER_MODE",
+     "width": 2600,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4600,
+      "top": 3960,
+      "height": 300,
+      "left": 240
+     }
+    }
+   ]
+  },
+  "Read_Data monitor 2202": {
+   "inputs": [],
+   "color": "rgb(128,255,255)",
+   "labels": [
+    {
+     "color": "rgb(255,128,255)",
+     "text": "READ",
+     "bbox": {
+      "width": 2320,
+      "top": 40,
+      "height": 250,
+      "left": 5000
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0202_#04_bit0_CAUSE OF AUTO-CANCEL 1",
+     "bbox": {
+      "width": 4800,
+      "top": 300,
+      "height": 250,
+      "left": 200
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    }
+   ],
+   "presend": [],
+   "height": 3780,
+   "buttons": [],
+   "width": 7500,
+   "displays": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0202_#04_bit0_CAUSE OF AUTO-CANCEL 1",
+     "request": "DataRead.DM$0202",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 300,
+      "height": 240,
+      "left": 4995
+     }
+    }
+   ]
+  },
+  "Read_Data monitor 2201_3": {
+   "inputs": [],
+   "color": "rgb(128,255,255)",
+   "labels": [
+    {
+     "color": "rgb(255,128,255)",
+     "text": "READ",
+     "bbox": {
+      "width": 2322,
+      "top": 40,
+      "height": 250,
+      "left": 4998
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0120_SHIFT_POSITION",
+     "bbox": {
+      "width": 4800,
+      "top": 300,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0121_RANGE_SIGNAL",
+     "bbox": {
+      "width": 4800,
+      "top": 600,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0122_#04_bit7_BNC",
+     "bbox": {
+      "width": 4800,
+      "top": 900,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0122_#04_bit6_BNO",
+     "bbox": {
+      "width": 4800,
+      "top": 1200,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0123_#04_bit7_STOP_LAMP",
+     "bbox": {
+      "width": 4800,
+      "top": 1500,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0124_PRESSURE_SENSOR_SIGNAL",
+     "bbox": {
+      "width": 4800,
+      "top": 1800,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0125_#04_bit7_ABS_status",
+     "bbox": {
+      "width": 4800,
+      "top": 2100,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0125_#04_bit6_ABS_Malfunction_status",
+     "bbox": {
+      "width": 4800,
+      "top": 2400,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0125_#04_bit5_EBD_Status",
+     "bbox": {
+      "width": 4800,
+      "top": 2700,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0126_#04_bit7_TCS_Status",
+     "bbox": {
+      "width": 4800,
+      "top": 3000,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0126_#04_bit6_TCS_Fail",
+     "bbox": {
+      "width": 4800,
+      "top": 3300,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0126_#04_bit1_TCS_Status",
+     "bbox": {
+      "width": 4800,
+      "top": 3600,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0127_#04_bit7_VDC_Status",
+     "bbox": {
+      "width": 4800,
+      "top": 3900,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0127_#04_bit6_VDC_FAIL",
+     "bbox": {
+      "width": 4800,
+      "top": 4200,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0127_#04_bit5_VDC-OFF_SW",
+     "bbox": {
+      "width": 4800,
+      "top": 4500,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0127_#04_bit0_VDC_Status",
+     "bbox": {
+      "width": 4800,
+      "top": 4800,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "Config.Data_$B735_write-in data collation(B02E)",
+     "bbox": {
+      "width": 4800,
+      "top": 5100,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0129_#04_bit7_PKB_Signal",
+     "bbox": {
+      "width": 4800,
+      "top": 5400,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$012A_#04_bit7_ReleaseSW_NC",
+     "bbox": {
+      "width": 4800,
+      "top": 5700,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$012A_#04_bit6_ReleaseSW_NO",
+     "bbox": {
+      "width": 4800,
+      "top": 6000,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$012B_#04_bit7_Accelatpr_pedal_Fail",
+     "bbox": {
+      "width": 4800,
+      "top": 6300,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0130_STEERING_ANGLE_SENSOR",
+     "bbox": {
+      "width": 4800,
+      "top": 6600,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0131_VEHICLE_BODY_SPPED",
+     "bbox": {
+      "width": 4800,
+      "top": 6900,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0132_WHEEL_SPPED_FL",
+     "bbox": {
+      "width": 4800,
+      "top": 7200,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0133_WHEEL_SPPED_FR",
+     "bbox": {
+      "width": 4800,
+      "top": 7500,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0134_WHEEL_SPPED_RL",
+     "bbox": {
+      "width": 4800,
+      "top": 7800,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0135_WHEEL_SPPED_RR",
+     "bbox": {
+      "width": 4800,
+      "top": 8100,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0136_GEAR_RATIO",
+     "bbox": {
+      "width": 4800,
+      "top": 8400,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0137_MASTER_PRESSURE",
+     "bbox": {
+      "width": 4800,
+      "top": 8700,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0138_CBA-B_AIM_ACCELERATION",
+     "bbox": {
+      "width": 4800,
+      "top": 9000,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0139_CBA-B_BRAKE_FLUID_PRESSURE_OLD_LEVEL",
+     "bbox": {
+      "width": 4800,
+      "top": 9300,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$013A_CBA-B_AIM_ACCELERATOR_DIVERGENCE",
+     "bbox": {
+      "width": 4800,
+      "top": 9600,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$013B_AVDC_ORDER_LEVEL",
+     "bbox": {
+      "width": 4800,
+      "top": 9900,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$013C_AUC_ORDER_LEVEL",
+     "bbox": {
+      "width": 4800,
+      "top": 10200,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$013D_YLE_ORDER_LEVEL",
+     "bbox": {
+      "width": 4800,
+      "top": 10500,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$013E_BSB_LAST_FLUID_PRESSURE_LEVEL",
+     "bbox": {
+      "width": 4800,
+      "top": 10800,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$013F_BSB_TOP_BOTTOM_ACCELEATION",
+     "bbox": {
+      "width": 4800,
+      "top": 11100,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    }
+   ],
+   "presend": [],
+   "height": 11820,
+   "buttons": [],
+   "width": 7500,
+   "displays": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0120_SHIFT_POSITION",
+     "request": "DataRead.DM$0120_SHIFT_POSITION",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 300,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0121_RANGE_SIGNAL",
+     "request": "DataRead.DM$0121_RANGE_SIGNAL",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 600,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0122_#04_bit7_BNC",
+     "request": "DataRead.DM$0122",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 900,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0122_#04_bit6_BNO",
+     "request": "DataRead.DM$0122",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 1200,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0123_#04_bit7_STOP_LAMP",
+     "request": "DataRead.DM$0123_STOP_LANP",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 1500,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0124_PRESSURE_SENSOR_SIGNAL",
+     "request": "DataRead.DM$0124_PRESSURE_SENSOR_SIGNAL",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 1800,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0125_#04_bit7_ABS_status",
+     "request": "DataRead.DM$0125",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 2100,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0125_#04_bit6_ABS_Malfunction_status",
+     "request": "DataRead.DM$0125",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 2400,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0125_#04_bit5_EBD_Status",
+     "request": "DataRead.DM$0125",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 2700,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0126_#04_bit7_TCS_Status",
+     "request": "DataRead.DM$0126_TCS_DATALIST",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 3000,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0126_#04_bit6_TCS_Fail",
+     "request": "DataRead.DM$0126_TCS_DATALIST",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 3300,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0126_#04_bit1_TCS_Status",
+     "request": "DataRead.DM$0126_TCS_DATALIST",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 3600,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0127_#04_bit7_VDC_Status",
+     "request": "DataRead.DM$0127_VDC_DATALIST",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 3900,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0127_#04_bit6_VDC_FAIL",
+     "request": "DataRead.DM$0127_VDC_DATALIST",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 4200,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0127_#04_bit5_VDC-OFF_SW",
+     "request": "DataRead.DM$0127_VDC_DATALIST",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 4500,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0127_#04_bit0_VDC_Status",
+     "request": "DataRead.DM$0127_VDC_DATALIST",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 4800,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Config.Data_$B735_write-in data collation(B02E)",
+     "request": "DataRead.DM$0128_VARIANT_CODE",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 5100,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0129_#04_bit7_PKB_Signal",
+     "request": "DataRead.DM$0129",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 5400,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$012A_#04_bit7_ReleaseSW_NC",
+     "request": "DataRead.DM$012A",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 5700,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$012A_#04_bit6_ReleaseSW_NO",
+     "request": "DataRead.DM$012A",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 6000,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$012B_#04_bit7_Accelatpr_pedal_Fail",
+     "request": "DataRead.DM$012B",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 6300,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0130_STEERING_ANGLE_SENSOR",
+     "request": "DataRead.DM$0130_STEERING_ANGLE_SENSOR",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 6600,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0131_VEHICLE_BODY_SPPED",
+     "request": "DataRead.DM$0131_VEHICLE_BODY_SPPED",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 6900,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0132_WHEEL_SPPED_FL",
+     "request": "DataRead.DM$0132_WHEEL_SPPED_FL",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 7200,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0133_WHEEL_SPPED_FR",
+     "request": "DataRead.DM$0133_WHEEL_SPPED_FR",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 7500,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0134_WHEEL_SPPED_RL",
+     "request": "DataRead.DM$0134_WHEEL_SPPED_RL",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 7800,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0135_WHEEL_SPPED_RR",
+     "request": "DataRead.DM$0135_WHEEL_SPPED_RR",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 8100,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0136_GEAR_RATIO",
+     "request": "DataRead.DM$0136_GEAR_RATIO",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 8400,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0137_MASTER_PRESSURE",
+     "request": "DataRead.DM$0137_MASTER_PRESSURE",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 8700,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0138_CBA-B_AIM_ACCELERATION",
+     "request": "DataRead.DM$0138_CBA-B_AIM_ACCELERATION",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 9000,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0139_CBA-B_BRAKE_FLUID_PRESSURE_OLD_LEVEL",
+     "request": "DataRead.DM$0139_CBA-B_BRAKE_FLUID_PRESSURE_OLD_LEVEL",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 9300,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$013A_CBA-B_AIM_ACCELERATOR_DIVERGENCE",
+     "request": "DataRead.DM$013A_CBA-B_AIM_ACCELERATOR_DIVERGENCE",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 9600,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$013B_AVDC_ORDER_LEVEL",
+     "request": "DataRead.DM$013B_AVDC_ORDER_LEVEL",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 9900,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$013C_AUC_ORDER_LEVEL",
+     "request": "DataRead.DM$013C_AUC_ORDER_LEVEL",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 10200,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$013D_YLE_ORDER_LEVEL",
+     "request": "DataRead.DM$013D_YLE_ORDER_LEVEL",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 10500,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$013E_BSB_LAST_FLUID_PRESSURE_LEVEL",
+     "request": "DataRead.DM$013E_BSB_LAST_FLUID_PRESSURE_LEVEL",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 10800,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$013F_BSB_TOP_BOTTOM_ACCELEATION",
+     "request": "DataRead.DM$013F_BSB_TOP_BOTTOM_ACCELEATION",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 11100,
+      "height": 240,
+      "left": 4995
+     }
+    }
+   ]
+  },
+  "Read_Data monitor 2201_2": {
+   "inputs": [],
+   "color": "rgb(128,255,255)",
+   "labels": [
+    {
+     "color": "rgb(255,128,255)",
+     "text": "READ",
+     "bbox": {
+      "width": 2322,
+      "top": 40,
+      "height": 250,
+      "left": 4998
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$010A_#04_bit7_ADA_CNT_OUTPUT_ReqFLAG1",
+     "bbox": {
+      "width": 4800,
+      "top": 300,
+      "height": 250,
+      "left": 200
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$010A_#04_bit6_ADA_CNT_OUTPUT_ReqFLAG2",
+     "bbox": {
+      "width": 4800,
+      "top": 600,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$010A_#04_bit5_ADA_CNT_STOP_FLAG",
+     "bbox": {
+      "width": 4800,
+      "top": 900,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$010A_#04_bit4_ADA_CNT_WARNING_FLAG",
+     "bbox": {
+      "width": 4800,
+      "top": 1200,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$010A_#05_bit7_ADA_CNT_OUTPUT_ReqFLAG1_Support_bit",
+     "bbox": {
+      "width": 4800,
+      "top": 1500,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$010A_#05_bit6_ADA_CNT_OUTPUT_ReqFLAG2_Support_bit",
+     "bbox": {
+      "width": 4800,
+      "top": 1800,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$010A_#05_bit5_ADA_CNT_STOP_FLAG_Support_bit",
+     "bbox": {
+      "width": 4800,
+      "top": 2100,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$010A_#05_bit4_ADA_CNT_WARNING_FLAG_Support_bit",
+     "bbox": {
+      "width": 4800,
+      "top": 2400,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$010B_#04_bit7_YLE_CNT_OUTPUT_ReqFLAG",
+     "bbox": {
+      "width": 4800,
+      "top": 2700,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$010B_#04_bit6_YLE_CNT_STOP_FLAG",
+     "bbox": {
+      "width": 4800,
+      "top": 3000,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$010B_#04_bit5_YLE_CNT_WARNING_FLAG",
+     "bbox": {
+      "width": 4800,
+      "top": 3300,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$010B_#05_bit7_YLE_CNT_OUTPUT_ReqFLAG_Support_bit",
+     "bbox": {
+      "width": 4800,
+      "top": 3600,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$010B_#05_bit6_YLE_CNT_STOP_FLAG_Support_bit",
+     "bbox": {
+      "width": 4800,
+      "top": 3900,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$010B_#05_bit5_YLE_CNT_WARNING_FLAG_Support_bit",
+     "bbox": {
+      "width": 4800,
+      "top": 4200,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$010C_#04_bit7_BSB_CNT_OUTPUT_ReqFLAG",
+     "bbox": {
+      "width": 4800,
+      "top": 4500,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$010C_#04_bit6_BSB_CNT_STOP_FLAG",
+     "bbox": {
+      "width": 4800,
+      "top": 4800,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$010C_#04_bit5_BSB_CNT_WARNING_FLAG",
+     "bbox": {
+      "width": 4800,
+      "top": 5100,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$010C_#05_bit7_BSB_CNT_OUTPUT_ReqFLAG_Support_bit",
+     "bbox": {
+      "width": 4800,
+      "top": 5400,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$010C_#05_bit6_BSB_CNT_STOP_FLAG",
+     "bbox": {
+      "width": 4800,
+      "top": 5700,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$010C_#05_bit5_BSB_CNT_WARNING_FLAG_Support_bit",
+     "bbox": {
+      "width": 4800,
+      "top": 6000,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$010E_VEHICLE_SPPED",
+     "bbox": {
+      "width": 4800,
+      "top": 6300,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$010F_WHEEL_ROTATATION(F/R)",
+     "bbox": {
+      "width": 4800,
+      "top": 6600,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0110_WHEEL_ROTATATION(F/L)",
+     "bbox": {
+      "width": 4800,
+      "top": 6900,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0111_WHEEL_ROTATATION(R/R)",
+     "bbox": {
+      "width": 4800,
+      "top": 7200,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0112_WHEEL_ROTATATION(R/L)",
+     "bbox": {
+      "width": 4800,
+      "top": 7500,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0113_STEERING ANG SENSOR",
+     "bbox": {
+      "width": 4800,
+      "top": 7800,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0114_STR_ANGLE_SIG2",
+     "bbox": {
+      "width": 4800,
+      "top": 8100,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0115_DECEL G SENSOR",
+     "bbox": {
+      "width": 4800,
+      "top": 8400,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0116_SIDE_G(FIRST_MARKET_VALUE)",
+     "bbox": {
+      "width": 4800,
+      "top": 8700,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0117_SIDE_G(AFTER_REVISION)",
+     "bbox": {
+      "width": 4800,
+      "top": 9000,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0118_YAW_RATE(FIRST_MARKET_VALUE)",
+     "bbox": {
+      "width": 4800,
+      "top": 9300,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0119_YAW_RATE(AFTER_REVISION)",
+     "bbox": {
+      "width": 4800,
+      "top": 9600,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$011A_DRIVER_AIM_YAW_RATE",
+     "bbox": {
+      "width": 4800,
+      "top": 9900,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$011B_YAW_ACCELERATION",
+     "bbox": {
+      "width": 4800,
+      "top": 10200,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$011C_ACCELE PEDAL POSITION",
+     "bbox": {
+      "width": 4800,
+      "top": 10500,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$011D_ETC_FELL_FLAG",
+     "bbox": {
+      "width": 4800,
+      "top": 10800,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$011E_DRIVER_DEMAND_ECM_TORQUE]",
+     "bbox": {
+      "width": 4800,
+      "top": 11100,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$011F_ESTIMATE_ECM_TORQUE",
+     "bbox": {
+      "width": 4800,
+      "top": 11400,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    }
+   ],
+   "presend": [],
+   "height": 11940,
+   "buttons": [],
+   "width": 7500,
+   "displays": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$010A_#04_bit7_ADA_CNT_OUTPUT_ReqFLAG1",
+     "request": "DataRead.DM$010A_ADA_CONTROL",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 300,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$010A_#04_bit6_ADA_CNT_OUTPUT_ReqFLAG2",
+     "request": "DataRead.DM$010A_ADA_CONTROL",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 600,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$010A_#04_bit5_ADA_CNT_STOP_FLAG",
+     "request": "DataRead.DM$010A_ADA_CONTROL",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 900,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$010A_#04_bit4_ADA_CNT_WARNING_FLAG",
+     "request": "DataRead.DM$010A_ADA_CONTROL",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 1200,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$010A_#05_bit7_ADA_CNT_OUTPUT_ReqFLAG1_Support_bit",
+     "request": "DataRead.DM$010A_ADA_CONTROL",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 1500,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$010A_#05_bit6_ADA_CNT_OUTPUT_ReqFLAG2_Support_bit",
+     "request": "DataRead.DM$010A_ADA_CONTROL",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 1800,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$010A_#05_bit5_ADA_CNT_STOP_FLAG_Support_bit",
+     "request": "DataRead.DM$010A_ADA_CONTROL",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 2100,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$010A_#05_bit4_ADA_CNT_WARNING_FLAG_Support_bit",
+     "request": "DataRead.DM$010A_ADA_CONTROL",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 2400,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$010B_#04_bit7_YLE_CNT_OUTPUT_ReqFLAG",
+     "request": "DataRead.DM$010B_YLE_CONTROL",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 2700,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$010B_#04_bit6_YLE_CNT_STOP_FLAG",
+     "request": "DataRead.DM$010B_YLE_CONTROL",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 3000,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$010B_#04_bit5_YLE_CNT_WARNING_FLAG",
+     "request": "DataRead.DM$010B_YLE_CONTROL",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 3300,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$010B_#05_bit7_YLE_CNT_OUTPUT_ReqFLAG_Support_bit",
+     "request": "DataRead.DM$010B_YLE_CONTROL",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 3600,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$010B_#05_bit6_YLE_CNT_STOP_FLAG_Support_bit",
+     "request": "DataRead.DM$010B_YLE_CONTROL",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 3900,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$010B_#05_bit5_YLE_CNT_WARNING_FLAG_Support_bit",
+     "request": "DataRead.DM$010B_YLE_CONTROL",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 4200,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$010C_#04_bit7_BSB_CNT_OUTPUT_ReqFLAG",
+     "request": "DataRead.DM$010C_BSB_CONTROL",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 4500,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$010C_#04_bit6_BSB_CNT_STOP_FLAG",
+     "request": "DataRead.DM$010C_BSB_CONTROL",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 4800,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$010C_#04_bit5_BSB_CNT_WARNING_FLAG",
+     "request": "DataRead.DM$010C_BSB_CONTROL",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 5100,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$010C_#05_bit7_BSB_CNT_OUTPUT_ReqFLAG_Support_bit",
+     "request": "DataRead.DM$010C_BSB_CONTROL",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 5400,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$010C_#05_bit6_BSB_CNT_STOP_FLAG",
+     "request": "DataRead.DM$010C_BSB_CONTROL",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 5700,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$010C_#05_bit5_BSB_CNT_WARNING_FLAG_Support_bit",
+     "request": "DataRead.DM$010C_BSB_CONTROL",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 6000,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$010E_VEHICLE_SPPED",
+     "request": "DataRead.DM$010E_VEHICLE_SPPED",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 6300,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$010F_WHEEL_ROTATATION(F/R)",
+     "request": "DataRead.DM$010F_WHEEL_ROTATATION(F/R)",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 6600,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0110_WHEEL_ROTATATION(F/L)",
+     "request": "DataRead.DM$0110_WHEEL_ROTATATION(F/L)",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 6900,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0111_WHEEL_ROTATATION(R/R)",
+     "request": "DataRead.DM$0111_WHEEL_ROTATATION(R/R)",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 7200,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0112_WHEEL_ROTATATION(R/L)",
+     "request": "DataRead.DM$0112_WHEEL_ROTATATION(R/L)",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 7500,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0113_STEERING ANG SENSOR",
+     "request": "DataRead.DM$0113_STEERING_ANGLE",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 7800,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0114_STR_ANGLE_SIG2",
+     "request": "DataRead.DM$0114_STEERING_ANGLE(REVISION)",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 8100,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0115_DECEL G SENSOR",
+     "request": "DataRead.DM$0115_FRONT_AND_BACK_G",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 8400,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0116_SIDE_G(FIRST_MARKET_VALUE)",
+     "request": "DataRead.DM$0116_SIDE_G(FIRST_MARKET_VALUE)",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 8700,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0117_SIDE_G(AFTER_REVISION)",
+     "request": "DataRead.DM$0117_SIDE_G(AFTER_REVISION)",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 9000,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0118_YAW_RATE(FIRST_MARKET_VALUE)",
+     "request": "DataRead.DM$0118_YAW_RATE(FIRST_MARKET_VALUE)",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 9300,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0119_YAW_RATE(AFTER_REVISION)",
+     "request": "DataRead.DM$0119_YAW_RATE(AFTER_REVISION)",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 9600,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$011A_DRIVER_AIM_YAW_RATE",
+     "request": "DataRead.DM$011A_DRIVER_AIM_YAW_RATE",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 9900,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$011B_YAW_ACCELERATION",
+     "request": "DataRead.DM$011B_YAW_ACCELERATION",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 10200,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$011C_ACCELE PEDAL POSITION",
+     "request": "DataRead.DM$011C_ACCELE_DIVERGENCE",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 10500,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$011D_ETC_FELL_FLAG",
+     "request": "DataRead.DM$011D_ETC_FELL_FLAG",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 10800,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$011E_DRIVER_DEMAND_ECM_TORQUE",
+     "request": "DataRead.DM$011E_DRIVER_DEMAND_ECM_TORQUE",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 11100,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$011F_ESTIMATE_ECM_TORQUE",
+     "request": "DataRead.DM$011F_ESTIMATE_ECM_TORQUE",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 11400,
+      "height": 240,
+      "left": 4995
+     }
+    }
+   ]
+  },
+  "Read_Data monitor 2201_1": {
+   "inputs": [],
+   "color": "rgb(128,255,255)",
+   "labels": [
+    {
+     "color": "rgb(255,128,255)",
+     "text": "READ",
+     "bbox": {
+      "width": 2319,
+      "top": 40,
+      "height": 250,
+      "left": 4998
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0100_IGN_VOLTAGE",
+     "bbox": {
+      "width": 4800,
+      "top": 300,
+      "height": 250,
+      "left": 200
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0101_#04_bit7_CONTROL MODULE MALF",
+     "bbox": {
+      "width": 4800,
+      "top": 600,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0101_#04_bit6_CAN DIAG STATUS",
+     "bbox": {
+      "width": 4800,
+      "top": 900,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0102_bit7_RelayDrive1_STATE",
+     "bbox": {
+      "width": 4800,
+      "top": 1200,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0102_bit6_RelayDrive2_STATE",
+     "bbox": {
+      "width": 4800,
+      "top": 1500,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0102_bit5_ESS_RelayDrive_STATE",
+     "bbox": {
+      "width": 4800,
+      "top": 1800,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0106_bit7_BMC_CNT_OUTPUT_ReqFLAG",
+     "bbox": {
+      "width": 4800,
+      "top": 2085,
+      "height": 255,
+      "left": 210
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0106_bit6_BMC_CNT_STOP_FLAG",
+     "bbox": {
+      "width": 4800,
+      "top": 2385,
+      "height": 255,
+      "left": 210
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0106_bit5_BMC_CNT_WARNING_FLAG",
+     "bbox": {
+      "width": 4800,
+      "top": 2685,
+      "height": 255,
+      "left": 210
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0107_bit7_SMB_CNT_OUTPUT_ReqFLAG",
+     "bbox": {
+      "width": 4800,
+      "top": 2985,
+      "height": 255,
+      "left": 210
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0107_bit6_SMB_CNT_STOP_FLAG",
+     "bbox": {
+      "width": 4800,
+      "top": 3285,
+      "height": 255,
+      "left": 210
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0107_bit5_SMB_CNT_WARNING_FLAG",
+     "bbox": {
+      "width": 4800,
+      "top": 3585,
+      "height": 255,
+      "left": 210
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0108_bit7_ESS_CNT_OUTPUT_ReqFLAG",
+     "bbox": {
+      "width": 4800,
+      "top": 3885,
+      "height": 255,
+      "left": 210
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0108_bit6_ESS_CNT_STOP_FLAG",
+     "bbox": {
+      "width": 4800,
+      "top": 4185,
+      "height": 255,
+      "left": 210
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0108_bit5_ESS_CNT_WARNING_FLAG",
+     "bbox": {
+      "width": 4800,
+      "top": 4485,
+      "height": 255,
+      "left": 210
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0109_bit7_DIGITAL_ASSIS_CNT_OUTPUT_ReqFLAG",
+     "bbox": {
+      "width": 4800,
+      "top": 4785,
+      "height": 255,
+      "left": 210
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0109_bit6_DIGITAL_ASSIS_CNT_STOP_FLAG",
+     "bbox": {
+      "width": 4800,
+      "top": 5085,
+      "height": 255,
+      "left": 210
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0109_bit5_DIGITAL_ASSIS_CNT_WARNING_FLAG",
+     "bbox": {
+      "width": 4800,
+      "top": 5385,
+      "height": 255,
+      "left": 210
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    }
+   ],
+   "presend": [],
+   "height": 7380,
+   "buttons": [],
+   "width": 7500,
+   "displays": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0100_IGN_VOLTAGE",
+     "request": "DataRead.DM$0100_IGN_VOLTAGE",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 300,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0101_#04_bit7_CONTROL MODULE MALF",
+     "request": "DataRead.DM$0101",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 600,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0101_#04_bit6_CAN DIAG STATUS",
+     "request": "DataRead.DM$0101",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 900,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0102_bit7_RelayDrive1_STATE",
+     "request": "DataRead.DM$0102",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 1200,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0102_bit6_RelayDrive2_STATE",
+     "request": "DataRead.DM$0102",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 1500,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0102_bit5_ESS_RelayDrive_STATE",
+     "request": "DataRead.DM$0102",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 1800,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0106_bit7_BMC_CNT_OUTPUT_ReqFLAG",
+     "request": "DataRead.DM$0106_BMC_CONTROL",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 2085,
+      "height": 240,
+      "left": 5004
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0106_bit6_BMC_CNT_STOP_FLAG",
+     "request": "DataRead.DM$0106_BMC_CONTROL",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 2385,
+      "height": 240,
+      "left": 5004
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0106_bit5_BMC_CNT_WARNING_FLAG",
+     "request": "DataRead.DM$0106_BMC_CONTROL",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 2685,
+      "height": 240,
+      "left": 5004
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0107_bit7_SMB_CNT_OUTPUT_ReqFLAG",
+     "request": "DataRead.DM$0107_SMB_CONTROL",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 2985,
+      "height": 240,
+      "left": 5004
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0107_bit6_SMB_CNT_STOP_FLAG",
+     "request": "DataRead.DM$0107_SMB_CONTROL",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 3285,
+      "height": 240,
+      "left": 5004
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0107_bit5_SMB_CNT_WARNING_FLAG",
+     "request": "DataRead.DM$0107_SMB_CONTROL",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 3585,
+      "height": 240,
+      "left": 5004
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0108_bit7_ESS_CNT_OUTPUT_ReqFLAG",
+     "request": "DataRead.DM$0108_ESS_CONTROL",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 3885,
+      "height": 240,
+      "left": 5004
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0108_bit6_ESS_CNT_STOP_FLAG",
+     "request": "DataRead.DM$0108_ESS_CONTROL",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 4185,
+      "height": 240,
+      "left": 5004
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0108_bit5_ESS_CNT_WARNING_FLAG",
+     "request": "DataRead.DM$0108_ESS_CONTROL",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 4485,
+      "height": 240,
+      "left": 5004
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0109_bit7_DIGITAL_ASSIS_CNT_OUTPUT_ReqFLAG",
+     "request": "DataRead.DM$0109_DIGITAL_ASSIST_CONTROL",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 4785,
+      "height": 240,
+      "left": 5004
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0109_bit6_DIGITAL_ASSIS_CNT_STOP_FLAG",
+     "request": "DataRead.DM$0109_DIGITAL_ASSIST_CONTROL",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 5085,
+      "height": 240,
+      "left": 5004
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0109_bit5_DIGITAL_ASSIS_CNT_WARNING_FLAG",
+     "request": "DataRead.DM$0109_DIGITAL_ASSIST_CONTROL",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 5385,
+      "height": 240,
+      "left": 5004
+     }
+    }
+   ]
+  },
+  "Read_Data monitor 2201_6": {
+   "inputs": [],
+   "color": "rgb(128,255,255)",
+   "labels": [
+    {
+     "color": "rgb(255,128,255)",
+     "text": "READ",
+     "bbox": {
+      "width": 2320,
+      "top": 40,
+      "height": 250,
+      "left": 5000
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01B0_#04_bit7-6_LDW_DISPLAY",
+     "bbox": {
+      "width": 4800,
+      "top": 300,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01B0_#04_bit5-4_LDP_DISPLAY",
+     "bbox": {
+      "width": 4800,
+      "top": 600,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01B1_#04_bit7-6_BSI_DISPLAY",
+     "bbox": {
+      "width": 4800,
+      "top": 900,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01B1_#04_bit5-4_STRG_SW_ABNOMAL",
+     "bbox": {
+      "width": 4800,
+      "top": 1200,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01B2_#04_bit7_BSW_ABNOMAL",
+     "bbox": {
+      "width": 4800,
+      "top": 1500,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01B2_#04_bit6_ADAS_ABNOMAL_FLAG",
+     "bbox": {
+      "width": 4800,
+      "top": 1800,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01B2_#04_bit5_APPROACH_WARNING",
+     "bbox": {
+      "width": 4800,
+      "top": 2100,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01B2_#04_bit4_ACC_REGULATION_FLAG",
+     "bbox": {
+      "width": 4800,
+      "top": 2400,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01B3_#04_bit7_IBA_REGULATION_FLAG",
+     "bbox": {
+      "width": 4800,
+      "top": 2700,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01B3_#04_bit6-4_CALLBACK",
+     "bbox": {
+      "width": 4800,
+      "top": 3000,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01B4_#04_bit7-6_IDM-LDW_STATUS",
+     "bbox": {
+      "width": 4800,
+      "top": 3300,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01B4_#04_bit5-4_IDM-LDP_STATUS",
+     "bbox": {
+      "width": 4800,
+      "top": 3600,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01B5_#04_bit7-6_IDM_BSI_STATUS",
+     "bbox": {
+      "width": 4800,
+      "top": 3900,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01B5_#04_bit5-4_LDP_Brake_CANCELL_FACTOR",
+     "bbox": {
+      "width": 4800,
+      "top": 4200,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01B6_#04_bit7-6_BSI_Brake_CANCELL_FACTOR",
+     "bbox": {
+      "width": 4800,
+      "top": 4500,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01B7_#04_bit7_CAMERA_ABNORMAL",
+     "bbox": {
+      "width": 4800,
+      "top": 4800,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01B7_#04_bit6_CAMERA_TEMP_ABNORMAL",
+     "bbox": {
+      "width": 4800,
+      "top": 5100,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01B7_#04_bit5_CAMERA_COMM_ABNORMAL",
+     "bbox": {
+      "width": 4800,
+      "top": 5400,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01B7_#04_bit4_CAMERA_AIM_NOT_DONE",
+     "bbox": {
+      "width": 4800,
+      "top": 5700,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01B8_bit7_CAMERA_HI_TEMP_CANCELL_FLAG(LDW)",
+     "bbox": {
+      "width": 4800,
+      "top": 6000,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01B8_bit6_CAMERA_HI_TEMP_CANCELL_FLAG(LDP)",
+     "bbox": {
+      "width": 4800,
+      "top": 6300,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01B8_bit5_CAMERA_HI_TEMP_CANCELL_FLAG(BSI)",
+     "bbox": {
+      "width": 4800,
+      "top": 6600,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01B8_bit4_SIDE_RADER_BROCK_CANCELL",
+     "bbox": {
+      "width": 4800,
+      "top": 6900,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01B9_#04_bit7_BSI_HMI_REQ(LEFT)",
+     "bbox": {
+      "width": 4800,
+      "top": 7200,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01B9_#04_bit6_BSI_HMI_REQ(RIGTH)",
+     "bbox": {
+      "width": 4800,
+      "top": 7500,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01B9_#04_bit5_LANE_DEVIATION_DISP_FLG(LEFT)",
+     "bbox": {
+      "width": 4800,
+      "top": 7800,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01B9_#04_bit4_LANE_DEVIATION_DISP_FLG(RIGHT)",
+     "bbox": {
+      "width": 4800,
+      "top": 8100,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01BA_#04_bit7_LDP_FORCE_OFF_FLG",
+     "bbox": {
+      "width": 4800,
+      "top": 8400,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01BA_#04_bit6_BSI_FORCE_OFF_FLG",
+     "bbox": {
+      "width": 4800,
+      "top": 8700,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01BA_#04_bit5_LDP/BSI_REGULATION_FLG",
+     "bbox": {
+      "width": 4800,
+      "top": 9000,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01BB_#04_bit7_ADAS_DGNOK",
+     "bbox": {
+      "width": 4800,
+      "top": 9300,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01BB_#04_bit6_HMI_STATUES",
+     "bbox": {
+      "width": 4800,
+      "top": 9600,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01BB_#04_bit5_Running_Aimming_Progress_FLG",
+     "bbox": {
+      "width": 4800,
+      "top": 9900,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01BB_#04_bit4_Running_Aimming_Complete_FLG",
+     "bbox": {
+      "width": 4800,
+      "top": 10200,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01BC_#04_bit5_SOUND1_REQ",
+     "bbox": {
+      "width": 4800,
+      "top": 10500,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01BC_#04_bit4_SOUND1_CHANGE",
+     "bbox": {
+      "width": 4800,
+      "top": 10800,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01BD_#04_SOUND1_VOL",
+     "bbox": {
+      "width": 4800,
+      "top": 11100,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01BE_ACCELE_OPEN_ANGLE(LDP-BSI)",
+     "bbox": {
+      "width": 4800,
+      "top": 11400,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01BF_#04_OUTSIDE_TEMP",
+     "bbox": {
+      "width": 4800,
+      "top": 11700,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    }
+   ],
+   "presend": [],
+   "height": 13260,
+   "buttons": [],
+   "width": 7620,
+   "displays": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01B0_#04_bit7-6_LDW_DISPLAY",
+     "request": "DataRead.DM$01B0_LDW-LDP_LNDICATION",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 300,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01B0_#04_bit5-4_LDP_DISPLAY",
+     "request": "DataRead.DM$01B0_LDW-LDP_LNDICATION",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 600,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01B1_#04_bit7-6_BSI_DISPLAY",
+     "request": "DataRead.DM$01B1",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 900,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01B1_#04_bit5-4_STRG_SW_ABNOMAL",
+     "request": "DataRead.DM$01B1",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 1200,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01B2_#04_bit7_BSW_ABNOMAL",
+     "request": "DataRead.DM$01B2",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 1500,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01B2_#04_bit6_ADAS_ABNOMAL_FLAG",
+     "request": "DataRead.DM$01B2",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 1800,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01B2_#04_bit5_APPROACH_WARNING",
+     "request": "DataRead.DM$01B2",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 2100,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01B2_#04_bit4_ACC_REGULATION_FLAG",
+     "request": "DataRead.DM$01B2",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 2400,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01B3_#04_bit7_IBA_REGULATION_FLAG",
+     "request": "DataRead.DM$01B3",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 2700,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01B3_#04_bit6-4_CALLBACK",
+     "request": "DataRead.DM$01B3",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 3000,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01B4_#04_bit7-6_IDM-LDW_STATUS",
+     "request": "DataRead.DM$01B4_IDM_LDW-LDP_STATUES",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 3300,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01B4_#04_bit5-4_IDM-LDP_STATUS",
+     "request": "DataRead.DM$01B4_IDM_LDW-LDP_STATUES",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 3600,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01B5_#04_bit7-6_IDM_BSI_STATUS",
+     "request": "DataRead.DM$01B5",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 3900,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01B5_#04_bit5-4_LDP_Brake_CANCELL_FACTOR",
+     "request": "DataRead.DM$01B5",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 4200,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01B6_#04_bit7-6_BSI_Brake_CANCELL_FACTOR",
+     "request": "DataRead.DM$01B6_BSI_BRAKE_CANCELL_FACTOR",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 4500,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01B7_#04_bit7_CAMERA_ABNORMAL",
+     "request": "DataRead.DM$01B7",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 4800,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01B7_#04_bit6_CAMERA_TEMP_ABNORMAL",
+     "request": "DataRead.DM$01B7",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 5100,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01B7_#04_bit5_CAMERA_COMM_ABNORMAL",
+     "request": "DataRead.DM$01B7",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 5400,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01B7_#04_bit4_CAMERA_AIM_NOT_DONE",
+     "request": "DataRead.DM$01B7",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 5700,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01B8_bit7_CAMERA_HI_TEMP_CANCELL_FLAG(LDW)",
+     "request": "DataRead.DM$01B8",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 6000,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01B8_bit6_CAMERA_HI_TEMP_CANCELL_FLAG(LDP)",
+     "request": "DataRead.DM$01B8",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 6300,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01B8_bit5_CAMERA_HI_TEMP_CANCELL_FLAG(BSI)",
+     "request": "DataRead.DM$01B8",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 6600,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01B8_bit4_SIDE_RADER_BROCK_CANCELL",
+     "request": "DataRead.DM$01B8",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 6900,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01B9_#04_bit7_BSI_HMI_REQ(LEFT)",
+     "request": "DataRead.DM$01B9",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 7200,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01B9_#04_bit6_BSI_HMI_REQ(RIGTH)",
+     "request": "DataRead.DM$01B9",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 7500,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01B9_#04_bit5_LANE_DEVIATION_DISP_FLG(LEFT)",
+     "request": "DataRead.DM$01B9",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 7800,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01B9_#04_bit4_LANE_DEVIATION_DISP_FLG(RIGHT)",
+     "request": "DataRead.DM$01B9",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 8100,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01BA_#04_bit7_LDP_FORCE_OFF_FLG",
+     "request": "DataRead.DM$01BA",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 8400,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01BA_#04_bit6_BSI_FORCE_OFF_FLG",
+     "request": "DataRead.DM$01BA",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 8700,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01BA_#04_bit5_LDP/BSI_REGULATION_FLG",
+     "request": "DataRead.DM$01BA",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 9000,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01BB_#04_bit7_ADAS_DGNOK",
+     "request": "DataRead.DM$01BB",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 9300,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01BB_#04_bit6_HMI_STATUES",
+     "request": "DataRead.DM$01BB",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 9600,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01BB_#04_bit5_Running_Aimming_Progress_FLG",
+     "request": "DataRead.DM$01BB",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 9900,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01BB_#04_bit4_Running_Aimming_Complete_FLG",
+     "request": "DataRead.DM$01BB",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 10200,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01BC_#04_bit5_SOUND1_REQ",
+     "request": "DataRead.DM$01BC_SMB_SOUND_DATA",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 10500,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01BC_#04_bit4_SOUND1_CHANGE",
+     "request": "DataRead.DM$01BC_SMB_SOUND_DATA",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 10800,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01BD_#04_SOUND1_VOL",
+     "request": "DataRead.DM$01BD_SMB_SOUND1_VOLUME",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 11100,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01BE_ACCELE_OPEN_ANGLE(LDP-BSI)",
+     "request": "DataRead.DM$01BE_ACCELE_OPEN_ANGLE(LDP-BSI)",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 11400,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01BF_#04_OUTSIDE_TEMP",
+     "request": "DataRead.DM$01BF_OUTSIDE_TEMP",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 11700,
+      "height": 240,
+      "left": 4995
+     }
+    }
+   ]
+  },
+  "Read_Data monitor 2201_5": {
+   "inputs": [],
+   "color": "rgb(128,255,255)",
+   "labels": [
+    {
+     "color": "rgb(255,128,255)",
+     "text": "READ",
+     "bbox": {
+      "width": 2320,
+      "top": 40,
+      "height": 250,
+      "left": 5000
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0180_#04_bit7_CVT_PERMISSION_FLG",
+     "bbox": {
+      "width": 4800,
+      "top": 300,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0180_#04_bit6_ADA_SW",
+     "bbox": {
+      "width": 4800,
+      "top": 600,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0180_#05_bit7_CVT_PERMISSION_FLG_Support_bit",
+     "bbox": {
+      "width": 4800,
+      "top": 900,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0180_#05_bit6_ADA_SW_Support_bit",
+     "bbox": {
+      "width": 4800,
+      "top": 1200,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0181_#04_ORDER_LEVEL(REL)",
+     "bbox": {
+      "width": 4800,
+      "top": 1500,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0182_#04_ORDER_LEVEL(ABS)",
+     "bbox": {
+      "width": 4800,
+      "top": 1800,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0183_#04_SLIP_RATE",
+     "bbox": {
+      "width": 4800,
+      "top": 2100,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0184_#04_bit7_ASA_PROPERTY",
+     "bbox": {
+      "width": 4800,
+      "top": 2400,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0184_#04_bit6_ADA_PROPERTY",
+     "bbox": {
+      "width": 4800,
+      "top": 2700,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0184_#05_bit7_ASA_PROPERTY_Support_bit",
+     "bbox": {
+      "width": 4800,
+      "top": 3000,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0184_#05_bit6_ADA_PROPERTY_Support_bit",
+     "bbox": {
+      "width": 4800,
+      "top": 3300,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01A0_#04_bit7_SIDE_MB_SYSTEM_ON_ INFOMATION",
+     "bbox": {
+      "width": 4800,
+      "top": 3600,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01A0_#04_bit6_SIDE_MB_CAMERA_LINE_DETECTION_LEFT",
+     "bbox": {
+      "width": 4800,
+      "top": 3900,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01A0_#04_bit5_SIDE_MB_CAMERA_LINE_DETECTION_RIGHT",
+     "bbox": {
+      "width": 4800,
+      "top": 4200,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01A0_#04_bit4_YAW_JUDGE_SIG",
+     "bbox": {
+      "width": 4800,
+      "top": 4500,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01A1_#04_bit7_WINKER_LEFT",
+     "bbox": {
+      "width": 4800,
+      "top": 4800,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01A1_#04_bit6_WINKER_RIGHT",
+     "bbox": {
+      "width": 4800,
+      "top": 5100,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01A1_#04_bit5-4_TURN_SW",
+     "bbox": {
+      "width": 4800,
+      "top": 5400,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01A2_#04_bit7_STA_FUNCTION_DEMAND_FLG",
+     "bbox": {
+      "width": 4800,
+      "top": 5700,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01A2_#04_bit6_SMB_ACTIVE_FLAG",
+     "bbox": {
+      "width": 4800,
+      "top": 6000,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01A2_#04_bit5_LDP_ACTIVE_FLAG",
+     "bbox": {
+      "width": 4800,
+      "top": 6300,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01A2_#04_bit4_BSI_ACTIVE_FLAG",
+     "bbox": {
+      "width": 4800,
+      "top": 6600,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01A3_#04_SIDE_MB_ROAD_RADIUS_OF_CURVATURE",
+     "bbox": {
+      "width": 4800,
+      "top": 6900,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01A4_#04_SIDE_MB_STEERING_ANGLE_ORDER_LEVEL",
+     "bbox": {
+      "width": 4800,
+      "top": 7200,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01A5_#04_PINION_ANGLE",
+     "bbox": {
+      "width": 4800,
+      "top": 7500,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01A6_#04_ANTI_MOTOR_ESTIMATE_TORQUE",
+     "bbox": {
+      "width": 4800,
+      "top": 7800,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01A7_#04_SIDE_MB_ANTI_ORDER_LEVEL",
+     "bbox": {
+      "width": 4800,
+      "top": 8100,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01A8_#04_WIDE_POSITION_FROM_LEFT_LINE",
+     "bbox": {
+      "width": 4800,
+      "top": 8400,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01A9_#04_WIDE_POSITION_FROM_RIGHT_LINE",
+     "bbox": {
+      "width": 4800,
+      "top": 8700,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01AA_#04_WIDE_MB_CAMERA_YAW_ANGLE",
+     "bbox": {
+      "width": 4800,
+      "top": 9000,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01AB_#04_VEHICLE_SPPED(SMB)",
+     "bbox": {
+      "width": 4800,
+      "top": 9300,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01AC_#04_SMB_STATUES",
+     "bbox": {
+      "width": 4800,
+      "top": 9600,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01AD_#04_SIDE_MB_DUMPING_COEFFCIENT",
+     "bbox": {
+      "width": 4800,
+      "top": 9900,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01AE_#04_SIDE_MB_ANTI_OFFSET_ORDER_LEVEL",
+     "bbox": {
+      "width": 4800,
+      "top": 10200,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01AF_#04_bit7_SIDE_MB_MOVE_RECOGNTION_FOK_LAG",
+     "bbox": {
+      "width": 4800,
+      "top": 10500,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01AF_#04_bit5_THW_REACTION_SELECTION",
+     "bbox": {
+      "width": 4800,
+      "top": 10800,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$01AF_#04_bit4_TLC_REACTION_SELECTION",
+     "bbox": {
+      "width": 4800,
+      "top": 11100,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    }
+   ],
+   "presend": [],
+   "height": 12420,
+   "buttons": [],
+   "width": 7500,
+   "displays": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0180_#04_bit7_CVT_PERMISSION_FLG",
+     "request": "DataRead.DM$0180",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 300,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0180_#04_bit6_ADA_SW",
+     "request": "DataRead.DM$0180",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 600,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0180_#05_bit7_CVT_PERMISSION_FLG_Support_bit",
+     "request": "DataRead.DM$0180",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 900,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0180_#05_bit6_ADA_SW_Support_bit",
+     "request": "DataRead.DM$0180",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 1200,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0181_#04_ORDER_LEVEL(REL)",
+     "request": "DataRead.DM$0181_ORDER_LEVEL(REL)",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 1500,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0182_#04_ORDER_LEVEL(ABS)",
+     "request": "DataRead.DM$0182_ORDER_LEVEL(ABS)",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 1800,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0183_#04_SLIP_RATE",
+     "request": "DataRead.DM$0183_SLIP_RATE",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 2100,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0184_#04_bit7_ASA_PROPERTY",
+     "request": "DataRead.DM$0184_DCC_CHARACTERISTIC",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 2400,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0184_#04_bit6_ADA_PROPERTY",
+     "request": "DataRead.DM$0184_DCC_CHARACTERISTIC",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 2700,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0184_#05_bit7_ASA_PROPERTY_Support_bit",
+     "request": "DataRead.DM$0184_DCC_CHARACTERISTIC",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 3000,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0184_#05_bit6_ADA_PROPERTY_Support_bit",
+     "request": "DataRead.DM$0184_DCC_CHARACTERISTIC",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 3300,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01A0_#04_bit7_SIDE_MB_SYSTEM_ON_ INFOMATION",
+     "request": "DataRead.DM$01A0_SIDE_MB_LIST",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 3600,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01A0_#04_bit6_SIDE_MB_CAMERA_LINE_DETECTION_LEFT",
+     "request": "DataRead.DM$01A0_SIDE_MB_LIST",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 3900,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01A0_#04_bit5_SIDE_MB_CAMERA_LINE_DETECTION_RIGHT",
+     "request": "DataRead.DM$01A0_SIDE_MB_LIST",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 4200,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01A0_#04_bit4_YAW_JUDGE_SIG",
+     "request": "DataRead.DM$01A0_SIDE_MB_LIST",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 4500,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01A1_#04_bit7_WINKER_LEFT",
+     "request": "DataRead.DM$01A1_BLINKER_AND_TURN",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 4800,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01A1_#04_bit6_WINKER_RIGHT",
+     "request": "DataRead.DM$01A1_BLINKER_AND_TURN",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 5100,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01A1_#04_bit5-4_TURN_SW",
+     "request": "DataRead.DM$01A1_BLINKER_AND_TURN",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 5400,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01A2_#04_bit7_STA_FUNCTION_DEMAND_FLG",
+     "request": "DataRead.DM$01A2",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 5700,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01A2_#04_bit6_SMB_ACTIVE_FLAG",
+     "request": "DataRead.DM$01A2",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 6000,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01A2_#04_bit5_LDP_ACTIVE_FLAG",
+     "request": "DataRead.DM$01A2",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 6300,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01A2_#04_bit4_BSI_ACTIVE_FLAG",
+     "request": "DataRead.DM$01A2",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 6600,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01A3_#04_SIDE_MB_ROAD_RADIUS_OF_CURVATURE",
+     "request": "DataRead.DM$01A3_SIDE_MB_ROAD_RADIUS_OF_CURVATURE",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 6900,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01A4_#04_SIDE_MB_STEERING_ANGLE_ORDER_LEVEL",
+     "request": "DataRead.DM$01A4_SIDE_MB_STEERING_ANGLE_ORDER_LEVEL",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 7200,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01A5_#04_PINION_ANGLE",
+     "request": "DataRead.DM$01A5_PINION_ANGLE",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 7500,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01A6_#04_ANTI_MOTOR_ESTIMATE_TORQUE",
+     "request": "DataRead.DM$01A6_ANTI_MOTOR_ESTIMATE_TORQUE",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 7800,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01A7_#04_SIDE_MB_ANTI_ORDER_LEVEL",
+     "request": "DataRead.DM$01A7_SIDE_MB_ANTI_ORDER_LEVEL",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 8100,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01A8_#04_WIDE_POSITION_FROM_LEFT_LINE",
+     "request": "DataRead.DM$01A8_WIDE_POSITION_FROM_LEFT_LINE",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 8400,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01A9_#04_WIDE_POSITION_FROM_RIGHT_LINE",
+     "request": "DataRead.DM$01A9_WIDE_POSITION_FROM_RIGHT_LINE",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 8700,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01AA_#04_WIDE_MB_CAMERA_YAW_ANGLE",
+     "request": "DataRead.DM$01AA_WIDE_MB_CAMERA_YAW_ANGLE",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 9000,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01AB_#04_VEHICLE_SPPED(SMB)",
+     "request": "DataRead.DM$01AB_VEHICLE_SPPED(SMB)",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 9300,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01AC_#04_SMB_STATUES",
+     "request": "DataRead.DM$01AC_SMB_STATUES",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 9600,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01AD_#04_SIDE_MB_DUMPING_COEFFCIENT",
+     "request": "DataRead.DM$01AD_SIDE_MB_DUMPING_COEFFCIENT",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 9900,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01AE_#04_SIDE_MB_ANTI_OFFSET_ORDER_LEVEL",
+     "request": "DataRead.DM$01AE_SIDE_MB_ANTI_OFFSET_ORDER_LEVEL",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 10200,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01AF_#04_bit7_SIDE_MB_MOVE_RECOGNTION_FOK_LAG",
+     "request": "DataRead.DM$01AF_FLAG_LIST",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 10500,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01AF_#04_bit5_THW_REACTION_SELECTION",
+     "request": "DataRead.DM$01AF_FLAG_LIST",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 10800,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$01AF_#04_bit4_TLC_REACTION_SELECTION",
+     "request": "DataRead.DM$01AF_FLAG_LIST",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 11100,
+      "height": 240,
+      "left": 4995
+     }
+    }
+   ]
+  },
+  "Read_Data monitor 2201_4": {
+   "inputs": [],
+   "color": "rgb(128,255,255)",
+   "labels": [
+    {
+     "color": "rgb(255,128,255)",
+     "text": "READ",
+     "bbox": {
+      "width": 2322,
+      "top": 40,
+      "height": 250,
+      "left": 4998
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0150_VEHICLE_CONTROL_ORDER_LEVEL",
+     "bbox": {
+      "width": 4800,
+      "top": 300,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0151_BMC",
+     "bbox": {
+      "width": 4800,
+      "top": 600,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0152_#04_bit6_BMC_PERMISSION_FLG1",
+     "bbox": {
+      "width": 4800,
+      "top": 900,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0152_#04_bit5_BMC_PERMISSION_FLG2",
+     "bbox": {
+      "width": 4800,
+      "top": 1200,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0152_#05_bit6_BMC_PERMISSION_FLG2_Support_bit",
+     "bbox": {
+      "width": 4800,
+      "top": 1500,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0152_#05_bit5_BMC_PERMISSION_FLG1_Support_bit",
+     "bbox": {
+      "width": 4800,
+      "top": 1800,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0153_#04_bit7_BMC_BREAK_DEMAND",
+     "bbox": {
+      "width": 4800,
+      "top": 2100,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0153_#04_bit6_BMC_PROHIBITION_DEMAND",
+     "bbox": {
+      "width": 4800,
+      "top": 2400,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0153_#05_bit7_BMC_BREAK_DEMAND_Support_bit",
+     "bbox": {
+      "width": 4800,
+      "top": 2700,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0153_#05_bit6_BMC_PROHIBITION_DEMAND_Support_bit",
+     "bbox": {
+      "width": 4800,
+      "top": 3000,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0160_#04_MODE_SELECT_STATE",
+     "bbox": {
+      "width": 4800,
+      "top": 3300,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0161_bit7_LOGIN_PERMISSION_STATUES",
+     "bbox": {
+      "width": 4800,
+      "top": 3600,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0161_bit6_KEY_MOVE_ON/OFF_STATUES",
+     "bbox": {
+      "width": 4800,
+      "top": 3900,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0162_CURENT_USER_STATE",
+     "bbox": {
+      "width": 4800,
+      "top": 4200,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0163_PT_CHARACTERISTIC",
+     "bbox": {
+      "width": 4800,
+      "top": 4500,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0164_STRG_CHARACTERISTIC",
+     "bbox": {
+      "width": 4800,
+      "top": 4800,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0165_#04_SMB_CHARACTERISTIC",
+     "bbox": {
+      "width": 4800,
+      "top": 5100,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0166_ASA_CHARACTERISTIC",
+     "bbox": {
+      "width": 4800,
+      "top": 5400,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0167_#04_METER_MODE",
+     "bbox": {
+      "width": 4800,
+      "top": 5700,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0170_#04_bit6_ATC 1",
+     "bbox": {
+      "width": 4800,
+      "top": 6000,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0170_#04_bit5_ATC2",
+     "bbox": {
+      "width": 4800,
+      "top": 6300,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0170_#04_bit4_ATC 4",
+     "bbox": {
+      "width": 4800,
+      "top": 6600,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0171_#04_bit7-6_BRAKE_MAINT_LNDICATION_DEMAND",
+     "bbox": {
+      "width": 4800,
+      "top": 6900,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0172_#04_bit7_ATC 3",
+     "bbox": {
+      "width": 4800,
+      "top": 7200,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0173_#04_bit7-6_DCMC_TIRE_DIRECTION_OUTPUT(FL)",
+     "bbox": {
+      "width": 4800,
+      "top": 7500,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0173_#04_bit5-4_DCMC_TIRE_DIRECTION_OUTPUT(FR)",
+     "bbox": {
+      "width": 4800,
+      "top": 7800,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0174_#04_bit7-6_DCMC_TIRE_DIRECTION_OUTPUT(RL)",
+     "bbox": {
+      "width": 4800,
+      "top": 8100,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0174_#04_bit5-4_DCMC_TIRE_DIRECTION_OUTPUT(RR)",
+     "bbox": {
+      "width": 4800,
+      "top": 8400,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0175_#04_bit7-6_VEHICLE_DIRECTION_OUTPUT",
+     "bbox": {
+      "width": 4800,
+      "top": 8700,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0176_#04_bit7-5_INTERRUPT_DIRECTION_OUTPUT",
+     "bbox": {
+      "width": 4800,
+      "top": 9000,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0177_#04_bit7-6_TURNING_DIRECTION_OUTPUT",
+     "bbox": {
+      "width": 4800,
+      "top": 9300,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0178_#04_bit7-4_SMB_CONTROL_LEVEL",
+     "bbox": {
+      "width": 4800,
+      "top": 9600,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$0179_#04_bit7-6_SMB_STATE",
+     "bbox": {
+      "width": 4800,
+      "top": 9900,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$017A_#04_bit5_ASA_Disp_Demand",
+     "bbox": {
+      "width": 4800,
+      "top": 10200,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$017B_#04_bit6_SMB_Disp_Demand",
+     "bbox": {
+      "width": 4800,
+      "top": 10500,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$017C_#04_bit7_ADA_WORK",
+     "bbox": {
+      "width": 4800,
+      "top": 10800,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$017C_#04_bit6_YLE_WORK",
+     "bbox": {
+      "width": 4800,
+      "top": 11100,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$017C_#04_bit5_BSB_WORK",
+     "bbox": {
+      "width": 4800,
+      "top": 11400,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$017C_#04_bit4_BSB_Disp_demand",
+     "bbox": {
+      "width": 4800,
+      "top": 11700,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$017D_#04_bit7_HDC_Disp_cond",
+     "bbox": {
+      "width": 4800,
+      "top": 12000,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "$017D_#04_bit6-5_BRAKE_KEEP_Disp_cond",
+     "bbox": {
+      "width": 4800,
+      "top": 12300,
+      "height": 255,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Ms Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    }
+   ],
+   "presend": [],
+   "height": 13260,
+   "buttons": [],
+   "width": 7500,
+   "displays": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0150_VEHICLE_CONTROL_ORDER_LEVEL",
+     "request": "DataRead.DM$0150_VEHICLE_CONTROL_ORDER_LEVEL",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 300,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0151_BMC",
+     "request": "DataRead.DM$0151_VEHICLE_VIBRATION_CONTROL",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 600,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0152_#04_bit6_BMC_PERMISSION_FLG1",
+     "request": "DataRead.DM$0152_VEHICLE_VIBRATION_CONTROL_FLAG",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 900,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0152_#04_bit5_BMC_PERMISSION_FLG2",
+     "request": "DataRead.DM$0152_VEHICLE_VIBRATION_CONTROL_FLAG",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 1200,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0152_#05_bit6_BMC_PERMISSION_FLG2_Support_bit",
+     "request": "DataRead.DM$0152_VEHICLE_VIBRATION_CONTROL_FLAG",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 1500,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0152_#05_bit5_BMC_PERMISSION_FLG1_Support_bit",
+     "request": "DataRead.DM$0152_VEHICLE_VIBRATION_CONTROL_FLAG",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 1800,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0153_#04_bit7_BMC_BREAK_DEMAND",
+     "request": "DataRead.DM$0153_VEHICLE_VIBRATION_CONTROL_DEMAND",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 2100,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0153_#04_bit6_BMC_PROHIBITION_DEMAND",
+     "request": "DataRead.DM$0153_VEHICLE_VIBRATION_CONTROL_DEMAND",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 2400,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0153_#05_bit7_BMC_BREAK_DEMAND_Support_bit",
+     "request": "DataRead.DM$0153_VEHICLE_VIBRATION_CONTROL_DEMAND",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 2700,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0153_#05_bit6_BMC_PROHIBITION_DEMAND_Support_bit",
+     "request": "DataRead.DM$0153_VEHICLE_VIBRATION_CONTROL_DEMAND",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 3000,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0160_#04_MODE_SELECT_STATE",
+     "request": "DataRead.DM$0160_MODE_SELECT_STATE",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 3300,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0161_bit7_LOGIN_PERMISSION_STATUES",
+     "request": "DataRead.DM$0161",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 3600,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0161_bit6_KEY_MOVE_ON/OFF_STATUES",
+     "request": "DataRead.DM$0161",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 3900,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0162_CURENT_USER_STATE",
+     "request": "DataRead.DM$0162_CURENT_USER_STATE",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 4200,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0163_PT_CHARACTERISTIC",
+     "request": "DataRead.DM$0163_PT_CHARACTERISTIC",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 4500,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0164_STRG_CHARACTERISTIC",
+     "request": "DataRead.DM$0164_STRG_CHARACTERISTIC",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 4800,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0165_#04_SMB_CHARACTERISTIC",
+     "request": "DataRead.DM$0165_SMB_CHARACTERISTIC",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 5100,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0166_ASA_CHARACTERISTIC",
+     "request": "DataRead.DM$0166_ASA_CHARACTERISTIC",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 5400,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0167_#04_METER_MODE",
+     "request": "DataRead.DM$0167_METER_MODE",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 5700,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0170_#04_bit6_ATC 1",
+     "request": "DataRead.DM$0170_HDC_LNDICATION_DEMAND",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 6000,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0170_#04_bit5_ATC2",
+     "request": "DataRead.DM$0170_HDC_LNDICATION_DEMAND",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 6300,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0170_#04_bit4_ATC 4",
+     "request": "DataRead.DM$0170_HDC_LNDICATION_DEMAND",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 6600,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0171_#04_bit7-6_BRAKE_MAINT_LNDICATION_DEMAND",
+     "request": "DataRead.DM$0171_BRAKE_MAINT_LNDICATION_DEMAND",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 6900,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0172_#04_bit7_ATC 3",
+     "request": "DataRead.DM$0172_DCMC_LNDICATION_DEMAND",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 7200,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0173_#04_bit7-6_DCMC_TIRE_DIRECTION_OUTPUT(FL)",
+     "request": "DataRead.DM$0173_DCMC_TIRE_DIRECTION_OUTPUT(FL-FR)",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 7500,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0173_#04_bit5-4_DCMC_TIRE_DIRECTION_OUTPUT(FR)",
+     "request": "DataRead.DM$0173_DCMC_TIRE_DIRECTION_OUTPUT(FL-FR)",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 7800,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0174_#04_bit7-6_DCMC_TIRE_DIRECTION_OUTPUT(RL)",
+     "request": "DataRead.DM$0174_DCMC_TIRE_DIRECTION_OUTPUT(RL-RR)",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 8100,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0174_#04_bit5-4_DCMC_TIRE_DIRECTION_OUTPUT(RR)",
+     "request": "DataRead.DM$0174_DCMC_TIRE_DIRECTION_OUTPUT(RL-RR)",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 8400,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0175_#04_bit7-6_VEHICLE_DIRECTION_OUTPUT",
+     "request": "DataRead.DM$0175_VEHICLE_DIRECTION_OUTPUT",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 8700,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0176_#04_bit7-5_INTERRUPT_DIRECTION_OUTPUT",
+     "request": "DataRead.DM$0176_INTERRUPT_DIRECTION_OUTPUT",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 9000,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0177_#04_bit7-6_TURNING_DIRECTION_OUTPUT",
+     "request": "DataRead.DM$0177_TURNING_DIRECTION_OUTPUT",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 9300,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0178_#04_bit7-4_SMB_CONTROL_LEVEL",
+     "request": "DataRead.DM$0178_SMB_CONTROL_LEVEL",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 9600,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$0179_#04_bit7-6_SMB_STATE",
+     "request": "DataRead.DM$0179_SMB_STATE",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 9900,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$017A_#04_bit5_ASA_Disp_Demand",
+     "request": "DataRead.DM$017A",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 10200,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$017B_#04_bit6_SMB_Disp_Demand",
+     "request": "DataRead.DM$017B",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 10500,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$017C_#04_bit7_ADA_WORK",
+     "request": "DataRead.DM$017C",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 10800,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$017C_#04_bit6_YLE_WORK",
+     "request": "DataRead.DM$017C",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 11100,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$017C_#04_bit5_BSB_WORK",
+     "request": "DataRead.DM$017C",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 11400,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$017C_#04_bit4_BSB_Disp_demand",
+     "request": "DataRead.DM$017C",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 11700,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$017D_#04_bit7_HDC_Disp_cond",
+     "request": "DataRead.DM$017D",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 12000,
+      "height": 240,
+      "left": 4995
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead$017D_#04_bit6-5_BRAKE_KEEP_Disp_cond",
+     "request": "DataRead.DM$017D",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2300,
+      "top": 12300,
+      "height": 240,
+      "left": 4995
+     }
+    }
+   ]
+  }
+ },
+ "categories": {
+  "Data": [
+   "Read_Data monitor 2201_1",
+   "Read_Data monitor 2201_2",
+   "Read_Data monitor 2201_3",
+   "Read_Data monitor 2201_4",
+   "Read_Data monitor 2201_5",
+   "Read_Data monitor 2202",
+   "Write-Read",
+   "Read_Data monitor 2201_6"
+  ]
+ }
+}

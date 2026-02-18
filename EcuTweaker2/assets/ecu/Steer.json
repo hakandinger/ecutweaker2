@@ -1,0 +1,6703 @@
+{
+"obd": {
+	"baudrate": 10400, 
+	"protocol": "CAN", 
+	"recv_id": "762", 
+	"funcname": "EPS", 
+	"funcaddr": "04", 
+	"send_id": "742"
+}, 
+"devices": [
+	{
+	"dtc": 22023, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "EEPROM failure"
+	}, 
+	{
+	"dtc": 22025, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "Vehicle speed failure"
+	}, 
+	{
+	"dtc": 20803, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "Steering sensor failure"
+	}, 
+	{
+	"dtc": 22018, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "No tuning set"
+	}, 
+	{
+	"dtc": 53264, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "CONTROL UNIT(CAN)"
+	}, 
+	{
+	"dtc": 22032, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "Engine signal failure"
+	}, 
+	{
+	"dtc": 22020, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "Torque sensor failure"
+	}, 
+	{
+	"dtc": 22024, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "Control unit failure"
+	}, 
+	{
+	"dtc": 22022, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "Motor failure"
+	}, 
+	{
+	"dtc": 55665, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "SONAR failure"
+	}, 
+	{
+	"dtc": 53248, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "CAN_communication_failure"
+	}, 
+	{
+	"dtc": 55664, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "AVM failure"
+	}, 
+	{
+	"dtc": 22017, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "Battery voltage failure"
+	}
+], 
+"ecuname": "EPS_T32", 
+"autoidents": [], 
+"endian": "Big", 
+"requests": [
+	{
+	"name": "[Read ECU info]___NissanIdentification", 
+	"replybytes": "6183000000000000000000000000000000000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"N.DiagnosticIdentificationCode": {
+		"firstbyte": 8
+		}, 
+		"N.SparePartsNumberSuffix": {
+		"firstbyte": 8
+		}, 
+		"N1.SupplierNumber2": {
+		"firstbyte": 10
+		}, 
+		"N.ManufacturerIdentificationCode": {
+		"firstbyte": 26
+		}, 
+		"N.CalibrationNumber": {
+		"firstbyte": 21
+		}, 
+		"N.SparePartsNumber": {
+		"firstbyte": 3
+		}, 
+		"N.OtherSystemFeatures": {
+		"firstbyte": 23
+		}, 
+		"N.EditionNumber": {
+		"firstbyte": 19
+		}, 
+		"N.HardwareNumber": {
+		"firstbyte": 12
+		}, 
+		"N.SoftwareNumber": {
+		"firstbyte": 17
+		}, 
+		"N1.SupplierNumber1": {
+		"firstbyte": 9
+		}
+	}, 
+	"minbytes": 26, 
+	"sentbytes": "2183"
+	}, 
+	{
+	"name": "Supported Lid for WDBLID(40)", 
+	"replybytes": "7B4000000000", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"LID$14": {
+		"bitoffset": 3, 
+		"firstbyte": 5
+		}, 
+		"LID$15": {
+		"bitoffset": 4, 
+		"firstbyte": 5
+		}, 
+		"LID$16": {
+		"bitoffset": 5, 
+		"firstbyte": 5
+		}, 
+		"LID$17": {
+		"bitoffset": 6, 
+		"firstbyte": 5
+		}, 
+		"LID$10": {
+		"bitoffset": 7, 
+		"firstbyte": 4
+		}, 
+		"LID$11": {
+		"firstbyte": 5
+		}, 
+		"LID$12": {
+		"bitoffset": 1, 
+		"firstbyte": 5
+		}, 
+		"LID$13": {
+		"bitoffset": 2, 
+		"firstbyte": 5
+		}, 
+		"LID$18": {
+		"bitoffset": 7, 
+		"firstbyte": 5
+		}, 
+		"LID$19": {
+		"firstbyte": 6
+		}, 
+		"LID$0C": {
+		"bitoffset": 3, 
+		"firstbyte": 4
+		}, 
+		"LID$0B": {
+		"bitoffset": 2, 
+		"firstbyte": 4
+		}, 
+		"LID$0A": {
+		"bitoffset": 1, 
+		"firstbyte": 4
+		}, 
+		"LID$0F": {
+		"bitoffset": 6, 
+		"firstbyte": 4
+		}, 
+		"LID$0E": {
+		"bitoffset": 5, 
+		"firstbyte": 4
+		}, 
+		"LID$0D": {
+		"bitoffset": 4, 
+		"firstbyte": 4
+		}, 
+		"LID$03": {
+		"bitoffset": 2, 
+		"firstbyte": 3
+		}, 
+		"LID$02": {
+		"bitoffset": 1, 
+		"firstbyte": 3
+		}, 
+		"LID$01": {
+		"firstbyte": 3
+		}, 
+		"LID$07": {
+		"bitoffset": 6, 
+		"firstbyte": 3
+		}, 
+		"LID$06": {
+		"bitoffset": 5, 
+		"firstbyte": 3
+		}, 
+		"LID$05": {
+		"bitoffset": 4, 
+		"firstbyte": 3
+		}, 
+		"LID$04": {
+		"bitoffset": 3, 
+		"firstbyte": 3
+		}, 
+		"LID$09": {
+		"firstbyte": 4
+		}, 
+		"LID$08": {
+		"bitoffset": 7, 
+		"firstbyte": 3
+		}, 
+		"LID$1D": {
+		"bitoffset": 4, 
+		"firstbyte": 6
+		}, 
+		"LID$1E": {
+		"bitoffset": 5, 
+		"firstbyte": 6
+		}, 
+		"LID$1F": {
+		"bitoffset": 6, 
+		"firstbyte": 6
+		}, 
+		"LID$1A": {
+		"bitoffset": 1, 
+		"firstbyte": 6
+		}, 
+		"LID$1B": {
+		"bitoffset": 2, 
+		"firstbyte": 6
+		}, 
+		"LID$1C": {
+		"bitoffset": 3, 
+		"firstbyte": 6
+		}, 
+		"LID$20": {
+		"bitoffset": 7, 
+		"firstbyte": 6
+		}
+	}, 
+	"minbytes": 6, 
+	"sentbytes": "3B40"
+	}, 
+	{
+	"name": "Supported Lid for SRBLID(20)", 
+	"replybytes": "710000000000", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"LID$14": {
+		"bitoffset": 3, 
+		"firstbyte": 5
+		}, 
+		"LID$15": {
+		"bitoffset": 4, 
+		"firstbyte": 5
+		}, 
+		"LID$16": {
+		"bitoffset": 5, 
+		"firstbyte": 5
+		}, 
+		"LID$17": {
+		"bitoffset": 6, 
+		"firstbyte": 5
+		}, 
+		"LID$10": {
+		"bitoffset": 7, 
+		"firstbyte": 4
+		}, 
+		"LID$11": {
+		"firstbyte": 5
+		}, 
+		"LID$12": {
+		"bitoffset": 1, 
+		"firstbyte": 5
+		}, 
+		"LID$13": {
+		"bitoffset": 2, 
+		"firstbyte": 5
+		}, 
+		"LID$18": {
+		"bitoffset": 7, 
+		"firstbyte": 5
+		}, 
+		"LID$19": {
+		"firstbyte": 6
+		}, 
+		"LID$0C": {
+		"bitoffset": 3, 
+		"firstbyte": 4
+		}, 
+		"LID$0B": {
+		"bitoffset": 2, 
+		"firstbyte": 4
+		}, 
+		"LID$0A": {
+		"bitoffset": 1, 
+		"firstbyte": 4
+		}, 
+		"LID$0F": {
+		"bitoffset": 6, 
+		"firstbyte": 4
+		}, 
+		"LID$0E": {
+		"bitoffset": 5, 
+		"firstbyte": 4
+		}, 
+		"LID$0D": {
+		"bitoffset": 4, 
+		"firstbyte": 4
+		}, 
+		"LID$03": {
+		"bitoffset": 2, 
+		"firstbyte": 3
+		}, 
+		"LID$02": {
+		"bitoffset": 1, 
+		"firstbyte": 3
+		}, 
+		"LID$01": {
+		"firstbyte": 3
+		}, 
+		"LID$07": {
+		"bitoffset": 6, 
+		"firstbyte": 3
+		}, 
+		"LID$06": {
+		"bitoffset": 5, 
+		"firstbyte": 3
+		}, 
+		"LID$05": {
+		"bitoffset": 4, 
+		"firstbyte": 3
+		}, 
+		"LID$04": {
+		"bitoffset": 3, 
+		"firstbyte": 3
+		}, 
+		"LID$09": {
+		"firstbyte": 4
+		}, 
+		"LID$08": {
+		"bitoffset": 7, 
+		"firstbyte": 3
+		}, 
+		"LID$1D": {
+		"bitoffset": 4, 
+		"firstbyte": 6
+		}, 
+		"LID$1E": {
+		"bitoffset": 5, 
+		"firstbyte": 6
+		}, 
+		"LID$1F": {
+		"bitoffset": 6, 
+		"firstbyte": 6
+		}, 
+		"LID$1A": {
+		"bitoffset": 1, 
+		"firstbyte": 6
+		}, 
+		"LID$1B": {
+		"bitoffset": 2, 
+		"firstbyte": 6
+		}, 
+		"LID$1C": {
+		"bitoffset": 3, 
+		"firstbyte": 6
+		}, 
+		"LID$20": {
+		"bitoffset": 7, 
+		"firstbyte": 6
+		}
+	}, 
+	"minbytes": 6, 
+	"sentbytes": "3120"
+	}, 
+	{
+	"name": "DataWrite.EPS tunning(SelectValue)", 
+	"replybytes": "7B02", 
+	"deny_sds": [], 
+	"sendbyte_dataitems": {
+		"Config.Data._$02_EPS tunning number": {
+		"firstbyte": 3
+		}
+	}, 
+	"minbytes": 2, 
+	"sentbytes": "3B0200"
+	}, 
+	{
+	"name": "Supported Lid for SPRBLID(20)", 
+	"replybytes": "720000000000", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"LID$14": {
+		"bitoffset": 3, 
+		"firstbyte": 5
+		}, 
+		"LID$15": {
+		"bitoffset": 4, 
+		"firstbyte": 5
+		}, 
+		"LID$16": {
+		"bitoffset": 5, 
+		"firstbyte": 5
+		}, 
+		"LID$17": {
+		"bitoffset": 6, 
+		"firstbyte": 5
+		}, 
+		"LID$10": {
+		"bitoffset": 7, 
+		"firstbyte": 4
+		}, 
+		"LID$11": {
+		"firstbyte": 5
+		}, 
+		"LID$12": {
+		"bitoffset": 1, 
+		"firstbyte": 5
+		}, 
+		"LID$13": {
+		"bitoffset": 2, 
+		"firstbyte": 5
+		}, 
+		"LID$18": {
+		"bitoffset": 7, 
+		"firstbyte": 5
+		}, 
+		"LID$19": {
+		"firstbyte": 6
+		}, 
+		"LID$0C": {
+		"bitoffset": 3, 
+		"firstbyte": 4
+		}, 
+		"LID$0B": {
+		"bitoffset": 2, 
+		"firstbyte": 4
+		}, 
+		"LID$0A": {
+		"bitoffset": 1, 
+		"firstbyte": 4
+		}, 
+		"LID$0F": {
+		"bitoffset": 6, 
+		"firstbyte": 4
+		}, 
+		"LID$0E": {
+		"bitoffset": 5, 
+		"firstbyte": 4
+		}, 
+		"LID$0D": {
+		"bitoffset": 4, 
+		"firstbyte": 4
+		}, 
+		"LID$03": {
+		"bitoffset": 2, 
+		"firstbyte": 3
+		}, 
+		"LID$02": {
+		"bitoffset": 1, 
+		"firstbyte": 3
+		}, 
+		"LID$01": {
+		"firstbyte": 3
+		}, 
+		"LID$07": {
+		"bitoffset": 6, 
+		"firstbyte": 3
+		}, 
+		"LID$06": {
+		"bitoffset": 5, 
+		"firstbyte": 3
+		}, 
+		"LID$05": {
+		"bitoffset": 4, 
+		"firstbyte": 3
+		}, 
+		"LID$04": {
+		"bitoffset": 3, 
+		"firstbyte": 3
+		}, 
+		"LID$09": {
+		"firstbyte": 4
+		}, 
+		"LID$08": {
+		"bitoffset": 7, 
+		"firstbyte": 3
+		}, 
+		"LID$1D": {
+		"bitoffset": 4, 
+		"firstbyte": 6
+		}, 
+		"LID$1E": {
+		"bitoffset": 5, 
+		"firstbyte": 6
+		}, 
+		"LID$1F": {
+		"bitoffset": 6, 
+		"firstbyte": 6
+		}, 
+		"LID$1A": {
+		"bitoffset": 1, 
+		"firstbyte": 6
+		}, 
+		"LID$1B": {
+		"bitoffset": 2, 
+		"firstbyte": 6
+		}, 
+		"LID$1C": {
+		"bitoffset": 3, 
+		"firstbyte": 6
+		}, 
+		"LID$20": {
+		"bitoffset": 7, 
+		"firstbyte": 6
+		}
+	}, 
+	"minbytes": 6, 
+	"sentbytes": "3220"
+	}, 
+	{
+	"name": "OutputControl", 
+	"replybytes": "700000", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"OutputControlStatus": {
+		"firstbyte": 3
+		}
+	}, 
+	"sendbyte_dataitems": {
+		"Levling Test.param": {
+		"firstbyte": 4
+		}, 
+		"Low Beam Test Left.param": {
+		"firstbyte": 4
+		}, 
+		"OutputTemporaryControlList": {
+		"firstbyte": 2
+		}, 
+		"OutputControlCommand": {
+		"firstbyte": 3
+		}, 
+		"Low Beam Test Right.param": {
+		"firstbyte": 4
+		}, 
+		"OutputPermanentControlList": {
+		"firstbyte": 2
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "30000000"
+	}, 
+	{
+	"name": "Supported Lid for IOCBLID(60)", 
+	"replybytes": "700000000000", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"LID$14": {
+		"bitoffset": 3, 
+		"firstbyte": 5
+		}, 
+		"LID$15": {
+		"bitoffset": 4, 
+		"firstbyte": 5
+		}, 
+		"LID$16": {
+		"bitoffset": 5, 
+		"firstbyte": 5
+		}, 
+		"LID$17": {
+		"bitoffset": 6, 
+		"firstbyte": 5
+		}, 
+		"LID$10": {
+		"bitoffset": 7, 
+		"firstbyte": 4
+		}, 
+		"LID$11": {
+		"firstbyte": 5
+		}, 
+		"LID$12": {
+		"bitoffset": 1, 
+		"firstbyte": 5
+		}, 
+		"LID$13": {
+		"bitoffset": 2, 
+		"firstbyte": 5
+		}, 
+		"LID$18": {
+		"bitoffset": 7, 
+		"firstbyte": 5
+		}, 
+		"LID$19": {
+		"firstbyte": 6
+		}, 
+		"LID$0C": {
+		"bitoffset": 3, 
+		"firstbyte": 4
+		}, 
+		"LID$0B": {
+		"bitoffset": 2, 
+		"firstbyte": 4
+		}, 
+		"LID$0A": {
+		"bitoffset": 1, 
+		"firstbyte": 4
+		}, 
+		"LID$0F": {
+		"bitoffset": 6, 
+		"firstbyte": 4
+		}, 
+		"LID$0E": {
+		"bitoffset": 5, 
+		"firstbyte": 4
+		}, 
+		"LID$0D": {
+		"bitoffset": 4, 
+		"firstbyte": 4
+		}, 
+		"LID$03": {
+		"bitoffset": 2, 
+		"firstbyte": 3
+		}, 
+		"LID$02": {
+		"bitoffset": 1, 
+		"firstbyte": 3
+		}, 
+		"LID$01": {
+		"firstbyte": 3
+		}, 
+		"LID$07": {
+		"bitoffset": 6, 
+		"firstbyte": 3
+		}, 
+		"LID$06": {
+		"bitoffset": 5, 
+		"firstbyte": 3
+		}, 
+		"LID$05": {
+		"bitoffset": 4, 
+		"firstbyte": 3
+		}, 
+		"LID$04": {
+		"bitoffset": 3, 
+		"firstbyte": 3
+		}, 
+		"LID$09": {
+		"firstbyte": 4
+		}, 
+		"LID$08": {
+		"bitoffset": 7, 
+		"firstbyte": 3
+		}, 
+		"LID$1D": {
+		"bitoffset": 4, 
+		"firstbyte": 6
+		}, 
+		"LID$1E": {
+		"bitoffset": 5, 
+		"firstbyte": 6
+		}, 
+		"LID$1F": {
+		"bitoffset": 6, 
+		"firstbyte": 6
+		}, 
+		"LID$1A": {
+		"bitoffset": 1, 
+		"firstbyte": 6
+		}, 
+		"LID$1B": {
+		"bitoffset": 2, 
+		"firstbyte": 6
+		}, 
+		"LID$1C": {
+		"bitoffset": 3, 
+		"firstbyte": 6
+		}, 
+		"LID$20": {
+		"bitoffset": 7, 
+		"firstbyte": 6
+		}
+	}, 
+	"minbytes": 6, 
+	"sentbytes": "3060"
+	}, 
+	{
+	"name": "Supported Lid for RDBLID(00)", 
+	"replybytes": "610000000000", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"LID$14": {
+		"bitoffset": 3, 
+		"firstbyte": 5
+		}, 
+		"LID$15": {
+		"bitoffset": 4, 
+		"firstbyte": 5
+		}, 
+		"LID$16": {
+		"bitoffset": 5, 
+		"firstbyte": 5
+		}, 
+		"LID$17": {
+		"bitoffset": 6, 
+		"firstbyte": 5
+		}, 
+		"LID$10": {
+		"bitoffset": 7, 
+		"firstbyte": 4
+		}, 
+		"LID$11": {
+		"firstbyte": 5
+		}, 
+		"LID$12": {
+		"bitoffset": 1, 
+		"firstbyte": 5
+		}, 
+		"LID$13": {
+		"bitoffset": 2, 
+		"firstbyte": 5
+		}, 
+		"LID$18": {
+		"bitoffset": 7, 
+		"firstbyte": 5
+		}, 
+		"LID$19": {
+		"firstbyte": 6
+		}, 
+		"LID$0C": {
+		"bitoffset": 3, 
+		"firstbyte": 4
+		}, 
+		"LID$0B": {
+		"bitoffset": 2, 
+		"firstbyte": 4
+		}, 
+		"LID$0A": {
+		"bitoffset": 1, 
+		"firstbyte": 4
+		}, 
+		"LID$0F": {
+		"bitoffset": 6, 
+		"firstbyte": 4
+		}, 
+		"LID$0E": {
+		"bitoffset": 5, 
+		"firstbyte": 4
+		}, 
+		"LID$0D": {
+		"bitoffset": 4, 
+		"firstbyte": 4
+		}, 
+		"LID$03": {
+		"bitoffset": 2, 
+		"firstbyte": 3
+		}, 
+		"LID$02": {
+		"bitoffset": 1, 
+		"firstbyte": 3
+		}, 
+		"LID$01": {
+		"firstbyte": 3
+		}, 
+		"LID$07": {
+		"bitoffset": 6, 
+		"firstbyte": 3
+		}, 
+		"LID$06": {
+		"bitoffset": 5, 
+		"firstbyte": 3
+		}, 
+		"LID$05": {
+		"bitoffset": 4, 
+		"firstbyte": 3
+		}, 
+		"LID$04": {
+		"bitoffset": 3, 
+		"firstbyte": 3
+		}, 
+		"LID$09": {
+		"firstbyte": 4
+		}, 
+		"LID$08": {
+		"bitoffset": 7, 
+		"firstbyte": 3
+		}, 
+		"LID$1D": {
+		"bitoffset": 4, 
+		"firstbyte": 6
+		}, 
+		"LID$1E": {
+		"bitoffset": 5, 
+		"firstbyte": 6
+		}, 
+		"LID$1F": {
+		"bitoffset": 6, 
+		"firstbyte": 6
+		}, 
+		"LID$1A": {
+		"bitoffset": 1, 
+		"firstbyte": 6
+		}, 
+		"LID$1B": {
+		"bitoffset": 2, 
+		"firstbyte": 6
+		}, 
+		"LID$1C": {
+		"bitoffset": 3, 
+		"firstbyte": 6
+		}, 
+		"LID$20": {
+		"bitoffset": 7, 
+		"firstbyte": 6
+		}
+	}, 
+	"minbytes": 6, 
+	"sentbytes": "2100"
+	}, 
+	{
+	"name": "Supported Lid for WDBLID(60)", 
+	"replybytes": "7B6000000000", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"LID$14": {
+		"bitoffset": 3, 
+		"firstbyte": 5
+		}, 
+		"LID$15": {
+		"bitoffset": 4, 
+		"firstbyte": 5
+		}, 
+		"LID$16": {
+		"bitoffset": 5, 
+		"firstbyte": 5
+		}, 
+		"LID$17": {
+		"bitoffset": 6, 
+		"firstbyte": 5
+		}, 
+		"LID$10": {
+		"bitoffset": 7, 
+		"firstbyte": 4
+		}, 
+		"LID$11": {
+		"firstbyte": 5
+		}, 
+		"LID$12": {
+		"bitoffset": 1, 
+		"firstbyte": 5
+		}, 
+		"LID$13": {
+		"bitoffset": 2, 
+		"firstbyte": 5
+		}, 
+		"LID$18": {
+		"bitoffset": 7, 
+		"firstbyte": 5
+		}, 
+		"LID$19": {
+		"firstbyte": 6
+		}, 
+		"LID$0C": {
+		"bitoffset": 3, 
+		"firstbyte": 4
+		}, 
+		"LID$0B": {
+		"bitoffset": 2, 
+		"firstbyte": 4
+		}, 
+		"LID$0A": {
+		"bitoffset": 1, 
+		"firstbyte": 4
+		}, 
+		"LID$0F": {
+		"bitoffset": 6, 
+		"firstbyte": 4
+		}, 
+		"LID$0E": {
+		"bitoffset": 5, 
+		"firstbyte": 4
+		}, 
+		"LID$0D": {
+		"bitoffset": 4, 
+		"firstbyte": 4
+		}, 
+		"LID$03": {
+		"bitoffset": 2, 
+		"firstbyte": 3
+		}, 
+		"LID$02": {
+		"bitoffset": 1, 
+		"firstbyte": 3
+		}, 
+		"LID$01": {
+		"firstbyte": 3
+		}, 
+		"LID$07": {
+		"bitoffset": 6, 
+		"firstbyte": 3
+		}, 
+		"LID$06": {
+		"bitoffset": 5, 
+		"firstbyte": 3
+		}, 
+		"LID$05": {
+		"bitoffset": 4, 
+		"firstbyte": 3
+		}, 
+		"LID$04": {
+		"bitoffset": 3, 
+		"firstbyte": 3
+		}, 
+		"LID$09": {
+		"firstbyte": 4
+		}, 
+		"LID$08": {
+		"bitoffset": 7, 
+		"firstbyte": 3
+		}, 
+		"LID$1D": {
+		"bitoffset": 4, 
+		"firstbyte": 6
+		}, 
+		"LID$1E": {
+		"bitoffset": 5, 
+		"firstbyte": 6
+		}, 
+		"LID$1F": {
+		"bitoffset": 6, 
+		"firstbyte": 6
+		}, 
+		"LID$1A": {
+		"bitoffset": 1, 
+		"firstbyte": 6
+		}, 
+		"LID$1B": {
+		"bitoffset": 2, 
+		"firstbyte": 6
+		}, 
+		"LID$1C": {
+		"bitoffset": 3, 
+		"firstbyte": 6
+		}, 
+		"LID$20": {
+		"bitoffset": 7, 
+		"firstbyte": 6
+		}
+	}, 
+	"minbytes": 6, 
+	"sentbytes": "3B60"
+	}, 
+	{
+	"name": "CAN DIAG SUPPORT MNTR.can", 
+	"replybytes": "6182000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"ARS.r.CRRNT.vcan": {
+		"firstbyte": 28
+		}, 
+		"ONDULEUR.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 22
+		}, 
+		"ETC.r.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 29
+		}, 
+		"ECM.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 7
+		}, 
+		"BCM/SEC.n.CRRNT.vcan": {
+		"firstbyte": 10
+		}, 
+		"ETC.r.CRRNT.vcan": {
+		"firstbyte": 29
+		}, 
+		"EPS.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 24
+		}, 
+		"LPG.r.CRRNT.vcan": {
+		"firstbyte": 18
+		}, 
+		"ISG.r.CRRNT.vcan": {
+		"firstbyte": 23
+		}, 
+		"BCM/SEC.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 10
+		}, 
+		"I-CON.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 74
+		}, 
+		"AB-SRS.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 11
+		}, 
+		"BCM/SEC.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 10
+		}, 
+		"LPG.r.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 18
+		}, 
+		"EPS.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 24
+		}, 
+		"SYP.r.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 17
+		}, 
+		"I-CON.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 74
+		}, 
+		"ITM.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 16
+		}, 
+		"TIRE-P.n.CRRNT.vcan": {
+		"firstbyte": 27
+		}, 
+		"AVM.n.CRRNT.vcan": {
+		"firstbyte": 89
+		}, 
+		"TRANSMIT DIAG.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 6
+		}, 
+		"SONAR.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 47
+		}, 
+		"MUX messaging reference.-.-.vcan": {
+		"firstbyte": 3
+		}, 
+		"HVAC.n.CRRNT.vcan": {
+		"firstbyte": 14
+		}, 
+		"TIRE-P DISP.r.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 30
+		}, 
+		"ARS.r.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 28
+		}, 
+		"VDC/TCS/ABS.n.CRRNT.vcan": {
+		"firstbyte": 8
+		}, 
+		"ONDULEUR.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 22
+		}, 
+		"EPS.n.CRRNT.vcan": {
+		"firstbyte": 24
+		}, 
+		"ISG.r.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 23
+		}, 
+		"BUSOFF DIAG.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 5
+		}, 
+		"SCU.r.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 25
+		}, 
+		"IPDM E/R.n.CRRNT.vcan": {
+		"firstbyte": 26
+		}, 
+		"HCM.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 21
+		}, 
+		"LPG.r.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 18
+		}, 
+		"SYP.r.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 17
+		}, 
+		"BUSOFF DIAG.n.CRRNT.vcan": {
+		"firstbyte": 5
+		}, 
+		"HCM.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 21
+		}, 
+		"SCU.r.CRRNT.vcan": {
+		"firstbyte": 25
+		}, 
+		"ARS.r.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 28
+		}, 
+		"ITM.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 16
+		}, 
+		"IPDM E/R.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 26
+		}, 
+		"ETC.r.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 29
+		}, 
+		"HCM.n.CRRNT.vcan": {
+		"firstbyte": 21
+		}, 
+		"STRG.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 20
+		}, 
+		"HVAC.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 14
+		}, 
+		"APB.r.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 19
+		}, 
+		"HVAC.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 14
+		}, 
+		"AVM.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 89
+		}, 
+		"SONAR.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 47
+		}, 
+		"APB.r.CRRNT.vcan": {
+		"firstbyte": 19
+		}, 
+		"VDC/TCS/ABS.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 8
+		}, 
+		"TRANSMIT DIAG.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 6
+		}, 
+		"APB.r.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 19
+		}, 
+		"STRG.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 20
+		}, 
+		"AT/CVT.n.CRRNT.vcan": {
+		"firstbyte": 15
+		}, 
+		"TIRE-P.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 27
+		}, 
+		"TIRE-P DISP.r.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 30
+		}, 
+		"IPDM E/R.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 26
+		}, 
+		"BUSOFF DIAG.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 5
+		}, 
+		"ESCL.r.CRRNT.vcan": {
+		"firstbyte": 12
+		}, 
+		"ONDULEUR.n.CRRNT.vcan": {
+		"firstbyte": 22
+		}, 
+		"AT/CVT.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 15
+		}, 
+		"SYP.r.CRRNT.vcan": {
+		"firstbyte": 17
+		}, 
+		"ISG.r.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 23
+		}, 
+		"I-CON.n.CRRNT.vcan": {
+		"firstbyte": 74
+		}, 
+		"SONAR.n.CRRNT.vcan": {
+		"firstbyte": 47
+		}, 
+		"ITM.n.CRRNT.vcan": {
+		"firstbyte": 16
+		}, 
+		"ACC.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 13
+		}, 
+		"TRANSMIT DIAG.n.CRRNT.vcan": {
+		"firstbyte": 6
+		}, 
+		"VDC/TCS/ABS.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 8
+		}, 
+		"TIRE-P.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 27
+		}, 
+		"TIRE-P DISP.r.CRRNT.vcan": {
+		"firstbyte": 30
+		}, 
+		"ECM.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 7
+		}, 
+		"STRG.n.CRRNT.vcan": {
+		"firstbyte": 20
+		}, 
+		"AVM.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 89
+		}, 
+		"ACC.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 13
+		}, 
+		"ESCL.r.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 12
+		}, 
+		"METER/M&A.n.CRRNT.vcan": {
+		"firstbyte": 9
+		}, 
+		"AB-SRS.n.CRRNT.vcan": {
+		"firstbyte": 11
+		}, 
+		"ECM.n.CRRNT.vcan": {
+		"firstbyte": 7
+		}, 
+		"AT/CVT.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 15
+		}, 
+		"AB-SRS.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 11
+		}, 
+		"METER/M&A.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 9
+		}, 
+		"METER/M&A.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 9
+		}, 
+		"SCU.r.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 25
+		}, 
+		"ACC.n.CRRNT.vcan": {
+		"firstbyte": 13
+		}, 
+		"ESCL.r.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 12
+		}
+	}, 
+	"minbytes": 89, 
+	"sentbytes": "2182"
+	}, 
+	{
+	"name": "[Read Data]___DataRead.DataMonitor", 
+	"replybytes": "610100000000000000000000000000000000000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"LID#01_#21_bit432_StopAutoPhase": {
+		"bitoffset": 3, 
+		"firstbyte": 21
+		}, 
+		"LID#01_#23_bit4_EPS_State_Feedback": {
+		"bitoffset": 3, 
+		"firstbyte": 23
+		}, 
+		"LID#01_#14_Derating level": {
+		"firstbyte": 14
+		}, 
+		"LID#01_#22_1_I-CON_MODE_STATUS": {
+		"firstbyte": 22
+		}, 
+		"LID#01_#08#09_Reserve": {
+		"firstbyte": 8
+		}, 
+		"LID#01_#26#27_EPS_Control_Current": {
+		"firstbyte": 26
+		}, 
+		"LID#01_#17_bit7_Fault indicator": {
+		"firstbyte": 17
+		}, 
+		"LID#01_#05_Driver Torque(Sensor value)": {
+		"firstbyte": 5
+		}, 
+		"LID#01_#23_bit21_IPA_Status": {
+		"bitoffset": 5, 
+		"firstbyte": 23
+		}, 
+		"LID#01_#21-1(bit7)_Torque_Flag": {
+		"firstbyte": 21
+		}, 
+		"LID#01_#10_Motor current(Measured value)": {
+		"firstbyte": 10
+		}, 
+		"LID#01_#17_bit54_Engine status": {
+		"bitoffset": 2, 
+		"firstbyte": 17
+		}, 
+		"LID#01_#12_TORQUE OF MOTOR": {
+		"firstbyte": 12
+		}, 
+		"LID#01_#23_bit765_IPA_Inhibit": {
+		"firstbyte": 23
+		}, 
+		"LID#01_#20_bit76_EPS_Steering Mode": {
+		"firstbyte": 20
+		}, 
+		"LID#01_#11_Motor current(Targetted value)": {
+		"firstbyte": 11
+		}, 
+		"LID#01_#15#16_Vehicle speed(for control)": {
+		"firstbyte": 15
+		}, 
+		"LID#01_#20_bit54_Setting Change Request For EPS": {
+		"bitoffset": 2, 
+		"firstbyte": 20
+		}, 
+		"LID#01_#06#07_Reserve": {
+		"firstbyte": 6
+		}, 
+		"LID#01_#03#04_Battery voltage": {
+		"firstbyte": 3
+		}, 
+		"LID#01_#23_bit3_ISS_Inhibit_EPS": {
+		"bitoffset": 4, 
+		"firstbyte": 23
+		}, 
+		"LID#01_#23_bit0_IPA_FAIL": {
+		"bitoffset": 7, 
+		"firstbyte": 23
+		}, 
+		"LID#01_#13_ECU temperature(Sensor value)": {
+		"firstbyte": 13
+		}, 
+		"LID#01_#21_bit65_EPS assist authorize": {
+		"bitoffset": 1, 
+		"firstbyte": 21
+		}, 
+		"LID#01_#24#25_IPA_Target_Current": {
+		"firstbyte": 24
+		}, 
+		"LID#01_#17_bit54_EPS_StartActivationRequest(DiagID:44H only)": {
+		"bitoffset": 2, 
+		"firstbyte": 17
+		}
+	}, 
+	"minbytes": 27, 
+	"sentbytes": "2101"
+	}, 
+	{
+	"name": "StartDiagnosticSession", 
+	"replybytes": "5000", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"sendbyte_dataitems": {
+		"SessionName": {
+		"firstbyte": 2
+		}
+	}, 
+	"minbytes": 2, 
+	"sentbytes": "1000"
+	}, 
+	{
+	"name": "DataRead.Internal fault store", 
+	"replybytes": "61060000000000000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"LID#06_#18_6_bit7_vehicle speed selection": {
+		"firstbyte": 98
+		}, 
+		"LID#06_#18_2_bit6_vehicle speed status": {
+		"bitoffset": 1, 
+		"firstbyte": 34
+		}, 
+		"LID#06_#10_5_Vehicle speed for control": {
+		"firstbyte": 74
+		}, 
+		"LID#06_#17_6_Limit value for overheat protection": {
+		"firstbyte": 97
+		}, 
+		"LID#06_#13_3_IGN voltage": {
+		"firstbyte": 45
+		}, 
+		"LID#06_#09_1_Sub torque": {
+		"firstbyte": 9
+		}, 
+		"LID#06_#04_2_IGN counter": {
+		"firstbyte": 20
+		}, 
+		"LID#06_#12_1_Battery voltage": {
+		"firstbyte": 12
+		}, 
+		"LID#06_#06_6_Motor current(Target value)": {
+		"firstbyte": 86
+		}, 
+		"LID#06_#17_5_Limit value for overheat protection": {
+		"firstbyte": 81
+		}, 
+		"LID#06_#11_5_Vehicle speed": {
+		"firstbyte": 75
+		}, 
+		"LID#06_#09_4_Sub torque": {
+		"firstbyte": 57
+		}, 
+		"LID#06_#18_3_bit6_vehicle speed status": {
+		"bitoffset": 1, 
+		"firstbyte": 50
+		}, 
+		"LID#06_#18_2_bit7_vehicle speed selection": {
+		"firstbyte": 34
+		}, 
+		"LID#06_#04_3_IGN counter": {
+		"firstbyte": 36
+		}, 
+		"LID#06_#06_1_Motor current(Target value)": {
+		"firstbyte": 6
+		}, 
+		"LID#06_#18_1_bit10_engine status": {
+		"bitoffset": 6, 
+		"firstbyte": 18
+		}, 
+		"LID#06_#14_5_TS voltage": {
+		"firstbyte": 78
+		}, 
+		"LID#06_#17_8_Limit value for overheat protection": {
+		"firstbyte": 129
+		}, 
+		"LID#06_#15_1_ECU temperature(Control value)": {
+		"firstbyte": 15
+		}, 
+		"LID#06_#08_6_Main torque": {
+		"firstbyte": 88
+		}, 
+		"LID#06_#15_6_ECU temperature(Control value)": {
+		"firstbyte": 95
+		}, 
+		"LID#06_#08_1_Main torque": {
+		"firstbyte": 8
+		}, 
+		"LID#06_#07_1_Torque for control": {
+		"firstbyte": 7
+		}, 
+		"LID#06_#13_8_IGN voltage": {
+		"firstbyte": 125
+		}, 
+		"LID#06_#14_7_TS voltage": {
+		"firstbyte": 110
+		}, 
+		"LID#06_#08_7_Main torque": {
+		"firstbyte": 104
+		}, 
+		"LID#06_#09_8_Sub torque": {
+		"firstbyte": 121
+		}, 
+		"LID#06_#16_1_ECU temperature(Sensor value)": {
+		"firstbyte": 16
+		}, 
+		"LID#06_#13_5_IGN voltage": {
+		"firstbyte": 77
+		}, 
+		"LID#06_#06_5_Motor current(Target value)": {
+		"firstbyte": 70
+		}, 
+		"LID#06_#08_2_Main torque": {
+		"firstbyte": 24
+		}, 
+		"LID#06_#16_8_ECU temperature(Sensor value)": {
+		"firstbyte": 128
+		}, 
+		"LID#06_#05_2_Motor current(Measured value)": {
+		"firstbyte": 21
+		}, 
+		"LID#06_#16_4_ECU temperature(Sensor value)": {
+		"firstbyte": 64
+		}, 
+		"LID#06_#11_4_Vehicle speed": {
+		"firstbyte": 59
+		}, 
+		"LID#06_#04_6_IGN counter": {
+		"firstbyte": 84
+		}, 
+		"LID#06_#18_1_bit7_vehicle speed selection": {
+		"firstbyte": 18
+		}, 
+		"LID#06_#04_8_IGN counter": {
+		"firstbyte": 116
+		}, 
+		"LID#06_#16_5_ECU temperature(Sensor value)": {
+		"firstbyte": 80
+		}, 
+		"LID#06_#16_6_ECU temperature(Sensor value)": {
+		"firstbyte": 96
+		}, 
+		"LID#06_#12_4_Battery voltage": {
+		"firstbyte": 60
+		}, 
+		"LID#06_#13_4_IGN voltage": {
+		"firstbyte": 61
+		}, 
+		"LID#06_#03_6_Internal fault code": {
+		"firstbyte": 83
+		}, 
+		"LID#06_#14_6_TS voltage": {
+		"firstbyte": 94
+		}, 
+		"LID#06_#14_2_TS voltage": {
+		"firstbyte": 30
+		}, 
+		"LID#06_#11_1_Vehicle speed": {
+		"firstbyte": 11
+		}, 
+		"LID#06_#07_7_Torque for control": {
+		"firstbyte": 103
+		}, 
+		"LID#06_#18_6_bit10_engine status": {
+		"bitoffset": 6, 
+		"firstbyte": 98
+		}, 
+		"LID#06_#10_2_Vehicle speed for control": {
+		"firstbyte": 26
+		}, 
+		"LID#06_#17_3_Limit value for overheat protection": {
+		"firstbyte": 49
+		}, 
+		"LID#06_#12_7_Battery voltage": {
+		"firstbyte": 108
+		}, 
+		"LID#06_#11_3_Vehicle speed": {
+		"firstbyte": 43
+		}, 
+		"LID#06_#10_7_Vehicle speed for control": {
+		"firstbyte": 106
+		}, 
+		"LID#06_#12_6_Battery voltage": {
+		"firstbyte": 92
+		}, 
+		"LID#06_#07_3_Torque for control": {
+		"firstbyte": 39
+		}, 
+		"LID#06_#03_3_Internal fault code": {
+		"firstbyte": 35
+		}, 
+		"LID#06_#18_7_bit6_vehicle speed status": {
+		"bitoffset": 1, 
+		"firstbyte": 114
+		}, 
+		"LID#06_#18_4_bit10_engine status": {
+		"bitoffset": 6, 
+		"firstbyte": 66
+		}, 
+		"LID#06_#13_1_IGN voltage": {
+		"firstbyte": 13
+		}, 
+		"LID#06_#08_5_Main torque": {
+		"firstbyte": 72
+		}, 
+		"LID#06_#15_7_ECU temperature(Control value)": {
+		"firstbyte": 111
+		}, 
+		"LID#06_#05_5_Motor current(Measured value)": {
+		"firstbyte": 69
+		}, 
+		"LID#06_#09_6_Sub torque": {
+		"firstbyte": 89
+		}, 
+		"LID#06_#11_2_Vehicle speed": {
+		"firstbyte": 27
+		}, 
+		"LID#06_#03_5_Internal fault code": {
+		"firstbyte": 67
+		}, 
+		"LID#06_#06_3_Motor current(Target value)": {
+		"firstbyte": 38
+		}, 
+		"LID#06_#18_5_bit7_vehicle speed selection": {
+		"firstbyte": 82
+		}, 
+		"LID#06_#03_4_Internal fault code": {
+		"firstbyte": 51
+		}, 
+		"LID#06_#14_4_TS voltage": {
+		"firstbyte": 62
+		}, 
+		"LID#06_#08_8_Main torque": {
+		"firstbyte": 120
+		}, 
+		"LID#06_#12_2_Battery voltage": {
+		"firstbyte": 28
+		}, 
+		"LID#06_#15_2_ECU temperature(Control value)": {
+		"firstbyte": 31
+		}, 
+		"LID#06_#06_7_Motor current(Target value)": {
+		"firstbyte": 102
+		}, 
+		"LID#06_#16_2_ECU temperature(Sensor value)": {
+		"firstbyte": 32
+		}, 
+		"LID#06_#09_7_Sub torque": {
+		"firstbyte": 105
+		}, 
+		"LID#06_#17_4_Limit value for overheat protection": {
+		"firstbyte": 65
+		}, 
+		"LID#06_#16_7_ECU temperature(Sensor value)": {
+		"firstbyte": 112
+		}, 
+		"LID#06_#11_6_Vehicle speed": {
+		"firstbyte": 91
+		}, 
+		"LID#06_#18_3_bit7_vehicle speed selection": {
+		"firstbyte": 50
+		}, 
+		"LID#06_#18_8_bit6_vehicle speed status": {
+		"bitoffset": 1, 
+		"firstbyte": 130
+		}, 
+		"LID#06_#15_4_ECU temperature(Control value)": {
+		"firstbyte": 63
+		}, 
+		"LID#06_#09_2_Sub torque": {
+		"firstbyte": 25
+		}, 
+		"LID#06_#03_7_Internal fault code": {
+		"firstbyte": 99
+		}, 
+		"LID#06_#05_4_Motor current(Measured value)": {
+		"firstbyte": 53
+		}, 
+		"LID#06_#05_7_Motor current(Measured value)": {
+		"firstbyte": 101
+		}, 
+		"LID#06_#10_3_Vehicle speed for control": {
+		"firstbyte": 42
+		}, 
+		"LID#06_#18_7_bit7_vehicle speed selection": {
+		"firstbyte": 114
+		}, 
+		"LID#06_#18_1_bit6_vehicle speed status": {
+		"bitoffset": 1, 
+		"firstbyte": 18
+		}, 
+		"LID#06_#13_7_IGN voltage": {
+		"firstbyte": 109
+		}, 
+		"LID#06_#18_2_bit10_engine status": {
+		"bitoffset": 6, 
+		"firstbyte": 34
+		}, 
+		"LID#06_#10_8_Vehicle speed for control": {
+		"firstbyte": 122
+		}, 
+		"LID#06_#10_6_Vehicle speed for control": {
+		"firstbyte": 90
+		}, 
+		"LID#06_#14_3_TS voltage": {
+		"firstbyte": 46
+		}, 
+		"LID#06_#18_8_bit7_vehicle speed selection": {
+		"firstbyte": 130
+		}, 
+		"LID#06_#12_3_Battery voltage": {
+		"firstbyte": 44
+		}, 
+		"LID#06_#07_4_Torque for control": {
+		"firstbyte": 55
+		}, 
+		"LID#06_#04_5_IGN counter": {
+		"firstbyte": 68
+		}, 
+		"LID#06_#18_4_bit6_vehicle speed status": {
+		"bitoffset": 1, 
+		"firstbyte": 66
+		}, 
+		"LID#06_#07_6_Torque for control": {
+		"firstbyte": 87
+		}, 
+		"LID#06_#05_1_Motor current(Measured value)": {
+		"firstbyte": 5
+		}, 
+		"LID#06_#13_2_IGN voltage": {
+		"firstbyte": 29
+		}, 
+		"LID#06_#14_8_TS voltage": {
+		"firstbyte": 126
+		}, 
+		"LID#06_#07_5_Torque for control": {
+		"firstbyte": 71
+		}, 
+		"LID#06_#11_8_Vehicle speed": {
+		"firstbyte": 123
+		}, 
+		"LID#06_#13_6_IGN voltage": {
+		"firstbyte": 93
+		}, 
+		"LID#06_#15_8_ECU temperature(Control value)": {
+		"firstbyte": 127
+		}, 
+		"LID#06_#18_7_bit10_engine status": {
+		"bitoffset": 6, 
+		"firstbyte": 114
+		}, 
+		"LID#06_#06_8_Motor current(Target value)": {
+		"firstbyte": 118
+		}, 
+		"LID#06_#17_2_Limit value for overheat protection": {
+		"firstbyte": 33
+		}, 
+		"LID#06_#03_2_Internal fault code": {
+		"firstbyte": 19
+		}, 
+		"LID#06_#14_1_TS voltage": {
+		"firstbyte": 14
+		}, 
+		"LID#06_#05_8_Motor current(Measured value)": {
+		"firstbyte": 117
+		}, 
+		"LID#06_#18_4_bit7_vehicle speed selection": {
+		"firstbyte": 66
+		}, 
+		"LID#06_#18_8_bit10_engine status": {
+		"bitoffset": 6, 
+		"firstbyte": 130
+		}, 
+		"LID#06_#09_5_Sub torque": {
+		"firstbyte": 73
+		}, 
+		"LID#06_#12_8_Battery voltage": {
+		"firstbyte": 124
+		}, 
+		"LID#06_#18_3_bit10_engine status": {
+		"bitoffset": 6, 
+		"firstbyte": 50
+		}, 
+		"LID#06_#15_5_ECU temperature(Control value)": {
+		"firstbyte": 79
+		}, 
+		"LID#06_#08_3_Main torque": {
+		"firstbyte": 40
+		}, 
+		"LID#06_#06_4_Motor current(Target value)": {
+		"firstbyte": 54
+		}, 
+		"LID#06_#18_5_bit6_vehicle speed status": {
+		"bitoffset": 1, 
+		"firstbyte": 82
+		}, 
+		"LID#06_#04_4_IGN counter": {
+		"firstbyte": 52
+		}, 
+		"LID#06_#10_1_Vehicle speed for control": {
+		"firstbyte": 10
+		}, 
+		"LID#06_#07_8_Torque for control": {
+		"firstbyte": 119
+		}, 
+		"LID#06_#04_1_IGN counter": {
+		"firstbyte": 4
+		}, 
+		"LID#06_#17_7_Limit value for overheat protection": {
+		"firstbyte": 113
+		}, 
+		"LID#06_#10_4_Vehicle speed for control": {
+		"firstbyte": 58
+		}, 
+		"LID#06_#17_1_Limit value for overheat protection": {
+		"firstbyte": 17
+		}, 
+		"LID#06_#12_5_Battery voltage": {
+		"firstbyte": 76
+		}, 
+		"LID#06_#05_3_Motor current(Measured value)": {
+		"firstbyte": 37
+		}, 
+		"LID#06_#05_6_Motor current(Measured value)": {
+		"firstbyte": 85
+		}, 
+		"LID#06_#18_6_bit6_vehicle speed status": {
+		"bitoffset": 1, 
+		"firstbyte": 98
+		}, 
+		"LID#06_#15_3_ECU temperature(Control value)": {
+		"firstbyte": 47
+		}, 
+		"LID#06_#08_4_Main torque": {
+		"firstbyte": 56
+		}, 
+		"LID#06_#07_2_Torque for control": {
+		"firstbyte": 23
+		}, 
+		"LID#06_#18_5_bit10_engine status": {
+		"bitoffset": 6, 
+		"firstbyte": 82
+		}, 
+		"LID#06_#16_3_ECU temperature(Sensor value)": {
+		"firstbyte": 48
+		}, 
+		"LID#06_#09_3_Sub torque": {
+		"firstbyte": 41
+		}, 
+		"LID#06_#06_2_Motor current(Target value)": {
+		"firstbyte": 22
+		}, 
+		"LID#06_#11_7_Vehicle speed": {
+		"firstbyte": 107
+		}, 
+		"LID#06_#03_1_Internal fault code": {
+		"firstbyte": 3
+		}, 
+		"LID#06_#03_8_Internal fault code": {
+		"firstbyte": 115
+		}, 
+		"LID#06_#04_7_IGN counter": {
+		"firstbyte": 100
+		}
+	}, 
+	"minbytes": 130, 
+	"sentbytes": "2106"
+	}, 
+	{
+	"name": "Supported Lid for SPRBLID(00)", 
+	"replybytes": "720000000000", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"LID$14": {
+		"bitoffset": 3, 
+		"firstbyte": 5
+		}, 
+		"LID$15": {
+		"bitoffset": 4, 
+		"firstbyte": 5
+		}, 
+		"LID$16": {
+		"bitoffset": 5, 
+		"firstbyte": 5
+		}, 
+		"LID$17": {
+		"bitoffset": 6, 
+		"firstbyte": 5
+		}, 
+		"LID$10": {
+		"bitoffset": 7, 
+		"firstbyte": 4
+		}, 
+		"LID$11": {
+		"firstbyte": 5
+		}, 
+		"LID$12": {
+		"bitoffset": 1, 
+		"firstbyte": 5
+		}, 
+		"LID$13": {
+		"bitoffset": 2, 
+		"firstbyte": 5
+		}, 
+		"LID$18": {
+		"bitoffset": 7, 
+		"firstbyte": 5
+		}, 
+		"LID$19": {
+		"firstbyte": 6
+		}, 
+		"LID$0C": {
+		"bitoffset": 3, 
+		"firstbyte": 4
+		}, 
+		"LID$0B": {
+		"bitoffset": 2, 
+		"firstbyte": 4
+		}, 
+		"LID$0A": {
+		"bitoffset": 1, 
+		"firstbyte": 4
+		}, 
+		"LID$0F": {
+		"bitoffset": 6, 
+		"firstbyte": 4
+		}, 
+		"LID$0E": {
+		"bitoffset": 5, 
+		"firstbyte": 4
+		}, 
+		"LID$0D": {
+		"bitoffset": 4, 
+		"firstbyte": 4
+		}, 
+		"LID$03": {
+		"bitoffset": 2, 
+		"firstbyte": 3
+		}, 
+		"LID$02": {
+		"bitoffset": 1, 
+		"firstbyte": 3
+		}, 
+		"LID$01": {
+		"firstbyte": 3
+		}, 
+		"LID$07": {
+		"bitoffset": 6, 
+		"firstbyte": 3
+		}, 
+		"LID$06": {
+		"bitoffset": 5, 
+		"firstbyte": 3
+		}, 
+		"LID$05": {
+		"bitoffset": 4, 
+		"firstbyte": 3
+		}, 
+		"LID$04": {
+		"bitoffset": 3, 
+		"firstbyte": 3
+		}, 
+		"LID$09": {
+		"firstbyte": 4
+		}, 
+		"LID$08": {
+		"bitoffset": 7, 
+		"firstbyte": 3
+		}, 
+		"LID$1D": {
+		"bitoffset": 4, 
+		"firstbyte": 6
+		}, 
+		"LID$1E": {
+		"bitoffset": 5, 
+		"firstbyte": 6
+		}, 
+		"LID$1F": {
+		"bitoffset": 6, 
+		"firstbyte": 6
+		}, 
+		"LID$1A": {
+		"bitoffset": 1, 
+		"firstbyte": 6
+		}, 
+		"LID$1B": {
+		"bitoffset": 2, 
+		"firstbyte": 6
+		}, 
+		"LID$1C": {
+		"bitoffset": 3, 
+		"firstbyte": 6
+		}, 
+		"LID$20": {
+		"bitoffset": 7, 
+		"firstbyte": 6
+		}
+	}, 
+	"minbytes": 6, 
+	"sentbytes": "3200"
+	}, 
+	{
+	"name": "DataRead.SnapshotData_Vehicle speed for control", 
+	"replybytes": "62140200", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"SnapshotData_Vehicle speed for control": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "221402"
+	}, 
+	{
+	"name": "Supported Lid for RDBLID(20)", 
+	"replybytes": "612000000000", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"LID$14": {
+		"bitoffset": 3, 
+		"firstbyte": 5
+		}, 
+		"LID$15": {
+		"bitoffset": 4, 
+		"firstbyte": 5
+		}, 
+		"LID$16": {
+		"bitoffset": 5, 
+		"firstbyte": 5
+		}, 
+		"LID$17": {
+		"bitoffset": 6, 
+		"firstbyte": 5
+		}, 
+		"LID$10": {
+		"bitoffset": 7, 
+		"firstbyte": 4
+		}, 
+		"LID$11": {
+		"firstbyte": 5
+		}, 
+		"LID$12": {
+		"bitoffset": 1, 
+		"firstbyte": 5
+		}, 
+		"LID$13": {
+		"bitoffset": 2, 
+		"firstbyte": 5
+		}, 
+		"LID$18": {
+		"bitoffset": 7, 
+		"firstbyte": 5
+		}, 
+		"LID$19": {
+		"firstbyte": 6
+		}, 
+		"LID$0C": {
+		"bitoffset": 3, 
+		"firstbyte": 4
+		}, 
+		"LID$0B": {
+		"bitoffset": 2, 
+		"firstbyte": 4
+		}, 
+		"LID$0A": {
+		"bitoffset": 1, 
+		"firstbyte": 4
+		}, 
+		"LID$0F": {
+		"bitoffset": 6, 
+		"firstbyte": 4
+		}, 
+		"LID$0E": {
+		"bitoffset": 5, 
+		"firstbyte": 4
+		}, 
+		"LID$0D": {
+		"bitoffset": 4, 
+		"firstbyte": 4
+		}, 
+		"LID$03": {
+		"bitoffset": 2, 
+		"firstbyte": 3
+		}, 
+		"LID$02": {
+		"bitoffset": 1, 
+		"firstbyte": 3
+		}, 
+		"LID$01": {
+		"firstbyte": 3
+		}, 
+		"LID$07": {
+		"bitoffset": 6, 
+		"firstbyte": 3
+		}, 
+		"LID$06": {
+		"bitoffset": 5, 
+		"firstbyte": 3
+		}, 
+		"LID$05": {
+		"bitoffset": 4, 
+		"firstbyte": 3
+		}, 
+		"LID$04": {
+		"bitoffset": 3, 
+		"firstbyte": 3
+		}, 
+		"LID$09": {
+		"firstbyte": 4
+		}, 
+		"LID$08": {
+		"bitoffset": 7, 
+		"firstbyte": 3
+		}, 
+		"LID$1D": {
+		"bitoffset": 4, 
+		"firstbyte": 6
+		}, 
+		"LID$1E": {
+		"bitoffset": 5, 
+		"firstbyte": 6
+		}, 
+		"LID$1F": {
+		"bitoffset": 6, 
+		"firstbyte": 6
+		}, 
+		"LID$1A": {
+		"bitoffset": 1, 
+		"firstbyte": 6
+		}, 
+		"LID$1B": {
+		"bitoffset": 2, 
+		"firstbyte": 6
+		}, 
+		"LID$1C": {
+		"bitoffset": 3, 
+		"firstbyte": 6
+		}, 
+		"LID$20": {
+		"bitoffset": 7, 
+		"firstbyte": 6
+		}
+	}, 
+	"minbytes": 6, 
+	"sentbytes": "2120"
+	}, 
+	{
+	"name": "[Read Dongle]___DataRead.EPS ECU Dongle state", 
+	"replybytes": "62016400", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"DataRead.EPS ECU Dongle state": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "220164"
+	}, 
+	{
+	"name": "[Read Dongle]___DataRead.Dongle error", 
+	"replybytes": "62016600", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"DataRead.Dongle error": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "220166"
+	}, 
+	{
+	"name": "ReadDTCInformation.ReportExtendedData", 
+	"replybytes": "59060000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"DTCExtendedData.AgingCounter": {
+		"firstbyte": 8
+		}, 
+		"DTCExtendedDataRecordNumber": {
+		"firstbyte": 7
+		}, 
+		"DTCExtendedData.Mileage": {
+		"firstbyte": 8
+		}, 
+		"DTCRecord": {
+		"firstbyte": 3
+		}, 
+		"StatusOfDTC": {
+		"firstbyte": 6
+		}, 
+		"DTCExtendedData.DTCOccurrenceCounter": {
+		"firstbyte": 8
+		}
+	}, 
+	"sendbyte_dataitems": {
+		"DTCMaskRecord": {
+		"firstbyte": 3
+		}
+	}, 
+	"minbytes": 6, 
+	"sentbytes": "1906000000FF"
+	}, 
+	{
+	"name": "DataRead.EPS tunning(SelectValue)", 
+	"replybytes": "6102", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"Config.Data._$02_EPS tunning number": {
+		"firstbyte": 3
+		}
+	}, 
+	"minbytes": 246, 
+	"sentbytes": "2102"
+	}, 
+	{
+	"name": "DataRead.SnapshotData_Motor current (measured)", 
+	"replybytes": "62140500", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"SnapshotData_Motor current (measured)": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "221405"
+	}, 
+	{
+	"name": "ReadDTCInformation.ReportSnapshot", 
+	"replybytes": "590400000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"DTCRecord": {
+		"firstbyte": 3
+		}, 
+		"StatusOfDTC": {
+		"firstbyte": 6
+		}
+	}, 
+	"sendbyte_dataitems": {
+		"DTCMaskRecord": {
+		"firstbyte": 3
+		}
+	}, 
+	"minbytes": 6, 
+	"sentbytes": "1904000000FF"
+	}, 
+	{
+	"name": "Supported Lid for RDBLID(40)", 
+	"replybytes": "614000000000", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"LID$14": {
+		"bitoffset": 3, 
+		"firstbyte": 5
+		}, 
+		"LID$15": {
+		"bitoffset": 4, 
+		"firstbyte": 5
+		}, 
+		"LID$16": {
+		"bitoffset": 5, 
+		"firstbyte": 5
+		}, 
+		"LID$17": {
+		"bitoffset": 6, 
+		"firstbyte": 5
+		}, 
+		"LID$10": {
+		"bitoffset": 7, 
+		"firstbyte": 4
+		}, 
+		"LID$11": {
+		"firstbyte": 5
+		}, 
+		"LID$12": {
+		"bitoffset": 1, 
+		"firstbyte": 5
+		}, 
+		"LID$13": {
+		"bitoffset": 2, 
+		"firstbyte": 5
+		}, 
+		"LID$18": {
+		"bitoffset": 7, 
+		"firstbyte": 5
+		}, 
+		"LID$19": {
+		"firstbyte": 6
+		}, 
+		"LID$0C": {
+		"bitoffset": 3, 
+		"firstbyte": 4
+		}, 
+		"LID$0B": {
+		"bitoffset": 2, 
+		"firstbyte": 4
+		}, 
+		"LID$0A": {
+		"bitoffset": 1, 
+		"firstbyte": 4
+		}, 
+		"LID$0F": {
+		"bitoffset": 6, 
+		"firstbyte": 4
+		}, 
+		"LID$0E": {
+		"bitoffset": 5, 
+		"firstbyte": 4
+		}, 
+		"LID$0D": {
+		"bitoffset": 4, 
+		"firstbyte": 4
+		}, 
+		"LID$03": {
+		"bitoffset": 2, 
+		"firstbyte": 3
+		}, 
+		"LID$02": {
+		"bitoffset": 1, 
+		"firstbyte": 3
+		}, 
+		"LID$01": {
+		"firstbyte": 3
+		}, 
+		"LID$07": {
+		"bitoffset": 6, 
+		"firstbyte": 3
+		}, 
+		"LID$06": {
+		"bitoffset": 5, 
+		"firstbyte": 3
+		}, 
+		"LID$05": {
+		"bitoffset": 4, 
+		"firstbyte": 3
+		}, 
+		"LID$04": {
+		"bitoffset": 3, 
+		"firstbyte": 3
+		}, 
+		"LID$09": {
+		"firstbyte": 4
+		}, 
+		"LID$08": {
+		"bitoffset": 7, 
+		"firstbyte": 3
+		}, 
+		"LID$1D": {
+		"bitoffset": 4, 
+		"firstbyte": 6
+		}, 
+		"LID$1E": {
+		"bitoffset": 5, 
+		"firstbyte": 6
+		}, 
+		"LID$1F": {
+		"bitoffset": 6, 
+		"firstbyte": 6
+		}, 
+		"LID$1A": {
+		"bitoffset": 1, 
+		"firstbyte": 6
+		}, 
+		"LID$1B": {
+		"bitoffset": 2, 
+		"firstbyte": 6
+		}, 
+		"LID$1C": {
+		"bitoffset": 3, 
+		"firstbyte": 6
+		}, 
+		"LID$20": {
+		"bitoffset": 7, 
+		"firstbyte": 6
+		}
+	}, 
+	"minbytes": 6, 
+	"sentbytes": "2140"
+	}, 
+	{
+	"name": "DataRead.SnapshotData_Main torque signal", 
+	"replybytes": "62140700", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"SnapshotData_Main torque signal": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "221407"
+	}, 
+	{
+	"name": "DataRead.SnapshotData_IGN counter", 
+	"replybytes": "62140100", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"SnapshotData_IGN counter": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "221401"
+	}, 
+	{
+	"name": "[Read ECU info]___NissanIdentification($F0)", 
+	"replybytes": "61F0000000000000000000000000000000000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"N.DiagnosticIdentificationCode": {
+		"firstbyte": 8
+		}, 
+		"N.SparePartsNumberSuffix": {
+		"firstbyte": 8
+		}, 
+		"N1.SupplierNumber2": {
+		"firstbyte": 10
+		}, 
+		"N.ManufacturerIdentificationCode": {
+		"firstbyte": 26
+		}, 
+		"N.CalibrationNumber": {
+		"firstbyte": 21
+		}, 
+		"N.SparePartsNumber": {
+		"firstbyte": 3
+		}, 
+		"N.OtherSystemFeatures": {
+		"firstbyte": 23
+		}, 
+		"N.EditionNumber": {
+		"firstbyte": 19
+		}, 
+		"N.HardwareNumber": {
+		"firstbyte": 12
+		}, 
+		"N.SoftwareNumber": {
+		"firstbyte": 17
+		}, 
+		"N1.SupplierNumber1": {
+		"firstbyte": 9
+		}
+	}, 
+	"minbytes": 26, 
+	"sentbytes": "21F0"
+	}, 
+	{
+	"name": "Supported Lid for SRBLID(40)", 
+	"replybytes": "710000000000", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"LID$14": {
+		"bitoffset": 3, 
+		"firstbyte": 5
+		}, 
+		"LID$15": {
+		"bitoffset": 4, 
+		"firstbyte": 5
+		}, 
+		"LID$16": {
+		"bitoffset": 5, 
+		"firstbyte": 5
+		}, 
+		"LID$17": {
+		"bitoffset": 6, 
+		"firstbyte": 5
+		}, 
+		"LID$10": {
+		"bitoffset": 7, 
+		"firstbyte": 4
+		}, 
+		"LID$11": {
+		"firstbyte": 5
+		}, 
+		"LID$12": {
+		"bitoffset": 1, 
+		"firstbyte": 5
+		}, 
+		"LID$13": {
+		"bitoffset": 2, 
+		"firstbyte": 5
+		}, 
+		"LID$18": {
+		"bitoffset": 7, 
+		"firstbyte": 5
+		}, 
+		"LID$19": {
+		"firstbyte": 6
+		}, 
+		"LID$0C": {
+		"bitoffset": 3, 
+		"firstbyte": 4
+		}, 
+		"LID$0B": {
+		"bitoffset": 2, 
+		"firstbyte": 4
+		}, 
+		"LID$0A": {
+		"bitoffset": 1, 
+		"firstbyte": 4
+		}, 
+		"LID$0F": {
+		"bitoffset": 6, 
+		"firstbyte": 4
+		}, 
+		"LID$0E": {
+		"bitoffset": 5, 
+		"firstbyte": 4
+		}, 
+		"LID$0D": {
+		"bitoffset": 4, 
+		"firstbyte": 4
+		}, 
+		"LID$03": {
+		"bitoffset": 2, 
+		"firstbyte": 3
+		}, 
+		"LID$02": {
+		"bitoffset": 1, 
+		"firstbyte": 3
+		}, 
+		"LID$01": {
+		"firstbyte": 3
+		}, 
+		"LID$07": {
+		"bitoffset": 6, 
+		"firstbyte": 3
+		}, 
+		"LID$06": {
+		"bitoffset": 5, 
+		"firstbyte": 3
+		}, 
+		"LID$05": {
+		"bitoffset": 4, 
+		"firstbyte": 3
+		}, 
+		"LID$04": {
+		"bitoffset": 3, 
+		"firstbyte": 3
+		}, 
+		"LID$09": {
+		"firstbyte": 4
+		}, 
+		"LID$08": {
+		"bitoffset": 7, 
+		"firstbyte": 3
+		}, 
+		"LID$1D": {
+		"bitoffset": 4, 
+		"firstbyte": 6
+		}, 
+		"LID$1E": {
+		"bitoffset": 5, 
+		"firstbyte": 6
+		}, 
+		"LID$1F": {
+		"bitoffset": 6, 
+		"firstbyte": 6
+		}, 
+		"LID$1A": {
+		"bitoffset": 1, 
+		"firstbyte": 6
+		}, 
+		"LID$1B": {
+		"bitoffset": 2, 
+		"firstbyte": 6
+		}, 
+		"LID$1C": {
+		"bitoffset": 3, 
+		"firstbyte": 6
+		}, 
+		"LID$20": {
+		"bitoffset": 7, 
+		"firstbyte": 6
+		}
+	}, 
+	"minbytes": 6, 
+	"sentbytes": "3140"
+	}, 
+	{
+	"name": "ReadDTCInformation.ReportExtendedData.Mileage", 
+	"replybytes": "59060000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"DTCExtendedDataRecordNumber": {
+		"firstbyte": 7
+		}, 
+		"DTCExtendedData.Mileage": {
+		"firstbyte": 8
+		}, 
+		"StatusOfDTC": {
+		"firstbyte": 6
+		}, 
+		"DTCRecord": {
+		"firstbyte": 3
+		}
+	}, 
+	"sendbyte_dataitems": {
+		"DTCMaskRecord": {
+		"firstbyte": 3
+		}
+	}, 
+	"minbytes": 10, 
+	"sentbytes": "190600000080"
+	}, 
+	{
+	"name": "NissanIdentification", 
+	"replybytes": "6183000000000000000000000000000000000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"N.DiagnosticIdentificationCode": {
+		"firstbyte": 8
+		}, 
+		"N.SparePartsNumberSuffix": {
+		"firstbyte": 8
+		}, 
+		"N1.SupplierNumber2": {
+		"firstbyte": 10
+		}, 
+		"N.ManufacturerIdentificationCode": {
+		"firstbyte": 26
+		}, 
+		"N.CalibrationNumber": {
+		"firstbyte": 21
+		}, 
+		"N.SparePartsNumber": {
+		"firstbyte": 3
+		}, 
+		"N.OtherSystemFeatures": {
+		"firstbyte": 23
+		}, 
+		"N.EditionNumber": {
+		"firstbyte": 19
+		}, 
+		"N.HardwareNumber": {
+		"firstbyte": 12
+		}, 
+		"N.SoftwareNumber": {
+		"firstbyte": 17
+		}, 
+		"N1.SupplierNumber1": {
+		"firstbyte": 9
+		}
+	}, 
+	"minbytes": 26, 
+	"sentbytes": "2183"
+	}, 
+	{
+	"name": "DataRead.SnapshotData_Battery voltage", 
+	"replybytes": "62140300", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"SnapshotData_Battery voltage": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "221403"
+	}, 
+	{
+	"name": "DataWrite.EPS tunning(Reset)", 
+	"deny_sds": [], 
+	"minbytes": 2, 
+	"sentbytes": "3B0299", 
+	"replybytes": "7B02"
+	}, 
+	{
+	"name": "DataRead.SnapshotData_Dummy", 
+	"replybytes": "6214040000", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"SnapshotData_Dummy": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 5, 
+	"sentbytes": "221404"
+	}, 
+	{
+	"name": "[Read Dongle]___DataRead.Dongle_pairing_counter", 
+	"replybytes": "62016500", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"DataRead.Dongle_pairing_counter": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "220165"
+	}, 
+	{
+	"name": "IO_Control.Stop", 
+	"replybytes": "700000", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"OutputControlStatus": {
+		"firstbyte": 3
+		}
+	}, 
+	"sendbyte_dataitems": {
+		"OutputPermanentControlList": {
+		"firstbyte": 2
+		}, 
+		"OutputTemporaryControlList": {
+		"firstbyte": 2
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "300011"
+	}, 
+	{
+	"name": "Supported Lid for SRBLID(60)", 
+	"replybytes": "710000000000", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"LID$14": {
+		"bitoffset": 3, 
+		"firstbyte": 5
+		}, 
+		"LID$15": {
+		"bitoffset": 4, 
+		"firstbyte": 5
+		}, 
+		"LID$16": {
+		"bitoffset": 5, 
+		"firstbyte": 5
+		}, 
+		"LID$17": {
+		"bitoffset": 6, 
+		"firstbyte": 5
+		}, 
+		"LID$10": {
+		"bitoffset": 7, 
+		"firstbyte": 4
+		}, 
+		"LID$11": {
+		"firstbyte": 5
+		}, 
+		"LID$12": {
+		"bitoffset": 1, 
+		"firstbyte": 5
+		}, 
+		"LID$13": {
+		"bitoffset": 2, 
+		"firstbyte": 5
+		}, 
+		"LID$18": {
+		"bitoffset": 7, 
+		"firstbyte": 5
+		}, 
+		"LID$19": {
+		"firstbyte": 6
+		}, 
+		"LID$0C": {
+		"bitoffset": 3, 
+		"firstbyte": 4
+		}, 
+		"LID$0B": {
+		"bitoffset": 2, 
+		"firstbyte": 4
+		}, 
+		"LID$0A": {
+		"bitoffset": 1, 
+		"firstbyte": 4
+		}, 
+		"LID$0F": {
+		"bitoffset": 6, 
+		"firstbyte": 4
+		}, 
+		"LID$0E": {
+		"bitoffset": 5, 
+		"firstbyte": 4
+		}, 
+		"LID$0D": {
+		"bitoffset": 4, 
+		"firstbyte": 4
+		}, 
+		"LID$03": {
+		"bitoffset": 2, 
+		"firstbyte": 3
+		}, 
+		"LID$02": {
+		"bitoffset": 1, 
+		"firstbyte": 3
+		}, 
+		"LID$01": {
+		"firstbyte": 3
+		}, 
+		"LID$07": {
+		"bitoffset": 6, 
+		"firstbyte": 3
+		}, 
+		"LID$06": {
+		"bitoffset": 5, 
+		"firstbyte": 3
+		}, 
+		"LID$05": {
+		"bitoffset": 4, 
+		"firstbyte": 3
+		}, 
+		"LID$04": {
+		"bitoffset": 3, 
+		"firstbyte": 3
+		}, 
+		"LID$09": {
+		"firstbyte": 4
+		}, 
+		"LID$08": {
+		"bitoffset": 7, 
+		"firstbyte": 3
+		}, 
+		"LID$1D": {
+		"bitoffset": 4, 
+		"firstbyte": 6
+		}, 
+		"LID$1E": {
+		"bitoffset": 5, 
+		"firstbyte": 6
+		}, 
+		"LID$1F": {
+		"bitoffset": 6, 
+		"firstbyte": 6
+		}, 
+		"LID$1A": {
+		"bitoffset": 1, 
+		"firstbyte": 6
+		}, 
+		"LID$1B": {
+		"bitoffset": 2, 
+		"firstbyte": 6
+		}, 
+		"LID$1C": {
+		"bitoffset": 3, 
+		"firstbyte": 6
+		}, 
+		"LID$20": {
+		"bitoffset": 7, 
+		"firstbyte": 6
+		}
+	}, 
+	"minbytes": 6, 
+	"sentbytes": "3160"
+	}, 
+	{
+	"name": "Supported Lid for WDBLID(20)", 
+	"replybytes": "7B2000000000", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"LID$14": {
+		"bitoffset": 3, 
+		"firstbyte": 5
+		}, 
+		"LID$15": {
+		"bitoffset": 4, 
+		"firstbyte": 5
+		}, 
+		"LID$16": {
+		"bitoffset": 5, 
+		"firstbyte": 5
+		}, 
+		"LID$17": {
+		"bitoffset": 6, 
+		"firstbyte": 5
+		}, 
+		"LID$10": {
+		"bitoffset": 7, 
+		"firstbyte": 4
+		}, 
+		"LID$11": {
+		"firstbyte": 5
+		}, 
+		"LID$12": {
+		"bitoffset": 1, 
+		"firstbyte": 5
+		}, 
+		"LID$13": {
+		"bitoffset": 2, 
+		"firstbyte": 5
+		}, 
+		"LID$18": {
+		"bitoffset": 7, 
+		"firstbyte": 5
+		}, 
+		"LID$19": {
+		"firstbyte": 6
+		}, 
+		"LID$0C": {
+		"bitoffset": 3, 
+		"firstbyte": 4
+		}, 
+		"LID$0B": {
+		"bitoffset": 2, 
+		"firstbyte": 4
+		}, 
+		"LID$0A": {
+		"bitoffset": 1, 
+		"firstbyte": 4
+		}, 
+		"LID$0F": {
+		"bitoffset": 6, 
+		"firstbyte": 4
+		}, 
+		"LID$0E": {
+		"bitoffset": 5, 
+		"firstbyte": 4
+		}, 
+		"LID$0D": {
+		"bitoffset": 4, 
+		"firstbyte": 4
+		}, 
+		"LID$03": {
+		"bitoffset": 2, 
+		"firstbyte": 3
+		}, 
+		"LID$02": {
+		"bitoffset": 1, 
+		"firstbyte": 3
+		}, 
+		"LID$01": {
+		"firstbyte": 3
+		}, 
+		"LID$07": {
+		"bitoffset": 6, 
+		"firstbyte": 3
+		}, 
+		"LID$06": {
+		"bitoffset": 5, 
+		"firstbyte": 3
+		}, 
+		"LID$05": {
+		"bitoffset": 4, 
+		"firstbyte": 3
+		}, 
+		"LID$04": {
+		"bitoffset": 3, 
+		"firstbyte": 3
+		}, 
+		"LID$09": {
+		"firstbyte": 4
+		}, 
+		"LID$08": {
+		"bitoffset": 7, 
+		"firstbyte": 3
+		}, 
+		"LID$1D": {
+		"bitoffset": 4, 
+		"firstbyte": 6
+		}, 
+		"LID$1E": {
+		"bitoffset": 5, 
+		"firstbyte": 6
+		}, 
+		"LID$1F": {
+		"bitoffset": 6, 
+		"firstbyte": 6
+		}, 
+		"LID$1A": {
+		"bitoffset": 1, 
+		"firstbyte": 6
+		}, 
+		"LID$1B": {
+		"bitoffset": 2, 
+		"firstbyte": 6
+		}, 
+		"LID$1C": {
+		"bitoffset": 3, 
+		"firstbyte": 6
+		}, 
+		"LID$20": {
+		"bitoffset": 7, 
+		"firstbyte": 6
+		}
+	}, 
+	"minbytes": 6, 
+	"sentbytes": "3B20"
+	}, 
+	{
+	"name": "Supported Lid for SPRBLID(40)", 
+	"replybytes": "720000000000", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"LID$14": {
+		"bitoffset": 3, 
+		"firstbyte": 5
+		}, 
+		"LID$15": {
+		"bitoffset": 4, 
+		"firstbyte": 5
+		}, 
+		"LID$16": {
+		"bitoffset": 5, 
+		"firstbyte": 5
+		}, 
+		"LID$17": {
+		"bitoffset": 6, 
+		"firstbyte": 5
+		}, 
+		"LID$10": {
+		"bitoffset": 7, 
+		"firstbyte": 4
+		}, 
+		"LID$11": {
+		"firstbyte": 5
+		}, 
+		"LID$12": {
+		"bitoffset": 1, 
+		"firstbyte": 5
+		}, 
+		"LID$13": {
+		"bitoffset": 2, 
+		"firstbyte": 5
+		}, 
+		"LID$18": {
+		"bitoffset": 7, 
+		"firstbyte": 5
+		}, 
+		"LID$19": {
+		"firstbyte": 6
+		}, 
+		"LID$0C": {
+		"bitoffset": 3, 
+		"firstbyte": 4
+		}, 
+		"LID$0B": {
+		"bitoffset": 2, 
+		"firstbyte": 4
+		}, 
+		"LID$0A": {
+		"bitoffset": 1, 
+		"firstbyte": 4
+		}, 
+		"LID$0F": {
+		"bitoffset": 6, 
+		"firstbyte": 4
+		}, 
+		"LID$0E": {
+		"bitoffset": 5, 
+		"firstbyte": 4
+		}, 
+		"LID$0D": {
+		"bitoffset": 4, 
+		"firstbyte": 4
+		}, 
+		"LID$03": {
+		"bitoffset": 2, 
+		"firstbyte": 3
+		}, 
+		"LID$02": {
+		"bitoffset": 1, 
+		"firstbyte": 3
+		}, 
+		"LID$01": {
+		"firstbyte": 3
+		}, 
+		"LID$07": {
+		"bitoffset": 6, 
+		"firstbyte": 3
+		}, 
+		"LID$06": {
+		"bitoffset": 5, 
+		"firstbyte": 3
+		}, 
+		"LID$05": {
+		"bitoffset": 4, 
+		"firstbyte": 3
+		}, 
+		"LID$04": {
+		"bitoffset": 3, 
+		"firstbyte": 3
+		}, 
+		"LID$09": {
+		"firstbyte": 4
+		}, 
+		"LID$08": {
+		"bitoffset": 7, 
+		"firstbyte": 3
+		}, 
+		"LID$1D": {
+		"bitoffset": 4, 
+		"firstbyte": 6
+		}, 
+		"LID$1E": {
+		"bitoffset": 5, 
+		"firstbyte": 6
+		}, 
+		"LID$1F": {
+		"bitoffset": 6, 
+		"firstbyte": 6
+		}, 
+		"LID$1A": {
+		"bitoffset": 1, 
+		"firstbyte": 6
+		}, 
+		"LID$1B": {
+		"bitoffset": 2, 
+		"firstbyte": 6
+		}, 
+		"LID$1C": {
+		"bitoffset": 3, 
+		"firstbyte": 6
+		}, 
+		"LID$20": {
+		"bitoffset": 7, 
+		"firstbyte": 6
+		}
+	}, 
+	"minbytes": 6, 
+	"sentbytes": "3240"
+	}, 
+	{
+	"name": "IO_Control.Status", 
+	"replybytes": "700000", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"OutputControlStatus": {
+		"firstbyte": 3
+		}
+	}, 
+	"sendbyte_dataitems": {
+		"OutputPermanentControlList": {
+		"firstbyte": 2
+		}, 
+		"OutputTemporaryControlList": {
+		"firstbyte": 2
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "300001"
+	}, 
+	{
+	"name": "Supported Lid for SPRBLID(60)", 
+	"replybytes": "720000000000", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"LID$14": {
+		"bitoffset": 3, 
+		"firstbyte": 5
+		}, 
+		"LID$15": {
+		"bitoffset": 4, 
+		"firstbyte": 5
+		}, 
+		"LID$16": {
+		"bitoffset": 5, 
+		"firstbyte": 5
+		}, 
+		"LID$17": {
+		"bitoffset": 6, 
+		"firstbyte": 5
+		}, 
+		"LID$10": {
+		"bitoffset": 7, 
+		"firstbyte": 4
+		}, 
+		"LID$11": {
+		"firstbyte": 5
+		}, 
+		"LID$12": {
+		"bitoffset": 1, 
+		"firstbyte": 5
+		}, 
+		"LID$13": {
+		"bitoffset": 2, 
+		"firstbyte": 5
+		}, 
+		"LID$18": {
+		"bitoffset": 7, 
+		"firstbyte": 5
+		}, 
+		"LID$19": {
+		"firstbyte": 6
+		}, 
+		"LID$0C": {
+		"bitoffset": 3, 
+		"firstbyte": 4
+		}, 
+		"LID$0B": {
+		"bitoffset": 2, 
+		"firstbyte": 4
+		}, 
+		"LID$0A": {
+		"bitoffset": 1, 
+		"firstbyte": 4
+		}, 
+		"LID$0F": {
+		"bitoffset": 6, 
+		"firstbyte": 4
+		}, 
+		"LID$0E": {
+		"bitoffset": 5, 
+		"firstbyte": 4
+		}, 
+		"LID$0D": {
+		"bitoffset": 4, 
+		"firstbyte": 4
+		}, 
+		"LID$03": {
+		"bitoffset": 2, 
+		"firstbyte": 3
+		}, 
+		"LID$02": {
+		"bitoffset": 1, 
+		"firstbyte": 3
+		}, 
+		"LID$01": {
+		"firstbyte": 3
+		}, 
+		"LID$07": {
+		"bitoffset": 6, 
+		"firstbyte": 3
+		}, 
+		"LID$06": {
+		"bitoffset": 5, 
+		"firstbyte": 3
+		}, 
+		"LID$05": {
+		"bitoffset": 4, 
+		"firstbyte": 3
+		}, 
+		"LID$04": {
+		"bitoffset": 3, 
+		"firstbyte": 3
+		}, 
+		"LID$09": {
+		"firstbyte": 4
+		}, 
+		"LID$08": {
+		"bitoffset": 7, 
+		"firstbyte": 3
+		}, 
+		"LID$1D": {
+		"bitoffset": 4, 
+		"firstbyte": 6
+		}, 
+		"LID$1E": {
+		"bitoffset": 5, 
+		"firstbyte": 6
+		}, 
+		"LID$1F": {
+		"bitoffset": 6, 
+		"firstbyte": 6
+		}, 
+		"LID$1A": {
+		"bitoffset": 1, 
+		"firstbyte": 6
+		}, 
+		"LID$1B": {
+		"bitoffset": 2, 
+		"firstbyte": 6
+		}, 
+		"LID$1C": {
+		"bitoffset": 3, 
+		"firstbyte": 6
+		}, 
+		"LID$20": {
+		"bitoffset": 7, 
+		"firstbyte": 6
+		}
+	}, 
+	"minbytes": 6, 
+	"sentbytes": "3260"
+	}, 
+	{
+	"name": "StartDiagnosticSession.DefaultSession", 
+	"replybytes": "5081", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"minbytes": 2, 
+	"sentbytes": "1081"
+	}, 
+	{
+	"receivebyte_dataitems": {
+		"Tuning Version": {
+		"firstbyte": 3
+		}
+	}, 
+	"deny_sds": [
+		"nosds"
+	], 
+	"minbytes": 3, 
+	"sentbytes": "2103", 
+	"name": "RDBLI _ Tuning Version Activated"
+	}, 
+	{
+	"name": "Supported Lid for IOCBLID(40)", 
+	"replybytes": "700000000000", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"LID$14": {
+		"bitoffset": 3, 
+		"firstbyte": 5
+		}, 
+		"LID$15": {
+		"bitoffset": 4, 
+		"firstbyte": 5
+		}, 
+		"LID$16": {
+		"bitoffset": 5, 
+		"firstbyte": 5
+		}, 
+		"LID$17": {
+		"bitoffset": 6, 
+		"firstbyte": 5
+		}, 
+		"LID$10": {
+		"bitoffset": 7, 
+		"firstbyte": 4
+		}, 
+		"LID$11": {
+		"firstbyte": 5
+		}, 
+		"LID$12": {
+		"bitoffset": 1, 
+		"firstbyte": 5
+		}, 
+		"LID$13": {
+		"bitoffset": 2, 
+		"firstbyte": 5
+		}, 
+		"LID$18": {
+		"bitoffset": 7, 
+		"firstbyte": 5
+		}, 
+		"LID$19": {
+		"firstbyte": 6
+		}, 
+		"LID$0C": {
+		"bitoffset": 3, 
+		"firstbyte": 4
+		}, 
+		"LID$0B": {
+		"bitoffset": 2, 
+		"firstbyte": 4
+		}, 
+		"LID$0A": {
+		"bitoffset": 1, 
+		"firstbyte": 4
+		}, 
+		"LID$0F": {
+		"bitoffset": 6, 
+		"firstbyte": 4
+		}, 
+		"LID$0E": {
+		"bitoffset": 5, 
+		"firstbyte": 4
+		}, 
+		"LID$0D": {
+		"bitoffset": 4, 
+		"firstbyte": 4
+		}, 
+		"LID$03": {
+		"bitoffset": 2, 
+		"firstbyte": 3
+		}, 
+		"LID$02": {
+		"bitoffset": 1, 
+		"firstbyte": 3
+		}, 
+		"LID$01": {
+		"firstbyte": 3
+		}, 
+		"LID$07": {
+		"bitoffset": 6, 
+		"firstbyte": 3
+		}, 
+		"LID$06": {
+		"bitoffset": 5, 
+		"firstbyte": 3
+		}, 
+		"LID$05": {
+		"bitoffset": 4, 
+		"firstbyte": 3
+		}, 
+		"LID$04": {
+		"bitoffset": 3, 
+		"firstbyte": 3
+		}, 
+		"LID$09": {
+		"firstbyte": 4
+		}, 
+		"LID$08": {
+		"bitoffset": 7, 
+		"firstbyte": 3
+		}, 
+		"LID$1D": {
+		"bitoffset": 4, 
+		"firstbyte": 6
+		}, 
+		"LID$1E": {
+		"bitoffset": 5, 
+		"firstbyte": 6
+		}, 
+		"LID$1F": {
+		"bitoffset": 6, 
+		"firstbyte": 6
+		}, 
+		"LID$1A": {
+		"bitoffset": 1, 
+		"firstbyte": 6
+		}, 
+		"LID$1B": {
+		"bitoffset": 2, 
+		"firstbyte": 6
+		}, 
+		"LID$1C": {
+		"bitoffset": 3, 
+		"firstbyte": 6
+		}, 
+		"LID$20": {
+		"bitoffset": 7, 
+		"firstbyte": 6
+		}
+	}, 
+	"minbytes": 6, 
+	"sentbytes": "3040"
+	}, 
+	{
+	"name": "StartDiagnosticSession.ProgrammingSession", 
+	"replybytes": "5085", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"minbytes": 2, 
+	"sentbytes": "1085"
+	}, 
+	{
+	"name": "Supported Lid for RDBLID(60)", 
+	"replybytes": "616000000000", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"LID$14": {
+		"bitoffset": 3, 
+		"firstbyte": 5
+		}, 
+		"LID$15": {
+		"bitoffset": 4, 
+		"firstbyte": 5
+		}, 
+		"LID$16": {
+		"bitoffset": 5, 
+		"firstbyte": 5
+		}, 
+		"LID$17": {
+		"bitoffset": 6, 
+		"firstbyte": 5
+		}, 
+		"LID$10": {
+		"bitoffset": 7, 
+		"firstbyte": 4
+		}, 
+		"LID$11": {
+		"firstbyte": 5
+		}, 
+		"LID$12": {
+		"bitoffset": 1, 
+		"firstbyte": 5
+		}, 
+		"LID$13": {
+		"bitoffset": 2, 
+		"firstbyte": 5
+		}, 
+		"LID$18": {
+		"bitoffset": 7, 
+		"firstbyte": 5
+		}, 
+		"LID$19": {
+		"firstbyte": 6
+		}, 
+		"LID$0C": {
+		"bitoffset": 3, 
+		"firstbyte": 4
+		}, 
+		"LID$0B": {
+		"bitoffset": 2, 
+		"firstbyte": 4
+		}, 
+		"LID$0A": {
+		"bitoffset": 1, 
+		"firstbyte": 4
+		}, 
+		"LID$0F": {
+		"bitoffset": 6, 
+		"firstbyte": 4
+		}, 
+		"LID$0E": {
+		"bitoffset": 5, 
+		"firstbyte": 4
+		}, 
+		"LID$0D": {
+		"bitoffset": 4, 
+		"firstbyte": 4
+		}, 
+		"LID$03": {
+		"bitoffset": 2, 
+		"firstbyte": 3
+		}, 
+		"LID$02": {
+		"bitoffset": 1, 
+		"firstbyte": 3
+		}, 
+		"LID$01": {
+		"firstbyte": 3
+		}, 
+		"LID$07": {
+		"bitoffset": 6, 
+		"firstbyte": 3
+		}, 
+		"LID$06": {
+		"bitoffset": 5, 
+		"firstbyte": 3
+		}, 
+		"LID$05": {
+		"bitoffset": 4, 
+		"firstbyte": 3
+		}, 
+		"LID$04": {
+		"bitoffset": 3, 
+		"firstbyte": 3
+		}, 
+		"LID$09": {
+		"firstbyte": 4
+		}, 
+		"LID$08": {
+		"bitoffset": 7, 
+		"firstbyte": 3
+		}, 
+		"LID$1D": {
+		"bitoffset": 4, 
+		"firstbyte": 6
+		}, 
+		"LID$1E": {
+		"bitoffset": 5, 
+		"firstbyte": 6
+		}, 
+		"LID$1F": {
+		"bitoffset": 6, 
+		"firstbyte": 6
+		}, 
+		"LID$1A": {
+		"bitoffset": 1, 
+		"firstbyte": 6
+		}, 
+		"LID$1B": {
+		"bitoffset": 2, 
+		"firstbyte": 6
+		}, 
+		"LID$1C": {
+		"bitoffset": 3, 
+		"firstbyte": 6
+		}, 
+		"LID$20": {
+		"bitoffset": 7, 
+		"firstbyte": 6
+		}
+	}, 
+	"minbytes": 6, 
+	"sentbytes": "2160"
+	}, 
+	{
+	"name": "StartDiagnosticSession.ExtendedDiagSession", 
+	"replybytes": "50C0", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"minbytes": 2, 
+	"sentbytes": "10C0"
+	}, 
+	{
+	"name": "ReadDTCInformation.ReportDTC", 
+	"replybytes": "59020000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"DTCStatus.pendingDTC": {
+		"bitoffset": 5, 
+		"firstbyte": 7
+		}, 
+		"DTCStatus.testFailedSinceLastClear": {
+		"bitoffset": 2, 
+		"firstbyte": 7
+		}, 
+		"DTCDeviceAndFailureTypeOBD": {
+		"firstbyte": 4
+		}, 
+		"DTCFailureType.ManufacturerOrSupplier": {
+		"bitoffset": 4, 
+		"firstbyte": 6
+		}, 
+		"DTCFailureType.Category": {
+		"firstbyte": 6
+		}, 
+		"DTCFailureType": {
+		"firstbyte": 6
+		}, 
+		"DTCStatus.testNotCompletedSinceLastClear": {
+		"bitoffset": 3, 
+		"firstbyte": 7
+		}, 
+		"DTCStatus.testNotCompletedThisMonitoringCycle": {
+		"bitoffset": 1, 
+		"firstbyte": 7
+		}, 
+		"DTCStatusAvailabilityMask": {
+		"firstbyte": 3
+		}, 
+		"DTCStatus.warningIndicatorRequested": {
+		"firstbyte": 7
+		}, 
+		"DTCStatus.confirmedDTC": {
+		"bitoffset": 4, 
+		"firstbyte": 7
+		}, 
+		"StatusOfDTC": {
+		"firstbyte": 7
+		}, 
+		"DTCStatus.testFailedThisMonitoringCycle": {
+		"bitoffset": 6, 
+		"firstbyte": 7
+		}, 
+		"DTCStatus.testFailed": {
+		"bitoffset": 7, 
+		"firstbyte": 7
+		}, 
+		"DTCDeviceIdentifier": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "1902FF", 
+	"shiftbytescount": 4
+	}, 
+	{
+	"name": "ClearDiagnosticInformation.All", 
+	"replybytes": "54", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"minbytes": 1, 
+	"sentbytes": "14FFFFFF"
+	}, 
+	{
+	"name": "DataRead.Traceability", 
+	"replybytes": "61840000000000000000000000000000000020202020", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"LID#84_#18_Serial number": {
+		"firstbyte": 18
+		}, 
+		"LID#84_#10_Serial number": {
+		"firstbyte": 10
+		}, 
+		"LID#84_#05_Serial number": {
+		"firstbyte": 5
+		}, 
+		"LID#84_#09_Serial number": {
+		"firstbyte": 9
+		}, 
+		"LID#84_#13_Serial number": {
+		"firstbyte": 13
+		}, 
+		"LID#84_#17_Serial number": {
+		"firstbyte": 17
+		}, 
+		"LID#84_#11_Serial number": {
+		"firstbyte": 11
+		}, 
+		"LID#84_#07_Serial number": {
+		"firstbyte": 7
+		}, 
+		"LID#84_#04_Serial number": {
+		"firstbyte": 4
+		}, 
+		"LID#84_#14_Serial number": {
+		"firstbyte": 14
+		}, 
+		"LID#84_#15_Serial number": {
+		"firstbyte": 15
+		}, 
+		"LID#84_#08_Serial number": {
+		"firstbyte": 8
+		}, 
+		"LID#84_#06_Serial number": {
+		"firstbyte": 6
+		}, 
+		"LID#84_#21_Serial number": {
+		"firstbyte": 21
+		}, 
+		"LID#84_#22_Serial number": {
+		"firstbyte": 22
+		}, 
+		"LID#84_#12_Serial number": {
+		"firstbyte": 12
+		}, 
+		"LID#84_#20_Serial number": {
+		"firstbyte": 20
+		}, 
+		"LID#84_#19_Serial number": {
+		"firstbyte": 19
+		}, 
+		"LID#84_#16_Serial number": {
+		"firstbyte": 16
+		}, 
+		"LID#84_#03_Serial number": {
+		"firstbyte": 3
+		}
+	}, 
+	"minbytes": 22, 
+	"sentbytes": "2184"
+	}, 
+	{
+	"name": "TesterPresent.WithResponse", 
+	"replybytes": "7E", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"minbytes": 1, 
+	"sentbytes": "3E01"
+	}, 
+	{
+	"name": "DataRead.SnapshotData_Internal fault code", 
+	"replybytes": "62140800", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"SnapshotData_Internal fault code": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "221408"
+	}, 
+	{
+	"name": "Supported Lid for WDBLID(00)", 
+	"replybytes": "7B0000000000", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"LID$14": {
+		"bitoffset": 3, 
+		"firstbyte": 5
+		}, 
+		"LID$15": {
+		"bitoffset": 4, 
+		"firstbyte": 5
+		}, 
+		"LID$16": {
+		"bitoffset": 5, 
+		"firstbyte": 5
+		}, 
+		"LID$17": {
+		"bitoffset": 6, 
+		"firstbyte": 5
+		}, 
+		"LID$10": {
+		"bitoffset": 7, 
+		"firstbyte": 4
+		}, 
+		"LID$11": {
+		"firstbyte": 5
+		}, 
+		"LID$12": {
+		"bitoffset": 1, 
+		"firstbyte": 5
+		}, 
+		"LID$13": {
+		"bitoffset": 2, 
+		"firstbyte": 5
+		}, 
+		"LID$18": {
+		"bitoffset": 7, 
+		"firstbyte": 5
+		}, 
+		"LID$19": {
+		"firstbyte": 6
+		}, 
+		"LID$0C": {
+		"bitoffset": 3, 
+		"firstbyte": 4
+		}, 
+		"LID$0B": {
+		"bitoffset": 2, 
+		"firstbyte": 4
+		}, 
+		"LID$0A": {
+		"bitoffset": 1, 
+		"firstbyte": 4
+		}, 
+		"LID$0F": {
+		"bitoffset": 6, 
+		"firstbyte": 4
+		}, 
+		"LID$0E": {
+		"bitoffset": 5, 
+		"firstbyte": 4
+		}, 
+		"LID$0D": {
+		"bitoffset": 4, 
+		"firstbyte": 4
+		}, 
+		"LID$03": {
+		"bitoffset": 2, 
+		"firstbyte": 3
+		}, 
+		"LID$02": {
+		"bitoffset": 1, 
+		"firstbyte": 3
+		}, 
+		"LID$01": {
+		"firstbyte": 3
+		}, 
+		"LID$07": {
+		"bitoffset": 6, 
+		"firstbyte": 3
+		}, 
+		"LID$06": {
+		"bitoffset": 5, 
+		"firstbyte": 3
+		}, 
+		"LID$05": {
+		"bitoffset": 4, 
+		"firstbyte": 3
+		}, 
+		"LID$04": {
+		"bitoffset": 3, 
+		"firstbyte": 3
+		}, 
+		"LID$09": {
+		"firstbyte": 4
+		}, 
+		"LID$08": {
+		"bitoffset": 7, 
+		"firstbyte": 3
+		}, 
+		"LID$1D": {
+		"bitoffset": 4, 
+		"firstbyte": 6
+		}, 
+		"LID$1E": {
+		"bitoffset": 5, 
+		"firstbyte": 6
+		}, 
+		"LID$1F": {
+		"bitoffset": 6, 
+		"firstbyte": 6
+		}, 
+		"LID$1A": {
+		"bitoffset": 1, 
+		"firstbyte": 6
+		}, 
+		"LID$1B": {
+		"bitoffset": 2, 
+		"firstbyte": 6
+		}, 
+		"LID$1C": {
+		"bitoffset": 3, 
+		"firstbyte": 6
+		}, 
+		"LID$20": {
+		"bitoffset": 7, 
+		"firstbyte": 6
+		}
+	}, 
+	"minbytes": 6, 
+	"sentbytes": "3B00"
+	}, 
+	{
+	"name": "Supported Lid for IOCBLID(00)", 
+	"replybytes": "700000000000", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"LID$14": {
+		"bitoffset": 3, 
+		"firstbyte": 5
+		}, 
+		"LID$15": {
+		"bitoffset": 4, 
+		"firstbyte": 5
+		}, 
+		"LID$16": {
+		"bitoffset": 5, 
+		"firstbyte": 5
+		}, 
+		"LID$17": {
+		"bitoffset": 6, 
+		"firstbyte": 5
+		}, 
+		"LID$10": {
+		"bitoffset": 7, 
+		"firstbyte": 4
+		}, 
+		"LID$11": {
+		"firstbyte": 5
+		}, 
+		"LID$12": {
+		"bitoffset": 1, 
+		"firstbyte": 5
+		}, 
+		"LID$13": {
+		"bitoffset": 2, 
+		"firstbyte": 5
+		}, 
+		"LID$18": {
+		"bitoffset": 7, 
+		"firstbyte": 5
+		}, 
+		"LID$19": {
+		"firstbyte": 6
+		}, 
+		"LID$0C": {
+		"bitoffset": 3, 
+		"firstbyte": 4
+		}, 
+		"LID$0B": {
+		"bitoffset": 2, 
+		"firstbyte": 4
+		}, 
+		"LID$0A": {
+		"bitoffset": 1, 
+		"firstbyte": 4
+		}, 
+		"LID$0F": {
+		"bitoffset": 6, 
+		"firstbyte": 4
+		}, 
+		"LID$0E": {
+		"bitoffset": 5, 
+		"firstbyte": 4
+		}, 
+		"LID$0D": {
+		"bitoffset": 4, 
+		"firstbyte": 4
+		}, 
+		"LID$03": {
+		"bitoffset": 2, 
+		"firstbyte": 3
+		}, 
+		"LID$02": {
+		"bitoffset": 1, 
+		"firstbyte": 3
+		}, 
+		"LID$01": {
+		"firstbyte": 3
+		}, 
+		"LID$07": {
+		"bitoffset": 6, 
+		"firstbyte": 3
+		}, 
+		"LID$06": {
+		"bitoffset": 5, 
+		"firstbyte": 3
+		}, 
+		"LID$05": {
+		"bitoffset": 4, 
+		"firstbyte": 3
+		}, 
+		"LID$04": {
+		"bitoffset": 3, 
+		"firstbyte": 3
+		}, 
+		"LID$09": {
+		"firstbyte": 4
+		}, 
+		"LID$08": {
+		"bitoffset": 7, 
+		"firstbyte": 3
+		}, 
+		"LID$1D": {
+		"bitoffset": 4, 
+		"firstbyte": 6
+		}, 
+		"LID$1E": {
+		"bitoffset": 5, 
+		"firstbyte": 6
+		}, 
+		"LID$1F": {
+		"bitoffset": 6, 
+		"firstbyte": 6
+		}, 
+		"LID$1A": {
+		"bitoffset": 1, 
+		"firstbyte": 6
+		}, 
+		"LID$1B": {
+		"bitoffset": 2, 
+		"firstbyte": 6
+		}, 
+		"LID$1C": {
+		"bitoffset": 3, 
+		"firstbyte": 6
+		}, 
+		"LID$20": {
+		"bitoffset": 7, 
+		"firstbyte": 6
+		}
+	}, 
+	"minbytes": 6, 
+	"sentbytes": "3000"
+	}, 
+	{
+	"name": "DataRead.SnapshotData_Motor current (demanded)", 
+	"replybytes": "62140600", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"SnapshotData_Motor current (demanded)": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "221406"
+	}, 
+	{
+	"name": "Supported Lid for SRBLID(00)", 
+	"replybytes": "710000000000", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"LID$14": {
+		"bitoffset": 3, 
+		"firstbyte": 5
+		}, 
+		"LID$15": {
+		"bitoffset": 4, 
+		"firstbyte": 5
+		}, 
+		"LID$16": {
+		"bitoffset": 5, 
+		"firstbyte": 5
+		}, 
+		"LID$17": {
+		"bitoffset": 6, 
+		"firstbyte": 5
+		}, 
+		"LID$10": {
+		"bitoffset": 7, 
+		"firstbyte": 4
+		}, 
+		"LID$11": {
+		"firstbyte": 5
+		}, 
+		"LID$12": {
+		"bitoffset": 1, 
+		"firstbyte": 5
+		}, 
+		"LID$13": {
+		"bitoffset": 2, 
+		"firstbyte": 5
+		}, 
+		"LID$18": {
+		"bitoffset": 7, 
+		"firstbyte": 5
+		}, 
+		"LID$19": {
+		"firstbyte": 6
+		}, 
+		"LID$0C": {
+		"bitoffset": 3, 
+		"firstbyte": 4
+		}, 
+		"LID$0B": {
+		"bitoffset": 2, 
+		"firstbyte": 4
+		}, 
+		"LID$0A": {
+		"bitoffset": 1, 
+		"firstbyte": 4
+		}, 
+		"LID$0F": {
+		"bitoffset": 6, 
+		"firstbyte": 4
+		}, 
+		"LID$0E": {
+		"bitoffset": 5, 
+		"firstbyte": 4
+		}, 
+		"LID$0D": {
+		"bitoffset": 4, 
+		"firstbyte": 4
+		}, 
+		"LID$03": {
+		"bitoffset": 2, 
+		"firstbyte": 3
+		}, 
+		"LID$02": {
+		"bitoffset": 1, 
+		"firstbyte": 3
+		}, 
+		"LID$01": {
+		"firstbyte": 3
+		}, 
+		"LID$07": {
+		"bitoffset": 6, 
+		"firstbyte": 3
+		}, 
+		"LID$06": {
+		"bitoffset": 5, 
+		"firstbyte": 3
+		}, 
+		"LID$05": {
+		"bitoffset": 4, 
+		"firstbyte": 3
+		}, 
+		"LID$04": {
+		"bitoffset": 3, 
+		"firstbyte": 3
+		}, 
+		"LID$09": {
+		"firstbyte": 4
+		}, 
+		"LID$08": {
+		"bitoffset": 7, 
+		"firstbyte": 3
+		}, 
+		"LID$1D": {
+		"bitoffset": 4, 
+		"firstbyte": 6
+		}, 
+		"LID$1E": {
+		"bitoffset": 5, 
+		"firstbyte": 6
+		}, 
+		"LID$1F": {
+		"bitoffset": 6, 
+		"firstbyte": 6
+		}, 
+		"LID$1A": {
+		"bitoffset": 1, 
+		"firstbyte": 6
+		}, 
+		"LID$1B": {
+		"bitoffset": 2, 
+		"firstbyte": 6
+		}, 
+		"LID$1C": {
+		"bitoffset": 3, 
+		"firstbyte": 6
+		}, 
+		"LID$20": {
+		"bitoffset": 7, 
+		"firstbyte": 6
+		}
+	}, 
+	"minbytes": 6, 
+	"sentbytes": "3100"
+	}, 
+	{
+	"name": "Supported Lid for IOCBLID(20)", 
+	"replybytes": "700000000000", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"LID$14": {
+		"bitoffset": 3, 
+		"firstbyte": 5
+		}, 
+		"LID$15": {
+		"bitoffset": 4, 
+		"firstbyte": 5
+		}, 
+		"LID$16": {
+		"bitoffset": 5, 
+		"firstbyte": 5
+		}, 
+		"LID$17": {
+		"bitoffset": 6, 
+		"firstbyte": 5
+		}, 
+		"LID$10": {
+		"bitoffset": 7, 
+		"firstbyte": 4
+		}, 
+		"LID$11": {
+		"firstbyte": 5
+		}, 
+		"LID$12": {
+		"bitoffset": 1, 
+		"firstbyte": 5
+		}, 
+		"LID$13": {
+		"bitoffset": 2, 
+		"firstbyte": 5
+		}, 
+		"LID$18": {
+		"bitoffset": 7, 
+		"firstbyte": 5
+		}, 
+		"LID$19": {
+		"firstbyte": 6
+		}, 
+		"LID$0C": {
+		"bitoffset": 3, 
+		"firstbyte": 4
+		}, 
+		"LID$0B": {
+		"bitoffset": 2, 
+		"firstbyte": 4
+		}, 
+		"LID$0A": {
+		"bitoffset": 1, 
+		"firstbyte": 4
+		}, 
+		"LID$0F": {
+		"bitoffset": 6, 
+		"firstbyte": 4
+		}, 
+		"LID$0E": {
+		"bitoffset": 5, 
+		"firstbyte": 4
+		}, 
+		"LID$0D": {
+		"bitoffset": 4, 
+		"firstbyte": 4
+		}, 
+		"LID$03": {
+		"bitoffset": 2, 
+		"firstbyte": 3
+		}, 
+		"LID$02": {
+		"bitoffset": 1, 
+		"firstbyte": 3
+		}, 
+		"LID$01": {
+		"firstbyte": 3
+		}, 
+		"LID$07": {
+		"bitoffset": 6, 
+		"firstbyte": 3
+		}, 
+		"LID$06": {
+		"bitoffset": 5, 
+		"firstbyte": 3
+		}, 
+		"LID$05": {
+		"bitoffset": 4, 
+		"firstbyte": 3
+		}, 
+		"LID$04": {
+		"bitoffset": 3, 
+		"firstbyte": 3
+		}, 
+		"LID$09": {
+		"firstbyte": 4
+		}, 
+		"LID$08": {
+		"bitoffset": 7, 
+		"firstbyte": 3
+		}, 
+		"LID$1D": {
+		"bitoffset": 4, 
+		"firstbyte": 6
+		}, 
+		"LID$1E": {
+		"bitoffset": 5, 
+		"firstbyte": 6
+		}, 
+		"LID$1F": {
+		"bitoffset": 6, 
+		"firstbyte": 6
+		}, 
+		"LID$1A": {
+		"bitoffset": 1, 
+		"firstbyte": 6
+		}, 
+		"LID$1B": {
+		"bitoffset": 2, 
+		"firstbyte": 6
+		}, 
+		"LID$1C": {
+		"bitoffset": 3, 
+		"firstbyte": 6
+		}, 
+		"LID$20": {
+		"bitoffset": 7, 
+		"firstbyte": 6
+		}
+	}, 
+	"minbytes": 6, 
+	"sentbytes": "3020"
+	}
+], 
+"data": {
+	"ONDULEUR.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"LID#84_#03_Serial number": {
+	"byte": true
+	}, 
+	"LID$0C": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$0B": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$0A": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$0F": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$0E": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$0D": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID#06_#09_4_Sub torque": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "Nm", 
+	"signed": true
+	}, 
+	"LID#06_#14_5_TS voltage": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "V"
+	}, 
+	"LID#01_#13_ECU temperature(Sensor value)": {
+	"scaled": true, 
+	"unit": "C", 
+	"offset": -50.0
+	}, 
+	"EPS.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"Reset_EPS tunning number": {
+	"scaled": true
+	}, 
+	"LID#06_#14_7_TS voltage": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "V"
+	}, 
+	"LID#06_#08_7_Main torque": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "Nm", 
+	"signed": true
+	}, 
+	"LID$03": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$02": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$01": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"I-CON.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"LID$07": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$06": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$05": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"BCM/SEC.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"LID#06_#13_6_IGN voltage": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "V"
+	}, 
+	"LID$09": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$08": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"DTCStatus.testFailedSinceLastClear": {
+	"comment": "TFSLC", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "No", 
+		"1": "Yes"
+	}
+	}, 
+	"EPS.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"DTCExtendedData.Mileage": {
+	"scaled": true, 
+	"bytescount": 3, 
+	"comment": "Description of the extendedData Mileage (use by Failure Page to decode data)", 
+	"bitscount": 24, 
+	"unit": "km"
+	}, 
+	"OutputTemporaryControlList": {
+	"comment": "Active Test", 
+	"lists": {
+		"18": "Levling Test"
+	}
+	}, 
+	"DTCStatus.warningIndicatorRequested": {
+	"comment": "WIR", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "No", 
+		"1": "Yes"
+	}
+	}, 
+	"SONAR.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"EPS.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"AT/CVT.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"LID#84_#07_Serial number": {
+	"byte": true
+	}, 
+	"VDC/TCS/ABS.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"LID#06_#12_6_Battery voltage": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "V"
+	}, 
+	"LID#06_#08_5_Main torque": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "Nm", 
+	"signed": true
+	}, 
+	"LID#06_#05_5_Motor current(Measured value)": {
+	"scaled": true, 
+	"unit": "A", 
+	"signed": true
+	}, 
+	"BUSOFF DIAG.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"SCU.r.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"IPDM E/R.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"LID#06_#18_5_bit7_vehicle speed selection": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "MCM select", 
+		"1": "ABS select"
+	}
+	}, 
+	"SYP.r.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"LID#06_#08_8_Main torque": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "Nm", 
+	"signed": true
+	}, 
+	"ReadData_EPS tunning number": {
+	"lists": {
+		"0": "00", 
+		"1": "01", 
+		"2": "02", 
+		"3": "03", 
+		"4": "04", 
+		"5": "05", 
+		"6": "06", 
+		"7": "07", 
+		"153": "99 (Blank)"
+	}
+	}, 
+	"BCM/SEC.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"LID#06_#11_6_Vehicle speed": {
+	"scaled": true, 
+	"unit": "km/h"
+	}, 
+	"LID#06_#18_3_bit7_vehicle speed selection": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "MCM select", 
+		"1": "ABS select"
+	}
+	}, 
+	"ESCL.r.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"HCM.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"LID#06_#06_1_Motor current(Target value)": {
+	"scaled": true, 
+	"unit": "A", 
+	"signed": true
+	}, 
+	"HVAC.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"APB.r.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"LID#06_#18_3_bit6_vehicle speed status": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "Selected speed", 
+		"1": "Default speed"
+	}
+	}, 
+	"LID#06_#07_7_Torque for control": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "Nm", 
+	"signed": true
+	}, 
+	"LID#06_#18_1_bit6_vehicle speed status": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "Selected speed", 
+		"1": "Default speed"
+	}
+	}, 
+	"LID#06_#03_8_Internal fault code": {
+	"scaled": true
+	}, 
+	"APB.r.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"TRANSMIT DIAG.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"LID#06_#10_6_Vehicle speed for control": {
+	"scaled": true, 
+	"unit": "km/h"
+	}, 
+	"BUSOFF DIAG.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"N.SparePartsNumber": {
+	"bytesascii": true, 
+	"bytescount": 5, 
+	"byte": true, 
+	"bitscount": 40
+	}, 
+	"IPDM E/R.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"BUSOFF DIAG.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"LID#06_#08_6_Main torque": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "Nm", 
+	"signed": true
+	}, 
+	"LID#01_#20_bit54_Setting Change Request For EPS": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "No request", 
+		"1": "Normal mode", 
+		"2": "Sports mode"
+	}
+	}, 
+	"LID#01_#05_Driver Torque(Sensor value)": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "Nm", 
+	"signed": true
+	}, 
+	"LID#01_#23_bit4_EPS_State_Feedback": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "Not Parking assist mode", 
+		"1": "Parking assist"
+	}
+	}, 
+	"OutputControlCommand": {
+	"lists": {
+		"0": "Start Temporary", 
+		"1": "Status", 
+		"17": "Stop", 
+		"32": "Start Permanent"
+	}
+	}, 
+	"LID#06_#12_8_Battery voltage": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "V"
+	}, 
+	"LID#06_#18_3_bit10_engine status": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "engine stopped", 
+		"1": "engine stalled", 
+		"2": "engine running", 
+		"3": "engine cranking"
+	}
+	}, 
+	"DTCFailureType": {
+	"lists": {
+		"0": "Device and failure type ODB codding", 
+		"1": "General Electrical Failure", 
+		"2": "General signal failure", 
+		"3": "FM (Frequency Modulated) / PWM (Pulse Width Modulated) Failures", 
+		"4": "System Internal Failures", 
+		"5": "System Programming Failures", 
+		"6": "Algorithm Based Failures", 
+		"7": "Mechanical Failures", 
+		"8": "Bus Signal / Message Failures", 
+		"9": "Component Failures", 
+		"17": "circuit short to ground", 
+		"18": "circuit short to battery", 
+		"19": "circuit open", 
+		"20": "circuit short to ground or open", 
+		"21": "circuit short to battery or open", 
+		"22": "circuit voltage below threshold", 
+		"23": "circuit voltage above threshold", 
+		"24": "circuit current below threshold", 
+		"25": "circuit current above threshold", 
+		"26": "circuit resistance below threshold", 
+		"27": "circuit resistance above threshold", 
+		"28": "circuit voltage out of range", 
+		"29": "circuit current out of range", 
+		"30": "circuit resistance out of range", 
+		"31": "circuit intermittent", 
+		"33": "signal amplitude < minimum", 
+		"34": "signal amplitude > maximum", 
+		"35": "signal stuck low", 
+		"36": "signal stuck high", 
+		"37": "signal shape / waveform failure", 
+		"38": "signal rate of change below threshold", 
+		"39": "signal rate of change above threshold", 
+		"40": "signal bias level out of range / zero adjustment failure", 
+		"41": "signal signal invalid", 
+		"47": "signal erratic", 
+		"49": "no signal", 
+		"50": "signal low time < minimum", 
+		"51": "signal low time > maximum", 
+		"52": "signal high time < minimum", 
+		"53": "signal high time > maximum", 
+		"54": "signal frequency too low", 
+		"55": "signal frequency too high", 
+		"56": "signal frequency incorrect", 
+		"57": "incorrect has too few pulses", 
+		"58": "incorrect has too many pulses", 
+		"65": "general checksum failure", 
+		"66": "general memory failure", 
+		"67": "special memory failure", 
+		"68": "data memory failure", 
+		"69": "program memory failure", 
+		"70": "calibration / parameter memory failure", 
+		"71": "watchdog / safety \u03bcC failure", 
+		"72": "supervision software failure", 
+		"73": "internal electronic failure", 
+		"74": "incorrect component installed", 
+		"75": "over temperature", 
+		"81": "not programmed", 
+		"82": "not activated", 
+		"83": "deactivated", 
+		"84": "missing calibration", 
+		"85": "not configured", 
+		"97": "signal calculation failure", 
+		"98": "signal compare failure", 
+		"99": "circuit / component protection time-out", 
+		"100": "signal plausibility failure", 
+		"101": "signal has too few transitions / events", 
+		"102": "signal has too many transitions / events", 
+		"103": "signal incorrect after event", 
+		"104": "event information", 
+		"113": "actuator stuck", 
+		"114": "actuator stuck open", 
+		"115": "actuator stuck closed", 
+		"116": "actuator slipping", 
+		"117": "emergency position not reachable", 
+		"118": "wrong mounting position", 
+		"119": "commanded position not reachable", 
+		"120": "alignment or adjustment incorrect", 
+		"121": "mechanical linkage failure", 
+		"122": "fluid leak or seal failure", 
+		"123": "low fluid level", 
+		"129": "invalid serial data received", 
+		"130": "alive / sequence counter incorrect / not updated", 
+		"131": "value of signal protection calculation incorrect", 
+		"132": "signal below allowable range", 
+		"133": "signal above allowable range", 
+		"134": "signal invalid", 
+		"135": "missing message", 
+		"136": "bus off", 
+		"143": "erratic", 
+		"145": "parametric", 
+		"146": "performance or incorrect operation", 
+		"147": "no operation", 
+		"148": "unexpected operation", 
+		"149": "incorrect assembly", 
+		"150": "component internal failure", 
+		"151": "Component or system operation obstructed or blocked", 
+		"152": "component or system over temperature"
+	}
+	}, 
+	"TIRE-P DISP.r.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"StatusOfDTC": {
+	"scaled": true, 
+	"comment": "DTCASR_SODTC"
+	}, 
+	"LID#01_#17_bit7_Fault indicator": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "Not serious failure(W/L OFF)", 
+		"1": "serious failure(W/L ON)"
+	}
+	}, 
+	"LID#06_#07_1_Torque for control": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "Nm", 
+	"signed": true
+	}, 
+	"LID#06_#18_5_bit10_engine status": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "engine stopped", 
+		"1": "engine stalled", 
+		"2": "engine running", 
+		"3": "engine cranking"
+	}
+	}, 
+	"LID#84_#11_Serial number": {
+	"byte": true
+	}, 
+	"ECM.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"LID#84_#10_Serial number": {
+	"byte": true
+	}, 
+	"SCU.r.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"LID#06_#17_1_Limit value for overheat protection": {
+	"scaled": true, 
+	"unit": "A", 
+	"signed": true
+	}, 
+	"LID#06_#04_7_IGN counter": {
+	"scaled": true
+	}, 
+	"DTCExtendedDataRecordNumber": {
+	"lists": {
+		"128": "Mileage", 
+		"129": "AgingCounter", 
+		"130": "DTCOccurrenceCounter"
+	}
+	}, 
+	"LID$04": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"ECM.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"LID#06_#04_2_IGN counter": {
+	"scaled": true
+	}, 
+	"LID#06_#11_5_Vehicle speed": {
+	"scaled": true, 
+	"unit": "km/h"
+	}, 
+	"LID#06_#04_3_IGN counter": {
+	"scaled": true
+	}, 
+	"LID#06_#17_8_Limit value for overheat protection": {
+	"scaled": true, 
+	"unit": "A", 
+	"signed": true
+	}, 
+	"LID#06_#14_8_TS voltage": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "V"
+	}, 
+	"N.DiagnosticIdentificationCode": {
+	"byte": true
+	}, 
+	"METER/M&A.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"LID#84_#16_Serial number": {
+	"byte": true
+	}, 
+	"LID#06_#08_2_Main torque": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "Nm", 
+	"signed": true
+	}, 
+	"LID#06_#16_8_ECU temperature(Sensor value)": {
+	"scaled": true, 
+	"unit": "C"
+	}, 
+	"LID#06_#05_2_Motor current(Measured value)": {
+	"scaled": true, 
+	"unit": "A", 
+	"signed": true
+	}, 
+	"LID#01_#06#07_Reserve": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"bitscount": 16
+	}, 
+	"LID#06_#04_6_IGN counter": {
+	"scaled": true
+	}, 
+	"LID#06_#18_1_bit7_vehicle speed selection": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "MCM select", 
+		"1": "ABS select"
+	}
+	}, 
+	"LID#06_#04_8_IGN counter": {
+	"scaled": true
+	}, 
+	"LID#84_#20_Serial number": {
+	"byte": true
+	}, 
+	"DataRead.Dongle_pairing_counter": {
+	"scaled": true
+	}, 
+	"LID#01_#21_bit432_StopAutoPhase": {
+	"bitscount": 3, 
+	"lists": {
+		"0": "NotInAutoPhase", 
+		"1": "AutoStart", 
+		"2": "IdleStop", 
+		"3": "AutophaseAborted"
+	}
+	}, 
+	"LID#06_#16_6_ECU temperature(Sensor value)": {
+	"scaled": true, 
+	"unit": "C"
+	}, 
+	"LID#06_#13_7_IGN voltage": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "V"
+	}, 
+	"LID#01_#08#09_Reserve": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"bitscount": 16
+	}, 
+	"LID#01_#26#27_EPS_Control_Current": {
+	"divideby": 10000.0, 
+	"bitscount": 16, 
+	"signed": true, 
+	"scaled": true, 
+	"step": 155.0, 
+	"bytescount": 2, 
+	"unit": "A"
+	}, 
+	"HVAC.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"LID#01_#23_bit21_IPA_Status": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "IPA OFF", 
+		"1": "IPA ON and Steering OFF", 
+		"2": "IPA ON and Steering ON(IPA)", 
+		"3": "IPA ON and Steering ON(P4U(SONAR))"
+	}
+	}, 
+	"LID#06_#17_3_Limit value for overheat protection": {
+	"scaled": true, 
+	"unit": "A", 
+	"signed": true
+	}, 
+	"LID#06_#10_7_Vehicle speed for control": {
+	"scaled": true, 
+	"unit": "km/h"
+	}, 
+	"LID#06_#18_8_bit7_vehicle speed selection": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "MCM select", 
+		"1": "ABS select"
+	}
+	}, 
+	"LID#06_#18_4_bit10_engine status": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "engine stopped", 
+		"1": "engine stalled", 
+		"2": "engine running", 
+		"3": "engine cranking"
+	}
+	}, 
+	"LID#06_#15_7_ECU temperature(Control value)": {
+	"scaled": true, 
+	"unit": "C"
+	}, 
+	"ISG.r.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"DTCRecord": {
+	"comment": "DTCASR_DTC", 
+	"bytescount": 3, 
+	"byte": true, 
+	"bitscount": 24
+	}, 
+	"LID$12": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"HCM.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"DTCStatus.testNotCompletedThisMonitoringCycle": {
+	"comment": "TNCTMC", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "No", 
+		"1": "Yes"
+	}
+	}, 
+	"HCM.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"SCU.r.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"LID#01_#21-1(bit7)_Torque_Flag": {
+	"comment": "Bit7", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OFF", 
+		"1": "ON"
+	}
+	}, 
+	"ITM.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"IPDM E/R.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"LID#06_#15_4_ECU temperature(Control value)": {
+	"scaled": true, 
+	"unit": "C"
+	}, 
+	"LID#01_#17_bit54_EPS_StartActivationRequest(DiagID:44H only)": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "No Request", 
+		"2": "Request"
+	}
+	}, 
+	"STRG.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"SnapshotData_Motor current (measured)": {
+	"scaled": true, 
+	"unit": "A", 
+	"signed": true
+	}, 
+	"LID#06_#03_7_Internal fault code": {
+	"scaled": true
+	}, 
+	"LID#06_#13_5_IGN voltage": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "V"
+	}, 
+	"LID#06_#18_7_bit7_vehicle speed selection": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "MCM select", 
+		"1": "ABS select"
+	}
+	}, 
+	"LID#06_#10_8_Vehicle speed for control": {
+	"scaled": true, 
+	"unit": "km/h"
+	}, 
+	"LID#06_#12_1_Battery voltage": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "V"
+	}, 
+	"APB.r.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"LID#01_#17_bit54_Engine status": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "Engine stopped", 
+		"1": "Engine stalled", 
+		"2": "Engine running", 
+		"3": "Engine cranking"
+	}
+	}, 
+	"Tuning Version": {
+	"comment": "Version du tuning (traca des evolutions) $21$80", 
+	"byte": true
+	}, 
+	"DTCFailureType.ManufacturerOrSupplier": {
+	"bitscount": 4
+	}, 
+	"TIRE-P DISP.r.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"LID#06_#07_5_Torque for control": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "Nm", 
+	"signed": true
+	}, 
+	"DTCStatus.testFailedThisMonitoringCycle": {
+	"comment": "TFTMC", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "No", 
+		"1": "Yes"
+	}
+	}, 
+	"LID#06_#15_8_ECU temperature(Control value)": {
+	"scaled": true, 
+	"unit": "C"
+	}, 
+	"LID#84_#04_Serial number": {
+	"byte": true
+	}, 
+	"LID#06_#06_8_Motor current(Target value)": {
+	"scaled": true, 
+	"unit": "A", 
+	"signed": true
+	}, 
+	"LID#06_#17_2_Limit value for overheat protection": {
+	"scaled": true, 
+	"unit": "A", 
+	"signed": true
+	}, 
+	"LID#06_#18_4_bit7_vehicle speed selection": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "MCM select", 
+		"1": "ABS select"
+	}
+	}, 
+	"LID#06_#12_3_Battery voltage": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "V"
+	}, 
+	"TRANSMIT DIAG.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"VDC/TCS/ABS.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"LID#01_#22_1_I-CON_MODE_STATUS": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "Default (Standard or Eco) Mode", 
+		"1": "Sports Mode"
+	}
+	}, 
+	"LID#06_#15_5_ECU temperature(Control value)": {
+	"scaled": true, 
+	"unit": "C"
+	}, 
+	"LID#06_#10_1_Vehicle speed for control": {
+	"scaled": true, 
+	"unit": "km/h"
+	}, 
+	"LID#06_#04_1_IGN counter": {
+	"scaled": true
+	}, 
+	"LID#06_#17_7_Limit value for overheat protection": {
+	"scaled": true, 
+	"unit": "A", 
+	"signed": true
+	}, 
+	"LID#06_#18_6_bit10_engine status": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "engine stopped", 
+		"1": "engine stalled", 
+		"2": "engine running", 
+		"3": "engine cranking"
+	}
+	}, 
+	"ECM.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"LID#06_#06_5_Motor current(Target value)": {
+	"scaled": true, 
+	"unit": "A", 
+	"signed": true
+	}, 
+	"AVM.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"ACC.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"LID#06_#16_3_ECU temperature(Sensor value)": {
+	"scaled": true, 
+	"unit": "C"
+	}, 
+	"LID#06_#09_3_Sub torque": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "Nm", 
+	"signed": true
+	}, 
+	"METER/M&A.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"ESCL.r.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"LID#01_#20_bit76_EPS_Steering Mode": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "No Steering mode function", 
+		"1": "Normal mode", 
+		"2": "Sports mode"
+	}
+	}, 
+	"LID#84_#08_Serial number": {
+	"byte": true
+	}, 
+	"AB-SRS.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"LID#06_#11_7_Vehicle speed": {
+	"scaled": true, 
+	"unit": "km/h"
+	}, 
+	"LID$20": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID#06_#03_1_Internal fault code": {
+	"scaled": true
+	}, 
+	"ARS.r.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"LID#06_#18_2_bit6_vehicle speed status": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "Selected speed", 
+		"1": "Default speed"
+	}
+	}, 
+	"LID#06_#17_6_Limit value for overheat protection": {
+	"scaled": true, 
+	"unit": "A", 
+	"signed": true
+	}, 
+	"LID#06_#16_5_ECU temperature(Sensor value)": {
+	"scaled": true, 
+	"unit": "C"
+	}, 
+	"LID#06_#17_5_Limit value for overheat protection": {
+	"scaled": true, 
+	"unit": "A", 
+	"signed": true
+	}, 
+	"ETC.r.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"LID#84_#17_Serial number": {
+	"byte": true
+	}, 
+	"N.HardwareNumber": {
+	"bytescount": 5, 
+	"byte": true, 
+	"bitscount": 40
+	}, 
+	"DTCStatusAvailabilityMask": {
+	"scaled": true, 
+	"comment": "DTCSAM"
+	}, 
+	"LID#84_#18_Serial number": {
+	"byte": true
+	}, 
+	"LID#06_#08_1_Main torque": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "Nm", 
+	"signed": true
+	}, 
+	"SnapshotData_Main torque signal": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "Nm", 
+	"signed": true
+	}, 
+	"ISG.r.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"LID#06_#12_5_Battery voltage": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "V"
+	}, 
+	"LID#01_#12_TORQUE OF MOTOR": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "Nm"
+	}, 
+	"DTCDeviceIdentifier": {
+	"bytescount": 2, 
+	"bitscount": 16, 
+	"lists": {
+		"53248": "CAN_communication_failure", 
+		"22017": "Battery voltage failure", 
+		"22018": "No tuning set", 
+		"20803": "Steering sensor failure", 
+		"22020": "Torque sensor failure", 
+		"22022": "Motor failure", 
+		"22023": "EEPROM failure", 
+		"22024": "Control unit failure", 
+		"22025": "Vehicle speed failure", 
+		"55664": "AVM failure", 
+		"53264": "CONTROL UNIT(CAN)", 
+		"55665": "SONAR failure", 
+		"22032": "Engine signal failure"
+	}
+	}, 
+	"LID$15": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"DTCStatus.testNotCompletedSinceLastClear": {
+	"comment": "TNCSLC", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "No", 
+		"1": "Yes"
+	}
+	}, 
+	"SYP.r.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"LID$11": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"I-CON.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"LID#06_#12_4_Battery voltage": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "V"
+	}, 
+	"LID#06_#13_4_IGN voltage": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "V"
+	}, 
+	"ITM.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"LID#06_#03_6_Internal fault code": {
+	"scaled": true
+	}, 
+	"N.ManufacturerIdentificationCode": {
+	"lists": {
+		"128": "N1", 
+		"129": "N2", 
+		"130": "N3"
+	}
+	}, 
+	"LID#01_#14_Derating level": {
+	"scaled": true, 
+	"unit": "%"
+	}, 
+	"AVM.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"LID#06_#11_1_Vehicle speed": {
+	"scaled": true, 
+	"unit": "km/h"
+	}, 
+	"TRANSMIT DIAG.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"Low Beam Test Right.param": {
+	"lists": {
+		"0": "Min Position(Fast mode)", 
+		"1": "Max Position(Fast mode)", 
+		"2": "Min Position(Slow mode)", 
+		"3": "Max Position(Slow mode)"
+	}
+	}, 
+	"TIRE-P DISP.r.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"DTCMaskRecord": {
+	"comment": "DTCMREC_DTC", 
+	"bytescount": 3, 
+	"byte": true, 
+	"bitscount": 24
+	}, 
+	"Low Beam Test Left.param": {
+	"lists": {
+		"0": "Min Position(Fast mode)", 
+		"1": "Max Position(Fast mode)", 
+		"2": "Min Position(Slow mode)", 
+		"3": "Max Position(Slow mode)"
+	}
+	}, 
+	"LID#06_#12_7_Battery voltage": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "V"
+	}, 
+	"LID#84_#21_Serial number": {
+	"byte": true
+	}, 
+	"LID#06_#03_3_Internal fault code": {
+	"scaled": true
+	}, 
+	"LID#84_#09_Serial number": {
+	"byte": true
+	}, 
+	"LID#06_#09_6_Sub torque": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "Nm", 
+	"signed": true
+	}, 
+	"LID#06_#03_5_Internal fault code": {
+	"scaled": true
+	}, 
+	"DataRead.Dongle error": {
+	"lists": {
+		"0": "no error", 
+		"1": "EEPROM problem on Dongle_ID", 
+		"2": "EEPROM problem on Dongle_pairing_counter", 
+		"3": "Motor disconnected of ECU"
+	}
+	}, 
+	"LID#06_#06_3_Motor current(Target value)": {
+	"scaled": true, 
+	"unit": "A", 
+	"signed": true
+	}, 
+	"N.SoftwareNumber": {
+	"bytescount": 2, 
+	"byte": true, 
+	"bitscount": 16
+	}, 
+	"LID#06_#12_2_Battery voltage": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "V"
+	}, 
+	"LID#06_#06_7_Motor current(Target value)": {
+	"scaled": true, 
+	"unit": "A", 
+	"signed": true
+	}, 
+	"SnapshotData_Battery voltage": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "V"
+	}, 
+	"LID#06_#17_4_Limit value for overheat protection": {
+	"scaled": true, 
+	"unit": "A", 
+	"signed": true
+	}, 
+	"LID#06_#16_7_ECU temperature(Sensor value)": {
+	"scaled": true, 
+	"unit": "C"
+	}, 
+	"LID#06_#18_8_bit6_vehicle speed status": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "Selected speed", 
+		"1": "Default speed"
+	}
+	}, 
+	"LID#06_#05_4_Motor current(Measured value)": {
+	"scaled": true, 
+	"unit": "A", 
+	"signed": true
+	}, 
+	"LID#06_#05_7_Motor current(Measured value)": {
+	"scaled": true, 
+	"unit": "A", 
+	"signed": true
+	}, 
+	"LID#06_#10_3_Vehicle speed for control": {
+	"scaled": true, 
+	"unit": "km/h"
+	}, 
+	"LID#84_#06_Serial number": {
+	"byte": true
+	}, 
+	"HVAC.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"SnapshotData_Dummy": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"bitscount": 16, 
+	"signed": true
+	}, 
+	"SONAR.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"DTCStatus.pendingDTC": {
+	"comment": "PDTC", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "No", 
+		"1": "Yes"
+	}
+	}, 
+	"LID#06_#03_4_Internal fault code": {
+	"scaled": true
+	}, 
+	"VDC/TCS/ABS.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"Levling Test.param": {
+	"lists": {
+		"0": "Min Position", 
+		"1": "Max Position"
+	}
+	}, 
+	"SnapshotData_Internal fault code": {
+	"byte": true
+	}, 
+	"LID#06_#14_3_TS voltage": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "V"
+	}, 
+	"STRG.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"LID#06_#07_4_Torque for control": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "Nm", 
+	"signed": true
+	}, 
+	"LID#06_#04_5_IGN counter": {
+	"scaled": true
+	}, 
+	"LID#06_#13_2_IGN voltage": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "V"
+	}, 
+	"ESCL.r.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"LID#06_#18_7_bit10_engine status": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "engine stopped", 
+		"1": "engine stalled", 
+		"2": "engine running", 
+		"3": "engine cranking"
+	}
+	}, 
+	"LID#01_#23_bit3_ISS_Inhibit_EPS": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "ISS Accept", 
+		"1": "ISS Ihhibit"
+	}
+	}, 
+	"SYP.r.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"LID#84_#19_Serial number": {
+	"byte": true
+	}, 
+	"ISG.r.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"LID#06_#14_1_TS voltage": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "V"
+	}, 
+	"ARS.r.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"LID#06_#18_8_bit10_engine status": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "engine stopped", 
+		"1": "engine stalled", 
+		"2": "engine running", 
+		"3": "engine cranking"
+	}
+	}, 
+	"LID#06_#08_3_Main torque": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "Nm", 
+	"signed": true
+	}, 
+	"LID#06_#06_4_Motor current(Target value)": {
+	"scaled": true, 
+	"unit": "A", 
+	"signed": true
+	}, 
+	"LID#06_#18_5_bit6_vehicle speed status": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "Selected speed", 
+		"1": "Default speed"
+	}
+	}, 
+	"N1.SupplierNumber2": {
+	"bytescount": 2, 
+	"byte": true, 
+	"bitscount": 16
+	}, 
+	"N1.SupplierNumber1": {
+	"byte": true, 
+	"bytesascii": true
+	}, 
+	"LID#06_#10_4_Vehicle speed for control": {
+	"scaled": true, 
+	"unit": "km/h"
+	}, 
+	"DTCDeviceAndFailureTypeOBD": {
+	"bytescount": 2, 
+	"bitscount": 16, 
+	"lists": {
+		"53248": "CAN_communication_failure", 
+		"22017": "Battery voltage failure", 
+		"22018": "No tuning set", 
+		"20803": "Steering sensor failure", 
+		"22020": "Torque sensor failure", 
+		"22022": "Motor failure", 
+		"22023": "EEPROM failure", 
+		"22024": "Control unit failure", 
+		"22025": "Vehicle speed failure", 
+		"55664": "AVM failure", 
+		"22032": "Engine signal failure", 
+		"55665": "SONAR failure", 
+		"53264": "CONTROL UNIT(CAN)"
+	}
+	}, 
+	"LID#06_#05_6_Motor current(Measured value)": {
+	"scaled": true, 
+	"unit": "A", 
+	"signed": true
+	}, 
+	"LID#06_#07_2_Torque for control": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "Nm", 
+	"signed": true
+	}, 
+	"SnapshotData_IGN counter": {
+	"scaled": true, 
+	"unit": "count"
+	}, 
+	"SnapshotData_Motor current (demanded)": {
+	"scaled": true, 
+	"unit": "A", 
+	"signed": true
+	}, 
+	"LID#01_#23_bit765_IPA_Inhibit": {
+	"bitscount": 3, 
+	"lists": {
+		"0": "Inhibit(EPS is not satisfied)", 
+		"1": "Inhibit(EPS or IPA system fail)", 
+		"2": "Inhibit(over torque)", 
+		"3": "Accept"
+	}
+	}, 
+	"LID#06_#06_2_Motor current(Target value)": {
+	"scaled": true, 
+	"unit": "A", 
+	"signed": true
+	}, 
+	"LID#84_#13_Serial number": {
+	"byte": true
+	}, 
+	"LID#84_#12_Serial number": {
+	"byte": true
+	}, 
+	"DTCStatus.testFailed": {
+	"comment": "TF", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "No", 
+		"1": "Yes"
+	}
+	}, 
+	"LID#06_#18_6_bit7_vehicle speed selection": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "MCM select", 
+		"1": "ABS select"
+	}
+	}, 
+	"ARS.r.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"LID#06_#10_5_Vehicle speed for control": {
+	"scaled": true, 
+	"unit": "km/h"
+	}, 
+	"LID$14": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID#06_#13_3_IGN voltage": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "V"
+	}, 
+	"LID$16": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$17": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$10": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID#06_#09_1_Sub torque": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "Nm", 
+	"signed": true
+	}, 
+	"N.EditionNumber": {
+	"bytescount": 2, 
+	"byte": true, 
+	"bitscount": 16
+	}, 
+	"LID$13": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$18": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$19": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID#06_#18_2_bit7_vehicle speed selection": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "MCM select", 
+		"1": "ABS select"
+	}
+	}, 
+	"LID#06_#09_2_Sub torque": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "Nm", 
+	"signed": true
+	}, 
+	"LID#06_#18_1_bit10_engine status": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "engine stopped", 
+		"1": "engine stalled", 
+		"2": "engine running", 
+		"3": "engine cranking"
+	}
+	}, 
+	"LID#06_#18_6_bit6_vehicle speed status": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "Selected speed", 
+		"1": "Default speed"
+	}
+	}, 
+	"LID#06_#15_6_ECU temperature(Control value)": {
+	"scaled": true, 
+	"unit": "C"
+	}, 
+	"LPG.r.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"LID#06_#13_8_IGN voltage": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "V"
+	}, 
+	"BCM/SEC.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"LID#06_#09_8_Sub torque": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "Nm", 
+	"signed": true
+	}, 
+	"AB-SRS.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"LID#06_#16_1_ECU temperature(Sensor value)": {
+	"scaled": true, 
+	"unit": "C"
+	}, 
+	"LID#06_#06_6_Motor current(Target value)": {
+	"scaled": true, 
+	"unit": "A", 
+	"signed": true
+	}, 
+	"LID$1D": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$1E": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$1F": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$1A": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$1B": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$1C": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID#06_#16_4_ECU temperature(Sensor value)": {
+	"scaled": true, 
+	"unit": "C"
+	}, 
+	"LID#06_#11_4_Vehicle speed": {
+	"scaled": true, 
+	"unit": "km/h"
+	}, 
+	"LPG.r.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"LID#01_#23_bit0_IPA_FAIL": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "normal", 
+		"1": "Fail"
+	}
+	}, 
+	"LID#01_#24#25_IPA_Target_Current": {
+	"divideby": 10000.0, 
+	"bitscount": 16, 
+	"signed": true, 
+	"scaled": true, 
+	"step": 155.0, 
+	"bytescount": 2, 
+	"unit": "A"
+	}, 
+	"LID#01_#03#04_Battery voltage": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 256.0, 
+	"bitscount": 16, 
+	"unit": "V"
+	}, 
+	"LID#06_#14_6_TS voltage": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "V"
+	}, 
+	"LID#06_#14_2_TS voltage": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "V"
+	}, 
+	"SessionName": {
+	"comment": "for Start diagnostic session", 
+	"lists": {
+		"192": "ExtendedDiagSession", 
+		"129": "DefaultSession", 
+		"133": "ProgrammingSession", 
+		"134": "DevelopmentSession"
+	}
+	}, 
+	"LID#06_#05_8_Motor current(Measured value)": {
+	"scaled": true, 
+	"unit": "A", 
+	"signed": true
+	}, 
+	"LID#84_#05_Serial number": {
+	"byte": true
+	}, 
+	"DTCExtendedData.AgingCounter": {
+	"scaled": true, 
+	"comment": "Description of the extendedData AgingCounter (use by Failure Page to decode data)"
+	}, 
+	"TIRE-P.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"LID#06_#10_2_Vehicle speed for control": {
+	"scaled": true, 
+	"unit": "km/h"
+	}, 
+	"LID#06_#11_3_Vehicle speed": {
+	"scaled": true, 
+	"unit": "km/h"
+	}, 
+	"LID#06_#07_3_Torque for control": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "Nm", 
+	"signed": true
+	}, 
+	"LID#06_#18_7_bit6_vehicle speed status": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "Selected speed", 
+		"1": "Default speed"
+	}
+	}, 
+	"ONDULEUR.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"LID#06_#13_1_IGN voltage": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "V"
+	}, 
+	"LID#01_#21-2(bit6-5)_ISS_Status": {
+	"comment": "Bits6&5", 
+	"bitscount": 2, 
+	"lists": {
+		"0": "ISS_OFF", 
+		"1": "ISS_Cranking", 
+		"3": "ISS_ON"
+	}
+	}, 
+	"LID#06_#18_2_bit10_engine status": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "engine stopped", 
+		"1": "engine stalled", 
+		"2": "engine running", 
+		"3": "engine cranking"
+	}
+	}, 
+	"MUX messaging reference.-.-.vcan": {
+	"comment": "CAN Monitor", 
+	"bytescount": 2, 
+	"byte": true, 
+	"bitscount": 16
+	}, 
+	"SnapshotData_Vehicle speed for control": {
+	"scaled": true, 
+	"unit": "km/h"
+	}, 
+	"LID#06_#11_2_Vehicle speed": {
+	"scaled": true, 
+	"unit": "km/h"
+	}, 
+	"LPG.r.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"LID#06_#14_4_TS voltage": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "V"
+	}, 
+	"LID#06_#15_2_ECU temperature(Control value)": {
+	"scaled": true, 
+	"unit": "C"
+	}, 
+	"LID#06_#16_2_ECU temperature(Sensor value)": {
+	"scaled": true, 
+	"unit": "C"
+	}, 
+	"LID#06_#09_7_Sub torque": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "Nm", 
+	"signed": true
+	}, 
+	"ETC.r.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"DataRead.EPS ECU Dongle state": {
+	"lists": {
+		"0": "operational learnt", 
+		"1": "operational blank", 
+		"2": "not operational"
+	}
+	}, 
+	"DTCFailureType.Category": {
+	"bitscount": 4, 
+	"lists": {
+		"0": "General Failure Information", 
+		"1": "General Electrical Failures", 
+		"2": "General Signal Failures", 
+		"3": "FM (Frequency Modulated) / PWM (Pulse Width Modulated) Failures", 
+		"4": "System Internal Failures", 
+		"5": "System Programming Failures", 
+		"6": "Algorithm Based Failures", 
+		"7": "Mechanical Failures", 
+		"8": "Bus Signal / Message Failures", 
+		"9": "Component Failures", 
+		"15": "Vehicle manufacturer / System supplier specific"
+	}
+	}, 
+	"N.OtherSystemFeatures": {
+	"bytescount": 3, 
+	"byte": true, 
+	"bitscount": 24
+	}, 
+	"AVM.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"N.SparePartsNumberSuffix": {
+	"lists": {
+		"0": "To be defined by you."
+	}
+	}, 
+	"LID#84_#22_Serial number": {
+	"byte": true
+	}, 
+	"LID#06_#18_4_bit6_vehicle speed status": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "Selected speed", 
+		"1": "Default speed"
+	}
+	}, 
+	"LID#06_#07_6_Torque for control": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "Nm", 
+	"signed": true
+	}, 
+	"AT/CVT.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"LID#06_#05_1_Motor current(Measured value)": {
+	"scaled": true, 
+	"unit": "A", 
+	"signed": true
+	}, 
+	"ETC.r.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"TIRE-P.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"LID#06_#11_8_Vehicle speed": {
+	"scaled": true, 
+	"unit": "km/h"
+	}, 
+	"ONDULEUR.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"LID#84_#14_Serial number": {
+	"byte": true
+	}, 
+	"LID#06_#03_2_Internal fault code": {
+	"scaled": true
+	}, 
+	"I-CON.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"OutputPermanentControlList": {
+	"comment": "Active Test", 
+	"lists": {
+		"16": "Low Beam Test Right", 
+		"17": "Low Beam Test Left", 
+		"18": "Levling Test"
+	}
+	}, 
+	"SONAR.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"ITM.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"ACC.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"LID#06_#09_5_Sub torque": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "Nm", 
+	"signed": true
+	}, 
+	"TIRE-P.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"LID#06_#04_4_IGN counter": {
+	"scaled": true
+	}, 
+	"OutputControlStatus": {
+	"lists": {
+		"1": "Running", 
+		"2": "Stopped", 
+		"17": "Stopped by 'Stop Control'"
+	}
+	}, 
+	"LID#06_#07_8_Torque for control": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "Nm", 
+	"signed": true
+	}, 
+	"Config.Data._$02_EPS tunning number": {
+	"scaled": true
+	}, 
+	"STRG.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"LID#06_#05_3_Motor current(Measured value)": {
+	"scaled": true, 
+	"unit": "A", 
+	"signed": true
+	}, 
+	"LID#01_#10_Motor current(Measured value)": {
+	"scaled": true, 
+	"unit": "A", 
+	"signed": true
+	}, 
+	"LID#06_#15_1_ECU temperature(Control value)": {
+	"scaled": true, 
+	"unit": "C"
+	}, 
+	"LID#06_#15_3_ECU temperature(Control value)": {
+	"scaled": true, 
+	"unit": "C"
+	}, 
+	"LID#06_#08_4_Main torque": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "Nm", 
+	"signed": true
+	}, 
+	"DTCStatus.confirmedDTC": {
+	"comment": "CDTC", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "No", 
+		"1": "Yes"
+	}
+	}, 
+	"AB-SRS.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"LID#84_#15_Serial number": {
+	"byte": true
+	}, 
+	"AT/CVT.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"DTCExtendedData.DTCOccurrenceCounter": {
+	"scaled": true, 
+	"comment": "Description of the extendedData DTCOccurenceCounter (use by Failure Page to decode data)"
+	}, 
+	"LID#01_#11_Motor current(Targetted value)": {
+	"scaled": true, 
+	"unit": "A", 
+	"signed": true
+	}, 
+	"LID#01_#15#16_Vehicle speed(for control)": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 100.0, 
+	"bitscount": 16, 
+	"unit": "km/h"
+	}, 
+	"METER/M&A.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"N.CalibrationNumber": {
+	"bytescount": 2, 
+	"byte": true, 
+	"bitscount": 16
+	}, 
+	"ACC.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"LID#01_#21_bit65_EPS assist authorize": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "Authorize (IS OFF)", 
+		"1": "n/c", 
+		"2": "n/c_", 
+		"3": "Not Authorize (IS ON)"
+	}
+	}
+}
+}

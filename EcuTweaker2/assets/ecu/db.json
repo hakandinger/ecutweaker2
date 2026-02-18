@@ -1,0 +1,202 @@
+{
+  "OBD2_TEST.json": {
+    "protocol": "OBD-II",
+    "autoidents": [],
+    "ecuname": "OBD2 Test",
+    "address": "7DF",
+    "group": "Test",
+    "projects": ["All"]
+  },
+  "ClimBox.json": {
+    "protocol": "CAN",
+    "autoidents": [],
+    "ecuname": "ClimBox",
+    "address": "29",
+    "group": "ClimBox",
+    "projects": ["T32"]
+  },
+  "ACBox.json": {
+    "protocol": "CAN",
+    "autoidents": [],
+    "ecuname": "ACBox",
+    "address": "29",
+    "group": "ACBox",
+    "projects": ["T32"]
+  },
+  "BCM.json": {
+    "protocol": "CAN",
+    "autoidents": [],
+    "ecuname": "BCM",
+    "address": "26",
+    "group": "BCM",
+    "projects": ["T32"]
+  },
+  "Panel.json": {
+    "protocol": "CAN",
+    "autoidents": [],
+    "ecuname": "Panel",
+    "address": "51",
+    "group": "Panel",
+    "projects": ["T32"]
+  },
+  "4WD.json": {
+    "protocol": "CAN",
+    "autoidents": [],
+    "ecuname": "4WD",
+    "address": "1E",
+    "group": "4WD",
+    "projects": ["T32"]
+  },
+  "USM.json": {
+    "protocol": "CAN",
+    "autoidents": [],
+    "ecuname": "USM",
+    "address": "27",
+    "group": "USM",
+    "projects": ["T32"]
+  },
+  "TPMS.json": {
+    "protocol": "CAN",
+    "autoidents": [],
+    "ecuname": "TPMS",
+    "address": "08",
+    "group": "TPMS",
+    "projects": ["T32"]
+  },
+  "Parctronic.json": {
+    "protocol": "CAN",
+    "autoidents": [],
+    "ecuname": "Parctronic",
+    "address": "0E",
+    "group": "Parctronic",
+    "projects": ["T32"]
+  },
+  "Steer.json": {
+    "protocol": "CAN",
+    "autoidents": [],
+    "ecuname": "Steer",
+    "address": "04",
+    "group": "Steer",
+    "projects": ["T32"]
+  },
+  "ABS-ESP.json": {
+    "protocol": "CAN",
+    "autoidents": [],
+    "ecuname": "ABS-ESP",
+    "address": "01",
+    "group": "ABS-ESP",
+    "projects": ["T32"]
+  },
+  "APB.json": {
+    "protocol": "CAN",
+    "autoidents": [],
+    "ecuname": "APB",
+    "address": "0D",
+    "group": "APB",
+    "projects": ["T32"]
+  },
+  "AVM.json": {
+    "protocol": "CAN",
+    "autoidents": [],
+    "ecuname": "AVM",
+    "address": "61",
+    "group": "AVM",
+    "projects": ["T32"]
+  },
+  "PBD.json": {
+    "protocol": "CAN",
+    "autoidents": [],
+    "ecuname": "PBD",
+    "address": "A7",
+    "group": "PBD",
+    "projects": ["T32"]
+  },
+  "CVT.json": {
+    "protocol": "CAN",
+    "autoidents": [],
+    "ecuname": "CVT",
+    "address": "6E",
+    "group": "CVT",
+    "projects": ["T32"]
+  },
+  "SRS.json": {
+    "protocol": "CAN",
+    "autoidents": [],
+    "ecuname": "SRS",
+    "address": "2C",
+    "group": "SRS",
+    "projects": ["T32"]
+  },
+  "IDM.json": {
+    "protocol": "CAN",
+    "autoidents": [],
+    "ecuname": "IDM",
+    "address": "25",
+    "group": "IDM",
+    "projects": ["T32"]
+  },
+  "NC4.json": {
+    "protocol": "CAN",
+    "autoidents": [],
+    "ecuname": "NC4",
+    "address": "58",
+    "group": "NC4",
+    "projects": ["T32"]
+  },
+  "MR20.json": {
+    "protocol": "CAN",
+    "autoidents": [],
+    "ecuname": "MR20",
+    "address": "7A",
+    "group": "MR20",
+    "projects": ["T32"]
+  },
+  "QR25.json": {
+    "protocol": "CAN",
+    "autoidents": [],
+    "ecuname": "QR25",
+    "address": "7A",
+    "group": "QR25",
+    "projects": ["T32"]
+  },
+  "R9M.json": {
+    "protocol": "CAN",
+    "autoidents": [],
+    "ecuname": "R9M",
+    "address": "7A",
+    "group": "R9M",
+    "projects": ["T32"]
+  },
+  "CAN.json": {
+    "protocol": "CAN",
+    "autoidents": [],
+    "ecuname": "CAN",
+    "address": "00",
+    "group": "CAN",
+    "projects": ["T32"]
+  },
+  "AFS.json": {
+    "protocol": "CAN",
+    "autoidents": [],
+    "ecuname": "AFS",
+    "address": "72",
+    "group": "AFS",
+    "projects": ["T32"]
+  },
+  "SOW_L.json": {
+    "protocol": "CAN",
+    "autoidents": [],
+    "ecuname": "SOW_L",
+    "address": "63",
+    "group": "SOW_L",
+    "projects": ["T32"]
+  },
+  "SOW_R.json": {
+    "protocol": "CAN",
+    "autoidents": [],
+    "ecuname": "SOW_R",
+    "address": "64",
+    "group": "SOW_R",
+    "projects": ["T32"]
+  }
+}

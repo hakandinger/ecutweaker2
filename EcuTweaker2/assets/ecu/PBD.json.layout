@@ -1,0 +1,1761 @@
+{
+ "screens": {
+  "Test": {
+   "inputs": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Configuration.Reserved1_Byt1_bit7_4",
+     "request": "WriteECU configuration",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 1840,
+      "top": 360,
+      "height": 300,
+      "left": 4440
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Configuration.Car_Type_Byt1_bit3_0",
+     "request": "WriteECU configuration",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 1840,
+      "top": 660,
+      "height": 300,
+      "left": 4440
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Configuration.Reserved2_Byt2_bit7_4",
+     "request": "WriteECU configuration",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 1840,
+      "top": 960,
+      "height": 300,
+      "left": 4440
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Configuration.Stop_and_Start_B2_bit3",
+     "request": "WriteECU configuration",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 1840,
+      "top": 1260,
+      "height": 300,
+      "left": 4440
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Configuration.ETA_pending_closure_Byt2_bit2_0",
+     "request": "WriteECU configuration",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 1840,
+      "top": 1560,
+      "height": 300,
+      "left": 4440
+     }
+    }
+   ],
+   "color": "rgb(255,255,255)",
+   "labels": [],
+   "presend": [],
+   "height": 6000,
+   "buttons": [
+    {
+     "text": "Send",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "StartDiagnosticSession.ExtendedDiagSession"
+      },
+      {
+       "Delay": "0",
+       "RequestName": "WriteECU configuration"
+      }
+     ],
+     "uniquename": "Send_0",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "rect": {
+      "width": 600,
+      "top": 360,
+      "height": 1440,
+      "left": 6480
+     }
+    }
+   ],
+   "width": 9000,
+   "displays": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Configuration.Reserved1_Byt1_bit7_4",
+     "request": "ReadECU configuration",
+     "width": 2105,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4000,
+      "top": 360,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Configuration.Car_Type_Byt1_bit3_0",
+     "request": "ReadECU configuration",
+     "width": 2105,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4000,
+      "top": 660,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Configuration.Reserved2_Byt2_bit7_4",
+     "request": "ReadECU configuration",
+     "width": 2105,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4000,
+      "top": 960,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Configuration.Stop_and_Start_B2_bit3",
+     "request": "ReadECU configuration",
+     "width": 2105,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4000,
+      "top": 1260,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Configuration.ETA_pending_closure_Byt2_bit2_0",
+     "request": "ReadECU configuration",
+     "width": 2105,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4000,
+      "top": 1560,
+      "height": 300,
+      "left": 240
+     }
+    }
+   ]
+  },
+  "Frame": {
+   "inputs": [],
+   "color": "rgb(223,223,223)",
+   "labels": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "USER COMMAND",
+     "bbox": {
+      "width": 3600,
+      "top": 5160,
+      "height": 300,
+      "left": 7560
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 14.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "TOUCH SENSOR",
+     "bbox": {
+      "width": 2760,
+      "top": 2640,
+      "height": 300,
+      "left": 7560
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 14.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "LEFT SPINDLE",
+     "bbox": {
+      "width": 2520,
+      "top": 120,
+      "height": 300,
+      "left": 120
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 14.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "RIGHT SPINDLE",
+     "bbox": {
+      "width": 2640,
+      "top": 120,
+      "height": 300,
+      "left": 7560
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 14.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "LATCH SWITCHES",
+     "bbox": {
+      "width": 3000,
+      "top": 2760,
+      "height": 300,
+      "left": 240
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 14.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "LEARNING STATE",
+     "bbox": {
+      "width": 3240,
+      "top": 6840,
+      "height": 300,
+      "left": 120
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 14.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CAN PARAMETERS",
+     "bbox": {
+      "width": 3600,
+      "top": 4680,
+      "height": 300,
+      "left": 120
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 14.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "POWER SUPPLY VOLTAGE",
+     "bbox": {
+      "width": 2760,
+      "top": 4080,
+      "height": 300,
+      "left": 7560
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 14.0
+     },
+     "alignment": "0"
+    }
+   ],
+   "presend": [],
+   "height": 10620,
+   "buttons": [],
+   "width": 15060,
+   "displays": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B12_bit1_Mechanical Max Opening Learned",
+     "request": "DataRead.DataMonitor",
+     "width": 2000,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4000,
+      "top": 4560,
+      "height": 300,
+      "left": -11880
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B12_bit0_Current position",
+     "request": "DataRead.DataMonitor",
+     "width": 2000,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4000,
+      "top": 5280,
+      "height": 300,
+      "left": -11880
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B13_14_bit7_0_RH_Spindle_Position",
+     "request": "DataRead.DataMonitor",
+     "width": 2000,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4000,
+      "top": 6000,
+      "height": 300,
+      "left": -11880
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B15_16_bit7_0_RH_Spindle_Velocity",
+     "request": "DataRead.DataMonitor",
+     "width": 2000,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4000,
+      "top": 6720,
+      "height": 300,
+      "left": -11880
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B17_bit7_0_RH_Spindle_Motor_DUTY",
+     "request": "DataRead.DataMonitor",
+     "width": 2000,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4000,
+      "top": 7440,
+      "height": 300,
+      "left": -11880
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B1_2_bit7_0_LH_Spindle_Position",
+     "request": "DataRead.DataMonitor",
+     "width": 2000,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4000,
+      "top": -2880,
+      "height": 300,
+      "left": -21120
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B3_4_bit7_0_LH_Spindle_Velocity",
+     "request": "DataRead.DataMonitor",
+     "width": 2000,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4000,
+      "top": -2040,
+      "height": 300,
+      "left": -20760
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B5_bit7_0_LH_Spindle_Motor_DUTY",
+     "request": "DataRead.DataMonitor",
+     "width": 2000,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4000,
+      "top": -2280,
+      "height": 300,
+      "left": -11880
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B6_7_bit7_0_Vehicule_Speed",
+     "request": "DataRead.DataMonitor",
+     "width": 2000,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4000,
+      "top": -1560,
+      "height": 300,
+      "left": -11880
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B10_bit7_Main_SW",
+     "request": "DataRead.DataMonitor",
+     "width": 2000,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4000,
+      "top": -1200,
+      "height": 300,
+      "left": -11880
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B10_bit6_Driver_SW",
+     "request": "DataRead.DataMonitor",
+     "width": 2000,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4000,
+      "top": -840,
+      "height": 300,
+      "left": -11880
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B10_bit5_Inner_SW",
+     "request": "DataRead.DataMonitor",
+     "width": 2000,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4000,
+      "top": -480,
+      "height": 300,
+      "left": -11880
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B9_bit3_VehiculeOutsideLockedState",
+     "request": "DataRead.DataMonitor",
+     "width": 2000,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4000,
+      "top": -120,
+      "height": 300,
+      "left": -11880
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B10_bit2_OPEN_SW",
+     "request": "DataRead.DataMonitor",
+     "width": 2000,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4000,
+      "top": 240,
+      "height": 300,
+      "left": -11880
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B10_bit1_CLOSE_SW",
+     "request": "DataRead.DataMonitor",
+     "width": 2000,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4000,
+      "top": 600,
+      "height": 300,
+      "left": -11880
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B10_bit0_HALF_Latch_SW",
+     "request": "DataRead.DataMonitor",
+     "width": 2000,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4000,
+      "top": 960,
+      "height": 300,
+      "left": -11880
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B11_bit7_6_RH_TouchSensor",
+     "request": "DataRead.DataMonitor",
+     "width": 2000,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4000,
+      "top": 1320,
+      "height": 300,
+      "left": -11880
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B11_bit5_4_LH_TouchSensor",
+     "request": "DataRead.DataMonitor",
+     "width": 2000,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4000,
+      "top": 1680,
+      "height": 300,
+      "left": -11880
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B9_bit2_0_VehiculeActivationState",
+     "request": "DataRead.DataMonitor",
+     "width": 2000,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4000,
+      "top": 2040,
+      "height": 300,
+      "left": -11880
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B8_bit7_0_PowerSupply",
+     "request": "DataRead.DataMonitor",
+     "width": 2000,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4000,
+      "top": 2400,
+      "height": 300,
+      "left": -11880
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B12_bit7_LH_Encoder_A",
+     "request": "DataRead.DataMonitor",
+     "width": 2000,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4000,
+      "top": 3120,
+      "height": 300,
+      "left": -11880
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B12_bit6_LH_Encoder_B",
+     "request": "DataRead.DataMonitor",
+     "width": 2000,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4000,
+      "top": 3480,
+      "height": 300,
+      "left": -11880
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B9_bit6_4_StopAutophase",
+     "request": "DataRead.DataMonitor",
+     "width": 2000,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4000,
+      "top": 4080,
+      "height": 300,
+      "left": -11880
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B12_bit1_Mechanical Max Opening Learned",
+     "request": "DataRead.DataMonitor",
+     "width": 2000,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4000,
+      "top": 4920,
+      "height": 300,
+      "left": -11880
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B12_bit0_Current position",
+     "request": "DataRead.DataMonitor",
+     "width": 2000,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4000,
+      "top": 5640,
+      "height": 300,
+      "left": -11880
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B13_14_bit7_0_RH_Spindle_Position",
+     "request": "DataRead.DataMonitor",
+     "width": 2000,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4000,
+      "top": 6360,
+      "height": 300,
+      "left": -11880
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B15_16_bit7_0_RH_Spindle_Velocity",
+     "request": "DataRead.DataMonitor",
+     "width": 2000,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4000,
+      "top": 7080,
+      "height": 300,
+      "left": -11880
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B17_bit7_0_RH_Spindle_Motor_DUTY",
+     "request": "DataRead.DataMonitor",
+     "width": 2000,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4000,
+      "top": 4260,
+      "height": 300,
+      "left": -21360
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B18_bit7_RH_Encoder_A",
+     "request": "DataRead.DataMonitor",
+     "width": 2000,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4000,
+      "top": 4560,
+      "height": 300,
+      "left": -21360
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B18_bit6_RH_Encoder_B",
+     "request": "DataRead.DataMonitor",
+     "width": 2000,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4000,
+      "top": 4860,
+      "height": 300,
+      "left": -21360
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B1_2_bit7_0_LH_Spindle_Position",
+     "request": "DataRead.DataMonitor",
+     "width": 4667,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 7080,
+      "top": 600,
+      "height": 300,
+      "left": 120
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B3_4_bit7_0_LH_Spindle_Velocity",
+     "request": "DataRead.DataMonitor",
+     "width": 4658,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 7080,
+      "top": 960,
+      "height": 300,
+      "left": 120
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B5_bit7_0_LH_Spindle_Motor_DUTY",
+     "request": "DataRead.DataMonitor",
+     "width": 4655,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 7080,
+      "top": 1320,
+      "height": 300,
+      "left": 120
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B6_7_bit7_0_Vehicule_Speed",
+     "request": "DataRead.DataMonitor",
+     "width": 5300,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 7080,
+      "top": 5880,
+      "height": 300,
+      "left": 120
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B8_bit7_0_PowerSupply",
+     "request": "DataRead.DataMonitor",
+     "width": 3665,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 7080,
+      "top": 4560,
+      "height": 300,
+      "left": 7560
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B9_bit6_4_StopAutophase",
+     "request": "DataRead.DataMonitor",
+     "width": 5315,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 7080,
+      "top": 5520,
+      "height": 300,
+      "left": 120
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B9_bit3_VehiculeOutsideLockedState",
+     "request": "DataRead.DataMonitor",
+     "width": 5315,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 7080,
+      "top": 5160,
+      "height": 300,
+      "left": 120
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B9_bit2_0_VehiculeActivationState",
+     "request": "DataRead.DataMonitor",
+     "width": 5315,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 7080,
+      "top": 6240,
+      "height": 300,
+      "left": 120
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B10_bit7_Main_SW",
+     "request": "DataRead.DataMonitor",
+     "width": 3695,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 7080,
+      "top": 5640,
+      "height": 300,
+      "left": 7560
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B10_bit6_Driver_SW",
+     "request": "DataRead.DataMonitor",
+     "width": 3695,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 7080,
+      "top": 6240,
+      "height": 300,
+      "left": 7560
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B10_bit5_Inner_SW",
+     "request": "DataRead.DataMonitor",
+     "width": 3695,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 7080,
+      "top": 6600,
+      "height": 300,
+      "left": 7560
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B10_bit2_OPEN_SW",
+     "request": "DataRead.DataMonitor",
+     "width": 4100,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 6960,
+      "top": 3240,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B10_bit1_CLOSE_SW",
+     "request": "DataRead.DataMonitor",
+     "width": 4100,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 6960,
+      "top": 3600,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B10_bit0_HALF_Latch_SW",
+     "request": "DataRead.DataMonitor",
+     "width": 4100,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 6960,
+      "top": 3960,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B11_bit7_6_RH_TouchSensor",
+     "request": "DataRead.DataMonitor",
+     "width": 3650,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 7080,
+      "top": 3120,
+      "height": 300,
+      "left": 7560
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B11_bit5_4_LH_TouchSensor",
+     "request": "DataRead.DataMonitor",
+     "width": 3650,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 7080,
+      "top": 3480,
+      "height": 300,
+      "left": 7560
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B12_bit7_LH_Encoder_A",
+     "request": "DataRead.DataMonitor",
+     "width": 3722,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 7080,
+      "top": 1680,
+      "height": 300,
+      "left": 120
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B12_bit6_LH_Encoder_B",
+     "request": "DataRead.DataMonitor",
+     "width": 3710,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 7080,
+      "top": 2040,
+      "height": 300,
+      "left": 120
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B12_bit0_Current position",
+     "request": "DataRead.DataMonitor",
+     "width": 3530,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 7135,
+      "top": 7320,
+      "height": 300,
+      "left": 120
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B12_bit1_Mechanical Max Opening Learned",
+     "request": "DataRead.DataMonitor",
+     "width": 4670,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 7120,
+      "top": 7680,
+      "height": 600,
+      "left": 120
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B13_14_bit7_0_RH_Spindle_Position",
+     "request": "DataRead.DataMonitor",
+     "width": 3620,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 7080,
+      "top": 600,
+      "height": 300,
+      "left": 7560
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B15_16_bit7_0_RH_Spindle_Velocity",
+     "request": "DataRead.DataMonitor",
+     "width": 3635,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 7080,
+      "top": 960,
+      "height": 300,
+      "left": 7560
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B17_bit7_0_RH_Spindle_Motor_DUTY",
+     "request": "DataRead.DataMonitor",
+     "width": 3635,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 7080,
+      "top": 1320,
+      "height": 300,
+      "left": 7560
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B18_bit7_RH_Encoder_A",
+     "request": "DataRead.DataMonitor",
+     "width": 3635,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 7080,
+      "top": 1680,
+      "height": 300,
+      "left": 7560
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B18_bit6_RH_Encoder_B",
+     "request": "DataRead.DataMonitor",
+     "width": 3635,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 7080,
+      "top": 2040,
+      "height": 300,
+      "left": 7560
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B18_bit4_3_RKEButtonPressed",
+     "request": "DataRead.DataMonitor",
+     "width": 3710,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 7080,
+      "top": 6960,
+      "height": 300,
+      "left": 7560
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B18_bit2_1_TrunkOpeningRequest",
+     "request": "DataRead.DataMonitor",
+     "width": 3710,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 7080,
+      "top": 7320,
+      "height": 300,
+      "left": 7560
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B18_bit0_ETA_Kick",
+     "request": "DataRead.DataMonitor",
+     "width": 3710,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 7080,
+      "top": 7680,
+      "height": 300,
+      "left": 7560
+     }
+    }
+   ]
+  },
+  "Learning": {
+   "inputs": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Routine Entry Option",
+     "request": "Routine.Cleaning Learning Procedure",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2312,
+      "top": 5220,
+      "height": 465,
+      "left": 3865
+     }
+    }
+   ],
+   "color": "rgb(255,255,255)",
+   "labels": [
+    {
+     "color": "rgb(128,255,255)",
+     "text": "1°) LEARNING: FULLY CLOSED",
+     "bbox": {
+      "width": 5362,
+      "top": 135,
+      "height": 300,
+      "left": 180
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 12.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(128,255,255)",
+     "text": "      ",
+     "bbox": {
+      "width": 8340,
+      "top": 2415,
+      "height": 1800,
+      "left": 180
+     },
+     "fontcolor": "rgb(255,255,255)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(128,255,255)",
+     "text": " ",
+     "bbox": {
+      "width": 8272,
+      "top": 435,
+      "height": 1740,
+      "left": 194
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(128,255,255)",
+     "text": "READ: Fully open position learning status",
+     "bbox": {
+      "width": 4657,
+      "top": 3375,
+      "height": 360,
+      "left": 288
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(128,255,255)",
+     "text": "READ: Fully closed position learning status",
+     "bbox": {
+      "width": 4837,
+      "top": 1275,
+      "height": 300,
+      "left": 288
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(128,255,255)",
+     "text": "If status: \"current position not known\", close fully manually",
+     "bbox": {
+      "width": 7383,
+      "top": 615,
+      "height": 300,
+      "left": 395
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "1",
+      "size": 10.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(128,255,255)",
+     "text": "Check learning status, if \"mechanical max opening not learned\", press button to open.",
+     "bbox": {
+      "width": 7162,
+      "top": 2535,
+      "height": 600,
+      "left": 395
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "1",
+      "size": 10.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(238,172,62)",
+     "text": "LEARNING PROCEDURE FAILED! After steps 1, 2, fully open status: \"mechanical max opening not learned\": perform learning status reset and repeat steps 1 and 2",
+     "bbox": {
+      "width": 6360,
+      "top": 4320,
+      "height": 1680,
+      "left": 600
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "1",
+      "size": 10.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(128,255,255)",
+     "text": "2°) LEARNING: FULLY OPEN",
+     "bbox": {
+      "width": 5298,
+      "top": 2175,
+      "height": 360,
+      "left": 180
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 12.0
+     },
+     "alignment": "0"
+    }
+   ],
+   "presend": [],
+   "height": 6300,
+   "buttons": [
+    {
+     "text": "Start procedure",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "Routine.Cleaning Learning Procedure"
+      }
+     ],
+     "uniquename": "Запуск процедуры_0",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "rect": {
+      "width": 2910,
+      "top": 5220,
+      "height": 465,
+      "left": 951
+     }
+    }
+   ],
+   "width": 8700,
+   "displays": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B12_bit0_Current position",
+     "request": "DataRead.DataMonitor",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 3210,
+      "top": 1155,
+      "height": 420,
+      "left": 5160
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Read.2110_B12_bit1_Mechanical Max Opening Learned",
+     "request": "DataRead.DataMonitor",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 3199,
+      "top": 3270,
+      "height": 420,
+      "left": 5160
+     }
+    }
+   ]
+  }
+ },
+ "categories": {
+  "Monitoring": [
+   "Frame"
+  ],
+  "Service": [
+   "Learning",
+   "Test"
+  ]
+ }
+}

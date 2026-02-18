@@ -1,0 +1,1513 @@
+{
+ "screens": {
+  "Read ECU info": {
+   "inputs": [],
+   "color": "rgb(0,255,255)",
+   "labels": [
+    {
+     "color": "rgb(255,0,255)",
+     "text": "READ",
+     "bbox": {
+      "width": 2590,
+      "top": 360,
+      "height": 300,
+      "left": 2450
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(255,255,0)",
+     "text": "N.SparePartsNumber($83)",
+     "bbox": {
+      "width": 2244,
+      "top": 720,
+      "height": 300,
+      "left": 206
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,0)",
+     "text": "N.DiagnosticIdentificationCode($83)",
+     "bbox": {
+      "width": 2244,
+      "top": 1080,
+      "height": 300,
+      "left": 206
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,0)",
+     "text": "N1.SupplierNumber2($83)",
+     "bbox": {
+      "width": 2244,
+      "top": 2160,
+      "height": 300,
+      "left": 206
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,0)",
+     "text": "N.HardwareNumber($83)",
+     "bbox": {
+      "width": 2244,
+      "top": 2520,
+      "height": 300,
+      "left": 206
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,0)",
+     "text": "N.SoftwareNumber($83)",
+     "bbox": {
+      "width": 2244,
+      "top": 2880,
+      "height": 300,
+      "left": 206
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,0)",
+     "text": "N.SparePartsNumberSuffix($83)",
+     "bbox": {
+      "width": 2244,
+      "top": 1440,
+      "height": 300,
+      "left": 206
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,0)",
+     "text": "N1.SupplierNumber1($83)",
+     "bbox": {
+      "width": 2244,
+      "top": 1800,
+      "height": 300,
+      "left": 206
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,0)",
+     "text": "N.EditionNumber($83)",
+     "bbox": {
+      "width": 2244,
+      "top": 3240,
+      "height": 300,
+      "left": 206
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,0)",
+     "text": "N.CalibrationNumber($83)",
+     "bbox": {
+      "width": 2244,
+      "top": 3600,
+      "height": 300,
+      "left": 206
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,0)",
+     "text": "N.OtherSystemFeatures($83)",
+     "bbox": {
+      "width": 2244,
+      "top": 3960,
+      "height": 300,
+      "left": 206
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,0)",
+     "text": "N.ManufacturerIdentificationCode($83)",
+     "bbox": {
+      "width": 2244,
+      "top": 4320,
+      "height": 300,
+      "left": 206
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    }
+   ],
+   "presend": [],
+   "height": 5220,
+   "buttons": [],
+   "width": 5940,
+   "displays": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "N.SparePartsNumber",
+     "request": "[Read ECU info]___NissanIdentification",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2590,
+      "top": 720,
+      "height": 300,
+      "left": 2450
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "N.DiagnosticIdentificationCode",
+     "request": "[Read ECU info]___NissanIdentification",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2590,
+      "top": 1080,
+      "height": 300,
+      "left": 2450
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "N.SparePartsNumberSuffix",
+     "request": "[Read ECU info]___NissanIdentification",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2590,
+      "top": 1440,
+      "height": 300,
+      "left": 2450
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "N1.SupplierNumber1",
+     "request": "[Read ECU info]___NissanIdentification",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2590,
+      "top": 1800,
+      "height": 300,
+      "left": 2450
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "N1.SupplierNumber2",
+     "request": "[Read ECU info]___NissanIdentification",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2590,
+      "top": 2160,
+      "height": 300,
+      "left": 2450
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "N.HardwareNumber",
+     "request": "[Read ECU info]___NissanIdentification",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2590,
+      "top": 2520,
+      "height": 300,
+      "left": 2450
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "N.SoftwareNumber",
+     "request": "[Read ECU info]___NissanIdentification",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2590,
+      "top": 2880,
+      "height": 300,
+      "left": 2450
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "N.EditionNumber",
+     "request": "[Read ECU info]___NissanIdentification",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2590,
+      "top": 3240,
+      "height": 300,
+      "left": 2450
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "N.CalibrationNumber",
+     "request": "[Read ECU info]___NissanIdentification",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2590,
+      "top": 3600,
+      "height": 300,
+      "left": 2450
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "N.OtherSystemFeatures",
+     "request": "[Read ECU info]___NissanIdentification",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2590,
+      "top": 3960,
+      "height": 300,
+      "left": 2450
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "N.ManufacturerIdentificationCode",
+     "request": "[Read ECU info]___NissanIdentification",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2590,
+      "top": 4320,
+      "height": 300,
+      "left": 2450
+     }
+    }
+   ]
+  },
+  "Read Data": {
+   "inputs": [],
+   "color": "rgb(0,255,255)",
+   "labels": [
+    {
+     "color": "rgb(255,255,0)",
+     "text": "Battery voltage",
+     "bbox": {
+      "width": 2600,
+      "top": 600,
+      "height": 300,
+      "left": 360
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,0)",
+     "text": "Driver Torque(Sensor value)",
+     "bbox": {
+      "width": 2600,
+      "top": 960,
+      "height": 300,
+      "left": 360
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,0)",
+     "text": "Motor current(Measured value)",
+     "bbox": {
+      "width": 2600,
+      "top": 1320,
+      "height": 300,
+      "left": 360
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,0)",
+     "text": "Motor current(Targetted value)",
+     "bbox": {
+      "width": 2600,
+      "top": 1680,
+      "height": 300,
+      "left": 360
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,0)",
+     "text": "TORQUE OF MOTOR",
+     "bbox": {
+      "width": 2600,
+      "top": 2040,
+      "height": 300,
+      "left": 360
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,0)",
+     "text": "ECU temperature(Sensor value)",
+     "bbox": {
+      "width": 2600,
+      "top": 2400,
+      "height": 300,
+      "left": 360
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,0)",
+     "text": "Derating level",
+     "bbox": {
+      "width": 2600,
+      "top": 2760,
+      "height": 300,
+      "left": 360
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,0)",
+     "text": "Vehicle speed(for control)",
+     "bbox": {
+      "width": 2600,
+      "top": 3120,
+      "height": 300,
+      "left": 360
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,0)",
+     "text": "Fault indicator",
+     "bbox": {
+      "width": 2600,
+      "top": 3480,
+      "height": 300,
+      "left": 360
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,0)",
+     "text": "Engine status",
+     "bbox": {
+      "width": 2600,
+      "top": 3840,
+      "height": 300,
+      "left": 360
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,0)",
+     "text": "EPS_StartActivationRequest",
+     "bbox": {
+      "width": 2600,
+      "top": 4200,
+      "height": 300,
+      "left": 360
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,0)",
+     "text": "EPS_Steering Mode",
+     "bbox": {
+      "width": 2600,
+      "top": 4560,
+      "height": 300,
+      "left": 360
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,0)",
+     "text": "Setting Change Request For EPS",
+     "bbox": {
+      "width": 2600,
+      "top": 4920,
+      "height": 300,
+      "left": 360
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,0)",
+     "text": "Torque_Flag",
+     "bbox": {
+      "width": 2600,
+      "top": 5280,
+      "height": 300,
+      "left": 360
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,0)",
+     "text": "EPS assist authorize",
+     "bbox": {
+      "width": 2600,
+      "top": 5640,
+      "height": 300,
+      "left": 360
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,0)",
+     "text": "StopAutoPhase",
+     "bbox": {
+      "width": 2600,
+      "top": 6000,
+      "height": 300,
+      "left": 360
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,0)",
+     "text": "I-CON_MODE_STATUS",
+     "bbox": {
+      "width": 2600,
+      "top": 6360,
+      "height": 300,
+      "left": 360
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,0)",
+     "text": "IPA_Inhibit",
+     "bbox": {
+      "width": 2600,
+      "top": 6720,
+      "height": 300,
+      "left": 360
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,0)",
+     "text": "EPS_State_Feedback",
+     "bbox": {
+      "width": 2600,
+      "top": 7080,
+      "height": 300,
+      "left": 360
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,0)",
+     "text": "ISS_Inhibit_EPS",
+     "bbox": {
+      "width": 2600,
+      "top": 7440,
+      "height": 300,
+      "left": 360
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,0)",
+     "text": "IPA_Status",
+     "bbox": {
+      "width": 2600,
+      "top": 7800,
+      "height": 300,
+      "left": 360
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,0)",
+     "text": "IPA_FAIL",
+     "bbox": {
+      "width": 2600,
+      "top": 8160,
+      "height": 300,
+      "left": 360
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,0)",
+     "text": "IPA_Target_Current",
+     "bbox": {
+      "width": 2600,
+      "top": 8520,
+      "height": 300,
+      "left": 360
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,0)",
+     "text": "EPS_Control_Current",
+     "bbox": {
+      "width": 2600,
+      "top": 8880,
+      "height": 300,
+      "left": 360
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,0,255)",
+     "text": "READ",
+     "bbox": {
+      "width": 2275,
+      "top": 240,
+      "height": 300,
+      "left": 2765
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "2"
+    }
+   ],
+   "presend": [],
+   "height": 9420,
+   "buttons": [],
+   "width": 5460,
+   "displays": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "LID#01_#03#04_Battery voltage",
+     "request": "[Read Data]___DataRead.DataMonitor",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2275,
+      "top": 600,
+      "height": 300,
+      "left": 2765
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "LID#01_#05_Driver Torque(Sensor value)",
+     "request": "[Read Data]___DataRead.DataMonitor",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2275,
+      "top": 960,
+      "height": 300,
+      "left": 2765
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "LID#01_#10_Motor current(Measured value)",
+     "request": "[Read Data]___DataRead.DataMonitor",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2275,
+      "top": 1320,
+      "height": 300,
+      "left": 2765
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "LID#01_#11_Motor current(Targetted value)",
+     "request": "[Read Data]___DataRead.DataMonitor",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2275,
+      "top": 1680,
+      "height": 300,
+      "left": 2765
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "LID#01_#12_TORQUE OF MOTOR",
+     "request": "[Read Data]___DataRead.DataMonitor",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2275,
+      "top": 2040,
+      "height": 300,
+      "left": 2765
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "LID#01_#13_ECU temperature(Sensor value)",
+     "request": "[Read Data]___DataRead.DataMonitor",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2275,
+      "top": 2400,
+      "height": 300,
+      "left": 2765
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "LID#01_#14_Derating level",
+     "request": "[Read Data]___DataRead.DataMonitor",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2275,
+      "top": 2760,
+      "height": 300,
+      "left": 2765
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "LID#01_#15#16_Vehicle speed(for control)",
+     "request": "[Read Data]___DataRead.DataMonitor",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2275,
+      "top": 3120,
+      "height": 300,
+      "left": 2765
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "LID#01_#17_bit7_Fault indicator",
+     "request": "[Read Data]___DataRead.DataMonitor",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2275,
+      "top": 3480,
+      "height": 300,
+      "left": 2765
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "LID#01_#17_bit54_Engine status",
+     "request": "[Read Data]___DataRead.DataMonitor",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2275,
+      "top": 3840,
+      "height": 300,
+      "left": 2765
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "LID#01_#17_bit54_EPS_StartActivationRequest(DiagID:44H only)",
+     "request": "[Read Data]___DataRead.DataMonitor",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2275,
+      "top": 4200,
+      "height": 300,
+      "left": 2765
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "LID#01_#20_bit76_EPS_Steering Mode",
+     "request": "[Read Data]___DataRead.DataMonitor",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2275,
+      "top": 4560,
+      "height": 300,
+      "left": 2765
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "LID#01_#20_bit54_Setting Change Request For EPS",
+     "request": "[Read Data]___DataRead.DataMonitor",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2275,
+      "top": 4920,
+      "height": 300,
+      "left": 2765
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "LID#01_#21-1(bit7)_Torque_Flag",
+     "request": "[Read Data]___DataRead.DataMonitor",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2275,
+      "top": 5280,
+      "height": 300,
+      "left": 2765
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "LID#01_#21_bit65_EPS assist authorize",
+     "request": "[Read Data]___DataRead.DataMonitor",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2275,
+      "top": 5640,
+      "height": 300,
+      "left": 2765
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "LID#01_#21_bit432_StopAutoPhase",
+     "request": "[Read Data]___DataRead.DataMonitor",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2275,
+      "top": 6000,
+      "height": 300,
+      "left": 2765
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "LID#01_#22_1_I-CON_MODE_STATUS",
+     "request": "[Read Data]___DataRead.DataMonitor",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2275,
+      "top": 6360,
+      "height": 300,
+      "left": 2765
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "LID#01_#23_bit765_IPA_Inhibit",
+     "request": "[Read Data]___DataRead.DataMonitor",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2275,
+      "top": 6720,
+      "height": 300,
+      "left": 2765
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "LID#01_#23_bit4_EPS_State_Feedback",
+     "request": "[Read Data]___DataRead.DataMonitor",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2275,
+      "top": 7080,
+      "height": 300,
+      "left": 2765
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "LID#01_#23_bit3_ISS_Inhibit_EPS",
+     "request": "[Read Data]___DataRead.DataMonitor",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2275,
+      "top": 7440,
+      "height": 300,
+      "left": 2765
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "LID#01_#23_bit21_IPA_Status",
+     "request": "[Read Data]___DataRead.DataMonitor",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2275,
+      "top": 7800,
+      "height": 300,
+      "left": 2765
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "LID#01_#23_bit0_IPA_FAIL",
+     "request": "[Read Data]___DataRead.DataMonitor",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2275,
+      "top": 8160,
+      "height": 300,
+      "left": 2765
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "LID#01_#24#25_IPA_Target_Current",
+     "request": "[Read Data]___DataRead.DataMonitor",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2275,
+      "top": 8520,
+      "height": 300,
+      "left": 2765
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "LID#01_#26#27_EPS_Control_Current",
+     "request": "[Read Data]___DataRead.DataMonitor",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2275,
+      "top": 8880,
+      "height": 300,
+      "left": 2765
+     }
+    }
+   ]
+  },
+  "Settings": {
+   "inputs": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Config.Data._$02_EPS tunning number",
+     "request": "DataWrite.EPS tunning(SelectValue)",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 960,
+      "top": 240,
+      "height": 300,
+      "left": 4080
+     }
+    }
+   ],
+   "color": "rgb(0,255,255)",
+   "labels": [],
+   "presend": [],
+   "height": 3780,
+   "buttons": [
+    {
+     "text": "Set",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "2",
+       "RequestName": "StartDiagnosticSession.ExtendedDiagSession"
+      },
+      {
+       "Delay": "2",
+       "RequestName": "DataWrite.EPS tunning(SelectValue)"
+      }
+     ],
+     "uniquename": "Set_0",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "rect": {
+      "width": 600,
+      "top": 240,
+      "height": 300,
+      "left": 5160
+     }
+    },
+    {
+     "text": "RESET",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "2",
+       "RequestName": "StartDiagnosticSession.ExtendedDiagSession"
+      },
+      {
+       "Delay": "2",
+       "RequestName": "DataWrite.EPS tunning(Reset)"
+      }
+     ],
+     "uniquename": "RESET_1",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "rect": {
+      "width": 1950,
+      "top": 1920,
+      "height": 300,
+      "left": 3120
+     }
+    }
+   ],
+   "width": 8340,
+   "displays": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Config.Data._$02_EPS tunning number",
+     "request": "DataRead.EPS tunning(SelectValue)",
+     "width": 2840,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 3840,
+      "top": 240,
+      "height": 300,
+      "left": 120
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "LID#01_#20_bit76_EPS_Steering Mode",
+     "request": "[Read Data]___DataRead.DataMonitor",
+     "width": 2840,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 3840,
+      "top": 600,
+      "height": 300,
+      "left": 120
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "LID#01_#20_bit54_Setting Change Request For EPS",
+     "request": "[Read Data]___DataRead.DataMonitor",
+     "width": 2840,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 3840,
+      "top": 960,
+      "height": 480,
+      "left": 120
+     }
+    }
+   ]
+  }
+ },
+ "categories": {
+  "Data": [
+   "Read ECU info",
+   "Read Data",
+   "Settings"
+  ]
+ }
+}

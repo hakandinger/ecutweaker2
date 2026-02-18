@@ -1,0 +1,6284 @@
+{
+ "screens": {
+  "Мониторинг": {
+   "inputs": [],
+   "color": "rgb(255,255,255)",
+   "labels": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Acceleration sensor (G)",
+     "bbox": {
+      "width": 2160,
+      "top": 1755,
+      "height": 300,
+      "left": 375
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Engine temperature",
+     "bbox": {
+      "width": 2160,
+      "top": 300,
+      "height": 300,
+      "left": 375
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Virtual gear",
+     "bbox": {
+      "width": 2160,
+      "top": 2145,
+      "height": 300,
+      "left": 375
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Gear ratio",
+     "bbox": {
+      "width": 2160,
+      "top": 1020,
+      "height": 300,
+      "left": 375
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Control mode",
+     "bbox": {
+      "width": 2160,
+      "top": 1365,
+      "height": 300,
+      "left": 375
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CVT oil temperature",
+     "bbox": {
+      "width": 2160,
+      "top": 660,
+      "height": 300,
+      "left": 375
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    }
+   ],
+   "presend": [],
+   "height": 6000,
+   "buttons": [],
+   "width": 5820,
+   "displays": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_$110C_#004_bit0_FLUID TEMP",
+     "request": "DataRead_$110C",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 1495,
+      "top": 600,
+      "height": 300,
+      "left": 2610
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_$111F_#004_bit0_M GEAR POS",
+     "request": "DataRead_$111F",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 1495,
+      "top": 2085,
+      "height": 300,
+      "left": 2610
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_$1121_#004_bit0_PLCMOD",
+     "request": "DataRead_$1121",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 1495,
+      "top": 1320,
+      "height": 300,
+      "left": 2610
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_$1128_#004_bit0_*ENG_Temp",
+     "request": "DataRead_$1128",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 1495,
+      "top": 255,
+      "height": 300,
+      "left": 2610
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_$1208_#004_bit0_G SENSOR",
+     "request": "DataRead_$1208",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 1495,
+      "top": 1710,
+      "height": 300,
+      "left": 2610
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_$1210_#004_bit0_PULLEY GEAR RATIO",
+     "request": "DataRead_$1210",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 1495,
+      "top": 960,
+      "height": 300,
+      "left": 2610
+     }
+    }
+   ]
+  },
+  "Настройки и адаптации": {
+   "inputs": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataWrite_[3B01#03]_AEB_LEVEL",
+     "request": "DataWrite.AEB_LEVEL",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 1108,
+      "top": 435,
+      "height": 300,
+      "left": 3994
+     }
+    }
+   ],
+   "color": "rgb(255,255,255)",
+   "labels": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "ATF aging counter",
+     "bbox": {
+      "width": 2082,
+      "top": 1140,
+      "height": 300,
+      "left": 312
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Engine braking",
+     "bbox": {
+      "width": 2265,
+      "top": 465,
+      "height": 300,
+      "left": 312
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(128,255,255)",
+     "text": "For hybrids",
+     "bbox": {
+      "width": 5145,
+      "top": 3600,
+      "height": 930,
+      "left": 360
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(255,0,0)",
+     "text": " ",
+     "bbox": {
+      "width": 5145,
+      "top": 5760,
+      "height": 930,
+      "left": 360
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    }
+   ],
+   "presend": [],
+   "height": 7020,
+   "buttons": [
+    {
+     "text": "Send",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "3",
+       "RequestName": "StartDiagnosticSession.ExtendedDiagSession"
+      },
+      {
+       "Delay": "3",
+       "RequestName": "DataWrite.AEB_LEVEL"
+      }
+     ],
+     "uniquename": "Send_0",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "rect": {
+      "width": 600,
+      "top": 435,
+      "height": 300,
+      "left": 5205
+     }
+    },
+    {
+     "text": "Reset counter",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "3",
+       "RequestName": "StartDiagnosticSession.ExtendedDiagSession"
+      },
+      {
+       "Delay": "3",
+       "RequestName": "DataWrite.ATF_DATA_CLEAR"
+      }
+     ],
+     "uniquename": "Обнулить счетчик_1",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "rect": {
+      "width": 1845,
+      "top": 1035,
+      "height": 407,
+      "left": 3960
+     }
+    },
+    {
+     "text": "ECO RESET",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "3",
+       "RequestName": "StartDiagnosticSession.ExtendedDiagSession"
+      },
+      {
+       "Delay": "3",
+       "RequestName": "DataWrite.ECO_RESET"
+      }
+     ],
+     "uniquename": "ECO RESET_2",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "rect": {
+      "width": 4650,
+      "top": 6000,
+      "height": 407,
+      "left": 600
+     }
+    },
+    {
+     "text": "RESET ERRORS",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "3",
+       "RequestName": "StartDiagnosticSession.ExtendedDiagSession"
+      },
+      {
+       "Delay": "0",
+       "RequestName": "ClearDiagnosticInformation.All"
+      }
+     ],
+     "uniquename": "СБРОС ОШИБОК_3",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "rect": {
+      "width": 3120,
+      "top": 4920,
+      "height": 540,
+      "left": 1440
+     }
+    },
+    {
+     "text": "Forward clutch learning",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "3",
+       "RequestName": "StartDiagnosticSession.ExtendedDiagSession"
+      },
+      {
+       "Delay": "0",
+       "RequestName": "Start.$06_Clutch Point"
+      }
+     ],
+     "uniquename": "Обучение пакета передач вперед_4",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "rect": {
+      "width": 3120,
+      "top": 2280,
+      "height": 540,
+      "left": 1440
+     }
+    },
+    {
+     "text": "Reverse clutch learning",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "3",
+       "RequestName": "StartDiagnosticSession.ExtendedDiagSession"
+      },
+      {
+       "Delay": "0",
+       "RequestName": "Start.$05_FWD CLUTCH POINT LEARNING"
+      }
+     ],
+     "uniquename": "Обучение пакета передач назад_5",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "rect": {
+      "width": 3120,
+      "top": 2880,
+      "height": 540,
+      "left": 1440
+     }
+    },
+    {
+     "text": "G-sensor calibration",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "3",
+       "RequestName": "StartDiagnosticSession.ExtendedDiagSession"
+      },
+      {
+       "Delay": "0",
+       "RequestName": "Start.$01_G SENSOR CALIBRATION"
+      }
+     ],
+     "uniquename": "Калибровка G-сенсора_6",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "rect": {
+      "width": 3120,
+      "top": 1680,
+      "height": 540,
+      "left": 1440
+     }
+    },
+    {
+     "text": "Electric pump air bleeding",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "3",
+       "RequestName": "StartDiagnosticSession.ExtendedDiagSession"
+      },
+      {
+       "Delay": "0",
+       "RequestName": "Start.$08_ELECTRIC O.P. AIR BLEEDING"
+      }
+     ],
+     "uniquename": "Удаление воздуха из эл. насоса_7",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "rect": {
+      "width": 3120,
+      "top": 3840,
+      "height": 540,
+      "left": 1440
+     }
+    }
+   ],
+   "width": 5940,
+   "displays": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_$1123_#004_bit0_ENGBRKLVL",
+     "request": "DataRead_$1123",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 1108,
+      "top": 435,
+      "height": 300,
+      "left": 2700
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_$2103_#003_bit0_CVTF DETERIORATION DATE",
+     "request": "DataRead_$03",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 1435,
+      "top": 1095,
+      "height": 300,
+      "left": 2370
+     }
+    }
+   ]
+  },
+  "Режимы": {
+   "inputs": [],
+   "color": "rgb(255,255,255)",
+   "labels": [],
+   "presend": [],
+   "height": 9780,
+   "buttons": [],
+   "width": 7260,
+   "displays": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_$1124_#004_bit0_DRIVE MODE STATS",
+     "request": "DataRead_$1124",
+     "width": 4610,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 6620,
+      "top": 375,
+      "height": 300,
+      "left": 270
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_$1122_#004_bit0_CURSFT",
+     "request": "DataRead_$1122",
+     "width": 4595,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 6620,
+      "top": 855,
+      "height": 300,
+      "left": 270
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_$1117_#004_bit0_SPORT MODE SW",
+     "request": "DataRead_$1117",
+     "width": 4610,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 6600,
+      "top": 1335,
+      "height": 300,
+      "left": 270
+     }
+    }
+   ]
+  },
+  "Калибровки": {
+   "inputs": [],
+   "color": "rgb(255,255,255)",
+   "labels": [],
+   "presend": [],
+   "height": 17100,
+   "buttons": [],
+   "width": 6780,
+   "displays": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_PRODUCT_INFO_HI",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 120,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_PRODUCT_INFO_MID",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 420,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_PRODUCT_INFO_LOW",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 720,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_CV_ACTUAL_HI",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 1020,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_CV_ACTUAL_MID",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 1320,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_CV_ACTUAL_LOW",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 1620,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_CV_ID",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 1920,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_CAL_VER",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 2220,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_ID1",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 2520,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_ID2",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 2820,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_ID3",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 3120,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_GAIN_LU",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 3420,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_GAIN_PL",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 3720,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_GAIN_PRI",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 4020,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_GAIN_SEC",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 4320,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_GAIN_SLCT",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 4620,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_OFFSET_LU",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 4920,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_OFFSET_PL",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 5220,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_OFFSET_PRI",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 5520,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_OFFSET_SEC",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 5820,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_OFFSET_SLCT",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 6120,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_MAP_NO_LU",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 6420,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_MAP_NO_PL",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 6720,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_MAP_NO_PRI",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 7020,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_MAP_NO_SEC",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 7320,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_MAP_NO_SLCT",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 7620,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_OFFSET2_LU",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 7920,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_OFFSET2_PL",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 8220,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_OFFSET2_PRI",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 8520,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_OFFSET2_SEC",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 8820,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_OFFSET2_SLCT",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 9120,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_INIT_OFFSET_LU_A",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 9420,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_INIT_OFFSET_LU_B",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 9720,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_INIT_OFFSET_LU_C",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 10020,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_INIT_OFFSET_LU_D",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 10320,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_INIT_OFFSET_LU_E",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 10620,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_INIT_OFFSET_LU_F",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 10920,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_INIT_OFFSET_LU_G",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 11220,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_INIT_OFFSET_LU_H",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 11520,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_INIT_OFFSET_SLCT_A",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 11820,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_INIT_OFFSET_SLCT_B",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 12120,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_INIT_OFFSET_SLCT_C",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 12420,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_INIT_OFFSET_SLCT_D",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 12720,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_INIT_OFFSET_SLCT_E",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 13020,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_INIT_OFFSET_SLCT_F",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 13320,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_INIT_OFFSET_SLCT_G",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 13620,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_SLCT_INIT_LRN_Ver",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 13920,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_LU_INIT_LRN_Ver",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 14220,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_SLCT_INITLRN_OELTEMP",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 14520,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_LU_INITLRN_OELTEMP",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 14820,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_SLCT_INITLRN_ND_PRS",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 15120,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_SLCT_INITLRN_ND_TIME",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 15420,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_SLCT_INITLRN_NR_PRS",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 15720,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_SLCT_INITLRN_NR_TIME",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 16020,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_LU_INITLRN-1",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 16320,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_LU_INITLRN-2",
+     "request": "DataRead.CALIB_DATA_READ_OUT",
+     "width": 3485,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5475,
+      "top": 16620,
+      "height": 300,
+      "left": 600
+     }
+    }
+   ]
+  },
+  "CAN": {
+   "inputs": [],
+   "color": "rgb(255,255,255)",
+   "labels": [],
+   "presend": [],
+   "height": 64620,
+   "buttons": [],
+   "width": 7020,
+   "displays": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "MUX messaging reference.-.-.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 645,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "BUSOFF DIAG.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 945,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "BUSOFF DIAG.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 1245,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "BUSOFF DIAG.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 1545,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "TRANSMIT DIAG.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 1845,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "TRANSMIT DIAG.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 2145,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "TRANSMIT DIAG.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 2445,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "ECM.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 2745,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "ECM.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 3045,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "ECM.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 3345,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "BRAKE.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 3645,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "BRAKE.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 3945,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "BRAKE.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 4245,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CLUSTER.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 4545,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CLUSTER.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 4845,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CLUSTER.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 5145,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "BCM.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 5445,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "BCM.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 5745,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "BCM.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 6045,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "AIRBAG.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 6345,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "AIRBAG.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 6645,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "AIRBAG.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 6945,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "ESCL.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 7245,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "ESCL.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 7545,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "ESCL.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 7845,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "ACC/ADAS.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 8145,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "ACC/ADAS.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 8445,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "ACC/ADAS.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 8745,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CLIM.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 9045,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CLIM.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 9345,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CLIM.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 9645,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "AT.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 9945,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "AT.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 10245,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "AT.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 10545,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "MIU.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 10845,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "MIU.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 11145,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "MIU.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 11445,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "SYP.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 11745,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "SYP.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 12045,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "SYP.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 12345,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "GCU.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 12645,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "GCU.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 12945,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "GCU.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 13245,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "APB.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 13545,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "APB.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 13845,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "APB.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 14145,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "SWA.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 14445,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "SWA.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 14745,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "SWA.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 15045,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DCDC.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 15345,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DCDC.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 15645,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DCDC.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 15945,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Invert-MG.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 16245,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Invert-MG.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 16545,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Invert-MG.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 16845,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "XSG.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 17145,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "XSG.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 17445,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "XSG.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 17745,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "EPS.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 18045,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "EPS.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 18345,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "EPS.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 18645,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "SCU.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 18945,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "SCU.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 19245,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "SCU.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 19545,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "USM.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 19845,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "USM.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 20145,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "USM.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 20445,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "TMPS.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 20745,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "TMPS.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 21045,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "TMPS.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 21345,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "ARS.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 21645,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "ARS.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 21945,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "ARS.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 22245,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "BAC.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 22545,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "BAC.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 22845,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "BAC.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 23145,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "ADD-DISP.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 23445,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "ADD-DISP.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 23745,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "ADD-DISP.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 24045,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "TcU/RCU.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 24345,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "TcU/RCU.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 24645,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "TcU/RCU.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 24945,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "AT Disp.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 25245,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "AT Disp.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 25545,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "AT Disp.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 25845,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DSU.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 26145,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DSU.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 26445,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DSU.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 26745,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "HLS.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 27045,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "HLS.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 27345,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "HLS.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 27645,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "M4WD.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 27945,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "M4WD.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 28245,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "M4WD.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 28545,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "LASER/RADAR.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 28845,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "LASER/RADAR.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 29145,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "LASER/RADAR.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 29445,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "SKL.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 29745,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "SKL.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 30045,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "SKL.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 30345,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DCU.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 30645,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DCU.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 30945,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DCU.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 31245,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "ENG-ST.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 31545,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "ENG-ST.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 31845,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "ENG-ST.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 32145,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "ASDL.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 32445,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "ASDL.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 32745,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "ASDL.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 33045,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Pre-Tens.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 33345,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Pre-Tens.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 33645,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Pre-Tens.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 33945,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DPC.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 34245,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DPC.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 34545,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DPC.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 34845,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "4WD/ETC.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 35145,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "4WD/ETC.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 35445,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "4WD/ETC.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 35745,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DLOCK.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 36045,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DLOCK.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 36345,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DLOCK.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 36645,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "4WS.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 36945,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "4WS.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 37245,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "4WS.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 37545,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "UPA.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 37845,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "UPA.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 38145,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "UPA.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 38445,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "LK.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 38745,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "LK.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 39045,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "LK.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 39345,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "AFS.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 39645,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "AFS.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 39945,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "AFS.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 40245,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "BCU.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 40545,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "BCU.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 40845,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "BCU.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 41145,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "ASDR.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 41445,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "ASDR.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 41745,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "ASDR.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 42045,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "GW.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 42345,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "GW.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 42645,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "GW.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 42945,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "SHIFT.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 43245,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "SHIFT.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 43545,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "SHIFT.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 43845,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "VCM/HCM/EVC.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 44145,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "VCM/HCM/EVC.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 44445,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "VCM/HCM/EVC.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 44745,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "PPS.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 45045,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "PPS.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 45345,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "PPS.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 45645,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "PBD.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 45945,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "PBD.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 46245,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "PBD.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 46545,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DDR.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 46845,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DDR.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 47145,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DDR.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 47445,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "4WAS.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 47745,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "4WAS.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 48045,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "4WAS.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 48345,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "E-Latch.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 48645,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "E-Latch.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 48945,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "E-Latch.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 49245,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "S-ABS.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 49545,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "S-ABS.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 49845,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "S-ABS.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 50145,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "RCAM.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 50445,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "RCAM.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 50745,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "RCAM.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 51045,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "MB.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 51345,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "MB.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 51645,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "MB.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 51945,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "LBC.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 52245,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "LBC.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 52545,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "LBC.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 52845,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "SCAM.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 53145,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "SCAM.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 53445,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "SCAM.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 53745,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "MAT.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 54045,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "MAT.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 54345,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "MAT.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 54645,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "SMTENT.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 54945,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "SMTENT.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 55245,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "SMTENT.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 55545,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "HSPL.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 55845,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "HSPL.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 56145,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "HSPL.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 56445,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "ODS.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 56745,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "ODS.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 57045,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "ODS.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 57345,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "MB-KEY.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 57645,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "MB-KEY.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 57945,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "MB-KEY.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 58245,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "BBW.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 58545,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "BBW.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 58845,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "BBW.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 59145,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "SOWLeft.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 59445,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "SOWLeft.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 59745,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "SOWLeft.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 60045,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "IPA.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 60345,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "IPA.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 60645,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "IPA.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 60945,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "PRS.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 61245,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "PRS.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 61545,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "PRS.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 61845,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "I-CON.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 62145,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "I-CON.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 62445,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "I-CON.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 62745,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "IDM.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 63045,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "IDM.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 63345,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "IDM.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 3155,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5590,
+      "top": 63645,
+      "height": 300,
+      "left": 315
+     }
+    }
+   ]
+  },
+  "Идентификаторы": {
+   "inputs": [],
+   "color": "rgb(255,255,255)",
+   "labels": [],
+   "presend": [],
+   "height": 9540,
+   "buttons": [],
+   "width": 5940,
+   "displays": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "N.SparePartsNumber",
+     "request": "NissanIdentification",
+     "width": 3005,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5320,
+      "top": 120,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "N.DiagnosticIdentificationCode",
+     "request": "NissanIdentification",
+     "width": 3005,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5320,
+      "top": 420,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "N.SparePartsNumberSuffix",
+     "request": "NissanIdentification",
+     "width": 3005,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5320,
+      "top": 720,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "N1.SupplierNumber1",
+     "request": "NissanIdentification",
+     "width": 3005,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5320,
+      "top": 1020,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "N2.SupplierNumber",
+     "request": "NissanIdentification",
+     "width": 3005,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5320,
+      "top": 1320,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "N3.SupplierNumber",
+     "request": "NissanIdentification",
+     "width": 3005,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5320,
+      "top": 1620,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "N1.SupplierNumber2",
+     "request": "NissanIdentification",
+     "width": 3005,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5320,
+      "top": 1920,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "N.HardwareNumber",
+     "request": "NissanIdentification",
+     "width": 3005,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5320,
+      "top": 2220,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "N.SoftwareNumber",
+     "request": "NissanIdentification",
+     "width": 3005,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5320,
+      "top": 2520,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "N.EditionNumber",
+     "request": "NissanIdentification",
+     "width": 3005,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5320,
+      "top": 2820,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "N.CalibrationNumber",
+     "request": "NissanIdentification",
+     "width": 3005,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5320,
+      "top": 3120,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "N.OtherSystemFeatures",
+     "request": "NissanIdentification",
+     "width": 3005,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5320,
+      "top": 3420,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "N.ManufacturerIdentificationCode",
+     "request": "NissanIdentification",
+     "width": 3005,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5320,
+      "top": 3720,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "ITG supplier code",
+     "request": "DataRead.TraceabilityInformation",
+     "width": 3005,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5320,
+      "top": 4005,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Supplier production line",
+     "request": "DataRead.TraceabilityInformation",
+     "width": 3005,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5320,
+      "top": 4305,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Date of production",
+     "request": "DataRead.TraceabilityInformation",
+     "width": 3005,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5320,
+      "top": 4605,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Production Number",
+     "request": "DataRead.TraceabilityInformation",
+     "width": 3005,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5320,
+      "top": 4905,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Reserved",
+     "request": "DataRead.TraceabilityInformation",
+     "width": 3005,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5320,
+      "top": 5205,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "ITG supplier code",
+     "request": "DataRead.TraceabilityInformation",
+     "width": 2990,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5325,
+      "top": 5760,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Supplier production line",
+     "request": "DataRead.TraceabilityInformation",
+     "width": 2990,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5325,
+      "top": 6060,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Date of production",
+     "request": "DataRead.TraceabilityInformation",
+     "width": 2990,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5325,
+      "top": 6360,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Production Number",
+     "request": "DataRead.TraceabilityInformation",
+     "width": 2990,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5325,
+      "top": 6660,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Reserved",
+     "request": "DataRead.TraceabilityInformation",
+     "width": 2990,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5325,
+      "top": 6960,
+      "height": 300,
+      "left": 240
+     }
+    }
+   ]
+  },
+  "Test": {
+   "inputs": [],
+   "color": "rgb(255,255,255)",
+   "labels": [],
+   "presend": [],
+   "height": 6000,
+   "buttons": [],
+   "width": 9000,
+   "displays": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_$2110_#003_bit0_CVT-B",
+     "request": "DataRead_$10",
+     "width": 3230,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4800,
+      "top": 240,
+      "height": 300,
+      "left": 480
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DataRead_$2110_#011_bit0_CVT-A",
+     "request": "DataRead_$10",
+     "width": 3230,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4800,
+      "top": 540,
+      "height": 300,
+      "left": 480
+     }
+    }
+   ]
+  }
+ },
+ "categories": {
+  "CVT": [
+   "Режимы",
+   "Калибровки",
+   "Settings and adaptations",
+   "Идентификаторы",
+   "CAN",
+   "Test",
+   "Monitoring"
+  ]
+ }
+}

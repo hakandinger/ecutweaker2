@@ -1,0 +1,59 @@
+{
+ "screens": {
+  "Test": {
+   "inputs": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "!Config.Data_$08_#003_bit0_WDID",
+     "request": "!DataWrite.CF_$08",
+     "width": 2000,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4000,
+      "top": 840,
+      "height": 300,
+      "left": 480
+     }
+    }
+   ],
+   "color": "rgb(255,255,255)",
+   "labels": [],
+   "presend": [],
+   "height": 6000,
+   "buttons": [],
+   "width": 9000,
+   "displays": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "!Config.Data_$08_#003_bit0_WDID",
+     "request": "!DataRead.CF_$08",
+     "width": 2000,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4000,
+      "top": 240,
+      "height": 300,
+      "left": 480
+     }
+    }
+   ]
+  }
+ },
+ "categories": {
+  "New": [
+   "Test"
+  ]
+ }
+}

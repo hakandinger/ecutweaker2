@@ -1,0 +1,1828 @@
+{
+"obd": {
+	"baudrate": 10400, 
+	"protocol": "CAN", 
+	"recv_id": "73E", 
+	"funcname": "SOW_left", 
+	"funcaddr": "63", 
+	"send_id": "73D"
+}, 
+"devices": [
+	{
+	"dtc": 53264, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "CONTROL UNIT (CAN)"
+	}, 
+	{
+	"dtc": 23378, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "HMI open load / short to battery failure"
+	}, 
+	{
+	"dtc": 49412, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "LOST COMMUNICATION WITH ITS CONTROLLER(ADAS) (P-RUN)"
+	}, 
+	{
+	"dtc": 23376, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "SOW RADAR FAILURE"
+	}, 
+	{
+	"dtc": 23377, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "HMI short circuit failure"
+	}, 
+	{
+	"dtc": 53248, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "CAN COMM CIRCUIT"
+	}, 
+	{
+	"dtc": 50181, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "INVALID DATA RECEIVED FROM ITS CONTROLLER(ADAS) (CHECK SUM)"
+	}, 
+	{
+	"dtc": 23381, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "SOW RADAR STAIN"
+	}
+], 
+"ecuname": "SOW_Left", 
+"autoidents": [], 
+"endian": "Big", 
+"requests": [
+	{
+	"name": "[Read ECU info]___NissanIdentification", 
+	"replybytes": "6183000000000000000000000000000000000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"N.DiagnosticIdentificationCode": {
+		"firstbyte": 8
+		}, 
+		"N.SparePartsNumberSuffix": {
+		"firstbyte": 8
+		}, 
+		"N3.SupplierNumber": {
+		"firstbyte": 9
+		}, 
+		"N1.SupplierNumber2": {
+		"firstbyte": 10
+		}, 
+		"N.ManufacturerIdentificationCode": {
+		"firstbyte": 26
+		}, 
+		"N.CalibrationNumber": {
+		"firstbyte": 21
+		}, 
+		"N.SparePartsNumber": {
+		"firstbyte": 3
+		}, 
+		"N.OtherSystemFeatures": {
+		"firstbyte": 23
+		}, 
+		"N.EditionNumber": {
+		"firstbyte": 19
+		}, 
+		"N2.SupplierNumber": {
+		"firstbyte": 9
+		}, 
+		"N1.SupplierNumber1": {
+		"firstbyte": 9
+		}, 
+		"N.SoftwareNumber": {
+		"firstbyte": 17
+		}, 
+		"N.HardwareNumber": {
+		"firstbyte": 12
+		}
+	}, 
+	"minbytes": 26, 
+	"sentbytes": "2183"
+	}, 
+	{
+	"name": "DataRead.SnapshotData(1408)", 
+	"replybytes": "6214080000000000", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"[FFD1408]CAN output 4EDh": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 8, 
+	"sentbytes": "221408"
+	}, 
+	{
+	"name": "OutputControl.$02_STATIC_MODE", 
+	"replybytes": "700200", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"OutputControlStatus": {
+		"firstbyte": 3
+		}
+	}, 
+	"sendbyte_dataitems": {
+		"OutputControlCommand": {
+		"firstbyte": 3
+		}, 
+		"$02_STATIC_MODE.param": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "30022000"
+	}, 
+	{
+	"name": "Supported Lid for RDBLID(00)", 
+	"replybytes": "610000000000", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"LID$14": {
+		"bitoffset": 3, 
+		"firstbyte": 5
+		}, 
+		"LID$15": {
+		"bitoffset": 4, 
+		"firstbyte": 5
+		}, 
+		"LID$16": {
+		"bitoffset": 5, 
+		"firstbyte": 5
+		}, 
+		"LID$17": {
+		"bitoffset": 6, 
+		"firstbyte": 5
+		}, 
+		"LID$10": {
+		"bitoffset": 7, 
+		"firstbyte": 4
+		}, 
+		"LID$11": {
+		"firstbyte": 5
+		}, 
+		"LID$12": {
+		"bitoffset": 1, 
+		"firstbyte": 5
+		}, 
+		"LID$13": {
+		"bitoffset": 2, 
+		"firstbyte": 5
+		}, 
+		"LID$18": {
+		"bitoffset": 7, 
+		"firstbyte": 5
+		}, 
+		"LID$19": {
+		"firstbyte": 6
+		}, 
+		"LID$0C": {
+		"bitoffset": 3, 
+		"firstbyte": 4
+		}, 
+		"LID$0B": {
+		"bitoffset": 2, 
+		"firstbyte": 4
+		}, 
+		"LID$0A": {
+		"bitoffset": 1, 
+		"firstbyte": 4
+		}, 
+		"LID$0F": {
+		"bitoffset": 6, 
+		"firstbyte": 4
+		}, 
+		"LID$0E": {
+		"bitoffset": 5, 
+		"firstbyte": 4
+		}, 
+		"LID$0D": {
+		"bitoffset": 4, 
+		"firstbyte": 4
+		}, 
+		"LID$03": {
+		"bitoffset": 2, 
+		"firstbyte": 3
+		}, 
+		"LID$02": {
+		"bitoffset": 1, 
+		"firstbyte": 3
+		}, 
+		"LID$01": {
+		"firstbyte": 3
+		}, 
+		"LID$07": {
+		"bitoffset": 6, 
+		"firstbyte": 3
+		}, 
+		"LID$06": {
+		"bitoffset": 5, 
+		"firstbyte": 3
+		}, 
+		"LID$05": {
+		"bitoffset": 4, 
+		"firstbyte": 3
+		}, 
+		"LID$04": {
+		"bitoffset": 3, 
+		"firstbyte": 3
+		}, 
+		"LID$09": {
+		"firstbyte": 4
+		}, 
+		"LID$08": {
+		"bitoffset": 7, 
+		"firstbyte": 3
+		}, 
+		"LID$1D": {
+		"bitoffset": 4, 
+		"firstbyte": 6
+		}, 
+		"LID$1E": {
+		"bitoffset": 5, 
+		"firstbyte": 6
+		}, 
+		"LID$1F": {
+		"bitoffset": 6, 
+		"firstbyte": 6
+		}, 
+		"LID$1A": {
+		"bitoffset": 1, 
+		"firstbyte": 6
+		}, 
+		"LID$1B": {
+		"bitoffset": 2, 
+		"firstbyte": 6
+		}, 
+		"LID$1C": {
+		"bitoffset": 3, 
+		"firstbyte": 6
+		}, 
+		"LID$20": {
+		"bitoffset": 7, 
+		"firstbyte": 6
+		}
+	}, 
+	"minbytes": 6, 
+	"sentbytes": "2100"
+	}, 
+	{
+	"name": "CAN DIAG SUPPORT MNTR.can", 
+	"replybytes": "618200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"MUX messaging reference.-.-.vcan": {
+		"firstbyte": 3
+		}, 
+		"BCM/SEC.n.CRRNT.vcan": {
+		"firstbyte": 10
+		}, 
+		"TRANSMIT DIAG.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 6
+		}, 
+		"BUSOFF DIAG.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 5
+		}, 
+		"TRANSMIT DIAG.n.CRRNT.vcan": {
+		"firstbyte": 6
+		}, 
+		"BUSOFF DIAG.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 5
+		}, 
+		"SOW Right.n.CRRNT.vcan": {
+		"firstbyte": 76
+		}, 
+		"BCM/SEC.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 10
+		}, 
+		"BUSOFF DIAG.n.CRRNT.vcan": {
+		"firstbyte": 5
+		}, 
+		"ACC.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 13
+		}, 
+		"ECM.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 7
+		}, 
+		"TRANSMIT DIAG.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 6
+		}, 
+		"ACC.n.CRRNT.vcan": {
+		"firstbyte": 13
+		}, 
+		"BCM/SEC.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 10
+		}, 
+		"ACC.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 13
+		}, 
+		"ECM.n.CRRNT.vcan": {
+		"firstbyte": 7
+		}, 
+		"SOW Right.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 76
+		}, 
+		"ECM.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 7
+		}, 
+		"SOW Right.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 76
+		}
+	}, 
+	"minbytes": 84, 
+	"sentbytes": "2182"
+	}, 
+	{
+	"name": "Supported Lid for IOCBLID(00)", 
+	"replybytes": "700000000000", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"LID$14": {
+		"bitoffset": 3, 
+		"firstbyte": 5
+		}, 
+		"LID$15": {
+		"bitoffset": 4, 
+		"firstbyte": 5
+		}, 
+		"LID$16": {
+		"bitoffset": 5, 
+		"firstbyte": 5
+		}, 
+		"LID$17": {
+		"bitoffset": 6, 
+		"firstbyte": 5
+		}, 
+		"LID$10": {
+		"bitoffset": 7, 
+		"firstbyte": 4
+		}, 
+		"LID$11": {
+		"firstbyte": 5
+		}, 
+		"LID$12": {
+		"bitoffset": 1, 
+		"firstbyte": 5
+		}, 
+		"LID$13": {
+		"bitoffset": 2, 
+		"firstbyte": 5
+		}, 
+		"LID$18": {
+		"bitoffset": 7, 
+		"firstbyte": 5
+		}, 
+		"LID$19": {
+		"firstbyte": 6
+		}, 
+		"LID$0C": {
+		"bitoffset": 3, 
+		"firstbyte": 4
+		}, 
+		"LID$0B": {
+		"bitoffset": 2, 
+		"firstbyte": 4
+		}, 
+		"LID$0A": {
+		"bitoffset": 1, 
+		"firstbyte": 4
+		}, 
+		"LID$0F": {
+		"bitoffset": 6, 
+		"firstbyte": 4
+		}, 
+		"LID$0E": {
+		"bitoffset": 5, 
+		"firstbyte": 4
+		}, 
+		"LID$0D": {
+		"bitoffset": 4, 
+		"firstbyte": 4
+		}, 
+		"LID$03": {
+		"bitoffset": 2, 
+		"firstbyte": 3
+		}, 
+		"LID$02": {
+		"bitoffset": 1, 
+		"firstbyte": 3
+		}, 
+		"LID$01": {
+		"firstbyte": 3
+		}, 
+		"LID$07": {
+		"bitoffset": 6, 
+		"firstbyte": 3
+		}, 
+		"LID$06": {
+		"bitoffset": 5, 
+		"firstbyte": 3
+		}, 
+		"LID$05": {
+		"bitoffset": 4, 
+		"firstbyte": 3
+		}, 
+		"LID$04": {
+		"bitoffset": 3, 
+		"firstbyte": 3
+		}, 
+		"LID$09": {
+		"firstbyte": 4
+		}, 
+		"LID$08": {
+		"bitoffset": 7, 
+		"firstbyte": 3
+		}, 
+		"LID$1D": {
+		"bitoffset": 4, 
+		"firstbyte": 6
+		}, 
+		"LID$1E": {
+		"bitoffset": 5, 
+		"firstbyte": 6
+		}, 
+		"LID$1F": {
+		"bitoffset": 6, 
+		"firstbyte": 6
+		}, 
+		"LID$1A": {
+		"bitoffset": 1, 
+		"firstbyte": 6
+		}, 
+		"LID$1B": {
+		"bitoffset": 2, 
+		"firstbyte": 6
+		}, 
+		"LID$1C": {
+		"bitoffset": 3, 
+		"firstbyte": 6
+		}, 
+		"LID$20": {
+		"bitoffset": 7, 
+		"firstbyte": 6
+		}
+	}, 
+	"minbytes": 6, 
+	"sentbytes": "3000"
+	}, 
+	{
+	"name": "StartDiagnosticSession", 
+	"replybytes": "5000", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"sendbyte_dataitems": {
+		"SessionName": {
+		"firstbyte": 2
+		}
+	}, 
+	"minbytes": 2, 
+	"sentbytes": "1000"
+	}, 
+	{
+	"name": "OutputControl.$01_RIGHT/LEFT_INDICATOR_DRIVE", 
+	"replybytes": "700100", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"OutputControlStatus": {
+		"firstbyte": 3
+		}
+	}, 
+	"sendbyte_dataitems": {
+		"OutputControlCommand": {
+		"firstbyte": 3
+		}, 
+		"$01_RIGHT/LEFT_INDICATOR_DRIVE.param": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "30012000"
+	}, 
+	{
+	"sendbyte_dataitems": {
+		"MEMADD": {
+		"firstbyte": 2
+		}, 
+		"MEMSIZE": {
+		"firstbyte": 6
+		}
+	}, 
+	"deny_sds": [], 
+	"minbytes": 7, 
+	"sentbytes": "23000000000000", 
+	"name": "ReadMemoryByAddress"
+	}, 
+	{
+	"name": "DataRead.SnapshotData(1405)", 
+	"replybytes": "62140500000000000000", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"[FFD1405]CAN output 3F1h/3F4h": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 10, 
+	"sentbytes": "221405"
+	}, 
+	{
+	"name": "ReadDTCInformation.ReportExtendedData", 
+	"replybytes": "590600000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"DTCRecord": {
+		"firstbyte": 3
+		}, 
+		"DTCExtendedData.AgingCounter": {
+		"firstbyte": 8
+		}, 
+		"StatusOfDTC": {
+		"firstbyte": 6
+		}, 
+		"DTCExtendedDataRecordNumber": {
+		"firstbyte": 7
+		}
+	}, 
+	"sendbyte_dataitems": {
+		"DTCMaskRecord": {
+		"firstbyte": 3
+		}
+	}, 
+	"minbytes": 6, 
+	"sentbytes": "1906000000FF"
+	}, 
+	{
+	"name": "DataRead.SnapshotData(1407)", 
+	"replybytes": "621407000000000000", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"[FFD1407]CAN output 3D0h": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 9, 
+	"sentbytes": "221407"
+	}, 
+	{
+	"name": "ReadDTCInformation.ReportSnapshot", 
+	"replybytes": "590400000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"DTCRecord": {
+		"firstbyte": 3
+		}, 
+		"StatusOfDTC": {
+		"firstbyte": 6
+		}
+	}, 
+	"sendbyte_dataitems": {
+		"DTCMaskRecord": {
+		"firstbyte": 3
+		}
+	}, 
+	"minbytes": 6, 
+	"sentbytes": "1904000000FF"
+	}, 
+	{
+	"name": "DataRead.SnapshotData(1401)", 
+	"replybytes": "62140100", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"[FFD1401]Detailed Error Code": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "221401"
+	}, 
+	{
+	"name": "StartDiagnosticSession.DefaultSession", 
+	"replybytes": "5081", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"minbytes": 2, 
+	"sentbytes": "1081"
+	}, 
+	{
+	"name": "DataRead.SnapshotData(1403)", 
+	"replybytes": "62140300", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"[FFD1403]Turn Signal Status": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "221403"
+	}, 
+	{
+	"name": "ClearDiagnosticInformation.All", 
+	"replybytes": "54", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"minbytes": 1, 
+	"sentbytes": "14FFFFFF"
+	}, 
+	{
+	"name": "ReadDTCInformation.ReportExtendedData.Mileage", 
+	"replybytes": "590600000000", 
+	"deny_sds": [], 
+	"sendbyte_dataitems": {
+		"DTCMaskRecord": {
+		"firstbyte": 3
+		}
+	}, 
+	"minbytes": 6, 
+	"sentbytes": "190600000080"
+	}, 
+	{
+	"name": "DataRead.SnapshotData(1409)", 
+	"replybytes": "62140900", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"[FFD1409]Diag Mux On": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "221409"
+	}, 
+	{
+	"name": "DataRead.SnapshotData(140A)", 
+	"replybytes": "62140A00000000", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"[FFD140A]Time Stamp": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 7, 
+	"sentbytes": "22140A"
+	}, 
+	{
+	"name": "OutputControl.$03_FORCED_RECOGNITION_MODE", 
+	"replybytes": "700300", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"OutputControlStatus": {
+		"firstbyte": 3
+		}
+	}, 
+	"sendbyte_dataitems": {
+		"$03_FORCED_RECOGNITION_MODE.param": {
+		"firstbyte": 4
+		}, 
+		"OutputControlCommand": {
+		"firstbyte": 3
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "30032000"
+	}, 
+	{
+	"name": "DataRead.SnapshotData(1404)", 
+	"replybytes": "62140400000000000000", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"[FFD1404]CAN output 3F0h/3F3h": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 10, 
+	"sentbytes": "221404"
+	}, 
+	{
+	"name": "DataRead.SnapshotData(1402)", 
+	"replybytes": "62140200", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"[FFD1402]Calcurated Vehicle Speed from ITS controller(ADAS)": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "221402"
+	}, 
+	{
+	"name": "StartDiagnosticSession.ExtendedDiagSession", 
+	"replybytes": "50C0", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"minbytes": 2, 
+	"sentbytes": "10C0"
+	}, 
+	{
+	"name": "ReadDTCInformation.ReportDTC", 
+	"replybytes": "59020B00000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"DTCStatus.pendingDTC": {
+		"bitoffset": 5, 
+		"firstbyte": 7
+		}, 
+		"DTCStatus.testFailedSinceLastClear": {
+		"bitoffset": 2, 
+		"firstbyte": 7
+		}, 
+		"DTCDeviceAndFailureTypeOBD": {
+		"firstbyte": 4
+		}, 
+		"DTCFailureType.ManufacturerOrSupplier": {
+		"bitoffset": 4, 
+		"firstbyte": 6
+		}, 
+		"DTCFailureType.Category": {
+		"firstbyte": 6
+		}, 
+		"DTCFailureType": {
+		"firstbyte": 6
+		}, 
+		"DTCStatus.testNotCompletedSinceLastClear": {
+		"bitoffset": 3, 
+		"firstbyte": 7
+		}, 
+		"DTCStatus.testNotCompletedThisMonitoringCycle": {
+		"bitoffset": 1, 
+		"firstbyte": 7
+		}, 
+		"DTCStatusAvailabilityMask": {
+		"firstbyte": 3
+		}, 
+		"DTCStatus.warningIndicatorRequested": {
+		"firstbyte": 7
+		}, 
+		"DTCStatus.confirmedDTC": {
+		"bitoffset": 4, 
+		"firstbyte": 7
+		}, 
+		"DTCStatus.testFailedThisMonitoringCycle": {
+		"bitoffset": 6, 
+		"firstbyte": 7
+		}, 
+		"DTCStatus.testFailed": {
+		"bitoffset": 7, 
+		"firstbyte": 7
+		}, 
+		"DTCDeviceIdentifier": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "1902FF", 
+	"shiftbytescount": 4
+	}, 
+	{
+	"name": "OutputControl.$0F_Deactivate", 
+	"replybytes": "700F00", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"OutputControlStatus": {
+		"firstbyte": 3
+		}
+	}, 
+	"sendbyte_dataitems": {
+		"OutputControlCommand": {
+		"firstbyte": 3
+		}, 
+		"$0F_Deactivate.param": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "300F2000"
+	}, 
+	{
+	"name": "StartDiagnosticSession.Programing Session", 
+	"replybytes": "5085", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"minbytes": 2, 
+	"sentbytes": "1085"
+	}, 
+	{
+	"name": "DataRead.SnapshotData(1406)", 
+	"replybytes": "62140600000000000000", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"[FFD1406]CAN output 3F2h/3F5h": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 10, 
+	"sentbytes": "221406"
+	}, 
+	{
+	"name": "TesterPresent.WithResponse", 
+	"replybytes": "7E", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"minbytes": 1, 
+	"sentbytes": "3E01"
+	}, 
+	{
+	"name": "OutputControl.$0E_Activate", 
+	"replybytes": "700E00", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"OutputControlStatus": {
+		"firstbyte": 3
+		}
+	}, 
+	"sendbyte_dataitems": {
+		"$0E_Activate.param": {
+		"firstbyte": 4
+		}, 
+		"OutputControlCommand": {
+		"firstbyte": 3
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "300E2000"
+	}, 
+	{
+	"name": "[Read info]___Read Data By Local Identifier Service (Data Monitor)", 
+	"replybytes": "6101000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"DataRead$01#04-05_Vehicle Speed": {
+		"firstbyte": 4
+		}, 
+		"DataRead$01#08_bit7_LeftLuminance": {
+		"firstbyte": 8
+		}, 
+		"DataRead$01#03_bit7_C_BSW_CTA_ALERT_ACTIVE(Right/Left)": {
+		"firstbyte": 3
+		}, 
+		"DataRead$01#03_bit4_MODE SIGNAL(Right/Left)": {
+		"bitoffset": 3, 
+		"firstbyte": 3
+		}, 
+		"DataRead$01#06_bit5-7_Turn signal": {
+		"firstbyte": 6
+		}, 
+		"DataRead$01#03_bit5_CTA_OFF(Right/Left)": {
+		"bitoffset": 2, 
+		"firstbyte": 3
+		}, 
+		"DataRead$01#07_bit7_Diag Mux On": {
+		"firstbyte": 7
+		}, 
+		"DataRead$01#09_bit7_RightLuminance": {
+		"firstbyte": 9
+		}, 
+		"DataRead$01#06_bit0-4_ATCVT Range Indication": {
+		"bitoffset": 3, 
+		"firstbyte": 6
+		}, 
+		"DataRead$01#03_bit6_BSW_OFF(Right/Left)": {
+		"bitoffset": 1, 
+		"firstbyte": 3
+		}, 
+		"DataRead$01#03_bit3_FAIL FLAG(Right/Left)": {
+		"bitoffset": 4, 
+		"firstbyte": 3
+		}
+	}, 
+	"minbytes": 10, 
+	"sentbytes": "2101"
+	}
+], 
+"data": {
+	"DTCExtendedDataRecordNumber": {
+	"lists": {
+		"128": "Mileage", 
+		"129": "AgingCounter", 
+		"130": "DTCOccurrenceCounter"
+	}
+	}, 
+	"[FFD1401]Detailed Error Code": {
+	"byte": true
+	}, 
+	"LID$04": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"N.ManufacturerIdentificationCode": {
+	"lists": {
+		"128": "N1", 
+		"129": "N2", 
+		"130": "N3"
+	}
+	}, 
+	"LID$14": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$15": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$16": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$17": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$10": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$11": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"N.EditionNumber": {
+	"bytescount": 2, 
+	"byte": true, 
+	"bitscount": 16
+	}, 
+	"LID$13": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"DataRead$01#06_bit0-4_ATCVT Range Indication": {
+	"bitscount": 5, 
+	"lists": {
+		"0": "OFF", 
+		"1": "P", 
+		"2": "R", 
+		"3": "N", 
+		"4": "D", 
+		"5": "S", 
+		"6": "L", 
+		"7": "B", 
+		"8": "1", 
+		"9": "2", 
+		"10": "3", 
+		"11": "4", 
+		"12": "5", 
+		"13": "6", 
+		"14": "Not used1", 
+		"15": "Not used2", 
+		"16": "MT 1st", 
+		"17": "MT 2nd", 
+		"18": "MT 3rd", 
+		"19": "MT 4th", 
+		"20": "MT 5th", 
+		"21": "MT 6th", 
+		"22": "MT 7th", 
+		"23": "MT 8th", 
+		"24": "AT 1st", 
+		"25": "AT 2nd", 
+		"26": "AT 3rd", 
+		"27": "AT 4th", 
+		"28": "AT 5th", 
+		"29": "AT 6th", 
+		"30": "Not used3", 
+		"31": "Not used4"
+	}
+	}, 
+	"LID$18": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$19": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"SOW Right.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"LID$0C": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$0B": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$0A": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$0F": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$0E": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$0D": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"N3.SupplierNumber": {
+	"bytescount": 3, 
+	"byte": true, 
+	"bitscount": 24
+	}, 
+	"[FFD140A]Time Stamp": {
+	"bytescount": 4, 
+	"byte": true, 
+	"bitscount": 32
+	}, 
+	"$02_STATIC_MODE.param": {
+	"lists": {
+		"255": "Fixed FF"
+	}
+	}, 
+	"N.DiagnosticIdentificationCode": {
+	"byte": true
+	}, 
+	"DataRead$01#06_bit5-7_Turn signal": {
+	"bitscount": 3, 
+	"lists": {
+		"0": "OFF", 
+		"1": "LH", 
+		"2": "RH", 
+		"3": "LH/RH"
+	}
+	}, 
+	"BCM/SEC.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"LID$03": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$02": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$01": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$07": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$06": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$05": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"BCM/SEC.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"LID$09": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$08": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"DTCDeviceIdentifier": {
+	"bytescount": 2, 
+	"bitscount": 16, 
+	"lists": {
+		"53248": "CAN COMM CIRCUIT", 
+		"23376": "SOW RADAR FAILURE", 
+		"49412": "LOST COMMUNICATION WITH ITS CONTROLLER(ADAS) (P-RUN)", 
+		"50181": "INVALID DATA RECEIVED FROM ITS CONTROLLER(ADAS) (CHECK SUM)", 
+		"53264": "CONTROL UNIT (CAN)", 
+		"23377": "HMI short circuit failure", 
+		"23378": "HMI open load / short to battery failure", 
+		"23381": "SOW RADAR STAIN"
+	}
+	}, 
+	"LID$1D": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$1E": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$1F": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$1A": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$1B": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$1C": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"DataRead$01#03_bit4_MODE SIGNAL(Right/Left)": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "OFF", 
+		"1": "ON"
+	}
+	}, 
+	"SOW Right.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"ECM.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"DTCStatus.testNotCompletedSinceLastClear": {
+	"comment": "TNCSLC", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "No", 
+		"1": "Yes"
+	}
+	}, 
+	"MEMSIZE": {
+	"comment": "Memory Size", 
+	"bytescount": 2, 
+	"byte": true, 
+	"bitscount": 16
+	}, 
+	"DataRead$01#09_bit7_RightLuminance": {
+	"scaled": true, 
+	"bitscount": 1
+	}, 
+	"DataRead$01#04-05_Vehicle Speed": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 10.0, 
+	"bitscount": 16, 
+	"unit": "km/h"
+	}, 
+	"[FFD1406]CAN output 3F2h/3F5h": {
+	"bytescount": 7, 
+	"byte": true, 
+	"bitscount": 56
+	}, 
+	"LID$12": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"$0E_Activate.param": {
+	"lists": {
+		"255": "Fixed FF"
+	}
+	}, 
+	"TRANSMIT DIAG.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"SessionName": {
+	"comment": "for Start diagnostic session", 
+	"lists": {
+		"192": "ExtendedDiagSession", 
+		"129": "DefaultSession", 
+		"134": "DevelopmentSession", 
+		"137": "ManufactureMode"
+	}
+	}, 
+	"DTCStatus.warningIndicatorRequested": {
+	"comment": "WIR", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "No", 
+		"1": "Yes"
+	}
+	}, 
+	"DTCExtendedData.AgingCounter": {
+	"scaled": true, 
+	"comment": "Description of the extendedData AgingCounter (use by Failure Page to decode data)"
+	}, 
+	"DTCStatusAvailabilityMask": {
+	"scaled": true, 
+	"comment": "DTCSAM"
+	}, 
+	"DTCRecord": {
+	"comment": "DTCASR_DTC", 
+	"bytescount": 3, 
+	"byte": true, 
+	"bitscount": 24
+	}, 
+	"MUX messaging reference.-.-.vcan": {
+	"bytesascii": true, 
+	"bytescount": 2, 
+	"byte": true, 
+	"bitscount": 16, 
+	"comment": "CAN Monitor"
+	}, 
+	"BUSOFF DIAG.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"DTCStatus.testNotCompletedThisMonitoringCycle": {
+	"comment": "TNCTMC", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "No", 
+		"1": "Yes"
+	}
+	}, 
+	"DataRead$01#07_bit7_Diag Mux On": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not authorized", 
+		"1": "authorized"
+	}
+	}, 
+	"N.SoftwareNumber": {
+	"bytescount": 2, 
+	"byte": true, 
+	"bitscount": 16
+	}, 
+	"BUSOFF DIAG.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"$03_FORCED_RECOGNITION_MODE.param": {
+	"lists": {
+		"1": "PATTERN1", 
+		"2": "PATTERN2"
+	}
+	}, 
+	"BCM/SEC.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"N2.SupplierNumber": {
+	"bytesascii": true, 
+	"bytescount": 3, 
+	"byte": true, 
+	"bitscount": 24
+	}, 
+	"DataRead$01#03_bit3_FAIL FLAG(Right/Left)": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "No failure", 
+		"1": "Failure"
+	}
+	}, 
+	"DTCFailureType.Category": {
+	"bitscount": 4, 
+	"lists": {
+		"0": "General Failure Information", 
+		"1": "General Electrical Failures", 
+		"2": "General Signal Failures", 
+		"3": "FM (Frequency Modulated) / PWM (Pulse Width Modulated) Failures", 
+		"4": "System Internal Failures", 
+		"5": "System Programming Failures", 
+		"6": "Algorithm Based Failures", 
+		"7": "Mechanical Failures", 
+		"8": "Bus Signal / Message Failures", 
+		"9": "Component Failures", 
+		"15": "Vehicle manufacturer / System supplier specific"
+	}
+	}, 
+	"N.OtherSystemFeatures": {
+	"bytescount": 3, 
+	"byte": true, 
+	"bitscount": 24
+	}, 
+	"DataRead$01#03_bit6_BSW_OFF(Right/Left)": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "OFF", 
+		"1": "ON"
+	}
+	}, 
+	"N.SparePartsNumberSuffix": {
+	"lists": {
+		"0": "To be defined by you."
+	}
+	}, 
+	"DTCStatus.pendingDTC": {
+	"comment": "PDTC", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "No", 
+		"1": "Yes"
+	}
+	}, 
+	"DataRead$01#08_bit7_LeftLuminance": {
+	"scaled": true, 
+	"bitscount": 1
+	}, 
+	"[FFD1404]CAN output 3F0h/3F3h": {
+	"bytescount": 7, 
+	"byte": true, 
+	"bitscount": 56
+	}, 
+	"TRANSMIT DIAG.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"[FFD1409]Diag Mux On": {
+	"lists": {
+		"0": "Storage of CAN mute/absent failures not authorized", 
+		"1": "Storage of CAN mute/absent failures authorized"
+	}
+	}, 
+	"N.SparePartsNumber": {
+	"bytesascii": true, 
+	"bytescount": 5, 
+	"byte": true, 
+	"bitscount": 40
+	}, 
+	"DTCFailureType.ManufacturerOrSupplier": {
+	"bitscount": 4
+	}, 
+	"DataRead$01#03_bit5_CTA_OFF(Right/Left)": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "OFF", 
+		"1": "ON"
+	}
+	}, 
+	"BUSOFF DIAG.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"[FFD1402]Calcurated Vehicle Speed from ITS controller(ADAS)": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "km/h"
+	}, 
+	"DTCStatus.testFailedThisMonitoringCycle": {
+	"comment": "TFTMC", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "No", 
+		"1": "Yes"
+	}
+	}, 
+	"N.HardwareNumber": {
+	"bytescount": 5, 
+	"byte": true, 
+	"bitscount": 40
+	}, 
+	"$01_RIGHT/LEFT_INDICATOR_DRIVE.param": {
+	"lists": {
+		"255": "Fixed FF"
+	}
+	}, 
+	"[FFD1403]Turn Signal Status": {
+	"lists": {
+		"0": "Left OFF/Right OFF", 
+		"1": "Left OFF/Right ON", 
+		"2": "Left ON/Right OFF", 
+		"3": "Left ON/Right ON"
+	}
+	}, 
+	"DTCMaskRecord": {
+	"comment": "DTCMREC_DTC", 
+	"bytescount": 3, 
+	"byte": true, 
+	"bitscount": 24
+	}, 
+	"[FFD1408]CAN output 4EDh": {
+	"bytescount": 5, 
+	"byte": true, 
+	"bitscount": 40
+	}, 
+	"ACC.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"OutputControlCommand": {
+	"lists": {
+		"0": "Start Temporary", 
+		"1": "Status", 
+		"17": "Stop", 
+		"32": "Start Permanent"
+	}
+	}, 
+	"TRANSMIT DIAG.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"DTCFailureType": {
+	"comment": "Pending", 
+	"lists": {
+		"0": "Device and failure type ODB codding", 
+		"1": "General Electrical Failure", 
+		"2": "General signal failure", 
+		"3": "FM (Frequency Modulated) / PWM (Pulse Width Modulated) Failures", 
+		"4": "System Internal Failures", 
+		"5": "System Programming Failures", 
+		"6": "Algorithm Based Failures", 
+		"7": "Mechanical Failures", 
+		"8": "Bus Signal / Message Failures", 
+		"9": "Component Failures", 
+		"17": "circuit short to ground", 
+		"18": "circuit short to battery", 
+		"19": "circuit open", 
+		"20": "circuit short to ground or open", 
+		"21": "circuit short to battery or open", 
+		"22": "circuit voltage below threshold", 
+		"23": "circuit voltage above threshold", 
+		"24": "circuit current below threshold", 
+		"25": "circuit current above threshold", 
+		"26": "circuit resistance below threshold", 
+		"27": "circuit resistance above threshold", 
+		"28": "circuit voltage out of range", 
+		"29": "circuit current out of range", 
+		"30": "circuit resistance out of range", 
+		"31": "circuit intermittent", 
+		"33": "signal amplitude < minimum", 
+		"34": "signal amplitude > maximum", 
+		"35": "signal stuck low", 
+		"36": "signal stuck high", 
+		"37": "signal shape / waveform failure", 
+		"38": "signal rate of change below threshold", 
+		"39": "signal rate of change above threshold", 
+		"40": "signal bias level out of range / zero adjustment failure", 
+		"41": "signal signal invalid", 
+		"47": "signal erratic", 
+		"49": "no signal", 
+		"50": "signal low time < minimum", 
+		"51": "signal low time > maximum", 
+		"52": "signal high time < minimum", 
+		"53": "signal high time > maximum", 
+		"54": "signal frequency too low", 
+		"55": "signal frequency too high", 
+		"56": "signal frequency incorrect", 
+		"57": "incorrect has too few pulses", 
+		"58": "incorrect has too many pulses", 
+		"65": "general checksum failure", 
+		"66": "general memory failure", 
+		"67": "special memory failure", 
+		"68": "data memory failure", 
+		"69": "program memory failure", 
+		"70": "calibration / parameter memory failure", 
+		"71": "watchdog / safety \u03bcC failure", 
+		"72": "supervision software failure", 
+		"73": "internal electronic failure", 
+		"74": "incorrect component installed", 
+		"75": "over temperature", 
+		"81": "not programmed", 
+		"82": "not activated", 
+		"83": "deactivated", 
+		"84": "missing calibration", 
+		"85": "not configured", 
+		"97": "signal calculation failure", 
+		"98": "signal compare failure", 
+		"99": "circuit / component protection time-out", 
+		"100": "signal plausibility failure", 
+		"101": "signal has too few transitions / events", 
+		"102": "signal has too many transitions / events", 
+		"103": "signal incorrect after event", 
+		"104": "event information", 
+		"113": "actuator stuck", 
+		"114": "actuator stuck open", 
+		"115": "actuator stuck closed", 
+		"116": "actuator slipping", 
+		"117": "emergency position not reachable", 
+		"118": "wrong mounting position", 
+		"119": "commanded position not reachable", 
+		"120": "alignment or adjustment incorrect", 
+		"121": "mechanical linkage failure", 
+		"122": "fluid leak or seal failure", 
+		"123": "low fluid level", 
+		"129": "invalid serial data received", 
+		"130": "alive / sequence counter incorrect / not updated", 
+		"131": "value of signal protection calculation incorrect", 
+		"132": "signal below allowable range", 
+		"133": "signal above allowable range", 
+		"134": "signal invalid", 
+		"135": "missing message", 
+		"136": "bus off", 
+		"143": "erratic", 
+		"145": "parametric", 
+		"146": "performance or incorrect operation", 
+		"147": "no operation", 
+		"148": "unexpected operation", 
+		"149": "incorrect assembly", 
+		"150": "component internal failure", 
+		"151": "Component or system operation obstructed or blocked", 
+		"152": "component or system over temperature"
+	}
+	}, 
+	"[FFD1407]CAN output 3D0h": {
+	"bytescount": 6, 
+	"byte": true, 
+	"bitscount": 48
+	}, 
+	"StatusOfDTC": {
+	"scaled": true, 
+	"comment": "DTCASR_SODTC"
+	}, 
+	"N1.SupplierNumber2": {
+	"bytescount": 2, 
+	"byte": true, 
+	"bitscount": 16
+	}, 
+	"N1.SupplierNumber1": {
+	"byte": true, 
+	"bytesascii": true
+	}, 
+	"OutputControlStatus": {
+	"lists": {
+		"1": "Running", 
+		"2": "Stopped", 
+		"17": "Stopped by 'Stop Control'"
+	}
+	}, 
+	"DataRead$01#03_bit7_C_BSW_CTA_ALERT_ACTIVE(Right/Left)": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "No alert", 
+		"1": "Alert"
+	}
+	}, 
+	"DTCDeviceAndFailureTypeOBD": {
+	"bytescount": 2, 
+	"bitscount": 16, 
+	"lists": {
+		"53248": "CAN COMM CIRCUIT", 
+		"23376": "SOW RADAR FAILURE", 
+		"49412": "LOST COMMUNICATION WITH ITS CONTROLLER(ADAS) (P-RUN)", 
+		"50181": "INVALID DATA RECEIVED FROM ITS CONTROLLER(ADAS) (CHECK SUM)", 
+		"53264": "CONTROL UNIT (CAN)", 
+		"23377": "HMI short circuit failure", 
+		"23378": "HMI open load / short to battery failure", 
+		"23381": "SOW RADAR STAIN"
+	}
+	}, 
+	"ECM.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"[FFD1405]CAN output 3F1h/3F4h": {
+	"bytescount": 7, 
+	"byte": true, 
+	"bitscount": 56
+	}, 
+	"ACC.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"DTCStatus.confirmedDTC": {
+	"comment": "CDTC", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "No", 
+		"1": "Yes"
+	}
+	}, 
+	"MEMADD": {
+	"comment": "Memory Address", 
+	"bytescount": 4, 
+	"byte": true, 
+	"bitscount": 32
+	}, 
+	"ECM.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"DTCStatus.testFailedSinceLastClear": {
+	"comment": "TFSLC", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "No", 
+		"1": "Yes"
+	}
+	}, 
+	"LID$20": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"N.CalibrationNumber": {
+	"bytescount": 2, 
+	"byte": true, 
+	"bitscount": 16
+	}, 
+	"$0F_Deactivate.param": {
+	"lists": {
+		"255": "Fixed FF"
+	}
+	}, 
+	"ACC.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"SOW Right.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"DTCStatus.testFailed": {
+	"comment": "TF", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "No", 
+		"1": "Yes"
+	}
+	}
+}
+}

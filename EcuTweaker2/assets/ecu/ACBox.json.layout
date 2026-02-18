@@ -1,0 +1,3525 @@
+{
+ "screens": {
+  "ColdLoop": {
+   "inputs": [],
+   "color": "rgb(239,239,239)",
+   "labels": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "IH_StopAutoForClim",
+     "bbox": {
+      "width": 2160,
+      "top": 480,
+      "height": 300,
+      "left": 3720
+     },
+     "fontcolor": "rgb(255,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Compressor status :",
+     "bbox": {
+      "width": 7815,
+      "top": 2145,
+      "height": 1200,
+      "left": 240
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Vehicle states :",
+     "bbox": {
+      "width": 10065,
+      "top": 120,
+      "height": 1080,
+      "left": 240
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Temperatures :",
+     "bbox": {
+      "width": 6720,
+      "top": 1320,
+      "height": 720,
+      "left": 240
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Energy management :",
+     "bbox": {
+      "width": 7650,
+      "top": 5805,
+      "height": 1080,
+      "left": 120
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Compressor sequence :",
+     "bbox": {
+      "width": 10200,
+      "top": 3480,
+      "height": 1080,
+      "left": 240
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Engine management :",
+     "bbox": {
+      "width": 5655,
+      "top": 4785,
+      "height": 870,
+      "left": 180
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Statut Blower ",
+     "bbox": {
+      "width": 12840,
+      "top": 7080,
+      "height": 1680,
+      "left": 240
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    }
+   ],
+   "presend": [
+    {
+     "Delay": "0",
+     "RequestName": "StartDiagnosticSession.ExtendedDiagnosticSession"
+    }
+   ],
+   "height": 8580,
+   "buttons": [],
+   "width": 15180,
+   "displays": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "IH_ACCompClutchStatus",
+     "request": "DataRead.IH_ACCompClutchStatus",
+     "width": 2405,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4800,
+      "top": 3855,
+      "height": 300,
+      "left": 4950
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "IH_ACHighPressureSensor",
+     "request": "DataRead.IH_ACHighPressureSensor",
+     "width": 2990,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 3600,
+      "top": 2520,
+      "height": 300,
+      "left": 3720
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "IH_EcoModeRequest",
+     "request": "DataRead.IH_EcoModeRequest",
+     "width": 1935,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2400,
+      "top": 465,
+      "height": 300,
+      "left": 6165
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "IH_EngineCoolantTemp",
+     "request": "DataRead.IH_EngineCoolantTemp",
+     "width": 2630,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 3240,
+      "top": 1650,
+      "height": 300,
+      "left": 2955
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "IH_EngineRPM",
+     "request": "DataRead.IH_EngineRPM",
+     "width": 2000,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2880,
+      "top": 5130,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "IH_EvapTemp",
+     "request": "DataRead.IH_EvapTemp",
+     "width": 1715,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2400,
+      "top": 1650,
+      "height": 300,
+      "left": 345
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "IH_VehicleStateForClim",
+     "request": "DataRead.IH_VehicleStateForClim",
+     "width": 2225,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 3000,
+      "top": 480,
+      "height": 300,
+      "left": 480
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "OH_ACCompRequest",
+     "request": "DataRead.OH_ACCompRequest",
+     "width": 2150,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4080,
+      "top": 3840,
+      "height": 300,
+      "left": 480
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "OH_MinimumVoltagebyAC",
+     "request": "DataRead.OH_MinimumVoltagebyAC",
+     "width": 3350,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4080,
+      "top": 6180,
+      "height": 300,
+      "left": 210
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "IH_EngineRPM",
+     "request": "DataRead.IH_EngineRPM",
+     "width": 2135,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 3000,
+      "top": 2520,
+      "height": 300,
+      "left": 480
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "IH_ManuBlowerLevel",
+     "request": "DataRead.IH_ManuBlowerLevel",
+     "width": 2000,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4000,
+      "top": 7410,
+      "height": 300,
+      "left": 4290
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "IH_BlowerDefault",
+     "request": "DataRead.IH_BlowerDefault",
+     "width": 2000,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 3460,
+      "top": 7410,
+      "height": 300,
+      "left": 315
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "IH_BlowerState",
+     "request": "DataRead.IH_BlowerState",
+     "width": 2000,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4000,
+      "top": 7380,
+      "height": 300,
+      "left": 8940
+     }
+    }
+   ]
+  },
+  "Identification - R/N": {
+   "inputs": [],
+   "color": "rgb(192,192,192)",
+   "labels": [
+    {
+     "color": "rgb(255,128,0)",
+     "text": "VIN",
+     "bbox": {
+      "width": 1200,
+      "top": 3360,
+      "height": 300,
+      "left": -8670
+     },
+     "fontcolor": "rgb(255,255,255)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,128,0)",
+     "text": "Unitary Data Tracability",
+     "bbox": {
+      "width": 2400,
+      "top": 4320,
+      "height": 300,
+      "left": -8640
+     },
+     "fontcolor": "rgb(255,255,255)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(192,192,192)",
+     "text": "Session Name",
+     "bbox": {
+      "width": 1440,
+      "top": 5760,
+      "height": 300,
+      "left": -8760
+     },
+     "fontcolor": "rgb(255,255,255)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,128,0)",
+     "text": "VIN CRC",
+     "bbox": {
+      "width": 1350,
+      "top": 3840,
+      "height": 300,
+      "left": -8670
+     },
+     "fontcolor": "rgb(255,255,255)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(239,239,239)",
+     "text": "",
+     "bbox": {
+      "width": 13800,
+      "top": -720,
+      "height": 7560,
+      "left": -360
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(207,207,207)",
+     "text": "Renault Identification Numbers",
+     "bbox": {
+      "width": 6240,
+      "top": 240,
+      "height": 3000,
+      "left": 0
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(191,191,191)",
+     "text": "ClimBox Specific Numbers",
+     "bbox": {
+      "width": 6840,
+      "top": 240,
+      "height": 3000,
+      "left": 6360
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(207,207,207)",
+     "text": "F187 : PartNumber R",
+     "bbox": {
+      "width": 1920,
+      "top": 1080,
+      "height": 300,
+      "left": 360
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 10.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(191,191,191)",
+     "text": "F194 : SWNumber",
+     "bbox": {
+      "width": 1920,
+      "top": 1080,
+      "height": 300,
+      "left": 6600
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 10.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(191,191,191)",
+     "text": "F195 : SWVersionNumber",
+     "bbox": {
+      "width": 2280,
+      "top": 1440,
+      "height": 300,
+      "left": 6600
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 10.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(207,207,207)",
+     "text": "= F012 : OperationalReference",
+     "bbox": {
+      "width": 2280,
+      "top": 1800,
+      "height": 300,
+      "left": 360
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 10.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(207,207,207)",
+     "text": "= F188 : ConfigFileReference",
+     "bbox": {
+      "width": 2520,
+      "top": 1440,
+      "height": 300,
+      "left": 360
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 10.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(207,207,207)",
+     "text": "= F191 : HWNumber",
+     "bbox": {
+      "width": 1560,
+      "top": 2160,
+      "height": 300,
+      "left": 360
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 10.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(191,191,191)",
+     "text": "F18C : UniqueSerialNumber",
+     "bbox": {
+      "width": 2160,
+      "top": 1800,
+      "height": 300,
+      "left": 6600
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 10.0
+     },
+     "alignment": "0"
+    }
+   ],
+   "presend": [
+    {
+     "Delay": "0",
+     "RequestName": "StartDiagnosticSession.ExtendedDiagnosticSession"
+    }
+   ],
+   "height": 6780,
+   "buttons": [],
+   "width": 13620,
+   "displays": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "",
+     "request": "DataRead.vehicleManufacturerSparePartNumber",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 1800,
+      "top": 1080,
+      "height": 300,
+      "left": 2760
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "systemSupplierECUSoftwareNumber",
+     "request": "DataRead.systemSupplierECUSoftwareNumber",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2800,
+      "top": 1080,
+      "height": 300,
+      "left": 8880
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "systemSupplierECUSoftwareVersionNumber",
+     "request": "DataRead.systemSupplierECUSoftwareVersionNumber",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2800,
+      "top": 1440,
+      "height": 300,
+      "left": 8880
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "ECUSerialNumber",
+     "request": "DataRead.ECUSerialNumber",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2800,
+      "top": 1800,
+      "height": 300,
+      "left": 8880
+     }
+    }
+   ]
+  },
+  "HVAC actuators & blower - R/N": {
+   "inputs": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "OH_RecyActrReq",
+     "request": "OutputControl.Start.RecyActr",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 675,
+      "top": 1065,
+      "height": 300,
+      "left": 10215
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "OLB_FP_TestLamps",
+     "request": "OutputControl.Start.FCPLightning",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 765,
+      "top": 2025,
+      "height": 300,
+      "left": 10170
+     }
+    },
+    {
+     "color": "rgb(207,207,207)",
+     "text": "OLB_FP_TestLamps",
+     "request": "OutputControl.Start.FCPLightning",
+     "width": 2000,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 1800,
+      "top": 2040,
+      "height": 300,
+      "left": 480
+     }
+    }
+   ],
+   "color": "rgb(192,192,192)",
+   "labels": [
+    {
+     "color": "rgb(207,207,207)",
+     "text": "HVAC stepper actuators",
+     "bbox": {
+      "width": 2400,
+      "top": 345,
+      "height": 2040,
+      "left": 360
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(207,207,207)",
+     "text": "HLS Input         (IH)",
+     "bbox": {
+      "width": 1440,
+      "top": 360,
+      "height": 2055,
+      "left": 4200
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(191,191,191)",
+     "text": "Failures : Open Circuit",
+     "bbox": {
+      "width": 2310,
+      "top": 360,
+      "height": 1560,
+      "left": 5640
+     },
+     "fontcolor": "rgb(255,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(207,207,207)",
+     "text": "Failures : Short Circuit",
+     "bbox": {
+      "width": 2160,
+      "top": 360,
+      "height": 2040,
+      "left": 7920
+     },
+     "fontcolor": "rgb(255,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(191,191,191)",
+     "text": "Present",
+     "bbox": {
+      "width": 960,
+      "top": 600,
+      "height": 270,
+      "left": 5760
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(191,191,191)",
+     "text": "Memorized",
+     "bbox": {
+      "width": 960,
+      "top": 600,
+      "height": 270,
+      "left": 6840
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(207,207,207)",
+     "text": "Present",
+     "bbox": {
+      "width": 960,
+      "top": 600,
+      "height": 270,
+      "left": 8040
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(207,207,207)",
+     "text": "Memorized",
+     "bbox": {
+      "width": 960,
+      "top": 600,
+      "height": 270,
+      "left": 9120
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(95,95,95)",
+     "text": "Trait",
+     "bbox": {
+      "width": 12480,
+      "top": 960,
+      "height": 15,
+      "left": 360
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(95,95,95)",
+     "text": "Trait",
+     "bbox": {
+      "width": 12480,
+      "top": 1440,
+      "height": 15,
+      "left": 360
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(207,207,207)",
+     "text": "Recy / Intake",
+     "bbox": {
+      "width": 1800,
+      "top": 960,
+      "height": 240,
+      "left": 480
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(207,207,207)",
+     "text": "RecyActr - Motor 1",
+     "bbox": {
+      "width": 1680,
+      "top": 1215,
+      "height": 270,
+      "left": 480
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(191,191,191)",
+     "text": "HLS Output     (OH)",
+     "bbox": {
+      "width": 1440,
+      "top": 360,
+      "height": 2040,
+      "left": 2760
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(191,191,191)",
+     "text": "(%)",
+     "bbox": {
+      "width": 360,
+      "top": 1080,
+      "height": 270,
+      "left": 3720
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(207,207,207)",
+     "text": "(%)",
+     "bbox": {
+      "width": 360,
+      "top": 1080,
+      "height": 270,
+      "left": 5160
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(95,95,95)",
+     "text": "Trait",
+     "bbox": {
+      "width": 12480,
+      "top": 1920,
+      "height": 15,
+      "left": 360
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(95,95,95)",
+     "text": "Trait",
+     "bbox": {
+      "width": 12480,
+      "top": 2400,
+      "height": 15,
+      "left": 360
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(239,239,239)",
+     "text": "",
+     "bbox": {
+      "width": 14760,
+      "top": -1440,
+      "height": 8400,
+      "left": -720
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(95,95,95)",
+     "text": "Trait",
+     "bbox": {
+      "width": 12480,
+      "top": 3840,
+      "height": 15,
+      "left": 360
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(191,191,191)",
+     "text": "Failures : Open Circuit",
+     "bbox": {
+      "width": 2310,
+      "top": 360,
+      "height": 1470,
+      "left": 5640
+     },
+     "fontcolor": "rgb(255,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(191,191,191)",
+     "text": "Failures : Open Circuit",
+     "bbox": {
+      "width": 2310,
+      "top": 390,
+      "height": 2010,
+      "left": 5640
+     },
+     "fontcolor": "rgb(255,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(207,207,207)",
+     "text": "Memorized",
+     "bbox": {
+      "width": 960,
+      "top": 600,
+      "height": 270,
+      "left": 9120
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(191,191,191)",
+     "text": "Request (range)",
+     "bbox": {
+      "width": 1920,
+      "top": 600,
+      "height": 300,
+      "left": 10320
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(191,191,191)",
+     "text": "IOControls",
+     "bbox": {
+      "width": 2760,
+      "top": 360,
+      "height": 2040,
+      "left": 10080
+     },
+     "fontcolor": "rgb(0,128,255)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(95,95,95)",
+     "text": "Trait",
+     "bbox": {
+      "width": 12480,
+      "top": 3360,
+      "height": 15,
+      "left": 360
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(95,95,95)",
+     "text": "Trait",
+     "bbox": {
+      "width": 12360,
+      "top": 3360,
+      "height": 15,
+      "left": 360
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(191,191,191)",
+     "text": "(0->100)",
+     "bbox": {
+      "width": 960,
+      "top": 1110,
+      "height": 240,
+      "left": 10950
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(191,191,191)",
+     "text": "(0->100)",
+     "bbox": {
+      "width": 960,
+      "top": 2085,
+      "height": 240,
+      "left": 10980
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    }
+   ],
+   "presend": [
+    {
+     "Delay": "0",
+     "RequestName": "StartDiagnosticSession.ExtendedDiagnosticSession"
+    }
+   ],
+   "height": 7020,
+   "buttons": [
+    {
+     "text": "Start",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "OutputControl.Start.FCPLightning"
+      }
+     ],
+     "uniquename": "Start_0",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 720,
+      "top": 2040,
+      "height": 300,
+      "left": 11970
+     }
+    },
+    {
+     "text": "Start",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "OutputControl.Start.RecyActr"
+      }
+     ],
+     "uniquename": "Start_1",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 720,
+      "top": 1080,
+      "height": 300,
+      "left": 12000
+     }
+    }
+   ],
+   "width": 14100,
+   "displays": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "IH_RecyActrPosition",
+     "request": "DataRead.IH_RecyActrPosition",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 720,
+      "top": 1080,
+      "height": 300,
+      "left": 4320
+     }
+    },
+    {
+     "color": "rgb(239,239,239)",
+     "text": "IH_Vbatt",
+     "request": "DataRead.IH_Vbatt",
+     "width": 1445,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2160,
+      "top": 3420,
+      "height": 360,
+      "left": 495
+     }
+    },
+    {
+     "color": "rgb(239,239,239)",
+     "text": "IH_VehicleStateForClim",
+     "request": "DataRead.IH_VehicleStateForClim",
+     "width": 2240,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 6360,
+      "top": 3420,
+      "height": 360,
+      "left": 4845
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "VL_RecyActrDiag_OCFP",
+     "request": "DataRead.VL_RecyActrDiag_OCFP",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 600,
+      "top": 1080,
+      "height": 300,
+      "left": 5880
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "VL_RecyActrDiag_OCFM",
+     "request": "DataRead.VL_RecyActrDiag_OCFM",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 600,
+      "top": 1080,
+      "height": 300,
+      "left": 7080
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "VL_RecyActrDiag_SCFP",
+     "request": "DataRead.VL_RecyActrDiag_SCFP",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 600,
+      "top": 1080,
+      "height": 300,
+      "left": 8160
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "VL_RecyActrDiag_SCFM",
+     "request": "DataRead.VL_RecyActrDiag_SCFM",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 600,
+      "top": 1080,
+      "height": 300,
+      "left": 9240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "",
+     "request": "OutputControl.Start.FCPLightning",
+     "width": 2000,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4000,
+      "top": 7245,
+      "height": 300,
+      "left": 4245
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "OH_RecyActrReq",
+     "request": "DataRead.OH_RecyActrReq",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 825,
+      "top": 1065,
+      "height": 285,
+      "left": 2835
+     }
+    }
+   ]
+  },
+  "HLS Configuration - R": {
+   "inputs": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CH_SteeringType",
+     "request": "DataWrite.CH_SteeringType",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5025,
+      "top": 1320,
+      "height": 300,
+      "left": 6015
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CH_CountryType",
+     "request": "DataWrite.CH_CountryType",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5040,
+      "top": 1680,
+      "height": 300,
+      "left": 6000
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CH_WithESM",
+     "request": "DataWrite.CH_WithESM",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5040,
+      "top": 2400,
+      "height": 300,
+      "left": 6000
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CH_WithSaS",
+     "request": "DataWrite.CH_WithSaS",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5040,
+      "top": 2760,
+      "height": 300,
+      "left": 6000
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CH_WithFrontDefroster",
+     "request": "DataWrite.CH_WithFrontDefroster",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5040,
+      "top": 6360,
+      "height": 300,
+      "left": 6000
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CH_WithECOModeClim",
+     "request": "DataWrite.CH_WithECOModeClim",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5040,
+      "top": 6720,
+      "height": 300,
+      "left": 6000
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CH_WithHeaterCore",
+     "request": "DataWrite.CH_WithHeaterCore",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5040,
+      "top": 9240,
+      "height": 300,
+      "left": 6000
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CH_WithWEP",
+     "request": "DataWrite.CH_WithWEP",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5040,
+      "top": 9960,
+      "height": 300,
+      "left": 6000
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CH_WithCompressor",
+     "request": "DataWrite.CH_WithCompressor",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5040,
+      "top": 11640,
+      "height": 300,
+      "left": 6000
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CH_CompPulleyRatio",
+     "request": "DataWrite.CH_CompPulleyRatio",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5040,
+      "top": 12000,
+      "height": 300,
+      "left": 6000
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CH_WithLVHeater",
+     "request": "DataWrite.CH_WithLVHeater",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5040,
+      "top": 8880,
+      "height": 300,
+      "left": 6000
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CH_WithPreCond",
+     "request": "DataWrite.CH_WithPreCond",
+     "width": 5,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5005,
+      "top": 7080,
+      "height": 300,
+      "left": 6030
+     }
+    },
+    {
+     "color": "rgb(239,239,239)",
+     "text": "CL_WithControlPanel",
+     "request": "DataWrite.CL_WithControlPanel",
+     "width": 2735,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5520,
+      "top": 3120,
+      "height": 300,
+      "left": 360
+     }
+    }
+   ],
+   "color": "rgb(239,239,239)",
+   "labels": [
+    {
+     "color": "rgb(95,95,95)",
+     "text": "Trait",
+     "bbox": {
+      "width": 10830,
+      "top": 11160,
+      "height": 15,
+      "left": 360
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(239,239,239)",
+     "text": "Base car configuration",
+     "bbox": {
+      "width": 2880,
+      "top": 960,
+      "height": 240,
+      "left": 480
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(95,95,95)",
+     "text": "Trait",
+     "bbox": {
+      "width": 10830,
+      "top": 840,
+      "height": 15,
+      "left": 240
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(239,239,239)",
+     "text": "Hot loop",
+     "bbox": {
+      "width": 2880,
+      "top": 8520,
+      "height": 240,
+      "left": 480
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(95,95,95)",
+     "text": "Trait",
+     "bbox": {
+      "width": 10830,
+      "top": 5520,
+      "height": 15,
+      "left": 360
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(239,239,239)",
+     "text": "Customer options",
+     "bbox": {
+      "width": 2880,
+      "top": 5640,
+      "height": 240,
+      "left": 480
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(95,95,95)",
+     "text": "Trait",
+     "bbox": {
+      "width": 10830,
+      "top": 8400,
+      "height": 15,
+      "left": 360
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(239,239,239)",
+     "text": "Cold loop",
+     "bbox": {
+      "width": 2880,
+      "top": 11280,
+      "height": 240,
+      "left": 480
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(239,239,239)",
+     "text": "= CH_ACType",
+     "bbox": {
+      "width": 3120,
+      "top": 2040,
+      "height": 300,
+      "left": 6120
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 10.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(239,239,239)",
+     "text": "=CH_WithControPanel",
+     "bbox": {
+      "width": 5070,
+      "top": 3120,
+      "height": 300,
+      "left": 6000
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    }
+   ],
+   "presend": [
+    {
+     "Delay": "0",
+     "RequestName": "StartDiagnosticSession.ExtendedDiagnosticSession"
+    }
+   ],
+   "height": 13500,
+   "buttons": [
+    {
+     "text": "ECU Reset",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "ECUReset.HardReset"
+      }
+     ],
+     "uniquename": "ECU Reset_0",
+     "font": {
+      "bold": "1",
+      "name": "Calibri",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 3000,
+      "top": 720,
+      "height": 480,
+      "left": 11880
+     }
+    },
+    {
+     "text": "CH_SteeringType",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "DataWrite.CH_SteeringType"
+      }
+     ],
+     "uniquename": "CH_SteeringType_1",
+     "font": {
+      "bold": "0",
+      "name": "Calibri",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 2970,
+      "top": 1320,
+      "height": 255,
+      "left": 11880
+     }
+    },
+    {
+     "text": "CH_CountryType",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "DataWrite.CH_CountryType"
+      }
+     ],
+     "uniquename": "CH_CountryType_2",
+     "font": {
+      "bold": "0",
+      "name": "Calibri",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 2970,
+      "top": 1680,
+      "height": 255,
+      "left": 11880
+     }
+    },
+    {
+     "text": "CH_WithESM",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "DataWrite.CH_WithESM"
+      }
+     ],
+     "uniquename": "CH_WithESM_3",
+     "font": {
+      "bold": "0",
+      "name": "Calibri",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 2970,
+      "top": 2400,
+      "height": 255,
+      "left": 11880
+     }
+    },
+    {
+     "text": "CH_WithSaS",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "DataWrite.CH_WithSaS"
+      }
+     ],
+     "uniquename": "CH_WithSaS_4",
+     "font": {
+      "bold": "0",
+      "name": "Calibri",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 2970,
+      "top": 2760,
+      "height": 255,
+      "left": 11880
+     }
+    },
+    {
+     "text": "CH_WithFrontDefroster",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "DataWrite.CH_WithFrontDefroster"
+      }
+     ],
+     "uniquename": "CH_WithFrontDefroster_5",
+     "font": {
+      "bold": "0",
+      "name": "Calibri",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 2970,
+      "top": 6360,
+      "height": 255,
+      "left": 11880
+     }
+    },
+    {
+     "text": "CH_WithECOModeClim",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "DataWrite.CH_WithECOModeClim"
+      }
+     ],
+     "uniquename": "CH_WithECOModeClim_6",
+     "font": {
+      "bold": "0",
+      "name": "Calibri",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 2970,
+      "top": 6720,
+      "height": 255,
+      "left": 11880
+     }
+    },
+    {
+     "text": "CH_WithPreCond",
+     "font": {
+      "bold": "0",
+      "name": "Calibri",
+      "italic": "0",
+      "size": 8.0
+     },
+     "messages": [
+      ""
+     ],
+     "rect": {
+      "width": 2970,
+      "top": 7080,
+      "height": 255,
+      "left": 11880
+     },
+     "uniquename": "CH_WithPreCond_7"
+    },
+    {
+     "text": "CH_WithLVHeater",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "DataWrite.CH_WithLVHeater"
+      }
+     ],
+     "uniquename": "CH_WithLVHeater_8",
+     "font": {
+      "bold": "0",
+      "name": "Calibri",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 2970,
+      "top": 8880,
+      "height": 255,
+      "left": 11880
+     }
+    },
+    {
+     "text": "CH_WithHeaterCore",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "DataWrite.CH_WithHeaterCore"
+      }
+     ],
+     "uniquename": "CH_WithHeaterCore_9",
+     "font": {
+      "bold": "0",
+      "name": "Calibri",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 2970,
+      "top": 9240,
+      "height": 255,
+      "left": 11880
+     }
+    },
+    {
+     "text": "CH_WithHeatPump",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "DataWrite.CH_WithHeatPump"
+      }
+     ],
+     "uniquename": "CH_WithHeatPump_10",
+     "font": {
+      "bold": "0",
+      "name": "Calibri",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 2970,
+      "top": 9600,
+      "height": 255,
+      "left": 11880
+     }
+    },
+    {
+     "text": "CH_WithWEP",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "DataWrite.CH_WithWEP"
+      }
+     ],
+     "uniquename": "CH_WithWEP_11",
+     "font": {
+      "bold": "0",
+      "name": "Calibri",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 2970,
+      "top": 9960,
+      "height": 255,
+      "left": 11880
+     }
+    },
+    {
+     "text": "CH_WithCompressor",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "DataWrite.CH_WithCompressor"
+      }
+     ],
+     "uniquename": "CH_WithCompressor_12",
+     "font": {
+      "bold": "0",
+      "name": "Calibri",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 2970,
+      "top": 11640,
+      "height": 255,
+      "left": 11880
+     }
+    },
+    {
+     "text": "CH_WithCompPulleyRatio",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "DataWrite.CH_CompPulleyRatio"
+      }
+     ],
+     "uniquename": "CH_WithCompPulleyRatio_13",
+     "font": {
+      "bold": "0",
+      "name": "Calibri",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 2970,
+      "top": 12000,
+      "height": 255,
+      "left": 11880
+     }
+    }
+   ],
+   "width": 15420,
+   "displays": [
+    {
+     "color": "rgb(239,239,239)",
+     "text": "CL_ACType",
+     "request": "DataRead.CL_ACType",
+     "width": 2760,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5520,
+      "top": 1320,
+      "height": 300,
+      "left": 360
+     }
+    },
+    {
+     "color": "rgb(239,239,239)",
+     "text": "CL_CANArchitecture",
+     "request": "DataRead.CL_CANArchitecture",
+     "width": 2760,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5520,
+      "top": 2040,
+      "height": 300,
+      "left": 360
+     }
+    },
+    {
+     "color": "rgb(239,239,239)",
+     "text": "CH_SteeringType",
+     "request": "DataRead.CH_SteeringType",
+     "width": 2760,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5520,
+      "top": 1320,
+      "height": 300,
+      "left": 360
+     }
+    },
+    {
+     "color": "rgb(239,239,239)",
+     "text": "CH_CountryType",
+     "request": "DataRead.CH_CountryType",
+     "width": 2760,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5520,
+      "top": 1680,
+      "height": 300,
+      "left": 360
+     }
+    },
+    {
+     "color": "rgb(239,239,239)",
+     "text": "CL_ACType",
+     "request": "DataRead.CL_ACType",
+     "width": 2760,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5520,
+      "top": 2040,
+      "height": 300,
+      "left": 360
+     }
+    },
+    {
+     "color": "rgb(239,239,239)",
+     "text": "CH_WithESM",
+     "request": "DataRead.CH_WithESM",
+     "width": 2760,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5520,
+      "top": 2400,
+      "height": 300,
+      "left": 360
+     }
+    },
+    {
+     "color": "rgb(239,239,239)",
+     "text": "CH_WithSaS",
+     "request": "DataRead.CH_WithSaS",
+     "width": 2760,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5520,
+      "top": 2760,
+      "height": 300,
+      "left": 360
+     }
+    },
+    {
+     "color": "rgb(239,239,239)",
+     "text": "CH_WithFrontDefroster",
+     "request": "DataRead.CH_WithFrontDefroster",
+     "width": 2760,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5520,
+      "top": 6360,
+      "height": 300,
+      "left": 360
+     }
+    },
+    {
+     "color": "rgb(239,239,239)",
+     "text": "CH_WithECOModeClim",
+     "request": "DataRead.CH_WithECOModeClim",
+     "width": 2760,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5520,
+      "top": 6720,
+      "height": 300,
+      "left": 360
+     }
+    },
+    {
+     "color": "rgb(239,239,239)",
+     "text": "CH_WithHeaterCore",
+     "request": "DataRead.CH_WithHeaterCore",
+     "width": 2760,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5520,
+      "top": 9240,
+      "height": 300,
+      "left": 360
+     }
+    },
+    {
+     "color": "rgb(239,239,239)",
+     "text": "CH_WithWEP",
+     "request": "DataRead.CH_WithWEP",
+     "width": 2760,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5520,
+      "top": 9960,
+      "height": 300,
+      "left": 360
+     }
+    },
+    {
+     "color": "rgb(239,239,239)",
+     "text": "CH_WithCompressor",
+     "request": "DataRead.CH_WithCompressor",
+     "width": 2760,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5520,
+      "top": 11640,
+      "height": 300,
+      "left": 360
+     }
+    },
+    {
+     "color": "rgb(239,239,239)",
+     "text": "CH_CompPulleyRatio",
+     "request": "DataRead.CH_CompPulleyRatio",
+     "width": 2760,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5520,
+      "top": 12000,
+      "height": 300,
+      "left": 360
+     }
+    },
+    {
+     "color": "rgb(239,239,239)",
+     "text": "CH_WithLVHeater",
+     "request": "DataRead.CH_WithLVHeater",
+     "width": 2765,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5520,
+      "top": 8880,
+      "height": 300,
+      "left": 360
+     }
+    },
+    {
+     "color": "rgb(239,239,239)",
+     "text": "CH_WithPreCond",
+     "request": "DataRead.CH_WithPreCond",
+     "width": 2735,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5455,
+      "top": 7080,
+      "height": 300,
+      "left": 405
+     }
+    }
+   ]
+  },
+  "LLS Configuration - R/N": {
+   "inputs": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CL_ACType",
+     "request": "DataWrite.CL_ACType",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5040,
+      "top": 1080,
+      "height": 300,
+      "left": 6000
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CL_WithEvapSensor",
+     "request": "DataWrite.CL_WithEvapSensor",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5040,
+      "top": 3840,
+      "height": 300,
+      "left": 6000
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CL_DiagnosticConfiguration",
+     "request": "DataWrite.CL_DiagnosticConfiguration",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5040,
+      "top": 1440,
+      "height": 300,
+      "left": 6000
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CL_DiagnosticConfiguration",
+     "request": "DataWrite.CL_DiagnosticConfiguration",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5040,
+      "top": 1800,
+      "height": 300,
+      "left": 6015
+     }
+    }
+   ],
+   "color": "rgb(239,239,239)",
+   "labels": [
+    {
+     "color": "rgb(239,239,239)",
+     "text": "Global / CAN / LIN configs",
+     "bbox": {
+      "width": 2880,
+      "top": 720,
+      "height": 240,
+      "left": 360
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(95,95,95)",
+     "text": "Trait",
+     "bbox": {
+      "width": 10830,
+      "top": 600,
+      "height": 15,
+      "left": 240
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(95,95,95)",
+     "text": "Trait",
+     "bbox": {
+      "width": 10830,
+      "top": 3360,
+      "height": 15,
+      "left": 360
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(239,239,239)",
+     "text": "Wired inputs",
+     "bbox": {
+      "width": 2880,
+      "top": 3480,
+      "height": 240,
+      "left": 480
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    }
+   ],
+   "presend": [
+    {
+     "Delay": "0",
+     "RequestName": "StartDiagnosticSession.ExtendedDiagnosticSession"
+    }
+   ],
+   "height": 12420,
+   "buttons": [
+    {
+     "text": "CL_ACType",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "DataWrite.CL_ACType"
+      }
+     ],
+     "uniquename": "CL_ACType_0",
+     "font": {
+      "bold": "0",
+      "name": "Calibri",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 2970,
+      "top": 1080,
+      "height": 255,
+      "left": 11880
+     }
+    },
+    {
+     "text": "CL_WithEvapSensor",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "DataWrite.CL_WithEvapSensor"
+      }
+     ],
+     "uniquename": "CL_WithEvapSensor_1",
+     "font": {
+      "bold": "0",
+      "name": "Calibri",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 2970,
+      "top": 3840,
+      "height": 255,
+      "left": 11880
+     }
+    },
+    {
+     "text": "ECU Reset",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "ECUReset.HardReset"
+      }
+     ],
+     "uniquename": "ECU Reset_2",
+     "font": {
+      "bold": "1",
+      "name": "Calibri",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 3000,
+      "top": 480,
+      "height": 480,
+      "left": 11880
+     }
+    },
+    {
+     "text": "CL_CANArchitecture",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "DataWrite.CL_CANArchitecture"
+      }
+     ],
+     "uniquename": "CL_CANArchitecture_3",
+     "font": {
+      "bold": "0",
+      "name": "Calibri",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 2970,
+      "top": 1440,
+      "height": 255,
+      "left": 11880
+     }
+    },
+    {
+     "text": "CL_DiagnosticConfiguration",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "DataWrite.CL_DiagnosticConfiguration"
+      }
+     ],
+     "uniquename": "CL_DiagnosticConfiguration_4",
+     "font": {
+      "bold": "0",
+      "name": "Calibri",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 3000,
+      "top": 1800,
+      "height": 300,
+      "left": 11880
+     }
+    }
+   ],
+   "width": 15300,
+   "displays": [
+    {
+     "color": "rgb(239,239,239)",
+     "text": "CL_ACType",
+     "request": "DataRead.CL_ACType",
+     "width": 2760,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5520,
+      "top": 1080,
+      "height": 300,
+      "left": 360
+     }
+    },
+    {
+     "color": "rgb(239,239,239)",
+     "text": "CL_CANArchitecture",
+     "request": "DataRead.CL_CANArchitecture",
+     "width": 2760,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5520,
+      "top": 1440,
+      "height": 300,
+      "left": 360
+     }
+    },
+    {
+     "color": "rgb(239,239,239)",
+     "text": "CL_WithEvapSensor",
+     "request": "DataRead.CL_WithEvapSensor",
+     "width": 2760,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5520,
+      "top": 3840,
+      "height": 300,
+      "left": 360
+     }
+    },
+    {
+     "color": "rgb(239,239,239)",
+     "text": "CL_DiagnosticConfiguration",
+     "request": "DataRead.CL_DiagnosticConfiguration",
+     "width": 2765,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5520,
+      "top": 1800,
+      "height": 300,
+      "left": 360
+     }
+    }
+   ]
+  },
+  "Sensor inputs - R/N": {
+   "inputs": [],
+   "color": "rgb(192,192,192)",
+   "labels": [
+    {
+     "color": "rgb(207,207,207)",
+     "text": "Sensor inputs",
+     "bbox": {
+      "width": 3960,
+      "top": 345,
+      "height": 2070,
+      "left": 345
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(191,191,191)",
+     "text": "HLS Input         (IH)",
+     "bbox": {
+      "width": 2160,
+      "top": 360,
+      "height": 2055,
+      "left": 4320
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(207,207,207)",
+     "text": "Failures : Short Circuit",
+     "bbox": {
+      "width": 2310,
+      "top": 360,
+      "height": 2025,
+      "left": 8880
+     },
+     "fontcolor": "rgb(255,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(191,191,191)",
+     "text": "Present",
+     "bbox": {
+      "width": 960,
+      "top": 600,
+      "height": 270,
+      "left": 6720
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(191,191,191)",
+     "text": "Memorized",
+     "bbox": {
+      "width": 960,
+      "top": 600,
+      "height": 270,
+      "left": 7800
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(207,207,207)",
+     "text": "Present",
+     "bbox": {
+      "width": 960,
+      "top": 600,
+      "height": 270,
+      "left": 9000
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(207,207,207)",
+     "text": "Memorized",
+     "bbox": {
+      "width": 960,
+      "top": 600,
+      "height": 270,
+      "left": 10080
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(95,95,95)",
+     "text": "Trait",
+     "bbox": {
+      "width": 10830,
+      "top": 960,
+      "height": 15,
+      "left": 360
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(95,95,95)",
+     "text": "Trait",
+     "bbox": {
+      "width": 10830,
+      "top": 1440,
+      "height": 15,
+      "left": 360
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(207,207,207)",
+     "text": "EvapTemp / intake sensor",
+     "bbox": {
+      "width": 2880,
+      "top": 960,
+      "height": 240,
+      "left": 480
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(207,207,207)",
+     "text": "min: -40°C | max: 60°C | fail: 62.3°C",
+     "bbox": {
+      "width": 2640,
+      "top": 1215,
+      "height": 270,
+      "left": 480
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(191,191,191)",
+     "text": "(°C)",
+     "bbox": {
+      "width": 360,
+      "top": 1140,
+      "height": 270,
+      "left": 5490
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(95,95,95)",
+     "text": "Trait",
+     "bbox": {
+      "width": 10830,
+      "top": 1920,
+      "height": 15,
+      "left": 360
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(95,95,95)",
+     "text": "Trait",
+     "bbox": {
+      "width": 10830,
+      "top": 2400,
+      "height": 15,
+      "left": 360
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(95,95,95)",
+     "text": "Trait",
+     "bbox": {
+      "width": 10830,
+      "top": 3360,
+      "height": 15,
+      "left": 360
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(95,95,95)",
+     "text": "Trait",
+     "bbox": {
+      "width": 10830,
+      "top": 2880,
+      "height": 15,
+      "left": 360
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(207,207,207)",
+     "text": "",
+     "bbox": {
+      "width": 120,
+      "top": 360,
+      "height": 2040,
+      "left": 6480
+     },
+     "fontcolor": "rgb(255,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(239,239,239)",
+     "text": "N",
+     "bbox": {
+      "width": 120,
+      "top": 205680,
+      "height": 240,
+      "left": 37440
+     },
+     "fontcolor": "rgb(255,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(95,95,95)",
+     "text": "Trait",
+     "bbox": {
+      "width": 10830,
+      "top": 3840,
+      "height": 15,
+      "left": 360
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(95,95,95)",
+     "text": "Trait",
+     "bbox": {
+      "width": 10830,
+      "top": 4320,
+      "height": 15,
+      "left": 360
+     },
+     "fontcolor": "rgb(79,79,79)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    }
+   ],
+   "presend": [
+    {
+     "Delay": "0",
+     "RequestName": "StartDiagnosticSession.ExtendedDiagnosticSession"
+    }
+   ],
+   "height": 7020,
+   "buttons": [],
+   "width": 11940,
+   "displays": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "IH_EvapTemp",
+     "request": "DataRead.IH_EvapTemp",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 960,
+      "top": 1140,
+      "height": 300,
+      "left": 4410
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "VL_EvapTempDiag_OCFP",
+     "request": "DataRead.VL_EvapTempDiag_OCFP",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 600,
+      "top": 1140,
+      "height": 300,
+      "left": 6810
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "VL_EvapTempDiag_OCFM",
+     "request": "DataRead.VL_EvapTempDiag_OCFM",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 600,
+      "top": 1140,
+      "height": 300,
+      "left": 7890
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "VL_EvapTempDiag_SCFP",
+     "request": "DataRead.VL_EvapTempDiag_SCFP",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 600,
+      "top": 1140,
+      "height": 300,
+      "left": 9090
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "VL_EvapTempDiag_SCFM",
+     "request": "DataRead.VL_EvapTempDiag_SCFM",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 600,
+      "top": 1140,
+      "height": 300,
+      "left": 10170
+     }
+    },
+    {
+     "color": "rgb(239,239,239)",
+     "text": "IH_Vbatt",
+     "request": "DataRead.IH_Vbatt",
+     "width": 1445,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2160,
+      "top": 2925,
+      "height": 360,
+      "left": 510
+     }
+    },
+    {
+     "color": "rgb(239,239,239)",
+     "text": "IH_VehicleStateForClim",
+     "request": "DataRead.IH_VehicleStateForClim",
+     "width": 2240,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 6360,
+      "top": 2955,
+      "height": 360,
+      "left": 3750
+     }
+    }
+   ]
+  }
+ },
+ "categories": {
+  "Ident & config": [
+   "Identification - R/N",
+   "LLS Configuration - R/N",
+   "HLS Configuration - R"
+  ],
+  "Renault HLS": [
+   "ColdLoop"
+  ],
+  "Wired I/Os": [
+   "HVAC actuators & blower - R/N",
+   "Sensor inputs - R/N"
+  ]
+ }
+}

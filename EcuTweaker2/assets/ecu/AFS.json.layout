@@ -1,0 +1,451 @@
+{
+ "screens": {
+  "READ": {
+   "inputs": [],
+   "color": "rgb(255,255,255)",
+   "labels": [],
+   "presend": [],
+   "height": 5700,
+   "buttons": [],
+   "width": 6420,
+   "displays": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "STEER ANGLE",
+     "request": "DataRead.$2101",
+     "width": 3590,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5160,
+      "top": 240,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "VEHICLE SPEED",
+     "request": "DataRead.$2101",
+     "width": 3590,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5160,
+      "top": 540,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "SELECT POSITION",
+     "request": "DataRead.$2101",
+     "width": 3590,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5160,
+      "top": 840,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "HEAD LAMP",
+     "request": "DataRead.$2101",
+     "width": 3590,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5160,
+      "top": 1140,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "REVERSE",
+     "request": "DataRead.$2101",
+     "width": 3590,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5160,
+      "top": 1440,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "HEIGHT SENSOR SIGNAL REAR",
+     "request": "DataRead.$2101",
+     "width": 3590,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5160,
+      "top": 1740,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "HEIGHT SENSOR SIGNAL FRONT",
+     "request": "DataRead.$2101",
+     "width": 3590,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5160,
+      "top": 2040,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "HEADLAMP LEVEL",
+     "request": "DataRead.$2101",
+     "width": 3590,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5160,
+      "top": 2340,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "SWIVEL SENSOR LEFT",
+     "request": "DataRead.$2101",
+     "width": 3590,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5160,
+      "top": 2640,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "SWIVEL SENSOR RIGHT",
+     "request": "DataRead.$2101",
+     "width": 3590,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5160,
+      "top": 2940,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "SWIVEL ANGLE LEFT",
+     "request": "DataRead.$2101",
+     "width": 3590,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5160,
+      "top": 3240,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "SWIVEL ANGLE RIGHT",
+     "request": "DataRead.$2101",
+     "width": 3590,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5160,
+      "top": 3540,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "HEIGHT SENSOR INIT REAR",
+     "request": "DataRead.$2101",
+     "width": 3590,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5160,
+      "top": 3840,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "HEIGHT SENSOR INIT FRONT",
+     "request": "DataRead.$2101",
+     "width": 3590,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5160,
+      "top": 4140,
+      "height": 300,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "FRONT PINION ANGLE",
+     "request": "DataRead.$2101",
+     "width": 3590,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5160,
+      "top": 4440,
+      "height": 300,
+      "left": 600
+     }
+    }
+   ]
+  },
+  "Test": {
+   "inputs": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$30_OutputControl.param",
+     "request": "OutputControl.Start.LOW_BEAM_SWIVEL_TEST_RIGHT",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 1720,
+      "top": 360,
+      "height": 300,
+      "left": 2040
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$30_OutputControl.param",
+     "request": "OutputControl.Start.LOW_BEAM_SWIVEL_TEST_LEFT",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 1720,
+      "top": 840,
+      "height": 300,
+      "left": 2040
+     }
+    }
+   ],
+   "color": "rgb(255,255,255)",
+   "labels": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Left (horiz.)",
+     "bbox": {
+      "width": 1365,
+      "top": 840,
+      "height": 345,
+      "left": 360
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Right (horiz.)",
+     "bbox": {
+      "width": 1365,
+      "top": 360,
+      "height": 345,
+      "left": 360
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    }
+   ],
+   "presend": [],
+   "height": 6000,
+   "buttons": [
+    {
+     "text": "Send",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "StartDiagnosticSession.DefaultSession"
+      },
+      {
+       "Delay": "0",
+       "RequestName": "OutputControl.Start.LOW_BEAM_SWIVEL_TEST_RIGHT"
+      }
+     ],
+     "uniquename": "Send_0",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "rect": {
+      "width": 960,
+      "top": 360,
+      "height": 300,
+      "left": 4200
+     }
+    },
+    {
+     "text": "Send",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "StartDiagnosticSession.DefaultSession"
+      },
+      {
+       "Delay": "0",
+       "RequestName": "OutputControl.Start.LOW_BEAM_SWIVEL_TEST_LEFT"
+      }
+     ],
+     "uniquename": "Send_1",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "rect": {
+      "width": 960,
+      "top": 840,
+      "height": 300,
+      "left": 4200
+     }
+    }
+   ],
+   "width": 5700,
+   "displays": []
+  }
+ },
+ "categories": {
+  "AFS": [
+   "READ",
+   "Test"
+  ]
+ }
+}

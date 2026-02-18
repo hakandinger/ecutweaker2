@@ -1,0 +1,3222 @@
+{
+"obd": {
+	"baudrate": 500000, 
+	"protocol": "CAN", 
+	"recv_id": "764", 
+	"funcname": "Climatisation", 
+	"funcaddr": "29", 
+	"send_id": "744"
+}, 
+"devices": [
+	{
+	"dtc": 42182, 
+	"devicedata": {}, 
+	"dtctype": 4, 
+	"name": "PWMBlowerCommand"
+	}, 
+	{
+	"dtc": 42146, 
+	"devicedata": {}, 
+	"dtctype": 4, 
+	"name": "Config"
+	}, 
+	{
+	"dtc": 57664, 
+	"devicedata": {}, 
+	"dtctype": 4, 
+	"name": "DiagMuxECM"
+	}, 
+	{
+	"dtc": 53248, 
+	"devicedata": {}, 
+	"dtctype": 4, 
+	"name": "CANNetwork"
+	}, 
+	{
+	"dtc": 42145, 
+	"devicedata": {}, 
+	"dtctype": 4, 
+	"name": "PowerSupply"
+	}, 
+	{
+	"dtc": 57679, 
+	"devicedata": {}, 
+	"dtctype": 4, 
+	"name": "DiagMuxBCM"
+	}, 
+	{
+	"dtc": 57691, 
+	"devicedata": {}, 
+	"dtctype": 4, 
+	"name": "DiagMuxUSM"
+	}, 
+	{
+	"dtc": 53264, 
+	"devicedata": {}, 
+	"dtctype": 4, 
+	"name": "CANController"
+	}, 
+	{
+	"dtc": 42148, 
+	"devicedata": {}, 
+	"dtctype": 4, 
+	"name": "EvapTempSensor"
+	}, 
+	{
+	"dtc": 57678, 
+	"devicedata": {}, 
+	"dtctype": 4, 
+	"name": "DiagMuxMeter"
+	}, 
+	{
+	"dtc": 42167, 
+	"devicedata": {}, 
+	"dtctype": 4, 
+	"name": "RecyActuator"
+	}
+], 
+"ecuname": "CAMAN_up_CMFB_C1A", 
+"autoidents": [
+	{
+	"diagversion": "62", 
+	"supplier": "1Y97", 
+	"version": "0101", 
+	"soft": "SRN007_0202"
+	}
+], 
+"endian": "Big", 
+"requests": [
+	{
+	"name": "DataRead.VH_Tamb", 
+	"replybytes": "62400800", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"VH_Tamb": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224008"
+	}, 
+	{
+	"name": "RoutineControl.SupportCheckHighByte_Status", 
+	"replybytes": "7103DFDF0000000000000000000000000000000000000000000000000000000000000000", 
+	"deny_sds": [
+		"plant", 
+		"aftersales", 
+		"engineering"
+	], 
+	"receivebyte_dataitems": {
+		"routineCTResponse": {
+		"firstbyte": 2
+		}
+	}, 
+	"sendbyte_dataitems": {
+		"routineControlType01": {
+		"firstbyte": 2
+		}
+	}, 
+	"minbytes": 36, 
+	"sentbytes": "3103DFDF"
+	}, 
+	{
+	"name": "DataRead.IH_EngineCoolantFlowStatus", 
+	"replybytes": "62427000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"IH_EngineCoolantFlowStatus": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224270"
+	}, 
+	{
+	"name": "RoutineControl.ResetConfiguration", 
+	"replybytes": "71000C0200", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"routineCTResponse": {
+		"firstbyte": 2
+		}, 
+		"routineInfo": {
+		"firstbyte": 5
+		}
+	}, 
+	"sendbyte_dataitems": {
+		"routineControlType01": {
+		"firstbyte": 2
+		}
+	}, 
+	"minbytes": 5, 
+	"sentbytes": "31010C02"
+	}, 
+	{
+	"name": "DataRead.CL_WithControlPanel", 
+	"replybytes": "624208", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"CL_WithControlPanel": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224208"
+	}, 
+	{
+	"name": "RoutineControl.ResetConfiguration_Status", 
+	"replybytes": "71030C0200", 
+	"deny_sds": [
+		"plant", 
+		"aftersales", 
+		"engineering"
+	], 
+	"receivebyte_dataitems": {
+		"routineCTResponse": {
+		"firstbyte": 2
+		}
+	}, 
+	"sendbyte_dataitems": {
+		"routineControlType01": {
+		"firstbyte": 2
+		}
+	}, 
+	"minbytes": 5, 
+	"sentbytes": "31030C02"
+	}, 
+	{
+	"name": "DataRead.IH_ACHighPressureSensor", 
+	"replybytes": "62426C0000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"IH_ACHighPressureSensor": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 5, 
+	"sentbytes": "22426C"
+	}, 
+	{
+	"name": "DataWrite.CH_WithHeaterCore", 
+	"replybytes": "6E4223", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"sendbyte_dataitems": {
+		"CH_WithHeaterCore": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "2E422300"
+	}, 
+	{
+	"name": "ECUReset.HardReset", 
+	"replybytes": "5101", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"minbytes": 2, 
+	"sentbytes": "1101"
+	}, 
+	{
+	"name": "DataRead.OLB_DayNightStatus", 
+	"replybytes": "62400100", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"OLB_DayNightStatus": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224001"
+	}, 
+	{
+	"name": "OutputControl.Start.SupportCheckLowByte", 
+	"replybytes": "6FDF00000000000000000000000000000000000000000000000000000000000000000000", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"OutputControlIdentifier": {
+		"firstbyte": 2
+		}, 
+		"inputOutputCPResponse": {
+		"firstbyte": 4
+		}, 
+		"SupportCheckLowByte.SupportCheckResponse": {
+		"firstbyte": 5
+		}
+	}, 
+	"sendbyte_dataitems": {
+		"OutputControlCommand": {
+		"firstbyte": 4
+		}, 
+		"OutputPermanentControlList": {
+		"firstbyte": 2
+		}
+	}, 
+	"minbytes": 36, 
+	"sentbytes": "2FDF0000"
+	}, 
+	{
+	"name": "DataRead.systemSupplierIdentifier", 
+	"replybytes": "62F18A00000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"systemSupplierIdentifier": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 7, 
+	"sentbytes": "22F18A"
+	}, 
+	{
+	"name": "DataRead.OperationnalReference", 
+	"replybytes": "62F01200000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"OperationnalReference": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 13, 
+	"sentbytes": "22F012"
+	}, 
+	{
+	"name": "DataRead.VL_EvapTempDiag_SCFP", 
+	"replybytes": "62427A00", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"VL_EvapTempDiag_SCFP": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "22427A"
+	}, 
+	{
+	"name": "DataRead.OH_ACCompRequest", 
+	"replybytes": "62401500", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"OH_ACCompRequest": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224015"
+	}, 
+	{
+	"name": "DataRead.VIN", 
+	"replybytes": "62F1900000000000000000000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"VIN": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 20, 
+	"sentbytes": "22F190"
+	}, 
+	{
+	"name": "DataRead.vehicleManufacturerSparePartNumber", 
+	"replybytes": "62F18700000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"vehicleManufacturerSparePartNumber": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 13, 
+	"sentbytes": "22F187"
+	}, 
+	{
+	"name": "DataRead.IH_BlowerState", 
+	"replybytes": "62423F00", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"IH_BlowerState": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "22423F"
+	}, 
+	{
+	"name": "RoutineControl.SupportCheckLowByte", 
+	"replybytes": "71DF00000000000000000000000000000000000000000000000000000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"SupportCheckLowByte.SupportCheckResponse": {
+		"firstbyte": 5
+		}, 
+		"routineCTResponse": {
+		"firstbyte": 2
+		}
+	}, 
+	"sendbyte_dataitems": {
+		"routineControlType01": {
+		"firstbyte": 2
+		}, 
+		"SupportCheckxx": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 36, 
+	"sentbytes": "31DF000000"
+	}, 
+	{
+	"name": "RoutineControl.SupportCheckLowByte_Status", 
+	"replybytes": "71DF00000000000000000000000000000000000000000000000000000000000000000000", 
+	"deny_sds": [
+		"plant", 
+		"aftersales", 
+		"engineering"
+	], 
+	"receivebyte_dataitems": {
+		"routineCTResponse": {
+		"firstbyte": 2
+		}
+	}, 
+	"sendbyte_dataitems": {
+		"routineControlType01": {
+		"firstbyte": 2
+		}
+	}, 
+	"minbytes": 36, 
+	"sentbytes": "31DF01"
+	}, 
+	{
+	"name": "DataRead.VL_EvapTempDiag_SCFM", 
+	"replybytes": "62427900", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"VL_EvapTempDiag_SCFM": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224279"
+	}, 
+	{
+	"name": "DataRead.CL_CANArchitecture", 
+	"replybytes": "62420100", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"CL_CANArchitecture": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224201"
+	}, 
+	{
+	"name": "ClearDiagnosticInformation.All", 
+	"replybytes": "54FFFFFF", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"minbytes": 1, 
+	"sentbytes": "14FFFFFF"
+	}, 
+	{
+	"name": "DataRead.systemSupplierECUSoftwareNumber", 
+	"replybytes": "62F19400000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"systemSupplierECUSoftwareNumber": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 29, 
+	"sentbytes": "22F194"
+	}, 
+	{
+	"name": "DataRead.VL_EvapTempDiag_OCFP", 
+	"replybytes": "62427800", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"VL_EvapTempDiag_OCFP": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224278"
+	}, 
+	{
+	"name": "DataRead.VH_QSUN_filtered", 
+	"replybytes": "62401000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"VH_QSUN_filtered": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224010"
+	}, 
+	{
+	"name": "DataRead.OH_EngineFanSpeedRequestPWM_AC", 
+	"replybytes": "62425800", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"OH_EngineFanSpeedRequestPWM_AC": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224258"
+	}, 
+	{
+	"name": "DataRead.OH_MinimumVoltagebyAC", 
+	"replybytes": "62425F00", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"OH_MinimumVoltagebyAC": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "22425F"
+	}, 
+	{
+	"name": "DataRead.OH_RecyActrReq", 
+	"replybytes": "62423500", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"OH_RecyActrReq": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224235"
+	}, 
+	{
+	"name": "DataRead.VL_GADEForClim", 
+	"replybytes": "62434900", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"VL_GADEForClim": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224349"
+	}, 
+	{
+	"name": "DataRead.OH_BlowerLevelDisplay", 
+	"replybytes": "62433700", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"OH_BlowerLevelDisplay": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224337"
+	}, 
+	{
+	"name": "DataRead.IH_DayNightStatus", 
+	"replybytes": "62426800", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"IH_DayNightStatus": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224268"
+	}, 
+	{
+	"name": "DataRead.IH_AllianceVehicleSpeed", 
+	"replybytes": "62434B0000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"IH_AllianceVehicleSpeed": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 5, 
+	"sentbytes": "22434B"
+	}, 
+	{
+	"name": "DataRead.VL_EvapTempDiag_OCFM", 
+	"replybytes": "62427700", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"VL_EvapTempDiag_OCFM": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224277"
+	}, 
+	{
+	"name": "DataRead.CH_WithSaS", 
+	"replybytes": "62422900", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"CH_WithSaS": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224229"
+	}, 
+	{
+	"name": "StartDiagnosticSession.DefaultSession", 
+	"replybytes": "5001", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"minbytes": 2, 
+	"sentbytes": "1001"
+	}, 
+	{
+	"name": "DataRead.IH_VehicleStateForClim", 
+	"replybytes": "62424E00", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"IH_VehicleStateForClim": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "22424E"
+	}, 
+	{
+	"name": "DataRead.OLB_FP_LEDxxx_Indic", 
+	"replybytes": "62400700000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"OLB_FP_LEDxxx_Indic.OLB_FP_LEDS_Indic": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 6
+		}, 
+		"OLB_FP_LEDxxx_Indic.OLB_FP_LEDR_Indic": {
+		"bitoffset": 1, 
+		"ref": true, 
+		"firstbyte": 6
+		}, 
+		"OLB_FP_LEDxxx_Indic.OLB_FP_LEDT_Indic": {
+		"bitoffset": 3, 
+		"ref": true, 
+		"firstbyte": 6
+		}, 
+		"OLB_FP_LEDxxx_Indic.OLB_FP_LEDG_Indic": {
+		"bitoffset": 6, 
+		"ref": true, 
+		"firstbyte": 4
+		}, 
+		"OLB_FP_LEDxxx_Indic.OLB_FP_LEDB_Indic": {
+		"bitoffset": 1, 
+		"ref": true, 
+		"firstbyte": 4
+		}, 
+		"OLB_FP_LEDxxx_Indic.OLB_FP_LEDX_Indic": {
+		"bitoffset": 7, 
+		"ref": true, 
+		"firstbyte": 6
+		}, 
+		"OLB_FP_LEDxxx_Indic.OLB_FP_LEDV_Indic": {
+		"bitoffset": 5, 
+		"ref": true, 
+		"firstbyte": 6
+		}, 
+		"OLB_FP_LEDxxx_Indic.OLB_FP_LEDL_Indic": {
+		"bitoffset": 3, 
+		"ref": true, 
+		"firstbyte": 5
+		}, 
+		"OLB_FP_LEDxxx_Indic.OLB_FP_LEDF_Indic": {
+		"bitoffset": 5, 
+		"ref": true, 
+		"firstbyte": 4
+		}, 
+		"OLB_FP_LEDxxx_Indic.OLB_FP_LEDM_Indic": {
+		"bitoffset": 4, 
+		"ref": true, 
+		"firstbyte": 5
+		}, 
+		"OLB_FP_LEDxxx_Indic.OLB_FP_LEDA_Indic": {
+		"ref": true, 
+		"firstbyte": 4
+		}, 
+		"OLB_FP_LEDxxx_Indic.OLB_FP_LEDW_Indic": {
+		"bitoffset": 6, 
+		"ref": true, 
+		"firstbyte": 6
+		}, 
+		"OLB_FP_LEDxxx_Indic.OLB_FP_LEDE_Indic": {
+		"bitoffset": 4, 
+		"ref": true, 
+		"firstbyte": 4
+		}, 
+		"OLB_FP_LEDxxx_Indic.OLB_FP_LEDZ_Indic": {
+		"bitoffset": 1, 
+		"ref": true, 
+		"firstbyte": 7
+		}, 
+		"OLB_FP_LEDxxx_Indic.OLB_FP_LEDP_Indic": {
+		"bitoffset": 7, 
+		"ref": true, 
+		"firstbyte": 5
+		}, 
+		"OLB_FP_LEDxxx_Indic.OLB_FP_LEDC_Indic": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 4
+		}, 
+		"OLB_FP_LEDxxx_Indic.OLB_FP_LEDY_Indic": {
+		"ref": true, 
+		"firstbyte": 7
+		}, 
+		"OLB_FP_LEDxxx_Indic.OLB_FP_LEDN_Indic": {
+		"bitoffset": 5, 
+		"ref": true, 
+		"firstbyte": 5
+		}, 
+		"OLB_FP_LEDxxx_Indic.OLB_FP_LEDD_Indic": {
+		"bitoffset": 3, 
+		"ref": true, 
+		"firstbyte": 4
+		}, 
+		"OLB_FP_LEDxxx_Indic.OLB_FP_LEDK_Indic": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 5
+		}, 
+		"OLB_FP_LEDxxx_Indic.OLB_FP_LEDJ_Indic": {
+		"bitoffset": 1, 
+		"ref": true, 
+		"firstbyte": 5
+		}, 
+		"OLB_FP_LEDxxx_Indic.OLB_FP_LEDH_Indic": {
+		"bitoffset": 7, 
+		"ref": true, 
+		"firstbyte": 4
+		}, 
+		"OLB_FP_LEDxxx_Indic.OLB_FP_LEDU_Indic": {
+		"bitoffset": 4, 
+		"ref": true, 
+		"firstbyte": 6
+		}
+	}, 
+	"minbytes": 7, 
+	"sentbytes": "224007"
+	}, 
+	{
+	"name": "DataRead.CH_WithPreCond", 
+	"replybytes": "621084", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"CH_WithPreCond": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "221084"
+	}, 
+	{
+	"name": "DataRead.diagnosticVersion", 
+	"replybytes": "62F1A000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"diagnosticVersion": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "22F1A0"
+	}, 
+	{
+	"name": "DataRead.OLB_FP_BlowerLevelDisplay", 
+	"replybytes": "62400600", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"OLB_FP_BlowerLevelDisplay": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224006"
+	}, 
+	{
+	"name": "DataRead.CH_WithHeaterCore", 
+	"replybytes": "62422300", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"CH_WithHeaterCore": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224223"
+	}, 
+	{
+	"name": "DataRead.IH_EngineRPM", 
+	"replybytes": "62F40C0000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"IH_EngineRPM": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 5, 
+	"sentbytes": "22F40C"
+	}, 
+	{
+	"name": "DataWrite.CH_SteeringType", 
+	"replybytes": "6E4219", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"sendbyte_dataitems": {
+		"CH_SteeringType": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "2E421900"
+	}, 
+	{
+	"name": "ECUReset.KeyOffOnReset", 
+	"replybytes": "5102", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"minbytes": 2, 
+	"sentbytes": "1102"
+	}, 
+	{
+	"name": "DataWrite.CH_WithWEP", 
+	"replybytes": "6E422E", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"sendbyte_dataitems": {
+		"CH_WithWEP": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "2E422E00"
+	}, 
+	{
+	"name": "DataRead.VL_RecyActrDiag_SCFM", 
+	"replybytes": "62432100", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"VL_RecyActrDiag_SCFM": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224321"
+	}, 
+	{
+	"name": "DataRead.VehicleManufacturerECUSoftwareNumber_DAI", 
+	"deny_sds": [], 
+	"minbytes": 23, 
+	"sentbytes": "22F121", 
+	"replybytes": "62F1210000000000000000000000000000000000000000"
+	}, 
+	{
+	"name": "DataRead.VL_VBattDiag_OVFM", 
+	"replybytes": "62429F00", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"VL_VBattDiag_OVFM": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "22429F"
+	}, 
+	{
+	"name": "DataRead.vehicleManufacturerECUSoftwareNumber", 
+	"replybytes": "62F18800000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"vehicleManufacturerECUSoftwareNumber": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 13, 
+	"sentbytes": "22F188"
+	}, 
+	{
+	"name": "DataRead.IH_BlowerDefault", 
+	"replybytes": "62424100", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"IH_BlowerDefault": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224241"
+	}, 
+	{
+	"name": "DataWrite.CH_WithFrontDefroster", 
+	"replybytes": "6E4222", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"sendbyte_dataitems": {
+		"CH_WithFrontDefroster": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "2E422200"
+	}, 
+	{
+	"name": "DataRead.IH_Vbatt", 
+	"replybytes": "62D00100", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"IH_Vbatt": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "22D001"
+	}, 
+	{
+	"name": "DataWrite.CH_CountryType", 
+	"replybytes": "6E421D", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"sendbyte_dataitems": {
+		"CH_CountryType": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "2E421D00"
+	}, 
+	{
+	"name": "ReadDTCInformation.ReportNumberOfDTCByStatusMask", 
+	"replybytes": "5901FF", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"minbytes": 3, 
+	"sentbytes": "1901FF"
+	}, 
+	{
+	"name": "DataRead.IH_ManuBlowerLevel", 
+	"replybytes": "62433000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"IH_ManuBlowerLevel": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224330"
+	}, 
+	{
+	"name": "DataRead.VL_VBattDiag_OVFP", 
+	"replybytes": "62430000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"VL_VBattDiag_OVFP": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224300"
+	}, 
+	{
+	"name": "DataRead.IH_ACCompValveDefault", 
+	"replybytes": "62432C00", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"IH_ACCompValveDefault": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "22432C"
+	}, 
+	{
+	"name": "DataRead.VL_RecyActrDiag_SCFP", 
+	"replybytes": "62432200", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"VL_RecyActrDiag_SCFP": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224322"
+	}, 
+	{
+	"name": "DataRead.VL_BlowerControlDiag_OCFM", 
+	"replybytes": "62428300", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"VL_BlowerControlDiag_OCFM": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224283"
+	}, 
+	{
+	"name": "DataWrite.CL_CANArchitecture", 
+	"replybytes": "6E4201", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"sendbyte_dataitems": {
+		"CL_CANArchitecture": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "2E420100"
+	}, 
+	{
+	"name": "DataRead.VL_DistanceTotalizer", 
+	"replybytes": "62F0D0000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"VL_DistanceTotalizer": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 6, 
+	"sentbytes": "22F0D0"
+	}, 
+	{
+	"name": "DataRead.CL_ACType", 
+	"replybytes": "62420000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"CL_ACType": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224200"
+	}, 
+	{
+	"name": "DataRead.VL_BlowerControlDiag_OCFP", 
+	"replybytes": "62428400", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"VL_BlowerControlDiag_OCFP": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224284"
+	}, 
+	{
+	"name": "DataRead.ILN_GenericApplicativeDiagEnable", 
+	"replybytes": "62425100", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"ILN_GenericApplicativeDiagEnable": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224251"
+	}, 
+	{
+	"name": "DataWrite.CL_DiagnosticConfiguration", 
+	"replybytes": "6E4203", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"sendbyte_dataitems": {
+		"CL_DiagnosticConfiguration": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "2E420300000000000000000000000000000000"
+	}, 
+	{
+	"name": "DataRead.OH_RearDefrostRequest", 
+	"replybytes": "62425A00", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"OH_RearDefrostRequest": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "22425A"
+	}, 
+	{
+	"name": "DataRead.VehicleManufacturerSparePartNumber_N", 
+	"deny_sds": [], 
+	"minbytes": 13, 
+	"sentbytes": "22F1A1", 
+	"replybytes": "62F1A100000000000000000000"
+	}, 
+	{
+	"name": "DataRead.OH_BlowerFanMotorStatus_AC", 
+	"replybytes": "62401300", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"OH_BlowerFanMotorStatus_AC": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "22401300"
+	}, 
+	{
+	"name": "OutputControl.Start.RecyActr", 
+	"replybytes": "6F4230000000", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"OutputControlIdentifier": {
+		"firstbyte": 2
+		}, 
+		"ControlStatusPercent": {
+		"firstbyte": 5
+		}, 
+		"inputOutputCPResponse": {
+		"firstbyte": 4
+		}
+	}, 
+	"sendbyte_dataitems": {
+		"OutputControlCommand": {
+		"firstbyte": 4
+		}, 
+		"OutputPermanentControlList": {
+		"firstbyte": 2
+		}, 
+		"OH_RecyActrReq": {
+		"firstbyte": 5
+		}
+	}, 
+	"minbytes": 5, 
+	"sentbytes": "2F42300300"
+	}, 
+	{
+	"name": "DataWrite.CL_ACType", 
+	"replybytes": "6E4200", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"sendbyte_dataitems": {
+		"CL_ACType": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "2E420000"
+	}, 
+	{
+	"name": "OutputControl.stop", 
+	"replybytes": "6F000000", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"OutputControlIdentifier": {
+		"firstbyte": 2
+		}
+	}, 
+	"sendbyte_dataitems": {
+		"OutputControlCommand": {
+		"firstbyte": 4
+		}, 
+		"OutputPermanentControlList": {
+		"firstbyte": 2
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "2F00000000"
+	}, 
+	{
+	"name": "DataRead.ECUSerialNumber", 
+	"replybytes": "62F18C0000000000000000000000000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"ECUSerialNumber": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 23, 
+	"sentbytes": "22F18C"
+	}, 
+	{
+	"name": "DataRead.VL_VBattDiag_UVFM", 
+	"replybytes": "62430100", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"VL_VBattDiag_UVFM": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224301"
+	}, 
+	{
+	"name": "DataWrite.vehicleManufacturerECUSoftwareNumber", 
+	"replybytes": "6EF188", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"sendbyte_dataitems": {
+		"vehicleManufacturerECUSoftwareNumber": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "2EF18800000000000000000000"
+	}, 
+	{
+	"name": "DataRead.OLW_AirQualitySupply", 
+	"replybytes": "62432B00", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"OLW_AirQualitySupply": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "22432B"
+	}, 
+	{
+	"name": "DataRead.OLB_FP_LeftTempDisplay", 
+	"replybytes": "62400400", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"OLB_FP_LeftTempDisplay": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224004"
+	}, 
+	{
+	"name": "DataWrite.CL_WithEvapSensor", 
+	"replybytes": "6E4209", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"sendbyte_dataitems": {
+		"CL_WithEvapSensor": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "2E420900"
+	}, 
+	{
+	"name": "ReadDTCInformation.ReportSupportedDTC", 
+	"replybytes": "590AFF00000000", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"minbytes": 3, 
+	"sentbytes": "190AFF", 
+	"shiftbytescount": 4
+	}, 
+	{
+	"name": "DataRead.VH_TINC_filtered", 
+	"replybytes": "62400D00", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"VH_TINC_filtered": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "22400D"
+	}, 
+	{
+	"name": "DataRead.systemSupplierECUSoftwareVersionNumber", 
+	"replybytes": "62F19500000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"systemSupplierECUSoftwareVersionNumber": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 10, 
+	"sentbytes": "22F195"
+	}, 
+	{
+	"name": "DataRead.CL_DiagnosticConfiguration", 
+	"replybytes": "62420300000000000000000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"CL_DiagnosticConfiguration": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 19, 
+	"sentbytes": "224203"
+	}, 
+	{
+	"name": "DataRead.CH_CompPulleyRatio", 
+	"replybytes": "62421C00", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"CH_CompPulleyRatio": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "22421C"
+	}, 
+	{
+	"name": "DataRead.VH_Tam_filtered", 
+	"replybytes": "62400C00", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"VH_Tam_filtered": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "22400C"
+	}, 
+	{
+	"name": "DataRead.OH_FrontDefrostRequest", 
+	"replybytes": "62425E00", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"OH_FrontDefrostRequest": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "22425E"
+	}, 
+	{
+	"name": "DataRead.IH_AutocalIndic", 
+	"replybytes": "62432E00", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"IH_AutocalIndic": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "22432E"
+	}, 
+	{
+	"name": "DataRead.IH_EngineCoolantTemp", 
+	"replybytes": "62F46700", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"IH_EngineCoolantTemp": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "22F467"
+	}, 
+	{
+	"name": "DataRead.OH_PumpActivationRequest", 
+	"replybytes": "62426000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"OH_PumpActivationRequest": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224260"
+	}, 
+	{
+	"name": "DataRead.VH_TINT_filtered", 
+	"replybytes": "62400F00", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"VH_TINT_filtered": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "22400F"
+	}, 
+	{
+	"name": "DataRead.OLW_OnOffOutput_1", 
+	"replybytes": "62424B00", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"OLW_OnOffOutput_1": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "22424B"
+	}, 
+	{
+	"name": "RoutineControl.StepperIndexing_Status", 
+	"replybytes": "71030C0300", 
+	"deny_sds": [
+		"plant", 
+		"aftersales", 
+		"engineering"
+	], 
+	"receivebyte_dataitems": {
+		"routineCTResponse": {
+		"firstbyte": 2
+		}
+	}, 
+	"sendbyte_dataitems": {
+		"routineControlType01": {
+		"firstbyte": 2
+		}
+	}, 
+	"minbytes": 5, 
+	"sentbytes": "31030C03"
+	}, 
+	{
+	"name": "DataRead.OLB_FP_DistDisplay", 
+	"replybytes": "62400500", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"OLB_FP_DistDisplay": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224005"
+	}, 
+	{
+	"name": "DataWrite.CH_WithPreCond", 
+	"replybytes": "6E1084", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"sendbyte_dataitems": {
+		"CH_WithPreCond": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "2E108400"
+	}, 
+	{
+	"name": "DataRead.CL_WithEvapSensor", 
+	"replybytes": "62420900", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"CL_WithEvapSensor": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224209"
+	}, 
+	{
+	"name": "DataRead.OH_ACMinEngineIdleSpeedRequest", 
+	"replybytes": "62425500", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"OH_ACMinEngineIdleSpeedRequest": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224255"
+	}, 
+	{
+	"name": "RoutineControl.StepperIndexing", 
+	"replybytes": "71000C0300", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"routineCTResponse": {
+		"firstbyte": 2
+		}, 
+		"routineInfo": {
+		"firstbyte": 5
+		}
+	}, 
+	"sendbyte_dataitems": {
+		"routineControlType01": {
+		"firstbyte": 2
+		}
+	}, 
+	"minbytes": 5, 
+	"sentbytes": "31010C03"
+	}, 
+	{
+	"name": "DataRead.CH_WithFrontDefroster", 
+	"replybytes": "62422200", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"CH_WithFrontDefroster": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224222"
+	}, 
+	{
+	"name": "DataRead.OLB_IgnitionState", 
+	"replybytes": "62400300", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"OLB_IgnitionState": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224003"
+	}, 
+	{
+	"name": "DataWrite.CH_WithCompressor", 
+	"replybytes": "6E421F", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"sendbyte_dataitems": {
+		"CH_WithCompressor": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "2E421F00"
+	}, 
+	{
+	"name": "DataRead.VL_VBattDiag_UVFP", 
+	"replybytes": "62430200", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"VL_VBattDiag_UVFP": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224302"
+	}, 
+	{
+	"name": "DataRead.OH_ACCompClutchRequest", 
+	"replybytes": "62425300", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"OH_ACCompClutchRequest": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224253"
+	}, 
+	{
+	"name": "DataRead.IH_ExternalTemperature", 
+	"replybytes": "6243470000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"IH_ExternalTemperature": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 5, 
+	"sentbytes": "224347"
+	}, 
+	{
+	"name": "DataWrite.CL_WithControlPanel", 
+	"replybytes": "6E4208", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"sendbyte_dataitems": {
+		"CL_WithControlPanel": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "2E420800"
+	}, 
+	{
+	"name": "DataRead.OLB_ClearDiagInfo", 
+	"replybytes": "62400200", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"OLB_ClearDiagInfo": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224002"
+	}, 
+	{
+	"name": "DataRead.IH_RecyActrPosition", 
+	"replybytes": "62423000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"IH_RecyActrPosition": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224230"
+	}, 
+	{
+	"name": "DataWrite.CH_WithHeatPump", 
+	"replybytes": "6E4224", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"minbytes": 3, 
+	"sentbytes": "2E422400"
+	}, 
+	{
+	"name": "DataWrite.VIN", 
+	"replybytes": "6EF190", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"sendbyte_dataitems": {
+		"VIN": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "2EF1900000000000000000000000000000000000"
+	}, 
+	{
+	"name": "DataRead.OH_AC_StopAutoForbidden", 
+	"replybytes": "62425200", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"OH_AC_StopAutoForbidden": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224252"
+	}, 
+	{
+	"name": "DataWrite.CH_CompPulleyRatio", 
+	"replybytes": "6E421C", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"sendbyte_dataitems": {
+		"CH_CompPulleyRatio": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "2E421C00"
+	}, 
+	{
+	"name": "DataRead.CH_WithECOModeClim", 
+	"replybytes": "62422000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"CH_WithECOModeClim": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224220"
+	}, 
+	{
+	"name": "RoutineControl.SupportCheckHighByte", 
+	"replybytes": "7100DFDF0000000000000000000000000000000000000000000000000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"SupportCheckLowByte.SupportCheckResponse": {
+		"firstbyte": 5
+		}, 
+		"routineCTResponse": {
+		"firstbyte": 2
+		}
+	}, 
+	"sendbyte_dataitems": {
+		"routineControlType01": {
+		"firstbyte": 2
+		}
+	}, 
+	"minbytes": 36, 
+	"sentbytes": "3101DFDF"
+	}, 
+	{
+	"name": "DataRead.OH_PTCNumberThermalReq", 
+	"replybytes": "62425900", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"OH_PTCNumberThermalReq": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224259"
+	}, 
+	{
+	"name": "DataWrite.CH_WithLVHeater", 
+	"replybytes": "6E4227", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"sendbyte_dataitems": {
+		"CH_WithLVHeater": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "2E422700"
+	}, 
+	{
+	"name": "DataRead.IH_ACCompClutchStatus", 
+	"replybytes": "62401700", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"IH_ACCompClutchStatus": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224017"
+	}, 
+	{
+	"name": "StartDiagnosticSession.ProgrammingSession", 
+	"replybytes": "5002", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"minbytes": 2, 
+	"sentbytes": "1002"
+	}, 
+	{
+	"name": "DataRead.VehicleManufacturerECUHardwareNumber_DAI", 
+	"deny_sds": [], 
+	"minbytes": 13, 
+	"sentbytes": "22F111", 
+	"replybytes": "62F11100000000000000000000"
+	}, 
+	{
+	"name": "DataRead.CH_WithHeatPump", 
+	"deny_sds": [], 
+	"minbytes": 4, 
+	"sentbytes": "224224", 
+	"replybytes": "62422400"
+	}, 
+	{
+	"name": "DataRead.CH_WithLVHeater", 
+	"replybytes": "62422700", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"CH_WithLVHeater": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224227"
+	}, 
+	{
+	"name": "OutputControl.Start.FCPLightning", 
+	"replybytes": "6F4250000000", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"OutputControlIdentifier": {
+		"firstbyte": 2
+		}, 
+		"inputOutputCPResponse": {
+		"firstbyte": 4
+		}, 
+		"ControlStatusBinary": {
+		"firstbyte": 5
+		}
+	}, 
+	"sendbyte_dataitems": {
+		"OutputControlCommand": {
+		"firstbyte": 4
+		}, 
+		"OLB_FP_TestLamps": {
+		"firstbyte": 5
+		}, 
+		"OutputPermanentControlList": {
+		"firstbyte": 2
+		}
+	}, 
+	"minbytes": 5, 
+	"sentbytes": "2F42500301"
+	}, 
+	{
+	"name": "DataRead.vehicleManufacturerECUHardwareNumber", 
+	"replybytes": "62F19100000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"vehicleManufacturerECUHardwareNumber": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 13, 
+	"sentbytes": "22F191"
+	}, 
+	{
+	"name": "DataRead.VehicleManufacturerKitAssemblyPartNumber", 
+	"replybytes": "62F18E00000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"VehicleManufacturerKitAssemblyPartNumber": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 13, 
+	"sentbytes": "22F18E"
+	}, 
+	{
+	"name": "TesterPresent.WithResponse", 
+	"replybytes": "7E00", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"minbytes": 2, 
+	"sentbytes": "3E00"
+	}, 
+	{
+	"name": "DataRead.CH_WithCompressor", 
+	"replybytes": "62421F00", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"CH_WithCompressor": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "22421F"
+	}, 
+	{
+	"name": "RoutineControl.ResetProtectionCounters_Status", 
+	"replybytes": "71030C0400", 
+	"deny_sds": [
+		"plant", 
+		"aftersales", 
+		"engineering"
+	], 
+	"receivebyte_dataitems": {
+		"routineCTResponse": {
+		"firstbyte": 2
+		}
+	}, 
+	"sendbyte_dataitems": {
+		"routineControlType01": {
+		"firstbyte": 2
+		}
+	}, 
+	"minbytes": 5, 
+	"sentbytes": "31030C04"
+	}, 
+	{
+	"name": "DataRead.CH_WithESM", 
+	"replybytes": "62422100", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"CH_WithESM": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224221"
+	}, 
+	{
+	"name": "DataRead.VL_BlowerControlDiag_SCFP", 
+	"replybytes": "62428600", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"VL_BlowerControlDiag_SCFP": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224286"
+	}, 
+	{
+	"name": "OutputControl", 
+	"replybytes": "6F000000", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"OutputControlIdentifier": {
+		"firstbyte": 2
+		}
+	}, 
+	"sendbyte_dataitems": {
+		"OutputControlCommand": {
+		"firstbyte": 4
+		}, 
+		"OutputPermanentControlList": {
+		"firstbyte": 2
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "2F0000000000"
+	}, 
+	{
+	"name": "DataRead.CH_SteeringType", 
+	"replybytes": "62421900", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"CH_SteeringType": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224219"
+	}, 
+	{
+	"name": "DataRead.VL_BlowerControlDiag_SCFM", 
+	"replybytes": "62428500", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"VL_BlowerControlDiag_SCFM": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224285"
+	}, 
+	{
+	"name": "StartDiagnosticSession.ExtendedDiagnosticSession", 
+	"replybytes": "5003", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"minbytes": 2, 
+	"sentbytes": "1003"
+	}, 
+	{
+	"name": "DataRead.IH_EvapTemp", 
+	"replybytes": "62400A0000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"IH_EvapTemp": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 5, 
+	"sentbytes": "22400A"
+	}, 
+	{
+	"name": "DataRead.OH_BlowerState", 
+	"replybytes": "62425D00", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"OH_BlowerState": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "22425D"
+	}, 
+	{
+	"name": "DataRead.OH_BlowerReq", 
+	"replybytes": "62422F00", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"OH_BlowerReq": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "22422F"
+	}, 
+	{
+	"name": "DataWrite.CH_WithSaS", 
+	"replybytes": "6E4229", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"sendbyte_dataitems": {
+		"CH_WithSaS": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "2E422900"
+	}, 
+	{
+	"name": "DataRead.OH_ACCoolingFanSpeedRequest", 
+	"replybytes": "62425C00", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"OH_ACCoolingFanSpeedRequest": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "22425C"
+	}, 
+	{
+	"name": "OutputControl.Start.SupportCheckHighByte", 
+	"replybytes": "6FDFDF00000000000000000000000000000000000000000000000000000000000000000000", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"OutputControlIdentifier": {
+		"firstbyte": 2
+		}, 
+		"inputOutputCPResponse": {
+		"firstbyte": 4
+		}, 
+		"SupportCheckLowByte.SupportCheckResponse": {
+		"firstbyte": 5
+		}
+	}, 
+	"sendbyte_dataitems": {
+		"OutputControlCommand": {
+		"firstbyte": 4
+		}, 
+		"OutputPermanentControlList": {
+		"firstbyte": 2
+		}
+	}, 
+	"minbytes": 36, 
+	"sentbytes": "2FDFDF00"
+	}, 
+	{
+	"name": "DataRead.OLW_PreHeatAQS", 
+	"replybytes": "62424300", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"OLW_PreHeatAQS": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224243"
+	}, 
+	{
+	"name": "DataRead.CH_CountryType", 
+	"replybytes": "62421D00", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"CH_CountryType": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "22421D"
+	}, 
+	{
+	"name": "DataRead.IH_NightRheostatedLightMaxPercent", 
+	"replybytes": "62426A00", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"IH_NightRheostatedLightMaxPercent": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "22426A"
+	}, 
+	{
+	"name": "DataWrite.CH_WithESM", 
+	"replybytes": "6E4221", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"sendbyte_dataitems": {
+		"CH_WithESM": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "2E422100"
+	}, 
+	{
+	"name": "DataRead.CH_WithWEP", 
+	"replybytes": "62422E00", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"CH_WithWEP": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "22422E"
+	}, 
+	{
+	"name": "DataRead.OH_CoolerHilimitRequestForCVT", 
+	"replybytes": "62425600", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"OH_CoolerHilimitRequestForCVT": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224256"
+	}, 
+	{
+	"name": "DataRead.IH_StopAutoForClim", 
+	"replybytes": "62433400", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"IH_StopAutoForClim": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224334"
+	}, 
+	{
+	"name": "DataRead.VL_RecyActrDiag_OCFP", 
+	"replybytes": "62432000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"VL_RecyActrDiag_OCFP": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224320"
+	}, 
+	{
+	"name": "DataRead.OH_VoltageRatebyAC", 
+	"replybytes": "62425B00", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"OH_VoltageRatebyAC": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "22425B"
+	}, 
+	{
+	"name": "DataRead.OLB_FP_TestLamps", 
+	"replybytes": "62425000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"OLB_FP_TestLamps": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224250"
+	}, 
+	{
+	"name": "ReadDTCInformation.ReportDTC", 
+	"replybytes": "5902FF00000000", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"DTCStatus.pendingDTC": {
+		"bitoffset": 5, 
+		"ref": true, 
+		"firstbyte": 7
+		}, 
+		"DTCStatus.testFailedSinceLastClear": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 7
+		}, 
+		"DTCDeviceIdentifier": {
+		"ref": true, 
+		"firstbyte": 4
+		}, 
+		"DTCFailureType": {
+		"ref": true, 
+		"firstbyte": 6
+		}, 
+		"DTCStatus.testNotCompletedSinceLastClear": {
+		"bitoffset": 3, 
+		"ref": true, 
+		"firstbyte": 7
+		}, 
+		"DTCStatus.testNotCompletedThisMonitoringCycle": {
+		"bitoffset": 1, 
+		"ref": true, 
+		"firstbyte": 7
+		}, 
+		"DTCStatusAvailabilityMask": {
+		"ref": true, 
+		"firstbyte": 3
+		}, 
+		"DTCStatus.warningIndicatorRequested": {
+		"ref": true, 
+		"firstbyte": 7
+		}, 
+		"StatusOfDTC": {
+		"ref": true, 
+		"firstbyte": 7
+		}, 
+		"DTCStatus.testFailedThisMonitoringCycle": {
+		"bitoffset": 6, 
+		"ref": true, 
+		"firstbyte": 7
+		}, 
+		"DTCStatus.testFailed": {
+		"bitoffset": 7, 
+		"ref": true, 
+		"firstbyte": 7
+		}, 
+		"DTCStatus.confirmedDTC": {
+		"bitoffset": 4, 
+		"ref": true, 
+		"firstbyte": 7
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "1902FF", 
+	"shiftbytescount": 4
+	}, 
+	{
+	"name": "DataWrite.CH_WithECOModeClim", 
+	"replybytes": "6E4220", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"sendbyte_dataitems": {
+		"CH_WithECOModeClim": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "2E422000"
+	}, 
+	{
+	"name": "DataRead.VH_XM", 
+	"replybytes": "62401200", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"VH_XM": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224012"
+	}, 
+	{
+	"name": "DataRead.OH_ACCompPowerUsed", 
+	"replybytes": "62425400", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"OH_ACCompPowerUsed": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224254"
+	}, 
+	{
+	"name": "RoutineControl.ResetProtectionCounters", 
+	"replybytes": "71000C0400", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"routineCTResponse": {
+		"firstbyte": 2
+		}, 
+		"routineInfo": {
+		"firstbyte": 5
+		}
+	}, 
+	"sendbyte_dataitems": {
+		"routineControlType01": {
+		"firstbyte": 2
+		}
+	}, 
+	"minbytes": 5, 
+	"sentbytes": "31010C04"
+	}, 
+	{
+	"name": "DataRead.IH_EcoModeRequest", 
+	"replybytes": "62426600", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"IH_EcoModeRequest": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "224266"
+	}, 
+	{
+	"name": "DataRead.VL_RecyActrDiag_OCFM", 
+	"replybytes": "62431F00", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"VL_RecyActrDiag_OCFM": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "22431F"
+	}
+], 
+"data": {
+	"OLB_FP_LEDxxx_Indic.OLB_FP_LEDS_Indic": {
+	"scaled": true, 
+	"comment": "0h: LED off\n1h: LED on", 
+	"bitscount": 1
+	}, 
+	"VL_BlowerControlDiag_OCFM": {
+	"scaled": true, 
+	"comment": "0b: No failure\n1b: Failure", 
+	"bitscount": 1
+	}, 
+	"OH_BlowerFanMotorStatus_AC": {
+	"scaled": true, 
+	"comment": "0h: Blower fan motor off1h: Blower fan motor on"
+	}, 
+	"IH_ManuBlowerLevel": {
+	"scaled": true
+	}, 
+	"SupportCheckLowByte.SupportCheckResponse": {
+	"bytescount": 32, 
+	"byte": true, 
+	"bitscount": 256
+	}, 
+	"VL_BlowerControlDiag_OCFP": {
+	"scaled": true, 
+	"comment": "0b: No failure\n1b: Failure", 
+	"bitscount": 1
+	}, 
+	"ControlStatusBinary": {
+	"scaled": true
+	}, 
+	"OLB_FP_LEDxxx_Indic.OLB_FP_LEDX_Indic": {
+	"scaled": true, 
+	"comment": "0h: LED off\n1h: LED on", 
+	"bitscount": 1
+	}, 
+	"CH_WithESM": {
+	"comment": "00d : Not configured\n01d : Without ESM\n02d : With ESM", 
+	"lists": {
+		"0": "0d - Not configured", 
+		"1": "1d - Without ESM", 
+		"2": "2d - With ESM"
+	}
+	}, 
+	"CH_WithSaS": {
+	"comment": "00d : Not configured\n01d : Without Stop&Start\n02d : With Stop&Start", 
+	"lists": {
+		"0": "0d - Not configured", 
+		"1": "1d - Without StopStart", 
+		"2": "2d - With StopStart"
+	}
+	}, 
+	"OLB_FP_LEDxxx_Indic.OLB_FP_LEDV_Indic": {
+	"scaled": true, 
+	"comment": "0h: LED off\n1h: LED on", 
+	"bitscount": 1
+	}, 
+	"OLB_FP_LEDxxx_Indic.OLB_FP_LEDL_Indic": {
+	"scaled": true, 
+	"comment": "0h: LED off\n1h: LED on", 
+	"bitscount": 1
+	}, 
+	"VL_VBattDiag_OVFP": {
+	"scaled": true, 
+	"comment": "0b: No failure\n1b: Failure", 
+	"bitscount": 1
+	}, 
+	"OH_FrontDefrostRequest": {
+	"scaled": true, 
+	"bitscount": 1
+	}, 
+	"DTCStatus.testFailedThisMonitoringCycle": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "No", 
+		"1": "Yes"
+	}
+	}, 
+	"OLB_FP_LeftTempDisplay": {
+	"scaled": true, 
+	"comment": "0d: No display\n1d: Not used\n2d: All segments displayed\n3d: Not used\n4d: Display 0F,\n5d: Not used\n6d: Display -- \n7d: Not used\n8d: Display L0\n9d: Not used\n10d: Display HI\n11d: 5.5\u00b0\n12d: 6\u00b0\n...\n60d: 30\u00b0\n61d: 30.5\u00b0\n62d: 31\u00b0\n63d: 31.5\u00b0\n...\n", 
+	"unit": "\u00b0C"
+	}, 
+	"vehicleManufacturerECUSoftwareNumber": {
+	"bytesascii": true, 
+	"bytescount": 10, 
+	"byte": true, 
+	"bitscount": 80
+	}, 
+	"VL_VBattDiag_OVFM": {
+	"scaled": true, 
+	"comment": "0b: No failure\n1b: Failure", 
+	"bitscount": 1
+	}, 
+	"IH_BlowerState": {
+	"scaled": true, 
+	"bitscount": 1
+	}, 
+	"CL_CANArchitecture": {
+	"comment": "0d: Not Configured\n1d: Architecture type 1\n2d: Architecture type 2\n3d: Architecture type 3\n4d: Architecture type 4\n5d: Architecture type 5\n6d: Architecture type 6\n7d: Architecture type 7\n8d: Architecture type 8\n9d: Architecture type 9\n10d: Archi", 
+	"lists": {
+		"0": "0d - Not configured", 
+		"1": "1d - Renault T4", 
+		"10": "10d - Nissan C1N", 
+		"12": "12d - Renault-Nissan C1A"
+	}
+	}, 
+	"OLB_FP_LEDxxx_Indic.OLB_FP_LEDA_Indic": {
+	"scaled": true, 
+	"comment": "0h: LED off\n1h: LED on", 
+	"bitscount": 1
+	}, 
+	"CH_WithFrontDefroster": {
+	"comment": "00d : Not configured\n01d : Without Front Defroster\n02d : With Front Defroster", 
+	"lists": {
+		"0": "0d - Not configured", 
+		"1": "1d - Without Front Defroster", 
+		"2": "2d - With Front Defroster"
+	}
+	}, 
+	"IH_EcoModeRequest": {
+	"scaled": true, 
+	"comment": "0h: Unavailable\n1h: Eco mode requested\n2h: Eco mode not requested\n3h: Not used"
+	}, 
+	"CL_WithControlPanel": {
+	"comment": "0d: Not Configured1d: Without CP2d: With CP type 13d: With CP type 2", 
+	"lists": {
+		"0": "0d - Not Configured", 
+		"1": "1d - Without CP", 
+		"2": "2d - With CP type", 
+		"3": "3d - With CP type 2", 
+		"4": "4d - With CP type 3", 
+		"5": "5d - With CP type 4", 
+		"6": "6d - With CP type 5"
+	}
+	}, 
+	"IH_ACHighPressureSensor": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 10.0, 
+	"bitscount": 16, 
+	"unit": "Bar"
+	}, 
+	"OLB_FP_LEDxxx_Indic.OLB_FP_LEDC_Indic": {
+	"scaled": true, 
+	"comment": "0h: LED off\n1h: LED on", 
+	"bitscount": 1
+	}, 
+	"systemSupplierIdentifier": {
+	"bytesascii": true, 
+	"bytescount": 4, 
+	"byte": true, 
+	"bitscount": 32
+	}, 
+	"IH_ACCompClutchStatus": {
+	"comment": "0b: Clutch OFF\n1b: Clutch ON", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "Clutch OFF", 
+		"1": "Clutch ON"
+	}
+	}, 
+	"DTCDeviceIdentifier": {
+	"bytescount": 2, 
+	"bitscount": 16, 
+	"lists": {
+		"53248": "CANNetwork", 
+		"57664": "DiagMuxECM", 
+		"42146": "Config", 
+		"42148": "EvapTempSensor", 
+		"42182": "PWMBlowerCommand", 
+		"42145": "PowerSupply", 
+		"57678": "DiagMuxMeter", 
+		"57679": "DiagMuxBCM", 
+		"53264": "CANController", 
+		"42167": "RecyActuator", 
+		"57691": "DiagMuxUSM"
+	}
+	}, 
+	"IH_EvapTemp": {
+	"divideby": 10.0, 
+	"bitscount": 16, 
+	"scaled": true, 
+	"bytescount": 2, 
+	"offset": -400.0, 
+	"unit": "\u00b0C"
+	}, 
+	"DTCStatus.testFailedSinceLastClear": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "No", 
+		"1": "Yes"
+	}
+	}, 
+	"VL_VBattDiag_UVFM": {
+	"scaled": true, 
+	"comment": "0b: No failure\n1b: Failure", 
+	"bitscount": 1
+	}, 
+	"CH_CountryType": {
+	"comment": "00d : Not configured\n01d : Zone 1\n02d : Zone 2\n03d : Zone 3\n04d : Zone 4", 
+	"lists": {
+		"0": "0d - Not configured", 
+		"1": "1d - Zone 1", 
+		"2": "2d - Zone 2", 
+		"3": "3d - Zone 3", 
+		"4": "4d - Zone 4"
+	}
+	}, 
+	"OLB_IgnitionState": {
+	"scaled": true, 
+	"comment": "0h: Before ignition (off or AUTO ACC) (*)\n0h: No MMI activation request (**)\n1h: Ignition (*)\n1h: Wake up MMI requested (**)\n\nNotes:\n(*): Definition related to OH_IgnitionState use.\n(**): Definition related to OH_ClimMMIActivationRequest use.", 
+	"bitscount": 1
+	}, 
+	"OutputControlIdentifier": {
+	"bytescount": 2, 
+	"bitscount": 16, 
+	"lists": {
+		"16976": "OutputControl.FCPLightning", 
+		"223": "OutputControl.SupportCheckLowByte", 
+		"16968": "OutputControl.ACCompValveCommand", 
+		"17035": "OutputControl.HeatSeatFrontLeftHighRelay", 
+		"17036": "OutputControl.HeatSeatFrontLeftLowRelay", 
+		"17037": "OutputControl.HeatSeatFrontRightHighRelay", 
+		"17038": "OutputControl.HeatSeatFrontRightLowRelay", 
+		"16943": "OutputControl.FrontBlower", 
+		"16944": "OutputControl.RecyActr", 
+		"16945": "OutputControl.FeetVentActr", 
+		"16946": "OutputControl.LeftMixActr", 
+		"16947": "OutputControl.RightMixActr", 
+		"16975": "OutputControl.CompRequestByCAN", 
+		"17211": "OutputControl.SteeringHeaterRelay", 
+		"57311": "OutputControl.SupportCheckHighByte"
+	}
+	}, 
+	"VL_RecyActrDiag_OCFM": {
+	"scaled": true, 
+	"comment": "0b: No failure\n1b: Failure", 
+	"bitscount": 1
+	}, 
+	"DTCStatus.testNotCompletedSinceLastClear": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "No", 
+		"1": "Yes"
+	}
+	}, 
+	"VL_VBattDiag_UVFP": {
+	"scaled": true, 
+	"comment": "0b: No failure\n1b: Failure", 
+	"bitscount": 1
+	}, 
+	"CH_WithLVHeater": {
+	"comment": "00d : Not configured\n01d : Without LV PTC - Without THP\n02d : With LV PTC Low - Without THP\n03d : With LV PTC High - Without THP\n04d : With LV PTC Low - With THP\n05d : With LV PTC High - With THP\n06d : Without LV PTC - With THP", 
+	"lists": {
+		"0": "0d - Not configured", 
+		"1": "1d - Without LV PTC - Without THP", 
+		"2": "2d - With LV PTC Low - Without THP", 
+		"3": "3d - With LV PTC High - Without THP", 
+		"4": "4d - With LV PTC Low - With THP", 
+		"5": "5d - With LV PTC High - With THP", 
+		"6": "6d - Without LV PTC - With THP"
+	}
+	}, 
+	"CH_CompPulleyRatio": {
+	"scaled": true, 
+	"divideby": 100.0
+	}, 
+	"OLB_FP_LEDxxx_Indic.OLB_FP_LEDR_Indic": {
+	"scaled": true, 
+	"comment": "0h: LED off\n1h: LED on", 
+	"bitscount": 1
+	}, 
+	"routineCTResponse": {
+	"lists": {
+		"1": "startRoutine", 
+		"2": "stopRoutine", 
+		"3": "requestRoutineResults"
+	}
+	}, 
+	"VL_GADEForClim": {
+	"comment": "0d: Sleep or crank fault1d: AutoACC fault2d: All fault, disable DiagMuxDTC3d: All fault, enabl", 
+	"lists": {
+		"0": "0d - Sleep or crank fault", 
+		"1": "1d - AutoACC fault", 
+		"2": "2d - All fault - disable DiagMuxDTC", 
+		"3": "3d - All fault - enable DiagMuxDTC", 
+		"7": "7d - Unavailable"
+	}
+	}, 
+	"VIN": {
+	"bytesascii": true, 
+	"bytescount": 17, 
+	"byte": true, 
+	"bitscount": 136
+	}, 
+	"IH_StopAutoForClim": {
+	"scaled": true, 
+	"comment": "0h: Vehicle not in automatic state\n1h: Vehicle in automatic state", 
+	"bitscount": 1
+	}, 
+	"OLB_FP_LEDxxx_Indic.OLB_FP_LEDG_Indic": {
+	"scaled": true, 
+	"comment": "0h: LED off\n1h: LED on", 
+	"bitscount": 1
+	}, 
+	"IH_ExternalTemperature": {
+	"divideby": 4.0, 
+	"bitscount": 16, 
+	"scaled": true, 
+	"bytescount": 2, 
+	"offset": -200.0, 
+	"unit": "\u00b0C"
+	}, 
+	"CH_WithWEP": {
+	"comment": "00d : Not configured\n01d : Without WEP\n02d : With WEP type 1\n03d : With WEP type 2", 
+	"lists": {
+		"0": "0d - Not configured", 
+		"1": "1d - Without WEP", 
+		"2": "2d - With WEP type 1", 
+		"3": "3d - With WEP type 2"
+	}
+	}, 
+	"OH_BlowerReq": {
+	"scaled": true, 
+	"unit": "%"
+	}, 
+	"OH_ACCompRequest": {
+	"comment": "0h: No Air Conditioning requested\n1h: Air Conditioning requested", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "No Air Conditioning Requested", 
+		"1": "Air Conditioning Requested"
+	}
+	}, 
+	"DTCStatus.warningIndicatorRequested": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "No", 
+		"1": "Yes"
+	}
+	}, 
+	"CH_WithECOModeClim": {
+	"comment": "00d : Not configured\n01d : Without Eco Mode Clim\n02d : With Eco Mode Clim", 
+	"lists": {
+		"0": "0d - Not configured", 
+		"1": "1d - Without Eco Mode Clim", 
+		"2": "2d - With Eco Mode Clim"
+	}
+	}, 
+	"OH_RecyActrReq": {
+	"scaled": true, 
+	"unit": "%"
+	}, 
+	"OLW_PreHeatAQS": {
+	"scaled": true, 
+	"bitscount": 1
+	}, 
+	"IH_VehicleStateForClim": {
+	"comment": "0h: Sleeping\n1h: CutOffPending\n2h: BatTempoLevel\n3h: Blower Available\n4h: Starting in Progress\n5h: Engine Running\n6h: Not Used\n7h: Unavailable", 
+	"lists": {
+		"0": "0d - Sleeping", 
+		"3": "3d - Blower Available", 
+		"5": "5d - Engine Running", 
+		"7": "7d - Unavailable"
+	}
+	}, 
+	"ECUSerialNumber": {
+	"bytesascii": true, 
+	"bytescount": 20, 
+	"byte": true, 
+	"bitscount": 160
+	}, 
+	"OH_PumpActivationRequest": {
+	"scaled": true, 
+	"comment": "0h: Unvailable Value\n1h: NO Pump Activation Requested\n2h: Pump Activation Requested\n3h: Not Used"
+	}, 
+	"OH_MinimumVoltagebyAC": {
+	"comment": "Unavailable values:\n- 13.25V (related to OLN_MinimumVoltagebyAC_CMF1 use)\n- 15.25V (related to OLN_MinimumVoltagebyAC_T4 use)", 
+	"divideby": 100.0, 
+	"scaled": true, 
+	"step": 25.0, 
+	"offset": 1150.0, 
+	"unit": "Volt"
+	}, 
+	"systemSupplierECUSoftwareNumber": {
+	"bytesascii": true, 
+	"bytescount": 11, 
+	"byte": true, 
+	"bitscount": 88
+	}, 
+	"DTCStatusAvailabilityMask": {
+	"byte": true
+	}, 
+	"IH_EngineRPM": {
+	"comment": "RPM", 
+	"divideby": 1000.0, 
+	"bitscount": 16, 
+	"scaled": true, 
+	"step": 125.0, 
+	"bytescount": 2, 
+	"unit": "RPM"
+	}, 
+	"IH_AutocalIndic": {
+	"scaled": true, 
+	"comment": "0h: No autoindexing\n1h: General Autoindexing in progress", 
+	"bitscount": 1
+	}, 
+	"OLW_AirQualitySupply": {
+	"scaled": true, 
+	"bitscount": 1
+	}, 
+	"OLB_FP_LEDxxx_Indic.OLB_FP_LEDP_Indic": {
+	"scaled": true, 
+	"comment": "0h: LED off\n1h: LED on", 
+	"bitscount": 1
+	}, 
+	"DTCStatus.testNotCompletedThisMonitoringCycle": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "No", 
+		"1": "Yes"
+	}
+	}, 
+	"OLB_FP_LEDxxx_Indic.OLB_FP_LEDY_Indic": {
+	"scaled": true, 
+	"comment": "0h: LED off\n1h: LED on", 
+	"bitscount": 1
+	}, 
+	"VH_XM": {
+	"scaled": true, 
+	"unit": "\u00b0C", 
+	"offset": -100.0
+	}, 
+	"CL_DiagnosticConfiguration": {
+	"bytescount": 16, 
+	"byte": true, 
+	"bitscount": 128
+	}, 
+	"ILN_GenericApplicativeDiagEnable": {
+	"comment": "0h: Diag frozen\n1h: All  faults reports and alerts not related to APC power level are enabled\n2h: All  faults reports and alerts\n3h: Unavailable", 
+	"lists": {
+		"0": "Only faults reports and alerts t", 
+		"1": "All faults reports and alerts n", 
+		"2": "All faults reports and alerts a", 
+		"3": "Unavailable"
+	}
+	}, 
+	"OH_RearDefrostRequest": {
+	"scaled": true, 
+	"comment": "0h: No rear defrost requested1h: Rear defrost requested", 
+	"bitscount": 1
+	}, 
+	"VH_Tamb": {
+	"scaled": true, 
+	"unit": "\u00b0C", 
+	"offset": -40.0
+	}, 
+	"OLB_FP_LEDxxx_Indic.OLB_FP_LEDH_Indic": {
+	"scaled": true, 
+	"comment": "0h: LED off\n1h: LED on", 
+	"bitscount": 1
+	}, 
+	"VL_RecyActrDiag_SCFM": {
+	"scaled": true, 
+	"comment": "0b: No failure\n1b: Failure", 
+	"bitscount": 1
+	}, 
+	"VL_EvapTempDiag_OCFP": {
+	"scaled": true, 
+	"comment": "0b: No failure\n1b: Failure", 
+	"bitscount": 1
+	}, 
+	"VL_RecyActrDiag_SCFP": {
+	"scaled": true, 
+	"comment": "0b: No failure\n1b: Failure", 
+	"bitscount": 1
+	}, 
+	"routineControlType01": {
+	"lists": {
+		"1": "startRoutine"
+	}
+	}, 
+	"OH_ACCoolingFanSpeedRequest": {
+	"scaled": true, 
+	"comment": "0h: No engine fan speed request1h: Low speed engine fan speed request2h: Mid speed engine fan sp"
+	}, 
+	"VH_QSUN_filtered": {
+	"scaled": true, 
+	"step": 5.0, 
+	"unit": "W/m\u00b2"
+	}, 
+	"diagnosticVersion": {
+	"byte": true
+	}, 
+	"routineInfo": {
+	"lists": {
+		"20": "routineCompleted", 
+		"21": "routineAborted", 
+		"22": "routineActive"
+	}
+	}, 
+	"OH_ACMinEngineIdleSpeedRequest": {
+	"scaled": true, 
+	"unit": "rpm"
+	}, 
+	"IH_Vbatt": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "Volt"
+	}, 
+	"OLB_DayNightStatus": {
+	"scaled": true, 
+	"comment": "0h: Day \n1h: Night", 
+	"bitscount": 1
+	}, 
+	"vehicleManufacturerECUHardwareNumber": {
+	"bytesascii": true, 
+	"bytescount": 10, 
+	"byte": true, 
+	"bitscount": 80
+	}, 
+	"OLB_FP_LEDxxx_Indic.OLB_FP_LEDT_Indic": {
+	"scaled": true, 
+	"comment": "0h: LED off\n1h: LED on", 
+	"bitscount": 1
+	}, 
+	"VL_BlowerControlDiag_SCFM": {
+	"scaled": true, 
+	"comment": "0b: No failure\n1b: Failure", 
+	"bitscount": 1
+	}, 
+	"VL_EvapTempDiag_SCFM": {
+	"scaled": true, 
+	"comment": "0b: No failure\n1b: Failure", 
+	"bitscount": 1
+	}, 
+	"VL_BlowerControlDiag_SCFP": {
+	"scaled": true, 
+	"comment": "0b: No failure\n1b: Failure", 
+	"bitscount": 1
+	}, 
+	"OH_VoltageRatebyAC": {
+	"scaled": true, 
+	"comment": "0h: No request1h: Rate 12h: Rate 23h: Rate 3"
+	}, 
+	"VL_EvapTempDiag_SCFP": {
+	"scaled": true, 
+	"comment": "0b: No failure\n1b: Failure", 
+	"bitscount": 1
+	}, 
+	"OLB_FP_LEDxxx_Indic.OLB_FP_LEDB_Indic": {
+	"scaled": true, 
+	"comment": "0h: LED off\n1h: LED on", 
+	"bitscount": 1
+	}, 
+	"OLB_FP_LEDxxx_Indic.OLB_FP_LEDN_Indic": {
+	"scaled": true, 
+	"comment": "0h: LED off\n1h: LED on", 
+	"bitscount": 1
+	}, 
+	"IH_EngineCoolantFlowStatus": {
+	"comment": "0h: Unvailable Value\n1h: No EngineCoolantFlow\n2h: EngineCoolantFlow\n3h: Not Used", 
+	"lists": {
+		"0": "Unvailable Value", 
+		"1": "No EngineCoolantFlow", 
+		"2": "EngineCoolantFlow", 
+		"3": "Not Used"
+	}
+	}, 
+	"IH_AllianceVehicleSpeed": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 100.0, 
+	"bitscount": 16, 
+	"unit": "km/h"
+	}, 
+	"DTCStatus.pendingDTC": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "No", 
+		"1": "Yes"
+	}
+	}, 
+	"inputOutputCPResponse": {
+	"lists": {
+		"0": "returnControlToECU", 
+		"1": "shortTermAdjustment"
+	}
+	}, 
+	"systemSupplierECUSoftwareVersionNumber": {
+	"bytesascii": true, 
+	"bytescount": 4, 
+	"byte": true, 
+	"bitscount": 32
+	}, 
+	"OLB_FP_LEDxxx_Indic.OLB_FP_LEDF_Indic": {
+	"scaled": true, 
+	"comment": "0h: LED off\n1h: LED on", 
+	"bitscount": 1
+	}, 
+	"OH_CoolerHilimitRequestForCVT": {
+	"comment": "0b: Cooler Hilimit not requested1b: Cooler Hilimit requested", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "Cooler Hilimit not requested", 
+		"1": "Cooler Hilimit requested"
+	}
+	}, 
+	"OutputControlCommand": {
+	"comment": "Command enumeration", 
+	"lists": {
+		"0": "ReturnControlToECU", 
+		"3": "ShortTermAjustement"
+	}
+	}, 
+	"OH_EngineFanSpeedRequestPWM_AC": {
+	"scaled": true, 
+	"unit": "%"
+	}, 
+	"VH_TINT_filtered": {
+	"scaled": true, 
+	"unit": "\u00b0C", 
+	"offset": -40.0
+	}, 
+	"SupportCheckxx": {
+	"byte": true
+	}, 
+	"OLB_FP_LEDxxx_Indic.OLB_FP_LEDE_Indic": {
+	"scaled": true, 
+	"comment": "0h: LED off\n1h: LED on", 
+	"bitscount": 1
+	}, 
+	"OLB_FP_LEDxxx_Indic.OLB_FP_LEDZ_Indic": {
+	"scaled": true, 
+	"comment": "0h: LED off\n1h: LED on", 
+	"bitscount": 1
+	}, 
+	"VH_TINC_filtered": {
+	"scaled": true, 
+	"unit": "\u00b0C", 
+	"offset": -40.0
+	}, 
+	"ControlStatusPercent": {
+	"scaled": true, 
+	"unit": "%"
+	}, 
+	"OLB_FP_BlowerLevelDisplay": {
+	"scaled": true, 
+	"comment": "0d: No display\n1d: Blower level 1\n2d: Blower level 2\n3d: Blower level 3\n4d: Blower level 4\n5d: Blower level 5\n6d: Blower level 6\n7d: Blower level 7\n8d: Blower level 8\n9d: Blower level 9\n10d: Blower level 10\n11d: Blower level 11\n12d: Blower lev"
+	}, 
+	"IH_BlowerDefault": {
+	"scaled": true, 
+	"bitscount": 1
+	}, 
+	"OLB_FP_LEDxxx_Indic.OLB_FP_LEDK_Indic": {
+	"scaled": true, 
+	"comment": "0h: LED off\n1h: LED on", 
+	"bitscount": 1
+	}, 
+	"CL_WithEvapSensor": {
+	"comment": "0d: Not Configured\n1d: Without Sensor\n2d: With Sensor type 1\n3d: With Sensor type 2 (P02F)\n4d: With Sensor type 3 (Carry-back)\n5d: With Sensor type 4 (B02E)", 
+	"lists": {
+		"0": "0d - Not configured", 
+		"1": "1d - Without sensor", 
+		"2": "2d - With sensor type 1", 
+		"3": "3d - With sensor type 2 - P02F - Air type", 
+		"4": "4d - With sensor type 3 - Carry-back", 
+		"5": "5d- With sensor type 4 - B02E - Air type", 
+		"6": "6d - With sensor type 5 - L21B", 
+		"7": "7d - With sensor type 6 - P02F - Fin type", 
+		"8": "8d - With sensor type 7 - B02E - Fin type"
+	}
+	}, 
+	"VH_Tam_filtered": {
+	"scaled": true, 
+	"unit": "\u00b0C", 
+	"offset": -40.0
+	}, 
+	"vehicleManufacturerSparePartNumber": {
+	"bytesascii": true, 
+	"bytescount": 10, 
+	"byte": true, 
+	"bitscount": 80
+	}, 
+	"DTCFailureType": {
+	"lists": {
+		"19": "OC", 
+		"1": "General Electrical Failure", 
+		"2": "General signal failure", 
+		"36": "bad frequency", 
+		"8": "Bus signal", 
+		"73": "internal failure", 
+		"17": "SC to ground", 
+		"18": "SC to battery", 
+		"147": "no operation", 
+		"20": "OC or SC to ground", 
+		"21": "OC or SC to battery", 
+		"22": "voltage below threshold", 
+		"23": "voltage above threshold"
+	}
+	}, 
+	"OH_BlowerLevelDisplay": {
+	"scaled": true, 
+	"comment": "0d: No display\n1d: Blower level 1\n2d: Blower level 2\n3d: Blower level 3\n4d: Blower level 4\n5d: Blower level 5\n6d: Blower level 6\n7d: Blower level 7\n8d: Blower level 8\n9d: Blower level 9\n10d: Blower level 10\n11d: Blower level 11\n12d: Blower lev"
+	}, 
+	"OLW_OnOffOutput_1": {
+	"scaled": true, 
+	"comment": "0h: Output inactive\n1h: Output active"
+	}, 
+	"OLB_FP_LEDxxx_Indic.OLB_FP_LEDU_Indic": {
+	"scaled": true, 
+	"comment": "0h: LED off\n1h: LED on", 
+	"bitscount": 1
+	}, 
+	"OutputPermanentControlList": {
+	"bytescount": 2, 
+	"bitscount": 16, 
+	"lists": {
+		"0": "OutputControl.Stop", 
+		"16944": "OutputControl.RecyActr", 
+		"16968": "OutputControl.ACCompValveCommand", 
+		"17035": "OutputControl.HeatSeatFrontLeftHighRelay", 
+		"17036": "OutputControl.HeatSeatFrontLeftLowRelay", 
+		"17037": "OutputControl.HeatSeatFrontRightHighRelay", 
+		"17038": "OutputControl.HeatSeatFrontRightLowRelay", 
+		"16943": "OutputControl.FrontBlower", 
+		"16976": "OutputControl.FCPLightning", 
+		"16945": "OutputControl.FeetVentActr", 
+		"16946": "OutputControl.LeftMixActr", 
+		"16947": "OutputControl.RightMixActr", 
+		"16975": "OutputControl.CompRequestByCAN", 
+		"17211": "OutputControl.SteeringHeaterRelay", 
+		"57088": "OutputControl.SupportCheckLowByte", 
+		"57311": "OutputControl.SupportCheckHighByte"
+	}
+	}, 
+	"OLB_FP_TestLamps": {
+	"scaled": true, 
+	"comment": "0 : No test lamps\n1 : Test lamps"
+	}, 
+	"OH_PTCNumberThermalReq": {
+	"scaled": true, 
+	"comment": "0d: 0 PTC requested...10d: 10 PTC requested11d: Not used15d: No request"
+	}, 
+	"CH_WithCompressor": {
+	"comment": "00d : Not configured\n01d : Without compressor\n02d : With compressor (external ctrl with cluctch)\n03d : With compressor (external ctrl without cluctch)\n04d : With compressor (internal ctrl with cluctch)\n05d : With compressor (fixed ctrl with cluctch)\n", 
+	"lists": {
+		"0": "0d - Not configured", 
+		"1": "1d - Without compressor", 
+		"2": "2d - With external ctrl with cluctch", 
+		"3": "3d - With external ctrl without cluctch", 
+		"4": "4d - With internal ctrl with cluctch", 
+		"5": "5d - With fixed ctrl with cluctch", 
+		"6": "6d - With electrical compressor"
+	}
+	}, 
+	"CH_WithPreCond": {
+	"comment": "00d : Not configured01d : Without Precond02d : With Precond", 
+	"lists": {
+		"0": "0d - Not configured", 
+		"1": "1d - Without Precond"
+	}
+	}, 
+	"StatusOfDTC": {
+	"scaled": true
+	}, 
+	"VehicleManufacturerKitAssemblyPartNumber": {
+	"bytesascii": true, 
+	"bytescount": 10, 
+	"byte": true, 
+	"bitscount": 80
+	}, 
+	"OH_BlowerState": {
+	"scaled": true, 
+	"comment": "0h: OFF\n1h: ON", 
+	"bitscount": 1
+	}, 
+	"IH_ACCompValveDefault": {
+	"scaled": true, 
+	"comment": "0b: No Valve failure\n1b: Valve failure", 
+	"bitscount": 1
+	}, 
+	"VL_EvapTempDiag_OCFM": {
+	"scaled": true, 
+	"comment": "0b: No failure\n1b: Failure", 
+	"bitscount": 1
+	}, 
+	"OLB_FP_LEDxxx_Indic.OLB_FP_LEDM_Indic": {
+	"scaled": true, 
+	"comment": "0h: LED off\n1h: LED on", 
+	"bitscount": 1
+	}, 
+	"OLB_FP_LEDxxx_Indic.OLB_FP_LEDW_Indic": {
+	"scaled": true, 
+	"comment": "0h: LED off\n1h: LED on", 
+	"bitscount": 1
+	}, 
+	"CL_ACType": {
+	"comment": "0d: Not Configured\n1d: Manual Monozone\n2d: Heater - Chauffo\n16d: Monozone Regulated -  CAREG MZ\n17d: Dualzone without rear vent ducts\n18d: Dualzone with rear vent ducts\n19d: Trizone with temperature\n20d: Trizone with temperature and with distributi", 
+	"lists": {
+		"0": "0d - Not configured", 
+		"1": "1d - Manual monozone", 
+		"2": "2d - Heater", 
+		"16": "16d - Monozone regulated", 
+		"17": "17d - Dualzone without rear vent ducts", 
+		"18": "18d - Dualzone with rear vent ducts", 
+		"19": "19d - Trizone with temperature", 
+		"20": "20d - Trizone with temperature and with distribution", 
+		"21": "21d - Dualzone with additional rear monozone", 
+		"22": "22d - Monozone Regulated - with rear blowers"
+	}
+	}, 
+	"IH_RecyActrPosition": {
+	"scaled": true, 
+	"comment": "Represents the % of total range [min - max]"
+	}, 
+	"VL_DistanceTotalizer": {
+	"scaled": true, 
+	"bytescount": 3, 
+	"bitscount": 24, 
+	"unit": "km"
+	}, 
+	"DTCStatus.confirmedDTC": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "No", 
+		"1": "Yes"
+	}
+	}, 
+	"OH_ACCompClutchRequest": {
+	"scaled": true, 
+	"comment": "0h: No AC compressor requested 1h: AC compressor requested", 
+	"bitscount": 1
+	}, 
+	"IH_EngineCoolantTemp": {
+	"scaled": true, 
+	"unit": "\u00b0C", 
+	"offset": -40.0
+	}, 
+	"OLB_ClearDiagInfo": {
+	"scaled": true, 
+	"comment": "0h: No clear diag\n1h: Clear diag", 
+	"bitscount": 1
+	}, 
+	"VL_RecyActrDiag_OCFP": {
+	"scaled": true, 
+	"comment": "0b: No failure\n1b: Failure", 
+	"bitscount": 1
+	}, 
+	"IH_DayNightStatus": {
+	"comment": "0h: Day time\n1h: Night time", 
+	"lists": {
+		"0": "Day time according light level s", 
+		"1": "Night time according to light le"
+	}
+	}, 
+	"OperationnalReference": {
+	"bytesascii": true, 
+	"bytescount": 10, 
+	"byte": true, 
+	"bitscount": 80
+	}, 
+	"OLB_FP_LEDxxx_Indic.OLB_FP_LEDD_Indic": {
+	"scaled": true, 
+	"comment": "0h: LED off\n1h: LED on", 
+	"bitscount": 1
+	}, 
+	"OLB_FP_LEDxxx_Indic.OLB_FP_LEDJ_Indic": {
+	"scaled": true, 
+	"comment": "0h: LED off\n1h: LED on", 
+	"bitscount": 1
+	}, 
+	"OH_AC_StopAutoForbidden": {
+	"scaled": true, 
+	"comment": "0h: Unavailable1h: Auto Stop forbidden2h: Auto stop authorized3h: Not used"
+	}, 
+	"OLB_FP_DistDisplay": {
+	"scaled": true, 
+	"comment": "1h: FA\n2h: AA\n3h: FA + AA\n4h: MFA\n5h: FA + MFA\n6h: AA\n7h: FA + AA + MFA\n8h: DA\n9h: FA + DA\n10h: AA + DA\n11h: FA + AA + DA\n12h: MFA + DA\n13h: FA + MFA + DA\n14h: AA + MFA + DA\n15h: FA + AA + MFA +DA\n\nLegendary:\nFA: Feet Arrow\nAA: Aerator A"
+	}, 
+	"OH_ACCompPowerUsed": {
+	"scaled": true, 
+	"unit": "W"
+	}, 
+	"IH_NightRheostatedLightMaxPercent": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"step": 4.0, 
+	"unit": "%"
+	}, 
+	"CH_SteeringType": {
+	"comment": "00d : Not configured\n01d : Right Hand Drive Steering\n02d : Left Hand Drive Steering", 
+	"lists": {
+		"0": "0d - Not configured", 
+		"1": "1d - RHD steering", 
+		"2": "2d - LHD steering"
+	}
+	}, 
+	"CH_WithHeaterCore": {
+	"comment": "00d : Not configured\n01d : Without Heater Core\n02d : With Heater Core", 
+	"lists": {
+		"0": "0d - Not configured", 
+		"1": "1d - Without Heater core", 
+		"2": "2d - With Heater core"
+	}
+	}, 
+	"DTCStatus.testFailed": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "No", 
+		"1": "Yes"
+	}
+	}
+}
+}

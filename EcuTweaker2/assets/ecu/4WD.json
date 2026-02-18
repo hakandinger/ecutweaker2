@@ -1,0 +1,6924 @@
+{
+"obd": {
+	"baudrate": 10400, 
+	"protocol": "CAN", 
+	"recv_id": "768", 
+	"funcname": "4WD", 
+	"funcaddr": "1E", 
+	"send_id": "748"
+}, 
+"devices": [
+	{
+	"dtc": 6152, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "ABS WHEEL SPEED SENSOR"
+	}, 
+	{
+	"dtc": 6175, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "INCOMPLETE CALIBRATION"
+	}, 
+	{
+	"dtc": 20995, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "ABS_SYSTEM"
+	}, 
+	{
+	"dtc": 6173, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "ENGINE SIGNAL CLOCK"
+	}, 
+	{
+	"dtc": 20993, 
+	"devicedata": {}, 
+	"dtctype": 2, 
+	"name": "CONTROLLER_FAILURE"
+	}, 
+	{
+	"dtc": 6182, 
+	"devicedata": {}, 
+	"dtctype": 2, 
+	"name": "OIL TEMPERATURE SENSOR"
+	}, 
+	{
+	"dtc": 6153, 
+	"devicedata": {}, 
+	"dtctype": 2, 
+	"name": "CONTROL_UNIT(AD Conveter)"
+	}, 
+	{
+	"dtc": 6161, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "POWER SUPPLY SYSTEM"
+	}, 
+	{
+	"dtc": 20997, 
+	"devicedata": {}, 
+	"dtctype": 3, 
+	"name": "4WD_ACTUATOR_RLY"
+	}, 
+	{
+	"dtc": 21001, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "MODE_SW"
+	}, 
+	{
+	"dtc": 20996, 
+	"devicedata": {}, 
+	"dtctype": 3, 
+	"name": "4WD_SOLENOID"
+	}, 
+	{
+	"dtc": 21009, 
+	"devicedata": {}, 
+	"dtctype": 3, 
+	"name": "LIN_SIGNAL_1"
+	}, 
+	{
+	"dtc": 53264, 
+	"devicedata": {}, 
+	"dtctype": 2, 
+	"name": "CONTROL_UNIT(CAN)"
+	}, 
+	{
+	"dtc": 21010, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "LIN_SIGNAL_2"
+	}, 
+	{
+	"dtc": 6171, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "SELF SHUT"
+	}, 
+	{
+	"dtc": 21008, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "DRIVE PROTECTION CHECK"
+	}, 
+	{
+	"dtc": 6148, 
+	"devicedata": {}, 
+	"dtctype": 2, 
+	"name": "EEPROM"
+	}, 
+	{
+	"dtc": 53248, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "CAN_COMM_CIRCUIT"
+	}
+], 
+"ecuname": "4WD_T32", 
+"autoidents": [], 
+"endian": "Big", 
+"requests": [
+	{
+	"name": "(f_2WD_SW) DataRead_$22$1316", 
+	"replybytes": "62131600", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$13$16_(f_2WD_SW) SW_input-2WD": {
+		"firstbyte": 4, 
+		"endian": "Little"
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "221316"
+	}, 
+	{
+	"name": "(v_ETSMODD) DataRead_$22$1313", 
+	"replybytes": "62131300", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$13$13_(v_ETSMODD) ETS_MODE": {
+		"firstbyte": 4, 
+		"endian": "Little"
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "221313"
+	}, 
+	{
+	"name": "OutputControl.Start", 
+	"replybytes": "700101", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"OutputControlStatus": {
+		"firstbyte": 3
+		}
+	}, 
+	"sendbyte_dataitems": {
+		"ACTR_SOL_DRIVE.param": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "30012000"
+	}, 
+	{
+	"name": "DataRead.Identification.RenaultR2", 
+	"replybytes": "6180000000000000000000000000000000000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"HardwareNumber.BasicPartList": {
+		"ref": true, 
+		"firstbyte": 24
+		}, 
+		"DiagnosticIdentificationCode": {
+		"ref": true, 
+		"firstbyte": 8
+		}, 
+		"CalibrationNumber": {
+		"ref": true, 
+		"firstbyte": 21
+		}, 
+		"HardwareNumber.LowerPart": {
+		"ref": true, 
+		"firstbyte": 12
+		}, 
+		"PartNumber.BasicPartList": {
+		"ref": true, 
+		"firstbyte": 23
+		}, 
+		"ManufacturerIdentificationCode": {
+		"ref": true, 
+		"firstbyte": 26
+		}, 
+		"ApprovalNumber.BasicPartList": {
+		"ref": true, 
+		"firstbyte": 25
+		}, 
+		"EditionNumber": {
+		"ref": true, 
+		"firstbyte": 19
+		}, 
+		"PartNumber.LowerPart": {
+		"ref": true, 
+		"firstbyte": 3
+		}, 
+		"SupplierNumber.ITG.1": {
+		"ref": true, 
+		"firstbyte": 9
+		}, 
+		"SoftwareNumber": {
+		"ref": true, 
+		"firstbyte": 17
+		}, 
+		"SupplierNumber.ITG.2": {
+		"ref": true, 
+		"firstbyte": 10
+		}
+	}, 
+	"minbytes": 26, 
+	"sentbytes": "2180"
+	}, 
+	{
+	"name": "DataRead.FailureHistory(LID$22)", 
+	"replybytes": "61220000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"v_CODEBF[0][18]STR_SEN": {
+		"firstbyte": 19
+		}, 
+		"v_CODEBF[1][7]RR_WHL": {
+		"firstbyte": 35
+		}, 
+		"v_CODEBF[0][17]DRV_TRQ": {
+		"firstbyte": 18
+		}, 
+		"v_CODEBF[0][11]TEMP_SEN_POS": {
+		"firstbyte": 12
+		}, 
+		"v_CODEBF[0][28]SW_INP": {
+		"firstbyte": 29
+		}, 
+		"v_CODEBF[0][10]ENG_REV": {
+		"firstbyte": 11
+		}, 
+		"v_CODEBF[0][21]Y_POS_SEN": {
+		"firstbyte": 22
+		}, 
+		"v_CODEBF[0][4]FR_WH": {
+		"firstbyte": 5
+		}, 
+		"v_CODEBF[1][14]POW_VOL": {
+		"firstbyte": 42
+		}, 
+		"v_CODEBF[1][12]CLT_TEMP": {
+		"firstbyte": 40
+		}, 
+		"v_CODEBF[1][4]FR_WHL": {
+		"firstbyte": 32
+		}, 
+		"v_CODEBF[0][26]ATFTEMP": {
+		"firstbyte": 27
+		}, 
+		"v_CODEBF[1][0]Failure_Info": {
+		"firstbyte": 30
+		}, 
+		"v_CODEBF[0][7]RR_WHL": {
+		"firstbyte": 8
+		}, 
+		"v_CODEBF[1][5]FR_WHL": {
+		"firstbyte": 33
+		}, 
+		"v_CODEBF[1][1]Failure_Info": {
+		"firstbyte": 31
+		}, 
+		"v_CODEBF[0][16]ETS_SOL": {
+		"firstbyte": 17
+		}, 
+		"v_CODEBF[0][12]CLT_TMP": {
+		"firstbyte": 13
+		}, 
+		"v_CODEBF[1][24]YAWREF_POS": {
+		"firstbyte": 52
+		}, 
+		"v_CODEBF[1][28]SW_INP": {
+		"firstbyte": 56
+		}, 
+		"v_CODEBF[0][13]CLT_TEMP": {
+		"firstbyte": 14
+		}, 
+		"v_CODEBF[1][15]DRV_MODE": {
+		"firstbyte": 43
+		}, 
+		"v_CODEBF[0][23]WAWRATE_SEN": {
+		"firstbyte": 24
+		}, 
+		"v_CODEBF[1][20]X_POS_SEN": {
+		"firstbyte": 48
+		}, 
+		"v_CODEBF[1][9]ACCL_POS": {
+		"firstbyte": 37
+		}, 
+		"v_CODEBF[1][19]STR_SEN": {
+		"firstbyte": 47
+		}, 
+		"v_CODEBF[1][13]CLT_TEMP": {
+		"firstbyte": 41
+		}, 
+		"v_CODEBF[1][6]RR_WHL": {
+		"firstbyte": 34
+		}, 
+		"v_CODEBF[1][17]DRV_TRQ": {
+		"firstbyte": 45
+		}, 
+		"v_CODEBF[0][6]RR_WHL": {
+		"firstbyte": 7
+		}, 
+		"v_CODEBF[1][16]ETS_SOL": {
+		"firstbyte": 44
+		}, 
+		"v_CODEBF[1][22]YAWRATE_SEN": {
+		"firstbyte": 50
+		}, 
+		"v_CODEBF[0][19]STR_SEN": {
+		"firstbyte": 20
+		}, 
+		"v_CODEBF[0][8]TRQ_POS": {
+		"firstbyte": 9
+		}, 
+		"v_CODEBF[1][25]YAWREF_POS": {
+		"firstbyte": 53
+		}, 
+		"v_CODEBF[1][26]ATFTEMP_POS": {
+		"firstbyte": 54
+		}, 
+		"v_CODEBF[0][22]YAWRATE_SEN": {
+		"firstbyte": 23
+		}, 
+		"v_CODEBF[1][11]TEMP_SEN_POS": {
+		"firstbyte": 39
+		}, 
+		"v_CODEBF[0][20]X_POS_SEN": {
+		"firstbyte": 21
+		}, 
+		"v_CODEBF[0][0]_Failure_Info": {
+		"firstbyte": 3
+		}, 
+		"v_CODEBF[1][8]TRQ_POS": {
+		"firstbyte": 36
+		}, 
+		"v_CODEBF[0][27]SW_INP": {
+		"firstbyte": 28
+		}, 
+		"v_CODEBF[0][25]YAWREF_POS": {
+		"firstbyte": 26
+		}, 
+		"v_CODEBF[0][1]_Failure_info": {
+		"firstbyte": 4
+		}, 
+		"v_CODEBF[0][15]DRV_MODE": {
+		"firstbyte": 16
+		}, 
+		"v_CODEBF[1][10]ENG_REV": {
+		"firstbyte": 38
+		}, 
+		"v_CODEBF[1][27]SW_INP": {
+		"firstbyte": 55
+		}, 
+		"v_CODEBF[1][21]Y_POS_SEN": {
+		"firstbyte": 49
+		}, 
+		"v_CODEBF[0][14]POW_VOL": {
+		"firstbyte": 15
+		}, 
+		"v_CODEBF[0][24]YAWREF_POS": {
+		"firstbyte": 25
+		}, 
+		"v_CODEBF[1][23]YAWRATE_SEN": {
+		"firstbyte": 51
+		}, 
+		"v_CODEBF[1][18]STR_SEN": {
+		"firstbyte": 46
+		}, 
+		"v_CODEBF[0][9]ACCL_POS": {
+		"firstbyte": 10
+		}, 
+		"v_CODEBF[0][5]FR_WHL": {
+		"firstbyte": 6
+		}
+	}, 
+	"minbytes": 56, 
+	"sentbytes": "2122"
+	}, 
+	{
+	"name": "(f_FTEMP) DataRead_$22$1314", 
+	"replybytes": "62131400", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$13$14_(f_TEMP) CLUTCH_TEMP_FLAG1": {
+		"firstbyte": 4, 
+		"endian": "Little"
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "221314"
+	}, 
+	{
+	"name": "(ACTR STATUS) DataRead_$22$1303", 
+	"replybytes": "62130300", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$13$03_(ACTR status) ETS_ACTUATOR": {
+		"firstbyte": 4, 
+		"endian": "Little"
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "221303"
+	}, 
+	{
+	"name": "(v_WRFL) DataRead_$22$1202", 
+	"replybytes": "6212020000", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$12$02_(v_WRFL) FR_LH_SENSOR": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 5, 
+	"sentbytes": "221202"
+	}, 
+	{
+	"name": "DataWrite.3B01", 
+	"replybytes": "7B01", 
+	"deny_sds": [], 
+	"sendbyte_dataitems": {
+		"[$3B$01_#6]_IT_characteristic_4_right": {
+		"firstbyte": 6
+		}, 
+		"[$3B$01_#5]_IT_characteristic_3_right": {
+		"firstbyte": 5
+		}, 
+		"[$3B$01_#3]_IT_characteristic_1_right": {
+		"firstbyte": 3
+		}, 
+		"[$3B$01_#4]_IT_characteristic_2_right": {
+		"firstbyte": 4
+		}, 
+		"[$3B$01_#7]_IT_characteristic_5_right": {
+		"firstbyte": 7
+		}, 
+		"[$3B$01_#8]_Check_value_Fxh": {
+		"firstbyte": 8
+		}
+	}, 
+	"minbytes": 2, 
+	"sentbytes": "3B010000000000F0"
+	}, 
+	{
+	"name": "(v_ETRQC) DataRead_$22$1105", 
+	"replybytes": "62110500", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$11$05_(v_ETRQC) CURRENT_TORQ": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "221105"
+	}, 
+	{
+	"name": "(v_ETRQDRC) DataRead_$22$1104", 
+	"replybytes": "62110400", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$11$04_(v_ETQDRC) REQUEST_TORQUE": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "221104"
+	}, 
+	{
+	"name": "(v_TENG) DataRead_$22$1207", 
+	"replybytes": "6212070000", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$12$07_(v_TENG) DRIVE_TORQUE": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 5, 
+	"sentbytes": "221207"
+	}, 
+	{
+	"name": "(f_STPLMSWC) DataRead_$22$1305", 
+	"replybytes": "62130500", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$13$05_(f_STPLMSWC) STOP_LAMP_SW": {
+		"firstbyte": 4, 
+		"endian": "Little"
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "221305"
+	}, 
+	{
+	"name": "DataWrite.3B0300", 
+	"deny_sds": [], 
+	"minbytes": 2, 
+	"sentbytes": "3B0300", 
+	"replybytes": "7B03"
+	}, 
+	{
+	"name": "(f_FSTRFAILC0) DataRead_$22$1302", 
+	"replybytes": "62130200", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$13$02_(f_FSTRFAILC0) STR_SENSOR_FAIL_FLAG": {
+		"firstbyte": 4, 
+		"endian": "Little"
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "221302"
+	}, 
+	{
+	"name": "(v_IPS_IN) DataRead_$22$1103", 
+	"replybytes": "62110300", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$11$03_(v_IPS_IN) ETS_SOLENOID": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "221103"
+	}, 
+	{
+	"name": "(v_APOFSPC) DataRead_$22$1102", 
+	"replybytes": "62110200", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$11$02_(v_APOFSPC) THRTL_POS_SEN": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "221102"
+	}, 
+	{
+	"name": "(v_NEXTGPC) DataRead_$22$110F", 
+	"replybytes": "62110F00", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$11$0F_(v_NEXTGPC) NEXT_GRPOS": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "22110F"
+	}, 
+	{
+	"name": "Supported Lid for RDBCID(1300)", 
+	"replybytes": "62130000000000", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"LID$14": {
+		"bitoffset": 3, 
+		"firstbyte": 6
+		}, 
+		"LID$15": {
+		"bitoffset": 4, 
+		"firstbyte": 6
+		}, 
+		"LID$16": {
+		"bitoffset": 5, 
+		"firstbyte": 6
+		}, 
+		"LID$17": {
+		"bitoffset": 6, 
+		"firstbyte": 6
+		}, 
+		"LID$10": {
+		"bitoffset": 7, 
+		"firstbyte": 5
+		}, 
+		"LID$11": {
+		"firstbyte": 6
+		}, 
+		"LID$12": {
+		"bitoffset": 1, 
+		"firstbyte": 6
+		}, 
+		"LID$13": {
+		"bitoffset": 2, 
+		"firstbyte": 6
+		}, 
+		"LID$18": {
+		"bitoffset": 7, 
+		"firstbyte": 6
+		}, 
+		"LID$19": {
+		"firstbyte": 7
+		}, 
+		"LID$0C": {
+		"bitoffset": 3, 
+		"firstbyte": 5
+		}, 
+		"LID$0B": {
+		"bitoffset": 2, 
+		"firstbyte": 5
+		}, 
+		"LID$0A": {
+		"bitoffset": 1, 
+		"firstbyte": 5
+		}, 
+		"LID$0F": {
+		"bitoffset": 6, 
+		"firstbyte": 5
+		}, 
+		"LID$0E": {
+		"bitoffset": 5, 
+		"firstbyte": 5
+		}, 
+		"LID$0D": {
+		"bitoffset": 4, 
+		"firstbyte": 5
+		}, 
+		"LID$03": {
+		"bitoffset": 2, 
+		"firstbyte": 4
+		}, 
+		"LID$02": {
+		"bitoffset": 1, 
+		"firstbyte": 4
+		}, 
+		"LID$01": {
+		"firstbyte": 4
+		}, 
+		"LID$07": {
+		"bitoffset": 6, 
+		"firstbyte": 4
+		}, 
+		"LID$06": {
+		"bitoffset": 5, 
+		"firstbyte": 4
+		}, 
+		"LID$05": {
+		"bitoffset": 4, 
+		"firstbyte": 4
+		}, 
+		"LID$04": {
+		"bitoffset": 3, 
+		"firstbyte": 4
+		}, 
+		"LID$09": {
+		"firstbyte": 5
+		}, 
+		"LID$08": {
+		"bitoffset": 7, 
+		"firstbyte": 4
+		}, 
+		"LID$1D": {
+		"bitoffset": 4, 
+		"firstbyte": 7
+		}, 
+		"LID$1E": {
+		"bitoffset": 5, 
+		"firstbyte": 7
+		}, 
+		"LID$1F": {
+		"bitoffset": 6, 
+		"firstbyte": 7
+		}, 
+		"LID$1A": {
+		"bitoffset": 1, 
+		"firstbyte": 7
+		}, 
+		"LID$1B": {
+		"bitoffset": 2, 
+		"firstbyte": 7
+		}, 
+		"LID$1C": {
+		"bitoffset": 3, 
+		"firstbyte": 7
+		}, 
+		"LID$20": {
+		"bitoffset": 7, 
+		"firstbyte": 7
+		}
+	}, 
+	"minbytes": 7, 
+	"sentbytes": "221300"
+	}, 
+	{
+	"name": "(v_TETS) DataRead_$22$1205", 
+	"replybytes": "6212050000", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$12$05_(v_TETS) ETS_TORQUE": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 5, 
+	"sentbytes": "221205"
+	}, 
+	{
+	"name": "StartDiagnosticSession.DefaultSession", 
+	"replybytes": "5081", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"minbytes": 2, 
+	"sentbytes": "1081"
+	}, 
+	{
+	"name": "(v_yawrate) DataRead_$22$120C", 
+	"replybytes": "62120C0000", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$12$0C_(v_yawrate) YAW_RATE": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 5, 
+	"sentbytes": "22120C"
+	}, 
+	{
+	"name": "(v_RQ_TRQC) DataRead_$22$1108", 
+	"replybytes": "62110800", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$11$08_(v_RQ_TRQC) REQ_COM_TORQ": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "221108"
+	}, 
+	{
+	"name": "ReadDTCInformation.ReportExtendedDataByDTC", 
+	"replybytes": "59060000000080000000", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"DTCExtendedData.Mileage": {
+		"ref": true, 
+		"firstbyte": 8
+		}
+	}, 
+	"sendbyte_dataitems": {
+		"DTC4WDIdentifier": {
+		"firstbyte": 3
+		}
+	}, 
+	"minbytes": 10, 
+	"sentbytes": "190600000080"
+	}, 
+	{
+	"name": "(f_FAS2) DataRead_$22$130B", 
+	"replybytes": "62130B00", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$13$0B_(f_FAS2) TK_MM_4WD_ABS_OPE_FLAG": {
+		"firstbyte": 4, 
+		"endian": "Little"
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "22130B"
+	}, 
+	{
+	"name": "(f_LOCK_SW) DataRead_$22$1318", 
+	"replybytes": "62131800", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$13$18_(f_LOCK_SW) SW_inout-LOCK": {
+		"firstbyte": 4, 
+		"endian": "Little"
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "221318"
+	}, 
+	{
+	"name": "(v_YGB00) DataRead_$22$110B", 
+	"replybytes": "62110B00", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$11$0B_(v_YGB00) SIDE_G": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "22110B"
+	}, 
+	{
+	"name": "(v_V_APOC) DataRead_$22$1106", 
+	"replybytes": "62110600", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$11$06_(v_V_APOC) VACCEL_POS_SIG": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "221106"
+	}, 
+	{
+	"name": "CAN DIAG SUPPORT MNTR.can", 
+	"replybytes": "61820000FFFF000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"ARS.r.CRRNT.vcan": {
+		"firstbyte": 28
+		}, 
+		"I-KEY.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 38
+		}, 
+		"ONDULEUR.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 22
+		}, 
+		"ICC SENSOR.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 37
+		}, 
+		"DISPLAY.n.CRRNT.vcan": {
+		"firstbyte": 39
+		}, 
+		"ECM.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 7
+		}, 
+		"ICC.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 13
+		}, 
+		"BCM/SEC.n.CRRNT.vcan": {
+		"firstbyte": 10
+		}, 
+		"ICC SENSOR.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 37
+		}, 
+		"YAW.n.CRRNT.vcan": {
+		"firstbyte": 34
+		}, 
+		"PSB.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 42
+		}, 
+		"EPS.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 24
+		}, 
+		"LPG.r.CRRNT.vcan": {
+		"firstbyte": 18
+		}, 
+		"ISG.r.CRRNT.vcan": {
+		"firstbyte": 23
+		}, 
+		"BCM/SEC.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 10
+		}, 
+		"METER/M&A.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 9
+		}, 
+		"AB-SRS.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 11
+		}, 
+		"BCM/SEC.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 10
+		}, 
+		"4WD.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 44
+		}, 
+		"ICC.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 13
+		}, 
+		"DPC.n.CRRNT.vcan": {
+		"firstbyte": 43
+		}, 
+		"DSU.r.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 33
+		}, 
+		"4WD.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 44
+		}, 
+		"e4WD.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 36
+		}, 
+		"LPG.r.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 18
+		}, 
+		"ICC.n.CRRNT.vcan": {
+		"firstbyte": 13
+		}, 
+		"EPS.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 24
+		}, 
+		"AT/CVT DISP.r.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 32
+		}, 
+		"SYP.r.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 17
+		}, 
+		"ITM.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 16
+		}, 
+		"TIRE-P.n.CRRNT.vcan": {
+		"firstbyte": 27
+		}, 
+		"ICC SENSOR.n.CRRNT.vcan": {
+		"firstbyte": 37
+		}, 
+		"EPS.n.CRRNT.vcan": {
+		"firstbyte": 24
+		}, 
+		"HVAC.n.CRRNT.vcan": {
+		"firstbyte": 14
+		}, 
+		"TIRE-P DISP.r.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 30
+		}, 
+		"ARS.r.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 28
+		}, 
+		"VDC/TCS/ABS.n.CRRNT.vcan": {
+		"firstbyte": 8
+		}, 
+		"AT/CVT.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 15
+		}, 
+		"METER/M&A.n.CRRNT.vcan": {
+		"firstbyte": 9
+		}, 
+		"ONDULEUR.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 22
+		}, 
+		"TCU.r.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 31
+		}, 
+		"MUX messaging reference.-.-.vcan": {
+		"firstbyte": 3
+		}, 
+		"ISG.r.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 23
+		}, 
+		"YAW.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 34
+		}, 
+		"SCU.r.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 25
+		}, 
+		"IPDM E/R.n.CRRNT.vcan": {
+		"firstbyte": 26
+		}, 
+		"HCM.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 54
+		}, 
+		"LPG.r.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 18
+		}, 
+		"SYP.r.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 17
+		}, 
+		"e4WD.n.CRRNT.vcan": {
+		"firstbyte": 36
+		}, 
+		"HCM.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 54
+		}, 
+		"SCU.r.CRRNT.vcan": {
+		"firstbyte": 25
+		}, 
+		"ARS.r.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 28
+		}, 
+		"ITM.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 16
+		}, 
+		"IPDM E/R.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 26
+		}, 
+		"ETC.r.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 29
+		}, 
+		"HCM.n.CRRNT.vcan": {
+		"firstbyte": 54
+		}, 
+		"HLS.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 35
+		}, 
+		"STRG.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 20
+		}, 
+		"DISPLAY.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 39
+		}, 
+		"HLS.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 35
+		}, 
+		"ENG-ST.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 40
+		}, 
+		"ASD.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 41
+		}, 
+		"HVAC.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 14
+		}, 
+		"ASD.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 41
+		}, 
+		"APB.r.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 19
+		}, 
+		"ETC.r.CRRNT.vcan": {
+		"firstbyte": 29
+		}, 
+		"I-KEY.n.CRRNT.vcan": {
+		"firstbyte": 38
+		}, 
+		"HVAC.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 14
+		}, 
+		"APB.r.CRRNT.vcan": {
+		"firstbyte": 19
+		}, 
+		"VDC/TCS/ABS.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 8
+		}, 
+		"STRG.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 20
+		}, 
+		"APB.r.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 19
+		}, 
+		"PSB.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 42
+		}, 
+		"AT/CVT.n.CRRNT.vcan": {
+		"firstbyte": 15
+		}, 
+		"AT/CVT DISP.r.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 32
+		}, 
+		"TIRE-P.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 27
+		}, 
+		"DSU.r.CRRNT.vcan": {
+		"firstbyte": 33
+		}, 
+		"TIRE-P DISP.r.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 30
+		}, 
+		"PSB.n.CRRNT.vcan": {
+		"firstbyte": 42
+		}, 
+		"IPDM E/R.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 26
+		}, 
+		"ETC.r.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 29
+		}, 
+		"ESCL.r.CRRNT.vcan": {
+		"firstbyte": 12
+		}, 
+		"ONDULEUR.n.CRRNT.vcan": {
+		"firstbyte": 22
+		}, 
+		"HLS.n.CRRNT.vcan": {
+		"firstbyte": 35
+		}, 
+		"AT/CVT.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 15
+		}, 
+		"SYP.r.CRRNT.vcan": {
+		"firstbyte": 17
+		}, 
+		"DPC.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 43
+		}, 
+		"ISG.r.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 23
+		}, 
+		"ITM.n.CRRNT.vcan": {
+		"firstbyte": 16
+		}, 
+		"VDC/TCS/ABS.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 8
+		}, 
+		"TIRE-P.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 27
+		}, 
+		"TIRE-P DISP.r.CRRNT.vcan": {
+		"firstbyte": 30
+		}, 
+		"ECM.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 7
+		}, 
+		"STRG.n.CRRNT.vcan": {
+		"firstbyte": 20
+		}, 
+		"ENG-ST.n.CRRNT.vcan": {
+		"firstbyte": 40
+		}, 
+		"e4WD.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 36
+		}, 
+		"DISPLAY.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 39
+		}, 
+		"ENG-ST.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 40
+		}, 
+		"DPC.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 43
+		}, 
+		"AB-SRS.n.CRRNT.vcan": {
+		"firstbyte": 11
+		}, 
+		"DSU.r.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 33
+		}, 
+		"ECM.n.CRRNT.vcan": {
+		"firstbyte": 7
+		}, 
+		"ESCL.r.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 12
+		}, 
+		"4WD.n.CRRNT.vcan": {
+		"firstbyte": 44
+		}, 
+		"AB-SRS.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 11
+		}, 
+		"ASD.n.CRRNT.vcan": {
+		"firstbyte": 41
+		}, 
+		"METER/M&A.n.PAST.vcan": {
+		"bitoffset": 2, 
+		"firstbyte": 9
+		}, 
+		"AT/CVT DISP.r.CRRNT.vcan": {
+		"firstbyte": 32
+		}, 
+		"TCU.r.CRRNT.vcan": {
+		"firstbyte": 31
+		}, 
+		"TCU.r.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 31
+		}, 
+		"YAW.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 34
+		}, 
+		"SCU.r.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 25
+		}, 
+		"ESCL.r.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 12
+		}, 
+		"I-KEY.n.PRSNT.vcan": {
+		"bitoffset": 1, 
+		"firstbyte": 38
+		}
+	}, 
+	"minbytes": 54, 
+	"sentbytes": "2182"
+	}, 
+	{
+	"name": "(v_TCLU) DataRead_$22$1114", 
+	"replybytes": "62111400", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$11$14_(v_Tclu/100) CPLG_TEMP": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "221114"
+	}, 
+	{
+	"name": "(v_CURGPC) DataRead_$22$1110", 
+	"replybytes": "62111000", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$11$10_(v_CURGPC) )CURRENT_GRPOS": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "221110"
+	}, 
+	{
+	"name": "(v_WRRR) DataRead_$22$1203", 
+	"replybytes": "6212030000", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$12$03_(v_WRRR) RR_RH_SENSOR": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 5, 
+	"sentbytes": "221203"
+	}, 
+	{
+	"name": "(f_FPKBC) DataRead_$22$130A", 
+	"replybytes": "62130A00", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$13$0A_(f_PKBC) PKB": {
+		"firstbyte": 4, 
+		"endian": "Little"
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "22130A"
+	}, 
+	{
+	"name": "(v_CVTTMPDEG) DataRead_$22$110E", 
+	"replybytes": "62110E00", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$11$0E_(v_CVTTMPDEG) TEMP": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "22110E"
+	}, 
+	{
+	"name": "(v_WRRL) DataRead_$22$1204", 
+	"replybytes": "6212040000", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$12$04_(v_WRFL) RR_LH_SENSOR": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 5, 
+	"sentbytes": "221204"
+	}, 
+	{
+	"name": "(f_ETCOKC) DataRead_$22$130F", 
+	"replybytes": "62130F00", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$13$0F_(f_ETCOKC) ETC_CONT_FLAG": {
+		"firstbyte": 4, 
+		"endian": "Little"
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "22130F"
+	}, 
+	{
+	"name": "Supported Lid for RDBLID(20)", 
+	"replybytes": "612000000000", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"LID$14": {
+		"bitoffset": 3, 
+		"firstbyte": 5
+		}, 
+		"LID$15": {
+		"bitoffset": 4, 
+		"firstbyte": 5
+		}, 
+		"LID$16": {
+		"bitoffset": 5, 
+		"firstbyte": 5
+		}, 
+		"LID$17": {
+		"bitoffset": 6, 
+		"firstbyte": 5
+		}, 
+		"LID$10": {
+		"bitoffset": 7, 
+		"firstbyte": 4
+		}, 
+		"LID$11": {
+		"firstbyte": 5
+		}, 
+		"LID$12": {
+		"bitoffset": 1, 
+		"firstbyte": 5
+		}, 
+		"LID$13": {
+		"bitoffset": 2, 
+		"firstbyte": 5
+		}, 
+		"LID$18": {
+		"bitoffset": 7, 
+		"firstbyte": 5
+		}, 
+		"LID$19": {
+		"firstbyte": 6
+		}, 
+		"LID$0C": {
+		"bitoffset": 3, 
+		"firstbyte": 4
+		}, 
+		"LID$0B": {
+		"bitoffset": 2, 
+		"firstbyte": 4
+		}, 
+		"LID$0A": {
+		"bitoffset": 1, 
+		"firstbyte": 4
+		}, 
+		"LID$0F": {
+		"bitoffset": 6, 
+		"firstbyte": 4
+		}, 
+		"LID$0E": {
+		"bitoffset": 5, 
+		"firstbyte": 4
+		}, 
+		"LID$0D": {
+		"bitoffset": 4, 
+		"firstbyte": 4
+		}, 
+		"LID$03": {
+		"bitoffset": 2, 
+		"firstbyte": 3
+		}, 
+		"LID$02": {
+		"bitoffset": 1, 
+		"firstbyte": 3
+		}, 
+		"LID$01": {
+		"firstbyte": 3
+		}, 
+		"LID$07": {
+		"bitoffset": 6, 
+		"firstbyte": 3
+		}, 
+		"LID$06": {
+		"bitoffset": 5, 
+		"firstbyte": 3
+		}, 
+		"LID$05": {
+		"bitoffset": 4, 
+		"firstbyte": 3
+		}, 
+		"LID$04": {
+		"bitoffset": 3, 
+		"firstbyte": 3
+		}, 
+		"LID$09": {
+		"firstbyte": 4
+		}, 
+		"LID$08": {
+		"bitoffset": 7, 
+		"firstbyte": 3
+		}, 
+		"LID$1D": {
+		"bitoffset": 4, 
+		"firstbyte": 6
+		}, 
+		"LID$1E": {
+		"bitoffset": 5, 
+		"firstbyte": 6
+		}, 
+		"LID$1F": {
+		"bitoffset": 6, 
+		"firstbyte": 6
+		}, 
+		"LID$1A": {
+		"bitoffset": 1, 
+		"firstbyte": 6
+		}, 
+		"LID$1B": {
+		"bitoffset": 2, 
+		"firstbyte": 6
+		}, 
+		"LID$1C": {
+		"bitoffset": 3, 
+		"firstbyte": 6
+		}, 
+		"LID$20": {
+		"bitoffset": 7, 
+		"firstbyte": 6
+		}
+	}, 
+	"minbytes": 6, 
+	"sentbytes": "2120"
+	}, 
+	{
+	"name": "DataRead.TraceAbility", 
+	"replybytes": "61840000000000000000000000000000202000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"TraceAbility_Part Code": {
+		"firstbyte": 3
+		}, 
+		"TraceAbility_Production Line": {
+		"firstbyte": 7
+		}, 
+		"TraceAbility_Production Month": {
+		"firstbyte": 10
+		}, 
+		"TraceAbility_Production Year": {
+		"firstbyte": 8
+		}, 
+		"TraceAbility_Serial Number": {
+		"firstbyte": 11
+		}, 
+		"TraceAbility_Factory Code": {
+		"firstbyte": 6
+		}, 
+		"TraceAbility_Supplier Code": {
+		"firstbyte": 19
+		}, 
+		"TraceAbility_Reserve": {
+		"firstbyte": 17
+		}
+	}, 
+	"minbytes": 22, 
+	"sentbytes": "2184"
+	}, 
+	{
+	"name": "(v_TDV) DataRead_$22$1206", 
+	"replybytes": "6212060000", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$12$06_(v_TDV) REV_TORQUE": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 5, 
+	"sentbytes": "221206"
+	}, 
+	{
+	"name": "(v_XGB00) DataRead_$22$110A", 
+	"replybytes": "62110A00", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$11$0A_(v_XGB00) ACCEL_G": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "22110A"
+	}, 
+	{
+	"name": "(f_ETQDNR_ETS) DataRead_$22$1312", 
+	"replybytes": "62131200", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$13$12_(f_ETQDNR_ETS) TRQ_DOWN_REQ": {
+		"firstbyte": 4, 
+		"endian": "Little"
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "221312"
+	}, 
+	{
+	"name": "(f_AUTO_SW) DataRead_$22$1317", 
+	"replybytes": "62131700", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$13$17_(f_AUTO_SW) SW_input-AUTO": {
+		"firstbyte": 4, 
+		"endian": "Little"
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "221317"
+	}, 
+	{
+	"name": "OutputControl.Status", 
+	"replybytes": "700100", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"OutputControlStatus": {
+		"firstbyte": 3
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "300101"
+	}, 
+	{
+	"name": "(f_FTEMP2) DataRead_$22$1315", 
+	"replybytes": "62131500", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$13$15_(f_TEMP2) CLUTCH_TEMP_FLAG2": {
+		"firstbyte": 4, 
+		"endian": "Little"
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "221315"
+	}, 
+	{
+	"name": "Supported Lid for RDBCID(1200)", 
+	"replybytes": "62120000000000", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"LID$14": {
+		"bitoffset": 3, 
+		"firstbyte": 6
+		}, 
+		"LID$15": {
+		"bitoffset": 4, 
+		"firstbyte": 6
+		}, 
+		"LID$16": {
+		"bitoffset": 5, 
+		"firstbyte": 6
+		}, 
+		"LID$17": {
+		"bitoffset": 6, 
+		"firstbyte": 6
+		}, 
+		"LID$10": {
+		"bitoffset": 7, 
+		"firstbyte": 5
+		}, 
+		"LID$11": {
+		"firstbyte": 6
+		}, 
+		"LID$12": {
+		"bitoffset": 1, 
+		"firstbyte": 6
+		}, 
+		"LID$13": {
+		"bitoffset": 2, 
+		"firstbyte": 6
+		}, 
+		"LID$18": {
+		"bitoffset": 7, 
+		"firstbyte": 6
+		}, 
+		"LID$19": {
+		"firstbyte": 7
+		}, 
+		"LID$0C": {
+		"bitoffset": 3, 
+		"firstbyte": 5
+		}, 
+		"LID$0B": {
+		"bitoffset": 2, 
+		"firstbyte": 5
+		}, 
+		"LID$0A": {
+		"bitoffset": 1, 
+		"firstbyte": 5
+		}, 
+		"LID$0F": {
+		"bitoffset": 6, 
+		"firstbyte": 5
+		}, 
+		"LID$0E": {
+		"bitoffset": 5, 
+		"firstbyte": 5
+		}, 
+		"LID$0D": {
+		"bitoffset": 4, 
+		"firstbyte": 5
+		}, 
+		"LID$03": {
+		"bitoffset": 2, 
+		"firstbyte": 4
+		}, 
+		"LID$02": {
+		"bitoffset": 1, 
+		"firstbyte": 4
+		}, 
+		"LID$01": {
+		"firstbyte": 4
+		}, 
+		"LID$07": {
+		"bitoffset": 6, 
+		"firstbyte": 4
+		}, 
+		"LID$06": {
+		"bitoffset": 5, 
+		"firstbyte": 4
+		}, 
+		"LID$05": {
+		"bitoffset": 4, 
+		"firstbyte": 4
+		}, 
+		"LID$04": {
+		"bitoffset": 3, 
+		"firstbyte": 4
+		}, 
+		"LID$09": {
+		"firstbyte": 5
+		}, 
+		"LID$08": {
+		"bitoffset": 7, 
+		"firstbyte": 4
+		}, 
+		"LID$1D": {
+		"bitoffset": 4, 
+		"firstbyte": 7
+		}, 
+		"LID$1E": {
+		"bitoffset": 5, 
+		"firstbyte": 7
+		}, 
+		"LID$1F": {
+		"bitoffset": 6, 
+		"firstbyte": 7
+		}, 
+		"LID$1A": {
+		"bitoffset": 1, 
+		"firstbyte": 7
+		}, 
+		"LID$1B": {
+		"bitoffset": 2, 
+		"firstbyte": 7
+		}, 
+		"LID$1C": {
+		"bitoffset": 3, 
+		"firstbyte": 7
+		}, 
+		"LID$20": {
+		"bitoffset": 7, 
+		"firstbyte": 7
+		}
+	}, 
+	"minbytes": 7, 
+	"sentbytes": "221200"
+	}, 
+	{
+	"name": "(f_TCSACT) DataRead_$22$1311", 
+	"replybytes": "62131100", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$13$11_(f_TCSACT)": {
+		"firstbyte": 4, 
+		"endian": "Little"
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "221311"
+	}, 
+	{
+	"name": "(v_STRANGC0) DataRead_$22$1209", 
+	"replybytes": "6212090000", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$12$09_(v_STRANGC0) STEERING_SENSOR": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 5, 
+	"sentbytes": "221209"
+	}, 
+	{
+	"name": "(f_ETSCANOKC) DataRead_$22$1310", 
+	"replybytes": "62131000", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$13$10_(f_ETSCANOKC) ETS_CONT_FLAG": {
+		"firstbyte": 4, 
+		"endian": "Little"
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "221310"
+	}, 
+	{
+	"name": "(f_VDCACTC) DataRead_$22$130E", 
+	"replybytes": "62130E00", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$13$0E_(f_VDCACTC) VDC_OPE_FLAG": {
+		"firstbyte": 4, 
+		"endian": "Little"
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "22130E"
+	}, 
+	{
+	"name": "DataRead.RDBLID$2C", 
+	"replybytes": "612C00000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"v_FailSave": {
+		"firstbyte": 4
+		}, 
+		"v_DOC_CurFail1": {
+		"firstbyte": 5
+		}, 
+		"v_DOC_CurFail2": {
+		"firstbyte": 6
+		}, 
+		"v_AllFail": {
+		"firstbyte": 3
+		}
+	}, 
+	"minbytes": 6, 
+	"sentbytes": "212C"
+	}, 
+	{
+	"name": "ReadDTCInformation.ReportSnapshot", 
+	"replybytes": "590400000000", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"DTCRecord": {
+		"firstbyte": 3
+		}, 
+		"StatusOfDTC": {
+		"firstbyte": 6
+		}
+	}, 
+	"sendbyte_dataitems": {
+		"DTCMaskRecord": {
+		"firstbyte": 3
+		}
+	}, 
+	"minbytes": 6, 
+	"sentbytes": "1904000000FF"
+	}, 
+	{
+	"name": "(f_FLG_BMRC) DataRead_$22$130D", 
+	"replybytes": "62130D00", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$13$0D_(f_FLG_BMRC) TK_MM_4WD_BRK_OPE_FLAG": {
+		"firstbyte": 4, 
+		"endian": "Little"
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "22130D"
+	}, 
+	{
+	"name": "ReadDTCInformation.ReportSnapshotByDTC", 
+	"replybytes": "5904000000000101010000000000000000000000000000000000000000000000FFFFFFFFFFFFFFFF", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"$22$0100_#29_VEHICLE_WHEEL_SENSOR_RR": {
+		"ref": true, 
+		"firstbyte": 29
+		}, 
+		"$22$0100_#15_IGN_VOLTAGE_MONITOR": {
+		"ref": true, 
+		"firstbyte": 15
+		}, 
+		"DTCFailureType": {
+		"firstbyte": 5
+		}, 
+		"DTCStatus.warningIndicatorRequested": {
+		"firstbyte": 6
+		}, 
+		"$22$0100_#14_b4_HIGH_u_flag": {
+		"bitoffset": 3, 
+		"ref": true, 
+		"firstbyte": 14
+		}, 
+		"$22$0100_#25_VEHICLE_WHEEL_SENSOR_FR": {
+		"ref": true, 
+		"firstbyte": 25
+		}, 
+		"DTCStatus.pendingDTC": {
+		"bitoffset": 5, 
+		"firstbyte": 6
+		}, 
+		"DTCMaskRecord": {
+		"firstbyte": 11
+		}, 
+		"DTCStatus.testNotCompletedSinceLastClear": {
+		"bitoffset": 3, 
+		"firstbyte": 6
+		}, 
+		"$22$0100_#20_REAR_WHEEL_SPEED": {
+		"ref": true, 
+		"firstbyte": 20
+		}, 
+		"$22$0100_#17_4WDSOL_CURRENT": {
+		"ref": true, 
+		"firstbyte": 17
+		}, 
+		"$22$0100_#18_QUASI_VEHICLE_SPEED": {
+		"ref": true, 
+		"firstbyte": 18
+		}, 
+		"$22$0100_#14_b5_TCS_ACTUATION": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 14
+		}, 
+		"$22$0100_#14_b3_BRAKING_HIGH_u_flag": {
+		"bitoffset": 4, 
+		"ref": true, 
+		"firstbyte": 14
+		}, 
+		"DTCStatus.confirmedDTC": {
+		"bitoffset": 4, 
+		"firstbyte": 6
+		}, 
+		"$22$0100_#23_TARGET_TORQUE": {
+		"ref": true, 
+		"firstbyte": 23
+		}, 
+		"$22$0100_#14_b7_ABS_ACTUATION": {
+		"ref": true, 
+		"firstbyte": 14
+		}, 
+		"$22$0100_#31_VEHICLE_WHEEL_SENSOR_RL": {
+		"ref": true, 
+		"firstbyte": 31
+		}, 
+		"DTCStatus.testNotCompletedThisMonitoringCycle": {
+		"bitoffset": 1, 
+		"firstbyte": 6
+		}, 
+		"$22$0100_#21_CURRENT_RANGE_SIGNAL": {
+		"ref": true, 
+		"firstbyte": 21
+		}, 
+		"$22$0100_#16_4WDSOL_TARGET_CURRENT": {
+		"ref": true, 
+		"firstbyte": 16
+		}, 
+		"DTCStatus.testFailedThisMonitoringCycle": {
+		"bitoffset": 6, 
+		"firstbyte": 6
+		}, 
+		"DTCDeviceIdentifier": {
+		"firstbyte": 3
+		}, 
+		"DTCStatus.testFailedSinceLastClear": {
+		"bitoffset": 2, 
+		"firstbyte": 6
+		}, 
+		"$22$0100_#14_b6_VDC_ACTUATION": {
+		"bitoffset": 1, 
+		"ref": true, 
+		"firstbyte": 14
+		}, 
+		"$22$0100_#27_VEHICLE_WHEEL_SENSOR_FL": {
+		"ref": true, 
+		"firstbyte": 27
+		}, 
+		"$22$0100_#22_b7_ETS_MODE": {
+		"ref": true, 
+		"firstbyte": 22
+		}, 
+		"$22$0100_#19_FRONT_WHEEL_SPEED": {
+		"ref": true, 
+		"firstbyte": 19
+		}, 
+		"DTCStatus.testFailed": {
+		"bitoffset": 7, 
+		"firstbyte": 6
+		}
+	}, 
+	"sendbyte_dataitems": {
+		"DTC4WDIdentifier": {
+		"firstbyte": 3
+		}
+	}, 
+	"minbytes": 40, 
+	"sentbytes": "1904000000FF"
+	}, 
+	{
+	"name": "DataRead.All", 
+	"replybytes": "610100000000000000000000000000000000000000000000000000000000000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"#7_CURRENT_TORQ": {
+		"firstbyte": 7
+		}, 
+		"#9_TARGET_TORQUE": {
+		"firstbyte": 9
+		}, 
+		"#48_bit70_CURGPC": {
+		"firstbyte": 48
+		}, 
+		"#5_ETS_SOLENOID": {
+		"firstbyte": 5
+		}, 
+		"#34_bit54_DIS-TIRE_MONI": {
+		"bitoffset": 2, 
+		"firstbyte": 34
+		}, 
+		"#35_bit4_BRK_OPE_FLAG": {
+		"bitoffset": 3, 
+		"firstbyte": 35
+		}, 
+		"#12_FR_RH_SENSOR": {
+		"firstbyte": 12
+		}, 
+		"#35_bit6_ETC_CONT_FLAG": {
+		"bitoffset": 1, 
+		"firstbyte": 35
+		}, 
+		"#28_STR_SENSOR": {
+		"firstbyte": 28
+		}, 
+		"#16_RR_RH_SENSOR": {
+		"firstbyte": 16
+		}, 
+		"#50_TF_OIL_TEMP": {
+		"firstbyte": 50
+		}, 
+		"#35_bit7_ETS_CONT_FLAG": {
+		"firstbyte": 35
+		}, 
+		"#24_TENG": {
+		"firstbyte": 24
+		}, 
+		"#26_LOCKT": {
+		"firstbyte": 26
+		}, 
+		"#36_bit5_FTEMP2": {
+		"bitoffset": 2, 
+		"firstbyte": 36
+		}, 
+		"#46_ATFTEMP": {
+		"firstbyte": 46
+		}, 
+		"#36_bit32_ETSMODE": {
+		"bitoffset": 4, 
+		"firstbyte": 36
+		}, 
+		"#20_ETS_TORQUE": {
+		"firstbyte": 20
+		}, 
+		"#35_bit2_ABS_ACT": {
+		"bitoffset": 5, 
+		"firstbyte": 35
+		}, 
+		"#18_RR_LH_SENSOR": {
+		"firstbyte": 18
+		}, 
+		"#35_bit0_P_BRAKE_SW": {
+		"bitoffset": 7, 
+		"firstbyte": 35
+		}, 
+		"#49_bit2_SNOWMODEC": {
+		"bitoffset": 5, 
+		"firstbyte": 49
+		}, 
+		"#49_bit1_SPTMODEC": {
+		"bitoffset": 6, 
+		"firstbyte": 49
+		}, 
+		"#10_REQ_COM_TORQ": {
+		"firstbyte": 10
+		}, 
+		"#34_bit10_4WD_MODE_SW": {
+		"bitoffset": 6, 
+		"firstbyte": 34
+		}, 
+		"#14_FR_LH_SENSOR": {
+		"firstbyte": 14
+		}, 
+		"#35_bit3_ENG_OPE_FLAG": {
+		"bitoffset": 4, 
+		"firstbyte": 35
+		}, 
+		"#8_VACCEL_POS_SIG": {
+		"firstbyte": 8
+		}, 
+		"#38_STRANGC0": {
+		"firstbyte": 38
+		}, 
+		"#40_XGB00": {
+		"firstbyte": 40
+		}, 
+		"#36_bit4_FTEMP": {
+		"bitoffset": 3, 
+		"firstbyte": 36
+		}, 
+		"#47_bit70_NEXTGPC": {
+		"firstbyte": 47
+		}, 
+		"#49_bit0_MMODEC": {
+		"bitoffset": 7, 
+		"firstbyte": 49
+		}, 
+		"#36_bit1_TRQ_DOWN_REQ": {
+		"bitoffset": 6, 
+		"firstbyte": 36
+		}, 
+		"#34_bit6_4WD_MODE_SW": {
+		"bitoffset": 1, 
+		"firstbyte": 34
+		}, 
+		"#11_ETS_SOLENOID": {
+		"firstbyte": 11
+		}, 
+		"#3_BATTERY_VOLT": {
+		"firstbyte": 3
+		}, 
+		"#33_bit3_4WD_WARN_LAMP": {
+		"bitoffset": 4, 
+		"firstbyte": 33
+		}, 
+		"#41_YGB00": {
+		"firstbyte": 41
+		}, 
+		"#35_bit5_VDC_OPE_FLAG": {
+		"bitoffset": 2, 
+		"firstbyte": 35
+		}, 
+		"#6_ REQUEST_TORQUE": {
+		"firstbyte": 6
+		}, 
+		"#34_bit32_4WD_MODE_MON": {
+		"bitoffset": 4, 
+		"firstbyte": 34
+		}, 
+		"#37_bit1_STR_SENSOR_FAIL_FLAG": {
+		"bitoffset": 6, 
+		"firstbyte": 37
+		}, 
+		"#30_TORQ_LIMIT": {
+		"firstbyte": 30
+		}, 
+		"#32_bit4_STOP_LAMP_SW": {
+		"bitoffset": 3, 
+		"firstbyte": 32
+		}, 
+		"#22_TDV": {
+		"firstbyte": 22
+		}, 
+		"#36_bit0_4WD_DRIVE_FLAG": {
+		"bitoffset": 7, 
+		"firstbyte": 36
+		}, 
+		"#32_bit5_ENG_SPEED_SIG": {
+		"bitoffset": 2, 
+		"firstbyte": 32
+		}, 
+		"#33_bit2_ETS_ACTUATOR": {
+		"bitoffset": 5, 
+		"firstbyte": 33
+		}, 
+		"#4_THRTL_POS_SEN": {
+		"firstbyte": 4
+		}, 
+		"#52_ENG_WATER_TEMP": {
+		"firstbyte": 52
+		}, 
+		"#42_yawrate": {
+		"firstbyte": 42
+		}, 
+		"#53_CPLG_OIL_TEMP": {
+		"firstbyte": 53
+		}, 
+		"#49_bit43_ETSMODD2": {
+		"bitoffset": 3, 
+		"firstbyte": 49
+		}, 
+		"#44_yawref1": {
+		"firstbyte": 44
+		}, 
+		"#51_CVT_OIL_TEMP": {
+		"firstbyte": 51
+		}, 
+		"#37_bit0_VDC_FAIL_FLAG": {
+		"bitoffset": 7, 
+		"firstbyte": 37
+		}
+	}, 
+	"minbytes": 53, 
+	"sentbytes": "2101"
+	}, 
+	{
+	"name": "(v_TRLIM) DataRead_$22$120A", 
+	"replybytes": "62120A0000", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$12$0A_(v_TRLIM) TRQ LIMITTER": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 5, 
+	"sentbytes": "22120A"
+	}, 
+	{
+	"name": "(BATT) DataRead_$22$1101", 
+	"replybytes": "62110100", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$11$01_BATTERY_VOLT": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "221101"
+	}, 
+	{
+	"name": "(f_CANMASK454) DataRead_$22$1301", 
+	"replybytes": "62130100", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$13$01_(f_CANMASK454)": {
+		"firstbyte": 4, 
+		"endian": "Little"
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "221301"
+	}, 
+	{
+	"name": "DataRead.FFD$0100", 
+	"replybytes": "620100000000000000000000000000000000000000000000000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"$22$0100_#23_TARGET_TORQUE": {
+		"firstbyte": 16
+		}, 
+		"$22$0100_#14_b3_BRAKING_HIGH_u_flag": {
+		"bitoffset": 4, 
+		"firstbyte": 7
+		}, 
+		"$22$0100_#29_VEHICLE_WHEEL_SENSOR_RR": {
+		"firstbyte": 22
+		}, 
+		"$22$0100_#14_b6_VDC_ACTUATION": {
+		"bitoffset": 1, 
+		"firstbyte": 7
+		}, 
+		"$22$0100_#14_b7_ABS_ACTUATION": {
+		"firstbyte": 7
+		}, 
+		"$22$0100_#31_VEHICLE_WHEEL_SENSOR_RL": {
+		"firstbyte": 24
+		}, 
+		"$22$0100_#17_4WDSOL_CURRENT": {
+		"firstbyte": 10
+		}, 
+		"$22$0100_#15_IGN_VOLTAGE_MONITOR": {
+		"firstbyte": 8
+		}, 
+		"$22$0100_#27_VEHICLE_WHEEL_SENSOR_FL": {
+		"firstbyte": 20
+		}, 
+		"$22$0100_#22_b7_ETS_MODE": {
+		"firstbyte": 15
+		}, 
+		"$22$0100_#19_FRONT_WHEEL_SPEED": {
+		"firstbyte": 12
+		}, 
+		"$22$0100_#21_CURRENT_RANGE_SIGNAL": {
+		"firstbyte": 14
+		}, 
+		"$22$0100_#18_QUASI_VEHICLE_SPEED": {
+		"firstbyte": 11
+		}, 
+		"$22$0100_#14_b4_HIGH_u_flag": {
+		"bitoffset": 3, 
+		"firstbyte": 7
+		}, 
+		"$22$0100_#14_b5_TCS_ACTUATION": {
+		"bitoffset": 2, 
+		"firstbyte": 7
+		}, 
+		"$22$0100_#16_4WDSOL_TARGET_CURRENT": {
+		"firstbyte": 9
+		}, 
+		"$22$0100_#25_VEHICLE_WHEEL_SENSOR_FR": {
+		"firstbyte": 18
+		}, 
+		"$22$0100_#20_REAR_WHEEL_SPEED": {
+		"firstbyte": 13
+		}
+	}, 
+	"minbytes": 33, 
+	"sentbytes": "220100"
+	}, 
+	{
+	"name": "OutputControl.Stop", 
+	"replybytes": "700111", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"OutputControlStatus": {
+		"firstbyte": 3
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "300111"
+	}, 
+	{
+	"name": "TesterPresent.WithResponse", 
+	"replybytes": "7E", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"minbytes": 1, 
+	"sentbytes": "3E01"
+	}, 
+	{
+	"name": "(v_FIKEI40) DataRead_$22$1309", 
+	"replybytes": "62130900", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$13$09_(v_FIKEI40) DIS-TIRE_MON": {
+		"firstbyte": 4, 
+		"endian": "Little"
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "221309"
+	}, 
+	{
+	"name": "Supported Lid for RDBCID(1100)", 
+	"replybytes": "62110000000000", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"LID$14": {
+		"bitoffset": 3, 
+		"ref": true, 
+		"firstbyte": 6
+		}, 
+		"LID$15": {
+		"bitoffset": 4, 
+		"ref": true, 
+		"firstbyte": 6
+		}, 
+		"LID$16": {
+		"bitoffset": 5, 
+		"ref": true, 
+		"firstbyte": 6
+		}, 
+		"LID$17": {
+		"bitoffset": 6, 
+		"ref": true, 
+		"firstbyte": 6
+		}, 
+		"LID$10": {
+		"bitoffset": 7, 
+		"ref": true, 
+		"firstbyte": 5
+		}, 
+		"LID$11": {
+		"ref": true, 
+		"firstbyte": 6
+		}, 
+		"LID$12": {
+		"bitoffset": 1, 
+		"ref": true, 
+		"firstbyte": 6
+		}, 
+		"LID$13": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 6
+		}, 
+		"LID$18": {
+		"bitoffset": 7, 
+		"ref": true, 
+		"firstbyte": 6
+		}, 
+		"LID$19": {
+		"ref": true, 
+		"firstbyte": 7
+		}, 
+		"LID$0C": {
+		"bitoffset": 3, 
+		"ref": true, 
+		"firstbyte": 5
+		}, 
+		"LID$0B": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 5
+		}, 
+		"LID$0A": {
+		"bitoffset": 1, 
+		"ref": true, 
+		"firstbyte": 5
+		}, 
+		"LID$0F": {
+		"bitoffset": 6, 
+		"ref": true, 
+		"firstbyte": 5
+		}, 
+		"LID$0E": {
+		"bitoffset": 5, 
+		"ref": true, 
+		"firstbyte": 5
+		}, 
+		"LID$0D": {
+		"bitoffset": 4, 
+		"ref": true, 
+		"firstbyte": 5
+		}, 
+		"LID$03": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 4
+		}, 
+		"LID$02": {
+		"bitoffset": 1, 
+		"ref": true, 
+		"firstbyte": 4
+		}, 
+		"LID$01": {
+		"ref": true, 
+		"firstbyte": 4
+		}, 
+		"LID$07": {
+		"bitoffset": 6, 
+		"ref": true, 
+		"firstbyte": 4
+		}, 
+		"LID$06": {
+		"bitoffset": 5, 
+		"ref": true, 
+		"firstbyte": 4
+		}, 
+		"LID$05": {
+		"bitoffset": 4, 
+		"ref": true, 
+		"firstbyte": 4
+		}, 
+		"LID$04": {
+		"bitoffset": 3, 
+		"ref": true, 
+		"firstbyte": 4
+		}, 
+		"LID$09": {
+		"ref": true, 
+		"firstbyte": 5
+		}, 
+		"LID$08": {
+		"bitoffset": 7, 
+		"ref": true, 
+		"firstbyte": 4
+		}, 
+		"LID$1D": {
+		"bitoffset": 4, 
+		"ref": true, 
+		"firstbyte": 7
+		}, 
+		"LID$1E": {
+		"bitoffset": 5, 
+		"ref": true, 
+		"firstbyte": 7
+		}, 
+		"LID$1F": {
+		"bitoffset": 6, 
+		"ref": true, 
+		"firstbyte": 7
+		}, 
+		"LID$1A": {
+		"bitoffset": 1, 
+		"ref": true, 
+		"firstbyte": 7
+		}, 
+		"LID$1B": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 7
+		}, 
+		"LID$1C": {
+		"bitoffset": 3, 
+		"ref": true, 
+		"firstbyte": 7
+		}, 
+		"LID$20": {
+		"bitoffset": 7, 
+		"ref": true, 
+		"firstbyte": 7
+		}
+	}, 
+	"minbytes": 7, 
+	"sentbytes": "221100"
+	}, 
+	{
+	"name": "(v_TC) DataRead_$22$120B", 
+	"replybytes": "62120B0000", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$12$0B_(v_TC)": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 5, 
+	"sentbytes": "22120B"
+	}, 
+	{
+	"name": "OutputControl", 
+	"replybytes": "700000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"OutputControlStatus": {
+		"firstbyte": 3
+		}
+	}, 
+	"sendbyte_dataitems": {
+		"OutputControlCommand": {
+		"firstbyte": 3
+		}, 
+		"OutputPermanentControlList": {
+		"firstbyte": 2
+		}, 
+		"ACTR_SOL_DRIVE.param": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "30012000"
+	}, 
+	{
+	"name": "(v_SW_MOD) DataRead_$22$1307", 
+	"replybytes": "62130700", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$13$07_(v_SW_MOD) 4WD_MODE_SW": {
+		"firstbyte": 4, 
+		"endian": "Little"
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "221307"
+	}, 
+	{
+	"name": "StartDiagnosticSession", 
+	"replybytes": "50C0", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"sendbyte_dataitems": {
+		"SessionName": {
+		"firstbyte": 2
+		}
+	}, 
+	"minbytes": 2, 
+	"sentbytes": "10C0"
+	}, 
+	{
+	"name": "(v_ETQ_ETS) DataRead_$22$1107", 
+	"replybytes": "62110700", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$11$07_(v_ETQ_ETS) TARGET_TORQUE": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "221107"
+	}, 
+	{
+	"name": "ClearDiagnosticinformation.All", 
+	"replybytes": "54", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"minbytes": 1, 
+	"sentbytes": "14FFFFFF"
+	}, 
+	{
+	"name": "Supported Lid for RDBLID(01-1F)", 
+	"replybytes": "610000000000", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"LID$14": {
+		"bitoffset": 3, 
+		"firstbyte": 5
+		}, 
+		"LID$15": {
+		"bitoffset": 4, 
+		"firstbyte": 5
+		}, 
+		"LID$16": {
+		"bitoffset": 5, 
+		"firstbyte": 5
+		}, 
+		"LID$17": {
+		"bitoffset": 6, 
+		"firstbyte": 5
+		}, 
+		"LID$10": {
+		"bitoffset": 7, 
+		"firstbyte": 4
+		}, 
+		"LID$11": {
+		"firstbyte": 5
+		}, 
+		"LID$12": {
+		"bitoffset": 1, 
+		"firstbyte": 5
+		}, 
+		"LID$13": {
+		"bitoffset": 2, 
+		"firstbyte": 5
+		}, 
+		"LID$18": {
+		"bitoffset": 7, 
+		"firstbyte": 5
+		}, 
+		"LID$19": {
+		"firstbyte": 6
+		}, 
+		"LID$0C": {
+		"bitoffset": 3, 
+		"firstbyte": 4
+		}, 
+		"LID$0B": {
+		"bitoffset": 2, 
+		"firstbyte": 4
+		}, 
+		"LID$0A": {
+		"bitoffset": 1, 
+		"firstbyte": 4
+		}, 
+		"LID$0F": {
+		"bitoffset": 6, 
+		"firstbyte": 4
+		}, 
+		"LID$0E": {
+		"bitoffset": 5, 
+		"firstbyte": 4
+		}, 
+		"LID$0D": {
+		"bitoffset": 4, 
+		"firstbyte": 4
+		}, 
+		"LID$03": {
+		"bitoffset": 2, 
+		"firstbyte": 3
+		}, 
+		"LID$02": {
+		"bitoffset": 1, 
+		"firstbyte": 3
+		}, 
+		"LID$01": {
+		"firstbyte": 3
+		}, 
+		"LID$07": {
+		"bitoffset": 6, 
+		"firstbyte": 3
+		}, 
+		"LID$06": {
+		"bitoffset": 5, 
+		"firstbyte": 3
+		}, 
+		"LID$05": {
+		"bitoffset": 4, 
+		"firstbyte": 3
+		}, 
+		"LID$04": {
+		"bitoffset": 3, 
+		"firstbyte": 3
+		}, 
+		"LID$09": {
+		"firstbyte": 4
+		}, 
+		"LID$08": {
+		"bitoffset": 7, 
+		"firstbyte": 3
+		}, 
+		"LID$1D": {
+		"bitoffset": 4, 
+		"firstbyte": 6
+		}, 
+		"LID$1E": {
+		"bitoffset": 5, 
+		"firstbyte": 6
+		}, 
+		"LID$1F": {
+		"bitoffset": 6, 
+		"firstbyte": 6
+		}, 
+		"LID$1A": {
+		"bitoffset": 1, 
+		"firstbyte": 6
+		}, 
+		"LID$1B": {
+		"bitoffset": 2, 
+		"firstbyte": 6
+		}, 
+		"LID$1C": {
+		"bitoffset": 3, 
+		"firstbyte": 6
+		}, 
+		"LID$20": {
+		"bitoffset": 7, 
+		"firstbyte": 6
+		}
+	}, 
+	"minbytes": 6, 
+	"sentbytes": "2100"
+	}, 
+	{
+	"name": "ReadDTCInformation.ReportExtendedData", 
+	"replybytes": "590600000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"DTCExtendedData.AgingCounter": {
+		"firstbyte": 8
+		}, 
+		"DTCExtendedDataRecordNumber": {
+		"firstbyte": 7
+		}, 
+		"DTCExtendedData.Mileage": {
+		"firstbyte": 8
+		}, 
+		"DTCRecord": {
+		"firstbyte": 3
+		}, 
+		"StatusOfDTC": {
+		"firstbyte": 6
+		}, 
+		"DTCExtendedData.DTCOccurrenceCounter": {
+		"firstbyte": 8
+		}
+	}, 
+	"sendbyte_dataitems": {
+		"DTCMaskRecord": {
+		"firstbyte": 3
+		}
+	}, 
+	"minbytes": 6, 
+	"sentbytes": "1906000000FF"
+	}, 
+	{
+	"name": "(v_ENGWATTEMP) DataRead_$22$1113", 
+	"replybytes": "62111300", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$11$13_(v_ENGWATTEMP)": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "221113"
+	}, 
+	{
+	"name": "(f_FLG_AMRC) DataRead_$22$130C", 
+	"replybytes": "62130C00", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$13$0C_(f_FLG_AMRC) TK_MM_4WD_ENG_OPE_FLAG": {
+		"firstbyte": 4, 
+		"endian": "Little"
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "22130C"
+	}, 
+	{
+	"name": "(v_yawref1) DataRead_$22$120D", 
+	"replybytes": "62120D0000", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$12$0D_(v_yawref1) TARGET_YAW_RATE": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 5, 
+	"sentbytes": "22120D"
+	}, 
+	{
+	"name": "OutputControl.Init", 
+	"replybytes": "700101", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"OutputControlStatus": {
+		"firstbyte": 3
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "30012000"
+	}, 
+	{
+	"name": "(v_LOCKT) DataRead_$22$1208", 
+	"replybytes": "6212080000", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$12$08_(v_LOCKT) LOCKTORQUE": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 5, 
+	"sentbytes": "221208"
+	}, 
+	{
+	"name": "ReadDTCInformation.ReportExtendedData.Mileage", 
+	"replybytes": "59060000000080000000", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"DTCExtendedData.Mileage": {
+		"firstbyte": 8
+		}, 
+		"StatusOfDTC": {
+		"firstbyte": 6
+		}, 
+		"DTCExtendedDataRecordNumber": {
+		"firstbyte": 7
+		}
+	}, 
+	"sendbyte_dataitems": {
+		"DTCMaskRecord": {
+		"firstbyte": 3
+		}
+	}, 
+	"minbytes": 10, 
+	"sentbytes": "190600000080"
+	}, 
+	{
+	"name": "NissanIdentification", 
+	"replybytes": "6183000000000000000000000000000000000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"N.DiagnosticIdentificationCode": {
+		"firstbyte": 8
+		}, 
+		"N.SparePartsNumberSuffix": {
+		"firstbyte": 8
+		}, 
+		"N1.SupplierNumber2": {
+		"firstbyte": 10
+		}, 
+		"N.ManufacturerIdentificationCode": {
+		"firstbyte": 26
+		}, 
+		"N.CalibrationNumber": {
+		"firstbyte": 21
+		}, 
+		"N.SparePartsNumber": {
+		"firstbyte": 3
+		}, 
+		"N.OtherSystemFeatures": {
+		"firstbyte": 23
+		}, 
+		"N.EditionNumber": {
+		"firstbyte": 19
+		}, 
+		"N.HardwareNumber": {
+		"firstbyte": 12
+		}, 
+		"N.SoftwareNumber": {
+		"firstbyte": 17
+		}, 
+		"N1.SupplierNumber1": {
+		"firstbyte": 9
+		}
+	}, 
+	"minbytes": 26, 
+	"sentbytes": "2183"
+	}, 
+	{
+	"name": "DataRead.IT_writing_information", 
+	"replybytes": "6103000000000000000000000000000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"LID03_#05_IT_characteristic_2": {
+		"firstbyte": 5
+		}, 
+		"LID03_#03-0_bit7_IT_characteristic_writing_Current_Trip": {
+		"firstbyte": 3
+		}, 
+		"LID03_#20_WRITE_for_CONSTANT_NUMBER": {
+		"firstbyte": 20
+		}, 
+		"LID03_#10_2.55A_CONVERT_TORQUE": {
+		"firstbyte": 10
+		}, 
+		"LID03_#09_bit3_Check_value": {
+		"bitoffset": 4, 
+		"firstbyte": 9
+		}, 
+		"LID03_#03-1_bit6_IT_characteristic_writing": {
+		"bitoffset": 1, 
+		"firstbyte": 3
+		}, 
+		"LID03_#06_IT_characteristic_3": {
+		"firstbyte": 6
+		}, 
+		"LID03_#12_3A_CONVERT_TORQUE": {
+		"firstbyte": 12
+		}, 
+		"LID03_#07_IT_characteristic_4": {
+		"firstbyte": 7
+		}, 
+		"LID03_#08_IT_characteristic_5": {
+		"firstbyte": 8
+		}, 
+		"LID03_#04_IT_characteristic_1": {
+		"firstbyte": 4
+		}, 
+		"LID03_#09_bit7_RESERVE": {
+		"firstbyte": 9
+		}
+	}, 
+	"minbytes": 20, 
+	"sentbytes": "2103"
+	}, 
+	{
+	"name": "DataRead.FailureHistory(LID$23)", 
+	"replybytes": "612300000000000000000000000000000000000000000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"v_CODEBF[2][28]SW_INP": {
+		"firstbyte": 29
+		}, 
+		"v_CODEBF[2][11]TEMP_SEN_POS": {
+		"firstbyte": 12
+		}, 
+		"v_CODEBF[2][5]FR_WHL": {
+		"firstbyte": 6
+		}, 
+		"v_CODEBF[2][14]POW_VOL": {
+		"firstbyte": 15
+		}, 
+		"v_CODEBF[2][12]CLT_TMP": {
+		"firstbyte": 13
+		}, 
+		"v_CODEBF[2][20]X_POS_SEN": {
+		"firstbyte": 21
+		}, 
+		"v_CODEBF[2][0]Failure_Info": {
+		"firstbyte": 3
+		}, 
+		"v_CODEBF[2][7]RR_WHL": {
+		"firstbyte": 8
+		}, 
+		"v_CODEBF[2][26]ATFTEMP": {
+		"firstbyte": 27
+		}, 
+		"v_CODEBF[2][6]RR_WHL": {
+		"firstbyte": 7
+		}, 
+		"v_CODEBF[2][10]ENG_REV": {
+		"firstbyte": 11
+		}, 
+		"v_CODEBF[2][25]YAWRATE_POS": {
+		"firstbyte": 26
+		}, 
+		"v_CODEBF[2][21]Y_POS_SEN": {
+		"firstbyte": 22
+		}, 
+		"v_CODEBF[2][15]DRV_MODE": {
+		"firstbyte": 16
+		}, 
+		"v_CODEBF[2][13]CLT_TMP": {
+		"firstbyte": 14
+		}, 
+		"v_CODEBF[2][22]YAWRATE_SEN": {
+		"firstbyte": 23
+		}, 
+		"v_CODEBF[2][8]TRQ_POS": {
+		"firstbyte": 9
+		}, 
+		"v_CODEBF[2][4]FR_WHL": {
+		"firstbyte": 5
+		}, 
+		"v_CODEBF[2][27]SW_INP": {
+		"firstbyte": 28
+		}, 
+		"v_CODEBF[2][9]ACCL_POS": {
+		"firstbyte": 10
+		}, 
+		"v_CODEBF[2][23]YAWRATE_SEN": {
+		"firstbyte": 24
+		}, 
+		"v_CODEBF[2][16]ETS_SOL": {
+		"firstbyte": 17
+		}, 
+		"v_CODEBF[2][17]DRV_TRQ": {
+		"firstbyte": 18
+		}, 
+		"v_CODEBF[2][1]Failure_Info": {
+		"firstbyte": 4
+		}, 
+		"v_CODEBF[2][19]STR_SEN": {
+		"firstbyte": 20
+		}, 
+		"v_CODEBF[2][18]STR_SEN": {
+		"firstbyte": 19
+		}, 
+		"v_CODEBF[2][24]YAWRATE_POS": {
+		"firstbyte": 25
+		}
+	}, 
+	"minbytes": 29, 
+	"sentbytes": "2123"
+	}, 
+	{
+	"name": "(v_WRFR) DataRead_$22$1201", 
+	"replybytes": "6212010000", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$12$01_(v_WRFR) FR_RH_SENSOR": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 5, 
+	"sentbytes": "221201"
+	}, 
+	{
+	"name": "(f_$WD_WL) DataRead_$22$1304", 
+	"replybytes": "62130400", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$13$04_(f_4WD_WL) 4WD_WARN_LAMP": {
+		"firstbyte": 4, 
+		"endian": "Little"
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "221304"
+	}, 
+	{
+	"name": "StartDiagnosticSession.ExtendedDiagSession", 
+	"replybytes": "50C0", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"minbytes": 2, 
+	"sentbytes": "10C0"
+	}, 
+	{
+	"name": "(f_VCM_STATUS)DataRead_$22$1319", 
+	"replybytes": "62131900", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$13$19_(f_VCM_STATUS)": {
+		"firstbyte": 4, 
+		"endian": "Little"
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "221319"
+	}, 
+	{
+	"name": "ReadDTCInformation.ReportDTC", 
+	"replybytes": "59020000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"DTCStatus.testFailedSinceLastClear": {
+		"bitoffset": 2, 
+		"firstbyte": 7
+		}, 
+		"DTCStatus.pendingDTC": {
+		"bitoffset": 5, 
+		"firstbyte": 7
+		}, 
+		"DTCStatus.confirmedDTC": {
+		"bitoffset": 4, 
+		"firstbyte": 7
+		}, 
+		"DTCDeviceAndFailureTypeOBD": {
+		"firstbyte": 4
+		}, 
+		"DTCFailureType.ManufacturerOrSupplier": {
+		"bitoffset": 4, 
+		"firstbyte": 6
+		}, 
+		"DTCFailureType.Category": {
+		"firstbyte": 6
+		}, 
+		"DTCFailureType": {
+		"firstbyte": 6
+		}, 
+		"DTCStatus.testNotCompletedSinceLastClear": {
+		"bitoffset": 3, 
+		"firstbyte": 7
+		}, 
+		"DTCStatus.testNotCompletedThisMonitoringCycle": {
+		"bitoffset": 1, 
+		"firstbyte": 7
+		}, 
+		"DTCStatusAvailabilityMask": {
+		"firstbyte": 3
+		}, 
+		"DTCStatus.warningIndicatorRequested": {
+		"firstbyte": 7
+		}, 
+		"StatusOfDTC": {
+		"firstbyte": 7
+		}, 
+		"DTCStatus.testFailedThisMonitoringCycle": {
+		"bitoffset": 6, 
+		"firstbyte": 7
+		}, 
+		"DTCStatus.testFailed": {
+		"bitoffset": 7, 
+		"firstbyte": 7
+		}, 
+		"DTCDeviceIdentifier": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "1902FF", 
+	"shiftbytescount": 4
+	}, 
+	{
+	"name": "Supported Lid for IOCBLID(01-1F)", 
+	"replybytes": "700000000000", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"LID$14": {
+		"bitoffset": 3, 
+		"firstbyte": 5
+		}, 
+		"LID$15": {
+		"bitoffset": 4, 
+		"firstbyte": 5
+		}, 
+		"LID$16": {
+		"bitoffset": 5, 
+		"firstbyte": 5
+		}, 
+		"LID$17": {
+		"bitoffset": 6, 
+		"firstbyte": 5
+		}, 
+		"LID$10": {
+		"bitoffset": 7, 
+		"firstbyte": 4
+		}, 
+		"LID$11": {
+		"firstbyte": 5
+		}, 
+		"LID$12": {
+		"bitoffset": 1, 
+		"firstbyte": 5
+		}, 
+		"LID$13": {
+		"bitoffset": 2, 
+		"firstbyte": 5
+		}, 
+		"LID$18": {
+		"bitoffset": 7, 
+		"firstbyte": 5
+		}, 
+		"LID$19": {
+		"firstbyte": 6
+		}, 
+		"LID$0C": {
+		"bitoffset": 3, 
+		"firstbyte": 4
+		}, 
+		"LID$0B": {
+		"bitoffset": 2, 
+		"firstbyte": 4
+		}, 
+		"LID$0A": {
+		"bitoffset": 1, 
+		"firstbyte": 4
+		}, 
+		"LID$0F": {
+		"bitoffset": 6, 
+		"firstbyte": 4
+		}, 
+		"LID$0E": {
+		"bitoffset": 5, 
+		"firstbyte": 4
+		}, 
+		"LID$0D": {
+		"bitoffset": 4, 
+		"firstbyte": 4
+		}, 
+		"LID$03": {
+		"bitoffset": 2, 
+		"firstbyte": 3
+		}, 
+		"LID$02": {
+		"bitoffset": 1, 
+		"firstbyte": 3
+		}, 
+		"LID$01": {
+		"firstbyte": 3
+		}, 
+		"LID$07": {
+		"bitoffset": 6, 
+		"firstbyte": 3
+		}, 
+		"LID$06": {
+		"bitoffset": 5, 
+		"firstbyte": 3
+		}, 
+		"LID$05": {
+		"bitoffset": 4, 
+		"firstbyte": 3
+		}, 
+		"LID$04": {
+		"bitoffset": 3, 
+		"firstbyte": 3
+		}, 
+		"LID$09": {
+		"firstbyte": 4
+		}, 
+		"LID$08": {
+		"bitoffset": 7, 
+		"firstbyte": 3
+		}, 
+		"LID$1D": {
+		"bitoffset": 4, 
+		"firstbyte": 6
+		}, 
+		"LID$1E": {
+		"bitoffset": 5, 
+		"firstbyte": 6
+		}, 
+		"LID$1F": {
+		"bitoffset": 6, 
+		"firstbyte": 6
+		}, 
+		"LID$1A": {
+		"bitoffset": 1, 
+		"firstbyte": 6
+		}, 
+		"LID$1B": {
+		"bitoffset": 2, 
+		"firstbyte": 6
+		}, 
+		"LID$1C": {
+		"bitoffset": 3, 
+		"firstbyte": 6
+		}, 
+		"LID$20": {
+		"bitoffset": 7, 
+		"firstbyte": 6
+		}
+	}, 
+	"minbytes": 6, 
+	"sentbytes": "3000"
+	}, 
+	{
+	"name": "(f_TACHOT) DataRead_$22$1306", 
+	"replybytes": "62130600", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$13$06_(f_TACHOT) ENG_status": {
+		"ref": true, 
+		"firstbyte": 4, 
+		"endian": "Little"
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "221306"
+	}, 
+	{
+	"name": "(v_MOD_DISP) DataRead_$22$1308", 
+	"replybytes": "62130800", 
+	"deny_sds": [
+		"nosds", 
+		"aftersales"
+	], 
+	"receivebyte_dataitems": {
+		"$13$08_(v_MOD_DISP) 4WD_MODE_IND": {
+		"firstbyte": 4, 
+		"endian": "Little"
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "221308"
+	}, 
+	{
+	"name": "DataRead.MarketHistory(LID$21)", 
+	"replybytes": "6121000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"v_MODEMEMO1": {
+		"firstbyte": 35
+		}, 
+		"v_MODEMEMO3": {
+		"firstbyte": 39
+		}, 
+		"v_MODEMEMO2": {
+		"firstbyte": 37
+		}, 
+		"v_CLULOAD08": {
+		"firstbyte": 21
+		}, 
+		"v_CLULOAD09": {
+		"firstbyte": 23
+		}, 
+		"v_CLULOAD06": {
+		"firstbyte": 17
+		}, 
+		"v_CLULOAD07": {
+		"firstbyte": 19
+		}, 
+		"v_CLULOAD04": {
+		"firstbyte": 12
+		}, 
+		"v_CLULOAD05": {
+		"firstbyte": 15
+		}, 
+		"v_CLULOAD02": {
+		"firstbyte": 6
+		}, 
+		"v_CLULOAD03": {
+		"firstbyte": 9
+		}, 
+		"v_CLULOAD01": {
+		"firstbyte": 3
+		}, 
+		"v_FCLUMEMO": {
+		"firstbyte": 43
+		}, 
+		"Reserve data": {
+		"firstbyte": 48
+		}, 
+		"v_CLULOAD10": {
+		"firstbyte": 25
+		}, 
+		"v_Tempcalmemo3": {
+		"firstbyte": 31
+		}, 
+		"v_Tempcalmemo2": {
+		"firstbyte": 29
+		}, 
+		"v_Tempcalmemo1": {
+		"firstbyte": 27
+		}, 
+		"v_Tempcalmemo4": {
+		"firstbyte": 33
+		}, 
+		"v_Htmemo8": {
+		"firstbyte": 46
+		}, 
+		"v_Htmemo4": {
+		"firstbyte": 44
+		}, 
+		"v_Myumemo": {
+		"firstbyte": 41
+		}
+	}, 
+	"minbytes": 56, 
+	"sentbytes": "2121"
+	}
+], 
+"data": {
+	"TraceAbility_Serial Number": {
+	"bytesascii": true, 
+	"bytescount": 6, 
+	"byte": true, 
+	"bitscount": 48, 
+	"comment": "TraceAbility"
+	}, 
+	"ONDULEUR.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"DISPLAY.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"LID$0C": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$0B": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$0A": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$0F": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID03_#10_2.55A_CONVERT_TORQUE": {
+	"bytescount": 2, 
+	"byte": true, 
+	"bitscount": 16
+	}, 
+	"BCM/SEC.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"Historical Failure": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "No", 
+		"1": "Yes"
+	}
+	}, 
+	"$22$0100_#17_4WDSOL_CURRENT": {
+	"scaled": true, 
+	"divideby": 100.0, 
+	"step": 2.0, 
+	"unit": "A"
+	}, 
+	"EPS.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"$12$0D_(v_yawref1) TARGET_YAW_RATE": {
+	"divideby": 10.0, 
+	"bitscount": 16, 
+	"signed": true, 
+	"scaled": true, 
+	"bytescount": 2, 
+	"unit": "deg/s"
+	}, 
+	"v_CODEBF[1][16]ETS_SOL": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"LPG.r.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"LID$03": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$02": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$01": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$07": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$06": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$05": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$04": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"#37_bit1_STR_SENSOR_FAIL_FLAG": {
+	"comment": "FTEMP", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "ABNORMAL", 
+		"1": "NORMAL"
+	}
+	}, 
+	"LID$08": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"v_CODEBF[2][4]FR_WHL": {
+	"comment": "RDBLID$23", 
+	"byte": true
+	}, 
+	"DSU.r.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"DTCStatus.testFailedSinceLastClear": {
+	"comment": "TFSLC", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "No", 
+		"1": "Yes"
+	}
+	}, 
+	"e4WD.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"ICC.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"EPS.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"$22$0100_#22_b7_ETS_MODE": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "AUTO", 
+		"1": "LOCK", 
+		"2": "2WD", 
+		"3": "SNOW"
+	}
+	}, 
+	"#49_bit43_ETSMODD2": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "SNOW_MODE", 
+		"1": "R_MODE", 
+		"2": "SPORT_MODE", 
+		"3": "##"
+	}
+	}, 
+	"4WD.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"$13$02_(f_FSTRFAILC0) STR_SENSOR_FAIL_FLAG": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "Abnormal", 
+		"1": "Normal"
+	}
+	}, 
+	"v_CODEBF[2][11]TEMP_SEN_POS": {
+	"comment": "RDBLID$23", 
+	"byte": true
+	}, 
+	"DTCExtendedData.Mileage": {
+	"scaled": true, 
+	"bytescount": 3, 
+	"comment": "Description of the extendedData Mileage (use by Failure Page to decode data)", 
+	"bitscount": 24, 
+	"unit": "km"
+	}, 
+	"OutputTemporaryControlList": {
+	"comment": "Testing output : List of all output with temporary test", 
+	"lists": {
+		"1": "ACTR_SOL_DRIVE"
+	}
+	}, 
+	"#35_bit6_ETC_CONT_FLAG": {
+	"comment": "ETCOKC", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OFF", 
+		"1": "ON"
+	}
+	}, 
+	"#35_bit4_BRK_OPE_FLAG": {
+	"comment": "FLG_BMRC", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OFF", 
+		"1": "ON"
+	}
+	}, 
+	"DTCStatus.warningIndicatorRequested": {
+	"comment": "WIR", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "No", 
+		"1": "Yes"
+	}
+	}, 
+	"MUX messaging reference.-.-.vcan": {
+	"comment": "CAN Monitor", 
+	"bytescount": 2, 
+	"byte": true, 
+	"bitscount": 16
+	}, 
+	"v_CODEBF[1][4]FR_WHL": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"v_CODEBF[1][0]Failure_Info": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"#20_ETS_TORQUE": {
+	"comment": "TETS", 
+	"divideby": 256.0, 
+	"bitscount": 16, 
+	"scaled": true, 
+	"bytescount": 2, 
+	"unit": "kgm"
+	}, 
+	"VDC/TCS/ABS.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"v_CODEBF[1][15]DRV_MODE": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"v_CLULOAD10": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"comment": "RDBLID$21", 
+	"bitscount": 16, 
+	"unit": "count/0,64Sec"
+	}, 
+	"1403": {
+	"scaled": true
+	}, 
+	"1402": {
+	"scaled": true
+	}, 
+	"PartNumber.LowerPart": {
+	"bytesascii": true, 
+	"bytescount": 5, 
+	"byte": true, 
+	"bitscount": 40
+	}, 
+	"1407": {
+	"scaled": true
+	}, 
+	"1405": {
+	"scaled": true
+	}, 
+	"LID03_#03-0_bit7_IT_characteristic_writing_Current_Trip": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "Unexecution or Unend ", 
+		"1": "Normal termination "
+	}
+	}, 
+	"$22$0100_#23_TARGET_TORQUE": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 256.0, 
+	"bitscount": 16, 
+	"unit": "kgm"
+	}, 
+	"140B": {
+	"scaled": true
+	}, 
+	"YAW.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"SCU.r.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"IPDM E/R.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"140D": {
+	"lists": {
+		"32": "ETQDNR_ETS", 
+		"1": "FVJUD", 
+		"2": "bFLGF0", 
+		"4": "fHIGHM", 
+		"8": "ETSmodd(low)", 
+		"16": "ETSmodd(high)"
+	}
+	}, 
+	"[$3B$01_#5]_IT_characteristic_3_right": {
+	"byte": true
+	}, 
+	"[$3B$01_#8]_Check_value_Fxh": {
+	"byte": true
+	}, 
+	"SYP.r.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"$22$0100_#20_REAR_WHEEL_SPEED": {
+	"scaled": true, 
+	"unit": "km/h"
+	}, 
+	"LID$0E": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"#36_bit0_4WD_DRIVE_FLAG": {
+	"comment": "FTCSON", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OFF", 
+		"1": "ON"
+	}
+	}, 
+	"LID$0D": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"$13$11_(f_TCSACT)": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "OFF", 
+		"1": "ON"
+	}
+	}, 
+	"$13$0B_(f_FAS2) TK_MM_4WD_ABS_OPE_FLAG": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "OFF", 
+		"1": "ON"
+	}
+	}, 
+	"#41_YGB00": {
+	"scaled": true, 
+	"divideby": 100.0, 
+	"unit": "g", 
+	"offset": 128.0
+	}, 
+	"HCM.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"SoftwareNumber": {
+	"comment": "Software identification number", 
+	"bytescount": 2, 
+	"byte": true, 
+	"bitscount": 16
+	}, 
+	"$13$15_(f_TEMP2) CLUTCH_TEMP_FLAG2": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "OFF", 
+		"1": "ON"
+	}
+	}, 
+	"$11$0B_(v_YGB00) SIDE_G": {
+	"scaled": true, 
+	"divideby": 100.0, 
+	"unit": "G", 
+	"offset": -128.0
+	}, 
+	"ASD.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"HVAC.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"APB.r.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"v_CODEBF[0][17]DRV_TRQ": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"APB.r.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"v_FCLUMEMO": {
+	"scaled": true, 
+	"comment": "RDBLID$21", 
+	"unit": "Count/Off->On"
+	}, 
+	"Current Failure": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "No", 
+		"1": "Yes"
+	}
+	}, 
+	"v_CODEBF[0][13]CLT_TEMP": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"N.SparePartsNumber": {
+	"bytesascii": true, 
+	"bytescount": 5, 
+	"byte": true, 
+	"bitscount": 40
+	}, 
+	"#35_bit0_P_BRAKE_SW": {
+	"comment": "FPKBC", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OFF", 
+		"1": "ON"
+	}
+	}, 
+	"PSB.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"v_CODEBF[1][6]RR_WHL": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"LID03_#03-1_bit6_IT_characteristic_writing": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "Unwriting ", 
+		"1": "Writing End "
+	}
+	}, 
+	"DSU.r.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"#40_XGB00": {
+	"scaled": true, 
+	"divideby": 100.0, 
+	"comment": "XGB00", 
+	"unit": "g", 
+	"offset": 128.0
+	}, 
+	"#36_bit4_FTEMP": {
+	"comment": "FTEMP", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OFF", 
+		"1": "ON"
+	}
+	}, 
+	"IPDM E/R.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"#6_ REQUEST_TORQUE": {
+	"scaled": true, 
+	"comment": "ETRQDRC", 
+	"step": 3.0, 
+	"unit": "Nm", 
+	"signed": true
+	}, 
+	"R.OtherSystemFeatures": {
+	"bytescount": 3, 
+	"byte": true, 
+	"bitscount": 24
+	}, 
+	"LID03_#07_IT_characteristic_4": {
+	"byte": true
+	}, 
+	"AT/CVT.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"LID03_#13_characteristic_4_left": {
+	"scaled": true, 
+	"divideby": 100.0, 
+	"unit": "A"
+	}, 
+	"OutputControlCommand": {
+	"lists": {
+		"0": "Start Temporary", 
+		"1": "Status", 
+		"17": "Stop", 
+		"32": "Start Permanent"
+	}
+	}, 
+	"DTCFailureType": {
+	"lists": {
+		"0": "Device and failure type ODB codding", 
+		"1": "General Electrical Failure", 
+		"2": "General signal failure", 
+		"3": "FM (Frequency Modulated) / PWM (Pulse Width Modulated) Failures", 
+		"4": "System Internal Failures", 
+		"5": "System Programming Failures", 
+		"6": "Algorithm Based Failures", 
+		"7": "Mechanical Failures", 
+		"8": "Bus Signal / Message Failures", 
+		"9": "Component Failures", 
+		"17": "circuit short to ground", 
+		"18": "circuit short to battery", 
+		"19": "circuit open", 
+		"20": "circuit short to ground or open", 
+		"21": "circuit short to battery or open", 
+		"22": "circuit voltage below threshold", 
+		"23": "circuit voltage above threshold", 
+		"24": "circuit current below threshold", 
+		"25": "circuit current above threshold", 
+		"26": "circuit resistance below threshold", 
+		"27": "circuit resistance above threshold", 
+		"28": "circuit voltage out of range", 
+		"29": "circuit current out of range", 
+		"30": "circuit resistance out of range", 
+		"31": "circuit intermittent", 
+		"33": "signal amplitude < minimum", 
+		"34": "signal amplitude > maximum", 
+		"35": "signal stuck low", 
+		"36": "signal stuck high", 
+		"37": "signal shape / waveform failure", 
+		"38": "signal rate of change below threshold", 
+		"39": "signal rate of change above threshold", 
+		"40": "signal bias level out of range / zero adjustment failure", 
+		"41": "signal signal invalid", 
+		"47": "signal erratic", 
+		"49": "no signal", 
+		"50": "signal low time < minimum", 
+		"51": "signal low time > maximum", 
+		"52": "signal high time < minimum", 
+		"53": "signal high time > maximum", 
+		"54": "signal frequency too low", 
+		"55": "signal frequency too high", 
+		"56": "signal frequency incorrect", 
+		"57": "incorrect has too few pulses", 
+		"58": "incorrect has too many pulses", 
+		"65": "general checksum failure", 
+		"66": "general memory failure", 
+		"67": "special memory failure", 
+		"68": "data memory failure", 
+		"69": "program memory failure", 
+		"70": "calibration / parameter memory failure", 
+		"71": "watchdog / safety \u03bcC failure", 
+		"72": "supervision software failure", 
+		"73": "internal electronic failure", 
+		"74": "incorrect component installed", 
+		"75": "over temperature", 
+		"81": "not programmed", 
+		"82": "not activated", 
+		"83": "deactivated", 
+		"84": "missing calibration", 
+		"85": "not configured", 
+		"97": "signal calculation failure", 
+		"98": "signal compare failure", 
+		"99": "circuit / component protection time-out", 
+		"100": "signal plausibility failure", 
+		"101": "signal has too few transitions / events", 
+		"102": "signal has too many transitions / events", 
+		"103": "signal incorrect after event", 
+		"104": "event information", 
+		"113": "actuator stuck", 
+		"114": "actuator stuck open", 
+		"115": "actuator stuck closed", 
+		"116": "actuator slipping", 
+		"117": "emergency position not reachable", 
+		"118": "wrong mounting position", 
+		"119": "commanded position not reachable", 
+		"120": "alignment or adjustment incorrect", 
+		"121": "mechanical linkage failure", 
+		"122": "fluid leak or seal failure", 
+		"123": "low fluid level", 
+		"129": "invalid serial data received", 
+		"130": "alive / sequence counter incorrect / not updated", 
+		"131": "value of signal protection calculation incorrect", 
+		"132": "signal below allowable range", 
+		"133": "signal above allowable range", 
+		"134": "signal invalid", 
+		"135": "missing message", 
+		"136": "bus off", 
+		"143": "erratic", 
+		"145": "parametric", 
+		"146": "performance or incorrect operation", 
+		"147": "no operation", 
+		"148": "unexpected operation", 
+		"149": "incorrect assembly", 
+		"150": "component internal failure", 
+		"151": "Component or system operation obstructed or blocked", 
+		"152": "component or system over temperature"
+	}
+	}, 
+	"v_CODEBF[0][11]TEMP_SEN_POS": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"TIRE-P DISP.r.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"StatusOfDTC": {
+	"scaled": true, 
+	"comment": "DTCASR_SODTC"
+	}, 
+	"I-KEY.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"LID03_#06_IT_characteristic_3": {
+	"byte": true
+	}, 
+	"$12$04_(v_WRFL) RR_LH_SENSOR": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 256.0, 
+	"bitscount": 16, 
+	"unit": "km"
+	}, 
+	"ENG-ST.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"$13$0E_(f_VDCACTC) VDC_OPE_FLAG": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "OFF", 
+		"1": "ON"
+	}
+	}, 
+	"ENG-ST.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"$11$03_(v_IPS_IN) ETS_SOLENOID": {
+	"scaled": true, 
+	"divideby": 100.0, 
+	"step": 2.0, 
+	"unit": "A"
+	}, 
+	"[$3B$01_#6]_IT_characteristic_4_right": {
+	"byte": true
+	}, 
+	"CalibrationNumber": {
+	"comment": "Calibration Number in Hexa", 
+	"bytescount": 2, 
+	"byte": true, 
+	"bitscount": 16
+	}, 
+	"DSU.r.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"v_CODEBF[1][12]CLT_TEMP": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"ECM.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"ETC.r.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"v_CODEBF[1][10]ENG_REV": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"HLS.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"#52_ENG_WATER_TEMP": {
+	"scaled": true, 
+	"unit": "deg", 
+	"offset": -40.0
+	}, 
+	"YAW.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"#53_CPLG_OIL_TEMP": {
+	"scaled": true, 
+	"unit": "deg", 
+	"offset": -40.0
+	}, 
+	"SCU.r.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"DTCExtendedDataRecordNumber": {
+	"lists": {
+		"128": "Mileage", 
+		"129": "AgingCounter", 
+		"130": "DTCOccurrenceCounter"
+	}
+	}, 
+	"v_DOC_CurFail1": {
+	"comment": "RDBLID$2C", 
+	"byte": true
+	}, 
+	"v_DOC_CurFail2": {
+	"comment": "RDBLID$2C", 
+	"byte": true
+	}, 
+	"BCM/SEC.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"#5_ETS_SOLENOID": {
+	"scaled": true, 
+	"divideby": 250.0, 
+	"comment": "IPS_IN", 
+	"unit": "A"
+	}, 
+	"ACTR_SOL_DRIVE.param": {
+	"scaled": true, 
+	"divideby": 100.0, 
+	"step": 2.0, 
+	"unit": "A"
+	}, 
+	"$22$0100_#15_IGN_VOLTAGE_MONITOR": {
+	"scaled": true, 
+	"divideby": 255.0, 
+	"step": 20.0, 
+	"unit": "V"
+	}, 
+	"$13$09_(v_FIKEI40) DIS-TIRE_MON": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "4 mm or less Diameter difference", 
+		"1": "4 to 8 mm Diameter difference", 
+		"2": "8 mm or more Diameter difference"
+	}
+	}, 
+	"ECM.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"PartNumber.BasicPartList": {
+	"lists": {
+		"0": "N/A", 
+		"1": "41651"
+	}
+	}, 
+	"LID03_#09-1_Reserved": {
+	"byte": true
+	}, 
+	"LID$09": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"$13$01_(f_CANMASK454)": {
+	"comment": "reversed logic with the CAN Value (NOT (value))", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "ON", 
+		"1": "OFF"
+	}
+	}, 
+	"#30_TORQ_LIMIT": {
+	"comment": "LOCKT", 
+	"divideby": 256.0, 
+	"bitscount": 16, 
+	"scaled": true, 
+	"bytescount": 2, 
+	"unit": "kgm"
+	}, 
+	"ICC SENSOR.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"$13$05_(f_STPLMSWC) STOP_LAMP_SW": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "OFF", 
+		"1": "ON"
+	}
+	}, 
+	"#10_REQ_COM_TORQ": {
+	"scaled": true, 
+	"comment": "RQ_TRQC", 
+	"step": 5.0, 
+	"unit": "Nm"
+	}, 
+	"PSB.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"ICC.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"N.DiagnosticIdentificationCode": {
+	"lists": {
+		"0": "####"
+	}
+	}, 
+	"$13$16_(f_2WD_SW) SW_input-2WD": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "OFF", 
+		"1": "ON"
+	}
+	}, 
+	"e4WD.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"[$3B$01_#4]_IT_characteristic_2_right": {
+	"byte": true
+	}, 
+	"v_CODEBF[2][15]DRV_MODE": {
+	"comment": "RDBLID$23", 
+	"byte": true
+	}, 
+	"#36_bit1_TRQ_DOWN_REQ": {
+	"comment": "ETQDNR_ETS", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OFF", 
+		"1": "ON"
+	}
+	}, 
+	"R.EditionNumber": {
+	"bytescount": 2, 
+	"byte": true, 
+	"bitscount": 16
+	}, 
+	"METER/M&A.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"$13$06_(f_TACHOT) ENG_status": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "STOP", 
+		"1": "RUN"
+	}
+	}, 
+	"v_CODEBF[0][0]_Failure_Info": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"LID03_#12_characteristic_3_left": {
+	"scaled": true, 
+	"divideby": 100.0, 
+	"unit": "A"
+	}, 
+	"DTCFailureType.Category": {
+	"bitscount": 4, 
+	"lists": {
+		"0": "General Failure Information", 
+		"1": "General Electrical Failures", 
+		"2": "General Signal Failures", 
+		"3": "FM (Frequency Modulated) / PWM (Pulse Width Modulated) Failures", 
+		"4": "System Internal Failures", 
+		"5": "System Programming Failures", 
+		"6": "Algorithm Based Failures", 
+		"7": "Mechanical Failures", 
+		"8": "Bus Signal / Message Failures", 
+		"9": "Component Failures", 
+		"15": "Vehicle manufacturer / System supplier specific"
+	}
+	}, 
+	"TraceAbility_Part Code": {
+	"bytesascii": true, 
+	"bytescount": 3, 
+	"byte": true, 
+	"bitscount": 24, 
+	"comment": "TraceAbility"
+	}, 
+	"#24_TENG": {
+	"comment": "TENG", 
+	"divideby": 256.0, 
+	"bitscount": 16, 
+	"scaled": true, 
+	"bytescount": 2, 
+	"unit": "kgm"
+	}, 
+	"AT/CVT DISP.r.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"$22$0100_#29_VEHICLE_WHEEL_SENSOR_RR": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 256.0, 
+	"bitscount": 16, 
+	"unit": "km/h"
+	}, 
+	"143F": {
+	"scaled": true
+	}, 
+	"$13$10_(f_ETSCANOKC) ETS_CONT_FLAG": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "OFF", 
+		"1": "ON"
+	}
+	}, 
+	"ICC SENSOR.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"v_CODEBF[0][4]FR_WH": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"HVAC.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"#34_bit32_4WD_MODE_MON": {
+	"comment": "MOD_DISP", 
+	"bitscount": 2, 
+	"lists": {
+		"0": "AUTO", 
+		"1": "2WD", 
+		"2": "LOCK", 
+		"3": "##"
+	}
+	}, 
+	"v_CODEBF[0][9]ACCL_POS": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"DTCStatus.testNotCompletedSinceLastClear": {
+	"comment": "TNCSLC", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "No", 
+		"1": "Yes"
+	}
+	}, 
+	"v_CODEBF[2][21]Y_POS_SEN": {
+	"comment": "RDBLID$23", 
+	"byte": true
+	}, 
+	"#49_bit1_SPTMODEC": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "OFF", 
+		"1": "ON"
+	}
+	}, 
+	"SupplierNumber.ITG.2": {
+	"comment": "Supplier ITG code", 
+	"bytescount": 2, 
+	"byte": true, 
+	"bitscount": 16
+	}, 
+	"$11$05_(v_ETRQC) CURRENT_TORQ": {
+	"scaled": true, 
+	"step": 3.0, 
+	"unit": "Nm", 
+	"signed": true, 
+	"offset": 150.0
+	}, 
+	"ISG.r.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"DTCRecord": {
+	"comment": "DTCASR_DTC", 
+	"bytescount": 3, 
+	"byte": true, 
+	"bitscount": 24
+	}, 
+	"v_CODEBF[1][25]YAWREF_POS": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"#33_bit3_4WD_WARN_LAMP": {
+	"comment": "4WD-WL", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "ON", 
+		"1": "OFF"
+	}
+	}, 
+	"HCM.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"DTCStatus.testNotCompletedThisMonitoringCycle": {
+	"comment": "TNCTMC", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "No", 
+		"1": "Yes"
+	}
+	}, 
+	"FirstDTC": {
+	"bytescount": 2, 
+	"bitscount": 16, 
+	"lists": {
+		"53248": "CAN_COMM_CIRCUIT", 
+		"20993": "CONTROLLER_FAILURE", 
+		"20995": "ABS_SYSTEM", 
+		"6148": "EEPROM", 
+		"20997": "4WD_ACTUATOR_RLY", 
+		"6182": "OIL TEMPERATURE SENSOR", 
+		"6161": "POWER SUPPLY SYSTEM", 
+		"6152": "ABS WHEEL SPEED SENSOR", 
+		"6153": "CONTROL_UNIT(AD Conveter)", 
+		"21008": "DRIVE PROTECTION CHECK", 
+		"21009": "LIN_SIGNAL_1", 
+		"21010": "LIN_SIGNAL_2", 
+		"53264": "CONTROL_UNIT(CAN)", 
+		"21001": "MODE_SW", 
+		"20996": "4WD_SOLENOID", 
+		"6171": "SELF SHUT", 
+		"6173": "ENGINE SIGNAL CLOCK", 
+		"6175": "INCOMPLETE CALIBRATION"
+	}
+	}, 
+	"v_CODEBF[1][8]TRQ_POS": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"R.HardwareNumber": {
+	"bytesascii": true, 
+	"bytescount": 5, 
+	"byte": true, 
+	"bitscount": 40
+	}, 
+	"e4WD.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"$22$0100_#14_b5_TCS_ACTUATION": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "OFF", 
+		"1": "ON"
+	}
+	}, 
+	"HCM.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"SCU.r.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"#22_TDV": {
+	"comment": "TDV", 
+	"divideby": 256.0, 
+	"bitscount": 16, 
+	"scaled": true, 
+	"bytescount": 2, 
+	"unit": "kgm"
+	}, 
+	"ITM.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"v_CODEBF[0][5]FR_WHL": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"IPDM E/R.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"v\\TEMPMEM04": {
+	"comment": "RDBLID$21", 
+	"bytescount": 2, 
+	"byte": true, 
+	"bitscount": 16
+	}, 
+	"v_CODEBF[1][18]STR_SEN": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"STRG.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"DISPLAY.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"LID03_#09_bit3_Check_value": {
+	"byte": true
+	}, 
+	"$11$14_(v_Tclu/100) CPLG_TEMP": {
+	"scaled": true
+	}, 
+	"ASD.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"#35_bit7_ETS_CONT_FLAG": {
+	"comment": "ETSCANOKC", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OFF", 
+		"1": "ON"
+	}
+	}, 
+	"#46_ATFTEMP": {
+	"scaled": true, 
+	"unit": "deg", 
+	"offset": 40.0
+	}, 
+	"$12$02_(v_WRFL) FR_LH_SENSOR": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 256.0, 
+	"bitscount": 16, 
+	"unit": "km"
+	}, 
+	"v_CODEBF[2][0]Failure_Info": {
+	"comment": "RDBLID$23", 
+	"byte": true
+	}, 
+	"v_CODEBF[2][7]RR_WHL": {
+	"comment": "RDBLID$23", 
+	"byte": true
+	}, 
+	"APB.r.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"DPC.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"#35_bit3_ENG_OPE_FLAG": {
+	"comment": "FLG_AMRC", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OFF", 
+		"1": "ON"
+	}
+	}, 
+	"v_CODEBF[0][16]ETS_SOL": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"DTCFailureType.ManufacturerOrSupplier": {
+	"bitscount": 4
+	}, 
+	"TIRE-P DISP.r.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"PSB.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"LID03_#08_IT_characteristic_5": {
+	"byte": true
+	}, 
+	"v_Tempcalmemo3": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"comment": "RDBLID$21", 
+	"bitscount": 16, 
+	"unit": "count/5min"
+	}, 
+	"v_Tempcalmemo2": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"comment": "RDBLID$21", 
+	"bitscount": 16, 
+	"unit": "count/5min"
+	}, 
+	"v_Tempcalmemo1": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"comment": "RDBLID$21", 
+	"bitscount": 16, 
+	"unit": "count/5min"
+	}, 
+	"LID03_#15-2_Check_value": {
+	"scaled": true, 
+	"bitscount": 4
+	}, 
+	"v_Tempcalmemo4": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"comment": "RDBLID$21", 
+	"bitscount": 16, 
+	"unit": "count/5min"
+	}, 
+	"$13$18_(f_LOCK_SW) SW_inout-LOCK": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "OFF", 
+		"1": "ON"
+	}
+	}, 
+	"TraceAbility_Production Month": {
+	"comment": "TraceAbility", 
+	"byte": true, 
+	"bytesascii": true
+	}, 
+	"v_CODEBF[2][1]Failure_Info": {
+	"comment": "RDBLID$23", 
+	"byte": true
+	}, 
+	"v_MemoLock": {
+	"comment": "RDBLID$21", 
+	"bytescount": 2, 
+	"byte": true, 
+	"bitscount": 16
+	}, 
+	"DTCMaskRecord": {
+	"comment": "DTCMREC_DTC", 
+	"bytescount": 3, 
+	"byte": true, 
+	"bitscount": 24
+	}, 
+	"#18_RR_LH_SENSOR": {
+	"comment": "VWRL", 
+	"divideby": 256.0, 
+	"bitscount": 16, 
+	"scaled": true, 
+	"bytescount": 2, 
+	"unit": "km/h"
+	}, 
+	"$12$08_(v_LOCKT) LOCKTORQUE": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 256.0, 
+	"bitscount": 16, 
+	"unit": "kgm"
+	}, 
+	"v_CODEBF[2][24]YAWRATE_POS": {
+	"comment": "RDBLID$23", 
+	"byte": true
+	}, 
+	"#7_CURRENT_TORQ": {
+	"scaled": true, 
+	"comment": "ETRQC", 
+	"step": 3.0, 
+	"unit": "Nm", 
+	"signed": true
+	}, 
+	"VDC/TCS/ABS.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"ASD.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"$11$0F_(v_NEXTGPC) NEXT_GRPOS": {
+	"lists": {
+		"0": "declutched at rest", 
+		"1": "1st gear", 
+		"2": "2nd gear", 
+		"3": "3rd gear", 
+		"4": "4th gear", 
+		"5": "5th gear", 
+		"6": "6th gear", 
+		"7": "7th gear", 
+		"8": "8th gear", 
+		"9": "Reverse", 
+		"10": "neutral or parking", 
+		"11": "CVT in continuous mode", 
+		"15": "AT in limphome"
+	}
+	}, 
+	"v_CODEBF[0][10]ENG_REV": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"R.ManufacturerIdentificationCode": {
+	"lists": {
+		"136": "Renault R2"
+	}
+	}, 
+	"#36_bit32_ETSMODE": {
+	"comment": "ETSMODD", 
+	"bitscount": 2, 
+	"lists": {
+		"0": "AUTO", 
+		"1": "2WD", 
+		"2": "LOCK", 
+		"3": "##"
+	}
+	}, 
+	"v_CODEBF[1][5]FR_WHL": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"v_CODEBF[0][23]WAWRATE_SEN": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"METER/M&A.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"$22$0100_#14_b7_ABS_ACTUATION": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "OFF", 
+		"1": "ON"
+	}
+	}, 
+	"#47_bit70_NEXTGPC": {
+	"comment": "NEXTGPC", 
+	"lists": {
+		"0": "declutched at rest", 
+		"1": "1st gear", 
+		"2": "2nd gear", 
+		"3": "3rd gear", 
+		"4": "4th gear", 
+		"5": "5th gear", 
+		"6": "6th gear", 
+		"7": "7th gear", 
+		"8": "8th gear", 
+		"9": "Reverse", 
+		"10": "neutral or parking", 
+		"11": "CVT in continuous mode", 
+		"12": "Not used", 
+		"13": "Not used 1", 
+		"14": "Not used 2", 
+		"15": "AT in limphome"
+	}
+	}, 
+	"#49_bit0_MMODEC": {
+	"comment": "CURGPC", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OFF", 
+		"1": "ON"
+	}
+	}, 
+	"v_CODEBF[0][20]X_POS_SEN": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"v_CODEBF[0][27]SW_INP": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"NDTC": {
+	"scaled": true
+	}, 
+	"AB-SRS.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"AT/CVT DISP.r.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"LID$20": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"N.SparePartsNumberSuffix": {
+	"lists": {
+		"0": "41650"
+	}
+	}, 
+	"HardwareNumber.LowerPart": {
+	"bytesascii": true, 
+	"bytescount": 5, 
+	"byte": true, 
+	"bitscount": 40
+	}, 
+	"$13$17_(f_AUTO_SW) SW_input-AUTO": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "OFF", 
+		"1": "ON"
+	}
+	}, 
+	"$22$0100_#19_FRONT_WHEEL_SPEED": {
+	"scaled": true, 
+	"unit": "km/h"
+	}, 
+	"ApprovalNumber.BasicPartList": {
+	"byte": true
+	}, 
+	"#37_bit0_VDC_FAIL_FLAG": {
+	"comment": "FTEMP", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "NORMAL", 
+		"1": "ABNORMAL"
+	}
+	}, 
+	"Standard Fault": {
+	"bitscount": 5
+	}, 
+	"ICC SENSOR.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"N.ManufacturerIdentificationCode": {
+	"lists": {
+		"128": "N1", 
+		"129": "N2", 
+		"130": "N3"
+	}
+	}, 
+	"#44_yawref1": {
+	"comment": "yawref1", 
+	"divideby": 10.0, 
+	"bitscount": 16, 
+	"signed": true, 
+	"scaled": true, 
+	"bytescount": 2, 
+	"unit": "deg/s"
+	}, 
+	"TraceAbility_Production Line": {
+	"comment": "TraceAbility", 
+	"byte": true, 
+	"bytesascii": true
+	}, 
+	"v_CODEBF[2][20]X_POS_SEN": {
+	"comment": "RDBLID$23", 
+	"byte": true
+	}, 
+	"ETC.r.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"DTCStatus.testFailedThisMonitoringCycle": {
+	"comment": "TFTMC", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "No", 
+		"1": "Yes"
+	}
+	}, 
+	"$13$07_(v_SW_MOD) 4WD_MODE_SW": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "2WD", 
+		"1": "AUTO", 
+		"2": "LOCK"
+	}
+	}, 
+	"$12$06_(v_TDV) REV_TORQUE": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 256.0, 
+	"bitscount": 16, 
+	"unit": "kgm"
+	}, 
+	"v_CODEBF[1][19]STR_SEN": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"$11$02_(v_APOFSPC) THRTL_POS_SEN": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"step": 5.0, 
+	"unit": "%"
+	}, 
+	"ISG.r.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"v_CODEBF[1][1]Failure_Info": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"EditionNumber": {
+	"comment": "Software version(edition) number", 
+	"bytescount": 2, 
+	"byte": true, 
+	"bitscount": 16
+	}, 
+	"TraceAbility_Supplier Code": {
+	"bytesascii": true, 
+	"bytescount": 4, 
+	"byte": true, 
+	"bitscount": 32, 
+	"comment": "TraceAbility"
+	}, 
+	"$12$0A_(v_TRLIM) TRQ LIMITTER": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 256.0, 
+	"bitscount": 16, 
+	"unit": "kgm"
+	}, 
+	"$22$0100_#16_4WDSOL_TARGET_CURRENT": {
+	"scaled": true, 
+	"divideby": 100.0, 
+	"step": 2.0, 
+	"unit": "A"
+	}, 
+	"1401": {
+	"scaled": true
+	}, 
+	"DTCDeviceIdentifier": {
+	"bytescount": 2, 
+	"bitscount": 16, 
+	"lists": {
+		"53248": "CAN_COMM_CIRCUIT", 
+		"20993": "CONTROLLER_FAILURE", 
+		"20995": "ABS_SYSTEM", 
+		"6148": "EEPROM", 
+		"20997": "4WD_ACTUATOR_RLY", 
+		"6182": "OIL TEMPERATURE SENSOR", 
+		"6161": "POWER SUPPLY SYSTEM", 
+		"6152": "ABS WHEEL SPEED SENSOR", 
+		"6153": "CONTROL_UNIT(AD Conveter)", 
+		"21008": "DRIVE PROTECTION CHECK", 
+		"21009": "LIN_SIGNAL_1", 
+		"21010": "LIN_SIGNAL_2", 
+		"53264": "CONTROL_UNIT(CAN)", 
+		"21001": "MODE_SW", 
+		"20996": "4WD_SOLENOID", 
+		"6171": "SELF SHUT", 
+		"6173": "ENGINE SIGNAL CLOCK", 
+		"6175": "INCOMPLETE CALIBRATION"
+	}
+	}, 
+	"v_CODEBF[2][27]SW_INP": {
+	"comment": "RDBLID$23", 
+	"byte": true
+	}, 
+	"v_CODEBF[2][9]ACCL_POS": {
+	"comment": "RDBLID$23", 
+	"byte": true
+	}, 
+	"4WD.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"[$3B$01_#3]_IT_characteristic_1_right": {
+	"byte": true
+	}, 
+	"#51_CVT_OIL_TEMP": {
+	"scaled": true, 
+	"unit": "count"
+	}, 
+	"$22$0100_#27_VEHICLE_WHEEL_SENSOR_FL": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 256.0, 
+	"bitscount": 16, 
+	"unit": "km/h"
+	}, 
+	"v_CODEBF[1][23]YAWRATE_SEN": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"SYP.r.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"$11$01_BATTERY_VOLT": {
+	"scaled": true, 
+	"divideby": 100.0, 
+	"step": 12.0, 
+	"unit": "V"
+	}, 
+	"v_CODEBF[2][28]SW_INP": {
+	"comment": "RDBLID$23", 
+	"byte": true
+	}, 
+	"LID$12": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"ITM.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"LID$13": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"R.SparePartsNumber": {
+	"bytesascii": true, 
+	"bytescount": 5, 
+	"byte": true, 
+	"bitscount": 40
+	}, 
+	"R.CalibrationNumber": {
+	"bytescount": 2, 
+	"byte": true, 
+	"bitscount": 16
+	}, 
+	"v_CODEBF[0][24]YAWREF_POS": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"TIRE-P DISP.r.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"ARS.r.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"$11$07_(v_ETQ_ETS) TARGET_TORQUE": {
+	"scaled": true, 
+	"step": 2.0, 
+	"unit": "Nm"
+	}, 
+	"v_TEMPMEM01": {
+	"comment": "RDBLID$21", 
+	"bytescount": 2, 
+	"byte": true, 
+	"bitscount": 16
+	}, 
+	"DTCStatusAvailabilityMask": {
+	"scaled": true, 
+	"comment": "DTCSAM"
+	}, 
+	"v_TEMPMEM03": {
+	"comment": "RDBLID$21", 
+	"bytescount": 2, 
+	"byte": true, 
+	"bitscount": 16
+	}, 
+	"v_TEMPMEM02": {
+	"comment": "RDBLID$21", 
+	"bytescount": 2, 
+	"byte": true, 
+	"bitscount": 16
+	}, 
+	"#3_BATTERY_VOLT": {
+	"scaled": true, 
+	"divideby": 100.0, 
+	"step": 12.0, 
+	"comment": "IGN", 
+	"unit": "V"
+	}, 
+	"$11$13_(v_ENGWATTEMP)": {
+	"scaled": true, 
+	"unit": "deg", 
+	"offset": -40.0
+	}, 
+	"ICC.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"$13$03_(ACTR status) ETS_ACTUATOR": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "OFF", 
+		"1": "ON"
+	}
+	}, 
+	"$22$0100_#31_VEHICLE_WHEEL_SENSOR_RL": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 256.0, 
+	"bitscount": 16, 
+	"unit": "km/h"
+	}, 
+	"#34_bit6_4WD_MODE_SW": {
+	"comment": "FIKEI40M", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OFF", 
+		"1": "ON"
+	}
+	}, 
+	"v_CODEBF[1][11]TEMP_SEN_POS": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"140E": {
+	"scaled": true
+	}, 
+	"v_CODEBF[0][25]YAWREF_POS": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"N.SoftwareNumber": {
+	"bytescount": 2, 
+	"byte": true, 
+	"bitscount": 16
+	}, 
+	"$12$05_(v_TETS) ETS_TORQUE": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 256.0, 
+	"bitscount": 16, 
+	"unit": "kgm"
+	}, 
+	"$13$19_(f_VCM_STATUS)": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "OFF", 
+		"1": "RUNNING"
+	}
+	}, 
+	"$11$08_(v_RQ_TRQC) REQ_COM_TORQ": {
+	"scaled": true, 
+	"step": 5.0, 
+	"unit": "Nm"
+	}, 
+	"145F": {
+	"scaled": true
+	}, 
+	"HLS.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"v_CLULOAD08": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"comment": "RDBLID$21", 
+	"bitscount": 16, 
+	"unit": "count/0,64Sec"
+	}, 
+	"v_CLULOAD09": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"comment": "RDBLID$21", 
+	"bitscount": 16, 
+	"unit": "count/0,64Sec"
+	}, 
+	"v_CLULOAD06": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"comment": "RDBLID$21", 
+	"bitscount": 16, 
+	"unit": "count/0,64Sec"
+	}, 
+	"v_CLULOAD07": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"comment": "RDBLID$21", 
+	"bitscount": 16, 
+	"unit": "count/0,64Sec"
+	}, 
+	"v_CLULOAD04": {
+	"scaled": true, 
+	"bytescount": 3, 
+	"comment": "RDBLID$21", 
+	"bitscount": 24, 
+	"unit": "count/0,64Sec"
+	}, 
+	"v_CLULOAD05": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"comment": "RDBLID$21", 
+	"bitscount": 16, 
+	"unit": "count/0,64Sec"
+	}, 
+	"v_CLULOAD02": {
+	"scaled": true, 
+	"bytescount": 3, 
+	"comment": "RDBLID$21", 
+	"bitscount": 24, 
+	"unit": "count/0,64Sec"
+	}, 
+	"v_CLULOAD03": {
+	"scaled": true, 
+	"bytescount": 3, 
+	"comment": "RDBLID$21", 
+	"bitscount": 24, 
+	"unit": "count/0,64Sec"
+	}, 
+	"v_CLULOAD01": {
+	"scaled": true, 
+	"bytescount": 3, 
+	"comment": "RDBLID$21", 
+	"bitscount": 24, 
+	"unit": "count/0,64Sec"
+	}, 
+	"I-KEY.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"$12$09_(v_STRANGC0) STEERING_SENSOR": {
+	"divideby": 10.0, 
+	"bitscount": 16, 
+	"signed": true, 
+	"scaled": true, 
+	"bytescount": 2, 
+	"unit": "deg"
+	}, 
+	"DiagnosticIdentificationCode": {
+	"comment": "Diag evolution number", 
+	"byte": true
+	}, 
+	"$22$0100_#14_b4_HIGH_u_flag": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "LOW", 
+		"1": "HIGH"
+	}
+	}, 
+	"$12$0C_(v_yawrate) YAW_RATE": {
+	"divideby": 10.0, 
+	"bitscount": 16, 
+	"signed": true, 
+	"scaled": true, 
+	"bytescount": 2, 
+	"unit": "deg/s"
+	}, 
+	"1421": {
+	"scaled": true
+	}, 
+	"DTCStatus.pendingDTC": {
+	"comment": "PDTC", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "No", 
+		"1": "Yes"
+	}
+	}, 
+	"1423": {
+	"scaled": true
+	}, 
+	"1422": {
+	"scaled": true
+	}, 
+	"#26_LOCKT": {
+	"comment": "LOCKT", 
+	"divideby": 256.0, 
+	"bitscount": 16, 
+	"scaled": true, 
+	"bytescount": 2, 
+	"unit": "kgm"
+	}, 
+	"1427": {
+	"scaled": true
+	}, 
+	"1429": {
+	"scaled": true
+	}, 
+	"v_CODEBF[0][7]RR_WHL": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"$13$13_(v_ETSMODD) ETS_MODE": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "AUTO", 
+		"1": "LOCK", 
+		"2": "2WD"
+	}
+	}, 
+	"#35_bit2_ABS_ACT": {
+	"comment": "FAS2", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OFF", 
+		"1": "ON"
+	}
+	}, 
+	"STRG.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"v_CODEBF[2][16]ETS_SOL": {
+	"comment": "RDBLID$23", 
+	"byte": true
+	}, 
+	"LID03_#15-1_Right_left_information": {
+	"scaled": true, 
+	"bitscount": 4
+	}, 
+	"#34_bit10_4WD_MODE_SW": {
+	"comment": "\"\nSW_MOD\"", 
+	"bitscount": 2, 
+	"lists": {
+		"0": "##", 
+		"1": "2WD", 
+		"2": "AUTO", 
+		"3": "LOCK"
+	}
+	}, 
+	"v_CODEBF[1][27]SW_INP": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"142B": {
+	"scaled": true
+	}, 
+	"142E": {
+	"scaled": true
+	}, 
+	"142D": {
+	"lists": {
+		"32": "ETQDNR_ETS", 
+		"1": "FVJUD", 
+		"2": "bFLGF0", 
+		"4": "fHIGHM", 
+		"8": "ETSmodd(low)", 
+		"16": "ETSmodd(high)"
+	}
+	}, 
+	"v_CODEBF[0][12]CLT_TMP": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"ESCL.r.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"v_CODEBF[0][21]Y_POS_SEN": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"SYP.r.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"DPC.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"$13$0F_(f_ETCOKC) ETC_CONT_FLAG": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "OFF", 
+		"1": "ON"
+	}
+	}, 
+	"ISG.r.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"ARS.r.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"ManufacturerIdentificationCode": {
+	"lists": {
+		"0": "Renault R1", 
+		"128": "Nissan N1", 
+		"130": "Nissan N3", 
+		"129": "Nissan N2", 
+		"136": "Renault R2", 
+		"255": "Renault R3"
+	}
+	}, 
+	"#16_RR_RH_SENSOR": {
+	"comment": "VWRR", 
+	"divideby": 256.0, 
+	"bitscount": 16, 
+	"scaled": true, 
+	"bytescount": 2, 
+	"unit": "km/h"
+	}, 
+	"N1.SupplierNumber2": {
+	"bytescount": 2, 
+	"byte": true, 
+	"bitscount": 16
+	}, 
+	"$22$0100_#25_VEHICLE_WHEEL_SENSOR_FR": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 256.0, 
+	"bitscount": 16, 
+	"unit": "km/h"
+	}, 
+	"N1.SupplierNumber1": {
+	"byte": true, 
+	"bytesascii": true
+	}, 
+	"$13$08_(v_MOD_DISP) 4WD_MODE_IND": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "AUTO", 
+		"1": "LOCK", 
+		"2": "2WD"
+	}
+	}, 
+	"1409": {
+	"scaled": true
+	}, 
+	"DTCDeviceAndFailureTypeOBD": {
+	"bytescount": 2, 
+	"bitscount": 16, 
+	"lists": {
+		"53248": "CAN_COMM_CIRCUIT", 
+		"20993": "CONTROLLER_FAILURE", 
+		"20995": "ABS_SYSTEM", 
+		"6148": "EEPROM", 
+		"20997": "4WD_ACTUATOR_RLY", 
+		"6182": "OIL TEMPERATURE SENSOR", 
+		"21009": "LIN_SIGNAL_1", 
+		"6152": "ABS WHEEL SPEED SENSOR", 
+		"6153": "CONTROL_UNIT(AD Conveter)", 
+		"21008": "ENGINE_SIGNAL_1", 
+		"6161": "POWER SUPPLY SYSTEM", 
+		"21010": "LIN_SIGNAL_2", 
+		"53264": "CONTROL_UNIT(CAN)", 
+		"21001": "MODE_SW", 
+		"20996": "4WD_SOLENOID", 
+		"6171": "SELF SHUT", 
+		"6173": "ENGINE SIGNAL CLOCK", 
+		"6175": "INCOMPLETE CALIBRATION"
+	}
+	}, 
+	"#49_bit2_SNOWMODEC": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "OFF", 
+		"1": "ON"
+	}
+	}, 
+	"v_CODEBF[2][10]ENG_REV": {
+	"comment": "RDBLID$23", 
+	"byte": true
+	}, 
+	"v_CODEBF[0][6]RR_WHL": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"$11$06_(v_V_APOC) VACCEL_POS_SIG": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"step": 5.0, 
+	"unit": "%"
+	}, 
+	"$12$0B_(v_TC)": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 256.0, 
+	"bitscount": 16, 
+	"unit": "kgm"
+	}, 
+	"#11_ETS_SOLENOID": {
+	"scaled": true, 
+	"divideby": 50.0, 
+	"comment": "IPS_IN", 
+	"unit": "A"
+	}, 
+	"#34_bit54_DIS-TIRE_MONI": {
+	"comment": "FIKEI40M", 
+	"bitscount": 2, 
+	"lists": {
+		"0": "0-4mm", 
+		"1": "8mm-", 
+		"2": "4-8mm", 
+		"3": "##"
+	}
+	}, 
+	"ESCL.r.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"DTC4WDIdentifier": {
+	"comment": "Test Identifier for 4WD Ecu", 
+	"bytescount": 3, 
+	"bitscount": 24, 
+	"lists": {
+		"5376257": "MODE_SW", 
+		"5378305": "LIN_SIGNAL_1", 
+		"1573889": "EEPROM", 
+		"5378561": "LIN_SIGNAL_2", 
+		"13635657": "CONTROL_UNIT(CAN)", 
+		"1580801": "INCOMPLETE CALIBRATION", 
+		"1580289": "ENGINE SIGNAL CLOCK", 
+		"5374721": "ABS_SYSTEM", 
+		"1577217": "POWER SUPPLY SYSTEM", 
+		"1582593": "OIL TEMPERATURE SENSOR", 
+		"13631489": "CAN_COMM_CIRCUIT", 
+		"5374977": "4WD_SOLENOID", 
+		"1574913": "ABS WHEEL SPEED SENSOR", 
+		"5378049": "DRIVE PROTECTION CHECK", 
+		"1579777": "SELF SHUT", 
+		"5374209": "CONTROLLER_FAILURE", 
+		"5375233": "4WD_ACTUATOR_RLY", 
+		"1575169": "CONTROL_UNIT(AD Conveter)"
+	}
+	}, 
+	"v_CODEBF[0][1]_Failure_info": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"TraceAbility_Data": {
+	"bytesascii": true, 
+	"bytescount": 16, 
+	"byte": true, 
+	"bitscount": 128, 
+	"comment": "TraceAbility"
+	}, 
+	"#32_bit5_ENG_SPEED_SIG": {
+	"comment": "ENG_SPEED", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "STOP", 
+		"1": "RUN"
+	}
+	}, 
+	"TCU.r.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"ESCL.r.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"v_CODEBF[2][18]STR_SEN": {
+	"comment": "RDBLID$23", 
+	"byte": true
+	}, 
+	"ECM.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"DTCStatus.testFailed": {
+	"comment": "TF", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "No", 
+		"1": "Yes"
+	}
+	}, 
+	"ARS.r.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"I-KEY.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"141F": {
+	"scaled": true
+	}, 
+	"LID$14": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$15": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$16": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$17": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$10": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$11": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"N.EditionNumber": {
+	"bytescount": 2, 
+	"byte": true, 
+	"bitscount": 16
+	}, 
+	"v_CODEBF[0][28]SW_INP": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"LID$18": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$19": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"HardwareNumber.BasicPartList": {
+	"lists": {
+		"0": "N/A", 
+		"1": "41651"
+	}
+	}, 
+	"v_CODEBF[0][26]ATFTEMP": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"Reserve data": {
+	"bytescount": 9, 
+	"byte": true, 
+	"bitscount": 72
+	}, 
+	"$11$10_(v_CURGPC) )CURRENT_GRPOS": {
+	"lists": {
+		"0": "declutched at rest", 
+		"1": "1st gear", 
+		"2": "2nd gear", 
+		"3": "3rd gear", 
+		"4": "4th gear", 
+		"5": "5th gear", 
+		"6": "6th gear", 
+		"7": "7th gear", 
+		"8": "8th gear", 
+		"9": "Reverse", 
+		"10": "neutral or parking", 
+		"11": "CVT in continuous mode", 
+		"15": "AT in limphome"
+	}
+	}, 
+	"v_CODEBF[1][28]SW_INP": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"$22$0100_#18_QUASI_VEHICLE_SPEED": {
+	"scaled": true, 
+	"unit": "km/h"
+	}, 
+	"YAW.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"v_CODEBF[2][5]FR_WHL": {
+	"comment": "RDBLID$23", 
+	"byte": true
+	}, 
+	"LPG.r.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"$22$0100_#14_b3_BRAKING_HIGH_u_flag": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "LOW", 
+		"1": "HIGH"
+	}
+	}, 
+	"BCM/SEC.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"R.DiagnosticIdentificationCode": {
+	"byte": true
+	}, 
+	"AB-SRS.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"LID03_#04_IT_characteristic_1": {
+	"byte": true
+	}, 
+	"LID$1D": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$1E": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$1F": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"$13$12_(f_ETQDNR_ETS) TRQ_DOWN_REQ": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "OFF", 
+		"1": "ON"
+	}
+	}, 
+	"LID$1A": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$1B": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"LID$1C": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "not supported", 
+		"1": "supported"
+	}
+	}, 
+	"#33_bit2_ETS_ACTUATOR": {
+	"comment": "TES", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "ON", 
+		"1": "OFF"
+	}
+	}, 
+	"LPG.r.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"v_CODEBF[2][19]STR_SEN": {
+	"comment": "RDBLID$23", 
+	"byte": true
+	}, 
+	"$11$04_(v_ETQDRC) REQUEST_TORQUE": {
+	"scaled": true, 
+	"step": 3.0, 
+	"unit": "Nm", 
+	"signed": true, 
+	"offset": 150.0
+	}, 
+	"R.SupplierNumber": {
+	"bytesascii": true, 
+	"bytescount": 3, 
+	"byte": true, 
+	"bitscount": 24
+	}, 
+	"#9_TARGET_TORQUE": {
+	"scaled": true, 
+	"comment": "ETQ_ETS", 
+	"step": 2.0, 
+	"unit": "Nm"
+	}, 
+	"TIRE-P.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"$22$0100_#08_Mileage": {
+	"scaled": true, 
+	"bytescount": 3, 
+	"bitscount": 24, 
+	"unit": "km"
+	}, 
+	"TraceAbility_Reserve": {
+	"bytesascii": true, 
+	"bytescount": 2, 
+	"byte": true, 
+	"bitscount": 16, 
+	"comment": "TraceAbility"
+	}, 
+	"HVAC.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"#50_TF_OIL_TEMP": {
+	"scaled": true, 
+	"divideby": 510.0, 
+	"step": 5.0, 
+	"unit": "V"
+	}, 
+	"144B": {
+	"scaled": true
+	}, 
+	"v_CODEBF[1][14]POW_VOL": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"v_FailSave": {
+	"comment": "RDBLID$2C", 
+	"byte": true
+	}, 
+	"DTCExtendedData.AgingCounter": {
+	"scaled": true, 
+	"comment": "Description of the extendedData AgingCounter (use by Failure Page to decode data)"
+	}, 
+	"TIRE-P.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"v_CODEBF[1][24]YAWREF_POS": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"ONDULEUR.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"TCU.r.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"EPS.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"v_CODEBF[1][22]YAWRATE_SEN": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"v_CODEBF[0][19]STR_SEN": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"v_CODEBF[1][26]ATFTEMP_POS": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"v_CODEBF[0][22]YAWRATE_SEN": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"#32_bit4_STOP_LAMP_SW": {
+	"comment": "STPLMSWC", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "ON", 
+		"1": "OFF"
+	}
+	}, 
+	"$13$04_(f_4WD_WL) 4WD_WARN_LAMP": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "OFF", 
+		"1": "ON"
+	}
+	}, 
+	"VDC/TCS/ABS.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"LID03_#14_characteristic_5_left": {
+	"scaled": true, 
+	"divideby": 100.0, 
+	"unit": "A"
+	}, 
+	"v_CODEBF[2][8]TRQ_POS": {
+	"comment": "RDBLID$23", 
+	"byte": true
+	}, 
+	"TraceAbility_Production Year": {
+	"bytesascii": true, 
+	"bytescount": 2, 
+	"byte": true, 
+	"bitscount": 16, 
+	"comment": "TraceAbility"
+	}, 
+	"v_CODEBF[0][14]POW_VOL": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"R.SoftwareNumber": {
+	"bytescount": 2, 
+	"byte": true, 
+	"bitscount": 16
+	}, 
+	"v_CODEBF[2][13]CLT_TMP": {
+	"comment": "RDBLID$23", 
+	"byte": true
+	}, 
+	"TraceAbility_Factory Code": {
+	"comment": "TraceAbility", 
+	"byte": true, 
+	"bytesascii": true
+	}, 
+	"ENG-ST.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"v_CODEBF[2][14]POW_VOL": {
+	"comment": "RDBLID$23", 
+	"byte": true
+	}, 
+	"v_CODEBF[2][12]CLT_TMP": {
+	"comment": "RDBLID$23", 
+	"byte": true
+	}, 
+	"#12_FR_RH_SENSOR": {
+	"comment": "VWFR", 
+	"divideby": 256.0, 
+	"bitscount": 16, 
+	"scaled": true, 
+	"bytescount": 2, 
+	"unit": "km/h"
+	}, 
+	"N.OtherSystemFeatures": {
+	"bytescount": 3, 
+	"byte": true, 
+	"bitscount": 24
+	}, 
+	"v_CODEBF[1][21]Y_POS_SEN": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"SupplierNumber.ITG.1": {
+	"comment": "Supplier ITG code", 
+	"byte": true, 
+	"bytesascii": true
+	}, 
+	"v_AllFail": {
+	"scaled": true, 
+	"comment": "RDBLID$2C", 
+	"unit": "V", 
+	"signed": true
+	}, 
+	"LID03_#05_IT_characteristic_2": {
+	"byte": true
+	}, 
+	"1425": {
+	"scaled": true
+	}, 
+	"$12$03_(v_WRRR) RR_RH_SENSOR": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 256.0, 
+	"bitscount": 16, 
+	"unit": "km"
+	}, 
+	"v_CODEBF[1][9]ACCL_POS": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"AT/CVT.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"v_CODEBF[2][25]YAWRATE_POS": {
+	"comment": "RDBLID$23", 
+	"byte": true
+	}, 
+	"v_CODEBF[1][17]DRV_TRQ": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"AT/CVT DISP.r.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"#38_STRANGC0": {
+	"comment": "STRANGC0", 
+	"divideby": 10.0, 
+	"bitscount": 16, 
+	"signed": true, 
+	"scaled": true, 
+	"bytescount": 2, 
+	"unit": "deg"
+	}, 
+	"$13$0D_(f_FLG_BMRC) TK_MM_4WD_BRK_OPE_FLAG": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "OFF", 
+		"1": "ON"
+	}
+	}, 
+	"DPC.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"v_CODEBF[0][8]TRQ_POS": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"$22$0100_#21_CURRENT_RANGE_SIGNAL": {
+	"lists": {
+		"0": "declutched at rest", 
+		"1": "1st gear", 
+		"2": "2nd gear", 
+		"3": "3rd gear", 
+		"4": "4th gear", 
+		"5": "5th gear", 
+		"6": "6th gear", 
+		"7": "7th gear", 
+		"8": "8th gear", 
+		"9": "Reverse", 
+		"10": "neutral or parking", 
+		"11": "CVT in continuous mode", 
+		"15": "AT in linphome"
+	}
+	}, 
+	"ETC.r.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"v_CODEBF[0][18]STR_SEN": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"v_CODEBF[2][22]YAWRATE_SEN": {
+	"comment": "RDBLID$23", 
+	"byte": true
+	}, 
+	"$13$14_(f_TEMP) CLUTCH_TEMP_FLAG1": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "OFF", 
+		"1": "ON"
+	}
+	}, 
+	"N.HardwareNumber": {
+	"bytescount": 5, 
+	"byte": true, 
+	"bitscount": 40
+	}, 
+	"ONDULEUR.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"v_CODEBF[1][7]RR_WHL": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"$12$07_(v_TENG) DRIVE_TORQUE": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 256.0, 
+	"bitscount": 16, 
+	"unit": "kgm"
+	}, 
+	"v_Htmemo8": {
+	"comment": "RDBLID$21", 
+	"bytescount": 2, 
+	"byte": true, 
+	"bitscount": 16
+	}, 
+	"v_CODEBF[2][23]YAWRATE_SEN": {
+	"comment": "RDBLID$23", 
+	"byte": true
+	}, 
+	"v_Htmemo4": {
+	"comment": "RDBLID$21", 
+	"bytescount": 2, 
+	"byte": true, 
+	"bitscount": 16
+	}, 
+	"HLS.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"#42_yawrate": {
+	"comment": "yawrate", 
+	"divideby": 10.0, 
+	"bitscount": 16, 
+	"signed": true, 
+	"scaled": true, 
+	"bytescount": 2, 
+	"unit": "deg/s"
+	}, 
+	"$13$0A_(f_PKBC) PKB": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "OFF", 
+		"1": "ON"
+	}
+	}, 
+	"#35_bit5_VDC_OPE_FLAG": {
+	"comment": "VDCACTC", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OFF", 
+		"1": "ON"
+	}
+	}, 
+	"OutputPermanentControlList": {
+	"comment": "Testing output : List of all output with permanent test", 
+	"lists": {
+		"1": "ACTR_SOL_DRIVE"
+	}
+	}, 
+	"v_CODEBF[2][17]DRV_TRQ": {
+	"comment": "RDBLID$23", 
+	"byte": true
+	}, 
+	"v_MODEMEMO1": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"comment": "RDBLID$21", 
+	"bitscount": 16, 
+	"unit": "Count/5min"
+	}, 
+	"v_MODEMEMO3": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"comment": "RDBLID$21", 
+	"bitscount": 16, 
+	"unit": "Count/5min"
+	}, 
+	"v_MODEMEMO2": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"comment": "RDBLID$21", 
+	"bitscount": 16, 
+	"unit": "Count/5min"
+	}, 
+	"SessionName": {
+	"comment": "for Start diagnostic session", 
+	"lists": {
+		"192": "ExtendedDiagSession", 
+		"129": "DefaultSession", 
+		"133": "ProgrammingSession", 
+		"134": "DevelopmentSession"
+	}
+	}, 
+	"ITM.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"v_CODEBF[2][26]ATFTEMP": {
+	"comment": "RDBLID$23", 
+	"byte": true
+	}, 
+	"#48_bit70_CURGPC": {
+	"comment": "CURGPC", 
+	"lists": {
+		"0": "declutched at rest", 
+		"1": "1st gear", 
+		"2": "2nd gear", 
+		"3": "3rd gear", 
+		"4": "4th gear", 
+		"5": "5th gear", 
+		"6": "6th gear", 
+		"7": "7th gear", 
+		"8": "8th gear", 
+		"9": "Reverse", 
+		"10": "neutral or parking", 
+		"11": "CVT in continuous mode", 
+		"12": "Not used", 
+		"13": "Not used 1", 
+		"14": "Not used 2", 
+		"15": "AT in limphome"
+	}
+	}, 
+	"TIRE-P.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"#28_STR_SENSOR": {
+	"comment": "LOCKT", 
+	"divideby": 10.0, 
+	"bitscount": 16, 
+	"signed": true, 
+	"scaled": true, 
+	"bytescount": 2, 
+	"unit": "deg"
+	}, 
+	"OutputControlStatus": {
+	"lists": {
+		"1": "Running", 
+		"2": "Stopped", 
+		"17": "Stopped by 'Stop Control'"
+	}
+	}, 
+	"N.CalibrationNumber": {
+	"bytescount": 2, 
+	"byte": true, 
+	"bitscount": 16
+	}, 
+	"LID03_#11_characteristic_2_left": {
+	"scaled": true, 
+	"divideby": 100.0, 
+	"unit": "A"
+	}, 
+	"#36_bit5_FTEMP2": {
+	"comment": "FTEMP", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OFF", 
+		"1": "ON"
+	}
+	}, 
+	"[$3B$01_#7]_IT_characteristic_5_right": {
+	"byte": true
+	}, 
+	"v_CODEBF[1][20]X_POS_SEN": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"STRG.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"LID03_#09_bit7_RESERVE": {
+	"byte": true
+	}, 
+	"1447": {
+	"scaled": true
+	}, 
+	"1445": {
+	"scaled": true
+	}, 
+	"1443": {
+	"scaled": true
+	}, 
+	"1442": {
+	"scaled": true
+	}, 
+	"1441": {
+	"scaled": true
+	}, 
+	"DISPLAY.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"1449": {
+	"scaled": true
+	}, 
+	"v_CODEBF[1][13]CLT_TEMP": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"$11$0A_(v_XGB00) ACCEL_G": {
+	"scaled": true, 
+	"divideby": 100.0, 
+	"unit": "G", 
+	"offset": -128.0
+	}, 
+	"144E": {
+	"scaled": true
+	}, 
+	"144D": {
+	"lists": {
+		"32": "ETQDNR_ETS", 
+		"1": "FVJUD", 
+		"2": "bFLGF0", 
+		"4": "fHIGHM", 
+		"8": "ETSmodd(low)", 
+		"16": "ETSmodd(high)"
+	}
+	}, 
+	"DTCStatus.confirmedDTC": {
+	"comment": "CDTC", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "No", 
+		"1": "Yes"
+	}
+	}, 
+	"#8_VACCEL_POS_SIG": {
+	"scaled": true, 
+	"divideby": 255.0, 
+	"step": 100.0, 
+	"comment": "v_APOC", 
+	"unit": "%"
+	}, 
+	"#14_FR_LH_SENSOR": {
+	"comment": "VWFL", 
+	"divideby": 256.0, 
+	"bitscount": 16, 
+	"scaled": true, 
+	"bytescount": 2, 
+	"unit": "km/h"
+	}, 
+	"AB-SRS.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"$13$0C_(f_FLG_AMRC) TK_MM_4WD_ENG_OPE_FLAG": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "OFF", 
+		"1": "ON"
+	}
+	}, 
+	"v_CODEBF[2][6]RR_WHL": {
+	"comment": "RDBLID$23", 
+	"byte": true
+	}, 
+	"AT/CVT.n.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"4WD.n.CRRNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"DTCExtendedData.DTCOccurrenceCounter": {
+	"scaled": true, 
+	"comment": "Description of the extendedData DTCOccurenceCounter (use by Failure Page to decode data)"
+	}, 
+	"$11$0E_(v_CVTTMPDEG) TEMP": {
+	"scaled": true, 
+	"unit": "deg", 
+	"offset": -40.0
+	}, 
+	"v_CODEBF[0][15]DRV_MODE": {
+	"comment": "RDBLID$22", 
+	"byte": true
+	}, 
+	"METER/M&A.n.PAST.vcan": {
+	"scaled": true, 
+	"comment": "CAN Monitor", 
+	"step": -1.0, 
+	"bitscount": 6, 
+	"offset": 40.0
+	}, 
+	"LID03_#20_WRITE_for_CONSTANT_NUMBER": {
+	"lists": {
+		"0": "Un_writing", 
+		"1": "Numerical No.1", 
+		"2": "Numerical No.2", 
+		"3": "Numerical No.3", 
+		"4": "Numerical No.4", 
+		"5": "Numerical No.5", 
+		"6": "Numerical No.6", 
+		"7": "Numerical No.7", 
+		"8": "Numerical No.8", 
+		"9": "Numerical No.9", 
+		"10": "Numerical No.10", 
+		"11": "Numerical No.11", 
+		"12": "Numerical No.12", 
+		"13": "Numerical No.13", 
+		"14": "Numerical No.14", 
+		"15": "Numerical No.15"
+	}
+	}, 
+	"$22$0100_#14_b6_VDC_ACTUATION": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "OFF", 
+		"1": "ON"
+	}
+	}, 
+	"#4_THRTL_POS_SEN": {
+	"scaled": true, 
+	"divideby": 2.0, 
+	"comment": "APOFSPC", 
+	"unit": "%"
+	}, 
+	"LID03_#12_3A_CONVERT_TORQUE": {
+	"bytescount": 2, 
+	"byte": true, 
+	"bitscount": 16
+	}, 
+	"TCU.r.PRSNT.vcan": {
+	"comment": "CAN Monitor", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "OK", 
+		"1": "UNKWN"
+	}
+	}, 
+	"v_Myumemo": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"comment": "RDBLID$21", 
+	"bitscount": 16, 
+	"unit": "Count/H->L"
+	}, 
+	"$12$01_(v_WRFR) FR_RH_SENSOR": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 256.0, 
+	"bitscount": 16, 
+	"unit": "km"
+	}, 
+	"LID03_#10_characteristic_1_left": {
+	"scaled": true, 
+	"divideby": 100.0, 
+	"unit": "A"
+	}
+}
+}

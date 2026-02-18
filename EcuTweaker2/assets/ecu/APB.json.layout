@@ -1,0 +1,3176 @@
+{
+ "screens": {
+  "Опрос ввода/вывода": {
+   "inputs": [],
+   "color": "rgb(64,128,128)",
+   "labels": [
+    {
+     "color": "rgb(128,255,128)",
+     "text": "Internal ECU Parameters",
+     "bbox": {
+      "width": 6820,
+      "top": 585,
+      "height": 8190,
+      "left": 210
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "0",
+      "size": 14.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(207,207,207)",
+     "text": "I/O Survey",
+     "bbox": {
+      "width": 6789,
+      "top": 120,
+      "height": 390,
+      "left": 261
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 16.0
+     },
+     "alignment": "2"
+    }
+   ],
+   "presend": [
+    {
+     "Delay": "0",
+     "RequestName": "StartDiagnosticSession.ExtendedDiagnostic"
+    }
+   ],
+   "height": 8940,
+   "buttons": [
+    {
+     "text": "Clear DTC",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "ClearDiagnosticInformation.All"
+      }
+     ],
+     "uniquename": "Clear DTC_0",
+     "font": {
+      "bold": "1",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 12.0
+     },
+     "rect": {
+      "width": 656,
+      "top": 6249,
+      "height": 1446,
+      "left": 6335
+     }
+    }
+   ],
+   "width": 7260,
+   "displays": [
+    {
+     "color": "rgb(223,223,223)",
+     "text": "ActuatorBatteryVoltageRR",
+     "request": "DataRead.Physical _I/O_Values",
+     "width": 2360,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 3057,
+      "top": 1344,
+      "height": 333,
+      "left": 391
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "ActuatorBatteryVoltageRL",
+     "request": "DataRead.Physical _I/O_Values",
+     "width": 2360,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 3057,
+      "top": 1712,
+      "height": 333,
+      "left": 391
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "ActuatorCurrentNominalValueRR",
+     "request": "DataRead.Physical _I/O_Values",
+     "width": 2345,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 3060,
+      "top": 2214,
+      "height": 333,
+      "left": 404
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "ActuatorCurrentNominalValueRL",
+     "request": "DataRead.Physical _I/O_Values",
+     "width": 2345,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 3060,
+      "top": 2586,
+      "height": 333,
+      "left": 404
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "VehicleForwardSlope",
+     "request": "DataRead.Physical _I/O_Values",
+     "width": 2450,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 3238,
+      "top": 4964,
+      "height": 323,
+      "left": 3630
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "BrakeForceValueEstimatedLeft",
+     "request": "DataRead.Physical _I/O_Values",
+     "width": 2375,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 3060,
+      "top": 3067,
+      "height": 333,
+      "left": 390
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "BrakeForceValueEstimatedRight",
+     "request": "DataRead.Physical _I/O_Values",
+     "width": 2375,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 3060,
+      "top": 3436,
+      "height": 333,
+      "left": 390
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "ClutchPedalPosition",
+     "request": "DataRead.Physical _I/O_Values",
+     "width": 2330,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 3238,
+      "top": 1350,
+      "height": 323,
+      "left": 3626
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "SwitchState",
+     "request": "DataRead.Physical _I/O_Values",
+     "width": 2330,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 3238,
+      "top": 1725,
+      "height": 323,
+      "left": 3630
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "BrakediscTemperature",
+     "request": "DataRead.Physical _I/O_Values",
+     "width": 2330,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 3238,
+      "top": 3069,
+      "height": 323,
+      "left": 3626
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "HighestBrakeDiscTemperature",
+     "request": "DataRead.Physical _I/O_Values",
+     "width": 2330,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 3238,
+      "top": 3883,
+      "height": 323,
+      "left": 3626
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "MileageHighestBrakeDiscTemperature",
+     "request": "DataRead.Physical _I/O_Values",
+     "width": 2630,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 3238,
+      "top": 4258,
+      "height": 323,
+      "left": 3626
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "APBApplyCounterLeft",
+     "request": "DataRead.Physical _I/O_Values",
+     "width": 2345,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 3046,
+      "top": 3868,
+      "height": 333,
+      "left": 418
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "APBApplyCounterRight",
+     "request": "DataRead.Physical _I/O_Values",
+     "width": 2345,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 3046,
+      "top": 4238,
+      "height": 333,
+      "left": 418
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "ModeControllerState",
+     "request": "DataRead.Physical _I/O_Values",
+     "width": 2330,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 3238,
+      "top": 3430,
+      "height": 323,
+      "left": 3626
+     }
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "Message ParkingBrakeBindingStatusDisplay",
+     "request": "DataRead.Physical _I/O_Values",
+     "width": 2780,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 5902,
+      "top": 5550,
+      "height": 319,
+      "left": 376
+     }
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "Message ParkingBrakeMalfunctionDisplay",
+     "request": "DataRead.Physical _I/O_Values",
+     "width": 2780,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 5888,
+      "top": 5904,
+      "height": 319,
+      "left": 376
+     }
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "Message NotImmobilizedVehicleWarning",
+     "request": "DataRead.Physical _I/O_Values",
+     "width": 2780,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 5888,
+      "top": 6259,
+      "height": 319,
+      "left": 376
+     }
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "Message APBNotTightenedWarning",
+     "request": "DataRead.Physical _I/O_Values",
+     "width": 2780,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 5888,
+      "top": 6613,
+      "height": 319,
+      "left": 376
+     }
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "Message APBTightenedRequestUnavailable",
+     "request": "DataRead.Physical _I/O_Values",
+     "width": 2780,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 5888,
+      "top": 6967,
+      "height": 319,
+      "left": 376
+     }
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "Message APBBrakePedalRequestDisplay",
+     "request": "DataRead.Physical _I/O_Values",
+     "width": 2780,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 5888,
+      "top": 7340,
+      "height": 319,
+      "left": 376
+     }
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "Message DynamicBrakingDisplay",
+     "request": "DataRead.Physical _I/O_Values",
+     "width": 2780,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 5888,
+      "top": 7694,
+      "height": 319,
+      "left": 376
+     }
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "Message TakeOffInhibitionWarning",
+     "request": "DataRead.Physical _I/O_Values",
+     "width": 2780,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 5888,
+      "top": 8047,
+      "height": 319,
+      "left": 376
+     }
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "LED status",
+     "request": "DataRead.Physical _I/O_Values",
+     "width": 2780,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 3761,
+      "top": 8403,
+      "height": 319,
+      "left": 376
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "BrakeStatusRight",
+     "request": "DataRead.Physical _I/O_Values",
+     "width": 1775,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 3031,
+      "top": 5076,
+      "height": 321,
+      "left": 449
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "BrakeStatusLeft",
+     "request": "DataRead.Physical _I/O_Values",
+     "width": 1775,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 3031,
+      "top": 4701,
+      "height": 321,
+      "left": 444
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "FailureLevel",
+     "request": "DataRead.Physical _I/O_Values",
+     "width": 1025,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 3262,
+      "top": 2369,
+      "height": 323,
+      "left": 3602
+     }
+    }
+   ]
+  },
+  "Данные CAN": {
+   "inputs": [],
+   "color": "rgb(64,128,128)",
+   "labels": [
+    {
+     "color": "rgb(223,223,223)",
+     "text": "CAN MESSAGES",
+     "bbox": {
+      "width": 5865,
+      "top": 210,
+      "height": 345,
+      "left": 255
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 16.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "ABS Parameters",
+     "bbox": {
+      "width": 5880,
+      "top": 6450,
+      "height": 3000,
+      "left": 240
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 12.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "BCM",
+     "bbox": {
+      "width": 5880,
+      "top": 720,
+      "height": 3840,
+      "left": 240
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 12.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "ECM",
+     "bbox": {
+      "width": 5880,
+      "top": 4650,
+      "height": 1685,
+      "left": 240
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 12.0
+     },
+     "alignment": "2"
+    }
+   ],
+   "presend": [
+    {
+     "Delay": "0",
+     "RequestName": "StartDiagnosticSession.ExtendedDiagnostic"
+    }
+   ],
+   "height": 10140,
+   "buttons": [],
+   "width": 6420,
+   "displays": [
+    {
+     "color": "rgb(223,223,223)",
+     "text": "MeanEffectiveTorque",
+     "request": "DataRead.CAN_ECM_Parameters",
+     "width": 2435,
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5353,
+      "top": 5068,
+      "height": 276,
+      "left": 601
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "EngineStatus_R",
+     "request": "DataRead.CAN_ECM_Parameters",
+     "width": 2435,
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5354,
+      "top": 5376,
+      "height": 276,
+      "left": 601
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "EngineRPM",
+     "request": "DataRead.CAN_ECM_Parameters",
+     "width": 2435,
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5353,
+      "top": 5676,
+      "height": 276,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "RawSensor",
+     "request": "DataRead.CAN_ECM_Parameters",
+     "width": 2435,
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5354,
+      "top": 5984,
+      "height": 276,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "BCM_WakeUpSleepCommand",
+     "request": "DataRead.CAN_BCM_Parameters",
+     "width": 2450,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5367,
+      "top": 1080,
+      "height": 273,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "WakeUpType",
+     "request": "DataRead.CAN_BCM_Parameters",
+     "width": 2450,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 5367,
+      "top": 1374,
+      "height": 273,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "VehiculeState",
+     "request": "DataRead.CAN_BCM_Parameters",
+     "width": 2450,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5367,
+      "top": 1668,
+      "height": 273,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "DiagMuxOn",
+     "request": "DataRead.CAN_BCM_Parameters",
+     "width": 2450,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5355,
+      "top": 1947,
+      "height": 528,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "EngineStopDriverRequested",
+     "request": "DataRead.CAN_BCM_Parameters",
+     "width": 2465,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5367,
+      "top": 2505,
+      "height": 528,
+      "left": 585
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "BrakeInfoStatus",
+     "request": "DataRead.CAN_BCM_Parameters",
+     "width": 2465,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5367,
+      "top": 3054,
+      "height": 288,
+      "left": 585
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "GenericApplicativeDiagEnable",
+     "request": "DataRead.CAN_BCM_Parameters",
+     "width": 2450,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5352,
+      "top": 3363,
+      "height": 543,
+      "left": 600
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "DriverDoorState",
+     "request": "DataRead.CAN_BCM_Parameters",
+     "width": 2465,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5367,
+      "top": 3926,
+      "height": 273,
+      "left": 585
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "PassengerDoorState",
+     "request": "DataRead.CAN_BCM_Parameters",
+     "width": 2465,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5367,
+      "top": 4234,
+      "height": 273,
+      "left": 585
+     }
+    },
+    {
+     "color": "rgb(239,239,239)",
+     "text": "VehiculeSpeed",
+     "request": "DataRead.CAN_ABS_Parameters (14 byte)",
+     "width": 2345,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 5215,
+      "top": 6855,
+      "height": 300,
+      "left": 705
+     }
+    },
+    {
+     "color": "rgb(239,239,239)",
+     "text": "WheelRearLeftSpeed(CAN)",
+     "request": "DataRead.CAN_ABS_Parameters (14 byte)",
+     "width": 2345,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 5215,
+      "top": 7155,
+      "height": 300,
+      "left": 705
+     }
+    },
+    {
+     "color": "rgb(239,239,239)",
+     "text": "WheelRearRightSpeed(CAN)",
+     "request": "DataRead.CAN_ABS_Parameters (14 byte)",
+     "width": 2345,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 5215,
+      "top": 7455,
+      "height": 300,
+      "left": 705
+     }
+    },
+    {
+     "color": "rgb(239,239,239)",
+     "text": "WheelFrontLeftSpeed(CAN)",
+     "request": "DataRead.CAN_ABS_Parameters (14 byte)",
+     "width": 2345,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 5215,
+      "top": 7755,
+      "height": 300,
+      "left": 705
+     }
+    },
+    {
+     "color": "rgb(239,239,239)",
+     "text": "WheelFrontRightSpeed(CAN)",
+     "request": "DataRead.CAN_ABS_Parameters (14 byte)",
+     "width": 2345,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 5215,
+      "top": 8055,
+      "height": 300,
+      "left": 705
+     }
+    },
+    {
+     "color": "rgb(239,239,239)",
+     "text": "Reserved(2bits)",
+     "request": "DataRead.CAN_ABS_Parameters (14 byte)",
+     "width": 2345,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 5215,
+      "top": 8355,
+      "height": 300,
+      "left": 705
+     }
+    },
+    {
+     "color": "rgb(239,239,239)",
+     "text": "Odometer",
+     "request": "DataRead.CAN_ABS_Parameters (14 byte)",
+     "width": 2345,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 5215,
+      "top": 8655,
+      "height": 300,
+      "left": 705
+     }
+    },
+    {
+     "color": "rgb(239,239,239)",
+     "text": "Reserved(1bits)",
+     "request": "DataRead.CAN_ABS_Parameters (14 byte)",
+     "width": 2345,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 5215,
+      "top": 8955,
+      "height": 300,
+      "left": 705
+     }
+    }
+   ]
+  },
+  "Замена колодок": {
+   "inputs": [],
+   "color": "rgb(64,128,128)",
+   "labels": [
+    {
+     "color": "rgb(223,223,223)",
+     "text": "ROUTINES Plant Process",
+     "bbox": {
+      "width": 8284,
+      "top": 2160,
+      "height": 375,
+      "left": 240
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 16.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(128,255,128)",
+     "text": "Brakes Status ",
+     "bbox": {
+      "width": 8297,
+      "top": 2565,
+      "height": 1305,
+      "left": 228
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "1st operation: Assembly check process",
+     "bbox": {
+      "width": 8284,
+      "top": 4095,
+      "height": 1515,
+      "left": 221
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 14.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "2nd operation: Calibration process",
+     "bbox": {
+      "width": 8303,
+      "top": 5730,
+      "height": 1755,
+      "left": 214
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 14.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(255,128,128)",
+     "text": "Service mode - open",
+     "bbox": {
+      "width": 4264,
+      "top": 720,
+      "height": 1205,
+      "left": 240
+     },
+     "fontcolor": "rgb(64,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(255,128,128)",
+     "text": "Service mode - closed",
+     "bbox": {
+      "width": 4228,
+      "top": 720,
+      "height": 1215,
+      "left": 4339
+     },
+     "fontcolor": "rgb(64,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "Use for pad replacement",
+     "bbox": {
+      "width": 8329,
+      "top": 270,
+      "height": 375,
+      "left": 222
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "0",
+      "size": 14.0
+     },
+     "alignment": "2"
+    }
+   ],
+   "presend": [
+    {
+     "Delay": "0",
+     "RequestName": "StartDiagnosticSession.ExtendedDiagnostic"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "Routine.AssemblyCheckMode_Status"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "Routine.AXSensorCalibration_Status"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "Routine.MaintenanceOpenMode_Status"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "Routine.MaintenanceCloseMode_Status"
+    }
+   ],
+   "height": 7980,
+   "buttons": [
+    {
+     "text": "Release Both Brakes",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "IOControl.Release_Both_Actuators_Start"
+      }
+     ],
+     "uniquename": "Release Both Brakes_0",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 1723,
+      "top": 3105,
+      "height": 471,
+      "left": 5747
+     }
+    },
+    {
+     "text": "START",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "Routine.AssemblyCheckMode_Start"
+      }
+     ],
+     "uniquename": "START_1",
+     "font": {
+      "bold": "1",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 1171,
+      "top": 4573,
+      "height": 391,
+      "left": 6386
+     }
+    },
+    {
+     "text": "STOP",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "Routine.AssemblyCheckMode_Stop"
+      }
+     ],
+     "uniquename": "STOP_2",
+     "font": {
+      "bold": "1",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 1171,
+      "top": 5085,
+      "height": 377,
+      "left": 6386
+     }
+    },
+    {
+     "text": "START",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "Routine.AXSensorCalibration_Start"
+      },
+      {
+       "Delay": "500",
+       "RequestName": "Routine.AXSensorCalibration_Status"
+      },
+      {
+       "Delay": "500",
+       "RequestName": "Routine.AXSensorCalibration_Status"
+      },
+      {
+       "Delay": "500",
+       "RequestName": "Routine.AXSensorCalibration_Status"
+      },
+      {
+       "Delay": "500",
+       "RequestName": "Routine.AXSensorCalibration_Status"
+      },
+      {
+       "Delay": "500",
+       "RequestName": "Routine.AXSensorCalibration_Status"
+      },
+      {
+       "Delay": "500",
+       "RequestName": "Routine.AXSensorCalibration_Status"
+      }
+     ],
+     "uniquename": "START_3",
+     "font": {
+      "bold": "1",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 1171,
+      "top": 6240,
+      "height": 370,
+      "left": 6386
+     }
+    },
+    {
+     "text": "STATUS",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "Routine.AXSensorCalibration_Status"
+      }
+     ],
+     "uniquename": "STATUS_4",
+     "font": {
+      "bold": "1",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 1171,
+      "top": 6689,
+      "height": 372,
+      "left": 6386
+     }
+    },
+    {
+     "text": "OPEN",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "Routine.MaintenanceOpenMode_Start"
+      },
+      {
+       "Delay": "500",
+       "RequestName": "Routine.MaintenanceOpenMode_Status"
+      },
+      {
+       "Delay": "500",
+       "RequestName": "Routine.MaintenanceOpenMode_Status"
+      },
+      {
+       "Delay": "500",
+       "RequestName": "Routine.MaintenanceOpenMode_Status"
+      },
+      {
+       "Delay": "500",
+       "RequestName": "Routine.MaintenanceOpenMode_Status"
+      },
+      {
+       "Delay": "500",
+       "RequestName": "Routine.MaintenanceOpenMode_Status"
+      },
+      {
+       "Delay": "500",
+       "RequestName": "Routine.MaintenanceOpenMode_Status"
+      },
+      {
+       "Delay": "500",
+       "RequestName": "Routine.MaintenanceOpenMode_Status"
+      },
+      {
+       "Delay": "500",
+       "RequestName": "Routine.MaintenanceOpenMode_Status"
+      },
+      {
+       "Delay": "500",
+       "RequestName": "Routine.MaintenanceOpenMode_Status"
+      }
+     ],
+     "uniquename": "ОТКРЫТЬ_5",
+     "font": {
+      "bold": "1",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 1125,
+      "top": 1440,
+      "height": 338,
+      "left": 1440
+     }
+    },
+    {
+     "text": "STOP",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "Routine.MaintenanceOpenMode_Stop"
+      }
+     ],
+     "uniquename": "STOP_6",
+     "font": {
+      "bold": "1",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 594,
+      "top": 1440,
+      "height": 320,
+      "left": 2880
+     }
+    },
+    {
+     "text": "CLOSE",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "Routine.MaintenanceCloseMode_Start"
+      },
+      {
+       "Delay": "500",
+       "RequestName": "Routine.MaintenanceCloseMode_Status"
+      },
+      {
+       "Delay": "500",
+       "RequestName": "Routine.MaintenanceCloseMode_Status"
+      },
+      {
+       "Delay": "500",
+       "RequestName": "Routine.MaintenanceCloseMode_Status"
+      },
+      {
+       "Delay": "500",
+       "RequestName": "Routine.MaintenanceCloseMode_Status"
+      },
+      {
+       "Delay": "500",
+       "RequestName": "Routine.MaintenanceCloseMode_Status"
+      },
+      {
+       "Delay": "500",
+       "RequestName": "Routine.MaintenanceCloseMode_Status"
+      },
+      {
+       "Delay": "500",
+       "RequestName": "Routine.MaintenanceCloseMode_Status"
+      },
+      {
+       "Delay": "500",
+       "RequestName": "Routine.MaintenanceCloseMode_Status"
+      },
+      {
+       "Delay": "500",
+       "RequestName": "Routine.MaintenanceCloseMode_Status"
+      }
+     ],
+     "uniquename": "ЗАКРЫТЬ_7",
+     "font": {
+      "bold": "1",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 1125,
+      "top": 1440,
+      "height": 338,
+      "left": 5400
+     }
+    },
+    {
+     "text": "STOP",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "Routine.MaintenanceCloseMode_Stop"
+      }
+     ],
+     "uniquename": "STOP_8",
+     "font": {
+      "bold": "1",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 601,
+      "top": 1440,
+      "height": 320,
+      "left": 6720
+     }
+    }
+   ],
+   "width": 8700,
+   "displays": [
+    {
+     "color": "rgb(128,255,128)",
+     "text": "BrakeStatusLeft",
+     "request": "DataRead.Physical _I/O_Values",
+     "width": 2030,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 3772,
+      "top": 2961,
+      "height": 321,
+      "left": 894
+     }
+    },
+    {
+     "color": "rgb(128,255,128)",
+     "text": "BrakeStatusRight",
+     "request": "DataRead.Physical _I/O_Values",
+     "width": 2030,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 3772,
+      "top": 3366,
+      "height": 321,
+      "left": 899
+     }
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "StatusRoutineRequested",
+     "request": "Routine.AssemblyCheckMode_Status",
+     "width": 2330,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5949,
+      "top": 4607,
+      "height": 349,
+      "left": 342
+     }
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "StatusRoutineRequested",
+     "request": "Routine.AXSensorCalibration_Status",
+     "width": 2300,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5871,
+      "top": 6255,
+      "height": 345,
+      "left": 390
+     }
+    },
+    {
+     "color": "rgb(255,128,128)",
+     "text": "StatusRoutineRequested",
+     "request": "Routine.MaintenanceOpenMode_Status",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4080,
+      "top": 1050,
+      "height": 296,
+      "left": 346
+     }
+    },
+    {
+     "color": "rgb(255,128,128)",
+     "text": "StatusRoutineRequested",
+     "request": "Routine.MaintenanceCloseMode_Status",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 3992,
+      "top": 1050,
+      "height": 295,
+      "left": 4514
+     }
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "VehicleForwardSlope",
+     "request": "Routine.AXSensorCalibration_Status",
+     "width": 2315,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 3200,
+      "top": 6675,
+      "height": 360,
+      "left": 374
+     }
+    },
+    {
+     "color": "rgb(128,255,128)",
+     "text": "BrakeStatusLeft",
+     "request": "DataRead.Physical _I/O_Values",
+     "width": 2030,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4454,
+      "top": 2961,
+      "height": 321,
+      "left": 894
+     }
+    },
+    {
+     "color": "rgb(128,255,128)",
+     "text": "BrakeStatusRight",
+     "request": "DataRead.Physical _I/O_Values",
+     "width": 2030,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4454,
+      "top": 3366,
+      "height": 321,
+      "left": 900
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "VehicleForwardSlope",
+     "request": "DataRead.Physical _I/O_Values",
+     "width": 2330,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 3214,
+      "top": 7065,
+      "height": 323,
+      "left": 361
+     }
+    }
+   ]
+  },
+  "Идентификаторы": {
+   "inputs": [],
+   "color": "rgb(64,128,128)",
+   "labels": [
+    {
+     "color": "rgb(128,255,128)",
+     "text": "VIN #2181",
+     "bbox": {
+      "width": 5520,
+      "top": 4260,
+      "height": 1065,
+      "left": 225
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 12.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(255,128,64)",
+     "text": "TRW Software Name #0218",
+     "bbox": {
+      "width": 5520,
+      "top": 150,
+      "height": 1365,
+      "left": 225
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 12.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(255,128,64)",
+     "text": "TRW Traceability #2184",
+     "bbox": {
+      "width": 5520,
+      "top": 1575,
+      "height": 1245,
+      "left": 225
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 12.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(128,255,128)",
+     "text": "Spare Part Number #F187",
+     "bbox": {
+      "width": 5520,
+      "top": 2925,
+      "height": 1245,
+      "left": 225
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 12.0
+     },
+     "alignment": "2"
+    }
+   ],
+   "presend": [
+    {
+     "Delay": "0",
+     "RequestName": "StartDiagnosticSession.ExtendedDiagnostic"
+    }
+   ],
+   "height": 5820,
+   "buttons": [],
+   "width": 6060,
+   "displays": [
+    {
+     "color": "rgb(223,223,223)",
+     "text": "SoftwareName",
+     "request": "DataRead.SW_Name",
+     "width": 1400,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 5051,
+      "top": 750,
+      "height": 375,
+      "left": 481
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "Unitary data tracability TRW",
+     "request": "DataRead.Tracability",
+     "width": 2780,
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 5340,
+      "top": 2070,
+      "height": 390,
+      "left": 285
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "VehiculeManufacturerSparPartNumber",
+     "request": "DataRead.VehiculeManufacturerSparPartNumber",
+     "width": 3410,
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 5340,
+      "top": 3450,
+      "height": 375,
+      "left": 285
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "VIN",
+     "request": "DataRead.VIN",
+     "width": 605,
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 3656,
+      "top": 4650,
+      "height": 330,
+      "left": 1168
+     }
+    }
+   ]
+  },
+  "Управление вводом/выводом": {
+   "inputs": [],
+   "color": "rgb(64,128,128)",
+   "labels": [
+    {
+     "color": "rgb(255,255,128)",
+     "text": "Switch LED",
+     "bbox": {
+      "width": 3249,
+      "top": 2117,
+      "height": 2683,
+      "left": 3302
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "0",
+      "size": 14.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(128,255,128)",
+     "text": "APPLY",
+     "bbox": {
+      "width": 2944,
+      "top": 3577,
+      "height": 1223,
+      "left": 259
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "0",
+      "size": 14.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "RELEASE",
+     "bbox": {
+      "width": 2944,
+      "top": 2104,
+      "height": 1278,
+      "left": 269
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "0",
+      "size": 14.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "Input / Output Control",
+     "bbox": {
+      "width": 6360,
+      "top": 240,
+      "height": 326,
+      "left": 240
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 16.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(128,255,128)",
+     "text": "Brakes Status ",
+     "bbox": {
+      "width": 6352,
+      "top": 644,
+      "height": 1134,
+      "left": 248
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "alignment": "2"
+    }
+   ],
+   "presend": [
+    {
+     "Delay": "0",
+     "RequestName": "StartDiagnosticSession.ExtendedDiagnostic"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "IOControl.Switch_On_LED_Status"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "IOControl.Apply_Both_Actuators_Status"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "IOControl.Release_Both_Actuators_Status"
+    }
+   ],
+   "height": 5220,
+   "buttons": [
+    {
+     "text": "Apply Start",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "IOControl.Apply_Both_Actuators_Start"
+      }
+     ],
+     "uniquename": "Apply Start_0",
+     "font": {
+      "bold": "1",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 1752,
+      "top": 4060,
+      "height": 409,
+      "left": 873
+     }
+    },
+    {
+     "text": "Release Start",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "IOControl.Release_Both_Actuators_Start"
+      }
+     ],
+     "uniquename": "Release Start_1",
+     "font": {
+      "bold": "1",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 1762,
+      "top": 2691,
+      "height": 409,
+      "left": 849
+     }
+    },
+    {
+     "text": "Led ON",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "IOControl.Switch_On_LED_Start"
+      }
+     ],
+     "uniquename": "Led ON_2",
+     "font": {
+      "bold": "1",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 705,
+      "top": 2952,
+      "height": 396,
+      "left": 5747
+     }
+    },
+    {
+     "text": "Led OFF",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "IOControl.Switch_On_LED_Stop"
+      }
+     ],
+     "uniquename": "Led OFF_3",
+     "font": {
+      "bold": "1",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 705,
+      "top": 2443,
+      "height": 409,
+      "left": 5745
+     }
+    },
+    {
+     "text": "Release Both Brakes",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "1500",
+       "RequestName": "IOControl.Release_Both_Actuators_Start"
+      }
+     ],
+     "uniquename": "Release Both Brakes_4",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 1264,
+      "top": 1113,
+      "height": 409,
+      "left": 4295
+     }
+    }
+   ],
+   "width": 6780,
+   "displays": [
+    {
+     "color": "rgb(255,255,128)",
+     "text": "LED status",
+     "request": "DataRead.Physical _I/O_Values",
+     "width": 1040,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2253,
+      "top": 2730,
+      "height": 300,
+      "left": 3400
+     }
+    },
+    {
+     "color": "rgb(128,255,128)",
+     "text": "BrakeStatusLeft",
+     "request": "DataRead.Physical _I/O_Values",
+     "width": 2030,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 3265,
+      "top": 988,
+      "height": 279,
+      "left": 738
+     }
+    },
+    {
+     "color": "rgb(128,255,128)",
+     "text": "BrakeStatusRight",
+     "request": "DataRead.Physical _I/O_Values",
+     "width": 2030,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 3265,
+      "top": 1340,
+      "height": 279,
+      "left": 744
+     }
+    },
+    {
+     "color": "rgb(128,255,128)",
+     "text": "BrakeStatusLeft",
+     "request": "DataRead.Physical _I/O_Values",
+     "width": 2030,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 3265,
+      "top": 988,
+      "height": 279,
+      "left": 738
+     }
+    },
+    {
+     "color": "rgb(128,255,128)",
+     "text": "BrakeStatusRight",
+     "request": "DataRead.Physical _I/O_Values",
+     "width": 2030,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 3265,
+      "top": 1340,
+      "height": 279,
+      "left": 744
+     }
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "FailureLevel",
+     "request": "DataRead.Physical _I/O_Values",
+     "width": 1025,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 3044,
+      "top": 3773,
+      "height": 281,
+      "left": 3404
+     }
+    }
+   ]
+  },
+  "New": {
+   "inputs": [],
+   "color": "rgb(255,255,255)",
+   "labels": [],
+   "presend": [],
+   "height": 9780,
+   "buttons": [],
+   "width": 9000,
+   "displays": []
+  },
+  "Config": {
+   "inputs": [
+    {
+     "color": "rgb(223,223,223)",
+     "text": "StudiesCANFrames",
+     "request": "DataWrite.Studies_CAN_Frames",
+     "width": 0,
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 1320,
+      "top": 5730,
+      "height": 349,
+      "left": 4350
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "VIN",
+     "request": "DataWrite.VIN",
+     "width": 0,
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 1320,
+      "top": 6207,
+      "height": 321,
+      "left": 4350
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "PHY_RearGearRatio",
+     "request": "DataWrite.Vehicle_Configuration",
+     "width": 0,
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 620,
+      "top": 2716,
+      "height": 281,
+      "left": 4352
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "PHY_VehMasse",
+     "request": "DataWrite.Vehicle_Configuration",
+     "width": 0,
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 620,
+      "top": 3008,
+      "height": 296,
+      "left": 4352
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "PHY_WheelRadius",
+     "request": "DataWrite.Vehicle_Configuration",
+     "width": 0,
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 620,
+      "top": 3330,
+      "height": 266,
+      "left": 4352
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "PHY_EngineInertia",
+     "request": "DataWrite.Vehicle_Configuration",
+     "width": 0,
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 617,
+      "top": 3620,
+      "height": 281,
+      "left": 4354
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "ColdCountryMode",
+     "request": "DataWrite.Cold_Country_&_ GearBox_Configuration",
+     "width": 0,
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 1320,
+      "top": 4455,
+      "height": 304,
+      "left": 4350
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "GearBoxType",
+     "request": "DataWrite.Cold_Country_&_ GearBox_Configuration",
+     "width": 0,
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 1320,
+      "top": 4813,
+      "height": 319,
+      "left": 4350
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "PHY_GearBoxRatioVector-0value",
+     "request": "DataWrite.Vehicle_Configuration",
+     "width": 0,
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 622,
+      "top": 615,
+      "height": 283,
+      "left": 4350
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "PHY_GearBoxRatioVector-1st ratio",
+     "request": "DataWrite.Vehicle_Configuration",
+     "width": 0,
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 622,
+      "top": 912,
+      "height": 283,
+      "left": 4350
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "PHY_GearBoxRatioVector-2nd ratio",
+     "request": "DataWrite.Vehicle_Configuration",
+     "width": 0,
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 622,
+      "top": 1211,
+      "height": 283,
+      "left": 4350
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "PHY_GearBoxRatioVector-3rd ratio",
+     "request": "DataWrite.Vehicle_Configuration",
+     "width": 0,
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 622,
+      "top": 1508,
+      "height": 283,
+      "left": 4350
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "PHY_GearBoxRatioVector-4th ratio",
+     "request": "DataWrite.Vehicle_Configuration",
+     "width": 0,
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 622,
+      "top": 1821,
+      "height": 283,
+      "left": 4350
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "PHY_GearBoxRatioVector-5th ratio",
+     "request": "DataWrite.Vehicle_Configuration",
+     "width": 0,
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 622,
+      "top": 2119,
+      "height": 283,
+      "left": 4350
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "PHY_GearBoxRatioVector-6th ratio",
+     "request": "DataWrite.Vehicle_Configuration",
+     "width": 0,
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 622,
+      "top": 2417,
+      "height": 283,
+      "left": 4350
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "FactoryMode",
+     "request": "DataWrite.FactoryMode",
+     "width": 0,
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 1320,
+      "top": 5282,
+      "height": 355,
+      "left": 4350
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "RAMDownload",
+     "request": "DataWrite.RAM_Download",
+     "width": 0,
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 1320,
+      "top": 7575,
+      "height": 330,
+      "left": 4350
+     }
+    }
+   ],
+   "color": "rgb(64,128,128)",
+   "labels": [
+    {
+     "color": "rgb(128,255,128)",
+     "text": "Read",
+     "bbox": {
+      "width": 3848,
+      "top": 240,
+      "height": 8085,
+      "left": 240
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "0",
+      "size": 14.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "Write",
+     "bbox": {
+      "width": 2730,
+      "top": 255,
+      "height": 8100,
+      "left": 4230
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "0",
+      "size": 14.0
+     },
+     "alignment": "2"
+    }
+   ],
+   "presend": [
+    {
+     "Delay": "0",
+     "RequestName": "StartDiagnosticSession.ExtendedDiagnostic"
+    }
+   ],
+   "height": 8700,
+   "buttons": [
+    {
+     "text": "Send",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "DataWrite.Vehicle_Configuration"
+      }
+     ],
+     "uniquename": "Send_0",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 528,
+      "top": 600,
+      "height": 3296,
+      "left": 5880
+     }
+    },
+    {
+     "text": "Send",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "DataWrite.Cold_Country_&_ GearBox_Configuration"
+      }
+     ],
+     "uniquename": "Send_1",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 528,
+      "top": 4440,
+      "height": 536,
+      "left": 5880
+     }
+    },
+    {
+     "text": "Send",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "DataWrite.Studies_CAN_Frames"
+      }
+     ],
+     "uniquename": "Send_2",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 528,
+      "top": 5760,
+      "height": 326,
+      "left": 5880
+     }
+    },
+    {
+     "text": "Send",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "DataWrite.VIN"
+      }
+     ],
+     "uniquename": "Send_3",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 528,
+      "top": 6240,
+      "height": 326,
+      "left": 5880
+     }
+    },
+    {
+     "text": "Send",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "DataWrite.FactoryMode"
+      }
+     ],
+     "uniquename": "Send_4",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 528,
+      "top": 5280,
+      "height": 326,
+      "left": 5880
+     }
+    },
+    {
+     "text": "Send",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "DataWrite.RAM_Download"
+      }
+     ],
+     "uniquename": "Send_5",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 528,
+      "top": 7575,
+      "height": 326,
+      "left": 5889
+     }
+    }
+   ],
+   "width": 7380,
+   "displays": [
+    {
+     "color": "rgb(223,223,223)",
+     "text": "PHY_GearBoxRatioVector-0value",
+     "request": "DataRead.Vehicle_Configuration",
+     "width": 2990,
+     "fontcolor": "rgb(0,128,64)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 3441,
+      "top": 582,
+      "height": 288,
+      "left": 337
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "PHY_GearBoxRatioVector-1st ratio",
+     "request": "DataRead.Vehicle_Configuration",
+     "width": 2990,
+     "fontcolor": "rgb(0,128,64)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 3441,
+      "top": 885,
+      "height": 288,
+      "left": 337
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "PHY_GearBoxRatioVector-2nd ratio",
+     "request": "DataRead.Vehicle_Configuration",
+     "width": 2990,
+     "fontcolor": "rgb(0,128,64)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 3441,
+      "top": 1187,
+      "height": 288,
+      "left": 337
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "PHY_GearBoxRatioVector-3rd ratio",
+     "request": "DataRead.Vehicle_Configuration",
+     "width": 2990,
+     "fontcolor": "rgb(0,128,64)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 3441,
+      "top": 1504,
+      "height": 288,
+      "left": 337
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "PHY_GearBoxRatioVector-4th ratio",
+     "request": "DataRead.Vehicle_Configuration",
+     "width": 2990,
+     "fontcolor": "rgb(0,128,64)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 3441,
+      "top": 1807,
+      "height": 288,
+      "left": 337
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "PHY_GearBoxRatioVector-5th ratio",
+     "request": "DataRead.Vehicle_Configuration",
+     "width": 2990,
+     "fontcolor": "rgb(0,128,64)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 3441,
+      "top": 2110,
+      "height": 288,
+      "left": 337
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "PHY_GearBoxRatioVector-6th ratio",
+     "request": "DataRead.Vehicle_Configuration",
+     "width": 2990,
+     "fontcolor": "rgb(0,128,64)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 3441,
+      "top": 2412,
+      "height": 288,
+      "left": 337
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "PHY_RearGearRatio",
+     "request": "DataRead.Vehicle_Configuration",
+     "width": 2990,
+     "fontcolor": "rgb(0,128,64)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 3441,
+      "top": 2714,
+      "height": 288,
+      "left": 337
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "PHY_VehMasse",
+     "request": "DataRead.Vehicle_Configuration",
+     "width": 2990,
+     "fontcolor": "rgb(0,128,64)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 3441,
+      "top": 3017,
+      "height": 288,
+      "left": 337
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "PHY_WheelRadius",
+     "request": "DataRead.Vehicle_Configuration",
+     "width": 2990,
+     "fontcolor": "rgb(0,128,64)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 3441,
+      "top": 3320,
+      "height": 288,
+      "left": 337
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "PHY_EngineInertia",
+     "request": "DataRead.Vehicle_Configuration",
+     "width": 2990,
+     "fontcolor": "rgb(0,128,64)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 3441,
+      "top": 3622,
+      "height": 288,
+      "left": 337
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "ColdCountryMode",
+     "request": "DataRead.Cold_Country_&_ GearBox_Configuration",
+     "width": 2000,
+     "fontcolor": "rgb(0,128,64)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 3441,
+      "top": 4452,
+      "height": 318,
+      "left": 351
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "GearBoxType",
+     "request": "DataRead.Cold_Country_&_ GearBox_Configuration",
+     "width": 2000,
+     "fontcolor": "rgb(0,128,64)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 3441,
+      "top": 4810,
+      "height": 337,
+      "left": 351
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "StudiesCANFrames",
+     "request": "DataRead.Studies_CAN_Frames",
+     "width": 2015,
+     "fontcolor": "rgb(0,128,64)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 3427,
+      "top": 5727,
+      "height": 362,
+      "left": 351
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "VIN",
+     "request": "DataRead.VIN",
+     "width": 2030,
+     "fontcolor": "rgb(0,128,64)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 3456,
+      "top": 6204,
+      "height": 340,
+      "left": 336
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "Checksum CRC",
+     "request": "DataRead.VIN",
+     "width": 2045,
+     "fontcolor": "rgb(0,128,64)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 9.0
+     },
+     "rect": {
+      "width": 3428,
+      "top": 6830,
+      "height": 277,
+      "left": 323
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "FactoryMode",
+     "request": "DataRead.FactoryMode",
+     "width": 2015,
+     "fontcolor": "rgb(0,128,64)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 3455,
+      "top": 5279,
+      "height": 347,
+      "left": 337
+     }
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "RAMDownload",
+     "request": "DataRead.RAM_Download",
+     "width": 2075,
+     "fontcolor": "rgb(0,128,64)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Narrow",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 3445,
+      "top": 7572,
+      "height": 330,
+      "left": 337
+     }
+    }
+   ]
+  }
+ },
+ "categories": {
+  "Диагностика": [
+   "Input/output control",
+   "Опрос ввода/вывода",
+   "Данные CAN",
+   "Идентификаторы"
+  ],
+  "Test": [
+   "New"
+  ],
+  "Конфигурация": [
+   "Config"
+  ],
+  "Сервисные процедуры": [
+   "Pad replacement"
+  ]
+ }
+}

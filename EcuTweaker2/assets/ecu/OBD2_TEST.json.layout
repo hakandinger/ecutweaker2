@@ -1,0 +1,154 @@
+{
+  "screens": [
+    {
+      "name": "Engine Data",
+      "height": 400,
+      "width": 600,
+      "category": "Test",
+      "elements": [
+        {
+          "type": "label",
+          "text": "Engine RPM",
+          "x": 20,
+          "y": 20,
+          "width": 150,
+          "height": 30,
+          "font_size": 14
+        },
+        {
+          "type": "display",
+          "text": "RPM:",
+          "request": "010C",
+          "x": 180,
+          "y": 20,
+          "width": 100,
+          "height": 30,
+          "font_size": 16
+        },
+        {
+          "type": "label",
+          "text": "Vehicle Speed",
+          "x": 20,
+          "y": 60,
+          "width": 150,
+          "height": 30,
+          "font_size": 14
+        },
+        {
+          "type": "display",
+          "text": "Speed:",
+          "request": "010D",
+          "x": 180,
+          "y": 60,
+          "width": 100,
+          "height": 30,
+          "font_size": 16
+        },
+        {
+          "type": "label",
+          "text": "Coolant Temp",
+          "x": 20,
+          "y": 100,
+          "width": 150,
+          "height": 30,
+          "font_size": 14
+        },
+        {
+          "type": "display",
+          "text": "Temp:",
+          "request": "0105",
+          "x": 180,
+          "y": 100,
+          "width": 100,
+          "height": 30,
+          "font_size": 16
+        },
+        {
+          "type": "label",
+          "text": "Throttle Position",
+          "x": 20,
+          "y": 140,
+          "width": 150,
+          "height": 30,
+          "font_size": 14
+        },
+        {
+          "type": "display",
+          "text": "Throttle:",
+          "request": "0111",
+          "x": 180,
+          "y": 140,
+          "width": 100,
+          "height": 30,
+          "font_size": 16
+        },
+        {
+          "type": "label",
+          "text": "Intake Air Temp",
+          "x": 20,
+          "y": 180,
+          "width": 150,
+          "height": 30,
+          "font_size": 14
+        },
+        {
+          "type": "display",
+          "text": "Air Temp:",
+          "request": "010F",
+          "x": 180,
+          "y": 180,
+          "width": 100,
+          "height": 30,
+          "font_size": 16
+        },
+        {
+          "type": "label",
+          "text": "MAF Flow Rate",
+          "x": 20,
+          "y": 220,
+          "width": 150,
+          "height": 30,
+          "font_size": 14
+        },
+        {
+          "type": "display",
+          "text": "MAF:",
+          "request": "0110",
+          "x": 180,
+          "y": 220,
+          "width": 100,
+          "height": 30,
+          "font_size": 16
+        },
+        {
+          "type": "label",
+          "text": "Engine Load",
+          "x": 20,
+          "y": 260,
+          "width": 150,
+          "height": 30,
+          "font_size": 14
+        },
+        {
+          "type": "display",
+          "text": "Load:",
+          "request": "0104",
+          "x": 180,
+          "y": 260,
+          "width": 100,
+          "height": 30,
+          "font_size": 16
+        },
+        {
+          "type": "button",
+          "text": "Read All",
+          "request": "0100",
+          "x": 20,
+          "y": 320,
+          "width": 120,
+          "height": 40
+        }
+      ]
+    }
+  ]
+}

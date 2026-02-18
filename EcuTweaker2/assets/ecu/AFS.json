@@ -1,0 +1,263 @@
+{
+"obd": {
+	"baudrate": 10400, 
+	"protocol": "CAN", 
+	"recv_id": "77C", 
+	"funcname": "AFS", 
+	"funcaddr": "72", 
+	"send_id": "75C"
+}, 
+"devices": [], 
+"ecuname": "AFS", 
+"autoidents": [], 
+"endian": "Big", 
+"requests": [
+	{
+	"name": "OutputControl.Start.LOW_BEAM_SWIVEL_TEST_LEFT", 
+	"replybytes": "701100", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"OutputControlStatus": {
+		"firstbyte": 3
+		}
+	}, 
+	"sendbyte_dataitems": {
+		"$30_OutputControl.param": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "30112000"
+	}, 
+	{
+	"name": "DataRead.$2101", 
+	"replybytes": "610100000000000000000000000000000000000000000000000000000000000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"VEHICLE SPEED": {
+		"firstbyte": 7
+		}, 
+		"REVERSE": {
+		"bitoffset": 2, 
+		"firstbyte": 10
+		}, 
+		"SELECT POSITION": {
+		"firstbyte": 9
+		}, 
+		"HEIGHT SENSOR SIGNAL FRONT": {
+		"firstbyte": 13
+		}, 
+		"SWIVEL SENSOR LEFT": {
+		"firstbyte": 17
+		}, 
+		"HEIGHT SENSOR INIT FRONT": {
+		"firstbyte": 27
+		}, 
+		"STEER ANGLE": {
+		"firstbyte": 5
+		}, 
+		"SWIVEL SENSOR RIGHT": {
+		"firstbyte": 19
+		}, 
+		"HEADLAMP LEVEL": {
+		"firstbyte": 15
+		}, 
+		"HEIGHT SENSOR SIGNAL REAR": {
+		"firstbyte": 11
+		}, 
+		"SWIVEL ANGLE RIGHT": {
+		"firstbyte": 23
+		}, 
+		"HEAD LAMP": {
+		"firstbyte": 10
+		}, 
+		"SWIVEL ANGLE LEFT": {
+		"firstbyte": 21
+		}, 
+		"HEIGHT SENSOR INIT REAR": {
+		"firstbyte": 25
+		}, 
+		"FRONT PINION ANGLE": {
+		"firstbyte": 29
+		}
+	}, 
+	"minbytes": 30, 
+	"sentbytes": "2101"
+	}, 
+	{
+	"name": "TesterPresent.WithResponse", 
+	"replybytes": "7E", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"minbytes": 1, 
+	"sentbytes": "3E01"
+	}, 
+	{
+	"name": "OutputControl.Start.LOW_BEAM_SWIVEL_TEST_RIGHT", 
+	"replybytes": "701000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"OutputControlStatus": {
+		"firstbyte": 3
+		}
+	}, 
+	"sendbyte_dataitems": {
+		"$30_OutputControl.param": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "30102000"
+	}, 
+	{
+	"name": "StartDiagnosticSession.DefaultSession", 
+	"replybytes": "5081", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"minbytes": 2, 
+	"sentbytes": "1081"
+	}
+], 
+"data": {
+	"VEHICLE SPEED": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 10.0, 
+	"bitscount": 16, 
+	"unit": "km/h"
+	}, 
+	"REVERSE": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "OFF", 
+		"1": "ON"
+	}
+	}, 
+	"SELECT POSITION": {
+	"lists": {
+		"1": "P", 
+		"2": "R", 
+		"4": "N", 
+		"8": "D", 
+		"9": "M", 
+		"255": "MT"
+	}
+	}, 
+	"HEIGHT SENSOR SIGNAL FRONT": {
+	"bitscount": 16, 
+	"scaled": true, 
+	"step": 5.0, 
+	"bytescount": 2, 
+	"offset": 1024.0, 
+	"unit": "V"
+	}, 
+	"SWIVEL SENSOR LEFT": {
+	"divideby": 10.0, 
+	"bitscount": 16, 
+	"scaled": true, 
+	"bytescount": 2, 
+	"offset": -32000.0, 
+	"unit": "deg"
+	}, 
+	"HEIGHT SENSOR INIT FRONT": {
+	"bitscount": 16, 
+	"scaled": true, 
+	"step": 5.0, 
+	"bytescount": 2, 
+	"offset": 1024.0, 
+	"unit": "V"
+	}, 
+	"STEER ANGLE": {
+	"divideby": 10.0, 
+	"bitscount": 16, 
+	"signed": true, 
+	"scaled": true, 
+	"bytescount": 2, 
+	"unit": "deg"
+	}, 
+	"SWIVEL SENSOR RIGHT": {
+	"divideby": 10.0, 
+	"bitscount": 16, 
+	"scaled": true, 
+	"bytescount": 2, 
+	"offset": -32000.0, 
+	"unit": "deg"
+	}, 
+	"HEADLAMP LEVEL": {
+	"divideby": 1000.0, 
+	"bitscount": 16, 
+	"scaled": true, 
+	"step": 392.0, 
+	"bytescount": 2, 
+	"unit": "%"
+	}, 
+	"HEIGHT SENSOR SIGNAL REAR": {
+	"bitscount": 16, 
+	"scaled": true, 
+	"step": 5.0, 
+	"bytescount": 2, 
+	"offset": 1024.0, 
+	"unit": "V"
+	}, 
+	"SessionName": {
+	"comment": "for Start diagnostic session", 
+	"lists": {
+		"192": "ExtendedDiagSession", 
+		"129": "DefaultSession"
+	}
+	}, 
+	"SWIVEL ANGLE RIGHT": {
+	"divideby": 10.0, 
+	"bitscount": 16, 
+	"scaled": true, 
+	"bytescount": 2, 
+	"offset": -32000.0, 
+	"unit": "deg"
+	}, 
+	"HEAD LAMP": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "OFF", 
+		"1": "ON"
+	}
+	}, 
+	"HEIGHT SENSOR INIT REAR": {
+	"bitscount": 16, 
+	"scaled": true, 
+	"step": 5.0, 
+	"bytescount": 2, 
+	"offset": 1024.0, 
+	"unit": "V"
+	}, 
+	"OutputControlStatus": {
+	"lists": {
+		"1": "Running", 
+		"2": "Stopped", 
+		"17": "Stopped by 'Stop Control'"
+	}
+	}, 
+	"$30_OutputControl.param": {
+	"lists": {
+		"0": "MinPosition", 
+		"1": "MaxPosition", 
+		"11": "Stop"
+	}
+	}, 
+	"FRONT PINION ANGLE": {
+	"divideby": 10.0, 
+	"bitscount": 16, 
+	"signed": true, 
+	"scaled": true, 
+	"bytescount": 2, 
+	"unit": "deg"
+	}, 
+	"SWIVEL ANGLE LEFT": {
+	"divideby": 10.0, 
+	"bitscount": 16, 
+	"scaled": true, 
+	"bytescount": 2, 
+	"offset": -32000.0, 
+	"unit": "deg"
+	}
+}
+}

@@ -1,0 +1,3693 @@
+{
+ "screens": {
+  "Reset": {
+   "inputs": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "ECM Reset type",
+     "request": "ECM reset",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 3748,
+      "top": 1110,
+      "height": 330,
+      "left": 869
+     }
+    }
+   ],
+   "color": "rgb(255,255,255)",
+   "labels": [
+    {
+     "color": "rgb(255,128,0)",
+     "text": "ECM learning reset",
+     "bbox": {
+      "width": 5760,
+      "top": 120,
+      "height": 364,
+      "left": 15
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 14.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Under testing!",
+     "bbox": {
+      "width": 2515,
+      "top": 2385,
+      "height": 465,
+      "left": 1767
+     },
+     "fontcolor": "rgb(255,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "2"
+    }
+   ],
+   "presend": [],
+   "height": 3180,
+   "buttons": [
+    {
+     "text": "Reset",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "5",
+       "RequestName": "Extended Diagnostic Session"
+      },
+      {
+       "Delay": "5",
+       "RequestName": "ECM reset"
+      }
+     ],
+     "uniquename": "Reset_0",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "rect": {
+      "width": 797,
+      "top": 1125,
+      "height": 300,
+      "left": 4729
+     }
+    }
+   ],
+   "width": 5820,
+   "displays": []
+  },
+  "Engine": {
+   "inputs": [],
+   "color": "rgb(0,0,160)",
+   "labels": [
+    {
+     "color": "rgb(127,127,127)",
+     "text": "Parameters",
+     "bbox": {
+      "width": 7023,
+      "top": 75,
+      "height": 3733,
+      "left": 30
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 14.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(143,143,143)",
+     "text": "Oil",
+     "bbox": {
+      "width": 7016,
+      "top": 3881,
+      "height": 1129,
+      "left": 23
+     },
+     "fontcolor": "rgb(15,15,15)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 14.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(127,127,127)",
+     "text": "Accelerator pedal position",
+     "bbox": {
+      "width": 6981,
+      "top": 5070,
+      "height": 871,
+      "left": 53
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 14.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(143,143,143)",
+     "text": "Air-fuel mixture",
+     "bbox": {
+      "width": 6981,
+      "top": 7531,
+      "height": 1756,
+      "left": 67
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 14.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(143,143,143)",
+     "text": "VVT clutch",
+     "bbox": {
+      "width": 6981,
+      "top": 6012,
+      "height": 1445,
+      "left": 53
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 14.0
+     },
+     "alignment": "2"
+    }
+   ],
+   "presend": [],
+   "height": 9660,
+   "buttons": [],
+   "width": 7260,
+   "displays": [
+    {
+     "color": "rgb(192,192,192)",
+     "text": "Engine RPM",
+     "request": "DataRead.CID_1201H_ENG SPEED",
+     "width": 5445,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 6644,
+      "top": 497,
+      "height": 350,
+      "left": 188
+     }
+    },
+    {
+     "color": "rgb(128,128,255)",
+     "text": "Coolant temperature",
+     "request": "DataRead.CID_1101H_Water temperature",
+     "width": 5445,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 6644,
+      "top": 808,
+      "height": 350,
+      "left": 188
+     }
+    },
+    {
+     "color": "rgb(192,192,192)",
+     "text": "CID_2009H_Atmospheric pressure",
+     "request": "DataRead.CID_2009H_Atmospheric pressure",
+     "width": 5445,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 6644,
+      "top": 1134,
+      "height": 350,
+      "left": 188
+     }
+    },
+    {
+     "color": "rgb(128,128,255)",
+     "text": "CID_1106H_Intake air temperature sensor",
+     "request": "DataRead.CID_1106H_Intake air temperature sensor",
+     "width": 5445,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 6644,
+      "top": 1492,
+      "height": 350,
+      "left": 188
+     }
+    },
+    {
+     "color": "rgb(128,128,255)",
+     "text": "CID_1117H_Calculated load value",
+     "request": "DataRead.CID_1117H_Calculated load value",
+     "width": 5445,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 6644,
+      "top": 2201,
+      "height": 350,
+      "left": 188
+     }
+    },
+    {
+     "color": "rgb(192,192,192)",
+     "text": "CID_112DH_ADV adjustment value",
+     "request": "DataRead.CID_112DH_ADV adjustment value",
+     "width": 5445,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 6644,
+      "top": 2544,
+      "height": 350,
+      "left": 188
+     }
+    },
+    {
+     "color": "rgb(128,128,255)",
+     "text": "CID_1208H_Basic Fuel injection puls",
+     "request": "DataRead.CID_1208H_Basic Fuel injection puls",
+     "width": 5445,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 6644,
+      "top": 2888,
+      "height": 350,
+      "left": 188
+     }
+    },
+    {
+     "color": "rgb(192,192,192)",
+     "text": "Battery voltage",
+     "request": "DataRead.CID_1103H_Battery voltage",
+     "width": 5445,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 6644,
+      "top": 3246,
+      "height": 350,
+      "left": 188
+     }
+    },
+    {
+     "color": "rgb(192,192,192)",
+     "text": "Target idle RPM",
+     "request": "DataRead.CID_110DH_Idle set rpm",
+     "width": 5445,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 6644,
+      "top": 1849,
+      "height": 350,
+      "left": 188
+     }
+    },
+    {
+     "color": "rgb(192,192,192)",
+     "text": "CID_111FH_Engine oil temperture",
+     "request": "DataRead.CID_111FH_Engine oil temperture",
+     "width": 5445,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 6644,
+      "top": 4269,
+      "height": 350,
+      "left": 173
+     }
+    },
+    {
+     "color": "rgb(192,192,192)",
+     "text": "CID_120FH_ETC Throttle sensor1 voltage",
+     "request": "DataRead.CID_120FH_ETC Throttle sensor1 voltage",
+     "width": 5445,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 6644,
+      "top": 5458,
+      "height": 350,
+      "left": 173
+     }
+    },
+    {
+     "color": "rgb(192,192,192)",
+     "text": "CID_1123H_AF ALPHA_B1",
+     "request": "DataRead.CID_1123H_AF ALPHA_B1",
+     "width": 5445,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 6644,
+      "top": 7952,
+      "height": 350,
+      "left": 173
+     }
+    },
+    {
+     "color": "rgb(128,128,255)",
+     "text": "CID_1225H_AF SEN1_B1",
+     "request": "DataRead.CID_1225H_AF SEN1_B1",
+     "width": 5445,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 6644,
+      "top": 8248,
+      "height": 350,
+      "left": 173
+     }
+    },
+    {
+     "color": "rgb(192,192,192)",
+     "text": "CID_111AH_Rear O2 sensor voltage _BANK1",
+     "request": "DataRead.CID_111AH_Rear O2 sensor voltage _BANK1",
+     "width": 5445,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 6644,
+      "top": 8586,
+      "height": 350,
+      "left": 173
+     }
+    },
+    {
+     "color": "rgb(192,192,192)",
+     "text": "CID_1135H_C_VTCangle_E_VTC angle for Hole_IC type CAM sensor",
+     "request": "DataRead.CID_1135H_C_VTCangle_E_VTC angle for Hole_IC type CAM sensor",
+     "width": 5445,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 6644,
+      "top": 6505,
+      "height": 497,
+      "left": 173
+     }
+    },
+    {
+     "color": "rgb(128,128,255)",
+     "text": "CID_1138H_C_VTC drive DUTY",
+     "request": "DataRead.CID_1138H_C_VTC drive DUTY",
+     "width": 5445,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 6644,
+      "top": 7003,
+      "height": 350,
+      "left": 173
+     }
+    },
+    {
+     "color": "rgb(128,128,255)",
+     "text": "CID_1278H_Oil Pressure Sensor voltage",
+     "request": "DataRead.CID_1278H_Oil Pressure Sensor voltage",
+     "width": 5445,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 6644,
+      "top": 4605,
+      "height": 350,
+      "left": 173
+     }
+    }
+   ]
+  },
+  "Управление вводом-выводом": {
+   "inputs": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "IOCBLID IOLID Table",
+     "request": "OutputControl.Start",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Unicode MS",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 3986,
+      "top": 1050,
+      "height": 300,
+      "left": 2865
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "IOCBLID_CRTLOPT1",
+     "request": "OutputControl.Start",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Unicode MS",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 3996,
+      "top": 1410,
+      "height": 300,
+      "left": 2865
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "IOCBLID CRTLOPT2 Input value",
+     "request": "OutputControl.Start",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Unicode MS",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 3996,
+      "top": 1770,
+      "height": 300,
+      "left": 2865
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "IOCBLID IOLID Table",
+     "request": "OutputControl.Stop",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Unicode MS",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 4095,
+      "top": 4050,
+      "height": 300,
+      "left": 2865
+     }
+    }
+   ],
+   "color": "rgb(255,255,255)",
+   "labels": [
+    {
+     "color": "rgb(179,179,255)",
+     "text": "Input/output control",
+     "bbox": {
+      "width": 8985,
+      "top": 75,
+      "height": 435,
+      "left": 30
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 14.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Step 3: Select item and press Stop",
+     "bbox": {
+      "width": 8895,
+      "top": 3570,
+      "height": 270,
+      "left": 120
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Value input is in HEX format",
+     "bbox": {
+      "width": 4800,
+      "top": 2160,
+      "height": 300,
+      "left": 2400
+     },
+     "fontcolor": "rgb(255,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Step 1: Select control element, enter desired value, press Start",
+     "bbox": {
+      "width": 8895,
+      "top": 690,
+      "height": 270,
+      "left": 120
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Step 2: Check control status",
+     "bbox": {
+      "width": 8895,
+      "top": 2490,
+      "height": 270,
+      "left": 120
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Control command",
+     "bbox": {
+      "width": 2145,
+      "top": 1455,
+      "height": 300,
+      "left": 765
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Controlled parameter",
+     "bbox": {
+      "width": 2145,
+      "top": 1095,
+      "height": 300,
+      "left": 765
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Parameter value",
+     "bbox": {
+      "width": 2145,
+      "top": 1815,
+      "height": 300,
+      "left": 765
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    }
+   ],
+   "presend": [],
+   "height": 4980,
+   "buttons": [
+    {
+     "text": "Start",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "Extended Diagnostic Session"
+      },
+      {
+       "Delay": "0",
+       "RequestName": "OutputControl.Start"
+      }
+     ],
+     "uniquename": "Старт_0",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "rect": {
+      "width": 1413,
+      "top": 1725,
+      "height": 300,
+      "left": 7017
+     }
+    },
+    {
+     "text": "Stop",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "Extended Diagnostic Session"
+      },
+      {
+       "Delay": "0",
+       "RequestName": "OutputControl.Stop"
+      }
+     ],
+     "uniquename": "Стоп_1",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "rect": {
+      "width": 1320,
+      "top": 4050,
+      "height": 300,
+      "left": 7200
+     }
+    }
+   ],
+   "width": 9060,
+   "displays": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "IOCBLID_CRTLOPT1_recieve",
+     "request": "OutputControl.Start",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Unicode MS",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 3915,
+      "top": 2970,
+      "height": 300,
+      "left": 2865
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "IOCBLID_CRTLOPT1_recieve",
+     "request": "OutputControl.Stop",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Unicode MS",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 4080,
+      "top": 4410,
+      "height": 300,
+      "left": 2880
+     }
+    }
+   ]
+  },
+  "Distance (test)": {
+   "inputs": [],
+   "color": "rgb(255,255,255)",
+   "labels": [],
+   "presend": [],
+   "height": 6000,
+   "buttons": [],
+   "width": 9000,
+   "displays": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CID_12C1H_Total travel distance of odd meter at OCS reset",
+     "request": "DataRead.CID_12C1H_Total travel distance of odd meter at OCS reset",
+     "width": 5345,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 7915,
+      "top": 255,
+      "height": 614,
+      "left": 330
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CID_12C2H_Total travel distance of odd meter at OCS reset_2times ago.CID_12C2H_",
+     "request": "DataRead.CID_12C2H_Total travel distance of odd meter at OCS reset_2times ago",
+     "width": 5345,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 7915,
+      "top": 807,
+      "height": 614,
+      "left": 330
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CID_12C3H_Total travel distance of odd meter at OCS reset_3times ago.CID_12C3H",
+     "request": "DataRead.CID_12C3H_Total travel distance of odd meter at OCS reset_3times ago",
+     "width": 5345,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 7915,
+      "top": 1360,
+      "height": 614,
+      "left": 330
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CID_12C7H_Total travel distance of odd meter when OCS remaining distance is ZERO",
+     "request": "DataRead.CID_12C7H_Total travel distance of odd meter when OCS remaining distance is ZERO",
+     "width": 5345,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 7915,
+      "top": 1912,
+      "height": 614,
+      "left": 330
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CID_12C8H_Total travel distance of odd meter when OCS remaining distance is ZERO 2 times ago.CID_12C8H",
+     "request": "DataRead.CID_12C8H_Total travel distance of odd meter when OCS remaining distance is ZERO 2 times ago",
+     "width": 5345,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 7915,
+      "top": 2465,
+      "height": 614,
+      "left": 330
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CID_12C9H_Total travel distance of odd meter when OCS remaining distance is ZERO 3 times ago.CID_12C9H",
+     "request": "DataRead.CID_12C9H_Total travel distance of odd meter when OCS remaining distance is ZERO 3 times ago",
+     "width": 5345,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 7915,
+      "top": 3016,
+      "height": 614,
+      "left": 330
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CID_1203H_Under failure Mileage",
+     "request": "DataRead.CID_1203H_Under failure Mileage",
+     "width": 3035,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4765,
+      "top": 3960,
+      "height": 300,
+      "left": 1545
+     }
+    }
+   ]
+  },
+  "ECM": {
+   "inputs": [],
+   "color": "rgb(64,0,128)",
+   "labels": [
+    {
+     "color": "rgb(128,128,255)",
+     "text": "ECM identifiers",
+     "bbox": {
+      "width": 7800,
+      "top": 0,
+      "height": 360,
+      "left": 0
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 14.0
+     },
+     "alignment": "2"
+    }
+   ],
+   "presend": [],
+   "height": 4980,
+   "buttons": [],
+   "width": 6660,
+   "displays": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "PartNumber.LowerPart",
+     "request": "DataRead.Identification.RenaultR2",
+     "width": 2945,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4722,
+      "top": 600,
+      "height": 300,
+      "left": 1200
+     }
+    },
+    {
+     "color": "rgb(255,255,142)",
+     "text": "HardwareNumber.LowerPart",
+     "request": "DataRead.Identification.RenaultR2",
+     "width": 2930,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4722,
+      "top": 960,
+      "height": 330,
+      "left": 1200
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Homologation Number_HMLGT",
+     "request": "Read Homologation Number",
+     "width": 2930,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4722,
+      "top": 1320,
+      "height": 300,
+      "left": 1200
+     }
+    },
+    {
+     "color": "rgb(255,255,142)",
+     "text": "DiagnosticIdentificationCode",
+     "request": "DataRead.Identification.RenaultR2",
+     "width": 2930,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4722,
+      "top": 1680,
+      "height": 300,
+      "left": 1200
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "SupplierNumber.ITG",
+     "request": "DataRead.Identification.RenaultR2",
+     "width": 2945,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4722,
+      "top": 2040,
+      "height": 300,
+      "left": 1200
+     }
+    },
+    {
+     "color": "rgb(255,255,142)",
+     "text": "MUX messaging reference_vcan",
+     "request": "CAN DIAG SUPPORT MNTR1.can",
+     "width": 2945,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4722,
+      "top": 2400,
+      "height": 300,
+      "left": 1200
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "SoftwareNumber",
+     "request": "DataRead.Identification.RenaultR2",
+     "width": 2930,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4722,
+      "top": 2760,
+      "height": 300,
+      "left": 1200
+     }
+    },
+    {
+     "color": "rgb(255,255,142)",
+     "text": "EditionNumber",
+     "request": "DataRead.Identification.RenaultR2",
+     "width": 2945,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4722,
+      "top": 3120,
+      "height": 300,
+      "left": 1200
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CalibrationNumber",
+     "request": "DataRead.Identification.RenaultR2",
+     "width": 2930,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4722,
+      "top": 3480,
+      "height": 300,
+      "left": 1200
+     }
+    },
+    {
+     "color": "rgb(255,255,142)",
+     "text": "VIN_Number",
+     "request": "DataRead.VIN",
+     "width": 2945,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4722,
+      "top": 3840,
+      "height": 360,
+      "left": 1200
+     }
+    }
+   ]
+  },
+  "Обучение дроссельной заслонки": {
+   "inputs": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "RoutineEntryOption",
+     "request": "RoutineStart.RoutineStartIDs",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Unicode MS",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 1614,
+      "top": 4365,
+      "height": 300,
+      "left": 1305
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "RoutineStartIDs",
+     "request": "RoutineStart.RoutineStartIDs",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Unicode MS",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 1623,
+      "top": 4065,
+      "height": 300,
+      "left": 1305
+     }
+    }
+   ],
+   "color": "rgb(255,255,255)",
+   "labels": [
+    {
+     "color": "rgb(255,128,0)",
+     "text": "Throttle learning",
+     "bbox": {
+      "width": 7545,
+      "top": 0,
+      "height": 394,
+      "left": 15
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 14.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Start learning",
+     "bbox": {
+      "width": 7448,
+      "top": 3720,
+      "height": 243,
+      "left": 90
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "> 80",
+     "bbox": {
+      "width": 676,
+      "top": 1185,
+      "height": 240,
+      "left": 4660
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Electrical load - off",
+     "bbox": {
+      "width": 1961,
+      "top": 1425,
+      "height": 240,
+      "left": 4660
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Air conditioner - off",
+     "bbox": {
+      "width": 1691,
+      "top": 1665,
+      "height": 240,
+      "left": 4660
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Power steering - off",
+     "bbox": {
+      "width": 2015,
+      "top": 1905,
+      "height": 240,
+      "left": 4660
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "The following conditions must be met",
+     "bbox": {
+      "width": 7448,
+      "top": 561,
+      "height": 243,
+      "left": 88
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "> 100",
+     "bbox": {
+      "width": 600,
+      "top": 2400,
+      "height": 240,
+      "left": 4680
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Select \"Factory quick TAS learning\"",
+     "bbox": {
+      "width": 3317,
+      "top": 4140,
+      "height": 465,
+      "left": 3045
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": ">12.9",
+     "bbox": {
+      "width": 600,
+      "top": 945,
+      "height": 240,
+      "left": 4665
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "= 0",
+     "bbox": {
+      "width": 600,
+      "top": 2160,
+      "height": 240,
+      "left": 4680
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    }
+   ],
+   "presend": [],
+   "height": 6780,
+   "buttons": [
+    {
+     "text": "Start",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "5",
+       "RequestName": "Extended Diagnostic Session"
+      },
+      {
+       "Delay": "0",
+       "RequestName": "RoutineStart.RoutineStartIDs"
+      }
+     ],
+     "uniquename": "Старт_0",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "rect": {
+      "width": 1353,
+      "top": 4485,
+      "height": 360,
+      "left": 3761
+     }
+    }
+   ],
+   "width": 7620,
+   "displays": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Coolant temperature",
+     "request": "DataRead.CID_1101H_Water temperature",
+     "width": 3425,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4308,
+      "top": 1185,
+      "height": 240,
+      "left": 255
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Battery voltage",
+     "request": "DataRead.CID_1103H_Battery voltage",
+     "width": 3425,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4308,
+      "top": 945,
+      "height": 240,
+      "left": 255
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Electrical load status",
+     "request": "DataRead.CID_1302H_Switch input information0",
+     "width": 3425,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4308,
+      "top": 1425,
+      "height": 240,
+      "left": 255
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Air conditioner status",
+     "request": "DataRead.CID_1302H_Switch input information0",
+     "width": 3425,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4308,
+      "top": 1665,
+      "height": 240,
+      "left": 255
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Power steering status",
+     "request": "DataRead.CID_1302H_Switch input information0",
+     "width": 3425,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4308,
+      "top": 1905,
+      "height": 240,
+      "left": 255
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Speed",
+     "request": "DataRead.CID_1102H_Vehicle speed",
+     "width": 3425,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4308,
+      "top": 2145,
+      "height": 240,
+      "left": 255
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Engine RPM",
+     "request": "DataRead.CID_1201H_ENG SPEED",
+     "width": 3425,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4308,
+      "top": 2385,
+      "height": 240,
+      "left": 255
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Target idle RPM",
+     "request": "DataRead.CID_110DH_Idle set rpm",
+     "width": 3425,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4308,
+      "top": 2625,
+      "height": 240,
+      "left": 255
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CID_120DH_ETC Accelerator sensor1 voltage",
+     "request": "DataRead.CID_120DH_ETC Accelerator sensor1 voltage",
+     "width": 3425,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4308,
+      "top": 2865,
+      "height": 240,
+      "left": 255
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CID_120EH_ETC Accelerator sensor2 voltage",
+     "request": "DataRead.CID_120EH_ETC Accelerator sensor2 voltage",
+     "width": 3425,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4308,
+      "top": 3105,
+      "height": 240,
+      "left": 255
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "RoutineEntryStatus",
+     "request": "RoutineStart.RoutineStartIDs",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Unicode MS",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 1629,
+      "top": 4665,
+      "height": 345,
+      "left": 1299
+     }
+    }
+   ]
+  },
+  "Сервисные функции": {
+   "inputs": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "RoutineEntryOption",
+     "request": "RoutineStop.RoutineStopIDs",
+     "width": 2000,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Unicode MS",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 4128,
+      "top": 1693,
+      "height": 242,
+      "left": 161
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "RoutineStartIDs",
+     "request": "RoutineStart.RoutineStartIDs",
+     "width": 2000,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Unicode MS",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 4128,
+      "top": 483,
+      "height": 242,
+      "left": 161
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "RoutineEntryOption",
+     "request": "RoutineStart.RoutineStartIDs",
+     "width": 2000,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Unicode MS",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 4128,
+      "top": 725,
+      "height": 242,
+      "left": 161
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "RoutineStopIDs",
+     "request": "RoutineStop.RoutineStopIDs",
+     "width": 2000,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Unicode MS",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 4128,
+      "top": 1451,
+      "height": 242,
+      "left": 161
+     }
+    }
+   ],
+   "color": "rgb(255,255,255)",
+   "labels": [
+    {
+     "color": "rgb(255,128,0)",
+     "text": "UNDER DEVELOPMENT",
+     "bbox": {
+      "width": 5707,
+      "top": 2040,
+      "height": 363,
+      "left": 0
+     },
+     "fontcolor": "rgb(255,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 14.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(255,128,0)",
+     "text": "",
+     "bbox": {
+      "width": 5547,
+      "top": 422,
+      "height": 1573,
+      "left": 71
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,128,0)",
+     "text": "Start/stop functions",
+     "bbox": {
+      "width": 5707,
+      "top": 15,
+      "height": 363,
+      "left": 45
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 14.0
+     },
+     "alignment": "2"
+    }
+   ],
+   "presend": [],
+   "height": 4020,
+   "buttons": [
+    {
+     "text": "Start",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "messages": [
+      "Select propriate Diag session"
+     ],
+     "rect": {
+      "width": 1095,
+      "top": 725,
+      "height": 302,
+      "left": 4457
+     },
+     "uniquename": "Start_0"
+    },
+    {
+     "text": "Stop",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "messages": [
+      ""
+     ],
+     "rect": {
+      "width": 1095,
+      "top": 1451,
+      "height": 302,
+      "left": 4457
+     },
+     "uniquename": "Stop_1"
+    }
+   ],
+   "width": 5865,
+   "displays": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "RoutineEntryStatus",
+     "request": "RoutineStart.RoutineStartIDs",
+     "width": 2000,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Unicode MS",
+      "italic": "0",
+      "size": 8.0
+     },
+     "rect": {
+      "width": 4128,
+      "top": 967,
+      "height": 242,
+      "left": 161
+     }
+    }
+   ]
+  },
+  "Engine General": {
+   "inputs": [],
+   "color": "rgb(0,0,160)",
+   "labels": [
+    {
+     "color": "rgb(179,179,255)",
+     "text": "General Engine Control",
+     "bbox": {
+      "width": 5280,
+      "top": 90,
+      "height": 420,
+      "left": 180
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 14.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Atmospheric pressure sensor voltage",
+     "bbox": {
+      "width": 3360,
+      "top": 7500,
+      "height": 315,
+      "left": 270
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 10.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "Temperature and pressure",
+     "bbox": {
+      "width": 4755,
+      "top": 6540,
+      "height": 330,
+      "left": 300
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 10.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Engine Speed (rpm)",
+     "bbox": {
+      "width": 2145,
+      "top": 1065,
+      "height": 285,
+      "left": 270
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 10.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Vehicle Speed (km/h)",
+     "bbox": {
+      "width": 2145,
+      "top": 1425,
+      "height": 285,
+      "left": 270
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 10.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "Power supply",
+     "bbox": {
+      "width": 4755,
+      "top": 1875,
+      "height": 330,
+      "left": 150
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 10.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Battery voltage (V)",
+     "bbox": {
+      "width": 2145,
+      "top": 2355,
+      "height": 285,
+      "left": 270
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 10.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "Pedal Information",
+     "bbox": {
+      "width": 4755,
+      "top": 2835,
+      "height": 330,
+      "left": 195
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 10.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Accelerator open information (%)",
+     "bbox": {
+      "width": 3840,
+      "top": 3330,
+      "height": 285,
+      "left": 270
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 10.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Idle SW",
+     "bbox": {
+      "width": 3120,
+      "top": 3810,
+      "height": 285,
+      "left": 270
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 10.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "Engine/Vehicle",
+     "bbox": {
+      "width": 4755,
+      "top": 615,
+      "height": 330,
+      "left": 105
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 10.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Fuel pump command state",
+     "bbox": {
+      "width": 2640,
+      "top": 4860,
+      "height": 315,
+      "left": 270
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 10.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Basic fuel injection pulse (ms)",
+     "bbox": {
+      "width": 2640,
+      "top": 5340,
+      "height": 315,
+      "left": 270
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 10.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,128)",
+     "text": "Injection and Ignition",
+     "bbox": {
+      "width": 4755,
+      "top": 4380,
+      "height": 330,
+      "left": 300
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 10.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "EVAP control valve opening",
+     "bbox": {
+      "width": 2640,
+      "top": 5820,
+      "height": 315,
+      "left": 270
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 10.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Air conditioning state",
+     "bbox": {
+      "width": 2640,
+      "top": 7980,
+      "height": 315,
+      "left": 270
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 10.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Intake air temperature sensor",
+     "bbox": {
+      "width": 2640,
+      "top": 7020,
+      "height": 315,
+      "left": 270
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 10.0
+     },
+     "alignment": "0"
+    }
+   ],
+   "presend": [],
+   "height": 9060,
+   "buttons": [],
+   "width": 5700,
+   "displays": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Engine RPM",
+     "request": "DataRead.CID_1201H_ENG SPEED",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 1870,
+      "top": 1035,
+      "height": 330,
+      "left": 2415
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Speed",
+     "request": "DataRead.CID_1102H_Vehicle speed",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 1870,
+      "top": 1395,
+      "height": 330,
+      "left": 2415
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Battery voltage",
+     "request": "DataRead.CID_1103H_Battery voltage",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 1800,
+      "top": 2355,
+      "height": 300,
+      "left": 2430
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CID_117CH_Accelerator open information",
+     "request": "DataRead.CID_117CH_Accelerator open information",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 1965,
+      "top": 3330,
+      "height": 300,
+      "left": 3405
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CID_1302H_Switch input information0.CID_1302H_Switch input information_bit0_Idle SW",
+     "request": "DataRead.CID_1302H_Switch input information0",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 1960,
+      "top": 3810,
+      "height": 300,
+      "left": 3390
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CID_1308H_DMFPCH.CID_1308H_DMFPCH.CID_1308H_bit3_FUEL PUMP RLY",
+     "request": "DataRead.CID_1308H_DMFPCH",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 1960,
+      "top": 4860,
+      "height": 300,
+      "left": 2910
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CID_1208H_Basic Fuel injection puls",
+     "request": "DataRead.CID_1208H_Basic Fuel injection puls",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 1920,
+      "top": 5340,
+      "height": 300,
+      "left": 2910
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CID_1110H_EVAP control valve opening_DUTY type",
+     "request": "DataRead.CID_1110H_EVAP control valve opening_DUTY type",
+     "width": 20,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 1960,
+      "top": 5820,
+      "height": 300,
+      "left": 2910
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CID_1106H_Intake air temperature sensor",
+     "request": "DataRead.CID_1106H_Intake air temperature sensor",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 1960,
+      "top": 7020,
+      "height": 300,
+      "left": 2910
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CID_1129H_Atmospheric pressure sensor voltage",
+     "request": "DataRead.CID_1129H_Atmospheric pressure sensor voltage",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 1240,
+      "top": 7500,
+      "height": 300,
+      "left": 3630
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Air conditioner status",
+     "request": "DataRead.CID_1302H_Switch input information0",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2040,
+      "top": 7980,
+      "height": 300,
+      "left": 2910
+     }
+    }
+   ]
+  },
+  "Test": {
+   "inputs": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "NSET4",
+     "request": "DataWrite.NSET4 adjustment value",
+     "width": 2000,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4000,
+      "top": 1560,
+      "height": 300,
+      "left": 1080
+     }
+    }
+   ],
+   "color": "rgb(255,255,255)",
+   "labels": [],
+   "presend": [],
+   "height": 6000,
+   "buttons": [
+    {
+     "text": "Write",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "Extended Diagnostic Session"
+      },
+      {
+       "Delay": "0",
+       "RequestName": "DataWrite.NSET4 adjustment value"
+      }
+     ],
+     "uniquename": "Write_0",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "rect": {
+      "width": 1320,
+      "top": 1560,
+      "height": 300,
+      "left": 5400
+     }
+    }
+   ],
+   "width": 9000,
+   "displays": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Target idle RPM",
+     "request": "DataRead.CID_110DH_Idle set rpm",
+     "width": 4095,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5280,
+      "top": 480,
+      "height": 300,
+      "left": 360
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Minimum idle RPM adjustment",
+     "request": "DataRead.CID_112EH_NSET minimum adjustment value",
+     "width": 4095,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5280,
+      "top": 960,
+      "height": 300,
+      "left": 360
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CID_1189H_Status of NISSAN general TRIP",
+     "request": "DataRead.CID_1189H_Status of NISSAN general TRIP",
+     "width": 4010,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5400,
+      "top": 5520,
+      "height": 300,
+      "left": 120
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CID_127EH_DRIVER START COUNTER",
+     "request": "DataRead.CID_127EH_DRIVER START COUNTER",
+     "width": 4010,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5400,
+      "top": 5160,
+      "height": 300,
+      "left": 120
+     }
+    }
+   ]
+  },
+  "Engine Bench test": {
+   "inputs": [],
+   "color": "rgb(0,0,204)",
+   "labels": [
+    {
+     "color": "rgb(166,166,255)",
+     "text": "Engine Bench Test",
+     "bbox": {
+      "width": 4667,
+      "top": 240,
+      "height": 360,
+      "left": 3316
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 12.0
+     },
+     "alignment": "2"
+    }
+   ],
+   "presend": [],
+   "height": 9060,
+   "buttons": [],
+   "width": 11460,
+   "displays": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Coolant temperature",
+     "request": "DataRead.CID_1101H_Water temperature",
+     "width": 4805,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5562,
+      "top": 840,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Battery voltage",
+     "request": "DataRead.CID_1103H_Battery voltage",
+     "width": 4805,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5562,
+      "top": 1200,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CID_1106H_Intake air temperature sensor",
+     "request": "DataRead.CID_1106H_Intake air temperature sensor",
+     "width": 4820,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5562,
+      "top": 1560,
+      "height": 360,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CID_1110H_EVAP control valve opening_DUTY type",
+     "request": "DataRead.CID_1110H_EVAP control valve opening_DUTY type",
+     "width": 4835,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5605,
+      "top": 2040,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CID_1123H_AF ALPHA_B1",
+     "request": "DataRead.CID_1123H_AF ALPHA_B1",
+     "width": 4835,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5605,
+      "top": 2400,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CID_1124H_AF ALPHA_B2",
+     "request": "DataRead.CID_1124H_AF ALPHA_B2",
+     "width": 4835,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5605,
+      "top": 2760,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CID_1125H_KBLRC1",
+     "request": "DataRead.CID_1125H_KBLRC1",
+     "width": 4835,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5605,
+      "top": 3120,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CID_1126H_KBLRC2",
+     "request": "DataRead.CID_1126H_KBLRC2",
+     "width": 4835,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5605,
+      "top": 3480,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CID_1135H_C_VTCangle_E_VTC angle for Hole_IC type CAM sensor",
+     "request": "DataRead.CID_1135H_C_VTCangle_E_VTC angle for Hole_IC type CAM sensor",
+     "width": 4835,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5605,
+      "top": 3840,
+      "height": 480,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CID_1163H_C_VTC angle E_VTC angle for Hole_IC type",
+     "request": "DataRead.CID_1163H_C_VTC angle E_VTC angle for Hole_IC type",
+     "width": 4820,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5605,
+      "top": 4440,
+      "height": 480,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CID_114EH_AF sensor heater duty_BANK1",
+     "request": "DataRead.CID_114EH_AF sensor heater duty_BANK1",
+     "width": 4805,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5605,
+      "top": 5040,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CID_114FH_AF sensor heater duty_BANK2",
+     "request": "DataRead.CID_114FH_AF sensor heater duty_BANK2",
+     "width": 4790,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5605,
+      "top": 5400,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Engine RPM",
+     "request": "DataRead.CID_1201H_ENG SPEED",
+     "width": 4790,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5605,
+      "top": 5760,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CID_120DH_ETC Accelerator sensor1 voltage",
+     "request": "DataRead.CID_120DH_ETC Accelerator sensor1 voltage",
+     "width": 4775,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5605,
+      "top": 6120,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CID_120EH_ETC Accelerator sensor2 voltage",
+     "request": "DataRead.CID_120EH_ETC Accelerator sensor2 voltage",
+     "width": 4775,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5605,
+      "top": 6480,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CID_120FH_ETC Throttle sensor1 voltage",
+     "request": "DataRead.CID_120FH_ETC Throttle sensor1 voltage",
+     "width": 4775,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5605,
+      "top": 6840,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CID_1210H_ETC Throttle sensor2 voltage",
+     "request": "DataRead.CID_1210H_ETC Throttle sensor2 voltage",
+     "width": 4775,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5605,
+      "top": 7200,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CID_1225H_AF SEN1_B1",
+     "request": "DataRead.CID_1225H_AF SEN1_B1",
+     "width": 4775,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5605,
+      "top": 7560,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CID_1226H_AF SEN1_B2",
+     "request": "DataRead.CID_1226H_AF SEN1_B2",
+     "width": 4775,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5605,
+      "top": 7920,
+      "height": 300,
+      "left": 240
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Target idle RPM",
+     "request": "DataRead.CID_110DH_Idle set rpm",
+     "width": 4220,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5015,
+      "top": 855,
+      "height": 300,
+      "left": 6094
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CID_1208H_Basic Fuel injection puls",
+     "request": "DataRead.CID_1208H_Basic Fuel injection puls",
+     "width": 4220,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5015,
+      "top": 1215,
+      "height": 300,
+      "left": 6094
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CID_1211H_Fuel injection puls for DIG or Homogeneous DIG_Bank1",
+     "request": "DataRead.CID_1211H_Fuel injection puls for DIG or Homogeneous DIG_Bank1",
+     "width": 4205,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5015,
+      "top": 1575,
+      "height": 480,
+      "left": 6094
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CID_1212H_Fuel injection puls for DIG or Homogeneous DIG_Bank2",
+     "request": "DataRead.CID_1212H_Fuel injection puls for DIG or Homogeneous DIG_Bank2",
+     "width": 4220,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5015,
+      "top": 2175,
+      "height": 480,
+      "left": 6094
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CID_1302H_Switch input information0.CID_1302H_Switch input information_bit0_Idle SW",
+     "request": "DataRead.CID_1302H_Switch input information0",
+     "width": 4235,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5015,
+      "top": 2775,
+      "height": 480,
+      "left": 6094
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CID_1304H_AC PRESS SW.CID_1304H_AC PRESS SW.CID_1304H_bit7_IGNITION SW",
+     "request": "DataRead.CID_1304H_AC PRESS SW",
+     "width": 4250,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5015,
+      "top": 3375,
+      "height": 480,
+      "left": 6094
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CID_128FH_AFM output_Frequency type_BANK1",
+     "request": "DataRead.CID_128FH_AFM output_Frequency type_BANK1",
+     "width": 4250,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5015,
+      "top": 3975,
+      "height": 360,
+      "left": 6094
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CID_129AH_Exhaust gas temperature sensor voltage bank1",
+     "request": "DataRead.CID_129AH_Exhaust gas temperature sensor voltage bank1",
+     "width": 4265,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5015,
+      "top": 4455,
+      "height": 480,
+      "left": 6094
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CID_120CH_Fuel pressure for DIG or Homogeneous DIG",
+     "request": "DataRead.CID_120CH_Fuel pressure for DIG or Homogeneous DIG",
+     "width": 4250,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5015,
+      "top": 5055,
+      "height": 480,
+      "left": 6094
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CID_1278H_Oil Pressure Sensor voltage",
+     "request": "DataRead.CID_1278H_Oil Pressure Sensor voltage",
+     "width": 4235,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5015,
+      "top": 5655,
+      "height": 300,
+      "left": 6094
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CID_111FH_Engine oil temperture",
+     "request": "DataRead.CID_111FH_Engine oil temperture",
+     "width": 4250,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 5015,
+      "top": 6015,
+      "height": 300,
+      "left": 6094
+     }
+    }
+   ]
+  },
+  "Давление топлива": {
+   "inputs": [],
+   "color": "rgb(223,223,223)",
+   "labels": [
+    {
+     "color": "rgb(223,223,223)",
+     "text": "Fuel pressure at idle: 0.82-1.14 V",
+     "bbox": {
+      "width": 5280,
+      "top": 120,
+      "height": 285,
+      "left": 120
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 10.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "when increasing RPM from idle to 4000 RPM: 0.82-2.9 V",
+     "bbox": {
+      "width": 7740,
+      "top": 480,
+      "height": 285,
+      "left": 120
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 10.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(223,223,223)",
+     "text": "Fuel pressure sensor, V",
+     "bbox": {
+      "width": 3000,
+      "top": 1080,
+      "height": 285,
+      "left": 0
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 10.0
+     },
+     "alignment": "2"
+    }
+   ],
+   "presend": [],
+   "height": 4020,
+   "buttons": [],
+   "width": 8100,
+   "displays": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "CID_1277H_Fuel_pressure sensor voltage",
+     "request": "DataRead.CID_1277H_Fuel_pressure sensor voltage",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 1920,
+      "top": 1080,
+      "height": 300,
+      "left": 3000
+     }
+    }
+   ]
+  },
+  "Регулировка оборотов ХХ": {
+   "inputs": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "NSET4",
+     "request": "DataWrite.NSET4 adjustment value",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 840,
+      "top": 3720,
+      "height": 300,
+      "left": 5160
+     }
+    }
+   ],
+   "color": "rgb(255,255,255)",
+   "labels": [
+    {
+     "color": "rgb(255,128,0)",
+     "text": "Minimum idle RPM adjustment",
+     "bbox": {
+      "width": 7680,
+      "top": 0,
+      "height": 394,
+      "left": -120
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 14.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "> 80",
+     "bbox": {
+      "width": 676,
+      "top": 1185,
+      "height": 240,
+      "left": 4660
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Electrical load - off",
+     "bbox": {
+      "width": 1961,
+      "top": 1425,
+      "height": 240,
+      "left": 4660
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Air conditioner - off",
+     "bbox": {
+      "width": 1691,
+      "top": 1665,
+      "height": 240,
+      "left": 4660
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Power steering - off",
+     "bbox": {
+      "width": 2015,
+      "top": 1905,
+      "height": 240,
+      "left": 4660
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Adjustment is made in steps of 25 RPM",
+     "bbox": {
+      "width": 6240,
+      "top": 4200,
+      "height": 243,
+      "left": 600
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "> 100",
+     "bbox": {
+      "width": 600,
+      "top": 2400,
+      "height": 240,
+      "left": 4680
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": ">12.9",
+     "bbox": {
+      "width": 600,
+      "top": 945,
+      "height": 240,
+      "left": 4665
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "= 0",
+     "bbox": {
+      "width": 600,
+      "top": 2160,
+      "height": 240,
+      "left": 4680
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "The following conditions must be met",
+     "bbox": {
+      "width": 7448,
+      "top": 561,
+      "height": 243,
+      "left": 88
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "alignment": "2"
+    }
+   ],
+   "presend": [],
+   "height": 6000,
+   "buttons": [
+    {
+     "text": "Write",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "Extended Diagnostic Session"
+      },
+      {
+       "Delay": "0",
+       "RequestName": "DataWrite.NSET4 adjustment value"
+      }
+     ],
+     "uniquename": "Write_0",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "rect": {
+      "width": 1080,
+      "top": 3720,
+      "height": 300,
+      "left": 6120
+     }
+    }
+   ],
+   "width": 7500,
+   "displays": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Coolant temperature",
+     "request": "DataRead.CID_1101H_Water temperature",
+     "width": 3425,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4308,
+      "top": 1185,
+      "height": 240,
+      "left": 255
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Battery voltage",
+     "request": "DataRead.CID_1103H_Battery voltage",
+     "width": 3425,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4308,
+      "top": 945,
+      "height": 240,
+      "left": 255
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Electrical load status",
+     "request": "DataRead.CID_1302H_Switch input information0",
+     "width": 3425,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4308,
+      "top": 1425,
+      "height": 240,
+      "left": 255
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Air conditioner status",
+     "request": "DataRead.CID_1302H_Switch input information0",
+     "width": 3425,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4308,
+      "top": 1665,
+      "height": 240,
+      "left": 255
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Power steering status",
+     "request": "DataRead.CID_1302H_Switch input information0",
+     "width": 3425,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4308,
+      "top": 1905,
+      "height": 240,
+      "left": 255
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Speed",
+     "request": "DataRead.CID_1102H_Vehicle speed",
+     "width": 3425,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4308,
+      "top": 2145,
+      "height": 240,
+      "left": 255
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Engine RPM",
+     "request": "DataRead.CID_1201H_ENG SPEED",
+     "width": 3425,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4308,
+      "top": 2385,
+      "height": 240,
+      "left": 255
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Target idle RPM",
+     "request": "DataRead.CID_110DH_Idle set rpm",
+     "width": 3425,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4308,
+      "top": 3240,
+      "height": 240,
+      "left": 1320
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "Minimum idle RPM adjustment",
+     "request": "DataRead.CID_112EH_NSET minimum adjustment value",
+     "width": 4095,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 4920,
+      "top": 3720,
+      "height": 300,
+      "left": 120
+     }
+    }
+   ]
+  }
+ },
+ "categories": {
+  "Мониторинг": [
+   "Engine",
+   "Engine General",
+   "Engine Bench test",
+   "Distance (test)",
+   "Fuel pressure"
+  ],
+  "Сервисные процедуры": [
+   "Input-output control",
+   "Service functions",
+   "Throttle learning",
+   "Reset",
+   "Idle RPM adjustment"
+  ],
+  "Калибровки": [
+   "Test"
+  ],
+  "Идентификаторы": [
+   "ECM"
+  ]
+ }
+}

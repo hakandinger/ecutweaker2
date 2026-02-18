@@ -1,0 +1,8047 @@
+{
+"obd": {
+	"baudrate": 500000, 
+	"protocol": "CAN", 
+	"recv_id": "775", 
+	"funcname": "Auto parking brake", 
+	"funcaddr": "0D", 
+	"send_id": "755"
+}, 
+"devices": [
+	{
+	"dtc": 20845, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "FC_InterSystem_CAN"
+	}, 
+	{
+	"dtc": 20838, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "FC_CLUTCH_SENSOR"
+	}, 
+	{
+	"dtc": 0, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "FC_InterSystem_BCM"
+	}, 
+	{
+	"dtc": 20840, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "FC_MAX_BRAKING"
+	}, 
+	{
+	"dtc": 0, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "FC_InterSystem_ENGINE"
+	}, 
+	{
+	"dtc": 20683, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "FC_DEMAND_LAMP"
+	}, 
+	{
+	"dtc": 0, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "FC_InterSystem_USM"
+	}, 
+	{
+	"dtc": 20678, 
+	"devicedata": {}, 
+	"dtctype": 2, 
+	"name": "FC_MOTOR_SC_FET"
+	}, 
+	{
+	"dtc": 20846, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "FC_APPLY_SWITCH"
+	}, 
+	{
+	"dtc": 0, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "FC_InterSystem_BRAKE"
+	}, 
+	{
+	"dtc": 20737, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "FC_ACTUATOR_LEFT"
+	}, 
+	{
+	"dtc": 20839, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "FC_DOOR_STATUS_INVALID"
+	}, 
+	{
+	"dtc": 20847, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "FC_RELEASE_SWITCH"
+	}, 
+	{
+	"dtc": 53252, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "FC_WHEELSPEED_FAULT"
+	}, 
+	{
+	"dtc": 20835, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "FC_ASSEMBLY_CHECK_NOT_DONE"
+	}, 
+	{
+	"dtc": 20675, 
+	"devicedata": {}, 
+	"dtctype": 2, 
+	"name": "FC_ELECTRONIC_ECU"
+	}, 
+	{
+	"dtc": 20844, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "FC_EPB_SWITCH"
+	}, 
+	{
+	"dtc": 20736, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "FC_ACTUATOR_RIGHT"
+	}, 
+	{
+	"dtc": 0, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "FC_InterSystem_CLUSTER"
+	}, 
+	{
+	"dtc": 0, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "FC_InterSystem_GEARBOX"
+	}, 
+	{
+	"dtc": 61443, 
+	"devicedata": {}, 
+	"dtctype": 0, 
+	"name": "FC_VOLTAGE"
+	}, 
+	{
+	"dtc": 20676, 
+	"devicedata": {}, 
+	"dtctype": 2, 
+	"name": "FC_LONGITUDINAL_SENSOR"
+	}, 
+	{
+	"dtc": 20841, 
+	"devicedata": {}, 
+	"dtctype": 2, 
+	"name": "FC_IGNITION"
+	}
+], 
+"ecuname": "APB_T32", 
+"autoidents": [], 
+"endian": "Big", 
+"requests": [
+	{
+	"name": "DataWrite.Studies_CAN_Frames", 
+	"replybytes": "6E0211", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"sendbyte_dataitems": {
+		"StudiesCANFrames": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "2E021100"
+	}, 
+	{
+	"name": "DataRead.Identification.RenaultR2", 
+	"replybytes": "6180000000000000000000000000000000000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"HardwareNumber.BasicPartList": {
+		"ref": true, 
+		"firstbyte": 24
+		}, 
+		"DiagnosticIdentificationCode": {
+		"ref": true, 
+		"firstbyte": 8
+		}, 
+		"CalibrationNumber": {
+		"ref": true, 
+		"firstbyte": 21
+		}, 
+		"SupplierNumber.ITG": {
+		"ref": true, 
+		"firstbyte": 9
+		}, 
+		"HardwareNumber.LowerPart": {
+		"ref": true, 
+		"firstbyte": 12
+		}, 
+		"PartNumber.BasicPartList": {
+		"ref": true, 
+		"firstbyte": 23
+		}, 
+		"ManufacturerIdentificationCode": {
+		"ref": true, 
+		"firstbyte": 26
+		}, 
+		"ApprovalNumber.BasicPartList": {
+		"ref": true, 
+		"firstbyte": 25
+		}, 
+		"EditionNumber": {
+		"ref": true, 
+		"firstbyte": 19
+		}, 
+		"PartNumber.LowerPart": {
+		"ref": true, 
+		"firstbyte": 3
+		}, 
+		"SoftwareNumber": {
+		"ref": true, 
+		"firstbyte": 17
+		}
+	}, 
+	"minbytes": 26, 
+	"sentbytes": "2180"
+	}, 
+	{
+	"name": "DataRead.FactoryMode", 
+	"replybytes": "62021900", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"FactoryMode": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "220219"
+	}, 
+	{
+	"name": "DataRead.CAN_BCM_Parameters", 
+	"replybytes": "6202030000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"EngineStopDriverRequested": {
+		"bitoffset": 7, 
+		"ref": true, 
+		"firstbyte": 4
+		}, 
+		"GenericApplicativeDiagEnable": {
+		"bitoffset": 3, 
+		"ref": true, 
+		"firstbyte": 5
+		}, 
+		"DiagMuxOn": {
+		"bitoffset": 6, 
+		"ref": true, 
+		"firstbyte": 4
+		}, 
+		"BCM_WakeUpSleepCommand": {
+		"ref": true, 
+		"firstbyte": 4
+		}, 
+		"WakeUpType": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 4
+		}, 
+		"VehiculeState": {
+		"bitoffset": 3, 
+		"ref": true, 
+		"firstbyte": 4
+		}, 
+		"DriverDoorState": {
+		"bitoffset": 5, 
+		"ref": true, 
+		"firstbyte": 5
+		}, 
+		"BrakeInfoStatus": {
+		"ref": true, 
+		"firstbyte": 5
+		}, 
+		"PassengerDoorState": {
+		"bitoffset": 6, 
+		"ref": true, 
+		"firstbyte": 5
+		}
+	}, 
+	"minbytes": 5, 
+	"sentbytes": "220203"
+	}, 
+	{
+	"name": "(no scr) DataWrite.Cold_Country_&_ GearBox_Configuration_DC", 
+	"replybytes": "6E0217", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"sendbyte_dataitems": {
+		"Cold_Country_&_ GearBox_Configuration": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "2E02170000"
+	}, 
+	{
+	"name": "StartDiagnosticSession.ExtendedDiagnostic", 
+	"replybytes": "50C0", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"minbytes": 2, 
+	"sentbytes": "10C0"
+	}, 
+	{
+	"name": "DataRead.VIN", 
+	"replybytes": "618100000000000000000000000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"Checksum CRC": {
+		"ref": true, 
+		"firstbyte": 20
+		}, 
+		"VIN": {
+		"ref": true, 
+		"firstbyte": 3
+		}
+	}, 
+	"minbytes": 21, 
+	"sentbytes": "2181"
+	}, 
+	{
+	"name": "DataWrite.MAP_TOA", 
+	"replybytes": "6E0209", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"sendbyte_dataitems": {
+		"TNG_AccBoundTakeOff2": {
+		"firstbyte": 15
+		}, 
+		"TNG_Curve_ClutchPos_Offset1": {
+		"firstbyte": 24
+		}, 
+		"TNG_AccBoundTakeOff8": {
+		"firstbyte": 21
+		}, 
+		"TNG_Curve_ClutchPos_Delta80": {
+		"firstbyte": 23
+		}, 
+		"TNG_AccBoundTakeOff1": {
+		"firstbyte": 14
+		}, 
+		"TNG_AccBoundTakeOff3": {
+		"firstbyte": 16
+		}, 
+		"TNG_FirstGearRatioGain": {
+		"firstbyte": 4
+		}, 
+		"TNG_AccBoundTakeOff5": {
+		"firstbyte": 18
+		}, 
+		"TNG_AccBoundTakeOff4": {
+		"firstbyte": 17
+		}, 
+		"TNG_AccBoundTakeOff7": {
+		"firstbyte": 20
+		}, 
+		"TNG_AccBoundTakeOff6": {
+		"firstbyte": 19
+		}, 
+		"Checksum2": {
+		"firstbyte": 28
+		}, 
+		"TNG_VehSpeedHBForTakeOffReady (m/s)": {
+		"firstbyte": 25
+		}, 
+		"TNG_AccPosLB_toa": {
+		"firstbyte": 27
+		}, 
+		"TNG_VehSpeedLB_toa": {
+		"firstbyte": 26
+		}, 
+		"TNG_Tilt_Vector3": {
+		"firstbyte": 8
+		}, 
+		"TNG_Tilt_Vector2": {
+		"firstbyte": 7
+		}, 
+		"TNG_Tilt_Vector1": {
+		"firstbyte": 6
+		}, 
+		"TNG_Tilt_Vector7": {
+		"firstbyte": 12
+		}, 
+		"TNG_Tilt_Vector6": {
+		"firstbyte": 11
+		}, 
+		"TNG_Tilt_Vector5": {
+		"firstbyte": 10
+		}, 
+		"TNG_Tilt_Vector4": {
+		"firstbyte": 9
+		}, 
+		"TNG_Curve_ClutchPos_Delta100": {
+		"firstbyte": 22
+		}, 
+		"TNG_Tilt_Vector8": {
+		"firstbyte": 13
+		}, 
+		"TNG_RearGearRatioGain": {
+		"firstbyte": 5
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "2E0209646400060A0C0F12141D03030404040505050204641B14030000"
+	}, 
+	{
+	"name": "DataRead.Physical _I/O_Values", 
+	"replybytes": "6202060000000000000000000000000000000000000000000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"ActuatorBatteryVoltageRL": {
+		"ref": true, 
+		"firstbyte": 5
+		}, 
+		"BrakeForceValueEstimatedLeft": {
+		"ref": true, 
+		"firstbyte": 10
+		}, 
+		"MileageHighestBrakeDiscTemperature": {
+		"ref": true, 
+		"firstbyte": 21
+		}, 
+		"Message ParkingBrakeMalfunctionDisplay": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 31
+		}, 
+		"ActuatorBatteryVoltageRR": {
+		"ref": true, 
+		"firstbyte": 4
+		}, 
+		"APBApplyCounterLeft": {
+		"ref": true, 
+		"firstbyte": 24
+		}, 
+		"Reserved(8bits)": {
+		"firstbyte": 8
+		}, 
+		"Message TakeOffInhibitionWarning": {
+		"bitoffset": 3, 
+		"ref": true, 
+		"firstbyte": 32
+		}, 
+		"BrakediscTemperature": {
+		"ref": true, 
+		"firstbyte": 17
+		}, 
+		"Message NotImmobilizedVehicleWarning": {
+		"bitoffset": 4, 
+		"ref": true, 
+		"firstbyte": 31
+		}, 
+		"Message APBNotTightenedWarning": {
+		"bitoffset": 5, 
+		"ref": true, 
+		"firstbyte": 31
+		}, 
+		"SwitchState": {
+		"ref": true, 
+		"firstbyte": 13
+		}, 
+		"Message ParkingBrakeBindingStatusDisplay": {
+		"ref": true, 
+		"firstbyte": 31
+		}, 
+		"Message DynamicBrakingDisplay": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 32
+		}, 
+		"BrakeForceValueEstimatedRight": {
+		"ref": true, 
+		"firstbyte": 11
+		}, 
+		"ModeControllerState": {
+		"ref": true, 
+		"firstbyte": 30
+		}, 
+		"ClutchPedalPosition": {
+		"ref": true, 
+		"firstbyte": 12
+		}, 
+		"ActuatorCurrentNominalValueRR": {
+		"ref": true, 
+		"firstbyte": 6
+		}, 
+		"ActuatorCurrentNominalValueRL": {
+		"ref": true, 
+		"firstbyte": 7
+		}, 
+		"BrakeStatusRight": {
+		"ref": true, 
+		"firstbyte": 16
+		}, 
+		"LED status": {
+		"bitoffset": 6, 
+		"ref": true, 
+		"firstbyte": 32
+		}, 
+		"FailureLevel": {
+		"ref": true, 
+		"firstbyte": 14
+		}, 
+		"Message APBBrakePedalRequestDisplay": {
+		"ref": true, 
+		"firstbyte": 32
+		}, 
+		"APBApplyCounterRight": {
+		"ref": true, 
+		"firstbyte": 27
+		}, 
+		"VehicleForwardSlope": {
+		"ref": true, 
+		"firstbyte": 9
+		}, 
+		"HighestBrakeDiscTemperature": {
+		"ref": true, 
+		"firstbyte": 19
+		}, 
+		"Message APBTightenedRequestUnavailable": {
+		"bitoffset": 6, 
+		"ref": true, 
+		"firstbyte": 31
+		}, 
+		"BrakeStatusLeft": {
+		"ref": true, 
+		"firstbyte": 15
+		}
+	}, 
+	"minbytes": 32, 
+	"sentbytes": "220206"
+	}, 
+	{
+	"name": "DataWrite.MAP_Clutch_TOA_DC", 
+	"replybytes": "6E0208", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"sendbyte_dataitems": {
+		"MAP_Clutch_TOA": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "2E0208AA509600645001250000"
+	}, 
+	{
+	"name": "DataRead.MAP_Processing_TOA_DC", 
+	"replybytes": "6202140000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"MAP_Processing_TOA": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 56, 
+	"sentbytes": "220214"
+	}, 
+	{
+	"name": "DataWrite.MAP_Evolutive_TOA_DC", 
+	"replybytes": "6E0212", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"sendbyte_dataitems": {
+		"MAP_Evolutive_TOA": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "2E021213EC14EB15EA16E917E818E719E61AE51BE41CE39600640258044C064008340A280C1C100413EC17D402BC0000"
+	}, 
+	{
+	"name": "IOControl.Release_Both_Actuators_Start", 
+	"replybytes": "700200", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"OutputControlStatus": {
+		"firstbyte": 3
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "300200"
+	}, 
+	{
+	"name": "DataRead.MAP_Evolutive_TOA_DC", 
+	"replybytes": "620212000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"MAP_Evolutive_TOA": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 48, 
+	"sentbytes": "220212"
+	}, 
+	{
+	"name": "(no scr) DataRead.MAP_Clutch_TOA", 
+	"replybytes": "62020800000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"TNG_ClutchPosHB": {
+		"ref": true, 
+		"firstbyte": 4
+		}, 
+		"TNG_ClutchPosAntLB": {
+		"ref": true, 
+		"firstbyte": 9
+		}, 
+		"TNG_AntByClutchSpeed": {
+		"ref": true, 
+		"firstbyte": 7
+		}, 
+		"TNG_ClutchPosMB": {
+		"ref": true, 
+		"firstbyte": 6
+		}, 
+		"TNG_ClutchPosLB": {
+		"ref": true, 
+		"firstbyte": 5
+		}, 
+		"TNG_D_ClutchPosLB_Capture": {
+		"ref": true, 
+		"firstbyte": 10
+		}, 
+		"Checksum1": {
+		"ref": true, 
+		"firstbyte": 12
+		}
+	}, 
+	"minbytes": 13, 
+	"sentbytes": "220208"
+	}, 
+	{
+	"name": "DataRead.Last_Diag_Evolue", 
+	"replybytes": "620225000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"Index_Last_Diag_Evolue_Generic": {
+		"firstbyte": 4
+		}, 
+		"Index_Last_Diag_Evolue_TOR": {
+		"firstbyte": 6
+		}, 
+		"Index_Last_Diag_Evolue_TOA": {
+		"firstbyte": 5
+		}
+	}, 
+	"minbytes": 6, 
+	"sentbytes": "220225"
+	}, 
+	{
+	"sentbytes": "1101", 
+	"deny_sds": [], 
+	"minbytes": 1, 
+	"manualsend": true, 
+	"name": "ER - ECU Hard reset"
+	}, 
+	{
+	"name": "DataRead.CAN_ECM_Parameters", 
+	"replybytes": "62020200000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"RawSensor": {
+		"ref": true, 
+		"firstbyte": 9
+		}, 
+		"EngineRPM": {
+		"ref": true, 
+		"firstbyte": 7
+		}, 
+		"EngineStatus_R": {
+		"ref": true, 
+		"firstbyte": 6
+		}, 
+		"MeanEffectiveTorque": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 10, 
+	"sentbytes": "220202"
+	}, 
+	{
+	"name": "(no work) DataRead.MAP_Evolutive_TOA", 
+	"replybytes": "620212000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"EV0_ForgettingFactor_init": {
+		"ref": true, 
+		"firstbyte": 45
+		}, 
+		"EVO_Curve_Clutch_init_9": {
+		"ref": true, 
+		"firstbyte": 22
+		}, 
+		"EVO_Curve_Clutch_init_8": {
+		"ref": true, 
+		"firstbyte": 20
+		}, 
+		"EVO_Curve_Clutch_init_3": {
+		"ref": true, 
+		"firstbyte": 10
+		}, 
+		"EVO_Curve_Clutch_init_2": {
+		"ref": true, 
+		"firstbyte": 8
+		}, 
+		"EVO_Curve_Clutch_init_1": {
+		"ref": true, 
+		"firstbyte": 6
+		}, 
+		"EVO_Curve_Clutch_init_0": {
+		"ref": true, 
+		"firstbyte": 4
+		}, 
+		"EVO_Curve_Clutch_init_7": {
+		"ref": true, 
+		"firstbyte": 18
+		}, 
+		"EVO_Curve_Clutch_init_6": {
+		"ref": true, 
+		"firstbyte": 16
+		}, 
+		"EVO_Curve_Clutch_init_5": {
+		"ref": true, 
+		"firstbyte": 14
+		}, 
+		"EVO_Curve_Clutch_init_4": {
+		"ref": true, 
+		"firstbyte": 12
+		}, 
+		"EVO_Curve_E_C_T_init_10": {
+		"ref": true, 
+		"firstbyte": 29
+		}, 
+		"EVO_Curve_E_C_T_init_15": {
+		"ref": true, 
+		"firstbyte": 31
+		}, 
+		"EVO_Curve_E_C_T_init_40": {
+		"ref": true, 
+		"firstbyte": 39
+		}, 
+		"EVO_Curve_E_C_T_init_30": {
+		"ref": true, 
+		"firstbyte": 37
+		}, 
+		"EVO_Curve_E_C_T_init_0": {
+		"ref": true, 
+		"firstbyte": 25
+		}, 
+		"EVO_Curve_E_C_T_init_5": {
+		"ref": true, 
+		"firstbyte": 27
+		}, 
+		"EVO_Curve_D_ClutchPos_init": {
+		"ref": true, 
+		"firstbyte": 24
+		}, 
+		"EVO_Curve_E_C_T_init_50": {
+		"ref": true, 
+		"firstbyte": 41
+		}, 
+		"EVO_Curve_E_C_T_init_60": {
+		"ref": true, 
+		"firstbyte": 43
+		}, 
+		"EVO_Curve_E_C_T_init_20": {
+		"ref": true, 
+		"firstbyte": 33
+		}, 
+		"EVO_Curve_E_C_T_init_25": {
+		"ref": true, 
+		"firstbyte": 35
+		}, 
+		"Checksum4": {
+		"ref": true, 
+		"firstbyte": 47
+		}
+	}, 
+	"minbytes": 48, 
+	"sentbytes": "220212"
+	}, 
+	{
+	"name": "Routine.MaintenanceCloseMode_Stop", 
+	"replybytes": "7206000000", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"BrakeStatusRight": {
+		"firstbyte": 5
+		}, 
+		"BrakeStatusLeft": {
+		"firstbyte": 4
+		}, 
+		"StopRoutineStatus": {
+		"firstbyte": 3
+		}
+	}, 
+	"minbytes": 5, 
+	"sentbytes": "320600"
+	}, 
+	{
+	"name": "StartDiagnosticSession.DefaultSession", 
+	"replybytes": "5081", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"sendbyte_dataitems": {
+		"SessionName": {
+		"firstbyte": 2
+		}
+	}, 
+	"minbytes": 2, 
+	"sentbytes": "1081"
+	}, 
+	{
+	"name": "DataWrite.Cold_Country_&_ GearBox_Configuration", 
+	"replybytes": "6E0217", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"sendbyte_dataitems": {
+		"ColdCountryMode": {
+		"firstbyte": 4
+		}, 
+		"GearBoxType": {
+		"firstbyte": 5
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "2E02170003"
+	}, 
+	{
+	"name": "(no work) DataRead.Intermediates_Curve_Values", 
+	"replybytes": "62021600000000000000000000000000000000000000000000000000000000000000000000000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"Curve_E_C_T_toa_EVO_Curve_E_C_T_init_60": {
+		"firstbyte": 22
+		}, 
+		"Curve_E_C_T_toa_EVO_Curve_E_C_T_init_25": {
+		"firstbyte": 14
+		}, 
+		"Curve_Clutch[0]": {
+		"firstbyte": 44
+		}, 
+		"Curve_E_C_T_toa_EVO_Curve_E_C_T_init_20": {
+		"firstbyte": 12
+		}, 
+		"Curve_E_C_T_toa_EVO_Curve_E_C_T_init_40": {
+		"firstbyte": 18
+		}, 
+		"Curve_E_C_T_toa_EVO_Curve_E_C_T_init_50": {
+		"firstbyte": 20
+		}, 
+		"Curve_Clutch_EVO_Curve_Clutch_init_2": {
+		"firstbyte": 28
+		}, 
+		"Curve_Clutch_EVO_Curve_Clutch_init_3": {
+		"firstbyte": 30
+		}, 
+		"Curve_Clutch_EVO_Curve_Clutch_init_0": {
+		"firstbyte": 24
+		}, 
+		"Curve_Clutch_EVO_Curve_Clutch_init_1": {
+		"firstbyte": 26
+		}, 
+		"Curve_Clutch_EVO_Curve_Clutch_init_6": {
+		"firstbyte": 36
+		}, 
+		"Curve_Clutch_EVO_Curve_Clutch_init_7": {
+		"firstbyte": 38
+		}, 
+		"Curve_Clutch_EVO_Curve_Clutch_init_4": {
+		"firstbyte": 32
+		}, 
+		"Curve_Clutch_EVO_Curve_Clutch_init_5": {
+		"firstbyte": 34
+		}, 
+		"Curve_E_C_T_toa_EVO_Curve_E_C_T_init_5": {
+		"firstbyte": 6
+		}, 
+		"Curve_E_C_T_toa_EVO_Curve_E_C_T_init_10": {
+		"firstbyte": 8
+		}, 
+		"Curve_Clutch_EVO_Curve_Clutch_init_8": {
+		"firstbyte": 40
+		}, 
+		"Curve_Clutch_EVO_Curve_Clutch_init_9": {
+		"firstbyte": 42
+		}, 
+		"Curve_E_C_T_toa_EVO_Curve_E_C_T_init_15": {
+		"firstbyte": 10
+		}, 
+		"Curve_E_C_T_toa_EVO_Curve_E_C_T_init_0": {
+		"firstbyte": 4
+		}, 
+		"Curve_E_C_T_toa_EVO_Curve_E_C_T_init_30": {
+		"firstbyte": 16
+		}
+	}, 
+	"minbytes": 45, 
+	"sentbytes": "220216"
+	}, 
+	{
+	"name": "Routine.AssemblyCheckMode_Stop", 
+	"replybytes": "720A000000", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"BrakeStatusLeft": {
+		"firstbyte": 4
+		}, 
+		"StatusRoutineRequested": {
+		"firstbyte": 3
+		}, 
+		"BrakeStatusRight": {
+		"firstbyte": 5
+		}
+	}, 
+	"minbytes": 5, 
+	"sentbytes": "320A00"
+	}, 
+	{
+	"name": "Routine.AssemblyCheckMode_Start", 
+	"replybytes": "710A000000", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"BrakeStatusLeft": {
+		"firstbyte": 4
+		}, 
+		"StatusRoutineRequested": {
+		"firstbyte": 3
+		}, 
+		"BrakeStatusRight": {
+		"firstbyte": 5
+		}
+	}, 
+	"minbytes": 5, 
+	"sentbytes": "310A00"
+	}, 
+	{
+	"name": "DataRead.Tracability", 
+	"replybytes": "61840000000000000000000000000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"Unitary data tracability TRW": {
+		"firstbyte": 3
+		}
+	}, 
+	"minbytes": 22, 
+	"sentbytes": "2184"
+	}, 
+	{
+	"name": "DataRead.Vehicle_Configuration", 
+	"replybytes": "6202100000000000000000000000000000000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"PHY_GearBoxRatioVector-6th ratio": {
+		"ref": true, 
+		"firstbyte": 16
+		}, 
+		"PHY_GearBoxRatioVector-2nd ratio": {
+		"ref": true, 
+		"firstbyte": 8
+		}, 
+		"PHY_GearBoxRatioVector-1st ratio": {
+		"ref": true, 
+		"firstbyte": 6
+		}, 
+		"PHY_EngineInertia": {
+		"ref": true, 
+		"firstbyte": 23
+		}, 
+		"PHY_GearBoxRatioVector-0value": {
+		"ref": true, 
+		"firstbyte": 4
+		}, 
+		"PHY_RearGearRatio": {
+		"ref": true, 
+		"firstbyte": 18
+		}, 
+		"PHY_GearBoxRatioVector-3rd ratio": {
+		"ref": true, 
+		"firstbyte": 10
+		}, 
+		"PHY_VehMasse": {
+		"ref": true, 
+		"firstbyte": 19
+		}, 
+		"Checksum3": {
+		"ref": true, 
+		"firstbyte": 25
+		}, 
+		"PHY_WheelRadius": {
+		"ref": true, 
+		"firstbyte": 21
+		}, 
+		"PHY_GearBoxRatioVector-4th ratio": {
+		"ref": true, 
+		"firstbyte": 12
+		}, 
+		"PHY_GearBoxRatioVector-5th ratio": {
+		"ref": true, 
+		"firstbyte": 14
+		}
+	}, 
+	"minbytes": 26, 
+	"sentbytes": "220210"
+	}, 
+	{
+	"name": "(no scr) DataRead.CAN_USM_Parameters", 
+	"replybytes": "6202050000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"IgnitionSupplyConfirmation": {
+		"ref": true, 
+		"firstbyte": 4
+		}, 
+		"RearGearEngaged": {
+		"bitoffset": 3, 
+		"ref": true, 
+		"firstbyte": 4
+		}, 
+		"BDUOpeningAnticipation": {
+		"bitoffset": 5, 
+		"ref": true, 
+		"firstbyte": 4
+		}, 
+		"NeutralContact": {
+		"bitoffset": 1, 
+		"ref": true, 
+		"firstbyte": 4
+		}, 
+		"BatteryVoltage": {
+		"ref": true, 
+		"firstbyte": 5
+		}
+	}, 
+	"minbytes": 5, 
+	"sentbytes": "220205"
+	}, 
+	{
+	"name": "DataRead.MAP_TOA_DC", 
+	"replybytes": "6202090000000000000000000000", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"MAP_TOA": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 29, 
+	"sentbytes": "220209"
+	}, 
+	{
+	"name": "Routine.MaintenanceOpenMode_Status", 
+	"replybytes": "7107000000", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"BrakeStatusLeft": {
+		"firstbyte": 4
+		}, 
+		"StatusRoutineRequested": {
+		"firstbyte": 3
+		}, 
+		"BrakeStatusRight": {
+		"firstbyte": 5
+		}
+	}, 
+	"minbytes": 5, 
+	"sentbytes": "310701"
+	}, 
+	{
+	"name": "(no work) DataRead.MAP_Processing_TOA", 
+	"replybytes": "6202140000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"TNG_EPTWTorqueOffset": {
+		"ref": true, 
+		"firstbyte": 5
+		}, 
+		"TNG_ClutchSensorFilter6": {
+		"ref": true, 
+		"firstbyte": 18
+		}, 
+		"TNG_ClutchSensorFilter7": {
+		"ref": true, 
+		"firstbyte": 20
+		}, 
+		"TNG_TiltSensorTimeConstant": {
+		"ref": true, 
+		"firstbyte": 50
+		}, 
+		"TNG_ClutchSensorFilter5": {
+		"ref": true, 
+		"firstbyte": 16
+		}, 
+		"TNG_ClutchSensorFilter2": {
+		"ref": true, 
+		"firstbyte": 10
+		}, 
+		"TNG_ClutchSensorFilter3": {
+		"ref": true, 
+		"firstbyte": 12
+		}, 
+		"TNG_TorActivation_flag": {
+		"ref": true, 
+		"firstbyte": 7
+		}, 
+		"TNG_ClutchSensorFilter1": {
+		"ref": true, 
+		"firstbyte": 8
+		}, 
+		"TNG_ClutchSensorFilter8": {
+		"ref": true, 
+		"firstbyte": 22
+		}, 
+		"TNG_ClutchSensorFilter9": {
+		"ref": true, 
+		"firstbyte": 24
+		}, 
+		"TNG_ClutchSensorFilter18": {
+		"ref": true, 
+		"firstbyte": 42
+		}, 
+		"TNG_ClutchSensorFilter19": {
+		"ref": true, 
+		"firstbyte": 44
+		}, 
+		"TNG_D_ClutchPos_tkf_LB": {
+		"ref": true, 
+		"firstbyte": 54
+		}, 
+		"TNG_ClutchSensorFilter10": {
+		"ref": true, 
+		"firstbyte": 26
+		}, 
+		"TNG_ClutchSensorFilter11": {
+		"ref": true, 
+		"firstbyte": 28
+		}, 
+		"TNG_ClutchSensorFilter12": {
+		"ref": true, 
+		"firstbyte": 30
+		}, 
+		"TNG_D_ClutchPos_tkf_HB": {
+		"ref": true, 
+		"firstbyte": 53
+		}, 
+		"TNG_ClutchSensorFilter14": {
+		"ref": true, 
+		"firstbyte": 34
+		}, 
+		"TNG_ClutchSensorFilter15": {
+		"ref": true, 
+		"firstbyte": 36
+		}, 
+		"TNG_ClutchSensorFilter16": {
+		"ref": true, 
+		"firstbyte": 38
+		}, 
+		"TNG_ClutchSensorFilter17": {
+		"ref": true, 
+		"firstbyte": 40
+		}, 
+		"TNG_EPTWTorqueGain": {
+		"ref": true, 
+		"firstbyte": 4
+		}, 
+		"TNG_ClutchSensorFilter4": {
+		"ref": true, 
+		"firstbyte": 14
+		}, 
+		"TNG_Clutch_tkf_TimeConstant": {
+		"ref": true, 
+		"firstbyte": 51
+		}, 
+		"TNG_ClutchSensorFilter13": {
+		"ref": true, 
+		"firstbyte": 32
+		}, 
+		"Checksum6": {
+		"ref": true, 
+		"firstbyte": 55
+		}, 
+		"TNG_ClutchSensorFilter21": {
+		"ref": true, 
+		"firstbyte": 48
+		}, 
+		"TNG_ClutchSensorFilter20": {
+		"ref": true, 
+		"firstbyte": 46
+		}, 
+		"TNG_D_Clutch_tkf_TimeConstant": {
+		"ref": true, 
+		"firstbyte": 52
+		}
+	}, 
+	"minbytes": 56, 
+	"sentbytes": "220214"
+	}, 
+	{
+	"name": "DataWrite.MAP_Learning_TOA_DC", 
+	"replybytes": "6E0213", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"sendbyte_dataitems": {
+		"MAP_Learning_TOA": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "2E02130500053C032004140000"
+	}, 
+	{
+	"name": "IOControl.Switch_On_LED_Stop", 
+	"replybytes": "700311", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"minbytes": 3, 
+	"sentbytes": "300311"
+	}, 
+	{
+	"name": "DataRead.MAP_Clutch_TOA_DC", 
+	"replybytes": "6202080000000000000000", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"MAP_Clutch_TOA": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 13, 
+	"sentbytes": "220208"
+	}, 
+	{
+	"name": "IOControl.Apply_Both_Actuators_Status", 
+	"replybytes": "700100", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"OutputControlStatus": {
+		"firstbyte": 3
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "300101"
+	}, 
+	{
+	"name": "DataWrite.MAP_Learning_TOA", 
+	"replybytes": "6E0213", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"sendbyte_dataitems": {
+		"TNG_Curve_D_ClutchPos_Final": {
+		"firstbyte": 7
+		}, 
+		"TNG_ForgettingFactor_Final": {
+		"firstbyte": 8
+		}, 
+		"TNG_Curve_D_ClutchPos_Step": {
+		"firstbyte": 4
+		}, 
+		"TNG_ForgettingFactor_Step": {
+		"firstbyte": 5
+		}, 
+		"TNG_NumGearShiftForProcessing": {
+		"firstbyte": 10
+		}, 
+		"TNG_AccPosLB_capture": {
+		"firstbyte": 11
+		}, 
+		"Checksum5": {
+		"firstbyte": 12
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "2E021305000564032004140000"
+	}, 
+	{
+	"name": "IOControl.Release_Both_Actuators_Status", 
+	"replybytes": "700200", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"OutputControlStatus": {
+		"firstbyte": 3
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "300201"
+	}, 
+	{
+	"name": "DataRead.Cold_Country_&_ GearBox_Configuration_DC", 
+	"replybytes": "6202170000", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"Cold_Country_&_ GearBox_Configuration": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 5, 
+	"sentbytes": "220217"
+	}, 
+	{
+	"name": "DataWrite.RAM_Download", 
+	"replybytes": "6E0223", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"sendbyte_dataitems": {
+		"RAMDownload": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "2E022300"
+	}, 
+	{
+	"name": "IOControl.Switch_On_LED_Status", 
+	"replybytes": "700100", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"OutputControlStatus": {
+		"firstbyte": 3
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "300301"
+	}, 
+	{
+	"name": "DataRead.CAN_ABS_Parameters (14 byte)", 
+	"replybytes": "62020100000000000000000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"Reserved(1bits)": {
+		"bitoffset": 7, 
+		"ref": true, 
+		"firstbyte": 14
+		}, 
+		"WheelRearLeftSpeed(CAN)": {
+		"ref": true, 
+		"firstbyte": 6
+		}, 
+		"WheelFrontLeftSpeed(CAN)": {
+		"ref": true, 
+		"firstbyte": 10
+		}, 
+		"WheelFrontRightSpeed(CAN)": {
+		"ref": true, 
+		"firstbyte": 12
+		}, 
+		"Odometer": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 14
+		}, 
+		"VehiculeSpeed": {
+		"ref": true, 
+		"firstbyte": 4
+		}, 
+		"WheelRearRightSpeed(CAN)": {
+		"ref": true, 
+		"firstbyte": 8
+		}, 
+		"Reserved(2bits)": {
+		"ref": true, 
+		"firstbyte": 14
+		}
+	}, 
+	"minbytes": 14, 
+	"sentbytes": "220201"
+	}, 
+	{
+	"name": "Routine.MaintenanceCloseMode_Status", 
+	"replybytes": "7106000000", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"BrakeStatusLeft": {
+		"firstbyte": 4
+		}, 
+		"StatusRoutineRequested": {
+		"firstbyte": 3
+		}, 
+		"BrakeStatusRight": {
+		"firstbyte": 5
+		}
+	}, 
+	"minbytes": 5, 
+	"sentbytes": "310601"
+	}, 
+	{
+	"name": "(no scr) DataRead.MAP_ProgressiveRelease", 
+	"replybytes": "620224000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"t_wait_max_back": {
+		"ref": true, 
+		"firstbyte": 11
+		}, 
+		"t_wait_min_back": {
+		"ref": true, 
+		"firstbyte": 10
+		}, 
+		"t_wait_min_front": {
+		"ref": true, 
+		"firstbyte": 6
+		}, 
+		"t_act_min_back": {
+		"ref": true, 
+		"firstbyte": 8
+		}, 
+		"t_wait_max_front": {
+		"ref": true, 
+		"firstbyte": 7
+		}, 
+		"t_act_max_front": {
+		"ref": true, 
+		"firstbyte": 5
+		}, 
+		"t_act_max_back": {
+		"ref": true, 
+		"firstbyte": 9
+		}, 
+		"t_act_min_front": {
+		"ref": true, 
+		"firstbyte": 4
+		}, 
+		"Checksum7": {
+		"ref": true, 
+		"firstbyte": 12
+		}
+	}, 
+	"minbytes": 13, 
+	"sentbytes": "220224"
+	}, 
+	{
+	"name": "Routine.MaintenanceOpenMode_Stop", 
+	"replybytes": "7207000000", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"BrakeStatusRight": {
+		"firstbyte": 5
+		}, 
+		"BrakeStatusLeft": {
+		"firstbyte": 4
+		}, 
+		"StopRoutineStatus": {
+		"firstbyte": 3
+		}
+	}, 
+	"minbytes": 5, 
+	"sentbytes": "320700"
+	}, 
+	{
+	"name": "DataRead.RAM_Download", 
+	"replybytes": "62022300", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"RAMDownload": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "220223"
+	}, 
+	{
+	"name": "DataWrite.MAP_ProgressiveRelease_DC", 
+	"replybytes": "6E0224", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"sendbyte_dataitems": {
+		"MAP_ProgressiveRelease": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "2E0224101425550E1425550000"
+	}, 
+	{
+	"name": "(no scr) DataWrite.Vehicle_Configuration_DC", 
+	"replybytes": "6E0210", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"sendbyte_dataitems": {
+		"Vehicle_Configuration": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "2E021000000044008300C00105014D018F44059601270A1E0000"
+	}, 
+	{
+	"name": "(no scr) DataRead.CAN_AT_Torque_Parameters", 
+	"replybytes": "620204000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"TransRangeEngaged": {
+		"ref": true, 
+		"firstbyte": 4
+		}, 
+		"Gearlevelposition": {
+		"bitoffset": 4, 
+		"ref": true, 
+		"firstbyte": 4
+		}, 
+		"EstimatedPowertainWheelTorque": {
+		"ref": true, 
+		"firstbyte": 5
+		}
+	}, 
+	"minbytes": 6, 
+	"sentbytes": "220204"
+	}, 
+	{
+	"name": "DataWrite.MAP_Evolutive_TOA", 
+	"replybytes": "6E0212", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"sendbyte_dataitems": {
+		"EV0_ForgettingFactor_init": {
+		"firstbyte": 45
+		}, 
+		"EVO_Curve_Clutch_init_9": {
+		"firstbyte": 22
+		}, 
+		"EVO_Curve_Clutch_init_8": {
+		"firstbyte": 20
+		}, 
+		"EVO_Curve_Clutch_init_3": {
+		"firstbyte": 10
+		}, 
+		"EVO_Curve_Clutch_init_2": {
+		"firstbyte": 8
+		}, 
+		"EVO_Curve_Clutch_init_1": {
+		"firstbyte": 6
+		}, 
+		"EVO_Curve_Clutch_init_0": {
+		"firstbyte": 4
+		}, 
+		"EVO_Curve_Clutch_init_7": {
+		"firstbyte": 18
+		}, 
+		"EVO_Curve_Clutch_init_6": {
+		"firstbyte": 16
+		}, 
+		"EVO_Curve_Clutch_init_5": {
+		"firstbyte": 14
+		}, 
+		"EVO_Curve_Clutch_init_4": {
+		"firstbyte": 12
+		}, 
+		"EVO_Curve_E_C_T_init_10": {
+		"firstbyte": 29
+		}, 
+		"EVO_Curve_E_C_T_init_15": {
+		"firstbyte": 31
+		}, 
+		"EVO_Curve_E_C_T_init_40": {
+		"firstbyte": 39
+		}, 
+		"EVO_Curve_E_C_T_init_30": {
+		"firstbyte": 37
+		}, 
+		"EVO_Curve_E_C_T_init_0": {
+		"firstbyte": 25
+		}, 
+		"EVO_Curve_E_C_T_init_5": {
+		"firstbyte": 27
+		}, 
+		"EVO_Curve_D_ClutchPos_init": {
+		"firstbyte": 24
+		}, 
+		"EVO_Curve_E_C_T_init_50": {
+		"firstbyte": 41
+		}, 
+		"EVO_Curve_E_C_T_init_60": {
+		"firstbyte": 43
+		}, 
+		"EVO_Curve_E_C_T_init_20": {
+		"firstbyte": 33
+		}, 
+		"EVO_Curve_E_C_T_init_25": {
+		"firstbyte": 35
+		}, 
+		"Checksum4": {
+		"firstbyte": 47
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "2E02121F401FA42008206C20D02134219821FC226022C49600640258044C064008340A280C1C100413EC17D402BC0000"
+	}, 
+	{
+	"name": "DataWrite.MAP_Clutch_TOA", 
+	"replybytes": "6E0208", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"sendbyte_dataitems": {
+		"TNG_ClutchPosHB": {
+		"firstbyte": 4
+		}, 
+		"TNG_ClutchPosAntLB": {
+		"firstbyte": 9
+		}, 
+		"TNG_AntByClutchSpeed": {
+		"firstbyte": 7
+		}, 
+		"TNG_ClutchPosMB": {
+		"firstbyte": 6
+		}, 
+		"TNG_ClutchPosLB": {
+		"firstbyte": 5
+		}, 
+		"TNG_D_ClutchPosLB_Capture": {
+		"firstbyte": 10
+		}, 
+		"Checksum1": {
+		"firstbyte": 12
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "2E0208AA509600645001250000"
+	}, 
+	{
+	"name": "(no work) DataRead.Snapshot", 
+	"replybytes": "6202150000000000000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"Snapshot_BrakeForceValueEstimatedLeft": {
+		"ref": true, 
+		"firstbyte": 10
+		}, 
+		"Snapshot_VehicleForwardSlope": {
+		"ref": true, 
+		"firstbyte": 13
+		}, 
+		"Message ParkingBrakeMalfunctionDisplay": {
+		"bitoffset": 2, 
+		"firstbyte": 16
+		}, 
+		"Snapshot_LastBreakOperation_Right": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 15
+		}, 
+		"Snapshot_BrakeStatusRight": {
+		"bitoffset": 4, 
+		"ref": true, 
+		"firstbyte": 8
+		}, 
+		"Snapshot_BatteryVoltage": {
+		"ref": true, 
+		"firstbyte": 9
+		}, 
+		"Message TakeOffInhibitionWarning": {
+		"bitoffset": 3, 
+		"firstbyte": 17
+		}, 
+		"Snapshot_BrakeForceValueEstimatedRight": {
+		"ref": true, 
+		"firstbyte": 11
+		}, 
+		"Snapshot_IgnitionSupplyConfirmation": {
+		"bitoffset": 3, 
+		"ref": true, 
+		"firstbyte": 6
+		}, 
+		"Snapshot_BrakeInfoStatus": {
+		"ref": true, 
+		"firstbyte": 6
+		}, 
+		"Message NotImmobilizedVehicleWarning": {
+		"bitoffset": 4, 
+		"firstbyte": 16
+		}, 
+		"Message APBNotTightenedWarning": {
+		"bitoffset": 5, 
+		"firstbyte": 16
+		}, 
+		"Snapshot_BrakeStatusLeft": {
+		"ref": true, 
+		"firstbyte": 8
+		}, 
+		"Message ParkingBrakeBindingStatusDisplay": {
+		"firstbyte": 16
+		}, 
+		"Message DynamicBrakingDisplay": {
+		"bitoffset": 2, 
+		"firstbyte": 17
+		}, 
+		"Snapshot_TRWFaultID": {
+		"ref": true, 
+		"firstbyte": 14
+		}, 
+		"Snapshot_FrequencyCounter": {
+		"bitoffset": 4, 
+		"ref": true, 
+		"firstbyte": 5
+		}, 
+		"Message APBTightenedRequestUnavailable": {
+		"bitoffset": 6, 
+		"firstbyte": 16
+		}, 
+		"LED status": {
+		"bitoffset": 6, 
+		"firstbyte": 17
+		}, 
+		"Message APBBrakePedalRequestDisplay": {
+		"firstbyte": 17
+		}, 
+		"Snapshot_ModeControllerState": {
+		"ref": true, 
+		"firstbyte": 7
+		}, 
+		"Snapshot_LastBreakOperation_Left": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 7
+		}, 
+		"Snapshot_VehiculeSpeed": {
+		"ref": true, 
+		"firstbyte": 12
+		}, 
+		"Snapshot_PresenceCounter": {
+		"ref": true, 
+		"firstbyte": 4
+		}, 
+		"Snapshot_EngineStatus_R": {
+		"bitoffset": 4, 
+		"ref": true, 
+		"firstbyte": 6
+		}, 
+		"Snapshot_GenericApplicativeDiagEnable": {
+		"bitoffset": 6, 
+		"ref": true, 
+		"firstbyte": 6
+		}
+	}, 
+	"minbytes": 17, 
+	"sentbytes": "220215"
+	}, 
+	{
+	"name": "DataWrite.MAP_Processing_TOA", 
+	"replybytes": "6E0214", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"sendbyte_dataitems": {
+		"TNG_EPTWTorqueOffset": {
+		"firstbyte": 5
+		}, 
+		"TNG_ClutchSensorFilter6": {
+		"firstbyte": 18
+		}, 
+		"TNG_ClutchSensorFilter7": {
+		"firstbyte": 20
+		}, 
+		"TNG_ClutchSensorFilter4": {
+		"firstbyte": 14
+		}, 
+		"TNG_ClutchSensorFilter5": {
+		"firstbyte": 16
+		}, 
+		"TNG_ClutchSensorFilter2": {
+		"firstbyte": 10
+		}, 
+		"TNG_ClutchSensorFilter3": {
+		"firstbyte": 12
+		}, 
+		"TNG_TorActivation_flag": {
+		"firstbyte": 7
+		}, 
+		"TNG_ClutchSensorFilter1": {
+		"firstbyte": 8
+		}, 
+		"TNG_ClutchSensorFilter8": {
+		"firstbyte": 22
+		}, 
+		"TNG_ClutchSensorFilter9": {
+		"firstbyte": 24
+		}, 
+		"TNG_ClutchSensorFilter18": {
+		"firstbyte": 42
+		}, 
+		"TNG_ClutchSensorFilter19": {
+		"firstbyte": 44
+		}, 
+		"TNG_D_ClutchPos_tkf_LB": {
+		"firstbyte": 54
+		}, 
+		"TNG_ClutchSensorFilter10": {
+		"firstbyte": 26
+		}, 
+		"TNG_ClutchSensorFilter11": {
+		"firstbyte": 28
+		}, 
+		"TNG_ClutchSensorFilter12": {
+		"firstbyte": 30
+		}, 
+		"TNG_ClutchSensorFilter13": {
+		"firstbyte": 32
+		}, 
+		"TNG_ClutchSensorFilter14": {
+		"firstbyte": 34
+		}, 
+		"TNG_ClutchSensorFilter15": {
+		"firstbyte": 36
+		}, 
+		"TNG_ClutchSensorFilter16": {
+		"firstbyte": 38
+		}, 
+		"TNG_ClutchSensorFilter17": {
+		"firstbyte": 40
+		}, 
+		"TNG_EPTWTorqueGain": {
+		"firstbyte": 4
+		}, 
+		"TNG_TiltSensorTimeConstant": {
+		"firstbyte": 50
+		}, 
+		"TNG_Clutch_tkf_TimeConstant": {
+		"firstbyte": 51
+		}, 
+		"TNG_D_ClutchPos_tkf_HB": {
+		"firstbyte": 53
+		}, 
+		"Checksum6": {
+		"firstbyte": 55
+		}, 
+		"TNG_ClutchSensorFilter21": {
+		"firstbyte": 48
+		}, 
+		"TNG_ClutchSensorFilter20": {
+		"firstbyte": 46
+		}, 
+		"TNG_D_Clutch_tkf_TimeConstant": {
+		"firstbyte": 52
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "2E0214640FA001271026FB26D1269C26942710284E2A3E2C6F2E2D2ED82E2D2C6F2A3E284E27102694269C26D126FB27100A020564640000"
+	}, 
+	{
+	"name": "Routine.AssemblyCheckMode_Status", 
+	"replybytes": "710A000000", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"BrakeStatusLeft": {
+		"firstbyte": 4
+		}, 
+		"StatusRoutineRequested": {
+		"firstbyte": 3
+		}, 
+		"BrakeStatusRight": {
+		"firstbyte": 5
+		}
+	}, 
+	"minbytes": 5, 
+	"sentbytes": "310A01"
+	}, 
+	{
+	"name": "IOControl.Apply_Both_Actuators_Start", 
+	"replybytes": "700100", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"OutputControlStatus": {
+		"firstbyte": 3
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "300100"
+	}, 
+	{
+	"name": "DataRead.VehiculeManufacturerSparPartNumber", 
+	"replybytes": "62F18700000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"VehiculeManufacturerSparPartNumber": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 13, 
+	"sentbytes": "22F187"
+	}, 
+	{
+	"name": "(no scr) DataRecorder_Generic", 
+	"replybytes": "630000000000000000000000000000000000000000000000000000000000000000", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"DataRecorder_VehiculeSpeed": {
+		"firstbyte": 6
+		}, 
+		"DataRecorder_DistanzeTotalizer": {
+		"bitoffset": 4, 
+		"firstbyte": 2
+		}, 
+		"DataRecorder_TimeOut_AT": {
+		"bitoffset": 3, 
+		"firstbyte": 24
+		}, 
+		"DataRecorder_VehForwardSlope": {
+		"firstbyte": 8
+		}, 
+		"DataRecorder_CurrentActLeft": {
+		"firstbyte": 14
+		}, 
+		"DataRecorder_AchievedClampLeftAfter": {
+		"firstbyte": 18
+		}, 
+		"DataRecorder_TimeOut_BCM": {
+		"bitoffset": 7, 
+		"firstbyte": 24
+		}, 
+		"DataRecorder_TriggerSourceStop": {
+		"bitoffset": 6, 
+		"firstbyte": 25
+		}, 
+		"DataRecorder_VoltageActRight": {
+		"firstbyte": 12
+		}, 
+		"DataRecorder_AchievedClampLeftBefore": {
+		"firstbyte": 19
+		}, 
+		"DataRecorder_EngineStatusR": {
+		"firstbyte": 24
+		}, 
+		"DataRecorder_BrakeStatusRightAfter": {
+		"firstbyte": 22
+		}, 
+		"DataRecorder_TimeOut_CLUSTER": {
+		"bitoffset": 2, 
+		"firstbyte": 24
+		}, 
+		"DataRecorder_TimeOut_USM": {
+		"bitoffset": 5, 
+		"firstbyte": 24
+		}, 
+		"DataRecorder_AchievedClampRightAfter": {
+		"firstbyte": 20
+		}, 
+		"DataRecorder_LastActiveEventRight": {
+		"firstbyte": 28
+		}, 
+		"DataRecorder_BrakeStatusLeftAfter": {
+		"bitoffset": 4, 
+		"firstbyte": 22
+		}, 
+		"DataRecorder_IgnSupplyConfirmation": {
+		"bitoffset": 4, 
+		"firstbyte": 25
+		}, 
+		"DataRecorder_CurrentActRight": {
+		"firstbyte": 16
+		}, 
+		"DataRecorder_BrakeStatusLeftBefore": {
+		"bitoffset": 4, 
+		"firstbyte": 23
+		}, 
+		"DataRecorder_AchievedClampRightBefore": {
+		"firstbyte": 21
+		}, 
+		"DataRecorder_BrakeStatusRightBefore": {
+		"firstbyte": 23
+		}, 
+		"DataRecorder_TimeSinceBuzzer": {
+		"firstbyte": 26
+		}, 
+		"DataRecorder_LastActiveEventLeft": {
+		"firstbyte": 29
+		}, 
+		"DataRecorder_VoltageActLeft": {
+		"firstbyte": 10
+		}, 
+		"DataRecorder_TimeOut_ECM": {
+		"bitoffset": 4, 
+		"firstbyte": 24
+		}, 
+		"DataRecorder_TimeOut_ABS": {
+		"bitoffset": 6, 
+		"firstbyte": 24
+		}, 
+		"DataRecorder_SwitchState": {
+		"firstbyte": 25
+		}, 
+		"DataRecorder_TriggerSourceStart": {
+		"bitoffset": 7, 
+		"firstbyte": 25
+		}
+	}, 
+	"sendbyte_dataitems": {
+		"Address Generic DiagEvolue": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 33, 
+	"sentbytes": "23000000000020"
+	}, 
+	{
+	"name": "ReadDTCInformation.ReportSnapshot", 
+	"replybytes": "590400000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"DTCRecord": {
+		"firstbyte": 3
+		}, 
+		"StatusOfDTC": {
+		"firstbyte": 6
+		}
+	}, 
+	"sendbyte_dataitems": {
+		"DTCMaskRecord": {
+		"firstbyte": 3
+		}
+	}, 
+	"minbytes": 6, 
+	"sentbytes": "1904000000FF"
+	}, 
+	{
+	"name": "Routine.MaintenanceOpenMode_Start", 
+	"replybytes": "7107000000", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"BrakeStatusLeft": {
+		"firstbyte": 4
+		}, 
+		"StatusRoutineRequested": {
+		"firstbyte": 3
+		}, 
+		"BrakeStatusRight": {
+		"firstbyte": 5
+		}
+	}, 
+	"minbytes": 5, 
+	"sentbytes": "310700"
+	}, 
+	{
+	"name": "DataWrite.Vehicle_Configuration", 
+	"replybytes": "6E0210", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"sendbyte_dataitems": {
+		"PHY_GearBoxRatioVector-6th ratio": {
+		"firstbyte": 16
+		}, 
+		"PHY_GearBoxRatioVector-2nd ratio": {
+		"firstbyte": 8
+		}, 
+		"PHY_GearBoxRatioVector-1st ratio": {
+		"firstbyte": 6
+		}, 
+		"PHY_EngineInertia": {
+		"firstbyte": 23
+		}, 
+		"PHY_GearBoxRatioVector-0value": {
+		"firstbyte": 4
+		}, 
+		"PHY_RearGearRatio": {
+		"firstbyte": 18
+		}, 
+		"PHY_GearBoxRatioVector-3rd ratio": {
+		"firstbyte": 10
+		}, 
+		"PHY_VehMasse": {
+		"firstbyte": 19
+		}, 
+		"Checksum3": {
+		"firstbyte": 25
+		}, 
+		"PHY_WheelRadius": {
+		"firstbyte": 21
+		}, 
+		"PHY_GearBoxRatioVector-4th ratio": {
+		"firstbyte": 12
+		}, 
+		"PHY_GearBoxRatioVector-5th ratio": {
+		"firstbyte": 14
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "2E021000000044008300C00105014D018F44059601270A1E0000"
+	}, 
+	{
+	"name": "(no work) DataRead.MAP_Learning_TOA", 
+	"replybytes": "62021300000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"TNG_Curve_D_ClutchPos_Final": {
+		"ref": true, 
+		"firstbyte": 7
+		}, 
+		"TNG_ForgettingFactor_Final": {
+		"ref": true, 
+		"firstbyte": 8
+		}, 
+		"TNG_Curve_D_ClutchPos_Step": {
+		"ref": true, 
+		"firstbyte": 4
+		}, 
+		"TNG_ForgettingFactor_Step": {
+		"ref": true, 
+		"firstbyte": 5
+		}, 
+		"TNG_NumGearShiftForProcessing": {
+		"ref": true, 
+		"firstbyte": 10
+		}, 
+		"TNG_AccPosLB_capture": {
+		"ref": true, 
+		"firstbyte": 11
+		}, 
+		"Checksum5": {
+		"ref": true, 
+		"firstbyte": 12
+		}
+	}, 
+	"minbytes": 13, 
+	"sentbytes": "220213"
+	}, 
+	{
+	"name": "Routine.AXSensorCalibration_Status", 
+	"replybytes": "71140000", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"VehicleForwardSlope": {
+		"firstbyte": 4
+		}, 
+		"StatusRoutineRequested": {
+		"firstbyte": 3
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "311401"
+	}, 
+	{
+	"name": "IOControl.Switch_On_LED_Start", 
+	"replybytes": "700300", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"OutputControlStatus": {
+		"firstbyte": 3
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "300320"
+	}, 
+	{
+	"name": "StartDiagnosticSession.ProgrammingSession", 
+	"replybytes": "5085", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"minbytes": 2, 
+	"sentbytes": "1085"
+	}, 
+	{
+	"name": "(no work) DataRead.MAP_TOA", 
+	"replybytes": "6202090000000000000000000000000000000000000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"TNG_AccBoundTakeOff2": {
+		"ref": true, 
+		"firstbyte": 15
+		}, 
+		"TNG_Curve_ClutchPos_Offset1": {
+		"ref": true, 
+		"firstbyte": 24
+		}, 
+		"TNG_AccBoundTakeOff8": {
+		"ref": true, 
+		"firstbyte": 21
+		}, 
+		"TNG_Curve_ClutchPos_Delta80": {
+		"ref": true, 
+		"firstbyte": 23
+		}, 
+		"TNG_AccBoundTakeOff1": {
+		"ref": true, 
+		"firstbyte": 14
+		}, 
+		"TNG_AccBoundTakeOff3": {
+		"ref": true, 
+		"firstbyte": 16
+		}, 
+		"TNG_FirstGearRatioGain": {
+		"ref": true, 
+		"firstbyte": 4
+		}, 
+		"TNG_AccBoundTakeOff5": {
+		"ref": true, 
+		"firstbyte": 18
+		}, 
+		"TNG_AccBoundTakeOff4": {
+		"ref": true, 
+		"firstbyte": 17
+		}, 
+		"TNG_AccBoundTakeOff7": {
+		"ref": true, 
+		"firstbyte": 20
+		}, 
+		"TNG_AccBoundTakeOff6": {
+		"ref": true, 
+		"firstbyte": 19
+		}, 
+		"Checksum2": {
+		"ref": true, 
+		"firstbyte": 28
+		}, 
+		"TNG_VehSpeedHBForTakeOffReady (m/s)": {
+		"ref": true, 
+		"firstbyte": 25
+		}, 
+		"TNG_AccPosLB_toa": {
+		"ref": true, 
+		"firstbyte": 27
+		}, 
+		"TNG_VehSpeedLB_toa": {
+		"ref": true, 
+		"firstbyte": 26
+		}, 
+		"TNG_Tilt_Vector3": {
+		"ref": true, 
+		"firstbyte": 8
+		}, 
+		"TNG_Tilt_Vector2": {
+		"ref": true, 
+		"firstbyte": 7
+		}, 
+		"TNG_Tilt_Vector1": {
+		"ref": true, 
+		"firstbyte": 6
+		}, 
+		"TNG_Tilt_Vector7": {
+		"ref": true, 
+		"firstbyte": 12
+		}, 
+		"TNG_Tilt_Vector6": {
+		"ref": true, 
+		"firstbyte": 11
+		}, 
+		"TNG_Tilt_Vector5": {
+		"ref": true, 
+		"firstbyte": 10
+		}, 
+		"TNG_Tilt_Vector4": {
+		"ref": true, 
+		"firstbyte": 9
+		}, 
+		"TNG_Curve_ClutchPos_Delta100": {
+		"ref": true, 
+		"firstbyte": 22
+		}, 
+		"TNG_Tilt_Vector8": {
+		"ref": true, 
+		"firstbyte": 13
+		}, 
+		"TNG_RearGearRatioGain": {
+		"ref": true, 
+		"firstbyte": 5
+		}
+	}, 
+	"minbytes": 29, 
+	"sentbytes": "220209"
+	}, 
+	{
+	"name": "DataRead.Vehicle_Configuration_DC", 
+	"replybytes": "620210000000000000000000000000000000000000000000", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"Vehicle_Configuration": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 24, 
+	"sentbytes": "220210"
+	}, 
+	{
+	"name": "ClearDiagnosticInformation.All", 
+	"deny_sds": [], 
+	"minbytes": 1, 
+	"sentbytes": "14FFFFFF", 
+	"replybytes": "54"
+	}, 
+	{
+	"name": "TesterPresent.WithResponse", 
+	"replybytes": "7E01", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"minbytes": 2, 
+	"sentbytes": "3E01"
+	}, 
+	{
+	"receivebyte_dataitems": {
+		"Producteur MUX Synth\u00e8se parole compteur": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 17
+		}, 
+		"Producteur MUX Tabbeau de bord compteur": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 9
+		}, 
+		"Producteur MUX Coslad compteur": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 35
+		}, 
+		"Producteur MUX Toit ouvrant": {
+		"ref": true, 
+		"firstbyte": 31
+		}, 
+		"Producteur MUX Vignette": {
+		"ref": true, 
+		"firstbyte": 30
+		}, 
+		"Producteur MUX Tabbeau de bord": {
+		"ref": true, 
+		"firstbyte": 9
+		}, 
+		"Producteur MUX Capteur ESP": {
+		"ref": true, 
+		"firstbyte": 34
+		}, 
+		"Producteur MUX GPL": {
+		"ref": true, 
+		"firstbyte": 18
+		}, 
+		"Producteur MUX Contr\u00f4le \u00e9lectrique couple": {
+		"ref": true, 
+		"firstbyte": 29
+		}, 
+		"Producteur MUX ABS compteur": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 8
+		}, 
+		"Producteur MUX Alternateur d\u00e9marreur compteur": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 23
+		}, 
+		"Producteur MUX Verrou colonne 3": {
+		"ref": true, 
+		"firstbyte": 12
+		}, 
+		"Producteur MUX Commande Bva": {
+		"ref": true, 
+		"firstbyte": 25
+		}, 
+		"Producteur MUX Contr\u00f4le trajectoire compteur": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 24
+		}, 
+		"Producteur MUX PSD compteur": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 41
+		}, 
+		"Producteur MUX Verrou colonne 3 compteur": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 12
+		}, 
+		"Producteur MUX DCU compteur": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 39
+		}, 
+		"Producteur MUX PSD": {
+		"ref": true, 
+		"firstbyte": 41
+		}, 
+		"Producteur MUX ABS": {
+		"ref": true, 
+		"firstbyte": 8
+		}, 
+		"Producteur MUX UCH compteur": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 10
+		}, 
+		"Producteur MUX Radar laser": {
+		"ref": true, 
+		"firstbyte": 37
+		}, 
+		"Producteur MUX Injection": {
+		"ref": true, 
+		"firstbyte": 7
+		}, 
+		"Producteur MUX Navigation compteur": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 16
+		}, 
+		"Producteur MUX Alternateur d\u00e9marreur": {
+		"ref": true, 
+		"firstbyte": 23
+		}, 
+		"Producteur MUX Climatisation compteur": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 14
+		}, 
+		"Producteur MUX SKL": {
+		"ref": true, 
+		"firstbyte": 38
+		}, 
+		"Producteur MUX ENG-ST": {
+		"ref": true, 
+		"firstbyte": 40
+		}, 
+		"Producteur MUX Onduleur (v\u00e9hicule \u00e9lectrique)": {
+		"ref": true, 
+		"firstbyte": 22
+		}, 
+		"Producteur MUX ACC compteur": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 13
+		}, 
+		"Producteur MUX Boite auto": {
+		"ref": true, 
+		"firstbyte": 15
+		}, 
+		"Producteur MUX ENG-ST compteur": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 40
+		}, 
+		"Producteur MUX UPC": {
+		"ref": true, 
+		"firstbyte": 26
+		}, 
+		"Producteur MUX Coslad": {
+		"ref": true, 
+		"firstbyte": 35
+		}, 
+		"Version Messagerie Mux": {
+		"ref": true, 
+		"firstbyte": 3
+		}, 
+		"Producteur MUX Injection compteur": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 7
+		}, 
+		"Producteur MUX Navigation": {
+		"ref": true, 
+		"firstbyte": 16
+		}, 
+		"Producteur MUX ACC": {
+		"ref": true, 
+		"firstbyte": 13
+		}, 
+		"Producteur MUX Moteur syst\u00e8me 4/4 compteur": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 36
+		}, 
+		"Module BusMuet compteur": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 6
+		}, 
+		"Producteur MUX Supperviseur (v\u00e9hicule \u00e9lectrique)": {
+		"ref": true, 
+		"firstbyte": 21
+		}, 
+		"Producteur MUX Angle volant": {
+		"ref": true, 
+		"firstbyte": 20
+		}, 
+		"Producteur MUX Onduleur (v\u00e9hicule \u00e9lectrique) compteur": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 22
+		}, 
+		"Producteur MUX Contr\u00f4le trajectoire": {
+		"ref": true, 
+		"firstbyte": 24
+		}, 
+		"Producteur MUX Boite auto compteur": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 15
+		}, 
+		"Producteur MUX Angle volant compteur": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 20
+		}, 
+		"Producteur MUX Airbag compteur": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 11
+		}, 
+		"Producteur MUX SKL compteur": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 38
+		}, 
+		"Producteur MUX Commande Bva compteur": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 25
+		}, 
+		"Producteur MUX Airbag": {
+		"ref": true, 
+		"firstbyte": 11
+		}, 
+		"Producteur MUX SSPP": {
+		"ref": true, 
+		"firstbyte": 27
+		}, 
+		"Producteur MUX Frein parking compteur": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 19
+		}, 
+		"Producteur MUX Toit ouvrant compteur": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 31
+		}, 
+		"Producteur MUX Moteur syst\u00e8me 4/4": {
+		"ref": true, 
+		"firstbyte": 36
+		}, 
+		"Producteur MUX Boitier auto \u00e9cole": {
+		"ref": true, 
+		"firstbyte": 33
+		}, 
+		"Producteur MUX Supperviseur (v\u00e9hicule \u00e9lectrique) compteur": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 21
+		}, 
+		"Module BusMuet": {
+		"ref": true, 
+		"firstbyte": 6
+		}, 
+		"Producteur MUX Radar laser compteur": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 37
+		}, 
+		"Producteur MUX Boitier auto \u00e9cole compteur": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 33
+		}, 
+		"Module BusOff compteur": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 5
+		}, 
+		"Producteur MUX Climatisation": {
+		"ref": true, 
+		"firstbyte": 14
+		}, 
+		"Producteur MUX R\u00e9pet BVA compteur": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 32
+		}, 
+		"Producteur MUX UPC compteur": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 26
+		}, 
+		"Module BusOff": {
+		"ref": true, 
+		"firstbyte": 5
+		}, 
+		"Producteur MUX Capteur ESP compteur": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 34
+		}, 
+		"Producteur MUX Frein parking": {
+		"ref": true, 
+		"firstbyte": 19
+		}, 
+		"Producteur MUX UCH": {
+		"ref": true, 
+		"firstbyte": 10
+		}, 
+		"Producteur MUX GPL compteur": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 18
+		}, 
+		"Producteur MUX Vignette compteur": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 30
+		}, 
+		"Producteur MUX DCU": {
+		"ref": true, 
+		"firstbyte": 39
+		}, 
+		"Producteur MUX Synth\u00e8se parole": {
+		"ref": true, 
+		"firstbyte": 17
+		}, 
+		"Producteur MUX SSPP compteur": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 27
+		}, 
+		"Producteur MUX Systeme anti roulis compteur": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 28
+		}, 
+		"Producteur MUX R\u00e9pet BVA": {
+		"ref": true, 
+		"firstbyte": 32
+		}, 
+		"Producteur MUX Contr\u00f4le \u00e9lectrique couple compteur": {
+		"bitoffset": 2, 
+		"ref": true, 
+		"firstbyte": 29
+		}, 
+		"Producteur MUX Systeme anti roulis": {
+		"ref": true, 
+		"firstbyte": 28
+		}
+	}, 
+	"deny_sds": [], 
+	"minbytes": 41, 
+	"sentbytes": "2182", 
+	"name": "Trame diag mux"
+	}, 
+	{
+	"name": "DataRead.MAP_Learning_TOA_DC", 
+	"replybytes": "62021300000000000000000000", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"MAP_Learning_TOA": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 13, 
+	"sentbytes": "220213"
+	}, 
+	{
+	"name": "DataWrite.FactoryMode", 
+	"replybytes": "6E0219", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"sendbyte_dataitems": {
+		"FactoryMode": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "2E021900"
+	}, 
+	{
+	"name": "DataRead.Studies_CAN_Frames", 
+	"replybytes": "62021100", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"StudiesCANFrames": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "220211"
+	}, 
+	{
+	"name": "DataRead.History.Ident.0", 
+	"replybytes": "61F0000000000000000000000000000000000000000000000000", 
+	"deny_sds": [
+		"nosds"
+	], 
+	"receivebyte_dataitems": {
+		"HardwareNumber.BasicPartList": {
+		"firstbyte": 24
+		}, 
+		"DiagnosticIdentificationCode": {
+		"firstbyte": 8
+		}, 
+		"CalibrationNumber": {
+		"firstbyte": 21
+		}, 
+		"SupplierNumber.ITG": {
+		"firstbyte": 9
+		}, 
+		"HardwareNumber.LowerPart": {
+		"firstbyte": 12
+		}, 
+		"PartNumber.BasicPartList": {
+		"firstbyte": 23
+		}, 
+		"ManufacturerIdentificationCode": {
+		"firstbyte": 26
+		}, 
+		"ApprovalNumber.BasicPartList": {
+		"firstbyte": 25
+		}, 
+		"EditionNumber": {
+		"firstbyte": 19
+		}, 
+		"PartNumber.LowerPart": {
+		"firstbyte": 3
+		}, 
+		"SoftwareNumber": {
+		"firstbyte": 17
+		}, 
+		"SupplierNumber": {
+		"firstbyte": 9
+		}
+	}, 
+	"minbytes": 26, 
+	"sentbytes": "21F0"
+	}, 
+	{
+	"name": "DataRead.History.Ident.1", 
+	"replybytes": "61FE000000000000000000000000000000000000000000000000", 
+	"deny_sds": [
+		"nosds"
+	], 
+	"receivebyte_dataitems": {
+		"HardwareNumber.BasicPartList": {
+		"firstbyte": 24
+		}, 
+		"DiagnosticIdentificationCode": {
+		"firstbyte": 8
+		}, 
+		"CalibrationNumber": {
+		"firstbyte": 21
+		}, 
+		"SupplierNumber.ITG": {
+		"firstbyte": 9
+		}, 
+		"HardwareNumber.LowerPart": {
+		"firstbyte": 12
+		}, 
+		"PartNumber.BasicPartList": {
+		"firstbyte": 23
+		}, 
+		"ManufacturerIdentificationCode": {
+		"firstbyte": 26
+		}, 
+		"ApprovalNumber.BasicPartList": {
+		"firstbyte": 25
+		}, 
+		"EditionNumber": {
+		"firstbyte": 19
+		}, 
+		"PartNumber.LowerPart": {
+		"firstbyte": 3
+		}, 
+		"SoftwareNumber": {
+		"firstbyte": 17
+		}, 
+		"SupplierNumber": {
+		"firstbyte": 9
+		}
+	}, 
+	"minbytes": 26, 
+	"sentbytes": "21FE"
+	}, 
+	{
+	"name": "OutputControl", 
+	"replybytes": "700000", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"OutputControlStatus": {
+		"firstbyte": 3
+		}
+	}, 
+	"sendbyte_dataitems": {
+		"OutputControlCommand": {
+		"firstbyte": 3
+		}, 
+		"OutputPermanentControlList": {
+		"firstbyte": 2
+		}, 
+		"OutputTemporaryControlList": {
+		"firstbyte": 2
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "300100"
+	}, 
+	{
+	"name": "StartDiagnosticSession", 
+	"replybytes": "50", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"sendbyte_dataitems": {
+		"SessionName": {
+		"firstbyte": 2
+		}
+	}, 
+	"minbytes": 2, 
+	"sentbytes": "10C0"
+	}, 
+	{
+	"name": "DataRead.SW_Name", 
+	"replybytes": "620218000000000000000000000000000000000000000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"SoftwareName": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 30, 
+	"sentbytes": "220218"
+	}, 
+	{
+	"name": "ReadDTCInformation.ReportExtendedData", 
+	"replybytes": "590600000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"DTCExtendedData.AgingCounter": {
+		"firstbyte": 8
+		}, 
+		"DTCExtendedDataRecordNumber": {
+		"firstbyte": 7
+		}, 
+		"DTCExtendedData.Mileage": {
+		"firstbyte": 8
+		}, 
+		"DTCRecord": {
+		"firstbyte": 3
+		}, 
+		"StatusOfDTC": {
+		"firstbyte": 6
+		}, 
+		"DTCExtendedData.DTCOccurrenceCounter": {
+		"firstbyte": 8
+		}
+	}, 
+	"sendbyte_dataitems": {
+		"DTCMaskRecord": {
+		"firstbyte": 3
+		}
+	}, 
+	"minbytes": 6, 
+	"sentbytes": "1906000000FF"
+	}, 
+	{
+	"name": "(no scr) DataRecorder_TOA", 
+	"replybytes": "630000000000000000000000000000000000000000000000000000000000000000", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"DataRecorder_Coded_EngineStatus": {
+		"bitoffset": 6, 
+		"firstbyte": 11
+		}, 
+		"DataRecorder_Curve_Clutch_4": {
+		"firstbyte": 28
+		}, 
+		"DataRecorder_Curve_Clutch_5": {
+		"firstbyte": 29
+		}, 
+		"DataRecorder_Curve_Clutch_6": {
+		"firstbyte": 30
+		}, 
+		"DataRecorder_Curve_Clutch_7": {
+		"firstbyte": 31
+		}, 
+		"DataRecorder_Curve_Clutch_0": {
+		"firstbyte": 24
+		}, 
+		"DataRecorder_Curve_Clutch_1": {
+		"firstbyte": 25
+		}, 
+		"DataRecorder_Curve_Clutch_2": {
+		"firstbyte": 26
+		}, 
+		"DataRecorder_Curve_Clutch_3": {
+		"firstbyte": 27
+		}, 
+		"DataRecorder_Curve_Clutch_8": {
+		"firstbyte": 32
+		}, 
+		"DataRecorder_Curve_Clutch_9": {
+		"firstbyte": 33
+		}, 
+		"DataRecorder_DistanzeTotalizer": {
+		"bitoffset": 4, 
+		"firstbyte": 7
+		}, 
+		"DataRecorder_Coded_ClutchTorqueBound": {
+		"firstbyte": 22
+		}, 
+		"DataRecorder_Coded_ClutchTorqueEst": {
+		"firstbyte": 20
+		}, 
+		"DataRecorder_Coded_ClutchSensor": {
+		"bitoffset": 6, 
+		"firstbyte": 16
+		}, 
+		"DataRecorder_Coded_NeutralContact": {
+		"bitoffset": 4, 
+		"firstbyte": 16
+		}, 
+		"DataRecorder_Coded_RearGearEngaged": {
+		"bitoffset": 2, 
+		"firstbyte": 16
+		}, 
+		"DataRecorder_Coded_EngineRPM": {
+		"firstbyte": 2
+		}, 
+		"DataRecorder_Coded_RawSensor": {
+		"bitoffset": 6, 
+		"firstbyte": 5
+		}, 
+		"DataRecorder_Coded_ClutchPos_Ant": {
+		"firstbyte": 18
+		}, 
+		"DataRecorder_Coded_EstimetedPowerTrainWheelTorque": {
+		"firstbyte": 12
+		}, 
+		"DataRecorder_Coded_TransmRangeEngaged_Target": {
+		"bitoffset": 2, 
+		"firstbyte": 11
+		}, 
+		"DataRecorder_Coded_WheelTorqueBound_AT": {
+		"firstbyte": 14
+		}
+	}, 
+	"sendbyte_dataitems": {
+		"Address TOA DiagEvolue": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 33, 
+	"sentbytes": "23000000000020"
+	}, 
+	{
+	"name": "DataWrite.MAP_ProgressiveRelease", 
+	"replybytes": "6E0224", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"sendbyte_dataitems": {
+		"t_wait_max_back": {
+		"firstbyte": 11
+		}, 
+		"t_wait_min_back": {
+		"firstbyte": 10
+		}, 
+		"t_wait_min_front": {
+		"firstbyte": 6
+		}, 
+		"t_act_min_back": {
+		"firstbyte": 8
+		}, 
+		"t_wait_max_front": {
+		"firstbyte": 7
+		}, 
+		"t_act_max_front": {
+		"firstbyte": 5
+		}, 
+		"t_act_max_back": {
+		"firstbyte": 9
+		}, 
+		"t_act_min_front": {
+		"firstbyte": 4
+		}, 
+		"Checksum7": {
+		"firstbyte": 12
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "2E0224101425550E1425550000"
+	}, 
+	{
+	"name": "DataWrite.VIN", 
+	"replybytes": "7B81", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"sendbyte_dataitems": {
+		"VIN": {
+		"firstbyte": 3
+		}
+	}, 
+	"minbytes": 2, 
+	"sentbytes": "3B8130303030303030303030303030303030303030"
+	}, 
+	{
+	"name": "(no scr) DataRecorder_TOR", 
+	"replybytes": "63000000000000", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"DataRecorder_Coding_ConAccPos": {
+		"bitoffset": 2, 
+		"firstbyte": 3
+		}, 
+		"DataRecorder_Coding_CondEngineSpeed": {
+		"bitoffset": 2, 
+		"firstbyte": 2
+		}, 
+		"DataRecorder_DistanzeTotalizer": {
+		"bitoffset": 4, 
+		"firstbyte": 4
+		}, 
+		"DataRecorder_Coding_CondTorque": {
+		"bitoffset": 5, 
+		"firstbyte": 3
+		}, 
+		"DataRecorder_Coding_CondGBC": {
+		"bitoffset": 5, 
+		"firstbyte": 2
+		}
+	}, 
+	"sendbyte_dataitems": {
+		"Address TOR DiagEvolue": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 7, 
+	"sentbytes": "23000000000006"
+	}, 
+	{
+	"name": "DataWrite.MAP_TOA_DC", 
+	"replybytes": "6E0209", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"sendbyte_dataitems": {
+		"MAP_TOA": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "2E0209646400060A0C0F12141D030304040405050502040A1B14030000"
+	}, 
+	{
+	"name": "ReadDTCInformation.ReportExtendedData.Mileage", 
+	"replybytes": "59060000000080000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"DTCExtendedData.Mileage": {
+		"firstbyte": 8
+		}, 
+		"DTCRecord": {
+		"firstbyte": 3
+		}, 
+		"StatusOfDTC": {
+		"firstbyte": 6
+		}, 
+		"DTCExtendedDataRecordNumber": {
+		"firstbyte": 7
+		}
+	}, 
+	"sendbyte_dataitems": {
+		"DTCMaskRecord": {
+		"firstbyte": 3
+		}
+	}, 
+	"minbytes": 6, 
+	"sentbytes": "190600000080"
+	}, 
+	{
+	"name": "DataRead.Cold_Country_&_ GearBox_Configuration", 
+	"replybytes": "6202170000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"ColdCountryMode": {
+		"ref": true, 
+		"firstbyte": 4
+		}, 
+		"GearBoxType": {
+		"ref": true, 
+		"firstbyte": 5
+		}
+	}, 
+	"minbytes": 5, 
+	"sentbytes": "220217"
+	}, 
+	{
+	"name": "DataRead.MAP_ProgressiveRelease_DC", 
+	"replybytes": "62022400000000000000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"MAP_ProgressiveRelease": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 13, 
+	"sentbytes": "220224"
+	}, 
+	{
+	"name": "DataRead.Checksum_Parameters", 
+	"replybytes": "62020700", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"Checksum": {
+		"ref": true, 
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "220207"
+	}, 
+	{
+	"name": "Routine.AXSensorCalibration_Start", 
+	"replybytes": "71140000", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"LongitudinalValue": {
+		"firstbyte": 4
+		}, 
+		"StatusRoutineRequested": {
+		"firstbyte": 3
+		}
+	}, 
+	"minbytes": 4, 
+	"sentbytes": "311400"
+	}, 
+	{
+	"name": "DataRead.History.Reprog.0", 
+	"replybytes": "61F1000000000000000000000000000000000000000000000000", 
+	"deny_sds": [
+		"nosds"
+	], 
+	"receivebyte_dataitems": {
+		"ApprovalNumber.LowerPart": {
+		"firstbyte": 3
+		}, 
+		"TimeOfReprogramming": {
+		"firstbyte": 22
+		}, 
+		"ProgrammingToolReference": {
+		"firstbyte": 13
+		}, 
+		"CrcOfLogSave": {
+		"firstbyte": 25
+		}, 
+		"NumberOfReprogrammings": {
+		"firstbyte": 18
+		}, 
+		"ProgrammingSiteReference": {
+		"firstbyte": 8
+		}, 
+		"DateOfReprogramming": {
+		"firstbyte": 19
+		}, 
+		"SaveMarking": {
+		"firstbyte": 24
+		}
+	}, 
+	"minbytes": 26, 
+	"sentbytes": "21F1"
+	}, 
+	{
+	"name": "DataRead.History.Reprog.1", 
+	"replybytes": "61FF000000000000000000000000000000000000000000000000", 
+	"deny_sds": [
+		"nosds"
+	], 
+	"receivebyte_dataitems": {
+		"ApprovalNumber.LowerPart": {
+		"firstbyte": 3
+		}, 
+		"TimeOfReprogramming": {
+		"firstbyte": 22
+		}, 
+		"ProgrammingToolReference": {
+		"firstbyte": 13
+		}, 
+		"CrcOfLogSave": {
+		"firstbyte": 25
+		}, 
+		"NumberOfReprogrammings": {
+		"firstbyte": 18
+		}, 
+		"ProgrammingSiteReference": {
+		"firstbyte": 8
+		}, 
+		"DateOfReprogramming": {
+		"firstbyte": 19
+		}, 
+		"SaveMarking": {
+		"firstbyte": 24
+		}
+	}, 
+	"minbytes": 26, 
+	"sentbytes": "21FF"
+	}, 
+	{
+	"name": "ReadDTCInformation.ReportDTC", 
+	"replybytes": "59020000000000", 
+	"deny_sds": [], 
+	"receivebyte_dataitems": {
+		"DTCStatus.testFailedSinceLastClear": {
+		"bitoffset": 2, 
+		"firstbyte": 7
+		}, 
+		"DTCStatus.pendingDTC": {
+		"bitoffset": 5, 
+		"firstbyte": 7
+		}, 
+		"DTCStatus.confirmedDTC": {
+		"bitoffset": 4, 
+		"firstbyte": 7
+		}, 
+		"DTCDeviceAndFailureTypeOBD": {
+		"firstbyte": 4
+		}, 
+		"DTCFailureType.ManufacturerOrSupplier": {
+		"bitoffset": 4, 
+		"firstbyte": 6
+		}, 
+		"DTCFailureType.Category": {
+		"firstbyte": 6
+		}, 
+		"DTCFailureType": {
+		"firstbyte": 6
+		}, 
+		"DTCStatus.testNotCompletedSinceLastClear": {
+		"bitoffset": 3, 
+		"firstbyte": 7
+		}, 
+		"DTCStatus.testNotCompletedThisMonitoringCycle": {
+		"bitoffset": 1, 
+		"firstbyte": 7
+		}, 
+		"DTCStatusAvailabilityMask": {
+		"firstbyte": 3
+		}, 
+		"DTCStatus.warningIndicatorRequested": {
+		"firstbyte": 7
+		}, 
+		"StatusOfDTC": {
+		"firstbyte": 7
+		}, 
+		"DTCStatus.testFailedThisMonitoringCycle": {
+		"bitoffset": 6, 
+		"firstbyte": 7
+		}, 
+		"DTCStatus.testFailed": {
+		"bitoffset": 7, 
+		"firstbyte": 7
+		}, 
+		"DTCDeviceIdentifier": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "1902FF", 
+	"shiftbytescount": 4
+	}, 
+	{
+	"name": "DataWrite.MAP_Processing_TOA_DC", 
+	"replybytes": "6E0214", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"sendbyte_dataitems": {
+		"MAP_Processing_TOA": {
+		"firstbyte": 4
+		}
+	}, 
+	"minbytes": 3, 
+	"sentbytes": "2E0214640FA001271026FB26D1269C26942710284E2A3E2C6F2E2D2C6F2E2D2C6F2A3E284E27102694269C26D126FB27100A020564640000"
+	}, 
+	{
+	"name": "Routine.MaintenanceCloseMode_Start", 
+	"replybytes": "7106000000", 
+	"deny_sds": [], 
+	"manualsend": true, 
+	"receivebyte_dataitems": {
+		"BrakeStatusLeft": {
+		"firstbyte": 4
+		}, 
+		"StatusRoutineRequested": {
+		"firstbyte": 3
+		}, 
+		"BrakeStatusRight": {
+		"firstbyte": 5
+		}
+	}, 
+	"minbytes": 5, 
+	"sentbytes": "310600"
+	}, 
+	{
+	"sentbytes": "1103", 
+	"deny_sds": [], 
+	"minbytes": 1, 
+	"manualsend": true, 
+	"name": "ECU soft reset"
+	}
+], 
+"data": {
+	"Producteur MUX Systeme anti roulis": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "Pr\u00e9sent", 
+		"2": "Absent", 
+		"3": "Confirm\u00e9 Absent"
+	}
+	}, 
+	"Producteur MUX Verrou colonne 3": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "Pr\u00e9sent", 
+		"2": "Absent", 
+		"3": "Confirm\u00e9 Absent"
+	}
+	}, 
+	"MAP_Clutch_TOA": {
+	"bytescount": 8, 
+	"byte": true, 
+	"bitscount": 64
+	}, 
+	"Producteur MUX PSD": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "Pr\u00e9sent", 
+		"2": "Absent", 
+		"3": "Confirm\u00e9 Absent"
+	}
+	}, 
+	"DataRecorder_TriggerSourceStop": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "triggered by actuation", 
+		"1": "triggered by buzzer"
+	}
+	}, 
+	"EVO_Curve_E_C_T_init_30": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 100.0, 
+	"bitscount": 16, 
+	"unit": "Nm"
+	}, 
+	"Historical Failure": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "No", 
+		"1": "Yes"
+	}
+	}, 
+	"Current Failure": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "No", 
+		"1": "Yes"
+	}
+	}, 
+	"EVO_Curve_E_C_T_init_0": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 100.0, 
+	"bitscount": 16, 
+	"unit": "Nm"
+	}, 
+	"Producteur MUX ENG-ST compteur": {
+	"bitscount": 6, 
+	"lists": {
+		"0": "0", 
+		"1": "1", 
+		"2": "2", 
+		"3": "3", 
+		"4": "4", 
+		"5": "5", 
+		"6": "6", 
+		"7": "7", 
+		"8": "8", 
+		"9": "9", 
+		"10": "10", 
+		"11": "11", 
+		"12": "12", 
+		"13": "13", 
+		"14": "14", 
+		"15": "15", 
+		"16": "16", 
+		"17": "17", 
+		"18": "18", 
+		"19": "19", 
+		"20": "20", 
+		"21": "21", 
+		"22": "22", 
+		"23": "23", 
+		"24": "24", 
+		"25": "25", 
+		"26": "26", 
+		"27": "27", 
+		"28": "28", 
+		"29": "29", 
+		"30": "30", 
+		"31": "31", 
+		"32": "32", 
+		"33": "33", 
+		"34": "34", 
+		"35": "35", 
+		"36": "36", 
+		"37": "37", 
+		"38": "38", 
+		"39": "39", 
+		"40": "40", 
+		"63": "Non Contr\u00f4l\u00e9"
+	}
+	}, 
+	"Snapshot_TRWFaultID": {
+	"lists": {
+		"0": "FC_ACTUATOR_BROKEN_NO_DISC", 
+		"1": "FC_ACTUATOR_BROKEN_NO_DISC_RR", 
+		"2": "FC_CANT_ACHIEVE_CLAMP", 
+		"3": "FC_CANT_ACHIEVE_CLAMP_R", 
+		"4": "FC_ACTUATOR_BROKEN", 
+		"5": "FC_ACTUATOR_BROKEN_RR", 
+		"6": "FC_HIGH_MECHANICAL_FORCE", 
+		"7": "FC_HIGH_MECHANICAL_FORCE_R", 
+		"8": "FC_IPC_CHECKSUM_FAILURE", 
+		"9": "FC_FSMC_DRV_EN_ALWAYS_ON", 
+		"10": "FC_EPB_SWITCH_INVALID_FAULT", 
+		"11": "FC_EPB_SWITCH_STUCK", 
+		"12": "FC_MOTOR_SC_FET_OC", 
+		"13": "FC_MOTOR_SC_FET_OC_RR", 
+		"14": "FC_MOTOR_SUPPLY_OC", 
+		"15": "FC_MOTOR_SUPPLY_OC_RR", 
+		"16": "FC_MOTOR_SC_SUPPLY_OC", 
+		"17": "FC_MOTOR_SC_SUPPLY_OC_RR", 
+		"18": "FC_MOTOR_OC_LOW_CURRENT", 
+		"19": "FC_MOTOR_OC_LOW_CURRENT_RR", 
+		"20": "FC_MOTOR_SC_HIGH_CURRENT", 
+		"21": "FC_MOTOR_SC_HIGH_CURRENT_RR", 
+		"22": "FC_HIGH_MOTOR_FREE_RUN_CURRENT", 
+		"23": "FC_HIGH_MOTOR_FREE_RUN_CURRENT_R", 
+		"24": "FC_MOTOR_CURRENT_CALIBRATION_ERROR", 
+		"25": "FC_MOTOR_CURRENT_CALIBRATION_ERROR_RR", 
+		"26": "FC_G_SENSOR_TEST_FAILED", 
+		"27": "FC_G_SENSOR_OOR", 
+		"28": "FC_MOTOR_OC", 
+		"29": "FC_MOTOR_OC_RR", 
+		"30": "FC_MOTOR_SHORT_TO_B_PLUS", 
+		"31": "FC_MOTOR_SHORT_TO_B_PLUS_RR", 
+		"32": "FC_MOTOR_SHORT_TO_GND", 
+		"33": "FC_MOTOR_SHORT_TO_GND_RR", 
+		"34": "FC_ECU_FSMC_DRV_ENABLE_NOT_SET", 
+		"35": "FC_EPB_FSMC_SWITCH_MIS_MATCH", 
+		"36": "FC_ASSEMBLY_CHECK_NOT_DONE", 
+		"37": "FC_RAM_DATA_ERROR", 
+		"38": "FC_STATE_MACHINE_INVALID_STATE", 
+		"39": "FC_WRONG_INTERRUPT_FAULT", 
+		"40": "FC_E2_DATA_FAULT", 
+		"41": "FC_E2_WRITE_FAILURE", 
+		"42": "FC_LOW_V_BATT", 
+		"43": "FC_HIGH_V_BATT", 
+		"44": "FC_LOW_BATT_ACTUATION_INHIBIT", 
+		"45": "FC_ECU_NEEDS_CALIBRATION", 
+		"46": "FC_FSMC_MAIN_MICRO_A2D_REFERENCE_FAILURE", 
+		"47": "FC_FSMC_MISSING_COMMS", 
+		"48": "FC_ZENON_MISSING_COMMS", 
+		"49": "FC_DEMAND_LAMP_SCB", 
+		"50": "FC_DEMAND_LAMP_OC_SCG", 
+		"51": "FC_APPLY_SWITCH_FAILURE", 
+		"52": "FC_COMMS_TOTAL_FAILURE", 
+		"53": "FC_COMMS_BUS_OFF_LINE", 
+		"54": "FC_RELEASE_SWITCH_FAILURE", 
+		"55": "FC_LONGITUDINAL_NOT_CALIBRATED", 
+		"56": "FC_PROGRAMFLOW_FAILURE", 
+		"57": "FC_WHEELSPEED_FAULT", 
+		"58": "FC_G_SENSOR_CALIBRATION_OOR", 
+		"59": "FC_MAINTENANCE_MODE_IN_PROGRESS", 
+		"60": "FC_DOOR_STATUS_INVALID", 
+		"61": "FC_CLUTCH_SHORT_TO_GROUND_OC", 
+		"62": "FC_CLUTCH_SHORT_TO_B_PLUS", 
+		"63": "FC_CLUTCH_WRONG_MOUNT_POSITION", 
+		"64": "FC_CLUTCH_VOLTAGE_BELOW_THRESHOLD", 
+		"65": "FC_CLUTCH_VOLTAGE_OOR", 
+		"66": "FC_MAX_BRAKING_AND_VEH_SPEED_DETECTION", 
+		"67": "FC_MAX_BRAKING_AND_ODOMETER_DETECTION", 
+		"68": "FC_COMMS_NODE_ENGINE_ABSENT", 
+		"69": "FC_COMMS_NODE_BRAKE_ABSENT", 
+		"70": "FC_COMMS_NODE_BCM_ABSENT", 
+		"71": "FC_COMMS_NODE_GEARBOX_ABSENT", 
+		"72": "FC_COMMS_NODE_USM_ABSENT", 
+		"73": "FC_COMMS_NODE_CLUSTER_ABSENT", 
+		"74": "FC_BRAKE_INVALID_READ", 
+		"75": "FC_ENGINE_INVALID_READ", 
+		"76": "FC_BCM_INVALID_READ", 
+		"77": "FC_GEARBOX_INVALID_READ", 
+		"78": "FC_USM_INVALID_READ", 
+		"79": "FC_UNEXPECTED_POWER_DOWN", 
+		"80": "FC_CAN_ON_SINGLE_WIRE", 
+		"81": "FC_ROM_FAILURE", 
+		"82": "FC_RAM_FAILURE", 
+		"83": "FC_STACK_FAULT", 
+		"84": "FC_TIMER_ERROR", 
+		"85": "FC_IGNITION_CROSS_CHECK_FAULT", 
+		"86": "FC_FSMC_SWITCH_FAILURE", 
+		"87": "FC_FSMC_IPC_COM_ID_FAILURE", 
+		"88": "FC_FSMC_IPC_COUNTER_FAILURE", 
+		"89": "FC_FSMC_IPC_CHECKSUM_FAILURE", 
+		"90": "FC_FSMC_IPC_LENGTH_FAILURE", 
+		"91": "FC_FSMC_CYCLETIME_FAILURE", 
+		"92": "FC_FSMC_RAM_FAILURE", 
+		"93": "FC_FSMC_ROM_FAILURE", 
+		"94": "FC_FSMC_VOLTAGE_FAILURE", 
+		"95": "FC_FSMC_INSTRUCTION_SET_FAILURE", 
+		"96": "FC_PARAMETER_CHECKSUM_FAULT", 
+		"97": "FC_FACTORY_MODE", 
+		"98": "FC_IPC_COM_ID_FAILURE", 
+		"99": "FC_IPC_LENGTH_FAILURE", 
+		"100": "FC_IPC_COUNTER_FAILURE", 
+		"101": "FC_IPC_FSMC_TIMEOUT_FAILURE", 
+		"102": "FC_IPC_INSTRUCTION_SET_FAILURE", 
+		"103": "FC_HIGH_BATT_ACTUATION_INHIBIT", 
+		"104": "FC_FSMC_STACK_FAILURE"
+	}
+	}, 
+	"ModeControllerState": {
+	"lists": {
+		"0": "ReleaseInibit", 
+		"1": "Static", 
+		"2": "Dynamic", 
+		"3": "Limp_Home"
+	}
+	}, 
+	"Producteur MUX Contr\u00f4le trajectoire": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "Pr\u00e9sent", 
+		"2": "Absent", 
+		"3": "Confirm\u00e9 Absent"
+	}
+	}, 
+	"Producteur MUX Supperviseur (v\u00e9hicule \u00e9lectrique) compteur": {
+	"bitscount": 6, 
+	"lists": {
+		"0": "0", 
+		"1": "1", 
+		"2": "2", 
+		"3": "3", 
+		"4": "4", 
+		"5": "5", 
+		"6": "6", 
+		"7": "7", 
+		"8": "8", 
+		"9": "9", 
+		"10": "10", 
+		"11": "11", 
+		"12": "12", 
+		"13": "13", 
+		"14": "14", 
+		"15": "15", 
+		"16": "16", 
+		"17": "17", 
+		"18": "18", 
+		"19": "19", 
+		"20": "20", 
+		"21": "21", 
+		"22": "22", 
+		"23": "23", 
+		"24": "24", 
+		"25": "25", 
+		"26": "26", 
+		"27": "27", 
+		"28": "28", 
+		"29": "29", 
+		"30": "30", 
+		"31": "31", 
+		"32": "32", 
+		"33": "33", 
+		"34": "34", 
+		"35": "35", 
+		"36": "36", 
+		"37": "37", 
+		"38": "38", 
+		"39": "39", 
+		"40": "40", 
+		"63": "Non Contr\u00f4l\u00e9"
+	}
+	}, 
+	"StudiesCANFrames": {
+	"lists": {
+		"0": "Not Active", 
+		"1": "CAN test 1 Active TRW", 
+		"2": "CAN test 2 Active  TOA", 
+		"3": "CAN test 3 Active", 
+		"255": "255"
+	}
+	}, 
+	"Producteur MUX Boitier auto \u00e9cole compteur": {
+	"bitscount": 6, 
+	"lists": {
+		"0": "0", 
+		"1": "1", 
+		"2": "2", 
+		"3": "3", 
+		"4": "4", 
+		"5": "5", 
+		"6": "6", 
+		"7": "7", 
+		"8": "8", 
+		"9": "9", 
+		"10": "10", 
+		"11": "11", 
+		"12": "12", 
+		"13": "13", 
+		"14": "14", 
+		"15": "15", 
+		"16": "16", 
+		"17": "17", 
+		"18": "18", 
+		"19": "19", 
+		"20": "20", 
+		"21": "21", 
+		"22": "22", 
+		"23": "23", 
+		"24": "24", 
+		"25": "25", 
+		"26": "26", 
+		"27": "27", 
+		"28": "28", 
+		"29": "29", 
+		"30": "30", 
+		"31": "31", 
+		"32": "32", 
+		"33": "33", 
+		"34": "34", 
+		"35": "35", 
+		"36": "36", 
+		"37": "37", 
+		"38": "38", 
+		"39": "39", 
+		"40": "40", 
+		"63": "Non Contr\u00f4l\u00e9"
+	}
+	}, 
+	"Index_Last_Diag_Evolue_Generic": {
+	"scaled": true
+	}, 
+	"Snapshot_EngineStatus_R": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "Engine Stopped", 
+		"1": "Reserved", 
+		"2": "Independant running engine", 
+		"3": "Running engine-driven"
+	}
+	}, 
+	"Reserved(2bits)": {
+	"scaled": true, 
+	"bitscount": 2
+	}, 
+	"Producteur MUX SKL compteur": {
+	"bitscount": 6, 
+	"lists": {
+		"0": "0", 
+		"1": "1", 
+		"2": "2", 
+		"3": "3", 
+		"4": "4", 
+		"5": "5", 
+		"6": "6", 
+		"7": "7", 
+		"8": "8", 
+		"9": "9", 
+		"10": "10", 
+		"11": "11", 
+		"12": "12", 
+		"13": "13", 
+		"14": "14", 
+		"15": "15", 
+		"16": "16", 
+		"17": "17", 
+		"18": "18", 
+		"19": "19", 
+		"20": "20", 
+		"21": "21", 
+		"22": "22", 
+		"23": "23", 
+		"24": "24", 
+		"25": "25", 
+		"26": "26", 
+		"27": "27", 
+		"28": "28", 
+		"29": "29", 
+		"30": "30", 
+		"31": "31", 
+		"32": "32", 
+		"33": "33", 
+		"34": "34", 
+		"35": "35", 
+		"36": "36", 
+		"37": "37", 
+		"38": "38", 
+		"39": "39", 
+		"40": "40", 
+		"63": "Non Contr\u00f4l\u00e9"
+	}
+	}, 
+	"Adress octet low": {
+	"bytescount": 2, 
+	"byte": true, 
+	"bitscount": 16
+	}, 
+	"BrakeForceValueEstimatedLeft": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "Kn"
+	}, 
+	"Producteur MUX Toit ouvrant": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "Pr\u00e9sent", 
+		"2": "Absent", 
+		"3": "Confirm\u00e9 Absent"
+	}
+	}, 
+	"DTCExtendedData.Mileage": {
+	"scaled": true, 
+	"bytescount": 3, 
+	"comment": "Description of the extendedData Mileage (use by Failure Page to decode data)", 
+	"bitscount": 24, 
+	"unit": "km"
+	}, 
+	"Checksum CRC": {
+	"bytescount": 2, 
+	"byte": true, 
+	"bitscount": 16
+	}, 
+	"OutputTemporaryControlList": {
+	"comment": "Testing output : List of all output with temporary test", 
+	"lists": {
+		"1": "Apply_Both_Actuators", 
+		"2": "Release_Both_Actuators"
+	}
+	}, 
+	"MAP_TOA": {
+	"bytescount": 24, 
+	"byte": true, 
+	"bitscount": 192
+	}, 
+	"DTCStatus.warningIndicatorRequested": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "No", 
+		"1": "Yes"
+	}
+	}, 
+	"TNG_Curve_ClutchPos_Delta80": {
+	"scaled": true, 
+	"divideby": 2.0, 
+	"unit": "dig"
+	}, 
+	"BrakediscTemperature": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"bitscount": 16, 
+	"unit": "\u00b0C"
+	}, 
+	"DataRecorder_EngineStatusR": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "engine stopped", 
+		"1": "Reserved", 
+		"2": "independant  running engine", 
+		"3": "running engine-driven"
+	}
+	}, 
+	"TNG_ClutchSensorFilter18": {
+	"divideby": 10000.0, 
+	"bitscount": 16, 
+	"scaled": true, 
+	"bytescount": 2, 
+	"offset": -10000.0, 
+	"unit": "nu"
+	}, 
+	"TNG_ClutchSensorFilter19": {
+	"divideby": 10000.0, 
+	"bitscount": 16, 
+	"scaled": true, 
+	"bytescount": 2, 
+	"offset": -10000.0, 
+	"unit": "nu"
+	}, 
+	"Message NotImmobilizedVehicleWarning": {
+	"comment": "Message NotImmobilizedVehicleWarning", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "No warning 'Vehicle not immobilized' display request", 
+		"1": "Warning 'Vehicle not immobilized' display request"
+	}
+	}, 
+	"Producteur MUX ENG-ST": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "Pr\u00e9sent", 
+		"2": "Absent", 
+		"3": "Confirm\u00e9 Absent"
+	}
+	}, 
+	"DataRecorder_Coded_Tilt_freeze": {
+	"scaled": true, 
+	"bitscount": 7, 
+	"unit": "%g", 
+	"signed": true
+	}, 
+	"t_act_max_front": {
+	"scaled": true, 
+	"divideby": 50.0, 
+	"unit": "second"
+	}, 
+	"PartNumber.LowerPart": {
+	"bytesascii": true, 
+	"bytescount": 5, 
+	"byte": true, 
+	"bitscount": 40
+	}, 
+	"TNG_VehSpeedHBForTakeOffReady (m/s)": {
+	"lists": {
+		"111": "1,11", 
+		"27": "0,27", 
+		"255": "255"
+	}
+	}, 
+	"TNG_ClutchSensorFilter14": {
+	"divideby": 10000.0, 
+	"bitscount": 16, 
+	"scaled": true, 
+	"bytescount": 2, 
+	"offset": -10000.0, 
+	"unit": "nu"
+	}, 
+	"TNG_ClutchSensorFilter15": {
+	"divideby": 10000.0, 
+	"bitscount": 16, 
+	"scaled": true, 
+	"bytescount": 2, 
+	"offset": -10000.0, 
+	"unit": "nu"
+	}, 
+	"TNG_ClutchSensorFilter16": {
+	"divideby": 10000.0, 
+	"bitscount": 16, 
+	"scaled": true, 
+	"bytescount": 2, 
+	"offset": -10000.0, 
+	"unit": "nu"
+	}, 
+	"TNG_ClutchSensorFilter17": {
+	"divideby": 10000.0, 
+	"bitscount": 16, 
+	"scaled": true, 
+	"bytescount": 2, 
+	"offset": -10000.0, 
+	"unit": "nu"
+	}, 
+	"PHY_GearBoxRatioVector-1st ratio": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 1000.0, 
+	"bitscount": 16, 
+	"unit": "nu"
+	}, 
+	"TNG_ClutchSensorFilter4": {
+	"divideby": 10000.0, 
+	"bitscount": 16, 
+	"scaled": true, 
+	"bytescount": 2, 
+	"offset": -10000.0, 
+	"unit": "nu"
+	}, 
+	"DataRecorder_CurrentActRight": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 1000.0, 
+	"bitscount": 16, 
+	"unit": "A"
+	}, 
+	"DataRecorder_BrakeStatusLeftBefore": {
+	"bitscount": 4, 
+	"lists": {
+		"0": "Applied", 
+		"1": "Applying", 
+		"2": "Fully Applied", 
+		"3": "Released", 
+		"4": "Releasing", 
+		"5": "Unknown", 
+		"6": "Init", 
+		"7": "Fully released - Maintenance Mode", 
+		"8": "Wind Back - Released to fully released"
+	}
+	}, 
+	"TNG_Clutch_tkf_TimeConstant": {
+	"scaled": true, 
+	"divideby": 100.0, 
+	"unit": "s"
+	}, 
+	"PHY_WheelRadius": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 1000.0, 
+	"bitscount": 16, 
+	"unit": "m"
+	}, 
+	"APBApplyCounterRight": {
+	"scaled": true, 
+	"bytescount": 3, 
+	"bitscount": 24
+	}, 
+	"Module BusMuet": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "Non muet", 
+		"2": "BusMuet", 
+		"3": "Confirm\u00e9 BusMuet"
+	}
+	}, 
+	"HighestBrakeDiscTemperature": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"bitscount": 16, 
+	"unit": "\u00b0C"
+	}, 
+	"StopRoutineStatus": {
+	"lists": {
+		"2": "Routine Complete and OK", 
+		"3": "Routine Complete and NOK"
+	}
+	}, 
+	"TNG_RearGearRatioGain": {
+	"scaled": true, 
+	"divideby": 100.0, 
+	"unit": "nu"
+	}, 
+	"SaveMarking": {
+	"scaled": true
+	}, 
+	"Message APBTightenedRequestUnavailable": {
+	"comment": "Message APBTightenedRequestUnavailable", 
+	"bitscount": 2, 
+	"lists": {
+		"0": "No warning", 
+		"1": "Tightened request unavailable warning", 
+		"3": "Tightened request unavailable warning re-emission request"
+	}
+	}, 
+	"SoftwareNumber": {
+	"comment": "Software identification number", 
+	"bytescount": 2, 
+	"byte": true, 
+	"bitscount": 16
+	}, 
+	"Producteur MUX Systeme anti roulis compteur": {
+	"bitscount": 6, 
+	"lists": {
+		"0": "0", 
+		"1": "1", 
+		"2": "2", 
+		"3": "3", 
+		"4": "4", 
+		"5": "5", 
+		"6": "6", 
+		"7": "7", 
+		"8": "8", 
+		"9": "9", 
+		"10": "10", 
+		"11": "11", 
+		"12": "12", 
+		"13": "13", 
+		"14": "14", 
+		"15": "15", 
+		"16": "16", 
+		"17": "17", 
+		"18": "18", 
+		"19": "19", 
+		"20": "20", 
+		"21": "21", 
+		"22": "22", 
+		"23": "23", 
+		"24": "24", 
+		"25": "25", 
+		"26": "26", 
+		"27": "27", 
+		"28": "28", 
+		"29": "29", 
+		"30": "30", 
+		"31": "31", 
+		"32": "32", 
+		"33": "33", 
+		"34": "34", 
+		"35": "35", 
+		"36": "36", 
+		"37": "37", 
+		"38": "38", 
+		"39": "39", 
+		"40": "40", 
+		"63": "Non Contr\u00f4l\u00e9"
+	}
+	}, 
+	"ActuatorBatteryVoltageRL": {
+	"scaled": true, 
+	"step": 0.1, 
+	"unit": "Volt"
+	}, 
+	"Curve_E_C_T_toa_EVO_Curve_E_C_T_init_40": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 100.0, 
+	"bitscount": 16, 
+	"unit": "Nm"
+	}, 
+	"ActuatorBatteryVoltageRR": {
+	"scaled": true, 
+	"step": 0.1, 
+	"unit": "Volt"
+	}, 
+	"WheelFrontLeftSpeed(CAN)": {
+	"bitscount": 16, 
+	"format": "000.00", 
+	"scaled": true, 
+	"step": 0.0417, 
+	"bytescount": 2, 
+	"unit": "rpm"
+	}, 
+	"Curve_E_C_T_toa_EVO_Curve_E_C_T_init_5": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 100.0, 
+	"bitscount": 16
+	}, 
+	"Curve_E_C_T_toa_EVO_Curve_E_C_T_init_0": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 100.0, 
+	"bitscount": 16, 
+	"unit": "Nm"
+	}, 
+	"Producteur MUX Vignette compteur": {
+	"bitscount": 6, 
+	"lists": {
+		"0": "0", 
+		"1": "1", 
+		"2": "2", 
+		"3": "3", 
+		"4": "4", 
+		"5": "5", 
+		"6": "6", 
+		"7": "7", 
+		"8": "8", 
+		"9": "9", 
+		"10": "10", 
+		"11": "11", 
+		"12": "12", 
+		"13": "13", 
+		"14": "14", 
+		"15": "15", 
+		"16": "16", 
+		"17": "17", 
+		"18": "18", 
+		"19": "19", 
+		"20": "20", 
+		"21": "21", 
+		"22": "22", 
+		"23": "23", 
+		"24": "24", 
+		"25": "25", 
+		"26": "26", 
+		"27": "27", 
+		"28": "28", 
+		"29": "29", 
+		"30": "30", 
+		"31": "31", 
+		"32": "32", 
+		"33": "33", 
+		"34": "34", 
+		"35": "35", 
+		"36": "36", 
+		"37": "37", 
+		"38": "38", 
+		"39": "39", 
+		"40": "40", 
+		"63": "Non Contr\u00f4l\u00e9"
+	}
+	}, 
+	"Producteur MUX DCU compteur": {
+	"bitscount": 6, 
+	"lists": {
+		"0": "0", 
+		"1": "1", 
+		"2": "2", 
+		"3": "3", 
+		"4": "4", 
+		"5": "5", 
+		"6": "6", 
+		"7": "7", 
+		"8": "8", 
+		"9": "9", 
+		"10": "10", 
+		"11": "11", 
+		"12": "12", 
+		"13": "13", 
+		"14": "14", 
+		"15": "15", 
+		"16": "16", 
+		"17": "17", 
+		"18": "18", 
+		"19": "19", 
+		"20": "20", 
+		"21": "21", 
+		"22": "22", 
+		"23": "23", 
+		"24": "24", 
+		"25": "25", 
+		"26": "26", 
+		"27": "27", 
+		"28": "28", 
+		"29": "29", 
+		"30": "30", 
+		"31": "31", 
+		"32": "32", 
+		"33": "33", 
+		"34": "34", 
+		"35": "35", 
+		"36": "36", 
+		"37": "37", 
+		"38": "38", 
+		"39": "39", 
+		"40": "40", 
+		"63": "Non Contr\u00f4l\u00e9"
+	}
+	}, 
+	"PHY_RearGearRatio": {
+	"scaled": true, 
+	"divideby": 1000.0, 
+	"unit": "nu"
+	}, 
+	"Curve_E_C_T_toa_EVO_Curve_E_C_T_init_30": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 100.0, 
+	"bitscount": 16, 
+	"unit": "Nm"
+	}, 
+	"DataRecorder_BrakeStatusRightBefore": {
+	"bitscount": 4, 
+	"lists": {
+		"0": "Applied", 
+		"1": "Applying", 
+		"2": "Fully Applied", 
+		"3": "Released", 
+		"4": "Releasing", 
+		"5": "Unknown", 
+		"6": "Init", 
+		"7": "Fully released - Maintenance Mode", 
+		"8": "Wind Back - Released to fully released"
+	}
+	}, 
+	"EVO_Curve_E_C_T_init_60": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 100.0, 
+	"bitscount": 16, 
+	"unit": "Nm"
+	}, 
+	"Producteur MUX Coslad compteur": {
+	"bitscount": 6, 
+	"lists": {
+		"0": "0", 
+		"1": "1", 
+		"2": "2", 
+		"3": "3", 
+		"4": "4", 
+		"5": "5", 
+		"6": "6", 
+		"7": "7", 
+		"8": "8", 
+		"9": "9", 
+		"10": "10", 
+		"11": "11", 
+		"12": "12", 
+		"13": "13", 
+		"14": "14", 
+		"15": "15", 
+		"16": "16", 
+		"17": "17", 
+		"18": "18", 
+		"19": "19", 
+		"20": "20", 
+		"21": "21", 
+		"22": "22", 
+		"23": "23", 
+		"24": "24", 
+		"25": "25", 
+		"26": "26", 
+		"27": "27", 
+		"28": "28", 
+		"29": "29", 
+		"30": "30", 
+		"31": "31", 
+		"32": "32", 
+		"33": "33", 
+		"34": "34", 
+		"35": "35", 
+		"36": "36", 
+		"37": "37", 
+		"38": "38", 
+		"39": "39", 
+		"40": "40", 
+		"63": "Non Contr\u00f4l\u00e9"
+	}
+	}, 
+	"EVO_Curve_E_C_T_init_5": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 100.0, 
+	"bitscount": 16, 
+	"unit": "Nm"
+	}, 
+	"DataRecorder_Coding_ConAccPos": {
+	"scaled": true, 
+	"bitscount": 3
+	}, 
+	"ManufacturerIdentificationCode": {
+	"lists": {
+		"0": "Renault R1", 
+		"128": "Nissan N1", 
+		"130": "Nissan N3", 
+		"136": "5DIGITS", 
+		"129": "Nissan N2"
+	}
+	}, 
+	"t_wait_min_back": {
+	"scaled": true, 
+	"divideby": 50.0, 
+	"unit": "second"
+	}, 
+	"OutputControlCommand": {
+	"comment": "Testing output : Command enumeration", 
+	"lists": {
+		"0": "Start Temporary", 
+		"1": "Status", 
+		"17": "Stop", 
+		"32": "Start Permanent"
+	}
+	}, 
+	"MileageHighestBrakeDiscTemperature": {
+	"scaled": true, 
+	"bytescount": 3, 
+	"bitscount": 24, 
+	"unit": "Kms"
+	}, 
+	"VehiculeSpeed": {
+	"bitscount": 16, 
+	"format": "000.00", 
+	"scaled": true, 
+	"step": 0.01, 
+	"bytescount": 2, 
+	"unit": "km/h"
+	}, 
+	"DTCFailureType": {
+	"lists": {
+		"0": "Device and failure type ODB codding", 
+		"1": "General Electrical Failure", 
+		"2": "General signal failure", 
+		"3": "FM (Frequency Modulated) / PWM (Pulse Width Modulated) Failures", 
+		"4": "System Internal Failures", 
+		"5": "System Programming Failures", 
+		"6": "Algorithm Based Failures", 
+		"7": "Mechanical Failures", 
+		"8": "Bus Signal / Message Failures", 
+		"9": "Component Failures", 
+		"17": "circuit short to ground", 
+		"18": "circuit short to battery", 
+		"19": "circuit open", 
+		"20": "circuit short to ground or open", 
+		"21": "circuit short to battery or open", 
+		"22": "circuit voltage below threshold", 
+		"23": "circuit voltage above threshold", 
+		"24": "circuit current below threshold", 
+		"25": "circuit current above threshold", 
+		"26": "circuit resistance below threshold", 
+		"27": "circuit resistance above threshold", 
+		"28": "circuit voltage out of range", 
+		"29": "circuit current out of range", 
+		"30": "circuit resistance out of range", 
+		"31": "circuit intermittent", 
+		"33": "signal amplitude < minimum", 
+		"34": "signal amplitude > maximum", 
+		"35": "signal stuck low", 
+		"36": "signal stuck high", 
+		"37": "signal shape / waveform failure", 
+		"38": "signal rate of change below threshold", 
+		"39": "signal rate of change above threshold", 
+		"40": "signal bias level out of range / zero adjustment failure", 
+		"41": "signal signal invalid", 
+		"47": "signal erratic", 
+		"49": "no signal", 
+		"50": "signal low time < minimum", 
+		"51": "signal low time > maximum", 
+		"52": "signal high time < minimum", 
+		"53": "signal high time > maximum", 
+		"54": "signal frequency too low", 
+		"55": "signal frequency too high", 
+		"56": "signal frequency incorrect", 
+		"57": "incorrect has too few pulses", 
+		"58": "incorrect has too many pulses", 
+		"65": "general checksum failure", 
+		"66": "general memory failure", 
+		"67": "special memory failure", 
+		"68": "data memory failure", 
+		"69": "program memory failure", 
+		"70": "calibration / parameter memory failure", 
+		"71": "watchdog / safety \u00b5C failure", 
+		"72": "supervision software failure", 
+		"73": "internal electronic failure", 
+		"74": "incorrect component installed", 
+		"75": "over temperature", 
+		"81": "not programmed", 
+		"82": "not activated", 
+		"83": "deactivated", 
+		"84": "missing calibration", 
+		"85": "not configured", 
+		"97": "signal calculation failure", 
+		"98": "signal compare failure", 
+		"99": "circuit / component protection time-out", 
+		"100": "signal plausibility failure", 
+		"101": "signal has too few transitions / events", 
+		"102": "signal has too many transitions / events", 
+		"103": "signal incorrect after event", 
+		"104": "event information", 
+		"113": "actuator stuck", 
+		"114": "actuator stuck open", 
+		"115": "actuator stuck closed", 
+		"116": "actuator slipping", 
+		"117": "emergency position not reachable", 
+		"118": "wrong mounting position", 
+		"119": "commanded position not reachable", 
+		"120": "alignment or adjustment incorrect", 
+		"121": "mechanical linkage failure", 
+		"122": "fluid leak or seal failure", 
+		"123": "low fluid level", 
+		"129": "invalid serial data received", 
+		"130": "alive / sequence counter incorrect / not updated", 
+		"131": "value of signal protection calculation incorrect", 
+		"132": "signal below allowable range", 
+		"133": "signal above allowable range", 
+		"134": "signal invalid", 
+		"135": "missing message", 
+		"136": "bus off", 
+		"143": "erratic", 
+		"145": "parametric", 
+		"146": "performance or incorrect operation", 
+		"147": "no operation", 
+		"148": "unexpected operation", 
+		"149": "incorrect assembly", 
+		"150": "component internal failure", 
+		"151": "Component or system operation obstructed or blocked", 
+		"152": "component or system over temperature"
+	}
+	}, 
+	"Address Generic DiagEvolue": {
+	"bytescount": 2, 
+	"bitscount": 16, 
+	"lists": {
+		"2944": "19. 'Generic' record  -> HEX B80", 
+		"2368": "1. 'Generic' record -> HEX 940", 
+		"2400": "2. 'Generic' record  -> HEX 960", 
+		"2464": "4. 'Generic' record  -> HEX 9A0", 
+		"2528": "6. 'Generic' record  -> HEX 9E0", 
+		"2592": "8. 'Generic' record  -> HEX A20", 
+		"2656": "10. 'Generic' record   -> HEX A60", 
+		"2720": "12. 'Generic' record  -> HEX AA0", 
+		"2784": "14. 'Generic' record  -> HEX AE0", 
+		"2848": "16. 'Generic' record  -> HEX B20", 
+		"2976": "20. 'Generic' record  -> HEX BA0", 
+		"2912": "18. 'Generic' record  -> HEX B60", 
+		"3168": "26. 'Generic' record   -> HEX C60", 
+		"3232": "28. 'Generic' record   -> HEX CA0", 
+		"3296": "30. 'Generic' record  -> HEX CE0", 
+		"2880": "17. 'Generic' record  -> HEX B40", 
+		"3104": "24. 'Generic' record  -> HEX C20", 
+		"2432": "3. 'Generic' record  -> HEX 980", 
+		"2496": "5. 'Generic' record  -> HEX 9C0", 
+		"2560": "7. 'Generic' record   -> HEX A00", 
+		"2624": "9. 'Generic' record   -> HEX A40", 
+		"2688": "11. 'Generic' record  -> HEX A80", 
+		"2752": "13. 'Generic' record  -> HEX AC0", 
+		"2816": "15. 'Generic' record  -> HEX B00", 
+		"3040": "22. 'Generic' record  -> HEX BE0", 
+		"3008": "21. 'Generic' record  -> HEX BC0", 
+		"3072": "23. 'Generic' record  -> HEX C00", 
+		"3136": "25. 'Generic' record  -> HEX C40", 
+		"3200": "27. 'Generic' record  -> HEX C80", 
+		"3264": "29. 'Generic' record  -> HEX CC0"
+	}
+	}, 
+	"StatusOfDTC": {
+	"scaled": true
+	}, 
+	"MAP_Learning_TOA": {
+	"bytescount": 8, 
+	"byte": true, 
+	"bitscount": 64
+	}, 
+	"DataRecorder_DistanzeTotalizer": {
+	"scaled": true, 
+	"bytescount": 4, 
+	"divideby": 100.0, 
+	"bitscount": 28, 
+	"unit": "km"
+	}, 
+	"Snapshot_BrakeStatusLeft": {
+	"bitscount": 4, 
+	"lists": {
+		"0": "Applied", 
+		"1": "Applying", 
+		"2": "Fully Applied", 
+		"3": "Released", 
+		"4": "Releasing", 
+		"5": "Unknown", 
+		"6": "Init", 
+		"7": "Fully released - Maintenance Mode", 
+		"8": "Wind Back - Released to fully released"
+	}
+	}, 
+	"Message DynamicBrakingDisplay": {
+	"comment": "Message DynamicBrakingDisplay", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "No dynamic braking display", 
+		"1": "Dynamic braking request display"
+	}
+	}, 
+	"DataRecorder_LastActiveEventRight": {
+	"lists": {
+		"0": "None", 
+		"1": "Autoapply_Apply_Demand", 
+		"2": "Autoadjust_Apply_Demand", 
+		"3": "Autoadjust_Release_Demand", 
+		"6": "DAA_Demand", 
+		"7": "DSD_Reduced_Clamp_Apply_Demand", 
+		"8": "DSD_Apply_Demand", 
+		"9": "DSD_Release_Demand", 
+		"10": "Dynamic_Switch_Release_Demand", 
+		"12": "HTR_Demand", 
+		"13": "HU_Function_Apply_Demand", 
+		"14": "HU_Function_Hold", 
+		"15": "HU_Function_Release_Demand", 
+		"16": "Limp_Home_Switch_Release_Demand", 
+		"17": "MCR_Demand", 
+		"18": "Reclamp_Demand", 
+		"19": "RCD_Apply_Demand", 
+		"20": "RCD_Release_Demand", 
+		"22": "RWU_Apply_Demand", 
+		"23": "RWU_Hold_Demand", 
+		"24": "RWU_Release_Demand", 
+		"25": "Static_Switch_Apply_Demand", 
+		"26": "Static_Switch_Release_Demand", 
+		"27": "STOA_Demand", 
+		"28": "Diag_Rel_To_Service_Position_Demand", 
+		"29": "Diag_Inhibit_Actuator_Drive_Demand", 
+		"30": "Diag_Apply_Demand", 
+		"31": "Diag_Release_Demand", 
+		"32": "Assebly_Check_Demand"
+	}
+	}, 
+	"LongitudinalValue": {
+	"scaled": true
+	}, 
+	"CalibrationNumber": {
+	"comment": "Numero de calibration en Hexa", 
+	"bytescount": 2, 
+	"byte": true, 
+	"bitscount": 16
+	}, 
+	"TNG_EPTWTorqueGain": {
+	"scaled": true, 
+	"divideby": 100.0, 
+	"unit": "nu"
+	}, 
+	"Producteur MUX Onduleur (v\u00e9hicule \u00e9lectrique) compteur": {
+	"bitscount": 6, 
+	"lists": {
+		"0": "0", 
+		"1": "1", 
+		"2": "2", 
+		"3": "3", 
+		"4": "4", 
+		"5": "5", 
+		"6": "6", 
+		"7": "7", 
+		"8": "8", 
+		"9": "9", 
+		"10": "10", 
+		"11": "11", 
+		"12": "12", 
+		"13": "13", 
+		"14": "14", 
+		"15": "15", 
+		"16": "16", 
+		"17": "17", 
+		"18": "18", 
+		"19": "19", 
+		"20": "20", 
+		"21": "21", 
+		"22": "22", 
+		"23": "23", 
+		"24": "24", 
+		"25": "25", 
+		"26": "26", 
+		"27": "27", 
+		"28": "28", 
+		"29": "29", 
+		"30": "30", 
+		"31": "31", 
+		"32": "32", 
+		"33": "33", 
+		"34": "34", 
+		"35": "35", 
+		"36": "36", 
+		"37": "37", 
+		"38": "38", 
+		"39": "39", 
+		"40": "40", 
+		"63": "Non Contr\u00f4l\u00e9"
+	}
+	}, 
+	"EngineRPM": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"step": 0.0125, 
+	"bitscount": 16, 
+	"unit": "Tr/min"
+	}, 
+	"BrakeStatusRight": {
+	"lists": {
+		"0": "Applied", 
+		"1": "Applying", 
+		"2": "Fully Applied", 
+		"3": "Released", 
+		"4": "Releasing", 
+		"5": "Unknown", 
+		"6": "Init", 
+		"7": "Fully released - Maintenance Mode", 
+		"8": "Wind Back - Released to fully released"
+	}
+	}, 
+	"FailureLevel": {
+	"lists": {
+		"0": "No Failure", 
+		"1": "Repairing Needed - Voyant Orange - Service", 
+		"2": "Warning \"Stop\" - Voyant Rouge"
+	}
+	}, 
+	"Producteur MUX Toit ouvrant compteur": {
+	"bitscount": 6, 
+	"lists": {
+		"0": "0", 
+		"1": "1", 
+		"2": "2", 
+		"3": "3", 
+		"4": "4", 
+		"5": "5", 
+		"6": "6", 
+		"7": "7", 
+		"8": "8", 
+		"9": "9", 
+		"10": "10", 
+		"11": "11", 
+		"12": "12", 
+		"13": "13", 
+		"14": "14", 
+		"15": "15", 
+		"16": "16", 
+		"17": "17", 
+		"18": "18", 
+		"19": "19", 
+		"20": "20", 
+		"21": "21", 
+		"22": "22", 
+		"23": "23", 
+		"24": "24", 
+		"25": "25", 
+		"26": "26", 
+		"27": "27", 
+		"28": "28", 
+		"29": "29", 
+		"30": "30", 
+		"31": "31", 
+		"32": "32", 
+		"33": "33", 
+		"34": "34", 
+		"35": "35", 
+		"36": "36", 
+		"37": "37", 
+		"38": "38", 
+		"39": "39", 
+		"40": "40", 
+		"63": "Non Contr\u00f4l\u00e9"
+	}
+	}, 
+	"t_wait_max_back": {
+	"scaled": true, 
+	"divideby": 50.0, 
+	"unit": "second"
+	}, 
+	"Producteur MUX UCH compteur": {
+	"bitscount": 6, 
+	"lists": {
+		"0": "0", 
+		"1": "1", 
+		"2": "2", 
+		"3": "3", 
+		"4": "4", 
+		"5": "5", 
+		"6": "6", 
+		"7": "7", 
+		"8": "8", 
+		"9": "9", 
+		"10": "10", 
+		"11": "11", 
+		"12": "12", 
+		"13": "13", 
+		"14": "14", 
+		"15": "15", 
+		"16": "16", 
+		"17": "17", 
+		"18": "18", 
+		"19": "19", 
+		"20": "20", 
+		"21": "21", 
+		"22": "22", 
+		"23": "23", 
+		"24": "24", 
+		"25": "25", 
+		"26": "26", 
+		"27": "27", 
+		"28": "28", 
+		"29": "29", 
+		"30": "30", 
+		"31": "31", 
+		"32": "32", 
+		"33": "33", 
+		"34": "34", 
+		"35": "35", 
+		"36": "36", 
+		"37": "37", 
+		"38": "38", 
+		"39": "39", 
+		"40": "40", 
+		"63": "Non Contr\u00f4l\u00e9"
+	}
+	}, 
+	"Producteur MUX R\u00e9pet BVA compteur": {
+	"bitscount": 6, 
+	"lists": {
+		"0": "0", 
+		"1": "1", 
+		"2": "2", 
+		"3": "3", 
+		"4": "4", 
+		"5": "5", 
+		"6": "6", 
+		"7": "7", 
+		"8": "8", 
+		"9": "9", 
+		"10": "10", 
+		"11": "11", 
+		"12": "12", 
+		"13": "13", 
+		"14": "14", 
+		"15": "15", 
+		"16": "16", 
+		"17": "17", 
+		"18": "18", 
+		"19": "19", 
+		"20": "20", 
+		"21": "21", 
+		"22": "22", 
+		"23": "23", 
+		"24": "24", 
+		"25": "25", 
+		"26": "26", 
+		"27": "27", 
+		"28": "28", 
+		"29": "29", 
+		"30": "30", 
+		"31": "31", 
+		"32": "32", 
+		"33": "33", 
+		"34": "34", 
+		"35": "35", 
+		"36": "36", 
+		"37": "37", 
+		"38": "38", 
+		"39": "39", 
+		"40": "40", 
+		"63": "Non Contr\u00f4l\u00e9"
+	}
+	}, 
+	"TNG_ClutchPosLB": {
+	"scaled": true, 
+	"unit": "dig _20% Stroke"
+	}, 
+	"Producteur MUX Synth\u00e8se parole compteur": {
+	"bitscount": 6, 
+	"lists": {
+		"0": "0", 
+		"1": "1", 
+		"2": "2", 
+		"3": "3", 
+		"4": "4", 
+		"5": "5", 
+		"6": "6", 
+		"7": "7", 
+		"8": "8", 
+		"9": "9", 
+		"10": "10", 
+		"11": "11", 
+		"12": "12", 
+		"13": "13", 
+		"14": "14", 
+		"15": "15", 
+		"16": "16", 
+		"17": "17", 
+		"18": "18", 
+		"19": "19", 
+		"20": "20", 
+		"21": "21", 
+		"22": "22", 
+		"23": "23", 
+		"24": "24", 
+		"25": "25", 
+		"26": "26", 
+		"27": "27", 
+		"28": "28", 
+		"29": "29", 
+		"30": "30", 
+		"31": "31", 
+		"32": "32", 
+		"33": "33", 
+		"34": "34", 
+		"35": "35", 
+		"36": "36", 
+		"37": "37", 
+		"38": "38", 
+		"39": "39", 
+		"40": "40", 
+		"63": "Non Contr\u00f4l\u00e9"
+	}
+	}, 
+	"DTCExtendedDataRecordNumber": {
+	"lists": {
+		"128": "Mileage"
+	}
+	}, 
+	"TNG_AccPosLB_capture": {
+	"scaled": true, 
+	"unit": "dig"
+	}, 
+	"EVO_Curve_Clutch_init_9": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 100.0, 
+	"bitscount": 16, 
+	"unit": "dig"
+	}, 
+	"PartNumber.BasicPartList": {
+	"lists": {
+		"0": "N/A", 
+		"2": "28507"
+	}
+	}, 
+	"EVO_Curve_Clutch_init_3": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 100.0, 
+	"bitscount": 16, 
+	"unit": "dig"
+	}, 
+	"EVO_Curve_Clutch_init_2": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 100.0, 
+	"bitscount": 16, 
+	"unit": "dig"
+	}, 
+	"EVO_Curve_Clutch_init_1": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 100.0, 
+	"bitscount": 16, 
+	"unit": "dig"
+	}, 
+	"EVO_Curve_Clutch_init_0": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 100.0, 
+	"bitscount": 16, 
+	"unit": "dig"
+	}, 
+	"EVO_Curve_Clutch_init_7": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 100.0, 
+	"bitscount": 16, 
+	"unit": "dig"
+	}, 
+	"EVO_Curve_Clutch_init_6": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 100.0, 
+	"bitscount": 16, 
+	"unit": "dig"
+	}, 
+	"EVO_Curve_Clutch_init_5": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 100.0, 
+	"bitscount": 16, 
+	"unit": "dig"
+	}, 
+	"EVO_Curve_Clutch_init_4": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 100.0, 
+	"bitscount": 16, 
+	"unit": "dig"
+	}, 
+	"DiagMuxOn": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "counting and storage of CAN mute/absent failures  masked", 
+		"1": "counting and storage of CAN mute/absent failures not masked"
+	}
+	}, 
+	"PassengerDoorState": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "Passenger door closed", 
+		"1": "Passenger door open"
+	}
+	}, 
+	"Producteur MUX UPC": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "Pr\u00e9sent", 
+		"2": "Absent", 
+		"3": "Confirm\u00e9 Absent"
+	}
+	}, 
+	"Producteur MUX Contr\u00f4le \u00e9lectrique couple": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "Pr\u00e9sent", 
+		"2": "Absent", 
+		"3": "Confirm\u00e9 Absent"
+	}
+	}, 
+	"Version Messagerie Mux": {
+	"bytescount": 2, 
+	"byte": true, 
+	"bitscount": 16
+	}, 
+	"RawSensor": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"step": 0.125, 
+	"bitscount": 16, 
+	"unit": "%"
+	}, 
+	"SwitchState": {
+	"lists": {
+		"0": "Apply", 
+		"1": "Neutral", 
+		"2": "Release", 
+		"3": "Invalid"
+	}
+	}, 
+	"Producteur MUX Boitier auto \u00e9cole": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "Pr\u00e9sent", 
+		"2": "Absent", 
+		"3": "Confirm\u00e9 Absent"
+	}
+	}, 
+	"DTCFailureType.Category": {
+	"bitscount": 4, 
+	"lists": {
+		"0": "General Failure Information", 
+		"1": "General Electrical Failures", 
+		"2": "General Signal Failures", 
+		"3": "FM (Frequency Modulated) / PWM (Pulse Width Modulated) Failures", 
+		"4": "System Internal Failures", 
+		"5": "System Programming Failures", 
+		"6": "Algorithm Based Failures", 
+		"7": "Mechanical Failures", 
+		"8": "Bus Signal / Message Failures", 
+		"9": "Component Failures", 
+		"15": "Vehicle manufacturer / System supplier specific"
+	}
+	}, 
+	"EngineStatus_R": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "engine stopped", 
+		"1": "Reserved", 
+		"2": "independant  running engine", 
+		"3": "running engine-driven"
+	}
+	}, 
+	"DataRecorder_Coded_RawSensor": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"step": 0.125, 
+	"bitscount": 10, 
+	"unit": "%"
+	}, 
+	"TNG_Curve_ClutchPos_Delta100": {
+	"scaled": true, 
+	"divideby": 2.0, 
+	"unit": "dig"
+	}, 
+	"EVO_Curve_E_C_T_init_20": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 100.0, 
+	"bitscount": 16, 
+	"unit": "Nm"
+	}, 
+	"VIN": {
+	"bytesascii": true, 
+	"bytescount": 17, 
+	"byte": true, 
+	"bitscount": 136
+	}, 
+	"Snapshot_ModeControllerState": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "ReleaseInhibit", 
+		"1": "Static", 
+		"2": "Dynamic", 
+		"3": "Limp_Home"
+	}
+	}, 
+	"EVO_Curve_E_C_T_init_25": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 100.0, 
+	"bitscount": 16, 
+	"unit": "Nm"
+	}, 
+	"t_wait_max_front": {
+	"scaled": true, 
+	"divideby": 50.0, 
+	"unit": "second"
+	}, 
+	"Producteur MUX Alternateur d\u00e9marreur compteur": {
+	"bitscount": 6, 
+	"lists": {
+		"0": "0", 
+		"1": "1", 
+		"2": "2", 
+		"3": "3", 
+		"4": "4", 
+		"5": "5", 
+		"6": "6", 
+		"7": "7", 
+		"8": "8", 
+		"9": "9", 
+		"10": "10", 
+		"11": "11", 
+		"12": "12", 
+		"13": "13", 
+		"14": "14", 
+		"15": "15", 
+		"16": "16", 
+		"17": "17", 
+		"18": "18", 
+		"19": "19", 
+		"20": "20", 
+		"21": "21", 
+		"22": "22", 
+		"23": "23", 
+		"24": "24", 
+		"25": "25", 
+		"26": "26", 
+		"27": "27", 
+		"28": "28", 
+		"29": "29", 
+		"30": "30", 
+		"31": "31", 
+		"32": "32", 
+		"33": "33", 
+		"34": "34", 
+		"35": "35", 
+		"36": "36", 
+		"37": "37", 
+		"38": "38", 
+		"39": "39", 
+		"40": "40", 
+		"63": "Non Contr\u00f4l\u00e9"
+	}
+	}, 
+	"Producteur MUX Tabbeau de bord compteur": {
+	"bitscount": 6, 
+	"lists": {
+		"0": "0", 
+		"1": "1", 
+		"2": "2", 
+		"3": "3", 
+		"4": "4", 
+		"5": "5", 
+		"6": "6", 
+		"7": "7", 
+		"8": "8", 
+		"9": "9", 
+		"10": "10", 
+		"11": "11", 
+		"12": "12", 
+		"13": "13", 
+		"14": "14", 
+		"15": "15", 
+		"16": "16", 
+		"17": "17", 
+		"18": "18", 
+		"19": "19", 
+		"20": "20", 
+		"21": "21", 
+		"22": "22", 
+		"23": "23", 
+		"24": "24", 
+		"25": "25", 
+		"26": "26", 
+		"27": "27", 
+		"28": "28", 
+		"29": "29", 
+		"30": "30", 
+		"31": "31", 
+		"32": "32", 
+		"33": "33", 
+		"34": "34", 
+		"35": "35", 
+		"36": "36", 
+		"37": "37", 
+		"38": "38", 
+		"39": "39", 
+		"40": "40", 
+		"63": "Non Contr\u00f4l\u00e9"
+	}
+	}, 
+	"DataRecorder_Curve_Clutch_2": {
+	"scaled": true
+	}, 
+	"Producteur MUX Tabbeau de bord": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "Pr\u00e9sent", 
+		"2": "Absent", 
+		"3": "Confirm\u00e9 Absent"
+	}
+	}, 
+	"Address TOA DiagEvolue": {
+	"bytescount": 2, 
+	"bitscount": 16, 
+	"lists": {
+		"3328": "1. 'TOA' record -> HEX D00", 
+		"3360": "2. 'TOA' record -> HEX D20", 
+		"3392": "3. 'TOA' record -> HEX D40", 
+		"3424": "4. 'TOA' record -> HEX D60", 
+		"3456": "5. 'TOA' record -> HEX D80", 
+		"3488": "6. 'TOA' record -> HEX DA0", 
+		"3520": "7. 'TOA' record -> HEX DC0", 
+		"3552": "8. 'TOA' record -> HEX DE0", 
+		"3584": "9. 'TOA' record -> HEX E00", 
+		"3616": "10. 'TOA' record -> HEX E20", 
+		"3648": "11. 'TOA' record -> HEX E40", 
+		"3680": "12. 'TOA' record -> HEX E60", 
+		"3712": "13. 'TOA' record -> HEX E80", 
+		"3744": "14. 'TOA' record -> HEX EA0", 
+		"3776": "15. 'TOA' record -> HEX EC0"
+	}
+	}, 
+	"DataRecorder_AchievedClampRightBefore": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "Kn"
+	}, 
+	"TNG_EPTWTorqueOffset": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"bitscount": 16, 
+	"unit": "Nm", 
+	"offset": -4000.0
+	}, 
+	"Snapshot_BrakeStatusRight": {
+	"bitscount": 4, 
+	"lists": {
+		"0": "Applied", 
+		"1": "Applying", 
+		"2": "Fully Applied", 
+		"3": "Released", 
+		"4": "Releasing", 
+		"5": "Unknown", 
+		"6": "Init", 
+		"7": "Fully released - Maintenance Mode", 
+		"8": "Wind Back - Released to fully released"
+	}
+	}, 
+	"Snapshot_BrakeInfoStatus": {
+	"bitscount": 3, 
+	"lists": {
+		"1": "Brake pedal not pressed", 
+		"2": "Brake pedal pressed", 
+		"4": "Brake pedal confirmed pressed", 
+		"7": "unavailable"
+	}
+	}, 
+	"DataRecorder_Curve_Clutch_9": {
+	"scaled": true
+	}, 
+	"WheelRearRightSpeed(CAN)": {
+	"bitscount": 16, 
+	"format": "000.00", 
+	"scaled": true, 
+	"step": 0.0417, 
+	"bytescount": 2, 
+	"unit": "rpm"
+	}, 
+	"TimeOfReprogramming": {
+	"comment": "Hour, Minute of the reprogramming", 
+	"bytescount": 2, 
+	"byte": true, 
+	"bitscount": 16
+	}, 
+	"Producteur MUX Moteur syst\u00e8me 4/4 compteur": {
+	"bitscount": 6, 
+	"lists": {
+		"0": "0", 
+		"1": "1", 
+		"2": "2", 
+		"3": "3", 
+		"4": "4", 
+		"5": "5", 
+		"6": "6", 
+		"7": "7", 
+		"8": "8", 
+		"9": "9", 
+		"10": "10", 
+		"11": "11", 
+		"12": "12", 
+		"13": "13", 
+		"14": "14", 
+		"15": "15", 
+		"16": "16", 
+		"17": "17", 
+		"18": "18", 
+		"19": "19", 
+		"20": "20", 
+		"21": "21", 
+		"22": "22", 
+		"23": "23", 
+		"24": "24", 
+		"25": "25", 
+		"26": "26", 
+		"27": "27", 
+		"28": "28", 
+		"29": "29", 
+		"30": "30", 
+		"31": "31", 
+		"32": "32", 
+		"33": "33", 
+		"34": "34", 
+		"35": "35", 
+		"36": "36", 
+		"37": "37", 
+		"38": "38", 
+		"39": "39", 
+		"40": "40", 
+		"63": "Non Contr\u00f4l\u00e9"
+	}
+	}, 
+	"DTCRecord": {
+	"bytescount": 3, 
+	"byte": true, 
+	"bitscount": 24
+	}, 
+	"DataRecorder_Coded_ClutchTorqueEst": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 100.0, 
+	"bitscount": 16, 
+	"unit": "Nm"
+	}, 
+	"DTCStatus.testNotCompletedThisMonitoringCycle": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "No", 
+		"1": "Yes"
+	}
+	}, 
+	"FirstDTC": {
+	"bytescount": 2, 
+	"bitscount": 16
+	}, 
+	"LED status": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "LED_Off", 
+		"1": "LED_On", 
+		"2": "LED_Flashing"
+	}
+	}, 
+	"Producteur MUX ABS": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "Pr\u00e9sent", 
+		"2": "Absent", 
+		"3": "Confirm\u00e9 Absent"
+	}
+	}, 
+	"FactoryMode": {
+	"lists": {
+		"0": "Customer Mode", 
+		"255": "Factory Mode"
+	}
+	}, 
+	"TNG_ClutchPosHB": {
+	"scaled": true, 
+	"unit": "dig _80% Stroke"
+	}, 
+	"Producteur MUX Synth\u00e8se parole": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "Pr\u00e9sent", 
+		"2": "Absent", 
+		"3": "Confirm\u00e9 Absent"
+	}
+	}, 
+	"Producteur MUX Airbag compteur": {
+	"bitscount": 6, 
+	"lists": {
+		"0": "0", 
+		"1": "1", 
+		"2": "2", 
+		"3": "3", 
+		"4": "4", 
+		"5": "5", 
+		"6": "6", 
+		"7": "7", 
+		"8": "8", 
+		"9": "9", 
+		"10": "10", 
+		"11": "11", 
+		"12": "12", 
+		"13": "13", 
+		"14": "14", 
+		"15": "15", 
+		"16": "16", 
+		"17": "17", 
+		"18": "18", 
+		"19": "19", 
+		"20": "20", 
+		"21": "21", 
+		"22": "22", 
+		"23": "23", 
+		"24": "24", 
+		"25": "25", 
+		"26": "26", 
+		"27": "27", 
+		"28": "28", 
+		"29": "29", 
+		"30": "30", 
+		"31": "31", 
+		"32": "32", 
+		"33": "33", 
+		"34": "34", 
+		"35": "35", 
+		"36": "36", 
+		"37": "37", 
+		"38": "38", 
+		"39": "39", 
+		"40": "40", 
+		"63": "Non Contr\u00f4l\u00e9"
+	}
+	}, 
+	"Snapshot_LastBreakOperation_Left": {
+	"bitscount": 6, 
+	"lists": {
+		"0": "None (reset)", 
+		"1": "AUTOAPPLY_APPLY_DEMAND", 
+		"2": "AUTOADJUST_APPLY_DEMAND", 
+		"3": "AUTOADJUST_RELEASE_DEMAND", 
+		"6": "DAA_DEMAND", 
+		"7": "DSD_REDUCED_CLAMP_APPLY_DEMAND", 
+		"8": "DSD_APPLY_DEMAND", 
+		"9": "DSD_RELEASE_DEMAND", 
+		"10": "DYNAMIC_SWITCH_RELEASE_DEMAND", 
+		"12": "HTR_DEMAND", 
+		"13": "HU_FUNCTION_APPLY_DEMAND", 
+		"14": "HU_FUNCTION_HOLD", 
+		"15": "HU_FUNCTION_RELEASE_DEMAND", 
+		"16": "LIMP_HOME_SWITCH_RELEASE_DEMAND", 
+		"17": "MCR_DEMAND", 
+		"18": "RECLAMP_DEMAND", 
+		"19": "RCD_APPLY_DEMAND", 
+		"20": "RCD_RELEASE_DEMAND", 
+		"22": "RWU_APPLY_DEMAND", 
+		"23": "RWU_HOLD_DEMAND", 
+		"24": "RWU_RELEASE_DEMAND", 
+		"25": "STATIC_SWITCH_APPLY_DEMAND", 
+		"26": "STATIC_SWITCH_RELEASE_DEMAND", 
+		"27": "STOA_DEMAND", 
+		"28": "DIAG_REL_TO_SERVICE_POSITION_DEMAND", 
+		"30": "DIAG_APPLY_DEMAND", 
+		"31": "DIAG_RELEASE_DEMAND", 
+		"32": "ASSEMBLY_CHECK_DEMAND"
+	}
+	}, 
+	"Snapshot_BrakeForceValueEstimatedLeft": {
+	"scaled": true, 
+	"step": 0.1, 
+	"unit": "Kn"
+	}, 
+	"PHY_GearBoxRatioVector-6th ratio": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 1000.0, 
+	"bitscount": 16, 
+	"unit": "nu"
+	}, 
+	"Curve_Clutch[0]": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"bitscount": 16
+	}, 
+	"DataRecorder_Coded_EngineStatus": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "engine stopped", 
+		"1": "Reserved", 
+		"2": "independant  running engine", 
+		"3": "running engine-driven"
+	}
+	}, 
+	"DataRecorder_TimeOut_AT": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "GEARBOX node received", 
+		"1": "GEARBOX node absent"
+	}
+	}, 
+	"DataRecorder_VehForwardSlope": {
+	"divideby": 10.0, 
+	"bitscount": 16, 
+	"signed": true, 
+	"scaled": true, 
+	"step": 2.0, 
+	"bytescount": 2, 
+	"unit": "%g"
+	}, 
+	"Curve_E_C_T_toa_EVO_Curve_E_C_T_init_10": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 100.0, 
+	"bitscount": 16, 
+	"unit": "Nm"
+	}, 
+	"EstimatedPowertainWheelTorque": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"step": 0.5, 
+	"bitscount": 16, 
+	"offset": -6400.0
+	}, 
+	"DataRecorder_TimeOut_USM": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "USM node received", 
+		"1": "USM node absent"
+	}
+	}, 
+	"DTCFailureType.ManufacturerOrSupplier": {
+	"bitscount": 4
+	}, 
+	"Producteur MUX Boite auto compteur": {
+	"bitscount": 6, 
+	"lists": {
+		"0": "0", 
+		"1": "1", 
+		"2": "2", 
+		"3": "3", 
+		"4": "4", 
+		"5": "5", 
+		"6": "6", 
+		"7": "7", 
+		"8": "8", 
+		"9": "9", 
+		"10": "10", 
+		"11": "11", 
+		"12": "12", 
+		"13": "13", 
+		"14": "14", 
+		"15": "15", 
+		"16": "16", 
+		"17": "17", 
+		"18": "18", 
+		"19": "19", 
+		"20": "20", 
+		"21": "21", 
+		"22": "22", 
+		"23": "23", 
+		"24": "24", 
+		"25": "25", 
+		"26": "26", 
+		"27": "27", 
+		"28": "28", 
+		"29": "29", 
+		"30": "30", 
+		"31": "31", 
+		"32": "32", 
+		"33": "33", 
+		"34": "34", 
+		"35": "35", 
+		"36": "36", 
+		"37": "37", 
+		"38": "38", 
+		"39": "39", 
+		"40": "40", 
+		"63": "Non Contr\u00f4l\u00e9"
+	}
+	}, 
+	"Producteur MUX Frein parking compteur": {
+	"bitscount": 6, 
+	"lists": {
+		"0": "0", 
+		"1": "1", 
+		"2": "2", 
+		"3": "3", 
+		"4": "4", 
+		"5": "5", 
+		"6": "6", 
+		"7": "7", 
+		"8": "8", 
+		"9": "9", 
+		"10": "10", 
+		"11": "11", 
+		"12": "12", 
+		"13": "13", 
+		"14": "14", 
+		"15": "15", 
+		"16": "16", 
+		"17": "17", 
+		"18": "18", 
+		"19": "19", 
+		"20": "20", 
+		"21": "21", 
+		"22": "22", 
+		"23": "23", 
+		"24": "24", 
+		"25": "25", 
+		"26": "26", 
+		"27": "27", 
+		"28": "28", 
+		"29": "29", 
+		"30": "30", 
+		"31": "31", 
+		"32": "32", 
+		"33": "33", 
+		"34": "34", 
+		"35": "35", 
+		"36": "36", 
+		"37": "37", 
+		"38": "38", 
+		"39": "39", 
+		"40": "40", 
+		"63": "Non Contr\u00f4l\u00e9"
+	}
+	}, 
+	"DTCStatus.testFailedThisMonitoringCycle": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "No", 
+		"1": "Yes"
+	}
+	}, 
+	"TNG_Tilt_Vector3": {
+	"scaled": true, 
+	"unit": "%g"
+	}, 
+	"TNG_Tilt_Vector2": {
+	"scaled": true, 
+	"unit": "%g"
+	}, 
+	"TNG_Tilt_Vector1": {
+	"scaled": true, 
+	"unit": "%g"
+	}, 
+	"TNG_Tilt_Vector7": {
+	"scaled": true, 
+	"unit": "%g"
+	}, 
+	"TNG_Tilt_Vector6": {
+	"scaled": true, 
+	"unit": "%g"
+	}, 
+	"TNG_Tilt_Vector5": {
+	"scaled": true, 
+	"unit": "%g"
+	}, 
+	"TNG_Tilt_Vector4": {
+	"scaled": true, 
+	"unit": "%g"
+	}, 
+	"DataRecorder_LastActiveEventLeft": {
+	"lists": {
+		"0": "None", 
+		"1": "Autoapply_Apply_Demand", 
+		"2": "Autoadjust_Apply_Demand", 
+		"3": "Autoadjust_Release_Demand", 
+		"6": "DAA_Demand", 
+		"7": "DSD_Reduced_Clamp_Apply_Demand", 
+		"8": "DSD_Apply_Demand", 
+		"9": "DSD_Release_Demand", 
+		"10": "Dynamic_Switch_Release_Demand", 
+		"12": "HTR_Demand", 
+		"13": "HU_Function_Apply_Demand", 
+		"14": "HU_Function_Hold", 
+		"15": "HU_Function_Release_Demand", 
+		"16": "Limp_Home_Switch_Release_Demand", 
+		"17": "MCR_Demand", 
+		"18": "Reclamp_Demand", 
+		"19": "RCD_Apply_Demand", 
+		"20": "RCD_Release_Demand", 
+		"22": "RWU_Apply_Demand", 
+		"23": "RWU_Hold_Demand", 
+		"24": "RWU_Release_Demand", 
+		"25": "Static_Switch_Apply_Demand", 
+		"26": "Static_Switch_Release_Demand", 
+		"27": "STOA_Demand", 
+		"28": "Diag_Rel_To_Service_Position_Demand", 
+		"29": "Diag_Inhibit_Actuator_Drive_Demand", 
+		"30": "Diag_Apply_Demand", 
+		"31": "Diag_Release_Demand", 
+		"32": "Assebly_Check_Demand"
+	}
+	}, 
+	"TNG_Tilt_Vector8": {
+	"scaled": true, 
+	"unit": "%g"
+	}, 
+	"PHY_GearBoxRatioVector-3rd ratio": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 1000.0, 
+	"bitscount": 16, 
+	"unit": "nu"
+	}, 
+	"DTCMaskRecord": {
+	"bytescount": 3, 
+	"byte": true, 
+	"bitscount": 24
+	}, 
+	"t_act_min_front": {
+	"scaled": true, 
+	"divideby": 50.0, 
+	"unit": "second"
+	}, 
+	"DataRecorder_Coded_EstimetedPowerTrainWheelTorque": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"step": 0.5, 
+	"bitscount": 16, 
+	"offset": 6400.0
+	}, 
+	"SupplierNumber": {
+	"comment": "Supplier code (hexa)", 
+	"bytescount": 3, 
+	"byte": true, 
+	"bitscount": 24
+	}, 
+	"TNG_ForgettingFactor_Step": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 1000.0, 
+	"bitscount": 16, 
+	"unit": "nu"
+	}, 
+	"Producteur MUX UPC compteur": {
+	"bitscount": 6, 
+	"lists": {
+		"0": "0", 
+		"1": "1", 
+		"2": "2", 
+		"3": "3", 
+		"4": "4", 
+		"5": "5", 
+		"6": "6", 
+		"7": "7", 
+		"8": "8", 
+		"9": "9", 
+		"10": "10", 
+		"11": "11", 
+		"12": "12", 
+		"13": "13", 
+		"14": "14", 
+		"15": "15", 
+		"16": "16", 
+		"17": "17", 
+		"18": "18", 
+		"19": "19", 
+		"20": "20", 
+		"21": "21", 
+		"22": "22", 
+		"23": "23", 
+		"24": "24", 
+		"25": "25", 
+		"26": "26", 
+		"27": "27", 
+		"28": "28", 
+		"29": "29", 
+		"30": "30", 
+		"31": "31", 
+		"32": "32", 
+		"33": "33", 
+		"34": "34", 
+		"35": "35", 
+		"36": "36", 
+		"37": "37", 
+		"38": "38", 
+		"39": "39", 
+		"40": "40", 
+		"63": "Non Contr\u00f4l\u00e9"
+	}
+	}, 
+	"DiagnosticIdentificationCode": {
+	"comment": "Diag evolution number", 
+	"byte": true
+	}, 
+	"SoftwareName": {
+	"bytesascii": true, 
+	"bytescount": 27, 
+	"byte": true, 
+	"bitscount": 216
+	}, 
+	"Producteur MUX Vignette": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "Pr\u00e9sent", 
+		"2": "Absent", 
+		"3": "Confirm\u00e9 Absent"
+	}
+	}, 
+	"Producteur MUX Commande Bva": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "Pr\u00e9sent", 
+		"2": "Absent", 
+		"3": "Confirm\u00e9 Absent"
+	}
+	}, 
+	"Curve_E_C_T_toa_EVO_Curve_E_C_T_init_20": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 100.0, 
+	"bitscount": 16, 
+	"unit": "Nm"
+	}, 
+	"EVO_Curve_E_C_T_init_10": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 100.0, 
+	"bitscount": 16, 
+	"unit": "Nm"
+	}, 
+	"Message TakeOffInhibitionWarning": {
+	"comment": "Message TakeOffInhibitionWarning", 
+	"bitscount": 2, 
+	"lists": {
+		"0": "No \"take off inhibition\" display request", 
+		"1": "Take off inhibition display request", 
+		"3": "Take off inhibition re-emission request"
+	}
+	}, 
+	"EVO_Curve_E_C_T_init_15": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 100.0, 
+	"bitscount": 16, 
+	"unit": "Nm"
+	}, 
+	"Snapshot_IgnitionSupplyConfirmation": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "APC off", 
+		"1": "APC on"
+	}
+	}, 
+	"Curve_Clutch_EVO_Curve_Clutch_init_2": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 100.0, 
+	"bitscount": 16, 
+	"unit": "dig"
+	}, 
+	"Curve_Clutch_EVO_Curve_Clutch_init_3": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 100.0, 
+	"bitscount": 16, 
+	"unit": "dig"
+	}, 
+	"Curve_Clutch_EVO_Curve_Clutch_init_0": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 100.0, 
+	"bitscount": 16, 
+	"unit": "dig"
+	}, 
+	"Curve_Clutch_EVO_Curve_Clutch_init_1": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 100.0, 
+	"bitscount": 16, 
+	"unit": "dig"
+	}, 
+	"Curve_Clutch_EVO_Curve_Clutch_init_6": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 100.0, 
+	"bitscount": 16, 
+	"unit": "dig"
+	}, 
+	"Curve_Clutch_EVO_Curve_Clutch_init_7": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 100.0, 
+	"bitscount": 16, 
+	"unit": "dig"
+	}, 
+	"Curve_Clutch_EVO_Curve_Clutch_init_4": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 100.0, 
+	"bitscount": 16, 
+	"unit": "dig"
+	}, 
+	"Cold_Country_&_ GearBox_Configuration": {
+	"bytescount": 2, 
+	"byte": true, 
+	"bitscount": 16
+	}, 
+	"Curve_Clutch_EVO_Curve_Clutch_init_8": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 100.0, 
+	"bitscount": 16, 
+	"unit": "dig"
+	}, 
+	"Curve_Clutch_EVO_Curve_Clutch_init_9": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 100.0, 
+	"bitscount": 16, 
+	"unit": "dig"
+	}, 
+	"Producteur MUX Injection compteur": {
+	"bitscount": 6, 
+	"lists": {
+		"0": "0", 
+		"1": "1", 
+		"2": "2", 
+		"3": "3", 
+		"4": "4", 
+		"5": "5", 
+		"6": "6", 
+		"7": "7", 
+		"8": "8", 
+		"9": "9", 
+		"10": "10", 
+		"11": "11", 
+		"12": "12", 
+		"13": "13", 
+		"14": "14", 
+		"15": "15", 
+		"16": "16", 
+		"17": "17", 
+		"18": "18", 
+		"19": "19", 
+		"20": "20", 
+		"21": "21", 
+		"22": "22", 
+		"23": "23", 
+		"24": "24", 
+		"25": "25", 
+		"26": "26", 
+		"27": "27", 
+		"28": "28", 
+		"29": "29", 
+		"30": "30", 
+		"31": "31", 
+		"32": "32", 
+		"33": "33", 
+		"34": "34", 
+		"35": "35", 
+		"36": "36", 
+		"37": "37", 
+		"38": "38", 
+		"39": "39", 
+		"40": "40", 
+		"63": "Non Contr\u00f4l\u00e9"
+	}
+	}, 
+	"DataRecorder_Coded_Curve_Clutch": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"bitscount": 16
+	}, 
+	"NDTC": {
+	"scaled": true
+	}, 
+	"MeanEffectiveTorque": {
+	"bitscount": 16, 
+	"scaled": true, 
+	"step": 0.5, 
+	"bytescount": 2, 
+	"offset": -400.0, 
+	"unit": "Nm"
+	}, 
+	"Producteur MUX R\u00e9pet BVA": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "Pr\u00e9sent", 
+		"2": "Absent", 
+		"3": "Confirm\u00e9 Absent"
+	}
+	}, 
+	"HardwareNumber.LowerPart": {
+	"bytesascii": true, 
+	"bytescount": 5, 
+	"byte": true, 
+	"bitscount": 40
+	}, 
+	"ApprovalNumber.BasicPartList": {
+	"lists": {
+		"0": "N/A"
+	}
+	}, 
+	"Standard Fault": {
+	"bitscount": 5, 
+	"lists": {
+		"0": "No possible classification about the type of fault", 
+		"1": "Open circuit", 
+		"2": "Short circuit to ground", 
+		"3": "Short circuit at battery +", 
+		"4": "Parameter at min limit", 
+		"5": "Parameter at max limit", 
+		"6": "Incoherency, not plausible", 
+		"7": "No signal", 
+		"8": "Below min. threshold", 
+		"9": "Above max. threshold", 
+		"10": "Permanent Low Level", 
+		"11": "Permanent High Level", 
+		"12": "Lines short-circuited", 
+		"13": "Internal electronic anomaly", 
+		"14": "Network default", 
+		"15": "Remote diagnostic", 
+		"16": "Disturbed communication", 
+		"17": "Microcuts", 
+		"18": "Abnormal voltage", 
+		"19": "Value out of range", 
+		"20": "Open circuit or Short circuit to ground", 
+		"21": "Open circuit or Short circuit to battery", 
+		"22": "Initialization / configuration not valid"
+	}
+	}, 
+	"IgnitionSupplyConfirmation": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "APC off", 
+		"1": "APC on"
+	}
+	}, 
+	"VehiculeState": {
+	"bitscount": 3, 
+	"lists": {
+		"0": "Vehicle asleep and engine stopped", 
+		"1": "Vehicle awake and engine stopped", 
+		"2": "Ignition ON (engine ready to start)", 
+		"3": "Starting in progress", 
+		"4": "vehicle awake and engine running"
+	}
+	}, 
+	"TNG_ClutchSensorFilter6": {
+	"divideby": 10000.0, 
+	"bitscount": 16, 
+	"scaled": true, 
+	"bytescount": 2, 
+	"offset": -10000.0, 
+	"unit": "nu"
+	}, 
+	"TNG_ClutchSensorFilter7": {
+	"divideby": 10000.0, 
+	"bitscount": 16, 
+	"scaled": true, 
+	"bytescount": 2, 
+	"offset": -10000.0, 
+	"unit": "nu"
+	}, 
+	"Reserved(8bits)": {
+	"scaled": true
+	}, 
+	"TNG_ClutchSensorFilter5": {
+	"divideby": 10000.0, 
+	"bitscount": 16, 
+	"scaled": true, 
+	"bytescount": 2, 
+	"offset": -10000.0, 
+	"unit": "nu"
+	}, 
+	"TNG_ClutchSensorFilter2": {
+	"divideby": 10000.0, 
+	"bitscount": 16, 
+	"scaled": true, 
+	"bytescount": 2, 
+	"offset": -10000.0, 
+	"unit": "nu"
+	}, 
+	"TNG_ClutchSensorFilter3": {
+	"divideby": 10000.0, 
+	"bitscount": 16, 
+	"scaled": true, 
+	"bytescount": 2, 
+	"offset": -10000.0, 
+	"unit": "nu"
+	}, 
+	"TNG_ClutchSensorFilter1": {
+	"divideby": 10000.0, 
+	"bitscount": 16, 
+	"scaled": true, 
+	"bytescount": 2, 
+	"offset": -10000.0, 
+	"unit": "nu"
+	}, 
+	"Producteur MUX Radar laser": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "Pr\u00e9sent", 
+		"2": "Absent", 
+		"3": "Confirm\u00e9 Absent"
+	}
+	}, 
+	"DataRecorder_AchievedClampLeftBefore": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "Kn"
+	}, 
+	"TNG_ClutchSensorFilter8": {
+	"divideby": 10000.0, 
+	"bitscount": 16, 
+	"scaled": true, 
+	"bytescount": 2, 
+	"offset": -10000.0, 
+	"unit": "nu"
+	}, 
+	"TNG_ClutchSensorFilter9": {
+	"divideby": 10000.0, 
+	"bitscount": 16, 
+	"scaled": true, 
+	"bytescount": 2, 
+	"offset": -10000.0, 
+	"unit": "nu"
+	}, 
+	"DriverDoorState": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "Driver door closed", 
+		"1": "Driver door open"
+	}
+	}, 
+	"VehicleForwardSlope": {
+	"scaled": true, 
+	"comment": "Raw signal coming from Tilt Sensor: TiltSensor variable is in TOA algorithm. Unit: %g.", 
+	"unit": "%g", 
+	"signed": true
+	}, 
+	"Producteur MUX Radar laser compteur": {
+	"bitscount": 6, 
+	"lists": {
+		"0": "0", 
+		"1": "1", 
+		"2": "2", 
+		"3": "3", 
+		"4": "4", 
+		"5": "5", 
+		"6": "6", 
+		"7": "7", 
+		"8": "8", 
+		"9": "9", 
+		"10": "10", 
+		"11": "11", 
+		"12": "12", 
+		"13": "13", 
+		"14": "14", 
+		"15": "15", 
+		"16": "16", 
+		"17": "17", 
+		"18": "18", 
+		"19": "19", 
+		"20": "20", 
+		"21": "21", 
+		"22": "22", 
+		"23": "23", 
+		"24": "24", 
+		"25": "25", 
+		"26": "26", 
+		"27": "27", 
+		"28": "28", 
+		"29": "29", 
+		"30": "30", 
+		"31": "31", 
+		"32": "32", 
+		"33": "33", 
+		"34": "34", 
+		"35": "35", 
+		"36": "36", 
+		"37": "37", 
+		"38": "38", 
+		"39": "39", 
+		"40": "40", 
+		"63": "Non Contr\u00f4l\u00e9"
+	}
+	}, 
+	"EVO_Curve_D_ClutchPos_init": {
+	"scaled": true, 
+	"unit": "dig"
+	}, 
+	"TNG_ClutchSensorFilter10": {
+	"divideby": 10000.0, 
+	"bitscount": 16, 
+	"scaled": true, 
+	"bytescount": 2, 
+	"offset": -10000.0, 
+	"unit": "nu"
+	}, 
+	"TNG_ClutchSensorFilter11": {
+	"divideby": 10000.0, 
+	"bitscount": 16, 
+	"scaled": true, 
+	"bytescount": 2, 
+	"offset": -10000.0, 
+	"unit": "nu"
+	}, 
+	"TNG_ClutchSensorFilter12": {
+	"divideby": 10000.0, 
+	"bitscount": 16, 
+	"scaled": true, 
+	"bytescount": 2, 
+	"offset": -10000.0, 
+	"unit": "nu"
+	}, 
+	"DTCDeviceIdentifier": {
+	"bytescount": 2, 
+	"bitscount": 16, 
+	"lists": {
+		"20736": "FC_ACTUATOR_RIGHT", 
+		"20737": "FC_ACTUATOR_LEFT", 
+		"20835": "FC_ASSEMBLY_CHECK_NOT_DONE", 
+		"53252": "FC_WHEELSPEED_FAULT", 
+		"20678": "FC_MOTOR_SC_FET", 
+		"20838": "FC_CLUTCH_SENSOR", 
+		"20839": "FC_DOOR_STATUS_INVALID", 
+		"20840": "FC_MAX_BRAKING", 
+		"20841": "FC_IGNITION", 
+		"20683": "FC_DEMAND_LAMP", 
+		"20844": "FC_EPB_SWITCH", 
+		"20845": "FC_InterSystem_CAN", 
+		"20846": "FC_APPLY_SWITCH", 
+		"20847": "FC_RELEASE_SWITCH", 
+		"20675": "FC_ELECTRONIC_ECU", 
+		"20676": "FC_LONGITUDINAL_SENSOR", 
+		"61443": "FC_VOLTAGE"
+	}
+	}, 
+	"TNG_ClutchSensorFilter13": {
+	"divideby": 10000.0, 
+	"bitscount": 16, 
+	"scaled": true, 
+	"bytescount": 2, 
+	"offset": -10000.0, 
+	"unit": "nu"
+	}, 
+	"DataRecorder_Coded_EngineRPM": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"step": 0.125, 
+	"bitscount": 16, 
+	"unit": "Tr/min"
+	}, 
+	"Producteur MUX ABS compteur": {
+	"bitscount": 6, 
+	"lists": {
+		"0": "0", 
+		"1": "1", 
+		"2": "2", 
+		"3": "3", 
+		"4": "4", 
+		"5": "5", 
+		"6": "6", 
+		"7": "7", 
+		"8": "8", 
+		"9": "9", 
+		"10": "10", 
+		"11": "11", 
+		"12": "12", 
+		"13": "13", 
+		"14": "14", 
+		"15": "15", 
+		"16": "16", 
+		"17": "17", 
+		"18": "18", 
+		"19": "19", 
+		"20": "20", 
+		"21": "21", 
+		"22": "22", 
+		"23": "23", 
+		"24": "24", 
+		"25": "25", 
+		"26": "26", 
+		"27": "27", 
+		"28": "28", 
+		"29": "29", 
+		"30": "30", 
+		"31": "31", 
+		"32": "32", 
+		"33": "33", 
+		"34": "34", 
+		"35": "35", 
+		"36": "36", 
+		"37": "37", 
+		"38": "38", 
+		"39": "39", 
+		"40": "40", 
+		"63": "Non Contr\u00f4l\u00e9"
+	}
+	}, 
+	"DTCStatus.testNotCompletedSinceLastClear": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "No", 
+		"1": "Yes"
+	}
+	}, 
+	"EVO_Curve_Clutch_init_8": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 100.0, 
+	"bitscount": 16, 
+	"unit": "dig"
+	}, 
+	"Curve_E_C_T_toa_EVO_Curve_E_C_T_init_60": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 100.0, 
+	"bitscount": 16, 
+	"unit": "Nm"
+	}, 
+	"Producteur MUX ACC": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "Pr\u00e9sent", 
+		"2": "Absent", 
+		"3": "Confirm\u00e9 Absent"
+	}
+	}, 
+	"Odometer": {
+	"scaled": true, 
+	"step": 4.0, 
+	"bitscount": 5, 
+	"unit": "km", 
+	"signed": true
+	}, 
+	"DataRecorder_CurrentActLeft": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 1000.0, 
+	"bitscount": 16, 
+	"unit": "A"
+	}, 
+	"EVO_Curve_E_C_T_init_40": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 100.0, 
+	"bitscount": 16, 
+	"unit": "Nm"
+	}, 
+	"APBApplyCounterLeft": {
+	"scaled": true, 
+	"bytescount": 3, 
+	"bitscount": 24
+	}, 
+	"Producteur MUX Alternateur d\u00e9marreur": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "Pr\u00e9sent", 
+		"2": "Absent", 
+		"3": "Confirm\u00e9 Absent"
+	}
+	}, 
+	"Parameter_Checksum": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"bitscount": 16
+	}, 
+	"DTCStatusAvailabilityMask": {
+	"scaled": true
+	}, 
+	"PHY_VehMasse": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"bitscount": 16, 
+	"unit": "Kg"
+	}, 
+	"NeutralContact": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "Not Used", 
+		"1": "Neutral contact not reached", 
+		"2": "Neutral contact reached", 
+		"3": "Unavailable"
+	}
+	}, 
+	"ColdCountryMode": {
+	"lists": {
+		"0": "Normal (with auto)", 
+		"1": "Cold (without auto)", 
+		"255": "FF"
+	}
+	}, 
+	"DataRecorder_IgnSupplyConfirmation": {
+	"scaled": true, 
+	"bitscount": 1
+	}, 
+	"DateOfReprogramming": {
+	"comment": "date of the reprogramming yy.mm.dd", 
+	"bytescount": 3, 
+	"byte": true, 
+	"bitscount": 24
+	}, 
+	"DataRecorder_Coding_CondTorque": {
+	"scaled": true, 
+	"bitscount": 3
+	}, 
+	"VehiculeManufacturerSparPartNumber": {
+	"bytesascii": true, 
+	"bytescount": 10, 
+	"byte": true, 
+	"bitscount": 80
+	}, 
+	"TNG_ClutchPosAntLB": {
+	"scaled": true, 
+	"unit": "dig _20% Stroke"
+	}, 
+	"Module BusOff compteur": {
+	"bitscount": 6, 
+	"lists": {
+		"0": "0", 
+		"1": "1", 
+		"2": "2", 
+		"3": "3", 
+		"4": "4", 
+		"5": "5", 
+		"6": "6", 
+		"7": "7", 
+		"8": "8", 
+		"9": "9", 
+		"10": "10", 
+		"11": "11", 
+		"12": "12", 
+		"13": "13", 
+		"14": "14", 
+		"15": "15", 
+		"16": "16", 
+		"17": "17", 
+		"18": "18", 
+		"19": "19", 
+		"20": "20", 
+		"21": "21", 
+		"22": "22", 
+		"23": "23", 
+		"24": "24", 
+		"25": "25", 
+		"26": "26", 
+		"27": "27", 
+		"28": "28", 
+		"29": "29", 
+		"30": "30", 
+		"31": "31", 
+		"32": "32", 
+		"33": "33", 
+		"34": "34", 
+		"35": "35", 
+		"36": "36", 
+		"37": "37", 
+		"38": "38", 
+		"39": "39", 
+		"40": "40", 
+		"63": "Non Contr\u00f4l\u00e9"
+	}
+	}, 
+	"NumberOfReprogrammings": {
+	"scaled": true
+	}, 
+	"Producteur MUX Capteur ESP compteur": {
+	"bitscount": 6, 
+	"lists": {
+		"0": "0", 
+		"1": "1", 
+		"2": "2", 
+		"3": "3", 
+		"4": "4", 
+		"5": "5", 
+		"6": "6", 
+		"7": "7", 
+		"8": "8", 
+		"9": "9", 
+		"10": "10", 
+		"11": "11", 
+		"12": "12", 
+		"13": "13", 
+		"14": "14", 
+		"15": "15", 
+		"16": "16", 
+		"17": "17", 
+		"18": "18", 
+		"19": "19", 
+		"20": "20", 
+		"21": "21", 
+		"22": "22", 
+		"23": "23", 
+		"24": "24", 
+		"25": "25", 
+		"26": "26", 
+		"27": "27", 
+		"28": "28", 
+		"29": "29", 
+		"30": "30", 
+		"31": "31", 
+		"32": "32", 
+		"33": "33", 
+		"34": "34", 
+		"35": "35", 
+		"36": "36", 
+		"37": "37", 
+		"38": "38", 
+		"39": "39", 
+		"40": "40", 
+		"63": "Non Contr\u00f4l\u00e9"
+	}
+	}, 
+	"Producteur MUX UCH": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "Pr\u00e9sent", 
+		"2": "Absent", 
+		"3": "Confirm\u00e9 Absent"
+	}
+	}, 
+	"BrakeInfoStatus": {
+	"bitscount": 3, 
+	"lists": {
+		"1": "Brake pedal not pressed", 
+		"2": "Brake pedal pressed", 
+		"4": "Brake pedal confirmed pressed", 
+		"7": "unavailable"
+	}
+	}, 
+	"DataRecorder_Coded_TransmRangeEngaged_Target": {
+	"bitscount": 4, 
+	"lists": {
+		"0": "Declutched at rest", 
+		"1": "1st range", 
+		"2": "2nd range", 
+		"3": "3rd range", 
+		"4": "4th range", 
+		"5": "5th range", 
+		"6": "6th range", 
+		"9": "Reverse", 
+		"10": "Neutral or Parking", 
+		"11": "CVT in continuous mode", 
+		"15": "AT in limphome"
+	}
+	}, 
+	"TNG_Curve_ClutchPos_Offset1": {
+	"scaled": true
+	}, 
+	"EV0_ForgettingFactor_init": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 1000.0, 
+	"bitscount": 16, 
+	"unit": "nu"
+	}, 
+	"TNG_AccBoundTakeOff8": {
+	"scaled": true, 
+	"unit": "dig"
+	}, 
+	"TNG_TiltSensorTimeConstant": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "s"
+	}, 
+	"GenericApplicativeDiagEnable": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "Only faults reports and alerts that MUST remain active during cranking or sleeping periods are enabled", 
+		"1": "All  faults reports and alerts not related to APC power level are enabled", 
+		"2": "All  faults reports and alerts are enabled", 
+		"3": "Unavailable"
+	}
+	}, 
+	"TNG_AccBoundTakeOff1": {
+	"scaled": true, 
+	"unit": "dig"
+	}, 
+	"TNG_AccBoundTakeOff3": {
+	"scaled": true, 
+	"unit": "dig"
+	}, 
+	"TNG_AccBoundTakeOff2": {
+	"scaled": true, 
+	"unit": "dig"
+	}, 
+	"TNG_AccBoundTakeOff5": {
+	"scaled": true, 
+	"unit": "dig"
+	}, 
+	"TNG_AccBoundTakeOff4": {
+	"scaled": true, 
+	"unit": "dig"
+	}, 
+	"TNG_AccBoundTakeOff7": {
+	"scaled": true, 
+	"unit": "dig"
+	}, 
+	"TNG_AccBoundTakeOff6": {
+	"scaled": true, 
+	"unit": "dig"
+	}, 
+	"TNG_D_ClutchPosLB_Capture": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 100.0, 
+	"bitscount": 16, 
+	"unit": "dig/s"
+	}, 
+	"Checksum2": {
+	"bytescount": 2, 
+	"bitscount": 16, 
+	"lists": {
+		"0": "Checksum of the configuration data not correct", 
+		"1": "All checksums correct"
+	}
+	}, 
+	"Checksum3": {
+	"bytescount": 2, 
+	"bitscount": 16, 
+	"lists": {
+		"0": "Checksum of the configuration data not correct", 
+		"1": "All checksums correct"
+	}
+	}, 
+	"Message ParkingBrakeBindingStatusDisplay": {
+	"comment": "Message ParkingBrakeBindingStatusDisplay", 
+	"bitscount": 2, 
+	"lists": {
+		"0": "Parking Brake Released", 
+		"1": "Parking Brakes Applied", 
+		"2": "Unavailable state", 
+		"3": "Re-emission Request"
+	}
+	}, 
+	"Checksum6": {
+	"bytescount": 2, 
+	"bitscount": 16, 
+	"lists": {
+		"0": "Checksum of the configuration data not correct", 
+		"1": "All checksums correct"
+	}
+	}, 
+	"Checksum7": {
+	"bytescount": 2, 
+	"bitscount": 16, 
+	"lists": {
+		"0": "Checksum of the configuration data not correct", 
+		"1": "All checksums correct"
+	}
+	}, 
+	"Producteur MUX Injection": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "Pr\u00e9sent", 
+		"2": "Absent", 
+		"3": "Confirm\u00e9 Absent"
+	}
+	}, 
+	"Checksum5": {
+	"bytescount": 2, 
+	"bitscount": 16, 
+	"lists": {
+		"0": "Checksum of the configuration data not correct", 
+		"1": "All checksums correct"
+	}
+	}, 
+	"Producteur MUX Coslad": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "Pr\u00e9sent", 
+		"2": "Absent", 
+		"3": "Confirm\u00e9 Absent"
+	}
+	}, 
+	"BatteryVoltage": {
+	"scaled": true, 
+	"divideby": 16.0, 
+	"unit": "V"
+	}, 
+	"Producteur MUX Onduleur (v\u00e9hicule \u00e9lectrique)": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "Pr\u00e9sent", 
+		"2": "Absent", 
+		"3": "Confirm\u00e9 Absent"
+	}
+	}, 
+	"jfbj": {
+	"lists": {
+		"0": "not d", 
+		"1": "tajjbb"
+	}
+	}, 
+	"TransRangeEngaged": {
+	"bitscount": 4, 
+	"lists": {
+		"0": "Declutched at rest", 
+		"1": "1st range", 
+		"2": "2nd range", 
+		"3": "3nd range", 
+		"4": "4nd range", 
+		"5": "5nd range", 
+		"6": "6nd range", 
+		"9": "Reverse", 
+		"10": "Neutral or Parking", 
+		"11": "CVT in continuous mode", 
+		"15": "AT in limphome"
+	}
+	}, 
+	"StatusRoutineRequested": {
+	"lists": {
+		"3": "Routine Complete and NOK", 
+		"1": "Routine in progress", 
+		"2": "Routine Complete and OK", 
+		"11": "Routine Stopped", 
+		"4": "Routine Not Done"
+	}
+	}, 
+	"DataRecorder_Coded_RearGearEngaged": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "Not Used", 
+		"1": "Rear Gear not Engaged", 
+		"2": "Rear Gear Engaged", 
+		"3": "Unavailable"
+	}
+	}, 
+	"Producteur MUX SSPP compteur": {
+	"bitscount": 6, 
+	"lists": {
+		"0": "0", 
+		"1": "1", 
+		"2": "2", 
+		"3": "3", 
+		"4": "4", 
+		"5": "5", 
+		"6": "6", 
+		"7": "7", 
+		"8": "8", 
+		"9": "9", 
+		"10": "10", 
+		"11": "11", 
+		"12": "12", 
+		"13": "13", 
+		"14": "14", 
+		"15": "15", 
+		"16": "16", 
+		"17": "17", 
+		"18": "18", 
+		"19": "19", 
+		"20": "20", 
+		"21": "21", 
+		"22": "22", 
+		"23": "23", 
+		"24": "24", 
+		"25": "25", 
+		"26": "26", 
+		"27": "27", 
+		"28": "28", 
+		"29": "29", 
+		"30": "30", 
+		"31": "31", 
+		"32": "32", 
+		"33": "33", 
+		"34": "34", 
+		"35": "35", 
+		"36": "36", 
+		"37": "37", 
+		"38": "38", 
+		"39": "39", 
+		"40": "40", 
+		"63": "Non Contr\u00f4l\u00e9"
+	}
+	}, 
+	"Producteur MUX DCU": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "Pr\u00e9sent", 
+		"2": "Absent", 
+		"3": "Confirm\u00e9 Absent"
+	}
+	}, 
+	"t_act_max_back": {
+	"scaled": true, 
+	"divideby": 50.0, 
+	"unit": "second"
+	}, 
+	"Producteur MUX Frein parking": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "Pr\u00e9sent", 
+		"2": "Absent", 
+		"3": "Confirm\u00e9 Absent"
+	}
+	}, 
+	"RAMDownload": {
+	"lists": {
+		"0": "Disabled", 
+		"1": "Enabled"
+	}
+	}, 
+	"t_wait_min_front": {
+	"scaled": true, 
+	"divideby": 50.0, 
+	"unit": "second"
+	}, 
+	"Index_Last_Diag_Evolue_TOA": {
+	"scaled": true
+	}, 
+	"Message ParkingBrakeMalfunctionDisplay": {
+	"comment": "Message ParkingBrakeMalfunctionDisplay", 
+	"bitscount": 2, 
+	"lists": {
+		"0": "No FPA Default", 
+		"1": "Minor FPA Default", 
+		"2": "Major FPA Default"
+	}
+	}, 
+	"DataRecorder_Coding_CondGBC": {
+	"scaled": true, 
+	"bitscount": 3
+	}, 
+	"DistanzeTotalizer": {
+	"scaled": true, 
+	"bytescount": 4, 
+	"divideby": 100.0, 
+	"bitscount": 28, 
+	"unit": "km"
+	}, 
+	"Index_Last_Diag_Evolue_TOR": {
+	"scaled": true
+	}, 
+	"Snapshot_BatteryVoltage": {
+	"scaled": true, 
+	"step": 0.1, 
+	"unit": "V"
+	}, 
+	"DTCDeviceAndFailureTypeOBD": {
+	"bytescount": 2, 
+	"bitscount": 16
+	}, 
+	"SupplierNumber.ITG": {
+	"bytesascii": true, 
+	"bytescount": 3, 
+	"byte": true, 
+	"bitscount": 24, 
+	"comment": "Supplier ITG code"
+	}, 
+	"Address TOR DiagEvolue": {
+	"bytescount": 2, 
+	"bitscount": 16, 
+	"lists": {
+		"3808": "1. 'TOR' record -> HEX EE0", 
+		"3874": "12. 'TOR' record -> HEX F22", 
+		"3844": "7. 'TOR' record -> HEX F04", 
+		"3814": "2. 'TOR' record -> HEX EE6", 
+		"3880": "13. 'TOR' record -> HEX F28", 
+		"3850": "8. 'TOR' record -> HEX F0A", 
+		"3820": "3. 'TOR' record -> HEX EEC", 
+		"3886": "14. 'TOR' record -> HEX F2E", 
+		"3856": "9. 'TOR' record -> HEX F10", 
+		"3826": "4. 'TOR' record -> HEX EF2", 
+		"3892": "15. 'TOR' record -> HEX F34", 
+		"3862": "10. 'TOR' record -> HEX F16", 
+		"3832": "5. 'TOR' record -> HEX EF8", 
+		"3868": "11. 'TOR' record -> HEX F1C", 
+		"3838": "6. 'TOR' record -> HEX EFE"
+	}
+	}, 
+	"TNG_D_ClutchPos_tkf_LB": {
+	"scaled": true, 
+	"divideby": -0.5, 
+	"unit": "dig/s"
+	}, 
+	"TNG_ForgettingFactor_Final": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 1000.0, 
+	"bitscount": 16, 
+	"unit": "nu"
+	}, 
+	"Producteur MUX Angle volant compteur": {
+	"bitscount": 6, 
+	"lists": {
+		"0": "0", 
+		"1": "1", 
+		"2": "2", 
+		"3": "3", 
+		"4": "4", 
+		"5": "5", 
+		"6": "6", 
+		"7": "7", 
+		"8": "8", 
+		"9": "9", 
+		"10": "10", 
+		"11": "11", 
+		"12": "12", 
+		"13": "13", 
+		"14": "14", 
+		"15": "15", 
+		"16": "16", 
+		"17": "17", 
+		"18": "18", 
+		"19": "19", 
+		"20": "20", 
+		"21": "21", 
+		"22": "22", 
+		"23": "23", 
+		"24": "24", 
+		"25": "25", 
+		"26": "26", 
+		"27": "27", 
+		"28": "28", 
+		"29": "29", 
+		"30": "30", 
+		"31": "31", 
+		"32": "32", 
+		"33": "33", 
+		"34": "34", 
+		"35": "35", 
+		"36": "36", 
+		"37": "37", 
+		"38": "38", 
+		"39": "39", 
+		"40": "40", 
+		"63": "Non Contr\u00f4l\u00e9"
+	}
+	}, 
+	"MAP_ProgressiveRelease": {
+	"bytescount": 8, 
+	"byte": true, 
+	"bitscount": 64
+	}, 
+	"Producteur MUX Airbag": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "Pr\u00e9sent", 
+		"2": "Absent", 
+		"3": "Confirm\u00e9 Absent"
+	}
+	}, 
+	"Snapshot_LastBreakOperation_Right": {
+	"bitscount": 6, 
+	"lists": {
+		"0": "None (reset)", 
+		"1": "AUTOAPPLY_APPLY_DEMAND", 
+		"2": "AUTOADJUST_APPLY_DEMAND", 
+		"3": "AUTOADJUST_RELEASE_DEMAND", 
+		"6": "DAA_DEMAND", 
+		"7": "DSD_REDUCED_CLAMP_APPLY_DEMAND", 
+		"8": "DSD_APPLY_DEMAND", 
+		"9": "DSD_RELEASE_DEMAND", 
+		"10": "DYNAMIC_SWITCH_RELEASE_DEMAND", 
+		"12": "HTR_DEMAND", 
+		"13": "HU_FUNCTION_APPLY_DEMAND", 
+		"14": "HU_FUNCTION_HOLD", 
+		"15": "HU_FUNCTION_RELEASE_DEMAND", 
+		"16": "LIMP_HOME_SWITCH_RELEASE_DEMAND", 
+		"17": "MCR_DEMAND", 
+		"18": "RECLAMP_DEMAND", 
+		"19": "RCD_APPLY_DEMAND", 
+		"20": "RCD_RELEASE_DEMAND", 
+		"22": "RWU_APPLY_DEMAND", 
+		"23": "RWU_HOLD_DEMAND", 
+		"24": "RWU_RELEASE_DEMAND", 
+		"25": "STATIC_SWITCH_APPLY_DEMAND", 
+		"26": "STATIC_SWITCH_RELEASE_DEMAND", 
+		"27": "STOA_DEMAND", 
+		"28": "DIAG_REL_TO_SERVICE_POSITION_DEMAND", 
+		"30": "DIAG_APPLY_DEMAND", 
+		"31": "DIAG_RELEASE_DEMAND", 
+		"32": "ASSEMBLY_CHECK_DEMAND"
+	}
+	}, 
+	"Producteur MUX SSPP": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "Pr\u00e9sent", 
+		"2": "Absent", 
+		"3": "Confirm\u00e9 Absent"
+	}
+	}, 
+	"Curve_E_C_T_toa_EVO_Curve_E_C_T_init_15": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 100.0, 
+	"bitscount": 16
+	}, 
+	"TNG_AntByClutchSpeed": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 1000.0, 
+	"bitscount": 16, 
+	"unit": "s"
+	}, 
+	"PHY_GearBoxRatioVector-0value": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 1000.0, 
+	"bitscount": 16, 
+	"unit": "nu"
+	}, 
+	"Module BusOff": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "BusOn", 
+		"2": "BusOff", 
+		"3": "Confirm\u00e9 BusOff"
+	}
+	}, 
+	"Producteur MUX GPL compteur": {
+	"bitscount": 6, 
+	"lists": {
+		"0": "0", 
+		"1": "1", 
+		"2": "2", 
+		"3": "3", 
+		"4": "4", 
+		"5": "5", 
+		"6": "6", 
+		"7": "7", 
+		"8": "8", 
+		"9": "9", 
+		"10": "10", 
+		"11": "11", 
+		"12": "12", 
+		"13": "13", 
+		"14": "14", 
+		"15": "15", 
+		"16": "16", 
+		"17": "17", 
+		"18": "18", 
+		"19": "19", 
+		"20": "20", 
+		"21": "21", 
+		"22": "22", 
+		"23": "23", 
+		"24": "24", 
+		"25": "25", 
+		"26": "26", 
+		"27": "27", 
+		"28": "28", 
+		"29": "29", 
+		"30": "30", 
+		"31": "31", 
+		"32": "32", 
+		"33": "33", 
+		"34": "34", 
+		"35": "35", 
+		"36": "36", 
+		"37": "37", 
+		"38": "38", 
+		"39": "39", 
+		"40": "40", 
+		"63": "Non Contr\u00f4l\u00e9"
+	}
+	}, 
+	"Snapshot_GenericApplicativeDiagEnable": {
+	"scaled": true, 
+	"bitscount": 2
+	}, 
+	"DTCStatus.testFailed": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "No", 
+		"1": "Yes"
+	}
+	}, 
+	"TNG_D_Clutch_tkf_TimeConstant": {
+	"scaled": true, 
+	"divideby": 100.0, 
+	"unit": "s"
+	}, 
+	"RearGearEngaged": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "Not Used", 
+		"1": "Rear Gear not Engaged", 
+		"2": "Rear Gear Engaged", 
+		"3": "Unavailable"
+	}
+	}, 
+	"CrcOfLogSave": {
+	"bytescount": 2, 
+	"byte": true, 
+	"bitscount": 16
+	}, 
+	"WakeUpType": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "Customer wake up", 
+		"1": "Technical wake up"
+	}
+	}, 
+	"Reserved Renault Tracability": {
+	"bytescount": 12, 
+	"byte": true, 
+	"bitscount": 96
+	}, 
+	"HardwareNumber.BasicPartList": {
+	"lists": {
+		"0": "N/A", 
+		"1": "285F3"
+	}
+	}, 
+	"Snapshot_BrakeForceValueEstimatedRight": {
+	"scaled": true, 
+	"step": 0.1, 
+	"unit": "Kn"
+	}, 
+	"TNG_FirstGearRatioGain": {
+	"scaled": true, 
+	"divideby": 100.0, 
+	"unit": "nu"
+	}, 
+	"Producteur MUX Navigation compteur": {
+	"bitscount": 6, 
+	"lists": {
+		"0": "0", 
+		"1": "1", 
+		"2": "2", 
+		"3": "3", 
+		"4": "4", 
+		"5": "5", 
+		"6": "6", 
+		"7": "7", 
+		"8": "8", 
+		"9": "9", 
+		"10": "10", 
+		"11": "11", 
+		"12": "12", 
+		"13": "13", 
+		"14": "14", 
+		"15": "15", 
+		"16": "16", 
+		"17": "17", 
+		"18": "18", 
+		"19": "19", 
+		"20": "20", 
+		"21": "21", 
+		"22": "22", 
+		"23": "23", 
+		"24": "24", 
+		"25": "25", 
+		"26": "26", 
+		"27": "27", 
+		"28": "28", 
+		"29": "29", 
+		"30": "30", 
+		"31": "31", 
+		"32": "32", 
+		"33": "33", 
+		"34": "34", 
+		"35": "35", 
+		"36": "36", 
+		"37": "37", 
+		"38": "38", 
+		"39": "39", 
+		"40": "40", 
+		"63": "Non Contr\u00f4l\u00e9"
+	}
+	}, 
+	"Producteur MUX Climatisation compteur": {
+	"bitscount": 6, 
+	"lists": {
+		"0": "0", 
+		"1": "1", 
+		"2": "2", 
+		"3": "3", 
+		"4": "4", 
+		"5": "5", 
+		"6": "6", 
+		"7": "7", 
+		"8": "8", 
+		"9": "9", 
+		"10": "10", 
+		"11": "11", 
+		"12": "12", 
+		"13": "13", 
+		"14": "14", 
+		"15": "15", 
+		"16": "16", 
+		"17": "17", 
+		"18": "18", 
+		"19": "19", 
+		"20": "20", 
+		"21": "21", 
+		"22": "22", 
+		"23": "23", 
+		"24": "24", 
+		"25": "25", 
+		"26": "26", 
+		"27": "27", 
+		"28": "28", 
+		"29": "29", 
+		"30": "30", 
+		"31": "31", 
+		"32": "32", 
+		"33": "33", 
+		"34": "34", 
+		"35": "35", 
+		"36": "36", 
+		"37": "37", 
+		"38": "38", 
+		"39": "39", 
+		"40": "40", 
+		"63": "Non Contr\u00f4l\u00e9"
+	}
+	}, 
+	"EVO_Curve_E_C_T_init_50": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 100.0, 
+	"bitscount": 16, 
+	"unit": "Nm"
+	}, 
+	"Message APBNotTightenedWarning": {
+	"comment": "Message APBNotTightenedWarning", 
+	"bitscount": 1, 
+	"lists": {
+		"0": "No APB not tightened warning display requested", 
+		"1": "Parking brake not tightened warning display requested"
+	}
+	}, 
+	"BrakeForceValueEstimatedRight": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "Kn"
+	}, 
+	"EngineStopDriverRequested": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "no engine stop requested by driver", 
+		"1": "nominal engine stop requested by driver"
+	}
+	}, 
+	"Checksum": {
+	"lists": {
+		"0": "Checksum of the configuration data not correct", 
+		"1": "All checksums correct"
+	}
+	}, 
+	"DataRecorder_AchievedClampRightAfter": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "Kn"
+	}, 
+	"DataRecorder_Coded_ClutchSensor": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 10.0, 
+	"bitscount": 10, 
+	"unit": "%"
+	}, 
+	"DataRecorder_SwitchState": {
+	"bitscount": 4, 
+	"lists": {
+		"0": "new idle", 
+		"1": "idle", 
+		"2": "new apply", 
+		"3": "apply", 
+		"4": "new release", 
+		"5": "release", 
+		"6": "invalid"
+	}
+	}, 
+	"PHY_EngineInertia": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 10000.0, 
+	"bitscount": 16, 
+	"unit": "Kg*m\u00b2"
+	}, 
+	"DataRecorder_Coded_WheelTorqueBound_AT": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 10.0, 
+	"bitscount": 16, 
+	"unit": "Nm"
+	}, 
+	"WheelFrontRightSpeed(CAN)": {
+	"bitscount": 16, 
+	"format": "000.00", 
+	"scaled": true, 
+	"step": 0.0417, 
+	"bytescount": 2, 
+	"unit": "rpm"
+	}, 
+	"DataRecorder_Coded_ClutchPos_Ant": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 100.0, 
+	"bitscount": 16
+	}, 
+	"Snapshot_PresenceCounter": {
+	"scaled": true
+	}, 
+	"DataRecorder_TimeOut_ABS": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "BRAKE node received", 
+		"1": "BRAKE node absent"
+	}
+	}, 
+	"DataRecorder_VehiculeSpeed": {
+	"bitscount": 16, 
+	"format": "000.00", 
+	"scaled": true, 
+	"step": 0.01, 
+	"bytescount": 2, 
+	"unit": "km/h"
+	}, 
+	"WheelRearLeftSpeed(CAN)": {
+	"bitscount": 16, 
+	"format": "000.00", 
+	"scaled": true, 
+	"step": 0.0417, 
+	"bytescount": 2, 
+	"unit": "rpm"
+	}, 
+	"DataRecorder_Coded_NeutralContact": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "Not Used", 
+		"1": "Neutral contact not reached", 
+		"2": "Neutral contact reached", 
+		"3": "Unavailable"
+	}
+	}, 
+	"Producteur MUX Capteur ESP": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "Pr\u00e9sent", 
+		"2": "Absent", 
+		"3": "Confirm\u00e9 Absent"
+	}
+	}, 
+	"Producteur MUX GPL": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "Pr\u00e9sent", 
+		"2": "Absent", 
+		"3": "Confirm\u00e9 Absent"
+	}
+	}, 
+	"SessionName": {
+	"lists": {
+		"192": "Factory and after sales session ($C0)", 
+		"129": "Default Session ($81)"
+	}
+	}, 
+	"DTCExtendedData.AgingCounter": {
+	"scaled": true, 
+	"comment": "Description of the extendedData AgingCounter (use by Failure Page to decode data)"
+	}, 
+	"TNG_TorActivation_flag": {
+	"lists": {
+		"0": "No Activated", 
+		"1": "Activated", 
+		"255": "255"
+	}
+	}, 
+	"DataRecorder_VoltageActRight": {
+	"divideby": 1000.0, 
+	"bitscount": 16, 
+	"signed": true, 
+	"scaled": true, 
+	"bytescount": 2, 
+	"unit": "V"
+	}, 
+	"Nb bytes demand\u00e9s": {
+	"bytescount": 2, 
+	"byte": true, 
+	"bitscount": 16
+	}, 
+	"DataRecorder_BrakeStatusRightAfter": {
+	"bitscount": 4, 
+	"lists": {
+		"0": "Applied", 
+		"1": "Applying", 
+		"2": "Fully Applied", 
+		"3": "Released", 
+		"4": "Releasing", 
+		"5": "Unknown", 
+		"6": "Init", 
+		"7": "Fully released - Maintenance Mode", 
+		"8": "Wind Back - Released to fully released"
+	}
+	}, 
+	"DataRecorder_Coded_ClutchTorqueBound": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"bitscount": 16, 
+	"unit": "Nm"
+	}, 
+	"Producteur MUX SKL": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "Pr\u00e9sent", 
+		"2": "Absent", 
+		"3": "Confirm\u00e9 Absent"
+	}
+	}, 
+	"TNG_D_ClutchPos_tkf_HB": {
+	"scaled": true, 
+	"divideby": 0.5, 
+	"unit": "dig/s"
+	}, 
+	"BDUOpeningAnticipation": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "BDU not about to open", 
+		"1": "BDU is about to open"
+	}
+	}, 
+	"Producteur MUX Moteur syst\u00e8me 4/4": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "Pr\u00e9sent", 
+		"2": "Absent", 
+		"3": "Confirm\u00e9 Absent"
+	}
+	}, 
+	"ClutchPedalPosition": {
+	"scaled": true, 
+	"comment": "clutchPedal signal coming from Clutch Sensor: ClutchSensor variable is in TOA algorithm Unit: 0-100%"
+	}, 
+	"DTCStatus.pendingDTC": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "No", 
+		"1": "Yes"
+	}
+	}, 
+	"Producteur MUX Boite auto": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "Pr\u00e9sent", 
+		"2": "Absent", 
+		"3": "Confirm\u00e9 Absent"
+	}
+	}, 
+	"Producteur MUX Supperviseur (v\u00e9hicule \u00e9lectrique)": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "Pr\u00e9sent", 
+		"2": "Absent", 
+		"3": "Confirm\u00e9 Absent"
+	}
+	}, 
+	"Curve_E_C_T_toa_EVO_Curve_E_C_T_init_50": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 100.0, 
+	"bitscount": 16, 
+	"unit": "Nm"
+	}, 
+	"Curve_E_C_T_toa_EVO_Curve_E_C_T_init_25": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 100.0, 
+	"bitscount": 16, 
+	"unit": "Nm"
+	}, 
+	"ActuatorCurrentNominalValueRR": {
+	"scaled": true, 
+	"step": 0.2, 
+	"unit": "A"
+	}, 
+	"TNG_Curve_D_ClutchPos_Final": {
+	"scaled": true, 
+	"unit": "dig"
+	}, 
+	"ActuatorCurrentNominalValueRL": {
+	"scaled": true, 
+	"step": 0.2, 
+	"unit": "A"
+	}, 
+	"DataRecorder_TimeSinceBuzzer": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"bitscount": 16
+	}, 
+	"Producteur MUX Climatisation": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "Pr\u00e9sent", 
+		"2": "Absent", 
+		"3": "Confirm\u00e9 Absent"
+	}
+	}, 
+	"DataRecorder_TimeOut_ECM": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "ENGINE node received", 
+		"1": "ENGINE node absent"
+	}
+	}, 
+	"GearBoxType": {
+	"lists": {
+		"0": "BVM", 
+		"1": "BVA", 
+		"2": "CVT", 
+		"3": "Not Configured"
+	}
+	}, 
+	"Producteur MUX Contr\u00f4le \u00e9lectrique couple compteur": {
+	"bitscount": 6, 
+	"lists": {
+		"0": "0", 
+		"1": "1", 
+		"2": "2", 
+		"3": "3", 
+		"4": "4", 
+		"5": "5", 
+		"6": "6", 
+		"7": "7", 
+		"8": "8", 
+		"9": "9", 
+		"10": "10", 
+		"11": "11", 
+		"12": "12", 
+		"13": "13", 
+		"14": "14", 
+		"15": "15", 
+		"16": "16", 
+		"17": "17", 
+		"18": "18", 
+		"19": "19", 
+		"20": "20", 
+		"21": "21", 
+		"22": "22", 
+		"23": "23", 
+		"24": "24", 
+		"25": "25", 
+		"26": "26", 
+		"27": "27", 
+		"28": "28", 
+		"29": "29", 
+		"30": "30", 
+		"31": "31", 
+		"32": "32", 
+		"33": "33", 
+		"34": "34", 
+		"35": "35", 
+		"36": "36", 
+		"37": "37", 
+		"38": "38", 
+		"39": "39", 
+		"40": "40", 
+		"63": "Non Contr\u00f4l\u00e9"
+	}
+	}, 
+	"MAP_Processing_TOA": {
+	"bytescount": 51, 
+	"byte": true, 
+	"bitscount": 408
+	}, 
+	"MAP_Evolutive_TOA": {
+	"bytescount": 43, 
+	"byte": true, 
+	"bitscount": 344
+	}, 
+	"TNG_VehSpeedLB_toa": {
+	"scaled": true, 
+	"divideby": 100.0, 
+	"comment": "BVA parameter", 
+	"unit": "m/s (BVA)"
+	}, 
+	"DataRecorder_Curve_Clutch_4": {
+	"scaled": true
+	}, 
+	"DataRecorder_Curve_Clutch_5": {
+	"scaled": true
+	}, 
+	"DataRecorder_Curve_Clutch_6": {
+	"scaled": true
+	}, 
+	"DataRecorder_Curve_Clutch_7": {
+	"scaled": true
+	}, 
+	"DataRecorder_Curve_Clutch_0": {
+	"scaled": true
+	}, 
+	"DataRecorder_Curve_Clutch_1": {
+	"scaled": true
+	}, 
+	"ABSinRegulation": {
+	"lists": {
+		"0": "No ABS regulation", 
+		"1": "ABS in regulation"
+	}
+	}, 
+	"DataRecorder_Curve_Clutch_3": {
+	"scaled": true
+	}, 
+	"EditionNumber": {
+	"comment": "Software version(edition) number", 
+	"bytescount": 2, 
+	"byte": true, 
+	"bitscount": 16
+	}, 
+	"DataRecorder_Curve_Clutch_8": {
+	"scaled": true
+	}, 
+	"DataRecorder_AchievedClampLeftAfter": {
+	"scaled": true, 
+	"divideby": 10.0, 
+	"unit": "Kn"
+	}, 
+	"Producteur MUX Verrou colonne 3 compteur": {
+	"bitscount": 6, 
+	"lists": {
+		"0": "0", 
+		"1": "1", 
+		"2": "2", 
+		"3": "3", 
+		"4": "4", 
+		"5": "5", 
+		"6": "6", 
+		"7": "7", 
+		"8": "8", 
+		"9": "9", 
+		"10": "10", 
+		"11": "11", 
+		"12": "12", 
+		"13": "13", 
+		"14": "14", 
+		"15": "15", 
+		"16": "16", 
+		"17": "17", 
+		"18": "18", 
+		"19": "19", 
+		"20": "20", 
+		"21": "21", 
+		"22": "22", 
+		"23": "23", 
+		"24": "24", 
+		"25": "25", 
+		"26": "26", 
+		"27": "27", 
+		"28": "28", 
+		"29": "29", 
+		"30": "30", 
+		"31": "31", 
+		"32": "32", 
+		"33": "33", 
+		"34": "34", 
+		"35": "35", 
+		"36": "36", 
+		"37": "37", 
+		"38": "38", 
+		"39": "39", 
+		"40": "40", 
+		"63": "Non Contr\u00f4l\u00e9"
+	}
+	}, 
+	"ProgrammingToolReference": {
+	"bytesascii": true, 
+	"bytescount": 5, 
+	"byte": true, 
+	"bitscount": 40
+	}, 
+	"t_act_min_back": {
+	"scaled": true, 
+	"divideby": 50.0, 
+	"unit": "second"
+	}, 
+	"TNG_ClutchPosMB": {
+	"scaled": true, 
+	"unit": "dig _60% Stroke"
+	}, 
+	"Vehicle_Configuration": {
+	"bytescount": 21, 
+	"byte": true, 
+	"bitscount": 168
+	}, 
+	"Gearlevelposition": {
+	"bitscount": 4, 
+	"lists": {
+		"0": "Parking", 
+		"1": "Reverse", 
+		"2": "Neutral", 
+		"3": "Drive", 
+		"4": "4th Gear", 
+		"5": "3th Gear", 
+		"6": "2th Gear", 
+		"7": "1th Gear", 
+		"8": "Intermediate P/R or N/R", 
+		"9": "Intermediate N/D", 
+		"10": "Intermediate", 
+		"11": "Manual Mode", 
+		"12": "6th Gear", 
+		"13": "7th Gear", 
+		"14": "5th Gear", 
+		"15": "Not Available (Init or Lever Switched failure)"
+	}
+	}, 
+	"PHY_GearBoxRatioVector-4th ratio": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 1000.0, 
+	"bitscount": 16, 
+	"unit": "nu"
+	}, 
+	"Producteur MUX Navigation": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "Pr\u00e9sent", 
+		"2": "Absent", 
+		"3": "Confirm\u00e9 Absent"
+	}
+	}, 
+	"DataRecorder_Coding_CondEngineSpeed": {
+	"scaled": true, 
+	"bitscount": 3
+	}, 
+	"Reserved(1bits)": {
+	"scaled": true, 
+	"bitscount": 1
+	}, 
+	"ProgrammingSiteReference": {
+	"bytesascii": true, 
+	"bytescount": 5, 
+	"byte": true, 
+	"bitscount": 40
+	}, 
+	"Curve_Clutch_EVO_Curve_Clutch_init_5": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 100.0, 
+	"bitscount": 16, 
+	"unit": "dig"
+	}, 
+	"Producteur MUX PSD compteur": {
+	"bitscount": 6, 
+	"lists": {
+		"0": "0", 
+		"1": "1", 
+		"2": "2", 
+		"3": "3", 
+		"4": "4", 
+		"5": "5", 
+		"6": "6", 
+		"7": "7", 
+		"8": "8", 
+		"9": "9", 
+		"10": "10", 
+		"11": "11", 
+		"12": "12", 
+		"13": "13", 
+		"14": "14", 
+		"15": "15", 
+		"16": "16", 
+		"17": "17", 
+		"18": "18", 
+		"19": "19", 
+		"20": "20", 
+		"21": "21", 
+		"22": "22", 
+		"23": "23", 
+		"24": "24", 
+		"25": "25", 
+		"26": "26", 
+		"27": "27", 
+		"28": "28", 
+		"29": "29", 
+		"30": "30", 
+		"31": "31", 
+		"32": "32", 
+		"33": "33", 
+		"34": "34", 
+		"35": "35", 
+		"36": "36", 
+		"37": "37", 
+		"38": "38", 
+		"39": "39", 
+		"40": "40", 
+		"63": "Non Contr\u00f4l\u00e9"
+	}
+	}, 
+	"ApprovalNumber.LowerPart": {
+	"bytesascii": true, 
+	"bytescount": 5, 
+	"byte": true, 
+	"bitscount": 40
+	}, 
+	"Checksum1": {
+	"bytescount": 2, 
+	"bitscount": 16, 
+	"lists": {
+		"0": "Checksum of the configuration data not correct", 
+		"1": "All checksums correct"
+	}
+	}, 
+	"Adress octet high": {
+	"bytescount": 2, 
+	"byte": true, 
+	"bitscount": 16
+	}, 
+	"Unitary data tracability TRW": {
+	"bytesascii": true, 
+	"bytescount": 18, 
+	"byte": true, 
+	"bitscount": 144
+	}, 
+	"TNG_ClutchSensorFilter21": {
+	"divideby": 10000.0, 
+	"bitscount": 16, 
+	"scaled": true, 
+	"bytescount": 2, 
+	"offset": -10000.0, 
+	"unit": "nu"
+	}, 
+	"TNG_ClutchSensorFilter20": {
+	"divideby": 10000.0, 
+	"bitscount": 16, 
+	"scaled": true, 
+	"bytescount": 2, 
+	"offset": -10000.0, 
+	"unit": "nu"
+	}, 
+	"Snapshot_VehiculeSpeed": {
+	"scaled": true, 
+	"unit": "km/h"
+	}, 
+	"Checksum4": {
+	"bytescount": 2, 
+	"bitscount": 16, 
+	"lists": {
+		"0": "Checksum of the configuration data not correct", 
+		"1": "All checksums correct"
+	}
+	}, 
+	"DataRecorder_TriggerSourceStart": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "triggered by actuation", 
+		"1": "triggered by buzzer"
+	}
+	}, 
+	"OutputPermanentControlList": {
+	"comment": "Testing output : List of all output with permanent test", 
+	"lists": {
+		"3": "Switch_On_LED"
+	}
+	}, 
+	"Snapshot_VehicleForwardSlope": {
+	"scaled": true, 
+	"signed": true
+	}, 
+	"TNG_Curve_D_ClutchPos_Step": {
+	"scaled": true, 
+	"unit": "dig"
+	}, 
+	"OutputControlStatus": {
+	"lists": {
+		"1": "Control In progress", 
+		"2": "Control Complete and OK", 
+		"11": "Control Stopped"
+	}
+	}, 
+	"PHY_GearBoxRatioVector-5th ratio": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 1000.0, 
+	"bitscount": 16, 
+	"unit": "nu"
+	}, 
+	"DataRecorder_TimeOut_BCM": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "BCM node received", 
+		"1": "BCM node absent"
+	}
+	}, 
+	"DataRecorder_VoltageActLeft": {
+	"divideby": 1000.0, 
+	"bitscount": 16, 
+	"signed": true, 
+	"scaled": true, 
+	"bytescount": 2, 
+	"unit": "V"
+	}, 
+	"BCM_WakeUpSleepCommand": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "Go to Sleep", 
+		"3": "WakeUp"
+	}
+	}, 
+	"Producteur MUX Contr\u00f4le trajectoire compteur": {
+	"bitscount": 6, 
+	"lists": {
+		"0": "0", 
+		"1": "1", 
+		"2": "2", 
+		"3": "3", 
+		"4": "4", 
+		"5": "5", 
+		"6": "6", 
+		"7": "7", 
+		"8": "8", 
+		"9": "9", 
+		"10": "10", 
+		"11": "11", 
+		"12": "12", 
+		"13": "13", 
+		"14": "14", 
+		"15": "15", 
+		"16": "16", 
+		"17": "17", 
+		"18": "18", 
+		"19": "19", 
+		"20": "20", 
+		"21": "21", 
+		"22": "22", 
+		"23": "23", 
+		"24": "24", 
+		"25": "25", 
+		"26": "26", 
+		"27": "27", 
+		"28": "28", 
+		"29": "29", 
+		"30": "30", 
+		"31": "31", 
+		"32": "32", 
+		"33": "33", 
+		"34": "34", 
+		"35": "35", 
+		"36": "36", 
+		"37": "37", 
+		"38": "38", 
+		"39": "39", 
+		"40": "40", 
+		"63": "Non Contr\u00f4l\u00e9"
+	}
+	}, 
+	"DataRecorder_TimeOut_CLUSTER": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "CLUSTER node received", 
+		"1": "CLUSTER node absent"
+	}
+	}, 
+	"Snapshot_FrequencyCounter": {
+	"scaled": true, 
+	"bitscount": 4
+	}, 
+	"DTCStatus.confirmedDTC": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "No", 
+		"1": "Yes"
+	}
+	}, 
+	"PHY_GearBoxRatioVector-2nd ratio": {
+	"scaled": true, 
+	"bytescount": 2, 
+	"divideby": 1000.0, 
+	"bitscount": 16, 
+	"unit": "nu"
+	}, 
+	"Module BusMuet compteur": {
+	"bitscount": 6, 
+	"lists": {
+		"0": "0", 
+		"1": "1", 
+		"2": "2", 
+		"3": "3", 
+		"4": "4", 
+		"5": "5", 
+		"6": "6", 
+		"7": "7", 
+		"8": "8", 
+		"9": "9", 
+		"10": "10", 
+		"11": "11", 
+		"12": "12", 
+		"13": "13", 
+		"14": "14", 
+		"15": "15", 
+		"16": "16", 
+		"17": "17", 
+		"18": "18", 
+		"19": "19", 
+		"20": "20", 
+		"21": "21", 
+		"22": "22", 
+		"23": "23", 
+		"24": "24", 
+		"25": "25", 
+		"26": "26", 
+		"27": "27", 
+		"28": "28", 
+		"29": "29", 
+		"30": "30", 
+		"31": "31", 
+		"32": "32", 
+		"33": "33", 
+		"34": "34", 
+		"35": "35", 
+		"36": "36", 
+		"37": "37", 
+		"38": "38", 
+		"39": "39", 
+		"40": "40", 
+		"63": "Non Contr\u00f4l\u00e9"
+	}
+	}, 
+	"Producteur MUX Angle volant": {
+	"bitscount": 2, 
+	"lists": {
+		"0": "Pr\u00e9sent", 
+		"2": "Absent", 
+		"3": "Confirm\u00e9 Absent"
+	}
+	}, 
+	"DataRecorder_BrakeStatusLeftAfter": {
+	"bitscount": 4, 
+	"lists": {
+		"0": "Applied", 
+		"1": "Applying", 
+		"2": "Fully Applied", 
+		"3": "Released", 
+		"4": "Releasing", 
+		"5": "Unknown", 
+		"6": "Init", 
+		"7": "Fully released - Maintenance Mode", 
+		"8": "Wind Back - Released to fully released"
+	}
+	}, 
+	"TNG_AccPosLB_toa": {
+	"scaled": true, 
+	"comment": "BVA parameter", 
+	"unit": "dig (BVA)"
+	}, 
+	"TNG_NumGearShiftForProcessing": {
+	"lists": {
+		"1": "1", 
+		"2": "2", 
+		"3": "3", 
+		"4": "4", 
+		"5": "5", 
+		"6": "6", 
+		"7": "7", 
+		"8": "8", 
+		"9": "9", 
+		"10": "10", 
+		"255": "255"
+	}
+	}, 
+	"Producteur MUX Commande Bva compteur": {
+	"bitscount": 6, 
+	"lists": {
+		"0": "0", 
+		"1": "1", 
+		"2": "2", 
+		"3": "3", 
+		"4": "4", 
+		"5": "5", 
+		"6": "6", 
+		"7": "7", 
+		"8": "8", 
+		"9": "9", 
+		"10": "10", 
+		"11": "11", 
+		"12": "12", 
+		"13": "13", 
+		"14": "14", 
+		"15": "15", 
+		"16": "16", 
+		"17": "17", 
+		"18": "18", 
+		"19": "19", 
+		"20": "20", 
+		"21": "21", 
+		"22": "22", 
+		"23": "23", 
+		"24": "24", 
+		"25": "25", 
+		"26": "26", 
+		"27": "27", 
+		"28": "28", 
+		"29": "29", 
+		"30": "30", 
+		"31": "31", 
+		"32": "32", 
+		"33": "33", 
+		"34": "34", 
+		"35": "35", 
+		"36": "36", 
+		"37": "37", 
+		"38": "38", 
+		"39": "39", 
+		"40": "40", 
+		"63": "Non Contr\u00f4l\u00e9"
+	}
+	}, 
+	"Message APBBrakePedalRequestDisplay": {
+	"comment": "Message APBBrakePedalRequestDisplay", 
+	"bitscount": 2, 
+	"lists": {
+		"0": "No brake pedal request message display", 
+		"1": "Brake pedal request message to display", 
+		"3": "Brake pedal request message re-emission request"
+	}
+	}, 
+	"DTCExtendedData.DTCOccurrenceCounter": {
+	"scaled": true, 
+	"comment": "Description of the extendedData DTCOccurenceCounter (use by Failure Page to decode data)"
+	}, 
+	"DTCStatus.testFailedSinceLastClear": {
+	"bitscount": 1, 
+	"lists": {
+		"0": "No", 
+		"1": "Yes"
+	}
+	}, 
+	"Producteur MUX ACC compteur": {
+	"bitscount": 6, 
+	"lists": {
+		"0": "0", 
+		"1": "1", 
+		"2": "2", 
+		"3": "3", 
+		"4": "4", 
+		"5": "5", 
+		"6": "6", 
+		"7": "7", 
+		"8": "8", 
+		"9": "9", 
+		"10": "10", 
+		"11": "11", 
+		"12": "12", 
+		"13": "13", 
+		"14": "14", 
+		"15": "15", 
+		"16": "16", 
+		"17": "17", 
+		"18": "18", 
+		"19": "19", 
+		"20": "20", 
+		"21": "21", 
+		"22": "22", 
+		"23": "23", 
+		"24": "24", 
+		"25": "25", 
+		"26": "26", 
+		"27": "27", 
+		"28": "28", 
+		"29": "29", 
+		"30": "30", 
+		"31": "31", 
+		"32": "32", 
+		"33": "33", 
+		"34": "34", 
+		"35": "35", 
+		"36": "36", 
+		"37": "37", 
+		"38": "38", 
+		"39": "39", 
+		"40": "40", 
+		"63": "Non Contr\u00f4l\u00e9"
+	}
+	}, 
+	"BrakeStatusLeft": {
+	"lists": {
+		"0": "Applied", 
+		"1": "Applying", 
+		"2": "Fully Applied", 
+		"3": "Released", 
+		"4": "Releasing", 
+		"5": "Unknown", 
+		"6": "Init", 
+		"7": "Fully released - Maintenance Mode", 
+		"8": "Wind Back - Released to fully released"
+	}
+	}
+}
+}

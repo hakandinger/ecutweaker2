@@ -1,0 +1,3 @@
+android.bundle.enableUncompressedNativeLibs=false
+android.useDeprecatedNdk=false
+android.ndkVersion=

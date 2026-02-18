@@ -1,0 +1,7566 @@
+{
+ "screens": {
+  "3_Snapshot": {
+   "inputs": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DTC4WDIdentifier",
+     "request": "ReadDTCInformation.ReportSnapshotByDTC",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 4269,
+      "top": 1080,
+      "height": 360,
+      "left": 3474
+     }
+    }
+   ],
+   "color": "rgb(255,255,255)",
+   "labels": [
+    {
+     "color": "rgb(255,0,0)",
+     "text": "::pic:arrows\\linev_7x50",
+     "bbox": {
+      "width": 100,
+      "top": 5010,
+      "height": 4080,
+      "left": 5651
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,0,0)",
+     "text": "::pic:arrows\\lineh_50x7",
+     "bbox": {
+      "width": 9584,
+      "top": 1920,
+      "height": 105,
+      "left": 773
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Kgm",
+     "bbox": {
+      "width": 647,
+      "top": 5655,
+      "height": 300,
+      "left": 10107
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "DTC Status",
+     "bbox": {
+      "width": 2292,
+      "top": 1560,
+      "height": 300,
+      "left": 4419
+     },
+     "fontcolor": "rgb(0,128,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Snapshot",
+     "bbox": {
+      "width": 5272,
+      "top": 270,
+      "height": 480,
+      "left": 3015
+     },
+     "fontcolor": "rgb(255,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 18.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(255,0,0)",
+     "text": "::pic:arrows\\lineh_50x7",
+     "bbox": {
+      "width": 9584,
+      "top": 4470,
+      "height": 105,
+      "left": 773
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Datas",
+     "bbox": {
+      "width": 1347,
+      "top": 4095,
+      "height": 300,
+      "left": 4892
+     },
+     "fontcolor": "rgb(0,128,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Mileage",
+     "bbox": {
+      "width": 1375,
+      "top": 5160,
+      "height": 300,
+      "left": 723
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "ABS",
+     "bbox": {
+      "width": 917,
+      "top": 7125,
+      "height": 296,
+      "left": 1196
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "VDC",
+     "bbox": {
+      "width": 688,
+      "top": 7598,
+      "height": 296,
+      "left": 1425
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "TCS",
+     "bbox": {
+      "width": 802,
+      "top": 8072,
+      "height": 296,
+      "left": 1310
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Road fraction µ",
+     "bbox": {
+      "width": 1948,
+      "top": 8505,
+      "height": 296,
+      "left": 150
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Road Surface µ during brake",
+     "bbox": {
+      "width": 1834,
+      "top": 8925,
+      "height": 625,
+      "left": 279
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "IGN Voltage",
+     "bbox": {
+      "width": 1519,
+      "top": 6630,
+      "height": 300,
+      "left": 608
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "ITCC Current Request",
+     "bbox": {
+      "width": 2865,
+      "top": 4695,
+      "height": 300,
+      "left": 5866
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "ITCC Current Real",
+     "bbox": {
+      "width": 2407,
+      "top": 5175,
+      "height": 300,
+      "left": 6325
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Pseudo VHL Speed",
+     "bbox": {
+      "width": 2407,
+      "top": 6120,
+      "height": 300,
+      "left": 6339
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Front Wheel Speed",
+     "bbox": {
+      "width": 2407,
+      "top": 6600,
+      "height": 300,
+      "left": 6339
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Rear Wheel Speed",
+     "bbox": {
+      "width": 2292,
+      "top": 7080,
+      "height": 300,
+      "left": 6454
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Current Gear",
+     "bbox": {
+      "width": 1719,
+      "top": 6150,
+      "height": 300,
+      "left": 379
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "4WD Mode",
+     "bbox": {
+      "width": 1375,
+      "top": 5670,
+      "height": 300,
+      "left": 723
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Final Clutch Torque",
+     "bbox": {
+      "width": 2407,
+      "top": 5655,
+      "height": 300,
+      "left": 6325
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "FR Wheel Speed",
+     "bbox": {
+      "width": 1948,
+      "top": 7560,
+      "height": 300,
+      "left": 6798
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "FL Wheel Speed",
+     "bbox": {
+      "width": 2063,
+      "top": 8040,
+      "height": 300,
+      "left": 6683
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "RR Wheel Speed",
+     "bbox": {
+      "width": 1948,
+      "top": 8520,
+      "height": 300,
+      "left": 6798
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "RL Wheel Speed",
+     "bbox": {
+      "width": 2063,
+      "top": 9000,
+      "height": 300,
+      "left": 6683
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Km/h",
+     "bbox": {
+      "width": 647,
+      "top": 8505,
+      "height": 300,
+      "left": 10123
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Km/h",
+     "bbox": {
+      "width": 647,
+      "top": 8025,
+      "height": 300,
+      "left": 10123
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Km/h",
+     "bbox": {
+      "width": 647,
+      "top": 7545,
+      "height": 300,
+      "left": 10123
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Km/h",
+     "bbox": {
+      "width": 647,
+      "top": 8985,
+      "height": 300,
+      "left": 10123
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Km/h",
+     "bbox": {
+      "width": 647,
+      "top": 7080,
+      "height": 300,
+      "left": 10123
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Km/h",
+     "bbox": {
+      "width": 647,
+      "top": 6600,
+      "height": 300,
+      "left": 10123
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Km",
+     "bbox": {
+      "width": 559,
+      "top": 5175,
+      "height": 300,
+      "left": 4734
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "A",
+     "bbox": {
+      "width": 229,
+      "top": 5175,
+      "height": 300,
+      "left": 10107
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "A",
+     "bbox": {
+      "width": 229,
+      "top": 4695,
+      "height": 300,
+      "left": 10107
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "V",
+     "bbox": {
+      "width": 229,
+      "top": 6630,
+      "height": 300,
+      "left": 3402
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Test Failed",
+     "bbox": {
+      "width": 1748,
+      "top": 3960,
+      "height": 300,
+      "left": 7256
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Confirmed DTC",
+     "bbox": {
+      "width": 1948,
+      "top": 2640,
+      "height": 300,
+      "left": 7055
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Test Failed This OC",
+     "bbox": {
+      "width": 3395,
+      "top": 3525,
+      "height": 300,
+      "left": 5608
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Pending DTC",
+     "bbox": {
+      "width": 1948,
+      "top": 3060,
+      "height": 300,
+      "left": 7055
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Test Failed Since LC",
+     "bbox": {
+      "width": 3467,
+      "top": 3930,
+      "height": 300,
+      "left": 723
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Test Not Completed Since LC",
+     "bbox": {
+      "width": 3897,
+      "top": 3480,
+      "height": 300,
+      "left": 293
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Test Not Completed This OC",
+     "bbox": {
+      "width": 3897,
+      "top": 3030,
+      "height": 300,
+      "left": 293
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Warning Indicator Requested",
+     "bbox": {
+      "width": 3467,
+      "top": 2580,
+      "height": 300,
+      "left": 723
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Km/h",
+     "bbox": {
+      "width": 647,
+      "top": 6120,
+      "height": 300,
+      "left": 10123
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "DTC Code",
+     "bbox": {
+      "width": 1375,
+      "top": 4710,
+      "height": 300,
+      "left": 780
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    }
+   ],
+   "presend": [],
+   "height": 9660,
+   "buttons": [
+    {
+     "text": "Read the DTC:",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "1000",
+       "RequestName": "ReadDTCInformation.ReportSnapshotByDTC"
+      }
+     ],
+     "uniquename": "Read the DTC:_0",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 2063,
+      "top": 1080,
+      "height": 480,
+      "left": 1182
+     }
+    },
+    {
+     "text": "Clear DTCs",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "ClearDiagnosticinformation.All"
+      }
+     ],
+     "uniquename": "Clear DTCs_1",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 2063,
+      "top": 1080,
+      "height": 480,
+      "left": 8001
+     }
+    }
+   ],
+   "width": 11220,
+   "displays": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DTCDeviceIdentifier",
+     "request": "ReadDTCInformation.ReportSnapshotByDTC",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 3825,
+      "top": 2145,
+      "height": 360,
+      "left": 1411
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DTCFailureType",
+     "request": "ReadDTCInformation.ReportSnapshotByDTC",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 4584,
+      "top": 2145,
+      "height": 360,
+      "left": 5537
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DTCStatus.warningIndicatorRequested",
+     "request": "ReadDTCInformation.ReportSnapshotByDTC",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 802,
+      "top": 2595,
+      "height": 360,
+      "left": 4305
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DTCStatus.testNotCompletedThisMonitoringCycle",
+     "request": "ReadDTCInformation.ReportSnapshotByDTC",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 802,
+      "top": 3060,
+      "height": 360,
+      "left": 4305
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DTCStatus.testFailedSinceLastClear",
+     "request": "ReadDTCInformation.ReportSnapshotByDTC",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 802,
+      "top": 3510,
+      "height": 360,
+      "left": 4305
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DTCStatus.testNotCompletedSinceLastClear",
+     "request": "ReadDTCInformation.ReportSnapshotByDTC",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 802,
+      "top": 3960,
+      "height": 360,
+      "left": 4305
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DTCStatus.confirmedDTC",
+     "request": "ReadDTCInformation.ReportSnapshotByDTC",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 802,
+      "top": 2610,
+      "height": 360,
+      "left": 9090
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DTCStatus.pendingDTC",
+     "request": "ReadDTCInformation.ReportSnapshotByDTC",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 802,
+      "top": 3060,
+      "height": 360,
+      "left": 9090
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DTCStatus.testFailedThisMonitoringCycle",
+     "request": "ReadDTCInformation.ReportSnapshotByDTC",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 802,
+      "top": 3510,
+      "height": 360,
+      "left": 9090
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DTCStatus.testFailed",
+     "request": "ReadDTCInformation.ReportSnapshotByDTC",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 802,
+      "top": 3960,
+      "height": 360,
+      "left": 9090
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DTCMaskRecord",
+     "request": "ReadDTCInformation.ReportSnapshotByDTC",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 2221,
+      "top": 4725,
+      "height": 360,
+      "left": 2213
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$22$0100_#14_b7_ABS_ACTUATION",
+     "request": "ReadDTCInformation.ReportSnapshotByDTC",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1074,
+      "top": 7125,
+      "height": 355,
+      "left": 2227
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$22$0100_#14_b6_VDC_ACTUATION",
+     "request": "ReadDTCInformation.ReportSnapshotByDTC",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1074,
+      "top": 7613,
+      "height": 355,
+      "left": 2227
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$22$0100_#14_b5_TCS_ACTUATION",
+     "request": "ReadDTCInformation.ReportSnapshotByDTC",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1074,
+      "top": 8072,
+      "height": 355,
+      "left": 2227
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$22$0100_#14_b4_HIGH_u_flag",
+     "request": "ReadDTCInformation.ReportSnapshotByDTC",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1074,
+      "top": 8516,
+      "height": 355,
+      "left": 2227
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$22$0100_#14_b3_BRAKING_HIGH_u_flag",
+     "request": "ReadDTCInformation.ReportSnapshotByDTC",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1074,
+      "top": 8930,
+      "height": 355,
+      "left": 2227
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$22$0100_#15_IGN_VOLTAGE_MONITOR",
+     "request": "ReadDTCInformation.ReportSnapshotByDTC",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1074,
+      "top": 6630,
+      "height": 360,
+      "left": 2213
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$22$0100_#16_4WDSOL_TARGET_CURRENT",
+     "request": "ReadDTCInformation.ReportSnapshotByDTC",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1189,
+      "top": 4695,
+      "height": 360,
+      "left": 8846
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$22$0100_#17_4WDSOL_CURRENT",
+     "request": "ReadDTCInformation.ReportSnapshotByDTC",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1189,
+      "top": 5175,
+      "height": 360,
+      "left": 8846
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$22$0100_#18_QUASI_VEHICLE_SPEED",
+     "request": "ReadDTCInformation.ReportSnapshotByDTC",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1189,
+      "top": 6120,
+      "height": 360,
+      "left": 8861
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$22$0100_#19_FRONT_WHEEL_SPEED",
+     "request": "ReadDTCInformation.ReportSnapshotByDTC",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1189,
+      "top": 6600,
+      "height": 360,
+      "left": 8861
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$22$0100_#20_REAR_WHEEL_SPEED",
+     "request": "ReadDTCInformation.ReportSnapshotByDTC",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1189,
+      "top": 7080,
+      "height": 360,
+      "left": 8861
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$22$0100_#21_CURRENT_RANGE_SIGNAL",
+     "request": "ReadDTCInformation.ReportSnapshotByDTC",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 3367,
+      "top": 6150,
+      "height": 360,
+      "left": 2213
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$22$0100_#22_b7_ETS_MODE",
+     "request": "ReadDTCInformation.ReportSnapshotByDTC",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1032,
+      "top": 5670,
+      "height": 360,
+      "left": 2213
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$22$0100_#23_TARGET_TORQUE",
+     "request": "ReadDTCInformation.ReportSnapshotByDTC",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1189,
+      "top": 5655,
+      "height": 360,
+      "left": 8846
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$22$0100_#25_VEHICLE_WHEEL_SENSOR_FR",
+     "request": "ReadDTCInformation.ReportSnapshotByDTC",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1189,
+      "top": 7560,
+      "height": 360,
+      "left": 8861
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$22$0100_#27_VEHICLE_WHEEL_SENSOR_FL",
+     "request": "ReadDTCInformation.ReportSnapshotByDTC",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1189,
+      "top": 8025,
+      "height": 360,
+      "left": 8861
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$22$0100_#29_VEHICLE_WHEEL_SENSOR_RR",
+     "request": "ReadDTCInformation.ReportSnapshotByDTC",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1189,
+      "top": 8505,
+      "height": 360,
+      "left": 8861
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$22$0100_#31_VEHICLE_WHEEL_SENSOR_RL",
+     "request": "ReadDTCInformation.ReportSnapshotByDTC",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1189,
+      "top": 8985,
+      "height": 360,
+      "left": 8861
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "DTCExtendedData.Mileage",
+     "request": "ReadDTCInformation.ReportExtendedDataByDTC",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 2407,
+      "top": 5175,
+      "height": 360,
+      "left": 2213
+     }
+    }
+   ]
+  },
+  "1_IT Characteristic": {
+   "inputs": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "[$3B$01_#3]_IT_characteristic_1_right",
+     "request": "DataWrite.3B01",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 840,
+      "top": 5445,
+      "height": 360,
+      "left": 2655
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "[$3B$01_#4]_IT_characteristic_2_right",
+     "request": "DataWrite.3B01",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 840,
+      "top": 5445,
+      "height": 360,
+      "left": 3495
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "[$3B$01_#5]_IT_characteristic_3_right",
+     "request": "DataWrite.3B01",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 840,
+      "top": 5445,
+      "height": 360,
+      "left": 4335
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "[$3B$01_#6]_IT_characteristic_4_right",
+     "request": "DataWrite.3B01",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 840,
+      "top": 5445,
+      "height": 360,
+      "left": 5175
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "[$3B$01_#7]_IT_characteristic_5_right",
+     "request": "DataWrite.3B01",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 840,
+      "top": 5445,
+      "height": 360,
+      "left": 6015
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "[$3B$01_#8]_Check_value_Fxh",
+     "request": "DataWrite.3B01",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 840,
+      "top": 5445,
+      "height": 360,
+      "left": 6855
+     }
+    }
+   ],
+   "color": "rgb(255,255,255)",
+   "labels": [
+    {
+     "color": "rgb(175,175,175)",
+     "text": "IT-Characteristic",
+     "bbox": {
+      "width": 4140,
+      "top": 165,
+      "height": 480,
+      "left": 3375
+     },
+     "fontcolor": "rgb(255,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 18.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Writing status",
+     "bbox": {
+      "width": 1920,
+      "top": 4845,
+      "height": 360,
+      "left": 8295
+     },
+     "fontcolor": "rgb(15,15,15)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(255,0,0)",
+     "text": "::pic:arrows\\linev_7x50",
+     "bbox": {
+      "width": 105,
+      "top": 4725,
+      "height": 1830,
+      "left": 2295
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Uses Conditions",
+     "bbox": {
+      "width": 2520,
+      "top": 765,
+      "height": 300,
+      "left": 255
+     },
+     "fontcolor": "rgb(0,128,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "::pic:arrows\\lineh_50x7",
+     "bbox": {
+      "width": 9630,
+      "top": 1080,
+      "height": 105,
+      "left": 465
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "- Battery more than 9 V",
+     "bbox": {
+      "width": 3390,
+      "top": 1320,
+      "height": 300,
+      "left": 1185
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "- Ignition ON",
+     "bbox": {
+      "width": 3000,
+      "top": 1320,
+      "height": 300,
+      "left": 5550
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "In ECU",
+     "bbox": {
+      "width": 1110,
+      "top": 3225,
+      "height": 300,
+      "left": 345
+     },
+     "fontcolor": "rgb(0,128,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "::pic:arrows\\lineh_50x7",
+     "bbox": {
+      "width": 9630,
+      "top": 3585,
+      "height": 105,
+      "left": 465
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Command",
+     "bbox": {
+      "width": 1230,
+      "top": 4200,
+      "height": 300,
+      "left": 360
+     },
+     "fontcolor": "rgb(0,128,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "::pic:arrows\\lineh_50x7",
+     "bbox": {
+      "width": 9630,
+      "top": 4515,
+      "height": 105,
+      "left": 465
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,0,0)",
+     "text": "::pic:arrows\\linev_7x50",
+     "bbox": {
+      "width": 105,
+      "top": 4725,
+      "height": 1830,
+      "left": 7875
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "When calibration is written, indicator lamp goes off and DTC code is cleared. If setup procedure fails or before completion, 4WD system switches to 2WD mode regardless of switch position.",
+     "bbox": {
+      "width": 9960,
+      "top": 1845,
+      "height": 1320,
+      "left": 420
+     },
+     "fontcolor": "rgb(255,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(255,0,0)",
+     "text": "Use only in DDT4all",
+     "bbox": {
+      "width": 10320,
+      "top": 4800,
+      "height": 2220,
+      "left": 120
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "2"
+    }
+   ],
+   "presend": [
+    {
+     "Delay": "0",
+     "RequestName": "DataRead.IT_writing_information"
+    }
+   ],
+   "height": 6900,
+   "buttons": [
+    {
+     "text": "Write IT",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "StartDiagnosticSession.ExtendedDiagSession"
+      },
+      {
+       "Delay": "100",
+       "RequestName": "DataWrite.3B0300"
+      },
+      {
+       "Delay": "100",
+       "RequestName": "DataWrite.3B01"
+      },
+      {
+       "Delay": "100",
+       "RequestName": "StartDiagnosticSession.DefaultSession"
+      },
+      {
+       "Delay": "1000",
+       "RequestName": "DataRead.IT_writing_information"
+      }
+     ],
+     "uniquename": "Write IT_0",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1920,
+      "top": 5385,
+      "height": 480,
+      "left": 225
+     }
+    }
+   ],
+   "width": 10980,
+   "displays": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "LID03_#04_IT_characteristic_1",
+     "request": "DataRead.IT_writing_information",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 840,
+      "top": 3885,
+      "height": 360,
+      "left": 2655
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "LID03_#05_IT_characteristic_2",
+     "request": "DataRead.IT_writing_information",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 840,
+      "top": 3885,
+      "height": 360,
+      "left": 3495
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "LID03_#06_IT_characteristic_3",
+     "request": "DataRead.IT_writing_information",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 840,
+      "top": 3885,
+      "height": 360,
+      "left": 4335
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "LID03_#07_IT_characteristic_4",
+     "request": "DataRead.IT_writing_information",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 840,
+      "top": 3885,
+      "height": 360,
+      "left": 5175
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "LID03_#08_IT_characteristic_5",
+     "request": "DataRead.IT_writing_information",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 840,
+      "top": 3885,
+      "height": 360,
+      "left": 6015
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "LID03_#09_bit7_RESERVE",
+     "request": "DataRead.IT_writing_information",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 840,
+      "top": 3885,
+      "height": 360,
+      "left": 6855
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "LID03_#03-0_bit7_IT_characteristic_writing_Current_Trip",
+     "request": "DataRead.IT_writing_information",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2025,
+      "top": 5325,
+      "height": 360,
+      "left": 8175
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "LID03_#03-1_bit6_IT_characteristic_writing",
+     "request": "DataRead.IT_writing_information",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 10.0
+     },
+     "rect": {
+      "width": 2040,
+      "top": 5805,
+      "height": 360,
+      "left": 8175
+     }
+    }
+   ]
+  },
+  "1_Active Test": {
+   "inputs": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "ACTR_SOL_DRIVE.param",
+     "request": "OutputControl.Start",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 944,
+      "top": 4065,
+      "height": 360,
+      "left": 3248
+     }
+    }
+   ],
+   "color": "rgb(255,255,255)",
+   "labels": [
+    {
+     "color": "rgb(175,175,175)",
+     "text": "A",
+     "bbox": {
+      "width": 575,
+      "top": 4485,
+      "height": 300,
+      "left": 7833
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Command status",
+     "bbox": {
+      "width": 2483,
+      "top": 3270,
+      "height": 300,
+      "left": 6206
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Set current",
+     "bbox": {
+      "width": 2361,
+      "top": 3570,
+      "height": 300,
+      "left": 2746
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Commands",
+     "bbox": {
+      "width": 3541,
+      "top": 2790,
+      "height": 300,
+      "left": 209
+     },
+     "fontcolor": "rgb(0,128,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(255,0,0)",
+     "text": "::pic:arrows\\linev_7x50",
+     "bbox": {
+      "width": 103,
+      "top": 3345,
+      "height": 1680,
+      "left": 5564
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Active test",
+     "bbox": {
+      "width": 5430,
+      "top": 180,
+      "height": 480,
+      "left": 2038
+     },
+     "fontcolor": "rgb(255,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 18.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(255,0,0)",
+     "text": "::pic:arrows\\linev_7x50",
+     "bbox": {
+      "width": 103,
+      "top": 3360,
+      "height": 1665,
+      "left": 2289
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Test conditions",
+     "bbox": {
+      "width": 2479,
+      "top": 1155,
+      "height": 300,
+      "left": 120
+     },
+     "fontcolor": "rgb(0,128,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "- Vehicle stationary",
+     "bbox": {
+      "width": 2528,
+      "top": 1620,
+      "height": 300,
+      "left": 120
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "- Engine running",
+     "bbox": {
+      "width": 2951,
+      "top": 1620,
+      "height": 300,
+      "left": 2790
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "- No active errors",
+     "bbox": {
+      "width": 3163,
+      "top": 1620,
+      "height": 300,
+      "left": 5904
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "A",
+     "bbox": {
+      "width": 575,
+      "top": 4110,
+      "height": 300,
+      "left": 4163
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Current current",
+     "bbox": {
+      "width": 2483,
+      "top": 4110,
+      "height": 300,
+      "left": 6206
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Caution: Do not apply current for long periods",
+     "bbox": {
+      "width": 7672,
+      "top": 2145,
+      "height": 300,
+      "left": 905
+     },
+     "fontcolor": "rgb(255,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Warning: Stop test before changing value",
+     "bbox": {
+      "width": 7672,
+      "top": 5175,
+      "height": 300,
+      "left": 740
+     },
+     "fontcolor": "rgb(255,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    }
+   ],
+   "presend": [
+    {
+     "Delay": "100",
+     "RequestName": "StartDiagnosticSession.ExtendedDiagSession"
+    },
+    {
+     "Delay": "1000",
+     "RequestName": "(v_IPS_IN) DataRead_$22$1103"
+    },
+    {
+     "Delay": "100",
+     "RequestName": "OutputControl.Status"
+    }
+   ],
+   "height": 6300,
+   "buttons": [
+    {
+     "text": "Start",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "OutputControl.Start"
+      },
+      {
+       "Delay": "0",
+       "RequestName": "OutputControl.Status"
+      },
+      {
+       "Delay": "2500",
+       "RequestName": "(v_IPS_IN) DataRead_$22$1103"
+      }
+     ],
+     "uniquename": "Start_0",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 12.0
+     },
+     "rect": {
+      "width": 1770,
+      "top": 3585,
+      "height": 480,
+      "left": 268
+     }
+    },
+    {
+     "text": "Stop",
+     "messages": [
+      ""
+     ],
+     "send": [
+      {
+       "Delay": "0",
+       "RequestName": "OutputControl.Stop"
+      },
+      {
+       "Delay": "0",
+       "RequestName": "OutputControl.Status"
+      },
+      {
+       "Delay": "2500",
+       "RequestName": "(v_IPS_IN) DataRead_$22$1103"
+      }
+     ],
+     "uniquename": "Stop_1",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 12.0
+     },
+     "rect": {
+      "width": 1770,
+      "top": 4425,
+      "height": 480,
+      "left": 268
+     }
+    }
+   ],
+   "width": 9180,
+   "displays": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$11$03_(v_IPS_IN) ETS_SOLENOID",
+     "request": "(v_IPS_IN) DataRead_$22$1103",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 944,
+      "top": 4470,
+      "height": 360,
+      "left": 7036
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "OutputControlStatus",
+     "request": "OutputControl.Status",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 2597,
+      "top": 3645,
+      "height": 360,
+      "left": 6165
+     }
+    }
+   ]
+  },
+  "System Identification": {
+   "inputs": [],
+   "color": "rgb(255,255,255)",
+   "labels": [
+    {
+     "color": "rgb(175,175,175)",
+     "text": "System Identification",
+     "bbox": {
+      "width": 5520,
+      "top": 120,
+      "height": 480,
+      "left": 1200
+     },
+     "fontcolor": "rgb(255,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 18.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Supplier Code",
+     "bbox": {
+      "width": 4200,
+      "top": 1680,
+      "height": 360,
+      "left": 360
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Tracability",
+     "bbox": {
+      "width": 5520,
+      "top": 6120,
+      "height": 480,
+      "left": 1440
+     },
+     "fontcolor": "rgb(255,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 18.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Supplier Code",
+     "bbox": {
+      "width": 2040,
+      "top": 9690,
+      "height": 360,
+      "left": 1800
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Part Codes",
+     "bbox": {
+      "width": 2040,
+      "top": 6840,
+      "height": 360,
+      "left": 1800
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Plan Codes",
+     "bbox": {
+      "width": 2040,
+      "top": 7320,
+      "height": 360,
+      "left": 1800
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Line Number",
+     "bbox": {
+      "width": 2040,
+      "top": 7800,
+      "height": 360,
+      "left": 1800
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Year of Manufacture",
+     "bbox": {
+      "width": 2640,
+      "top": 8280,
+      "height": 360,
+      "left": 1200
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Month of Manufacture",
+     "bbox": {
+      "width": 3360,
+      "top": 8760,
+      "height": 360,
+      "left": 480
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Serial Number",
+     "bbox": {
+      "width": 2040,
+      "top": 9240,
+      "height": 360,
+      "left": 1800
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    }
+   ],
+   "presend": [
+    {
+     "Delay": "0",
+     "RequestName": "DataRead.Identification.RenaultR2"
+    }
+   ],
+   "height": 10740,
+   "buttons": [],
+   "width": 7980,
+   "displays": [
+    {
+     "color": "rgb(175,175,175)",
+     "text": "PartNumber.LowerPart",
+     "request": "DataRead.Identification.RenaultR2",
+     "width": 3960,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 6960,
+      "top": 720,
+      "height": 397,
+      "left": 360
+     }
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "DiagnosticIdentificationCode",
+     "request": "DataRead.Identification.RenaultR2",
+     "width": 3960,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 6960,
+      "top": 1200,
+      "height": 397,
+      "left": 360
+     }
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "HardwareNumber.LowerPart",
+     "request": "DataRead.Identification.RenaultR2",
+     "width": 3945,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 6960,
+      "top": 2160,
+      "height": 397,
+      "left": 360
+     }
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "SoftwareNumber",
+     "request": "DataRead.Identification.RenaultR2",
+     "width": 3945,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 6960,
+      "top": 2636,
+      "height": 397,
+      "left": 360
+     }
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "EditionNumber",
+     "request": "DataRead.Identification.RenaultR2",
+     "width": 3945,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 6960,
+      "top": 3113,
+      "height": 397,
+      "left": 360
+     }
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "CalibrationNumber",
+     "request": "DataRead.Identification.RenaultR2",
+     "width": 3945,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 6960,
+      "top": 3589,
+      "height": 397,
+      "left": 360
+     }
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "PartNumber.BasicPartList",
+     "request": "DataRead.Identification.RenaultR2",
+     "width": 3945,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 6960,
+      "top": 4065,
+      "height": 397,
+      "left": 360
+     }
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "HardwareNumber.BasicPartList",
+     "request": "DataRead.Identification.RenaultR2",
+     "width": 3975,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 6990,
+      "top": 4541,
+      "height": 397,
+      "left": 330
+     }
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "ApprovalNumber.BasicPartList",
+     "request": "DataRead.Identification.RenaultR2",
+     "width": 3960,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 6990,
+      "top": 5018,
+      "height": 397,
+      "left": 330
+     }
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "ManufacturerIdentificationCode",
+     "request": "DataRead.Identification.RenaultR2",
+     "width": 3960,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 6990,
+      "top": 5505,
+      "height": 397,
+      "left": 330
+     }
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "SupplierNumber.ITG.2",
+     "request": "DataRead.Identification.RenaultR2",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 3000,
+      "top": 1680,
+      "height": 390,
+      "left": 4320
+     }
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "TraceAbility_Part Code",
+     "request": "DataRead.TraceAbility",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 2040,
+      "top": 6840,
+      "height": 360,
+      "left": 3945
+     }
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "TraceAbility_Factory Code",
+     "request": "DataRead.TraceAbility",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 2040,
+      "top": 7320,
+      "height": 360,
+      "left": 3945
+     }
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "TraceAbility_Production Line",
+     "request": "DataRead.TraceAbility",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 2040,
+      "top": 7800,
+      "height": 360,
+      "left": 3945
+     }
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "TraceAbility_Production Year",
+     "request": "DataRead.TraceAbility",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 2040,
+      "top": 8295,
+      "height": 360,
+      "left": 3945
+     }
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "TraceAbility_Production Month",
+     "request": "DataRead.TraceAbility",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 2040,
+      "top": 8760,
+      "height": 360,
+      "left": 3945
+     }
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "TraceAbility_Serial Number",
+     "request": "DataRead.TraceAbility",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 2040,
+      "top": 9240,
+      "height": 360,
+      "left": 3945
+     }
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "TraceAbility_Supplier Code",
+     "request": "DataRead.TraceAbility",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 2040,
+      "top": 9690,
+      "height": 360,
+      "left": 3945
+     }
+    }
+   ]
+  },
+  "4_Market History": {
+   "inputs": [],
+   "color": "rgb(255,255,255)",
+   "labels": [
+    {
+     "color": "rgb(175,175,175)",
+     "text": "MAX",
+     "bbox": {
+      "width": 600,
+      "top": 4920,
+      "height": 300,
+      "left": 360
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "160°C",
+     "bbox": {
+      "width": 720,
+      "top": 5835,
+      "height": 420,
+      "left": 240
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Front-rear difference Km/h",
+     "bbox": {
+      "width": 3465,
+      "top": 4005,
+      "height": 300,
+      "left": 4155
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "140°C",
+     "bbox": {
+      "width": 690,
+      "top": 6315,
+      "height": 420,
+      "left": 270
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "0°C",
+     "bbox": {
+      "width": 660,
+      "top": 6825,
+      "height": 420,
+      "left": 300
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "180°C",
+     "bbox": {
+      "width": 720,
+      "top": 5355,
+      "height": 420,
+      "left": 240
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Count/5min",
+     "bbox": {
+      "width": 1560,
+      "top": 7035,
+      "height": 300,
+      "left": 1440
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Protection trigger counter",
+     "bbox": {
+      "width": 4275,
+      "top": 5325,
+      "height": 360,
+      "left": 6960
+     },
+     "fontcolor": "rgb(0,128,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Count/5min",
+     "bbox": {
+      "width": 1560,
+      "top": 6420,
+      "height": 300,
+      "left": 5070
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "4-8mm->8mm or more",
+     "bbox": {
+      "width": 2760,
+      "top": 7275,
+      "height": 420,
+      "left": 6225
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Auto",
+     "bbox": {
+      "width": 660,
+      "top": 5595,
+      "height": 420,
+      "left": 4080
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "2WD",
+     "bbox": {
+      "width": 660,
+      "top": 6030,
+      "height": 420,
+      "left": 4080
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Clutch temperature",
+     "bbox": {
+      "width": 3180,
+      "top": 4515,
+      "height": 300,
+      "left": 135
+     },
+     "fontcolor": "rgb(0,128,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Mode counter",
+     "bbox": {
+      "width": 3525,
+      "top": 4515,
+      "height": 300,
+      "left": 3435
+     },
+     "fontcolor": "rgb(0,128,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "4WD Lock",
+     "bbox": {
+      "width": 1320,
+      "top": 5160,
+      "height": 420,
+      "left": 3420
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Tire diameter difference counter",
+     "bbox": {
+      "width": 4275,
+      "top": 6315,
+      "height": 360,
+      "left": 6960
+     },
+     "fontcolor": "rgb(0,128,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "0-4mm->4-8mm",
+     "bbox": {
+      "width": 1980,
+      "top": 6855,
+      "height": 345,
+      "left": 7005
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Traction coefficient",
+     "bbox": {
+      "width": 3240,
+      "top": 4515,
+      "height": 300,
+      "left": 7755
+     },
+     "fontcolor": "rgb(0,128,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "High->Low",
+     "bbox": {
+      "width": 1320,
+      "top": 4920,
+      "height": 420,
+      "left": 7635
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Off->On",
+     "bbox": {
+      "width": 1020,
+      "top": 5850,
+      "height": 420,
+      "left": 7935
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(255,0,0)",
+     "text": " ",
+     "bbox": {
+      "width": 105,
+      "top": 4905,
+      "height": 2100,
+      "left": 1050
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Torque/speed counter (32x20msec)",
+     "bbox": {
+      "width": 4800,
+      "top": 198,
+      "height": 300,
+      "left": 3420
+     },
+     "fontcolor": "rgb(0,128,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Kgm",
+     "bbox": {
+      "width": 585,
+      "top": 2130,
+      "height": 300,
+      "left": 315
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "0",
+     "bbox": {
+      "width": 330,
+      "top": 3615,
+      "height": 300,
+      "left": 1170
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "3",
+     "bbox": {
+      "width": 360,
+      "top": 3645,
+      "height": 300,
+      "left": 3660
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "MAX",
+     "bbox": {
+      "width": 600,
+      "top": 3645,
+      "height": 300,
+      "left": 10365
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "14,875",
+     "bbox": {
+      "width": 840,
+      "top": 3645,
+      "height": 300,
+      "left": 7680
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "8,983",
+     "bbox": {
+      "width": 735,
+      "top": 3645,
+      "height": 300,
+      "left": 5760
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "MAX",
+     "bbox": {
+      "width": 600,
+      "top": 735,
+      "height": 300,
+      "left": 1245
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "50",
+     "bbox": {
+      "width": 360,
+      "top": 1560,
+      "height": 300,
+      "left": 1080
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "30",
+     "bbox": {
+      "width": 345,
+      "top": 2160,
+      "height": 300,
+      "left": 1095
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "10",
+     "bbox": {
+      "width": 330,
+      "top": 2760,
+      "height": 300,
+      "left": 1110
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(255,0,0)",
+     "text": " ",
+     "bbox": {
+      "width": 8925,
+      "top": 3495,
+      "height": 120,
+      "left": 1500
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,0,0)",
+     "text": " ",
+     "bbox": {
+      "width": 120,
+      "top": 1110,
+      "height": 2505,
+      "left": 1500
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    }
+   ],
+   "presend": [
+    {
+     "Delay": "0",
+     "RequestName": "DataRead.MarketHistory(LID$21)"
+    }
+   ],
+   "height": 8700,
+   "buttons": [],
+   "width": 11340,
+   "displays": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "v_Tempcalmemo1",
+     "request": "DataRead.MarketHistory(LID$21)",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 2085,
+      "top": 6645,
+      "height": 360,
+      "left": 1200
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "v_Tempcalmemo2",
+     "request": "DataRead.MarketHistory(LID$21)",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 2085,
+      "top": 6135,
+      "height": 360,
+      "left": 1200
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "v_Tempcalmemo3",
+     "request": "DataRead.MarketHistory(LID$21)",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 2085,
+      "top": 5625,
+      "height": 360,
+      "left": 1200
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "v_Tempcalmemo4",
+     "request": "DataRead.MarketHistory(LID$21)",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 2085,
+      "top": 5175,
+      "height": 360,
+      "left": 1200
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "v_MODEMEMO1",
+     "request": "DataRead.MarketHistory(LID$21)",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 2085,
+      "top": 6030,
+      "height": 360,
+      "left": 4860
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "v_MODEMEMO2",
+     "request": "DataRead.MarketHistory(LID$21)",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 2085,
+      "top": 5595,
+      "height": 360,
+      "left": 4860
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "v_MODEMEMO3",
+     "request": "DataRead.MarketHistory(LID$21)",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 2085,
+      "top": 5145,
+      "height": 360,
+      "left": 4860
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "v_Myumemo",
+     "request": "DataRead.MarketHistory(LID$21)",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 2040,
+      "top": 4950,
+      "height": 360,
+      "left": 9045
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "v_FCLUMEMO",
+     "request": "DataRead.MarketHistory(LID$21)",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1965,
+      "top": 5865,
+      "height": 360,
+      "left": 9090
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "v_Htmemo4",
+     "request": "DataRead.MarketHistory(LID$21)",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 2025,
+      "top": 6870,
+      "height": 360,
+      "left": 9090
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "v_Htmemo8",
+     "request": "DataRead.MarketHistory(LID$21)",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 2025,
+      "top": 7320,
+      "height": 360,
+      "left": 9090
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "v_CLULOAD01",
+     "request": "DataRead.MarketHistory(LID$21)",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 2236,
+      "top": 3028,
+      "height": 392,
+      "left": 1650
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "v_CLULOAD02",
+     "request": "DataRead.MarketHistory(LID$21)",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 2052,
+      "top": 3028,
+      "height": 392,
+      "left": 4038
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "v_CLULOAD03",
+     "request": "DataRead.MarketHistory(LID$21)",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 2236,
+      "top": 2400,
+      "height": 392,
+      "left": 1650
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "v_CLULOAD04",
+     "request": "DataRead.MarketHistory(LID$21)",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 2052,
+      "top": 2400,
+      "height": 392,
+      "left": 4038
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "v_CLULOAD05",
+     "request": "DataRead.MarketHistory(LID$21)",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1840,
+      "top": 2400,
+      "height": 1080,
+      "left": 6210
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "v_CLULOAD06",
+     "request": "DataRead.MarketHistory(LID$21)",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 4440,
+      "top": 1800,
+      "height": 420,
+      "left": 1650
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "v_CLULOAD07",
+     "request": "DataRead.MarketHistory(LID$21)",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1800,
+      "top": 1800,
+      "height": 420,
+      "left": 6210
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "v_CLULOAD08",
+     "request": "DataRead.MarketHistory(LID$21)",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 2160,
+      "top": 1800,
+      "height": 1680,
+      "left": 8130
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "v_CLULOAD09",
+     "request": "DataRead.MarketHistory(LID$21)",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 6360,
+      "top": 1200,
+      "height": 480,
+      "left": 1650
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "v_CLULOAD10",
+     "request": "DataRead.MarketHistory(LID$21)",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 2160,
+      "top": 1200,
+      "height": 480,
+      "left": 8130
+     }
+    }
+   ]
+  },
+  "1_Internal Data": {
+   "inputs": [],
+   "color": "rgb(255,255,255)",
+   "labels": [
+    {
+     "color": "rgb(255,0,0)",
+     "text": "::pic:arrows\\lineh_50x7",
+     "bbox": {
+      "width": 13680,
+      "top": 10080,
+      "height": 105,
+      "left": 855
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(255,0,0)",
+     "text": "::pic:arrows\\lineh_50x7",
+     "bbox": {
+      "width": 13680,
+      "top": 10995,
+      "height": 105,
+      "left": 840
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "CAN Ouput Data",
+     "bbox": {
+      "width": 2160,
+      "top": 10635,
+      "height": 300,
+      "left": 1080
+     },
+     "fontcolor": "rgb(0,128,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "CAN Input Data",
+     "bbox": {
+      "width": 2235,
+      "top": 810,
+      "height": 300,
+      "left": 1080
+     },
+     "fontcolor": "rgb(0,128,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "CAN Input Data after filtering/conversion",
+     "bbox": {
+      "width": 5160,
+      "top": 2520,
+      "height": 300,
+      "left": 1080
+     },
+     "fontcolor": "rgb(0,128,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "CAN Output Data before filtering/conversion",
+     "bbox": {
+      "width": 5520,
+      "top": 9720,
+      "height": 300,
+      "left": 1005
+     },
+     "fontcolor": "rgb(0,128,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "Data Processing",
+     "bbox": {
+      "width": 2040,
+      "top": 5610,
+      "height": 300,
+      "left": 1080
+     },
+     "fontcolor": "rgb(0,128,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "::pic:arrows\\lineh_50x7",
+     "bbox": {
+      "width": 13560,
+      "top": 2880,
+      "height": 105,
+      "left": 990
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "Internal Datas",
+     "bbox": {
+      "width": 5520,
+      "top": 360,
+      "height": 480,
+      "left": 5040
+     },
+     "fontcolor": "rgb(255,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 18.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "::pic:arrows\\lineh_50x7",
+     "bbox": {
+      "width": 13560,
+      "top": 5970,
+      "height": 105,
+      "left": 990
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "::pic:arrows\\lineh_50x7",
+     "bbox": {
+      "width": 13560,
+      "top": 1170,
+      "height": 105,
+      "left": 990
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "MS Sans Serif",
+      "italic": "0",
+      "size": 8.25
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "Kgm",
+     "bbox": {
+      "width": 585,
+      "top": 8220,
+      "height": 300,
+      "left": 8790
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "Kgm",
+     "bbox": {
+      "width": 585,
+      "top": 8745,
+      "height": 300,
+      "left": 9780
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "Kgm",
+     "bbox": {
+      "width": 585,
+      "top": 9330,
+      "height": 300,
+      "left": 8760
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "Kgm",
+     "bbox": {
+      "width": 585,
+      "top": 8970,
+      "height": 300,
+      "left": 14055
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "Kgm",
+     "bbox": {
+      "width": 585,
+      "top": 9435,
+      "height": 300,
+      "left": 14070
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "Kgm",
+     "bbox": {
+      "width": 585,
+      "top": 10230,
+      "height": 300,
+      "left": 13170
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "Nm",
+     "bbox": {
+      "width": 585,
+      "top": 10230,
+      "height": 300,
+      "left": 5355
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "Nm",
+     "bbox": {
+      "width": 585,
+      "top": 3495,
+      "height": 300,
+      "left": 14835
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "Nm",
+     "bbox": {
+      "width": 585,
+      "top": 3960,
+      "height": 300,
+      "left": 14850
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "Nm",
+     "bbox": {
+      "width": 585,
+      "top": 2265,
+      "height": 300,
+      "left": 14655
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "°C",
+     "bbox": {
+      "width": 330,
+      "top": 3015,
+      "height": 300,
+      "left": 5310
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "°C",
+     "bbox": {
+      "width": 360,
+      "top": 4950,
+      "height": 300,
+      "left": 10110
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "°C",
+     "bbox": {
+      "width": 360,
+      "top": 8280,
+      "height": 300,
+      "left": 5010
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "°/s",
+     "bbox": {
+      "width": 360,
+      "top": 5250,
+      "height": 300,
+      "left": 5325
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "°/s",
+     "bbox": {
+      "width": 360,
+      "top": 7860,
+      "height": 300,
+      "left": 5010
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "%",
+     "bbox": {
+      "width": 360,
+      "top": 3015,
+      "height": 300,
+      "left": 14910
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "%",
+     "bbox": {
+      "width": 360,
+      "top": 4440,
+      "height": 300,
+      "left": 14940
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "A",
+     "bbox": {
+      "width": 360,
+      "top": 6135,
+      "height": 300,
+      "left": 8700
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "G",
+     "bbox": {
+      "width": 360,
+      "top": 4350,
+      "height": 300,
+      "left": 5295
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "°",
+     "bbox": {
+      "width": 120,
+      "top": 3975,
+      "height": 300,
+      "left": 10080
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "IGN Voltage",
+     "bbox": {
+      "width": 1680,
+      "top": 6150,
+      "height": 300,
+      "left": 2340
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "Next Gear",
+     "bbox": {
+      "width": 1800,
+      "top": 1890,
+      "height": 300,
+      "left": 600
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "FR Wheel Speed",
+     "bbox": {
+      "width": 2040,
+      "top": 6120,
+      "height": 300,
+      "left": 10710
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "FL Wheel Speed",
+     "bbox": {
+      "width": 2160,
+      "top": 6600,
+      "height": 300,
+      "left": 10590
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "RR Wheel Speed",
+     "bbox": {
+      "width": 2040,
+      "top": 7080,
+      "height": 300,
+      "left": 10710
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "RL Wheel Speed",
+     "bbox": {
+      "width": 2160,
+      "top": 7560,
+      "height": 300,
+      "left": 10590
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "Current Gear",
+     "bbox": {
+      "width": 1800,
+      "top": 1410,
+      "height": 300,
+      "left": 600
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "DiagMuxOn_BCM",
+     "bbox": {
+      "width": 2160,
+      "top": 1290,
+      "height": 300,
+      "left": 6600
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "TorqueRequestStatus",
+     "bbox": {
+      "width": 2880,
+      "top": 1290,
+      "height": 300,
+      "left": 10800
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "RequestedTransferedTorque02",
+     "bbox": {
+      "width": 3960,
+      "top": 2250,
+      "height": 300,
+      "left": 9720
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "AYCinRegulation",
+     "bbox": {
+      "width": 2160,
+      "top": 2250,
+      "height": 300,
+      "left": 6600
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "ASRinRegulation",
+     "bbox": {
+      "width": 2160,
+      "top": 1770,
+      "height": 300,
+      "left": 6600
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "ETS_TorqueAcknowledgment",
+     "bbox": {
+      "width": 3600,
+      "top": 1770,
+      "height": 300,
+      "left": 10080
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "GearBoxOilTemperature",
+     "bbox": {
+      "width": 3240,
+      "top": 3000,
+      "height": 300,
+      "left": 780
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "BrakeInfoStatus",
+     "bbox": {
+      "width": 2160,
+      "top": 3420,
+      "height": 300,
+      "left": 1860
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "ParkingBrakeStatus",
+     "bbox": {
+      "width": 2520,
+      "top": 3870,
+      "height": 300,
+      "left": 1500
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "LongitudinalAccelerationProc02",
+     "bbox": {
+      "width": 3960,
+      "top": 4320,
+      "height": 300,
+      "left": 165
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "TransversalAcceleration",
+     "bbox": {
+      "width": 3240,
+      "top": 4770,
+      "height": 300,
+      "left": 780
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "YawRate",
+     "bbox": {
+      "width": 1200,
+      "top": 5220,
+      "height": 300,
+      "left": 2820
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "ASRinRegulation",
+     "bbox": {
+      "width": 2280,
+      "top": 3000,
+      "height": 300,
+      "left": 6585
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "ASRinRegulation",
+     "bbox": {
+      "width": 2280,
+      "top": 3480,
+      "height": 300,
+      "left": 6585
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "SteeringWheelAngle",
+     "bbox": {
+      "width": 2520,
+      "top": 3960,
+      "height": 300,
+      "left": 6345
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "SwaSensorInternalStatus",
+     "bbox": {
+      "width": 3240,
+      "top": 4440,
+      "height": 300,
+      "left": 5625
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "EngineCoolantTemp",
+     "bbox": {
+      "width": 2640,
+      "top": 4920,
+      "height": 300,
+      "left": 6225
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "PowerTrainSetPoint",
+     "bbox": {
+      "width": 2640,
+      "top": 3000,
+      "height": 300,
+      "left": 11040
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "MeanEffectiveTorque",
+     "bbox": {
+      "width": 2880,
+      "top": 3480,
+      "height": 300,
+      "left": 10800
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "RequestedTorqueAfterProc",
+     "bbox": {
+      "width": 3480,
+      "top": 3960,
+      "height": 300,
+      "left": 10200
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "RawSensor",
+     "bbox": {
+      "width": 1800,
+      "top": 4440,
+      "height": 300,
+      "left": 11880
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "2WD Switch line",
+     "bbox": {
+      "width": 2040,
+      "top": 6540,
+      "height": 300,
+      "left": 1995
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "AUTO Switch line",
+     "bbox": {
+      "width": 2280,
+      "top": 6960,
+      "height": 300,
+      "left": 1740
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "LOCK Switch line",
+     "bbox": {
+      "width": 2295,
+      "top": 7395,
+      "height": 300,
+      "left": 1740
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "YawRate Target after Filtering",
+     "bbox": {
+      "width": 3840,
+      "top": 7815,
+      "height": 300,
+      "left": 180
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "Estimated Clutch Temperature",
+     "bbox": {
+      "width": 3840,
+      "top": 8280,
+      "height": 300,
+      "left": 180
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "1st High Clutch Temp Level",
+     "bbox": {
+      "width": 3495,
+      "top": 8670,
+      "height": 300,
+      "left": 540
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "2nd High Clutch Temp Level",
+     "bbox": {
+      "width": 3600,
+      "top": 9120,
+      "height": 300,
+      "left": 420
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "Current Request",
+     "bbox": {
+      "width": 2040,
+      "top": 6150,
+      "height": 300,
+      "left": 5745
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "Actuator Relay",
+     "bbox": {
+      "width": 1920,
+      "top": 6525,
+      "height": 300,
+      "left": 5865
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "Switch HW Logic",
+     "bbox": {
+      "width": 2160,
+      "top": 6960,
+      "height": 300,
+      "left": 5625
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "4WD Mode Logic",
+     "bbox": {
+      "width": 2190,
+      "top": 7380,
+      "height": 300,
+      "left": 5595
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "Engine State",
+     "bbox": {
+      "width": 1680,
+      "top": 7785,
+      "height": 300,
+      "left": 6105
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "Drive Force Distribution Torque",
+     "bbox": {
+      "width": 1920,
+      "top": 8670,
+      "height": 480,
+      "left": 5865
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 9.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "Torque Clutch value when Locked",
+     "bbox": {
+      "width": 2040,
+      "top": 9240,
+      "height": 480,
+      "left": 5745
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 9.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "Torque Reduction Request",
+     "bbox": {
+      "width": 3360,
+      "top": 11130,
+      "height": 300,
+      "left": 660
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "Torque value for install of different tires diameters",
+     "bbox": {
+      "width": 2520,
+      "top": 9345,
+      "height": 495,
+      "left": 10230
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 9.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "Distribution Torque during Acceleration",
+     "bbox": {
+      "width": 2280,
+      "top": 8160,
+      "height": 480,
+      "left": 5505
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 9.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "Detection of Different Tires Diameters",
+     "bbox": {
+      "width": 1560,
+      "top": 7935,
+      "height": 480,
+      "left": 10140
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 9.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "ABS Control State",
+     "bbox": {
+      "width": 2280,
+      "top": 8505,
+      "height": 300,
+      "left": 10470
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "Drive Torque Limiter value",
+     "bbox": {
+      "width": 2640,
+      "top": 8955,
+      "height": 300,
+      "left": 10110
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "Internal 4WD Mode ",
+     "bbox": {
+      "width": 2520,
+      "top": 11130,
+      "height": 300,
+      "left": 9960
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "Final Clutch Torque Calculation",
+     "bbox": {
+      "width": 3960,
+      "top": 10230,
+      "height": 300,
+      "left": 7125
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "Drive Target Engine Torque",
+     "bbox": {
+      "width": 3480,
+      "top": 10200,
+      "height": 300,
+      "left": 540
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "Warning Lamp",
+     "bbox": {
+      "width": 1800,
+      "top": 11130,
+      "height": 300,
+      "left": 6030
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "Km/h",
+     "bbox": {
+      "width": 585,
+      "top": 6120,
+      "height": 300,
+      "left": 14400
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "Km/h",
+     "bbox": {
+      "width": 585,
+      "top": 6600,
+      "height": 300,
+      "left": 14400
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "Km/h",
+     "bbox": {
+      "width": 585,
+      "top": 7080,
+      "height": 300,
+      "left": 14400
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(188,188,188)",
+     "text": "Km/h",
+     "bbox": {
+      "width": 585,
+      "top": 7560,
+      "height": 300,
+      "left": 14400
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    }
+   ],
+   "presend": [
+    {
+     "Delay": "0",
+     "RequestName": "(ACTR STATUS) DataRead_$22$1303"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(BATT) DataRead_$22$1101"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(f_$WD_WL) DataRead_$22$1304"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(f_2WD_SW) DataRead_$22$1316"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(f_AUTO_SW) DataRead_$22$1317"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(f_CANMASK454) DataRead_$22$1301"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(f_ETCOKC) DataRead_$22$130F"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(f_ETQDNR_ETS) DataRead_$22$1312"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(f_ETSCANOKC) DataRead_$22$1310"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(f_FAS2) DataRead_$22$130B"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(f_FLG_AMRC) DataRead_$22$130C"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(f_FLG_BMRC) DataRead_$22$130D"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(f_FPKBC) DataRead_$22$130A"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(f_FSTRFAILC0) DataRead_$22$1302"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(f_FTEMP) DataRead_$22$1314"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(f_FTEMP2) DataRead_$22$1315"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(f_LOCK_SW) DataRead_$22$1318"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(f_STPLMSWC) DataRead_$22$1305"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(f_TACHOT) DataRead_$22$1306"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(f_TCSACT) DataRead_$22$1311"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(f_VCM_STATUS)DataRead_$22$1319"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(f_VDCACTC) DataRead_$22$130E"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(v_APOFSPC) DataRead_$22$1102"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(v_CURGPC) DataRead_$22$1110"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(v_CVTTMPDEG) DataRead_$22$110E"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(v_ENGWATTEMP) DataRead_$22$1113"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(v_ETQ_ETS) DataRead_$22$1107"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(v_ETRQC) DataRead_$22$1105"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(v_ETRQDRC) DataRead_$22$1104"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(v_ETSMODD) DataRead_$22$1313"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(v_FIKEI40) DataRead_$22$1309"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(v_IPS_IN) DataRead_$22$1103"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(v_LOCKT) DataRead_$22$1208"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(v_MOD_DISP) DataRead_$22$1308"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(v_NEXTGPC) DataRead_$22$110F"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(v_RQ_TRQC) DataRead_$22$1108"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(v_STRANGC0) DataRead_$22$1209"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(v_SW_MOD) DataRead_$22$1307"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(v_TC) DataRead_$22$120B"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(v_TCLU) DataRead_$22$1114"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(v_TDV) DataRead_$22$1206"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(v_TENG) DataRead_$22$1207"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(v_TETS) DataRead_$22$1205"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(v_TRLIM) DataRead_$22$120A"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(v_V_APOC) DataRead_$22$1106"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(v_WRFL) DataRead_$22$1202"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(v_WRFR) DataRead_$22$1201"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(v_WRRL) DataRead_$22$1204"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(v_WRRR) DataRead_$22$1203"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(v_XGB00) DataRead_$22$110A"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(v_yawrate) DataRead_$22$120C"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(v_yawref1) DataRead_$22$120D"
+    },
+    {
+     "Delay": "0",
+     "RequestName": "(v_YGB00) DataRead_$22$110B"
+    }
+   ],
+   "height": 11700,
+   "buttons": [],
+   "width": 15540,
+   "displays": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$11$01_BATTERY_VOLT",
+     "request": "(BATT) DataRead_$22$1101",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 900,
+      "top": 6120,
+      "height": 360,
+      "left": 4080
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$11$02_(v_APOFSPC) THRTL_POS_SEN",
+     "request": "(v_APOFSPC) DataRead_$22$1102",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1200,
+      "top": 4440,
+      "height": 360,
+      "left": 13680
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$11$03_(v_IPS_IN) ETS_SOLENOID",
+     "request": "(v_IPS_IN) DataRead_$22$1103",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 900,
+      "top": 6120,
+      "height": 360,
+      "left": 7800
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$11$04_(v_ETQDRC) REQUEST_TORQUE",
+     "request": "(v_ETRQDRC) DataRead_$22$1104",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1200,
+      "top": 3960,
+      "height": 360,
+      "left": 13680
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$11$05_(v_ETRQC) CURRENT_TORQ",
+     "request": "(v_ETRQC) DataRead_$22$1105",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1200,
+      "top": 3480,
+      "height": 360,
+      "left": 13680
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$11$06_(v_V_APOC) VACCEL_POS_SIG",
+     "request": "(v_V_APOC) DataRead_$22$1106",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1200,
+      "top": 3000,
+      "height": 360,
+      "left": 13680
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$11$07_(v_ETQ_ETS) TARGET_TORQUE",
+     "request": "(v_ETQ_ETS) DataRead_$22$1107",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1200,
+      "top": 10200,
+      "height": 360,
+      "left": 4095
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$11$08_(v_RQ_TRQC) REQ_COM_TORQ",
+     "request": "(v_RQ_TRQC) DataRead_$22$1108",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 900,
+      "top": 2250,
+      "height": 360,
+      "left": 13800
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$11$0A_(v_XGB00) ACCEL_G",
+     "request": "(v_XGB00) DataRead_$22$110A",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1200,
+      "top": 4320,
+      "height": 360,
+      "left": 4110
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$11$0B_(v_YGB00) SIDE_G",
+     "request": "(v_YGB00) DataRead_$22$110B",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1200,
+      "top": 4770,
+      "height": 360,
+      "left": 4110
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$11$0E_(v_CVTTMPDEG) TEMP",
+     "request": "(v_CVTTMPDEG) DataRead_$22$110E",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1200,
+      "top": 3000,
+      "height": 360,
+      "left": 4110
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$11$0F_(v_NEXTGPC) NEXT_GRPOS",
+     "request": "(v_NEXTGPC) DataRead_$22$110F",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 3525,
+      "top": 1875,
+      "height": 360,
+      "left": 2520
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$11$10_(v_CURGPC) )CURRENT_GRPOS",
+     "request": "(v_CURGPC) DataRead_$22$1110",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 3525,
+      "top": 1395,
+      "height": 360,
+      "left": 2520
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$11$13_(v_ENGWATTEMP)",
+     "request": "(v_ENGWATTEMP) DataRead_$22$1113",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1200,
+      "top": 4920,
+      "height": 360,
+      "left": 8865
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$11$14_(v_Tclu/100) CPLG_TEMP",
+     "request": "(v_TCLU) DataRead_$22$1114",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 900,
+      "top": 8250,
+      "height": 360,
+      "left": 4080
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$12$01_(v_WRFR) FR_RH_SENSOR",
+     "request": "(v_WRFR) DataRead_$22$1201",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1500,
+      "top": 6105,
+      "height": 360,
+      "left": 12795
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$12$02_(v_WRFL) FR_LH_SENSOR",
+     "request": "(v_WRFL) DataRead_$22$1202",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1500,
+      "top": 6570,
+      "height": 360,
+      "left": 12795
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$12$03_(v_WRRR) RR_RH_SENSOR",
+     "request": "(v_WRRR) DataRead_$22$1203",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1500,
+      "top": 7050,
+      "height": 360,
+      "left": 12795
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$12$04_(v_WRFL) RR_LH_SENSOR",
+     "request": "(v_WRRL) DataRead_$22$1204",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1500,
+      "top": 7530,
+      "height": 360,
+      "left": 12795
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$12$05_(v_TETS) ETS_TORQUE",
+     "request": "(v_TETS) DataRead_$22$1205",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1950,
+      "top": 10200,
+      "height": 360,
+      "left": 11160
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$12$06_(v_TDV) REV_TORQUE",
+     "request": "(v_TDV) DataRead_$22$1206",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 900,
+      "top": 8220,
+      "height": 360,
+      "left": 7800
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$12$07_(v_TENG) DRIVE_TORQUE",
+     "request": "(v_TENG) DataRead_$22$1207",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1950,
+      "top": 8730,
+      "height": 360,
+      "left": 7800
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$12$08_(v_LOCKT) LOCKTORQUE",
+     "request": "(v_LOCKT) DataRead_$22$1208",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 900,
+      "top": 9300,
+      "height": 360,
+      "left": 7800
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$12$09_(v_STRANGC0) STEERING_SENSOR",
+     "request": "(v_STRANGC0) DataRead_$22$1209",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1200,
+      "top": 3960,
+      "height": 360,
+      "left": 8865
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$12$0A_(v_TRLIM) TRQ LIMITTER",
+     "request": "(v_TRLIM) DataRead_$22$120A",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1200,
+      "top": 8940,
+      "height": 360,
+      "left": 12795
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$12$0B_(v_TC)",
+     "request": "(v_TC) DataRead_$22$120B",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1200,
+      "top": 9435,
+      "height": 360,
+      "left": 12795
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$12$0C_(v_yawrate) YAW_RATE",
+     "request": "(v_yawrate) DataRead_$22$120C",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1200,
+      "top": 5220,
+      "height": 360,
+      "left": 4110
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$12$0D_(v_yawref1) TARGET_YAW_RATE",
+     "request": "(v_yawref1) DataRead_$22$120D",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 900,
+      "top": 7815,
+      "height": 360,
+      "left": 4080
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$13$01_(f_CANMASK454)",
+     "request": "(f_CANMASK454) DataRead_$22$1301",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 900,
+      "top": 1290,
+      "height": 360,
+      "left": 8880
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$13$02_(f_FSTRFAILC0) STR_SENSOR_FAIL_FLAG",
+     "request": "(f_FSTRFAILC0) DataRead_$22$1302",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1680,
+      "top": 4440,
+      "height": 360,
+      "left": 8865
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$13$03_(ACTR status) ETS_ACTUATOR",
+     "request": "(ACTR STATUS) DataRead_$22$1303",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 900,
+      "top": 6525,
+      "height": 360,
+      "left": 7800
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$13$04_(f_4WD_WL) 4WD_WARN_LAMP",
+     "request": "(f_$WD_WL) DataRead_$22$1304",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 900,
+      "top": 11115,
+      "height": 360,
+      "left": 7905
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$13$05_(f_STPLMSWC) STOP_LAMP_SW",
+     "request": "(f_STPLMSWC) DataRead_$22$1305",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 900,
+      "top": 3420,
+      "height": 360,
+      "left": 4110
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$13$06_(f_TACHOT) ENG_status",
+     "request": "(f_TACHOT) DataRead_$22$1306",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 900,
+      "top": 7770,
+      "height": 360,
+      "left": 7800
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$13$07_(v_SW_MOD) 4WD_MODE_SW",
+     "request": "(v_SW_MOD) DataRead_$22$1307",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 900,
+      "top": 6945,
+      "height": 360,
+      "left": 7800
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$13$08_(v_MOD_DISP) 4WD_MODE_IND",
+     "request": "(v_MOD_DISP) DataRead_$22$1308",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 900,
+      "top": 7365,
+      "height": 360,
+      "left": 7800
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$13$0A_(f_PKBC) PKB",
+     "request": "(f_FPKBC) DataRead_$22$130A",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 900,
+      "top": 3870,
+      "height": 360,
+      "left": 4110
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$13$09_(v_FIKEI40) DIS-TIRE_MON",
+     "request": "(v_FIKEI40) DataRead_$22$1309",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 3750,
+      "top": 8025,
+      "height": 360,
+      "left": 11685
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$13$0B_(f_FAS2) TK_MM_4WD_ABS_OPE_FLAG",
+     "request": "(f_FAS2) DataRead_$22$130B",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 900,
+      "top": 8475,
+      "height": 360,
+      "left": 12795
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$13$0C_(f_FLG_AMRC) TK_MM_4WD_ENG_OPE_FLAG",
+     "request": "(f_FLG_AMRC) DataRead_$22$130C",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 900,
+      "top": 3000,
+      "height": 360,
+      "left": 8865
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$13$0D_(f_FLG_BMRC) TK_MM_4WD_BRK_OPE_FLAG",
+     "request": "(f_FLG_BMRC) DataRead_$22$130D",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 900,
+      "top": 3480,
+      "height": 360,
+      "left": 8865
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$13$0E_(f_VDCACTC) VDC_OPE_FLAG",
+     "request": "(f_VDCACTC) DataRead_$22$130E",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 900,
+      "top": 2265,
+      "height": 360,
+      "left": 8895
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$13$0F_(f_ETCOKC) ETC_CONT_FLAG",
+     "request": "(f_ETCOKC) DataRead_$22$130F",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 900,
+      "top": 1290,
+      "height": 360,
+      "left": 13800
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$13$10_(f_ETSCANOKC) ETS_CONT_FLAG",
+     "request": "(f_ETSCANOKC) DataRead_$22$1310",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 900,
+      "top": 1770,
+      "height": 360,
+      "left": 13800
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$13$11_(f_TCSACT)",
+     "request": "(f_TCSACT) DataRead_$22$1311",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 900,
+      "top": 1770,
+      "height": 360,
+      "left": 8895
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$13$12_(f_ETQDNR_ETS) TRQ_DOWN_REQ",
+     "request": "(f_ETQDNR_ETS) DataRead_$22$1312",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 900,
+      "top": 11130,
+      "height": 360,
+      "left": 4110
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$13$13_(v_ETSMODD) ETS_MODE",
+     "request": "(v_ETSMODD) DataRead_$22$1313",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 900,
+      "top": 11100,
+      "height": 360,
+      "left": 12570
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$13$14_(f_TEMP) CLUTCH_TEMP_FLAG1",
+     "request": "(f_FTEMP) DataRead_$22$1314",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 900,
+      "top": 8670,
+      "height": 360,
+      "left": 4080
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$13$15_(f_TEMP2) CLUTCH_TEMP_FLAG2",
+     "request": "(f_FTEMP2) DataRead_$22$1315",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 900,
+      "top": 9105,
+      "height": 360,
+      "left": 4080
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$13$16_(f_2WD_SW) SW_input-2WD",
+     "request": "(f_2WD_SW) DataRead_$22$1316",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 900,
+      "top": 6525,
+      "height": 360,
+      "left": 4080
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$13$17_(f_AUTO_SW) SW_input-AUTO",
+     "request": "(f_AUTO_SW) DataRead_$22$1317",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 900,
+      "top": 6945,
+      "height": 360,
+      "left": 4080
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "$13$18_(f_LOCK_SW) SW_inout-LOCK",
+     "request": "(f_LOCK_SW) DataRead_$22$1318",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 900,
+      "top": 7365,
+      "height": 360,
+      "left": 4080
+     }
+    }
+   ]
+  },
+  "2_CAN Support": {
+   "inputs": [],
+   "color": "rgb(255,255,255)",
+   "labels": [
+    {
+     "color": "rgb(175,175,175)",
+     "text": "ECM",
+     "bbox": {
+      "width": 600,
+      "top": 2370,
+      "height": 300,
+      "left": 795
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Received Frame",
+     "bbox": {
+      "width": 2040,
+      "top": 930,
+      "height": 300,
+      "left": 795
+     },
+     "fontcolor": "rgb(0,128,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Current Absent Status",
+     "bbox": {
+      "width": 2040,
+      "top": 1530,
+      "height": 600,
+      "left": 1635
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "CAN Support",
+     "bbox": {
+      "width": 5520,
+      "top": 210,
+      "height": 480,
+      "left": 1665
+     },
+     "fontcolor": "rgb(255,0,0)",
+     "font": {
+      "bold": "1",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 18.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "USM",
+     "bbox": {
+      "width": 600,
+      "top": 5370,
+      "height": 300,
+      "left": 795
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "4WD",
+     "bbox": {
+      "width": 600,
+      "top": 6480,
+      "height": 300,
+      "left": 840
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "ESC",
+     "bbox": {
+      "width": 600,
+      "top": 3330,
+      "height": 300,
+      "left": 795
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "ESC (573) or BCM (454)",
+     "bbox": {
+      "width": 1320,
+      "top": 4275,
+      "height": 480,
+      "left": 90
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 9.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "BCM",
+     "bbox": {
+      "width": 600,
+      "top": 4830,
+      "height": 300,
+      "left": 795
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "AT or CVT",
+     "bbox": {
+      "width": 1320,
+      "top": 2850,
+      "height": 300,
+      "left": 75
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "ESC (0E1)",
+     "bbox": {
+      "width": 1320,
+      "top": 3825,
+      "height": 300,
+      "left": 75
+     },
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "1"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Provided Frame",
+     "bbox": {
+      "width": 2040,
+      "top": 5880,
+      "height": 300,
+      "left": 840
+     },
+     "fontcolor": "rgb(0,128,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "0"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Confirmed Absent Status",
+     "bbox": {
+      "width": 2280,
+      "top": 1530,
+      "height": 600,
+      "left": 3855
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    },
+    {
+     "color": "rgb(175,175,175)",
+     "text": "Memorized Variable",
+     "bbox": {
+      "width": 2040,
+      "top": 1530,
+      "height": 600,
+      "left": 6270
+     },
+     "fontcolor": "rgb(0,0,255)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "alignment": "2"
+    }
+   ],
+   "presend": [],
+   "height": 7620,
+   "buttons": [],
+   "width": 8820,
+   "displays": [
+    {
+     "color": "rgb(255,255,255)",
+     "text": "ECM.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1440,
+      "top": 2370,
+      "height": 360,
+      "left": 1875
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "ECM.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1500,
+      "top": 2370,
+      "height": 360,
+      "left": 4215
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "ECM.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1545,
+      "top": 2370,
+      "height": 360,
+      "left": 6510
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "VDC/TCS/ABS.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1440,
+      "top": 3330,
+      "height": 360,
+      "left": 1875
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "VDC/TCS/ABS.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1500,
+      "top": 3330,
+      "height": 360,
+      "left": 4215
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "VDC/TCS/ABS.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1545,
+      "top": 3330,
+      "height": 360,
+      "left": 6510
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "METER/M&A.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1440,
+      "top": 4350,
+      "height": 360,
+      "left": 1875
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "METER/M&A.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1500,
+      "top": 4350,
+      "height": 360,
+      "left": 4215
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "METER/M&A.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1545,
+      "top": 4350,
+      "height": 360,
+      "left": 6510
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "BCM/SEC.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1440,
+      "top": 4830,
+      "height": 360,
+      "left": 1875
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "BCM/SEC.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1500,
+      "top": 4830,
+      "height": 360,
+      "left": 4215
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "BCM/SEC.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1545,
+      "top": 4830,
+      "height": 360,
+      "left": 6510
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "AT/CVT.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1440,
+      "top": 2850,
+      "height": 360,
+      "left": 1875
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "AT/CVT.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1500,
+      "top": 2850,
+      "height": 360,
+      "left": 4215
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "AT/CVT.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1545,
+      "top": 2850,
+      "height": 360,
+      "left": 6510
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "STRG.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1440,
+      "top": 3825,
+      "height": 360,
+      "left": 1875
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "STRG.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1500,
+      "top": 3825,
+      "height": 360,
+      "left": 4215
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "STRG.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1545,
+      "top": 3825,
+      "height": 360,
+      "left": 6510
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "4WD.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1440,
+      "top": 6480,
+      "height": 360,
+      "left": 1920
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "4WD.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1500,
+      "top": 6480,
+      "height": 360,
+      "left": 4260
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "4WD.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1545,
+      "top": 6480,
+      "height": 360,
+      "left": 6555
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "IPDM E/R.n.CRRNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1440,
+      "top": 5370,
+      "height": 360,
+      "left": 1875
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "IPDM E/R.n.PRSNT.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 15,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1500,
+      "top": 5370,
+      "height": 360,
+      "left": 4215
+     }
+    },
+    {
+     "color": "rgb(255,255,255)",
+     "text": "IPDM E/R.n.PAST.vcan",
+     "request": "CAN DIAG SUPPORT MNTR.can",
+     "width": 0,
+     "fontcolor": "rgb(0,0,0)",
+     "font": {
+      "bold": "0",
+      "name": "Arial Black",
+      "italic": "0",
+      "size": 11.0
+     },
+     "rect": {
+      "width": 1545,
+      "top": 5370,
+      "height": 360,
+      "left": 6510
+     }
+    }
+   ]
+  }
+ },
+ "categories": {
+  "Routine": [
+   "1_Active Test"
+  ],
+  "Data Read": [
+   "1_Internal Data",
+   "3_Snapshot",
+   "2_CAN Support",
+   "4_Market History"
+  ],
+  "Reference": [
+   "System Identification"
+  ],
+  "Data Write": [
+   "1_IT Characteristic"
+  ]
+ }
+}
